@@ -33,11 +33,10 @@ const DropDownMenu: React.FC<DropDownMenuProps> = ({ onClose }) => {
         >
             <div className="flex-col flex space-y-10">
                 <Link href="/services" className="text-black text-2xl">Services</Link>
-                <Link href="/cases" className="text-black text-2xl">Case Studies</Link>
+                <Link href="/pricing" className="text-black text-2xl">Pricing</Link>
                 <Link href="/about" className="text-black text-2xl">About Us</Link>
                 <Link href="/blog" className="text-black text-2xl">Blog</Link>
                 <Link href="/portal" className="text-black text-2xl">Client Portal</Link>
-                <Link href="/pricing" className="text-black text-2xl">Pricing</Link>
                 <Link href="/contact" className="text-black text-2xl">Contact</Link>
                 <Link href="/book" className="text-black text-2xl">Book a Call</Link>
             </div>

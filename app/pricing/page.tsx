@@ -20,11 +20,8 @@ const plans = [
       price: " CAD $3,000",
       features: [
         "SEO",
-  
         "Social Media Marketing",
-  
         "Monthly Reporting",
-
       ],
       style:
         " rounded-3xl  py-10 bg-clip-text text-transparent bg-gradient-to-b from-neutral-300 to-neutral-50",
@@ -226,10 +223,10 @@ const plans = [
     };
   
     return (
-      <div className="w-full md:items-center md:justify-center bg-black/[0.96] antialiased bg-grid-white/[0.02] relative overflow-hidden">
+      <div className="w-full md:items-center md:justify-center bg-black/[0.96] antialiased bg-grid-white/[0.02] relative overflow-hidden pt-24"> {/* Добавил отступ сверху */}
         <Navbar />
         <div className="flex items-center justify-center flex-col">
-          <div className="text-4xl md:text-5xl pb-8 md:pb-20 text-slate-300 px-6 text-center bg-clip-text text-transparent bg-gradient-to-b from-sky-400 to bg-purple-500 bg-opacity-50">
+          <div className="text-4xl md:text-5xl py-8 md:py-20 text-slate-300 px-6 text-center bg-clip-text text-transparent bg-gradient-to-b from-sky-400 to bg-purple-500 bg-opacity-50">
             Simple Pricing <br /> Choose your plan
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 px-6 md:w-4/5 2xl:w-3/4 cursor-pointer pb-10 md:pb-20 items-center">
