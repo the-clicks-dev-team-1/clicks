@@ -26,7 +26,7 @@ const Navbar = () => {
     return (
         <div className="relative z-50">
             <div className="p-6 md:p-10 flex items-center justify-between z-50 text-white fixed w-full top-0 h-24">
-                <div>
+                <div className="flex flex-1 justify-start items-center">
                     <Link className="cursor-pointer" href="/">
                         <Image
                             priority
@@ -34,17 +34,18 @@ const Navbar = () => {
                             alt="Logo"
                             width={100}
                             height={100}
-                            className="w-100 h-100 md:w-14 md:h14"
+                            className="w-100 h-100 md:w-14 md:h-14"
                         />
                     </Link>
                 </div>
-                <div className="hidden md:flex items-center">
+                
+                <div className="hidden md:flex flex-1 justify-center items-center space-x-16">
                     <Menu setActive={setActive}>
                         <MenuItem setActive={setActive} active={active} item="About us">
                             <div className="flex flex-col space-y-4 text-sm">
                                 <HoveredLink href="about/about-agency">About agency</HoveredLink>
-                                <HoveredLink href="/app/about/team">Our team</HoveredLink>
-                                <HoveredLink href="about/contact">Contact us</HoveredLink>
+                                <HoveredLink href="about/team">Our team</HoveredLink>
+                                <HoveredLink href="/about/contact">Contact us</HoveredLink>
                             </div>
                         </MenuItem>
                         <MenuItem setActive={setActive} active={active} item="Services">
@@ -137,6 +138,21 @@ const Navbar = () => {
                     </Menu>
                 </div>
 
+                <div className="flex flex-1 justify-end items-center">
+                    <div className="hidden md:flex">
+                        <Link
+                            href="/contact"
+                            className="
+                                inline-flex h-12 animate-shimmer items-center justify-center
+                                rounded-2xl border border-white bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)]
+                                bg-[length:200%_100%] px-6 font-medium text-white transition-colors focus:outline-none focus:ring-2
+                                focus:ring-white focus:ring-offset-2 focus:ring-offset-black
+                            ">
+                            Let's Talk
+                        </Link>
+                    </div>
+                </div>
+
                 <div className="flex md:hidden">
                     {isDropDownVisible ? (
                         <div
@@ -152,19 +168,6 @@ const Navbar = () => {
                             className="w-8 h-8 text-white cursor-pointer"
                         />
                     )}
-                </div>
-
-                <div className="hidden md:flex">
-                    <Link
-                        href="/contact"
-                        className="
-                            inline-flex h-12 animate-shimmer items-center justify-center
-                            rounded-2xl border border-white bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)]
-                            bg-[length:200%_100%] px-6 font-medium text-white transition-colors focus:outline-none focus:ring-2
-                            focus:ring-white focus:ring-offset-2 focus:ring-offset-black
-                        ">
-                        Let's Talk
-                    </Link>
                 </div>
             </div>
         </div>

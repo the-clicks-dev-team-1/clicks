@@ -24,7 +24,7 @@ export const Menu = ({
       <nav
         onMouseLeave={() => setActive(null)} // resets the state
         className="relative rounded-3xl bg-black/99 backdrop-blur-2xl shadow-input flex justify-center space-x-4 px-8 py-6 "
-        style={{ boxShadow: '0 1px 3px #38bdf8, 1px 3px #a855f7' }}
+        // style={{ boxShadow: '0 1px 3px #38bdf8, 1px 3px #a855f7' }}
       >
         {children}
       </nav>
@@ -92,7 +92,7 @@ export const ProductItem = ({
 }) => {
   return (
     <Link href={href} className="flex space-x-2">
-      <div className="flex-shrink-0 rounded-md shadow-2xl text-white">
+      <div className="flex-shrink-0 rounded-md shadow-2xl text-white bg-blue">
         {children}
       </div>
       <div>

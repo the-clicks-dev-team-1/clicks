@@ -12,17 +12,17 @@ export function ThreeDCardDemo() {
         <div className="flex flex-col w-full lg:w-1/2 pt-8 md:pt-16 pl-4 md:pl-8 lg:pl-24">
           <CardItem
             translateZ="50"
-            className="text-2xl md:text-3xl font-bold text-white"
+            className="text-xl md:text-3xl font-bold text-white"
           >
-            Unlock Your Business's Full Potential<br />with a Tailored Marketing Proposal
+            Unlock Your Business's Full Potential with a Tailored Marketing Proposal
           </CardItem>
           <CardItem
             as="p"
             translateZ="60"
-            className="text-base md:text-lg mt-4 text-white"
+            className="text-base md:text-lg mt-4 text-white text-justify pr-8"
           >
             Take our brief quiz and receive a customized marketing proposal, complete with a special bonus.
-            Discover how our full-service digital marketing agency can help you achieve your goals and drive growth.<br />
+            Discover how our full-service digital marketing agency can help you achieve your goals and drive growth.
             It's quick, easy, and tailored just for you.
           </CardItem>
           <CardItem
