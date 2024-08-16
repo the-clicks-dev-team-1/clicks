@@ -5,9 +5,9 @@ import Link from 'next/link';
 import Image from 'next/image';
 import DropDownMenu from './drop-down-menu';
 import { HoveredLink, Menu, MenuItem, ProductItem } from './ui/navbar-menu';
-import { PiStrategy, PiMegaphone } from 'react-icons/pi';
+import { PiStrategy, PiMegaphone, PiRocketLaunch } from 'react-icons/pi';
 import { TbSeo, TbSettingsAutomation } from 'react-icons/tb';
-import { MdDeveloperMode, MdOutlineMarkEmailRead, MdContentPasteSearch } from 'react-icons/md';
+import { MdDeveloperMode, MdOutlineMarkEmailRead, MdContentPasteSearch, MdBrush } from 'react-icons/md';
 import { SiGoogleads, SiGoogleanalytics } from 'react-icons/si';
 import { GrOptimize } from "react-icons/gr";
 
@@ -39,7 +39,7 @@ const Navbar = () => {
                     </Link>
                 </div>
                 
-                <div className="hidden md:flex flex-1 justify-center items-center space-x-16">
+                <div className="hidden md:flex flex-1 justify-center items-center space-x-8">
                     <Menu setActive={setActive}>
                         <MenuItem setActive={setActive} active={active} item="About us">
                             <div className="flex flex-col space-y-4 text-sm">
@@ -49,77 +49,115 @@ const Navbar = () => {
                             </div>
                         </MenuItem>
                         <MenuItem setActive={setActive} active={active} item="Services">
-                            <div className="text-sm grid grid-cols-3 gap-10 p-1">
-                                <ProductItem
-                                    title="Web Development"
-                                    href="/web-dev"
-                                    description="Build scalable and robust web applications tailored to your business needs."
-                                >
-                                    <MdDeveloperMode />
-                                </ProductItem>
-                                <ProductItem
-                                    title="Strategy Development"
-                                    href="/strategy-dev"
-                                    description="Craft comprehensive strategies to drive your business growth and market presence."
-                                >
-                                    <PiStrategy />
-                                </ProductItem>
-                                <ProductItem
-                                    title="SEO"
-                                    href="/seo"
-                                    description="Optimize your website to rank higher on search engines and attract organic traffic."
-                                >
-                                    <TbSeo />
-                                </ProductItem>
-                                <ProductItem
-                                    title="PPC Advertising"
-                                    href="/ppc-ads"
-                                    description="Maximize your ROI with targeted and effective pay-per-click advertising campaigns."
-                                >
-                                    <SiGoogleads />
-                                </ProductItem>
-                                <ProductItem
-                                    title="Social Media Marketing"
-                                    href="/smm"
-                                    description="Engage your audience and grow your brand presence across social media platforms."
-                                >
-                                    <PiMegaphone />
-                                </ProductItem>
-                                <ProductItem
-                                    title="Content Marketing"
-                                    href="/content"
-                                    description="Create and distribute valuable content to attract and retain a clearly defined audience."
-                                >
-                                    <MdContentPasteSearch />
-                                </ProductItem>
-                                <ProductItem
-                                    title="Email Marketing"
-                                    href="/email"
-                                    description="Develop personalized email campaigns to nurture leads and boost conversions."
-                                >
-                                    <MdOutlineMarkEmailRead />
-                                </ProductItem>
-                                <ProductItem
-                                    title="Conversion Rate Optimization"
-                                    href="/cro"
-                                    description="Improve your website’s performance and turn more visitors into customers."
-                                >
-                                    <GrOptimize />
-                                </ProductItem>
-                                <ProductItem
-                                    title="Analytics and Reporting"
-                                    href="/analytics"
-                                    description="Gain insights from data to make informed decisions and measure success."
-                                >
-                                    <SiGoogleanalytics />
-                                </ProductItem>
-                                <ProductItem
-                                    title="Marketing Automation"
-                                    href="/automation"
-                                    description="Streamline your marketing processes and campaigns with automation tools."
-                                >
-                                    <TbSettingsAutomation />
-                                </ProductItem>
+                            <div className="text-sm grid grid-cols-3 gap-8 pl-8 pr-0 py-4">
+                            <ProductItem
+                                title="Web Development"
+                                href="/services/webdev"
+                                description="Build scalable and robust web applications tailored to your business needs."
+                            >
+                                <div className="flex items-center justify-center w-12 h-12 rounded-full bg-gradient-to-r from-sky-400 to-purple-500">
+                                    <MdDeveloperMode className="text-white text-3xl" />
+                                </div>
+                            </ProductItem>
+                            <ProductItem
+                                title="Strategy Development"
+                                href="/services/stratdev"
+                                description="Craft comprehensive strategies to drive your business growth and market presence."
+                            >
+                                <div className="flex items-center justify-center w-12 h-12 rounded-full bg-gradient-to-r from-sky-400 to-purple-500">
+                                    <PiStrategy className="text-white text-3xl" />
+                                </div>
+                            </ProductItem>
+                            <ProductItem
+                                title="SEO"
+                                href="/services/seo"
+                                description="Optimize your website to rank higher on search engines and attract organic traffic."
+                            >
+                                <div className="flex items-center justify-center w-12 h-12 rounded-full bg-gradient-to-r from-sky-400 to-purple-500">
+                                    <TbSeo className="text-white text-3xl" />
+                                </div>
+                            </ProductItem>
+                            <ProductItem
+                                title="PPC Advertising"
+                                href="/services/ppc"
+                                description="Maximize your ROI with targeted and effective pay-per-click advertising campaigns."
+                            >
+                                <div className="flex items-center justify-center w-12 h-12 rounded-full bg-gradient-to-r from-sky-400 to-purple-500">
+                                    <SiGoogleads className="text-white text-3xl" />
+                                </div>
+                            </ProductItem>
+                            <ProductItem
+                                title="Social Media Marketing"
+                                href="/services/smm"
+                                description="Engage your audience and grow your brand presence across social media platforms."
+                            >
+                                <div className="flex items-center justify-center w-12 h-12 rounded-full bg-gradient-to-r from-sky-400 to-purple-500">
+                                    <PiMegaphone className="text-white text-3xl" />
+                                </div>
+                            </ProductItem>
+                            <ProductItem
+                                title="Content Marketing"
+                                href="/services/cm"
+                                description="Create and distribute valuable content to attract and retain a clearly defined audience."
+                            >
+                                <div className="flex items-center justify-center w-12 h-12 rounded-full bg-gradient-to-r from-sky-400 to-purple-500">
+                                    <MdContentPasteSearch className="text-white text-3xl" />
+                                </div>
+                            </ProductItem>
+                            <ProductItem
+                                title="Email Marketing"
+                                href="/services/em"
+                                description="Develop personalized email campaigns to nurture leads and boost conversions."
+                            >
+                                <div className="flex items-center justify-center w-12 h-12 rounded-full bg-gradient-to-r from-sky-400 to-purple-500">
+                                    <MdOutlineMarkEmailRead className="text-white text-3xl" />
+                                </div>
+                            </ProductItem>
+                            <ProductItem
+                                title="Conversion Rate Optimization"
+                                href="/services/cro"
+                                description="Improve your website’s performance and turn more visitors into customers."
+                            >
+                                <div className="flex items-center justify-center w-12 h-12 rounded-full bg-gradient-to-r from-sky-400 to-purple-500">
+                                    <GrOptimize className="text-white text-3xl" />
+                                </div>
+                            </ProductItem>
+                            <ProductItem
+                                title="Analytics and Reporting"
+                                href="/services/analytics"
+                                description="Gain insights from data to make informed decisions and measure success."
+                            >
+                                <div className="flex items-center justify-center w-12 h-12 rounded-full bg-gradient-to-r from-sky-400 to-purple-500">
+                                    <SiGoogleanalytics className="text-white text-3xl" />
+                                </div>
+                            </ProductItem>
+                            <ProductItem
+                                title="Marketing Automation"
+                                href="/services/automation"
+                                description="Streamline your marketing processes and campaigns with automation tools."
+                            >
+                                <div className="flex items-center justify-center w-12 h-12 rounded-full bg-gradient-to-r from-sky-400 to-purple-500">
+                                    <TbSettingsAutomation className="text-white text-3xl" />
+                                </div>
+                            </ProductItem>
+                            <ProductItem
+                                title="Public Relations"
+                                href="/services/pr"
+                                description="Build your brand's reputation and connect with your audience through strategic PR services."
+                            >
+                                <div className="flex items-center justify-center w-12 h-12 rounded-full bg-gradient-to-r from-sky-400 to-purple-500">
+                                    <PiRocketLaunch className="text-white text-3xl" />
+                                </div>
+                            </ProductItem>
+                            <ProductItem
+                                title="Graphic Design"
+                                href="/services/design"
+                                description="Elevate your brand with stunning visuals and creative graphic design solutions tailored to your needs."
+                            >
+                                <div className="flex items-center justify-center w-12 h-12 rounded-full bg-gradient-to-r from-sky-400 to-purple-500">
+                                    <MdBrush className="text-white text-3xl" />
+                                </div>
+                            </ProductItem>
                             </div>
                         </MenuItem>
                         <Link href="/pricing" className="cursor-pointer text-md text-white hover:opacity-[0.9]">Pricing</Link>
