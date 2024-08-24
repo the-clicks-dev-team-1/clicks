@@ -34,7 +34,7 @@ export default function Home() {
               </Link>
         </div>
         <div className="w-full pt-20 ">
-          <SliderOne />
+          {/*<SliderOne />*/}
           <Block />
           <Block2 />
           <Block3 />

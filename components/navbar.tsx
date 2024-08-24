@@ -1,215 +1,180 @@
-'use client'
+'use client';
+
 import { useState } from 'react';
-import { AlignJustify, X } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
-import DropDownMenu from './drop-down-menu';
-import { HoveredLink, Menu, MenuItem, ProductItem } from './ui/navbar-menu';
+
 import { PiStrategy, PiMegaphone, PiRocketLaunch } from 'react-icons/pi';
 import { TbSeo, TbSettingsAutomation } from 'react-icons/tb';
 import { MdDeveloperMode, MdOutlineMarkEmailRead, MdContentPasteSearch, MdBrush } from 'react-icons/md';
 import { SiGoogleads, SiGoogleanalytics } from 'react-icons/si';
 import { GrOptimize } from "react-icons/gr";
 
-const Navbar = () => {
-    const [isDropDownVisible, setIsDropDownVisible] = useState(false);
-    const [active, setActive] = useState<string | null>(null);
+import logo from '../public/logo/logo.svg';
+import { IoIosArrowDown } from 'react-icons/io';
+import { FiMenu } from 'react-icons/fi';
+import { AiOutlineClose } from "react-icons/ai";
+import { useAutoAnimate } from "@formkit/auto-animate/react";
 
-    const toggleDropDown = () => {
-        setIsDropDownVisible(!isDropDownVisible);
+type NavItem = {
+    label: string;
+    link?: string;
+    children?: NavItem[];
+    iconImage?: React.ElementType;
+};
+
+const navItems: NavItem[] = [
+    { label: "Home", link: "/" },
+    {
+        label: "Services",
+        link: "/services",
+        children: [
+            { label: "Web Development", link: "/services/webdev", iconImage: MdDeveloperMode },
+            { label: "Strategy Development", link: "/services/stratdev", iconImage: PiStrategy },
+            { label: "SEO", link: "/services/seo", iconImage: TbSeo },
+            { label: "PPC Advertising", link: "/services/ppc", iconImage: SiGoogleads },
+            { label: "Social Media Marketing", link: "/services/smm", iconImage: PiMegaphone },
+            { label: "Content Marketing", link: "/services/cm", iconImage: MdContentPasteSearch },
+            { label: "Email Marketing", link: "/services/em", iconImage: MdOutlineMarkEmailRead },
+            { label: "Conversion Rate Optimization", link: "/services/cro", iconImage: GrOptimize },
+            { label: "Analytics and Reporting", link: "/services/analytics", iconImage: SiGoogleanalytics },
+            { label: "Marketing Automation", link: "/services/automation", iconImage: TbSettingsAutomation },
+            { label: "Public Relations", link: "/services/pr", iconImage: PiRocketLaunch },
+            { label: "Graphic Design", link: "/services/design", iconImage: MdBrush },
+        ],
+    },
+    {
+        label: "About",
+        link: "#",
+        children: [
+            { label: "About Agency", link: "/about/about-agency" },
+            { label: "Our Team", link: "/about/team" },
+            { label: "Careers", link: "/about/careers" },
+        ],
+    },
+    { label: "Blog", link: "/blog" },
+    { label: "Contact Us", link: "/contact" },
+];
+
+export default function Navbar() {
+    const [animationParent] = useAutoAnimate();
+    const [isSideMenuOpen, setSideMenu] = useState(false);
+
+    function openSideMenu() {
+        setSideMenu(true);
     }
-
-    const closeDropDown = () => {
-        setIsDropDownVisible(false);
+    function closeSideMenu() {
+        setSideMenu(false);
     }
 
     return (
-        <div className="relative z-50">
-            <div className="p-6 md:p-10 flex items-center justify-between z-50 text-white fixed w-full top-0 h-24">
+        <div className="relative z-50 bg-black">  
+            <div className="p-6 md:p-10 flex items-center justify-between text-white fixed w-full top-0 h-24">
+                {/* logo section */}
                 <div className="flex flex-1 justify-start items-center">
-                    <Link className="cursor-pointer" href="/">
-                        <Image
-                            priority
-                            src="/logo/logo.svg"
-                            alt="Logo"
+                    <Link href="/">
+                        <Image 
+                            src={logo} 
+                            alt=" logo" 
                             width={100}
                             height={100}
-                            className="w-100 h-100 md:w-14 md:h-14"
+                            className="w-14 h-14"
                         />
                     </Link>
                 </div>
-                
-                <div className="hidden md:flex flex-1 justify-center items-center space-x-8">
-                    <Menu setActive={setActive}>
-                        <MenuItem setActive={setActive} active={active} item="About us">
-                            <div className="flex flex-col space-y-4 text-sm">
-                                <HoveredLink href="about/about-agency">About agency</HoveredLink>
-                                <HoveredLink href="about/team">Our team</HoveredLink>
-                                <HoveredLink href="/about/contact">Contact us</HoveredLink>
-                            </div>
-                        </MenuItem>
-                        <MenuItem setActive={setActive} active={active} item="Services">
-                            <div className="text-sm grid grid-cols-3 gap-8 pl-8 pr-0 py-4">
-                            <ProductItem
-                                title="Web Development"
-                                href="/services/webdev"
-                                description="Build scalable and robust web applications tailored to your business needs."
-                            >
-                                <div className="flex items-center justify-center w-12 h-12 rounded-full bg-gradient-to-r from-sky-400 to-purple-500">
-                                    <MdDeveloperMode className="text-white text-3xl" />
-                                </div>
-                            </ProductItem>
-                            <ProductItem
-                                title="Strategy Development"
-                                href="/services/stratdev"
-                                description="Craft comprehensive strategies to drive your business growth and market presence."
-                            >
-                                <div className="flex items-center justify-center w-12 h-12 rounded-full bg-gradient-to-r from-sky-400 to-purple-500">
-                                    <PiStrategy className="text-white text-3xl" />
-                                </div>
-                            </ProductItem>
-                            <ProductItem
-                                title="SEO"
-                                href="/services/seo"
-                                description="Optimize your website to rank higher on search engines and attract organic traffic."
-                            >
-                                <div className="flex items-center justify-center w-12 h-12 rounded-full bg-gradient-to-r from-sky-400 to-purple-500">
-                                    <TbSeo className="text-white text-3xl" />
-                                </div>
-                            </ProductItem>
-                            <ProductItem
-                                title="PPC Advertising"
-                                href="/services/ppc"
-                                description="Maximize your ROI with targeted and effective pay-per-click advertising campaigns."
-                            >
-                                <div className="flex items-center justify-center w-12 h-12 rounded-full bg-gradient-to-r from-sky-400 to-purple-500">
-                                    <SiGoogleads className="text-white text-3xl" />
-                                </div>
-                            </ProductItem>
-                            <ProductItem
-                                title="Social Media Marketing"
-                                href="/services/smm"
-                                description="Engage your audience and grow your brand presence across social media platforms."
-                            >
-                                <div className="flex items-center justify-center w-12 h-12 rounded-full bg-gradient-to-r from-sky-400 to-purple-500">
-                                    <PiMegaphone className="text-white text-3xl" />
-                                </div>
-                            </ProductItem>
-                            <ProductItem
-                                title="Content Marketing"
-                                href="/services/cm"
-                                description="Create and distribute valuable content to attract and retain a clearly defined audience."
-                            >
-                                <div className="flex items-center justify-center w-12 h-12 rounded-full bg-gradient-to-r from-sky-400 to-purple-500">
-                                    <MdContentPasteSearch className="text-white text-3xl" />
-                                </div>
-                            </ProductItem>
-                            <ProductItem
-                                title="Email Marketing"
-                                href="/services/em"
-                                description="Develop personalized email campaigns to nurture leads and boost conversions."
-                            >
-                                <div className="flex items-center justify-center w-12 h-12 rounded-full bg-gradient-to-r from-sky-400 to-purple-500">
-                                    <MdOutlineMarkEmailRead className="text-white text-3xl" />
-                                </div>
-                            </ProductItem>
-                            <ProductItem
-                                title="Conversion Rate Optimization"
-                                href="/services/cro"
-                                description="Improve your website’s performance and turn more visitors into customers."
-                            >
-                                <div className="flex items-center justify-center w-12 h-12 rounded-full bg-gradient-to-r from-sky-400 to-purple-500">
-                                    <GrOptimize className="text-white text-3xl" />
-                                </div>
-                            </ProductItem>
-                            <ProductItem
-                                title="Analytics and Reporting"
-                                href="/services/analytics"
-                                description="Gain insights from data to make informed decisions and measure success."
-                            >
-                                <div className="flex items-center justify-center w-12 h-12 rounded-full bg-gradient-to-r from-sky-400 to-purple-500">
-                                    <SiGoogleanalytics className="text-white text-3xl" />
-                                </div>
-                            </ProductItem>
-                            <ProductItem
-                                title="Marketing Automation"
-                                href="/services/automation"
-                                description="Streamline your marketing processes and campaigns with automation tools."
-                            >
-                                <div className="flex items-center justify-center w-12 h-12 rounded-full bg-gradient-to-r from-sky-400 to-purple-500">
-                                    <TbSettingsAutomation className="text-white text-3xl" />
-                                </div>
-                            </ProductItem>
-                            <ProductItem
-                                title="Public Relations"
-                                href="/services/pr"
-                                description="Build your brand's reputation and connect with your audience through strategic PR services."
-                            >
-                                <div className="flex items-center justify-center w-12 h-12 rounded-full bg-gradient-to-r from-sky-400 to-purple-500">
-                                    <PiRocketLaunch className="text-white text-3xl" />
-                                </div>
-                            </ProductItem>
-                            <ProductItem
-                                title="Graphic Design"
-                                href="/services/design"
-                                description="Elevate your brand with stunning visuals and creative graphic design solutions tailored to your needs."
-                            >
-                                <div className="flex items-center justify-center w-12 h-12 rounded-full bg-gradient-to-r from-sky-400 to-purple-500">
-                                    <MdBrush className="text-white text-3xl" />
-                                </div>
-                            </ProductItem>
-                            </div>
-                        </MenuItem>
-                        <Link href="/pricing" className="cursor-pointer text-md text-white hover:opacity-[0.9]">Pricing</Link>
-                        <MenuItem setActive={setActive} active={active} item="Blog">
-                            <div className="flex flex-col space-y-4 text-sm">
-                                <HoveredLink href="/cases">Case Studies</HoveredLink>
-                                <HoveredLink href="/seo">SEO</HoveredLink>
-                                <HoveredLink href="/ppc">PPC</HoveredLink>
-                                <HoveredLink href="/social">Social Media</HoveredLink>
-                                <HoveredLink href="/analytics">Web Analytics</HoveredLink>
-                                <HoveredLink href="/email">Email Marketing</HoveredLink>
-                                <HoveredLink href="/content">Content Marketing</HoveredLink>
-                                <HoveredLink href="/branding">Branding</HoveredLink>
-                            </div>
-                        </MenuItem>
-                    </Menu>
-                </div>
 
-                <div className="flex flex-1 justify-end items-center">
-                    <div className="hidden md:flex">
-                        <Link
-                            href="/contact"
-                            className="
-                                inline-flex h-12 animate-shimmer items-center justify-center
-                                rounded-2xl border border-white bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)]
-                                bg-[length:200%_100%] px-6 font-medium text-white transition-colors focus:outline-none focus:ring-2
-                                focus:ring-white focus:ring-offset-2 focus:ring-offset-black
-                            ">
-                            Let's Talk
-                        </Link>
-                    </div>
-                </div>
-
-                <div className="flex md:hidden">
-                    {isDropDownVisible ? (
-                        <div
-                            onClick={toggleDropDown}
-                            className="w-8 h-8 text-white cursor-pointer"
-                        >
-                            <X />
-                            <DropDownMenu onClose={closeDropDown} />
+                {/* nav items section */}
+                <div ref={animationParent} className="hidden md:flex flex-1 justify-center items-center gap-4">
+                    {navItems.map((d, i) => (
+                        <div key={`${d.label}-${i}`} className="relative group">
+                            <Link href={d.link ?? "#"} className="flex items-center gap-2 text-neutral-400 hover:text-white transition-all">
+                                <span>{d.label}</span>
+                                {d.children && (
+                                    <IoIosArrowDown className="transition-transform group-hover:rotate-180" />
+                                )}
+                            </Link>
+                            {/* dropdown */}
+                            {d.children && (
+                                <div className="absolute left-0 top-full hidden group-hover:block group-hover:flex flex-col bg-black text-white rounded-lg shadow-md py-3 transition-all">
+                                    {d.children.map((ch, j) => (
+                                        <Link key={`${ch.label}-${j}`} href={ch.link ?? "#"} className="flex items-center px-4 py-2 hover:bg-gray-100">
+                                            {/* icon */}
+                                            {ch.iconImage && (
+                                                <ch.iconImage className="text-xl" />
+                                            )}
+                                            <span className="ml-3 whitespace-nowrap">{ch.label}</span>
+                                        </Link>
+                                    ))}
+                                </div>
+                            )}
                         </div>
-                    ) : (
-                        <AlignJustify
-                            onClick={toggleDropDown}
-                            className="w-8 h-8 text-white cursor-pointer"
-                        />
-                    )}
+                    ))}
                 </div>
+
+                {/* let's talk button section - only for desktop */}
+                <div className="hidden md:flex flex-1 justify-end items-center">
+                    <button className="px-4 py-2 border-2 border-neutral-400 text-neutral-400 rounded-xl hover:border-white hover:text-white transition-all">
+                        Let's Talk
+                    </button>
+                </div>
+
+                <FiMenu onClick={openSideMenu} className="cursor-pointer text-4xl md:hidden" />
+
+                {/* Mobile menu */}
+                {isSideMenuOpen && <MobileNav closeSideMenu={closeSideMenu} />}
             </div>
         </div>
     );
 }
 
-export default Navbar;
+function MobileNav({ closeSideMenu }: { closeSideMenu: () => void }) {
+    return (
+        <div className="fixed inset-0 z-50 bg-black/60 flex justify-end md:hidden">
+            <div className="h-full w-[65%] bg-white px-4 py-4 overflow-y-auto">
+                <section className="flex justify-end">
+                    <AiOutlineClose onClick={closeSideMenu} className="cursor-pointer text-4xl" />
+                </section>
+                <div className="flex flex-col gap-2 mt-4">
+                    {navItems.map((d, i) => (
+                        <SingleNavItem key={`${d.label}-${i}`} {...d} />
+                    ))}
+                </div>
+                <section className="mt-4 flex flex-col items-center gap-8">
+                    <button className="w-full max-w-[200px] px-4 py-2 border-2 border-neutral-400 text-neutral-400 rounded-xl hover:border-black hover:text-black transition-all">Let's Talk</button>
+                </section>
+            </div>
+        </div>
+    );
+}
+
+function SingleNavItem(d: NavItem) {
+    const [animationParent] = useAutoAnimate();
+    const [isItemOpen, setItem] = useState(false);
+
+    function toggleItem() {
+        setItem(!isItemOpen);
+    }
+
+    return (
+        <div ref={animationParent} className="relative">
+            <div onClick={toggleItem} className="flex items-center justify-between px-2 py-3 text-neutral-800 hover:text-black cursor-pointer">
+                <span>{d.label}</span>
+                {d.children && (
+                    <IoIosArrowDown className={`text-xs transition-transform ${isItemOpen ? "rotate-180" : ""}`} />
+                )}
+            </div>
+            {/* dropdown */}
+            {isItemOpen && d.children && (
+                <div className="flex flex-col bg-black text-white rounded-lg shadow-md py-3">
+                    {d.children.map((ch, i) => (
+                        <Link key={`${ch.label}-${i}`} href={ch.link ?? "#"} className="flex items-center px-4 py-2 hover:bg-gray-100">
+                            {/* icon */}
+                            {ch.iconImage && <ch.iconImage className="text-xl" />}
+                            <span className="ml-3 whitespace-nowrap">{ch.label}</span>
+                        </Link>
+                    ))}
+                </div>
+            )}
+        </div>
+    );
+}
