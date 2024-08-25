@@ -10,7 +10,7 @@ const AnalyticsAndReporting: FC = () => {
 
       {/* Header section with form */}
       <div className="bg-gradient-to-b from-sky-400 to-purple-500 py-20 text-center">
-        <h1 className="text-3xl mt-4 md:text-5xl font-bold">Analytics and Reporting Services</h1>
+        <h1 className="text-3xl mt-10 md:text-5xl font-bold">Analytics and Reporting Services</h1>
         <p className="mt-4 text-lg md:text-xl max-w-2xl mx-auto">
           Unlock insights and drive growth with our comprehensive analytics and reporting services.
         </p>

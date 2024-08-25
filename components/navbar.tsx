@@ -54,7 +54,7 @@ const navItems: NavItem[] = [
         ],
     },
     { label: "Blog", link: "/blog" },
-    { label: "Contact Us", link: "/contact" },
+    { label: "Contacts", link: "/contact" },
 ];
 
 export default function Navbar() {
@@ -134,7 +134,7 @@ export default function Navbar() {
 function MobileNav({ closeSideMenu }: { closeSideMenu: () => void }) {
     return (
         <div className="fixed inset-0 z-50 bg-black/60 flex justify-end md:hidden">
-            <div className="h-full w-[65%] bg-black px-4 py-4 overflow-y-auto">
+            <div className="h-full w-[75%] bg-black px-4 py-4 overflow-y-auto">
                 <section className="flex justify-end">
                     <AiOutlineClose onClick={closeSideMenu} className="cursor-pointer text-4xl" />
                 </section>

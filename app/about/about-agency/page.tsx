@@ -4,18 +4,19 @@ import Image from 'next/image';
 import Link from 'next/link';
 import TextBlock from "@/components/text-block";
 import Footer from "@/app/footer";
+import Form from "@/components/form";
 
 const AboutAgency: FC = () => {
   return (
     <div className="bg-black text-white">
       <Navbar />
-      
-      {/* Main content wrapper to ensure consistent padding */}
-      <div className="px-4 py-8">
-        
-        {/* Header div */}
+
+      {/* Main content wrapper */}
+      <div className="px-4 py-8 max-w-7xl mx-auto">
+
+        {/* Header Section */}
         <div className="bg-black py-20">
-          <div className="mx-auto relative z-10 w-full pt-10 pb-20 md:pt-20 flex flex-col md:flex-row items-center justify-center">
+          <div className="flex flex-col mt-10 md:flex-row items-center justify-center">
             <div className="w-full md:w-1/2 px-4 md:px-16 text-center md:text-left">
               <div className="text-2xl md:text-4xl bg-clip-text text-transparent bg-gradient-to-b from-sky-400 to bg-purple-500 bg-opacity-50">
                 About The Clicks.
@@ -28,13 +29,13 @@ const AboutAgency: FC = () => {
               <p className="mt-4 text-sm md:text-m font-normal text-neutral-300 text-justify">
                 Our greatest asset is our team. We prioritize continuous learning and professional growth, ensuring that our employees are always at the forefront of the latest industry trends and practices. At The Clicks, we're more than just a marketing agency—we're a community, fostering a culture and mindset that empowers both our team and our clients to thrive.
               </p>
-              <div className="mt-6 md:mt-8 flex justify-center md:justify-start">
-              <Link
-                href="/contact"
-                className="inline-block bg-gradient-to-r from-sky-400 to-purple-500 text-white font-bold py-3 px-6 rounded-lg shadow-lg hover:bg-opacity-75 transition duration-300"
-              >
-                Chalange Us
-              </Link>
+              <div className="mt-6 md:mt-8 flex justify-center md:justify-start relative z-20">
+                <Link
+                  href="/contact"
+                  className="inline-block bg-gradient-to-r from-sky-400 to-purple-500 text-white font-bold py-3 px-6 rounded-lg shadow-lg hover:bg-opacity-75 transition duration-300"
+                >
+                  Challenge Us
+                </Link>
               </div>
             </div>
             <div className="w-full md:w-1/2 flex justify-center items-center mt-4 md:mt-0 relative">
@@ -52,7 +53,7 @@ const AboutAgency: FC = () => {
               <Image
                 src="/images/office.jpeg"
                 alt="Marketing Wave"
-                width={400}
+                width={500}
                 height={500}
                 className="rounded-2xl object-cover relative z-10"
               />
@@ -60,13 +61,14 @@ const AboutAgency: FC = () => {
           </div>
         </div>
 
-        {/* The Clicks Culture div */}
+        {/* The Clicks Culture Section */}
         <div className="bg-black text-white py-20">
-          <div className="container mx-auto px-4">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl text-center pb-4 bg-clip-text text-transparent bg-gradient-to-b from-sky-400 to bg-purple-500 bg-opacity-50">The Clicks Culture</h2>
+          <h2 className="text-2xl sm:text-3xl md:text-4xl text-center pb-4 bg-clip-text text-transparent bg-gradient-to-b from-sky-400 to bg-purple-500 bg-opacity-50">The Clicks Culture</h2>
 
+          {/* Culture Items */}
+          <div className="space-y-12">
             {/* Culture Item 1 */}
-            <div className="flex flex-col md:flex-row items-center mb-12 gap-8">
+            <div className="flex flex-col md:flex-row items-center gap-8">
               <div className="w-full md:w-1/2">
                 <Image
                   src="/images/standup.jpeg"
@@ -92,7 +94,7 @@ const AboutAgency: FC = () => {
             </div>
 
             {/* Culture Item 2 */}
-            <div className="flex flex-col md:flex-row items-center mb-12 gap-8">
+            <div className="flex flex-col md:flex-row items-center gap-8">
               <div className="w-full md:w-1/2 text-left p-4 md:p-6 order-2 md:order-1">
                 <h3 className="text-lg sm:text-xl font-semibold mb-2">Our Team</h3>
                 <p className="text-white text-sm md:text-m pb-6 text-justify">
@@ -148,12 +150,12 @@ const AboutAgency: FC = () => {
           </div>
         </div>
 
-        {/* Mission & Values div */}
+        {/* Mission & Values Section */}
         <TextBlock />
 
-        {/* Team div */}
+        {/* Team Section */}
         <div className="bg-black py-20">
-          <div className="container mx-auto px-4 text-center">
+          <div className="text-center">
             <h2 className="text-2xl sm:text-3xl md:text-4xl text-center bg-clip-text text-transparent bg-gradient-to-b from-sky-400 to bg-purple-500 bg-opacity-50">Meet Our Team</h2>
             <div className="flex flex-wrap justify-center">
               <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-4">
@@ -191,80 +193,10 @@ const AboutAgency: FC = () => {
           </div>
         </div>
 
-      {/* Contact Form and Info */}
-      <div className="py-20 px-4 md:px-20 lg:px-40">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-          {/* Contact Info */}
-          <div>
-            <h2 className="text-2xl md:text-3xl font-semibold mb-6">Get in Touch</h2>
-            <p className="text-lg mb-4">
-              Whether you have a question about our services, pricing, or anything else, our team is ready to answer all your questions.
-            </p>
-            <p className="text-lg mb-2">
-              <strong>Email:</strong> <a href="mailto:info@theclicks.com" className="text-sky-400">sales@theclicks.com</a>
-            </p>
-            <p className="text-lg mb-2">
-              <strong>Phone:</strong> <a href="tel:+1234567890" className="text-sky-400">+1(506)477-0324</a>
-            </p>
-            <p className="text-lg">
-              <strong>Address:</strong> Dieppe, NB, Canada
-            </p>
-            <div className="mt-8">
-              <Link
-                href="/contact"
-                className="inline-block bg-gradient-to-r from-sky-400 to-purple-500 text-white font-bold py-3 px-6 rounded-lg shadow-lg hover:bg-opacity-75 transition duration-300"
-              >
-                Let's Work Together
-              </Link>
-            </div>
-          </div>
-
-          {/* Contact Form */}
-          <div>
-            <h2 className="text-2xl md:text-3xl font-semibold mb-6">Send Us a Message</h2>
-            <form action="#" method="POST">
-              <div className="mb-4">
-                <label htmlFor="name" className="block text-lg font-medium mb-2">Name</label>
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  className="w-full p-3 bg-neutral-800 rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-400"
-                  required
-                />
-              </div>
-              <div className="mb-4">
-                <label htmlFor="email" className="block text-lg font-medium mb-2">Email</label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  className="w-full p-3 bg-neutral-800 rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-400"
-                  required
-                />
-              </div>
-              <div className="mb-4">
-                <label htmlFor="message" className="block text-lg font-medium mb-2">Message</label>
-                <textarea
-                  id="message"
-                  name="message"
-                  rows={6}
-                  className="w-full p-3 bg-neutral-800 rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-400"
-                  required
-                ></textarea>
-              </div>
-              <button
-                type="submit"
-                className="w-full bg-gradient-to-r from-sky-400 to-purple-500 text-white font-bold py-3 px-6 rounded-lg shadow-lg hover:bg-opacity-75 transition duration-300"
-              >
-                Send Message
-              </button>
-            </form>
-          </div>
-        </div>
-      </div>
-
-        {/* Footer div */}
+        {/* Contact Form Section */}
+        <Form />
+        
+        {/* Footer */}
         <Footer />
       </div>
     </div>

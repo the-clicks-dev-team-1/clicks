@@ -5,18 +5,19 @@ import Link from 'next/link';
 import TextBlock from "@/components/text-block";
 import Footer from "@/app/footer";
 import Block4 from "@/app/block4";
+import Form from "@/components/form";
 
 const Team: FC = () => {
   return (
     <div className="bg-black text-white">
       <Navbar />
       
-      {/* Main content wrapper to ensure consistent padding */}
-      <div className="px-4 py-8">
-      
-        {/* Header div */}
+      {/* Main content wrapper */}
+      <div className="px-4 py-8 max-w-7xl mx-auto">
+
+        {/* Header Section */}
         <div className="bg-black py-20">
-          <div className="mx-auto relative z-10 w-full pt-10 pb-20 md:pt-20 flex flex-col md:flex-row items-center justify-center">
+          <div className="flex flex-col mt-10 md:flex-row items-center justify-center">
             <div className="w-full md:w-1/2 px-4 md:px-16 text-center md:text-left">
               <div className="text-2xl md:text-4xl bg-clip-text text-transparent bg-gradient-to-b from-sky-400 to bg-purple-500 bg-opacity-50">
                 Meet the Clickers Driving Success for Our Clients.
@@ -36,17 +37,17 @@ const Team: FC = () => {
                 helping to build a sustainable digital ecosystem for your business. 
                 We believe that together with you, we can not only keep pace with the times but also set trends in digital marketing.
               </p>
-              <div className="mt-8">
-              <Link
-                href="/contact"
-                className="inline-block bg-gradient-to-r from-sky-400 to-purple-500 text-white font-bold py-3 px-6 rounded-lg shadow-lg hover:bg-opacity-75 transition duration-300"
-              >
-                Join Our Team
-              </Link>
-            </div>
+              <div className="mt-8 flex justify-center md:justify-start relative z-20">
+                <Link
+                  href="/about/careers"
+                  className="inline-block bg-gradient-to-r from-sky-400 to-purple-500 text-white font-bold py-3 px-6 rounded-lg shadow-lg hover:bg-opacity-75 transition duration-300"
+                >
+                  Join Our Team
+                </Link>
+              </div>
             </div>
             <div className="w-full md:w-1/2 flex justify-center items-center mt-4 md:mt-0 relative">
-              <div className="absolute inset-0 flex justify-center items-center">
+              <div className="absolute inset-0 flex justify-center items-center z-10">
                 <Image
                   src="/images/team.png"
                   alt="Background Image"
@@ -59,7 +60,7 @@ const Team: FC = () => {
               </div>
               <Image
                 src="/images/happy-team.jpg"
-                alt="Marketing Wave"
+                alt="Happy Team"
                 width={400}
                 height={500}
                 className="rounded-2xl object-cover relative z-10"
@@ -68,10 +69,12 @@ const Team: FC = () => {
           </div>
         </div>
 
-        {/* Team div */}
+        {/* Team Section */}
         <div className="bg-black py-20">
           <div className="container mx-auto px-4 text-center">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl text-center bg-clip-text text-transparent bg-gradient-to-b from-sky-400 to bg-purple-500 bg-opacity-50">Meet Our Team</h2>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl bg-clip-text text-transparent bg-gradient-to-b from-sky-400 to bg-purple-500 bg-opacity-50">
+              Meet Our Team
+            </h2>
             <div className="flex flex-wrap justify-center mt-8">
               <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-4">
                 <img
@@ -108,83 +111,23 @@ const Team: FC = () => {
           </div>
         </div>
 
+        {/* Additional Block Section */}
         <Block4 />
 
-        <div className="mt-2 md:mt-8 flex justify-center">
-              <Link
-                href="/contact"
-                className="inline-block bg-gradient-to-r from-sky-400 to-purple-500 text-white font-bold py-3 px-6 rounded-lg shadow-lg hover:bg-opacity-75 transition duration-300"
-              >
-                Our Current Job Openings
-              </Link>
+        {/* Careers Link */}
+        <div className="mt-8 flex justify-center">
+          <Link
+            href="/about/careers"
+            className="inline-block bg-gradient-to-r from-sky-400 to-purple-500 text-white font-bold py-3 px-6 rounded-lg shadow-lg hover:bg-opacity-75 transition duration-300"
+          >
+            Our Current Job Openings
+          </Link>
         </div>
 
- {/* Contact Form and Info */}
- <div className="py-20 px-4 md:px-20 lg:px-40">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-          {/* Contact Info */}
-          <div>
-            <h2 className="text-2xl md:text-3xl font-semibold mb-6">Get in Touch</h2>
-            <p className="text-lg mb-4">
-              Whether you have a question about our services, pricing, or anything else, our team is ready to answer all your questions.
-            </p>
-            <p className="text-lg mb-2">
-              <strong>Email:</strong> <a href="mailto:info@theclicks.com" className="text-sky-400">sales@theclicks.com</a>
-            </p>
-            <p className="text-lg mb-2">
-              <strong>Phone:</strong> <a href="tel:+1234567890" className="text-sky-400">+1(506)477-0324</a>
-            </p>
-            <p className="text-lg">
-              <strong>Address:</strong> Dieppe, NB, Canada
-            </p>
-          </div>
+        {/* Contact Form Section */}
+        <Form />
 
-          {/* Contact Form */}
-          <div>
-            <h2 className="text-2xl md:text-3xl font-semibold mb-6">Send Us a Message</h2>
-            <form action="#" method="POST">
-              <div className="mb-4">
-                <label htmlFor="name" className="block text-lg font-medium mb-2">Name</label>
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  className="w-full p-3 bg-neutral-800 rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-400"
-                  required
-                />
-              </div>
-              <div className="mb-4">
-                <label htmlFor="email" className="block text-lg font-medium mb-2">Email</label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  className="w-full p-3 bg-neutral-800 rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-400"
-                  required
-                />
-              </div>
-              <div className="mb-4">
-                <label htmlFor="message" className="block text-lg font-medium mb-2">Message</label>
-                <textarea
-                  id="message"
-                  name="message"
-                  rows={6}
-                  className="w-full p-3 bg-neutral-800 rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-400"
-                  required
-                ></textarea>
-              </div>
-              <button
-                type="submit"
-                className="w-full bg-gradient-to-r from-sky-400 to-purple-500 text-white font-bold py-3 px-6 rounded-lg shadow-lg hover:bg-opacity-75 transition duration-300"
-              >
-                Send Message
-              </button>
-            </form>
-          </div>
-        </div>
-      </div>
-
-        {/* Footer div */}
+        {/* Footer */}
         <Footer />
       </div>
     </div>

@@ -8,7 +8,7 @@ import Link from "next/link";
 export function ThreeDCardDemo() {
   return (
     <CardContainer className="inter-var w-full max-w-none relative mx-4 md:mx-8 lg:mx-24">
-      <CardBody className="bg-gradient-to-r from-sky-400 to bg-purple-500 bg-opacity-50 relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-full h-auto rounded-xl p-6 border flex flex-col lg:flex-row">
+      <CardBody className="bg-gradient-to-r from-sky-400 to bg-purple-500 bg-opacity-50 relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-full h-auto rounded-2xl p-6 border flex flex-col lg:flex-row">
         <div className="flex flex-col w-full lg:w-1/2 pt-8 md:pt-16 pl-4 md:pl-8 lg:pl-24">
           <CardItem
             translateZ="50"
@@ -28,7 +28,7 @@ export function ThreeDCardDemo() {
           <CardItem
             translateZ={20}
             as="button"
-            className="mt-8 px-4 py-2 rounded-3xl bg-black dark:bg-white dark:text-black text-white text-lg md:text-xl font-bold"
+            className="mt-8 px-4 py-2 rounded-2xl bg-black dark:bg-white dark:text-black text-white text-lg md:text-xl font-bold"
           >
             Get Your Custom Proposal Now
           </CardItem>
