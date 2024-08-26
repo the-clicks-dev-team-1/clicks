@@ -159,31 +159,34 @@ const AboutAgency: FC = () => {
             <h2 className="text-2xl sm:text-3xl md:text-4xl text-center bg-clip-text text-transparent bg-gradient-to-b from-sky-400 to bg-purple-500 bg-opacity-50">Meet Our Team</h2>
             <div className="flex flex-wrap justify-center">
               <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-4">
-                <img
+                <Image
                   src="/images/paul.png"
                   alt="Team Member 1"
                   className="rounded-full mb-4 mx-auto"
-                  style={{ width: '200px', height: '200px' }} 
+                  width={200}
+                  height={200}
                 />
                 <h3 className="text-lg sm:text-xl font-semibold">Pavlo Demenshyn</h3>
                 <p className="text-white">CEO & Founder</p>
               </div>
               <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-4">
-                <img
+                <Image
                   src="/images/val.png"
                   alt="Team Member 2"
                   className="rounded-full mb-4 mx-auto"
-                  style={{ width: '200px', height: '200px' }} 
+                  width={200}
+                  height={200}
                 />
                 <h3 className="text-lg sm:text-xl font-semibold">Valerii Kryshtal</h3>
                 <p className="text-white">Co-founder</p>
               </div>
               <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-4">
-                <img
+                <Image
                   src="/images/kate.png"
                   alt="Team Member 3"
                   className="rounded-full mb-4 mx-auto"
-                  style={{ width: '200px', height: '200px' }} 
+                  width={200}
+                  height={200}
                 />
                 <h3 className="text-lg sm:text-xl font-semibold">Kateryna Kovalenko</h3>
                 <p className="text-white">Creative Director & Co-founder</p>

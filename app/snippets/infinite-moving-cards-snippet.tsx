@@ -17,61 +17,54 @@ export function InfiniteMovingCardsDemo() {
 
 const testimonials = [
   {
-    quote:
-      "It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness, it was the epoch of belief, it was the epoch of incredulity, it was the season of Light, it was the season of Darkness, it was the spring of hope, it was the winter of despair.",
-    name: "Charles Dickens",
-    title: "A Tale of Two Cities",
+    quote: "The Clicks helped us turn our digital marketing around. Our website traffic doubled, and we started seeing real results in just a few months.",
+    name: "Alex Thompson",
+    title: "Owner, Thompson & Co."
   },
   {
-    quote:
-      "To be, or not to be, that is the question: Whether 'tis nobler in the mind to suffer The slings and arrows of outrageous fortune, Or to take Arms against a Sea of troubles, And by opposing end them: to die, to sleep.",
-    name: "William Shakespeare",
-    title: "Hamlet",
+    quote: "Their social media strategies were spot-on. We've seen a significant increase in engagement and our brand awareness has grown tremendously.",
+    name: "Megan Peters",
+    title: "Marketing Manager, GreenWave Solutions"
   },
   {
-    quote: "All that we see or seem is but a dream within a dream.",
-    name: "Edgar Allan Poe",
-    title: "A Dream Within a Dream",
+    quote: "We were struggling with our online presence, but The Clicks provided a clear and effective plan that improved our visibility and customer reach.",
+    name: "Brian Jackson",
+    title: "CEO, Jackson Enterprises"
   },
   {
-    quote:
-      "It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.",
-    name: "Jane Austen",
-    title: "Pride and Prejudice",
+    quote: "The team at The Clicks understood our needs and delivered a tailored strategy that exceeded our expectations. Our sales have increased by 30% since we started working with them.",
+    name: "Sophia Lee",
+    title: "Founder, Lee’s Boutique"
   },
   {
-    quote:
-      "Call me Ishmael. Some years ago—never mind how long precisely—having little or no money in my purse, and nothing particular to interest me on shore, I thought I would sail about a little and see the watery part of the world.",
-    name: "Herman Melville",
-    title: "Moby-Dick",
-  },
-   {
-    quote:
-      "It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness, it was the epoch of belief, it was the epoch of incredulity, it was the season of Light, it was the season of Darkness, it was the spring of hope, it was the winter of despair.",
-    name: "Charles Dickens",
-    title: "A Tale of Two Cities",
+    quote: "Their data-driven approach was exactly what we needed. We’ve seen a measurable improvement in our ROI thanks to their efforts.",
+    name: "Samuel Green",
+    title: "Director of Operations, FreshStart Inc."
   },
   {
-    quote:
-      "To be, or not to be, that is the question: Whether 'tis nobler in the mind to suffer The slings and arrows of outrageous fortune, Or to take Arms against a Sea of troubles, And by opposing end them: to die, to sleep.",
-    name: "William Shakespeare",
-    title: "Hamlet",
+    quote: "The Clicks transformed our online campaigns with innovative ideas and consistent support. We’re thrilled with the results.",
+    name: "Linda White",
+    title: "Co-Founder, EcoHarmony"
   },
   {
-    quote: "All that we see or seem is but a dream within a dream.",
-    name: "Edgar Allan Poe",
-    title: "A Dream Within a Dream",
+    quote: "Working with The Clicks has been a game-changer for our business. Their insights into our market have helped us to fine-tune our strategy and grow our client base.",
+    name: "David Johnson",
+    title: "Managing Director, BuildRight Construction"
   },
   {
-    quote:
-      "It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.",
-    name: "Jane Austen",
-    title: "Pride and Prejudice",
+    quote: "Their expertise in digital marketing has brought our brand to new heights. We’ve never been more visible online.",
+    name: "Olivia Harris",
+    title: "Chief Marketing Officer, PureEssentials"
   },
   {
-    quote:
-      "Call me Ishmael. Some years ago—never mind how long precisely—having little or no money in my purse, and nothing particular to interest me on shore, I thought I would sail about a little and see the watery part of the world.",
-    name: "Herman Melville",
-    title: "Moby-Dick",
+    quote: "The Clicks made a huge difference in our online strategy. We’ve seen a significant increase in traffic and leads since partnering with them.",
+    name: "Ethan Scott",
+    title: "Owner, Scott’s Landscaping"
   },
+  {
+    quote: "From the start, The Clicks has been attentive, professional, and effective. Our marketing efforts have never been stronger.",
+    name: "Grace Turner",
+    title: "CEO, TurnerTech Solutions"
+  }
 ];
+

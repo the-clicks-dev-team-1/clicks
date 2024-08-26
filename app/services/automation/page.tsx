@@ -2,6 +2,7 @@ import { FC } from "react";
 import Navbar from "@/components/navbar";
 import Footer from "@/app/footer";
 import Link from "next/link";
+import Image from "next/image";
 
 const MarketingAutomation: FC = () => {
   return (
@@ -76,10 +77,12 @@ const MarketingAutomation: FC = () => {
             </p>
           </div>
           <div className="relative w-full h-64 md:h-96">
-            <img
+            <Image
               src="/images/ma.jpg"
               alt="Marketing Automation Explanation"
-              className="object-cover h-full w-full rounded-lg"
+              layout="fill"
+              objectFit="cover"
+              className="rounded-lg"
             />
           </div>
         </div>
