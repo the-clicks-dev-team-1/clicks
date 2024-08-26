@@ -65,10 +65,10 @@ const ContentMarketing: FC = () => {
             <h2 className="text-2xl md:text-3xl font-semibold mb-6">What is Content Marketing and Why Does It Matter?</h2>
             <p className="text-lg mb-4">
               Content marketing is the practice of creating and sharing valuable, relevant, and consistent content to attract and engage a clearly defined audience. 
-              It's about delivering information that your audience cares about, which ultimately drives profitable customer actions.
+              It&apos;s about delivering information that your audience cares about, which ultimately drives profitable customer actions.
             </p>
             <p className="text-lg mb-4">
-              Whether it’s blog posts, videos, social media content, or eBooks, content marketing is a powerful tool for building trust and establishing your brand as an industry leader.
+              Whether it&apos;s blog posts, videos, social media content, or eBooks, content marketing is a powerful tool for building trust and establishing your brand as an industry leader.
             </p>
             <p className="text-lg">
               Our content marketing services are designed to help you create compelling content that not only engages your audience but also drives conversions and supports your overall marketing strategy.

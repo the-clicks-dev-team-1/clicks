@@ -1,7 +1,7 @@
 import { FC } from "react";
 import Navbar from "@/components/navbar";
-import Image from 'next/image';
-import Link from 'next/link';
+import Image from "next/image";
+import Link from "next/link";
 import TextBlock from "@/components/text-block";
 import Footer from "@/app/footer";
 import Form from "@/components/form";
@@ -22,12 +22,12 @@ const AboutAgency: FC = () => {
                 About The Clicks.
               </div>
               <p className="mt-4 text-sm md:text-m font-normal text-neutral-300 text-justify">
-                At The Clicks, we don't just focus on enhancing your website's visibility; 
+                At The Clicks, we don&apos;t just focus on enhancing your website&apos;s visibility; 
                 we partner with you to drive meaningful results that positively impact your bottom line. 
                 Our commitment to delivering tangible business outcomes is what sets us apart in the digital marketing landscape.
               </p>
               <p className="mt-4 text-sm md:text-m font-normal text-neutral-300 text-justify">
-                Our greatest asset is our team. We prioritize continuous learning and professional growth, ensuring that our employees are always at the forefront of the latest industry trends and practices. At The Clicks, we're more than just a marketing agency—we're a community, fostering a culture and mindset that empowers both our team and our clients to thrive.
+                Our greatest asset is our team. We prioritize continuous learning and professional growth, ensuring that our employees are always at the forefront of the latest industry trends and practices. At The Clicks, we&apos;re more than just a marketing agency—we&apos;re a community, fostering a culture and mindset that empowers both our team and our clients to thrive.
               </p>
               <div className="mt-6 md:mt-8 flex justify-center md:justify-start relative z-20">
                 <Link
@@ -99,11 +99,11 @@ const AboutAgency: FC = () => {
                 <h3 className="text-lg sm:text-xl font-semibold mb-2">Our Team</h3>
                 <p className="text-white text-sm md:text-m pb-6 text-justify">
                   At The Clicks, our team is a close-knit community of passionate and driven professionals who share a unified vision. 
-                  Each member embodies the spirit of a true "Clicker," characterized by ambition, responsibility, and a deep commitment to excellence. 
+                  Each member embodies the spirit of a true &quot;Clicker&quot;, characterized by ambition, responsibility, and a deep commitment to excellence. 
                   Our team is made up of experts who are not only skilled in their fields but also innovators who constantly push boundaries to explore new possibilities in digital marketing.
                 </p>
                 <p className="text-white text-sm md:text-m pb-6 text-justify">
-                  We cultivate an environment where equality and collaboration are paramount, ensuring that every team member's voice is heard and valued. 
+                  We cultivate an environment where equality and collaboration are paramount, ensuring that every team member&apos;s voice is heard and valued. 
                   While we thrive on teamwork, our culture also embraces ambition and healthy competition, which drives us to continually elevate our performance. 
                   This unique blend of camaraderie and individual drive empowers us to consistently deliver exceptional results for our clients, fostering an atmosphere of creativity, 
                   initiative, and ongoing growth.

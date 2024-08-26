@@ -14,7 +14,7 @@ export function ThreeDCardDemo() {
             translateZ="50"
             className="text-xl md:text-3xl font-bold text-white"
           >
-            Unlock Your Business's Full Potential with a Tailored Marketing Proposal
+            Unlock Your Business&apos;s Full Potential with a Tailored Marketing Proposal
           </CardItem>
           <CardItem
             as="p"
@@ -23,7 +23,7 @@ export function ThreeDCardDemo() {
           >
             Take our brief quiz and receive a customized marketing proposal, complete with a special bonus.
             Discover how our full-service digital marketing agency can help you achieve your goals and drive growth.
-            It's quick, easy, and tailored just for you.
+            It&apos;s quick, easy, and tailored just for you.
           </CardItem>
           <CardItem
             translateZ={20}

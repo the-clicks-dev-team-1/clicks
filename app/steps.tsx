@@ -21,7 +21,7 @@ const Steps = () => {
                 <Accordion type="single" collapsible>
                     <AccordionItem value="item-1">
                         <AccordionTrigger>
-                        1. Initial Meeting: Let's Get Acquainted
+                        1. Initial Meeting: Let&apos;s Get Acquainted
                         </AccordionTrigger>
                         <AccordionContent>
                             We start with a casual conversation to understand your business, goals, and objectives. 
@@ -35,7 +35,7 @@ const Steps = () => {
                         </AccordionTrigger>
                         <AccordionContent>
                         We conduct a detailed analysis of your current marketing strategies, evaluate competitors and the market. 
-                        We’ll review your website and social media presence to know exactly where to start.
+                        We&apos;ll review your website and social media presence to know exactly where to start.
                         </AccordionContent>
                     </AccordionItem>
 

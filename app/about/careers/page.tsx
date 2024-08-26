@@ -1,7 +1,7 @@
 import { FC } from "react";
 import Navbar from "@/components/navbar";
-import Image from 'next/image';
-import Link from 'next/link';
+import Image from "next/image";
+import Link from "next/link";
 import Footer from "@/app/footer";
 import Form from "@/components/form";
 
@@ -14,7 +14,7 @@ const Careers: FC = () => {
       <div className="bg-gradient-to-b from-sky-400 to-purple-500 py-20 text-center">
         <h1 className="text-4xl mt-10 md:text-6xl font-bold">Join Our Team</h1>
         <p className="mt-4 text-lg md:text-xl max-w-2xl mx-auto">
-          We're always looking for talented and passionate individuals to join our team. Explore our current job openings and find out more about life at The Clicks.
+          We&apos;re always looking for talented and passionate individuals to join our team. Explore our current job openings and find out more about life at The Clicks.
         </p>
       </div>
 
@@ -42,8 +42,8 @@ const Careers: FC = () => {
           <div className="bg-neutral-800 rounded-lg p-6">
             <h3 className="text-2xl font-bold">Digital Marketing Specialist</h3>
             <p className="mt-2 text-lg text-neutral-300">
-              Help us craft and implement effective marketing strategies to elevate our clients' brands. 
-              We're looking for a creative and data-driven marketing expert.
+              Help us craft and implement effective marketing strategies to elevate our clients&apos; brands. 
+              We&apos;re looking for a creative and data-driven marketing expert.
             </p>
             <Link 
               href="/careers/digital-marketing-specialist"
@@ -77,7 +77,7 @@ const Careers: FC = () => {
                 Whether you’re working on a challenging project or celebrating a team milestone, life at The Clicks is both rewarding and fulfilling.
               </p>
               <p className="mt-4 text-lg text-neutral-300">
-                We invest in our employees’ growth and provide opportunities for continuous learning, professional development, and career advancement. Join us, and let's build something amazing together!
+                We invest in our employees’ growth and provide opportunities for continuous learning, professional development, and career advancement. Join us, and let&apos;s build something amazing together!
               </p>
             </div>
           </div>

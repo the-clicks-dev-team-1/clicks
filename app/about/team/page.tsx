@@ -23,8 +23,8 @@ const Team: FC = () => {
                 Meet the Clickers Driving Success for Our Clients.
               </div>
               <p className="mt-4 text-sm md:text-m font-normal text-neutral-300 text-justify">
-                The Clicks team is a fusion of passion, experience, and innovation, where every "Clicker" 
-                is not just an employee but a driving force behind success. We are professionals who aren’t 
+                The Clicks team is a fusion of passion, experience, and innovation, where every &quot;Clicker&quot; 
+                is not just an employee but a driving force behind success. We are professionals who aren&apos;t 
                 afraid to challenge traditional marketing approaches, creating solutions that change the game. 
                 Our arsenal includes cutting-edge technologies, analytical methods, and creative strategies 
                 that help businesses attract, retain, and amaze their customers. Each Clicker brings their unique expertise, 

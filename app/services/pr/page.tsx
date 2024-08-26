@@ -13,7 +13,7 @@ const PR: FC = () => {
       <div className="bg-gradient-to-b from-sky-400 to-purple-500 py-20 text-center">
         <h1 className="text-3xl mt-10 md:text-5xl font-bold">Public Relations (PR) Services</h1>
         <p className="mt-4 text-lg md:text-xl max-w-2xl mx-auto">
-          Build your brand's reputation and connect with your audience through our strategic PR services.
+          Build your brand&apos;s reputation and connect with your audience through our strategic PR services.
         </p>
         <div className="mt-10 max-w-xl mx-auto">
           <h2 className="text-2xl font-semibold mb-4">Get a Free PR Consultation</h2>
@@ -69,11 +69,11 @@ const PR: FC = () => {
               and creating a positive image for your business.
             </p>
             <p className="text-lg mb-4">
-              In today’s highly connected world, having a strong PR strategy is essential for building brand credibility, 
+              In today&apos;s highly connected world, having a strong PR strategy is essential for building brand credibility, 
               gaining media coverage, and engaging with your audience effectively.
             </p>
             <p className="text-lg">
-              Our PR services are designed to help you craft compelling messages, reach your target audience, and enhance your brand’s reputation 
+              Our PR services are designed to help you craft compelling messages, reach your target audience, and enhance your brand&apos;s reputation 
               through strategic media relations and communication tactics.
             </p>
           </div>
@@ -94,25 +94,25 @@ const PR: FC = () => {
         <h2 className="text-2xl md:text-3xl font-semibold mb-6 text-center">Why PR Matters?</h2>
         <p className="text-lg text-center mb-10 max-w-3xl mx-auto">
           PR is crucial for building and maintaining a positive public image for your brand. With the right PR strategy, 
-          you can manage your brand’s reputation, connect with your audience, and ensure your message reaches the right people.
+          you can manage your brand&apos;s reputation, connect with your audience, and ensure your message reaches the right people.
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
           <div className="bg-neutral-800 p-6 rounded-lg">
             <h3 className="text-xl font-semibold mb-4">Reputation Management</h3>
             <p>
-              PR helps you manage your brand’s reputation by crafting positive narratives and handling negative publicity effectively.
+              PR helps you manage your brand&apos;s reputation by crafting positive narratives and handling negative publicity effectively.
             </p>
           </div>
           <div className="bg-neutral-800 p-6 rounded-lg">
             <h3 className="text-xl font-semibold mb-4">Media Relations</h3>
             <p>
-              Our media relations services help you secure positive media coverage, enhancing your brand’s visibility and credibility.
+              Our media relations services help you secure positive media coverage, enhancing your brand&apos;s visibility and credibility.
             </p>
           </div>
           <div className="bg-neutral-800 p-6 rounded-lg">
             <h3 className="text-xl font-semibold mb-4">Crisis Communication</h3>
             <p>
-              We help you manage communication during crises, ensuring that your brand’s message is clear, consistent, and positive.
+              We help you manage communication during crises, ensuring that your brand&apos;s message is clear, consistent, and positive.
             </p>
           </div>
         </div>
@@ -125,13 +125,13 @@ const PR: FC = () => {
           <div className="bg-neutral-800 p-6 rounded-lg">
             <h3 className="text-xl font-semibold mb-4">Media Relations</h3>
             <p>
-              We connect your brand with the media, securing interviews, press releases, and articles that enhance your brand’s visibility.
+              We connect your brand with the media, securing interviews, press releases, and articles that enhance your brand&apos;s visibility.
             </p>
           </div>
           <div className="bg-neutral-800 p-6 rounded-lg">
             <h3 className="text-xl font-semibold mb-4">Press Releases</h3>
             <p>
-              Our team crafts compelling press releases that capture the attention of journalists and promote your brand’s news and events.
+              Our team crafts compelling press releases that capture the attention of journalists and promote your brand&apos;s news and events.
             </p>
           </div>
           <div className="bg-neutral-800 p-6 rounded-lg">

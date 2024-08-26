@@ -13,7 +13,7 @@ const CRO: FC = () => {
       <div className="bg-gradient-to-b from-sky-400 to-purple-500 py-20 text-center">
         <h1 className="text-3xl mt-10 md:text-5xl font-bold">Conversion Rate Optimization (CRO) Services</h1>
         <p className="mt-4 text-lg md:text-xl max-w-2xl mx-auto">
-          Maximize your website's potential by converting more visitors into customers with our CRO services.
+          Maximize your website&apos;s potential by converting more visitors into customers with our CRO services.
         </p>
         <div className="mt-10 max-w-xl mx-auto">
           <h2 className="text-2xl font-semibold mb-4">Get a Free CRO Consultation</h2>
@@ -64,12 +64,12 @@ const CRO: FC = () => {
           <div>
             <h2 className="text-2xl md:text-3xl font-semibold mb-6">What is CRO and Why Does It Matter?</h2>
             <p className="text-lg mb-4">
-              Conversion Rate Optimization (CRO) is the process of improving your website's performance by increasing the percentage of visitors 
-              who take a desired action—whether it's making a purchase, filling out a form, or subscribing to a newsletter.
+              Conversion Rate Optimization (CRO) is the process of improving your website&apos;s performance by increasing the percentage of visitors 
+              who take a desired action—whether it&apos;s making a purchase, filling out a form, or subscribing to a newsletter.
             </p>
             <p className="text-lg mb-4">
               Instead of focusing solely on driving more traffic to your site, CRO focuses on making the most of your existing traffic. 
-              This means optimizing your website's layout, design, content, and functionality to convert visitors into customers.
+              This means optimizing your website&apos;s layout, design, content, and functionality to convert visitors into customers.
             </p>
             <p className="text-lg">
               Our CRO services are designed to analyze user behavior, identify barriers to conversion, and implement strategies that increase your conversion rate, 
@@ -163,7 +163,7 @@ const CRO: FC = () => {
       {/* Call to Action section */}
       <div className="py-20 px-4 md:px-20 lg:px-40 text-center bg-black">
         <h2 className="text-2xl md:text-3xl font-semibold mb-6">
-          Ready to Maximize Your Website's Potential?
+          Ready to Maximize Your Website&apos;s Potential?
         </h2>
         <p className="text-lg mb-8 max-w-2xl mx-auto">
           Contact us today to learn more about our CRO services and how we can help you increase conversions and drive more revenue.
