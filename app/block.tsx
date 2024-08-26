@@ -26,4 +26,4 @@ const Block: React.FC = () => {
     );
 }
 
-export default Block
+export default Block;
