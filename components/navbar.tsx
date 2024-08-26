@@ -27,7 +27,7 @@ const navItems: NavItem[] = [
     { label: "Home", link: "/" },
     {
         label: "Services",
-        link: "/services",
+        link: "#",
         children: [
             { label: "Web Development", link: "/services/webdev", iconImage: MdDeveloperMode },
             { label: "Strategy Development", link: "/services/stratdev", iconImage: PiStrategy },
