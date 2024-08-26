@@ -21,7 +21,7 @@ const BlogPost: FC<PostProps> = ({ params }) => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const accessToken = process.env.NEXT_PUBLIC_CONTENTFUL_ACCESS_TOKEN;
+        const accessToken = process.env.CONTENTFUL_ACCESS_TOKEN;
         if (!accessToken) {
           console.error('Expected parameter accessToken is missing.');
           throw new Error('Expected parameter accessToken');
