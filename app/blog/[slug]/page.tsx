@@ -21,11 +21,17 @@ const BlogPost: FC<PostProps> = ({ params }) => {
   useEffect(() => {
     const fetchData = async () => {
       try {
+        const accessToken = process.env.NEXT_PUBLIC_CONTENTFUL_ACCESS_TOKEN;
+        if (!accessToken) {
+          console.error('Expected parameter accessToken is missing.');
+          throw new Error('Expected parameter accessToken');
+        }
+  
         const entries = await client.getEntries({
           content_type: 'blogPost',
           'fields.slug': params.slug,
         });
-
+  
         if (entries.items.length > 0) {
           setPost(entries.items[0]);
         } else {
@@ -38,9 +44,9 @@ const BlogPost: FC<PostProps> = ({ params }) => {
         setLoading(false);
       }
     };
-
+  
     fetchData();
-  }, [params.slug]);
+  }, [params.slug]);  
 
   if (loading) {
     return <div>Loading...</div>;
