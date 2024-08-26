@@ -8,6 +8,7 @@ import Form from "@/components/form";
 import Image from 'next/image';
 import ReactMarkdown from 'react-markdown';
 import rehypeRaw from 'rehype-raw'; // Для обработки HTML внутри Markdown (при необходимости)
+import { space } from 'postcss/lib/list';
 
 type PostProps = {
   params: { slug: string };
@@ -21,8 +22,9 @@ const BlogPost: FC<PostProps> = ({ params }) => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const accessToken = process.env.CONTENTFUL_ACCESS_TOKEN;
-        if (!accessToken) {
+        const space = process.env.NEXT_PUBLIC_CONTENTFUL_SPACE_ID;
+        const accessToken = process.env.NEXT_PUBLIC_CONTENTFUL_ACCESS_TOKEN;
+        if (!space && accessToken) {
           console.error('Expected parameter accessToken is missing.');
           throw new Error('Expected parameter accessToken');
         }
