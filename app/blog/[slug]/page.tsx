@@ -4,11 +4,10 @@ import { FC, useEffect, useState } from 'react';
 import client from "@/lib/contentful";
 import Navbar from "@/components/navbar";
 import Footer from "@/app/footer";
-import Form from "@/components/ui/form";
+import ContactBlock from "@/app/contactBlock";
 import Image from 'next/image';
 import ReactMarkdown from 'react-markdown';
-import rehypeRaw from 'rehype-raw'; // Для обработки HTML внутри Markdown (при необходимости)
-import { space } from 'postcss/lib/list';
+import rehypeRaw from 'rehype-raw';
 
 type PostProps = {
   params: { slug: string };
@@ -24,29 +23,29 @@ const BlogPost: FC<PostProps> = ({ params }) => {
       try {
         const space = process.env.NEXT_PUBLIC_CONTENTFUL_SPACE_ID;
         const accessToken = process.env.NEXT_PUBLIC_CONTENTFUL_ACCESS_TOKEN;
-        if (!space && accessToken) {
-          console.error('Expected parameter accessToken is missing.');
-          throw new Error('Expected parameter accessToken');
+        if (!space || !accessToken) {
+          console.error('Expected parameters space or accessToken are missing.');
+          throw new Error('Expected parameters space or accessToken are missing');
         }
-  
+
         const entries = await client.getEntries({
           content_type: 'blogPost',
           'fields.slug': params.slug,
         });
-  
+
         if (entries.items.length > 0) {
           setPost(entries.items[0]);
         } else {
           setError(true);
         }
       } catch (error) {
-        console.error("Ошибка получения данных с Contentful:", error);
+        console.error("Ошибка получения данных c Contentful:", error);
         setError(true);
       } finally {
         setLoading(false);
       }
     };
-  
+
     fetchData();
   }, [params.slug]);  
 
@@ -100,7 +99,7 @@ const BlogPost: FC<PostProps> = ({ params }) => {
         )}
       </div>
 
-      <Form />
+      <ContactBlock />
       <Footer />
     </div>
   );

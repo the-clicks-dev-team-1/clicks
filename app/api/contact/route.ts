@@ -32,7 +32,7 @@ export async function POST(req: Request) {
 
       const mailOptions = {
         from: email,
-        to: "p.demenshyn@theclicks.ca",
+        to: "sales@theclicks.ca",
         subject: "Contact Form Submission",
         html: `
                     <h1>Contact Form</h1>
