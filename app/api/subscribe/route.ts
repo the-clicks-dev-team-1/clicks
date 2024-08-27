@@ -1,9 +1,11 @@
+// app/api/subscribe/route.ts
+
 import { NextResponse } from 'next/server';
 import mailchimp from '@mailchimp/mailchimp_marketing';
 
 mailchimp.setConfig({
-  apiKey: process.env.MAILCHIMP_API_KEY || '', // Используем пустую строку как значение по умолчанию
-  server: process.env.MAILCHIMP_SERVER_PREFIX || '', // Используем пустую строку как значение по умолчанию
+  apiKey: process.env.MAILCHIMP_API_KEY,
+  server: process.env.MAILCHIMP_SERVER_PREFIX,
 });
 
 export async function POST(req: Request) {
@@ -14,22 +16,15 @@ export async function POST(req: Request) {
       return NextResponse.json({ error: 'Email is required' }, { status: 400 });
     }
 
-    const audienceId = process.env.MAILCHIMP_AUDIENCE_ID || ''; // Используем пустую строку как значение по умолчанию
-
-    if (!audienceId) {
-      throw new Error('Mailchimp Audience ID is not defined');
-    }
-
-    // Подписка пользователя на список рассылки в Mailchimp
-    const response = await mailchimp.lists.addListMember(audienceId, {
+    const response = await mailchimp.lists.addListMember(process.env.MAILCHIMP_AUDIENCE_ID as string, {
       email_address: email,
       status: 'subscribed',
     });
 
-    return NextResponse.json({ message: 'Subscription successful!', response });
+    return NextResponse.json({ message: 'Subscription successful!', data: response });
   } catch (error) {
     console.error('Error processing request:', error);
-    return NextResponse.json({ error: 'Failed to process request' }, { status: 500 });
+    return NextResponse.json({ error: 'Failed to process request', details: error }, { status: 500 });
   }
 }
 
