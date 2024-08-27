@@ -2,7 +2,7 @@ import { FC } from "react";
 import Navbar from "@/components/navbar";
 import Footer from "@/app/footer";
 import Link from "next/link";
-import Form from "@/components/form";
+import ContactBlock from "@/app/contactBlock";
 
 const Contact: FC = () => {
   return (
@@ -13,11 +13,11 @@ const Contact: FC = () => {
       <div className="bg-gradient-to-b from-sky-400 to-purple-500 py-20 text-center">
         <h1 className="mt-10 text-3xl md:text-5xl font-bold">Contact Us</h1>
         <p className="mt-4 text-lg md:text-xl max-w-2xl mx-auto">
-          Let’s talk! We’re here to help you grow your business. Reach out to us for any inquiries, and we’ll get back to you as soon as possible.
+          Let&apos;s talk! We&apos;re here to help you grow your business. Reach out to us for any inquiries, and we&apos;ll get back to you as soon as possible.
         </p>
       </div>
 
-      <Form />
+      <ContactBlock/>
 
       {/* Map Section */}
       <div className="bg-black py-20">

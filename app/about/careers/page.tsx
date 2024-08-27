@@ -3,7 +3,8 @@ import Navbar from "@/components/navbar";
 import Image from "next/image";
 import Link from "next/link";
 import Footer from "@/app/footer";
-import Form from "@/components/form";
+import ContactBlock from "@/app/contactBlock";
+
 
 const Careers: FC = () => {
   return (
@@ -111,7 +112,7 @@ const Careers: FC = () => {
       </div>
 
       {/* Contact Form Section */}
-      <Form />
+      <ContactBlock />
 
       {/* Footer */}
       <Footer />

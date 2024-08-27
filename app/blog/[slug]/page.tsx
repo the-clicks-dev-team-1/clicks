@@ -4,7 +4,7 @@ import { FC, useEffect, useState } from 'react';
 import client from "@/lib/contentful";
 import Navbar from "@/components/navbar";
 import Footer from "@/app/footer";
-import Form from "@/components/form";
+import Form from "@/components/ui/form";
 import Image from 'next/image';
 import ReactMarkdown from 'react-markdown';
 import rehypeRaw from 'rehype-raw'; // Для обработки HTML внутри Markdown (при необходимости)

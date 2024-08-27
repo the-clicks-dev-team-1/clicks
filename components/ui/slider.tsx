@@ -37,8 +37,8 @@ const SliderOne = () => {
                     priority
                     src="/images/partners-logos/bptw.png"
                     alt="logo"
-                    width={500}
-                    height={500}
+                    width={200}
+                    height={200}
                     className='rounded-2xl'
                     />
                 </div>
@@ -49,8 +49,8 @@ const SliderOne = () => {
                     priority
                     src="/images/partners-logos/google_cloud.png"
                     alt="logo"
-                    width={500}
-                    height={500}
+                    width={200}
+                    height={200}
                     className='rounded-2xl'
                     />
                 </div>
@@ -61,8 +61,8 @@ const SliderOne = () => {
                     priority
                     src="/images/partners-logos/meta-business-partners.png"
                     alt="logo"
-                    width={500}
-                    height={500}
+                    width={200}
+                    height={200}
                     className='rounded-2xl'
                     />
                 </div>
@@ -73,8 +73,8 @@ const SliderOne = () => {
                     priority
                     src="/images/partners-logos/microsoft-advertising-partner.png"
                     alt="logo"
-                    width={500}
-                    height={500}
+                    width={200}
+                    height={200}
                     className='rounded-2xl'
                     />
                 </div>
@@ -85,8 +85,8 @@ const SliderOne = () => {
                     priority
                     src="/images/partners-logos/shopify-partner.png"
                     alt="logo"
-                    width={500}
-                    height={500}
+                    width={200}
+                    height={200}
                     className='rounded-2xl'
                     />
                 </div>

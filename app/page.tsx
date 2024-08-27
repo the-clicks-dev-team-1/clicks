@@ -9,7 +9,7 @@ import Footer from "./footer";
 import Block2 from "./block2";
 import Block3 from "./block3";
 import Steps from "./steps";
-import Form from "@/components/form";
+import ContactBlock from "./contactBlock";
 
 export default function Home() {
   return (
@@ -42,7 +42,7 @@ export default function Home() {
           <Services />
           <Steps />
           <Reviews />
-          <Form />
+          <ContactBlock />
           <Footer />
         </div>
       </div>

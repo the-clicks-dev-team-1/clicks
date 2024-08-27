@@ -5,7 +5,8 @@ import Link from 'next/link';
 import TextBlock from "@/components/text-block";
 import Footer from "@/app/footer";
 import Block4 from "@/app/block4";
-import Form from "@/components/form";
+import ContactBlock from "@/app/contactBlock";
+
 
 const Team: FC = () => {
   return (
@@ -128,7 +129,7 @@ const Team: FC = () => {
         </div>
 
         {/* Contact Form Section */}
-        <Form />
+        <ContactBlock />
 
         {/* Footer */}
         <Footer />

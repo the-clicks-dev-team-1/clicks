@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import TextBlock from "@/components/text-block";
 import Footer from "@/app/footer";
-import Form from "@/components/form";
+import ContactBlock from "@/app/contactBlock";
 
 const AboutAgency: FC = () => {
   return (
@@ -197,7 +197,7 @@ const AboutAgency: FC = () => {
         </div>
 
         {/* Contact Form Section */}
-        <Form />
+        <ContactBlock/>
         
         {/* Footer */}
         <Footer />

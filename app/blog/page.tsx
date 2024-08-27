@@ -5,8 +5,8 @@ import Navbar from "@/components/navbar";
 import Image from 'next/image';
 import Link from 'next/link';
 import Footer from "@/app/footer";
-import Form from "@/components/form";
 import client from "@/lib/contentful"; // Импортируем клиент Contentful
+import ContactBlock from "../contactBlock";
 
 const Blog: FC = () => {
   const [posts, setPosts] = useState<any[]>([]);
@@ -147,7 +147,7 @@ const Blog: FC = () => {
       </div>
 
       {/* Contact Form Section */}
-      <Form />
+      <ContactBlock/>
 
       {/* Footer */}
       <Footer />

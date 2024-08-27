@@ -12,7 +12,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import Form from "@/components/form";
+import ContactBlock from "../contactBlock";
 
 const plans = [
     {
@@ -388,7 +388,7 @@ const plans = [
           </div>
         </div>
       
-        <Form />
+        <ContactBlock />
         <Footer />
       </div>
     );
