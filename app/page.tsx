@@ -28,7 +28,7 @@ export default function Home() {
         </p>
         <div className="flex justify-center mt-2"> {/* Add a flex container here to center the button */}
         <Link
-                href="/contact"
+                href="/book"
                 className="inline-block bg-gradient-to-r from-sky-400 to-purple-500 text-white font-bold py-3 px-6 rounded-lg shadow-lg hover:bg-opacity-75 transition duration-300"
               >
                 Book A Call
@@ -37,7 +37,7 @@ export default function Home() {
         <div className="w-full pt-20 ">
           <SliderOne />
           <Block />
-          <Block2 />
+          <Block2 /> 
           <Block3 />
           <Services />
           <Steps />

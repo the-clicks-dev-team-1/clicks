@@ -109,9 +109,11 @@ export default function Navbar() {
                 </div>
 
                 <div className="hidden md:flex flex-1 justify-end items-center">
-                    <button className="px-4 py-2 animate-shimmer items-center justify-center rounded-2xl border border-white bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
-                        Let&apos;s Talk
-                    </button>
+                    <Link href="/book">
+                        <button className="px-4 py-2 animate-shimmer items-center justify-center rounded-2xl border border-white bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
+                            Let&apos;s Talk
+                        </button>
+                    </Link>
                 </div>
 
                 <FiMenu onClick={() => setSideMenu(true)} className="cursor-pointer text-4xl md:hidden" />
@@ -135,9 +137,11 @@ function MobileNav({ closeSideMenu }: { closeSideMenu: () => void }) {
                     ))}
                 </div>
                 <section className="mt-4 flex flex-col items-center gap-8">
-                    <button onClick={closeSideMenu} className="w-full max-w-[200px] px-4 py-2 animate-shimmer items-center justify-center rounded-2xl border border-white bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
-                        Let&apos;s Talk
-                    </button>
+                    <Link href="/book">
+                        <button onClick={closeSideMenu} className="w-full max-w-[200px] px-4 py-2 animate-shimmer items-center justify-center rounded-2xl border border-white bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
+                            Let&apos;s Talk
+                        </button>
+                    </Link>
                 </section>
             </div>
         </div>

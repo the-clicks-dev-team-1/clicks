@@ -260,7 +260,7 @@ const plans = [
                 <div className={plan.button}>
                   {index === 0 && (
                     <Link
-                      href="https://buy.stripe.com/6oEg1WdsibFr1EYbIK"
+                      href="https://buy.stripe.com/test_fZe9Ci73m8Ha8UgbII"
                       className="rounded-3xl my-4 py-2 text-white w-full mx-auto items-center flex justify-center"
                       style={{
                         background: "linear-gradient(270deg, #084378, #0A437A, #483BB5, #347BB8, #12A6C8)",
@@ -271,7 +271,7 @@ const plans = [
                   )}
                   {index === 1 && (
                     <Link
-                      href="https://buy.stripe.com/14k2b65ZQ8tf5Ve28c"
+                      href="https://buy.stripe.com/test_9AQ6q6cnG5uY9Yk5kl"
                       className="rounded-3xl my-4 py-2 text-white w-full mx-auto items-center flex justify-center"
                       style={{
                         background: "linear-gradient(270deg, #084378, #0A437A, #483BB5, #347BB8, #12A6C8)",
@@ -323,7 +323,7 @@ const plans = [
                     <div className="whitespace-pre-line text-sm pt-2 text-white">{offer.price_description}</div>
                     <div className="mt-4">
                       <Link
-                        href="#"
+                        href="/contact"
                         className="rounded-3xl my-4 py-2 text-white w-full mx-auto items-center flex justify-center"
                         style={{
                           background: "linear-gradient(270deg, #084378, #0A437A, #483BB5, #347BB8, #12A6C8)",
