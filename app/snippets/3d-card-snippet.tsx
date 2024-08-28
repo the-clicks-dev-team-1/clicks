@@ -4,7 +4,6 @@ import Image from "next/image";
 import React from "react";
 import { CardBody, CardContainer, CardItem } from "@/components/ui/3d-card";
 
-
 export function ThreeDCardDemo() {
   return (
     <CardContainer className="inter-var w-full max-w-none relative mx-4 md:mx-8 lg:mx-24">

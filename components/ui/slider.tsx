@@ -1,5 +1,6 @@
 'use client';
 
+import { useState, useEffect } from 'react';
 import Slider from 'react-slick';
 import Image from 'next/image';
 import { useMediaQuery } from 'react-responsive'; 
@@ -8,6 +9,11 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
 const SliderOne = () => {
+    const [isClient, setIsClient] = useState(false);
+
+    useEffect(() => {
+        setIsClient(true);
+    }, []);
 
     const isMediumScreen = useMediaQuery({ minWidth: 768, maxWidth: 1023 });    
     const isSmallScreen = useMediaQuery({ maxWidth: 767 });
@@ -15,7 +21,7 @@ const SliderOne = () => {
     const settings = {
         arrows: false,
         infinite: true,
-        slidesToShow: 3,
+        slidesToShow: 5,
         autoplay: true,
         speed: 4000,
         autoplaySpeed: 1000,
@@ -28,71 +34,113 @@ const SliderOne = () => {
         settings.slidesToShow = 1;
     }
 
-    return ( 
-    <div>
-        <Slider {...settings}>
-            <>
-                <div className='rounded-md px-2 md:p-10'>
-                    <Image
-                    priority
-                    src="/images/partners-logos/bptw.png"
-                    alt="logo"
-                    width={200}
-                    height={200}
-                    className='rounded-2xl'
-                    />
-                </div>
-            </>
-            <>
-                <div className='rounded-md px-2 md:p-10'>
-                    <Image
-                    priority
-                    src="/images/partners-logos/google_cloud.png"
-                    alt="logo"
-                    width={200}
-                    height={200}
-                    className='rounded-2xl'
-                    />
-                </div>
-            </>
-            <>
-                <div className='rounded-md px-2 md:p-10'>
-                    <Image
-                    priority
-                    src="/images/partners-logos/meta-business-partners.png"
-                    alt="logo"
-                    width={200}
-                    height={200}
-                    className='rounded-2xl'
-                    />
-                </div>
-            </>
-            <>
-                <div className='rounded-md px-2 md:p-10'>
-                    <Image
-                    priority
-                    src="/images/partners-logos/microsoft-advertising-partner.png"
-                    alt="logo"
-                    width={200}
-                    height={200}
-                    className='rounded-2xl'
-                    />
-                </div>
-            </>
-            <>
-                <div className='rounded-md px-2 md:p-10'>
-                    <Image
-                    priority
-                    src="/images/partners-logos/shopify-partner.png"
-                    alt="logo"
-                    width={200}
-                    height={200}
-                    className='rounded-2xl'
-                    />
-                </div>
-            </>
-        </Slider>
-    </div> );
+    if (!isClient) {
+        // Рендеринг простого содержимого на сервере для избежания ошибки гидратации
+        return <div>Loading...</div>;
+    }
+
+    return (
+        <div>
+            <Slider {...settings}>
+                <>
+                    <div className={`flex justify-center items-center px-2 md:p-10 ${isSmallScreen ? 'bg-gradient-to-b from-sky-400 to-purple-500 backdrop-blur-md' : ''}`}>
+                        <Image
+                            priority
+                            src="/images/partners-logos/openai.png"
+                            alt="OpenAI Logo"
+                            width={500}
+                            height={500}
+                            className='object-contain'
+                        />
+                    </div>
+                </>
+                <>
+                    <div className={`flex justify-center items-center px-2 md:p-10 ${isSmallScreen ? 'bg-gradient-to-b from-sky-400 to-purple-500 backdrop-blur-md' : ''}`}>
+                        <Image
+                            priority
+                            src="/images/partners-logos/github.png"
+                            alt="GitHub Logo"
+                            width={500}
+                            height={500}
+                            className='object-contain'
+                        />
+                    </div>
+                </>
+                <>
+                    <div className={`flex justify-center items-center px-2 md:p-10 ${isSmallScreen ? 'bg-gradient-to-b from-sky-400 to-purple-500 backdrop-blur-md' : ''}`}>
+                        <Image
+                            priority
+                            src="/images/partners-logos/monday.png"
+                            alt="Monday Logo"
+                            width={500}
+                            height={500}
+                            className='object-contain'
+                        />
+                    </div>
+                </>
+                <>
+                    <div className={`flex justify-center items-center px-2 md:p-10 ${isSmallScreen ? 'bg-gradient-to-b from-sky-400 to-purple-500 backdrop-blur-md' : ''}`}>
+                        <Image
+                            priority
+                            src="/images/partners-logos/nextjs.png"
+                            alt="Next.js Logo"
+                            width={500}
+                            height={500}
+                            className='object-contain'
+                        />
+                    </div>
+                </>
+                <>
+                    <div className={`flex justify-center items-center px-2 md:p-10 ${isSmallScreen ? 'bg-gradient-to-b from-sky-400 to-purple-500 backdrop-blur-md' : ''}`}>
+                        <Image
+                            priority
+                            src="/images/partners-logos/mailchimp.png"
+                            alt="Mailchimp Logo"
+                            width={500}
+                            height={500}
+                            className='object-contain'
+                        />
+                    </div>
+                </>
+                <>
+                    <div className={`flex justify-center items-center px-2 md:p-10 ${isSmallScreen ? 'bg-gradient-to-b from-sky-400 to-purple-500 backdrop-blur-md' : ''}`}>
+                        <Image
+                            priority
+                            src="/images/partners-logos/adobe.png"
+                            alt="Adobe Logo"
+                            width={500}
+                            height={500}
+                            className='object-contain'
+                        />
+                    </div>
+                </>
+                <>
+                    <div className={`flex justify-center items-center px-2 md:p-10 ${isSmallScreen ? 'bg-gradient-to-b from-sky-400 to-purple-500 backdrop-blur-md' : ''}`}>
+                        <Image
+                            priority
+                            src="/images/partners-logos/strapi.png"
+                            alt="Strapi Logo"
+                            width={500}
+                            height={500}
+                            className='object-contain'
+                        />
+                    </div>
+                </>
+                <>
+                    <div className={`flex justify-center items-center px-2 md:p-10 ${isSmallScreen ? 'bg-gradient-to-b from-sky-400 to-purple-500 backdrop-blur-md' : ''}`}>
+                        <Image
+                            priority
+                            src="/images/partners-logos/contentful.png"
+                            alt="Contentful Logo"
+                            width={500}
+                            height={500}
+                            className='object-contain'
+                        />
+                    </div>
+                </>
+            </Slider>
+        </div>
+    );
 }
- 
+
 export default SliderOne;
