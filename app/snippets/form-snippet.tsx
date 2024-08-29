@@ -144,7 +144,7 @@ export default function ContactForm() {
                           First name *
                         </FormLabel>
                         <FormControl>
-                          <Input {...field} />
+                          <Input {...field} className="text-black" />
                         </FormControl>
                       </FormItem>
                     )}
@@ -159,7 +159,7 @@ export default function ContactForm() {
                           Last name *
                         </FormLabel>
                         <FormControl>
-                          <Input {...field} />
+                          <Input {...field} className="text-black" />
                         </FormControl>
                       </FormItem>
                     )}
@@ -172,10 +172,10 @@ export default function ContactForm() {
                   render={({ field }) => (
                     <FormItem className="items-center justify-center w-full">
                       <FormLabel className="text-sm bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50">
-                        Email *
+                      Email *
                       </FormLabel>
                       <FormControl>
-                        <Input {...field} />
+                        <Input {...field} className="text-black" />
                       </FormControl>
                     </FormItem>
                   )}
@@ -187,10 +187,10 @@ export default function ContactForm() {
                   render={({ field }) => (
                     <FormItem className="items-center justify-center w-full">
                       <FormLabel className="text-sm bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50">
-                        Company name?
+                        Company name
                       </FormLabel>
                       <FormControl>
-                        <Input {...field} />
+                        <Input {...field} className="text-black" />
                       </FormControl>
                     </FormItem>
                   )}
