@@ -228,7 +228,7 @@ const plans = [
         <Navbar />
         <div className="flex items-center justify-center flex-col">
           <div className="text-4xl md:text-5xl py-8 md:py-20 text-slate-300 px-6 text-center bg-clip-text text-transparent bg-gradient-to-b from-sky-400 to bg-purple-500 bg-opacity-50">
-            Simple Pricing <br /> Choose your plan
+            <h1>Simple Pricing <br /> Choose your plan</h1>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 px-6 md:w-4/5 2xl:w-3/4 cursor-pointer pb-10 md:pb-20 items-center">
             {plans.map((plan, index) => (

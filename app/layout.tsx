@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
+import { GoogleTagManager } from "@next/third-parties/google";
 
 const font = Poppins({
   subsets: ["latin"],
@@ -20,9 +21,19 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <GoogleTagManager gtmId="GTM-588PZWKW" />
         <link rel="icon" href="/app/favicon.ico" /> 
       </head>
-      <body className={font.className}>{children}</body>
+      <body className={font.className}>
+        <noscript>
+          <iframe 
+            src="https://www.googletagmanager.com/ns.html?id=GTM-588PZWKW"
+            height="0" 
+            width="0" 
+            style={{ display:"none", visibility:"hidden" }}
+          ></iframe>
+        </noscript>
+      {children}</body>
     </html>
   );
 }

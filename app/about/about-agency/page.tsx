@@ -19,7 +19,7 @@ const AboutAgency: FC = () => {
           <div className="flex flex-col mt-10 md:flex-row items-center justify-center">
             <div className="w-full md:w-1/2 px-4 md:px-16 text-center md:text-left">
               <div className="text-2xl md:text-4xl bg-clip-text text-transparent bg-gradient-to-b from-sky-400 to bg-purple-500 bg-opacity-50">
-                About The Clicks.
+                <h1>About The Clicks</h1>
               </div>
               <p className="mt-4 text-sm md:text-m font-normal text-neutral-300 text-justify">
                 At The Clicks, we don&apos;t just focus on enhancing your website&apos;s visibility; 

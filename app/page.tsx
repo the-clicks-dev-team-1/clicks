@@ -21,7 +21,7 @@ export default function Home() {
       />
       <div className="p-4 mx-auto relative z-10 w-full pt-32 md:pt-40 px-2"> {/* Adjusted padding here */}
         <div className="text-4xl pb-5 md:text-7xl px-6 text-center bg-clip-text text-transparent bg-gradient-to-b from-sky-400 to bg-purple-500 bg-opacity-50">
-          Transform your business <br /> with artificial intelligence
+          <h1>Transform your business <br /> with artificial intelligence</h1>
         </div>
         <p className="mt-4 text-lg font-normal text-neutral-300 max-w-lg text-center mx-auto px-4">
           Revolutionize operations, optimize processes, and drive growth with smarter decisions and innovation.
