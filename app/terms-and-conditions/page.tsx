@@ -12,7 +12,7 @@ const TermsAndConditions: FC = () => {
       <div className="bg-gradient-to-b from-sky-400 to-purple-500 py-20 text-center">
         <h1 className="text-4xl mt-10 md:text-6xl font-bold">Terms & Conditions</h1>
         <p className="mt-4 text-lg md:text-xl max-w-2xl mx-auto">
-          Please read these Terms and Conditions ("Terms", "Terms and Conditions") carefully before using The Clicks Full-Service Digital Marketing Agency website.
+          Please read these Terms and Conditions (&quot;Terms&quot;, &quot;Terms and Conditions&quot;) carefully before using The Clicks Full-Service Digital Marketing Agency website.
         </p>
       </div>
 
@@ -34,7 +34,7 @@ const TermsAndConditions: FC = () => {
         <section className="mb-10">
           <h2 className="text-3xl font-semibold mb-4">3. Use of Service</h2>
           <p className="text-neutral-300">
-            You agree to use the website only for lawful purposes and in a way that does not infringe the rights of others or restrict or inhibit anyone else's use of the website.
+            You agree to use the website only for lawful purposes and in a way that does not infringe the rights of others or restrict or inhibit anyone else use of the website.
           </p>
         </section>
 
@@ -55,7 +55,7 @@ const TermsAndConditions: FC = () => {
         <section className="mb-10">
           <h2 className="text-3xl font-semibold mb-4">6. Changes to Terms</h2>
           <p className="text-neutral-300">
-            We reserve the right to modify or replace these Terms at any time. If a revision is material, we will try to provide at least 30 days' notice before any new terms take effect. What constitutes a material change will be determined at our sole discretion.
+            We reserve the right to modify or replace these Terms at any time. If a revision is material, we will try to provide at least 30 days notice before any new terms take effect. What constitutes a material change will be determined at our sole discretion.
           </p>
         </section>
 
