@@ -4,9 +4,16 @@ import Image from "next/image";
 import Link from "next/link";
 import Footer from "@/app/footer";
 import ContactBlock from "@/app/contactBlock";
+import client from "@/lib/contentful";
 
+const fetchJobs = async () => {
+  const res = await client.getEntries({ content_type: "jobOpening" });
+  return res.items;
+};
 
-const Careers: FC = () => {
+const Careers: FC = async () => {
+  const jobs = await fetchJobs();
+
   return (
     <div className="bg-black text-white">
       <Navbar />
@@ -24,37 +31,22 @@ const Careers: FC = () => {
         <h2 className="text-3xl font-semibold mb-10 text-center">Current Job Openings</h2>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-          {/* Example Job Position */}
-          <div className="bg-neutral-800 rounded-lg p-6">
-            <h3 className="text-2xl font-bold">Frontend Developer</h3>
-            <p className="mt-2 text-lg text-neutral-300">
-              We are looking for a talented frontend developer who is passionate about building scalable web applications. 
-              Join our team and help us create amazing digital experiences.
-            </p>
-            <Link 
-              href="/careers/frontend-developer"
-              className="inline-block mt-4 bg-gradient-to-r from-sky-400 to-purple-500 text-white font-bold py-2 px-4 rounded-lg shadow-lg hover:bg-opacity-75 transition duration-300"
-            >
-              Learn More
-            </Link>
-          </div>
-
-          {/* Repeat for other positions */}
-          <div className="bg-neutral-800 rounded-lg p-6">
-            <h3 className="text-2xl font-bold">Digital Marketing Specialist</h3>
-            <p className="mt-2 text-lg text-neutral-300">
-              Help us craft and implement effective marketing strategies to elevate our clients&apos; brands. 
-              We&apos;re looking for a creative and data-driven marketing expert.
-            </p>
-            <Link 
-              href="/careers/digital-marketing-specialist"
-              className="inline-block mt-4 bg-gradient-to-r from-sky-400 to-purple-500 text-white font-bold py-2 px-4 rounded-lg shadow-lg hover:bg-opacity-75 transition duration-300"
-            >
-              Learn More
-            </Link>
-          </div>
-
-          {/* Add more job positions as needed */}
+          {jobs.map((job) => (
+            <div key={job.sys.id} className="bg-neutral-800 rounded-lg p-6">
+              <h3 className="text-2xl font-bold">
+                {typeof job.fields.title === 'string' ? job.fields.title : ''}
+              </h3>
+              <p className="mt-2 text-lg text-neutral-300">
+                {typeof job.fields.shortDescription === 'string' ? job.fields.shortDescription : ''}
+              </p>
+              <Link 
+                href={`/about/careers/${job.fields.slug}`} // исправлено
+                className="inline-block mt-4 bg-gradient-to-r from-sky-400 to-purple-500 text-white font-bold py-2 px-4 rounded-lg shadow-lg hover:bg-opacity-75 transition duration-300"
+              >
+                Learn More
+              </Link>
+            </div>
+          ))}
         </div>
       </div>
 
@@ -75,10 +67,10 @@ const Careers: FC = () => {
             <div className="flex flex-col justify-center">
               <p className="text-lg text-neutral-300">
                 At The Clicks, we believe that our people are our greatest asset. We foster a collaborative, inclusive, and dynamic work environment where creativity and innovation thrive. 
-                Whether you’re working on a challenging project or celebrating a team milestone, life at The Clicks is both rewarding and fulfilling.
+                Whether you&apos;re working on a challenging project or celebrating a team milestone, life at The Clicks is both rewarding and fulfilling.
               </p>
               <p className="mt-4 text-lg text-neutral-300">
-                We invest in our employees’ growth and provide opportunities for continuous learning, professional development, and career advancement. Join us, and let&apos;s build something amazing together!
+                We invest in our employees&apos; growth and provide opportunities for continuous learning, professional development, and career advancement. Join us, and let&apos;s build something amazing together!
               </p>
             </div>
           </div>
