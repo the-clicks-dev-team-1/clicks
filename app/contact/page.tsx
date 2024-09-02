@@ -25,9 +25,10 @@ const Contact: FC = () => {
           <h2 className="text-2xl md:text-3xl font-semibold mb-6 text-center">Our Location</h2>
           <div className="w-full h-96 bg-black rounded-lg overflow-hidden relative">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.8354346826157!2d-122.41941548468194!3d37.774929279759596!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085808eafbb7493%3A0x8a079cfbf11555f4!2sIgnite%20Digital!5e0!3m2!1sen!2sus!4v1618951371307!5m2!1sen!2sus"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2767.7873200168383!2d-64.71621872303768!3d46.075281771090545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4ca0bb9236cf14cf%3A0x3695526673f08b58!2s46%20D%C3%A9sir%C3%A9%20Court%2C%20Dieppe%2C%20NB%20E1A%200G9!5e0!3m2!1sen!2sca!4v1725258385935!5m2!1sen!2sca"
               className="absolute inset-0 w-full h-full border-0"
               loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
             ></iframe>
           </div>
         </div>
