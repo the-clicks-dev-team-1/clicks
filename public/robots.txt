@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://theclicks.ca
+
+# Sitemaps
+Sitemap: https://theclicks.ca/sitemap.xml
