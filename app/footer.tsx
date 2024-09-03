@@ -1,4 +1,5 @@
 "use client";
+import ActiveLink from "@/components/activelink";
 import { WobbleCard } from "@/components/ui/wobble-card";
 
 const Footer = () => {
@@ -54,9 +55,9 @@ const Footer = () => {
                   </a>
                 </li>
                 <li className="mb-4">
-                  <a href="/contact" className="hover:underline">
+                  <ActiveLink href="/contact" className="hover:underline">
                     Contact Us
-                  </a>
+                  </ActiveLink>
                 </li>
               </ul>
             </div>
@@ -66,19 +67,25 @@ const Footer = () => {
               </h2>
               <ul className="text-gray-500 dark:text-gray-400 font-medium">
                 <li className="mb-4">
-                  <a href="/privacy-policy" className="hover:underline">
+                  <ActiveLink
+                    href="/privacy-policy"
+                    className="hover:underline"
+                  >
                     Privacy Policy
-                  </a>
+                  </ActiveLink>
                 </li>
                 <li className="mb-4">
-                  <a href="/licensing" className="hover:underline">
+                  <ActiveLink href="/licensing" className="hover:underline">
                     Licensing
-                  </a>
+                  </ActiveLink>
                 </li>
                 <li className="mb-4">
-                  <a href="/terms-and-conditions" className="hover:underline">
+                  <ActiveLink
+                    href="/terms-and-conditions"
+                    className="hover:underline"
+                  >
                     Terms & Conditions
-                  </a>
+                  </ActiveLink>
                 </li>
               </ul>
             </div>
