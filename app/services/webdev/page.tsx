@@ -3,6 +3,13 @@ import Navbar from "@/components/navbar";
 import Footer from "@/app/footer";
 import Image from "next/image";
 import Link from "next/link";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Web Development Services",
+  description:
+    "We build websites that not only look stunning but are also optimized for performance, scalability, and user experience",
+};
 
 const WebDevelopment: FC = () => {
   return (

@@ -3,6 +3,13 @@ import Navbar from "@/components/navbar";
 import Footer from "@/app/footer";
 import Link from "next/link";
 import Image from "next/image";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Analytics and Reporting Services",
+  description:
+    "Unlock insights and drive growth with our comprehensive analytics and reporting services",
+};
 
 const AnalyticsAndReporting: FC = () => {
   return (

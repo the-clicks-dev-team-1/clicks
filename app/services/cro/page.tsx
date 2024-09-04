@@ -3,6 +3,13 @@ import Navbar from "@/components/navbar";
 import Footer from "@/app/footer";
 import Link from "next/link";
 import Image from "next/image";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Conversion Rate Optimization (CRO) Services",
+  description:
+    "Maximize your website's potential by converting more visitors into customers with our CRO services",
+};
 
 const CRO: FC = () => {
   return (

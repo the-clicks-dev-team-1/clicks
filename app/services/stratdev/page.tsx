@@ -3,6 +3,13 @@ import Navbar from "@/components/navbar";
 import Footer from "@/app/footer";
 import Link from "next/link";
 import Image from "next/image";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Strategy Development Services",
+  description:
+    "Crafting tailored strategies to drive your business forward and achieve long-term success",
+};
 
 const StrategyDevelopment: FC = () => {
   return (

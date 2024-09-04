@@ -3,6 +3,13 @@ import Navbar from "@/components/navbar";
 import Footer from "@/app/footer";
 import Link from "next/link";
 import Image from "next/image";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Social Media Marketing (SMM) Services",
+  description:
+    "Build your brand, engage with your audience, and drive traffic through our expert SMM strategies",
+};
 
 const SMM: FC = () => {
   return (

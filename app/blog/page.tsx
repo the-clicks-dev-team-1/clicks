@@ -9,6 +9,7 @@ import client from "@/lib/contentful"; // Импортируем клиент Co
 import ContactBlock from "../contactBlock";
 import SubscriptionForm from "../subscription";
 import { BiChevronLeft, BiChevronRight } from "react-icons/bi";
+import { Metadata } from "next";
 
 const Blog: FC = () => {
   const [posts, setPosts] = useState<any[]>([]);
@@ -87,9 +88,12 @@ const Blog: FC = () => {
 
       {/* Header Section */}
       <div className="bg-gradient-to-b from-sky-400 to-purple-500 py-20 text-center">
-        <h1 className="text-4xl mt-10 md:text-6xl font-bold">The Clicks Blog</h1>
+        <h1 className="text-4xl mt-10 md:text-6xl font-bold">
+          The Clicks Blog
+        </h1>
         <p className="mt-4 text-lg md:text-xl max-w-2xl mx-auto">
-          Stay updated with the latest insights, tips, and trends in digital marketing. Our blog is your go-to resource for all things marketing.
+          Stay updated with the latest insights, tips, and trends in digital
+          marketing. Our blog is your go-to resource for all things marketing.
         </p>
       </div>
 
@@ -151,10 +155,15 @@ const Blog: FC = () => {
 
       {/* Featured Posts Section */}
       <div className="py-20 px-4 md:px-20 lg:px-40 max-w-7xl mx-auto">
-        <h2 className="text-3xl font-semibold mb-10 text-center">Featured Posts</h2>
+        <h2 className="text-3xl font-semibold mb-10 text-center">
+          Featured Posts
+        </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
           {posts.slice(0, visiblePosts).map((post) => (
-            <div key={post.sys.id} className="relative bg-neutral-800 rounded-lg overflow-hidden shadow-lg">
+            <div
+              key={post.sys.id}
+              className="relative bg-neutral-800 rounded-lg overflow-hidden shadow-lg"
+            >
               {post.fields?.previewImage?.fields?.file?.url && (
                 <Image
                   src={`https:${post.fields.previewImage.fields.file.url}`}
@@ -178,7 +187,8 @@ const Blog: FC = () => {
                   Author: {post.fields.author}
                 </p>
                 <p className="mt-2 text-neutral-500 text-sm">
-                  Publish Date: {new Date(post.fields.publishDate).toLocaleDateString()}
+                  Publish Date:{" "}
+                  {new Date(post.fields.publishDate).toLocaleDateString()}
                 </p>
                 <Link
                   href={`/blog/${post.fields.slug}`}

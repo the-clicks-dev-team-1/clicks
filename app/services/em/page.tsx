@@ -3,6 +3,13 @@ import Navbar from "@/components/navbar";
 import Footer from "@/app/footer";
 import Link from "next/link";
 import Image from "next/image";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Email Marketing Services",
+  description:
+    "Connect with your audience, build relationships, and drive conversions with our targeted email marketing strategies",
+};
 
 const EmailMarketing: FC = () => {
   return (

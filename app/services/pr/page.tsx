@@ -3,6 +3,13 @@ import Navbar from "@/components/navbar";
 import Footer from "@/app/footer";
 import Link from "next/link";
 import Image from "next/image";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Public Relations (PR) Services",
+  description:
+    "Build your brand's reputation and connect with your audience through our strategic PR services",
+};
 
 const PR: FC = () => {
   return (

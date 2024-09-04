@@ -1,13 +1,13 @@
 "use client";
 
-import { FC, useEffect, useState } from 'react';
+import { FC, useEffect, useState } from "react";
 import client from "@/lib/contentful";
 import Navbar from "@/components/navbar";
 import Footer from "@/app/footer";
 import ContactBlock from "@/app/contactBlock";
-import Image from 'next/image';
-import ReactMarkdown from 'react-markdown';
-import rehypeRaw from 'rehype-raw';
+import Image from "next/image";
+import ReactMarkdown from "react-markdown";
+import rehypeRaw from "rehype-raw";
 
 type PostProps = {
   params: { slug: string };
@@ -24,13 +24,17 @@ const BlogPost: FC<PostProps> = ({ params }) => {
         const space = process.env.NEXT_PUBLIC_CONTENTFUL_SPACE_ID;
         const accessToken = process.env.NEXT_PUBLIC_CONTENTFUL_ACCESS_TOKEN;
         if (!space || !accessToken) {
-          console.error('Expected parameters space or accessToken are missing.');
-          throw new Error('Expected parameters space or accessToken are missing');
+          console.error(
+            "Expected parameters space or accessToken are missing."
+          );
+          throw new Error(
+            "Expected parameters space or accessToken are missing"
+          );
         }
 
         const entries = await client.getEntries({
-          content_type: 'blogPost',
-          'fields.slug': params.slug,
+          content_type: "blogPost",
+          "fields.slug": params.slug,
         });
 
         if (entries.items.length > 0) {
@@ -47,7 +51,7 @@ const BlogPost: FC<PostProps> = ({ params }) => {
     };
 
     fetchData();
-  }, [params.slug]);  
+  }, [params.slug]);
 
   if (loading) {
     return <div>Loading...</div>;
@@ -94,7 +98,8 @@ const BlogPost: FC<PostProps> = ({ params }) => {
 
         {category?.fields?.title && (
           <div className="mt-4 text-neutral-300">
-            <strong>Category: </strong>{category.fields.title}
+            <strong>Category: </strong>
+            {category.fields.title}
           </div>
         )}
       </div>

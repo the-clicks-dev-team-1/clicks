@@ -3,6 +3,13 @@ import Navbar from "@/components/navbar";
 import Footer from "@/app/footer";
 import Link from "next/link";
 import Image from "next/image";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Pay-Per-Click (PPC) Advertising Services",
+  description:
+    "Drive targeted traffic to your website and maximize ROI with our expert PPC management services",
+};
 
 const PPC: FC = () => {
   return (

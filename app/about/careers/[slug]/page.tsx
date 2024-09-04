@@ -1,13 +1,14 @@
 "use client";
 
-import { FC, useEffect, useState } from 'react';
-import Image from 'next/image';
-import client from '@/lib/contentful';
-import Navbar from '@/components/navbar';
-import Footer from '@/app/footer';
-import ContactBlock from '@/app/contactBlock';
-import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
-import { Document } from '@contentful/rich-text-types';
+import { FC, useEffect, useState } from "react";
+import Image from "next/image";
+import client from "@/lib/contentful";
+import Navbar from "@/components/navbar";
+import Footer from "@/app/footer";
+import ContactBlock from "@/app/contactBlock";
+import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
+import { Document } from "@contentful/rich-text-types";
+import { string } from "zod";
 
 type JobProps = {
   params: { slug: string };
@@ -20,21 +21,21 @@ const JobDetail: FC<JobProps> = ({ params }) => {
 
   useEffect(() => {
     const fetchData = async () => {
-      console.log('Fetching data for slug:', params.slug);
+      console.log("Fetching data for slug:", params.slug);
 
       try {
         const entries = await client.getEntries({
-          content_type: 'jobOpening',
-          'fields.slug': params.slug,
+          content_type: "jobOpening",
+          "fields.slug": params.slug,
         });
 
-        console.log('Entries fetched:', entries);
+        console.log("Entries fetched:", entries);
 
         if (entries.items.length > 0) {
-          console.log('Job found:', entries.items[0]);
+          console.log("Job found:", entries.items[0]);
           setJob(entries.items[0]);
         } else {
-          console.warn('No job found for slug:', params.slug);
+          console.warn("No job found for slug:", params.slug);
           setError(true);
         }
       } catch (error) {
@@ -100,7 +101,8 @@ const JobDetail: FC<JobProps> = ({ params }) => {
 
         {location && (
           <div className="mt-4 text-neutral-300">
-            <strong>Location: </strong>{location.lat}, {location.lon}
+            <strong>Location: </strong>
+            {location.lat}, {location.lon}
           </div>
         )}
 
@@ -112,7 +114,8 @@ const JobDetail: FC<JobProps> = ({ params }) => {
 
         {jobType && (
           <div className="mt-4 text-neutral-300">
-            <strong>Job Type: </strong>{jobType}
+            <strong>Job Type: </strong>
+            {jobType}
           </div>
         )}
       </div>

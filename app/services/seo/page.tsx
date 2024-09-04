@@ -3,6 +3,13 @@ import Navbar from "@/components/navbar";
 import Footer from "@/app/footer";
 import Link from "next/link";
 import Image from "next/image";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Search Engine Optimization (SEO) Services",
+  description:
+    "Increase your online visibility and drive more traffic to your website with our expert SEO services",
+};
 
 const SEO: FC = () => {
   return (
