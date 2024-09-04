@@ -1,6 +1,8 @@
 "use client";
 import ActiveLink from "@/components/activelink";
 import { WobbleCard } from "@/components/ui/wobble-card";
+import { FaFacebook, FaInstagram } from "react-icons/fa";
+import { FaSquareXTwitter } from "react-icons/fa6";
 
 const Footer = () => {
   return (
@@ -33,31 +35,29 @@ const Footer = () => {
                 <li className="mb-4">
                   <a
                     href="https://x.com/theclicks_ca"
-                    className="hover:underline"
+                    className="hover:underline flex items-center"
                   >
+                    <FaSquareXTwitter className="mr-2" />
                     Twitter
                   </a>
                 </li>
                 <li className="mb-4">
                   <a
                     href="https://www.facebook.com/theclicks.ca"
-                    className="hover:underline"
+                    className="hover:underline flex items-center"
                   >
+                    <FaFacebook className="mr-2" />
                     Facebook
                   </a>
                 </li>
                 <li className="mb-4">
                   <a
                     href="https://www.instagram.com/the_clicks_marketing/"
-                    className="hover:underline"
+                    className="hover:underline flex items-center"
                   >
+                    <FaInstagram className="mr-2" />
                     Instagram
                   </a>
-                </li>
-                <li className="mb-4">
-                  <ActiveLink href="/contact" className="hover:underline">
-                    Contact Us
-                  </ActiveLink>
                 </li>
               </ul>
             </div>
@@ -95,10 +95,11 @@ const Footer = () => {
       </footer>
       <div className="px-4 py-6 bg-gradient-to-r from-sky-400 to-purple-500 bg-opacity-50 md:flex md:items-center md:justify-between rounded-b-lg absolute bottom-0 left-0 w-full">
         <span className="text-sm text-white dark:text-gray-300 sm:text-center">
-          © 2024 <a href="https://theclicks.ca">The Clicks™</a>. All Rights
-          Reserved.
+          © 2024{" "}
+          <ActiveLink href="https://theclicks.ca">The Clicks™</ActiveLink>. All
+          Rights Reserved.
         </span>
-        <div className="flex mt-4 sm:mt-0 sm:justify-center md:justify-end space-x-5 rtl:space-x-reverse">
+        {/* <div className="flex mt-4 sm:mt-0 sm:justify-center md:justify-end space-x-5 rtl:space-x-reverse">
           <a
             href="https://www.facebook.com/theclicks.ca"
             className="text-white hover:text-gray-900 dark:hover:text-white"
@@ -151,7 +152,7 @@ const Footer = () => {
             </svg>
             <span className="sr-only">Instagram page</span>
           </a>
-        </div>
+        </div> */}
       </div>
     </WobbleCard>
   );
