@@ -109,16 +109,25 @@ export default function ContactForm() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
         {/* Contact Info */}
         <div className="flex flex-col justify-between">
-          <h2 className="text-2xl md:text-3xl font-semibold mb-6">Get in Touch</h2>
+          <h2 className="text-2xl md:text-3xl font-semibold mb-6">
+            Get in Touch
+          </h2>
           <div className="flex-1">
             <p className="text-lg mb-4">
-              Whether you have a question about our services, pricing, or anything else, our team is ready to answer all your questions.
+              Whether you have a question about our services, pricing, or
+              anything else, our team is ready to answer all your questions.
             </p>
             <p className="text-lg mb-2">
-              <strong>Email:</strong> <a href="mailto:info@theclicks.com" className="text-sky-400">info@theclicks.ca</a>
+              <strong>Email:</strong>{" "}
+              <a href="mailto:info@theclicks.com" className="text-sky-400">
+                info@theclicks.ca
+              </a>
             </p>
             <p className="text-lg mb-2">
-              <strong>Phone:</strong> <a href="tel:+1(506)477-0324" className="text-sky-400">+1(506)477-0324</a>
+              <strong>Phone:</strong>{" "}
+              <a href="tel:+1(506)477-0324" className="text-sky-400">
+                +1(506)477-0324
+              </a>
             </p>
             <p className="text-lg">
               <strong>Address:</strong> Dieppe, NB, Canada
@@ -140,7 +149,7 @@ export default function ContactForm() {
                     name="first_name"
                     render={({ field }) => (
                       <FormItem className="items-center justify-center w-full">
-                        <FormLabel className="text-sm bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50">
+                        <FormLabel className="text-sm bg-clip-text text-[var(--text-label)] bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50">
                           First name *
                         </FormLabel>
                         <FormControl>
@@ -155,7 +164,7 @@ export default function ContactForm() {
                     name="last_name"
                     render={({ field }) => (
                       <FormItem className="items-center justify-center w-full">
-                        <FormLabel className="text-sm bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50">
+                        <FormLabel className="text-sm bg-clip-text text-[var(--text-label)] bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50">
                           Last name *
                         </FormLabel>
                         <FormControl>
@@ -171,8 +180,8 @@ export default function ContactForm() {
                   name="email"
                   render={({ field }) => (
                     <FormItem className="items-center justify-center w-full">
-                      <FormLabel className="text-sm bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50">
-                      Email *
+                      <FormLabel className="text-sm bg-clip-text text-[var(--text-label)] bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50">
+                        Email *
                       </FormLabel>
                       <FormControl>
                         <Input {...field} className="text-black" />
@@ -186,7 +195,7 @@ export default function ContactForm() {
                   name="company_name"
                   render={({ field }) => (
                     <FormItem className="items-center justify-center w-full">
-                      <FormLabel className="text-sm bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50">
+                      <FormLabel className="text-sm bg-clip-text text-[var(--text-label)] bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50">
                         Company name
                       </FormLabel>
                       <FormControl>
@@ -201,7 +210,7 @@ export default function ContactForm() {
                   name="services"
                   render={({ field }) => (
                     <FormItem className="items-center justify-center w-full">
-                      <FormLabel className="text-sm bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50">
+                      <FormLabel className="text-sm bg-clip-text text-[var(--text-label)] bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50">
                         Services you are interested in
                       </FormLabel>
                       <Select
@@ -210,7 +219,10 @@ export default function ContactForm() {
                       >
                         <FormControl>
                           <SelectTrigger className="text-black">
-                            <SelectValue placeholder="Select an option" className="text-black" />
+                            <SelectValue
+                              placeholder="Select an option"
+                              className="text-black"
+                            />
                           </SelectTrigger>
                         </FormControl>
                         <SelectContent>
@@ -263,7 +275,7 @@ export default function ContactForm() {
                   name="help"
                   render={({ field }) => (
                     <FormItem className="items-center justify-center w-full">
-                      <FormLabel className="text-sm bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50">
+                      <FormLabel className="text-sm bg-clip-text text-[var(--text-label)] bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50">
                         How can we help?
                       </FormLabel>
                       <Select
@@ -272,7 +284,10 @@ export default function ContactForm() {
                       >
                         <FormControl>
                           <SelectTrigger className="text-black">
-                            <SelectValue placeholder="Select an option" className="text-black" />
+                            <SelectValue
+                              placeholder="Select an option"
+                              className="text-black"
+                            />
                           </SelectTrigger>
                         </FormControl>
                         <SelectContent>
@@ -303,7 +318,7 @@ export default function ContactForm() {
                   name="info"
                   render={({ field }) => (
                     <FormItem className="items-center justify-center w-full">
-                      <FormLabel className="text-sm bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50">
+                      <FormLabel className="text-sm bg-clip-text text-[var(--text-label)] bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50">
                         Anything else?
                       </FormLabel>
                       <FormControl>
@@ -318,12 +333,10 @@ export default function ContactForm() {
                 />
 
                 <div className="flex gap-4 items-center">
-                  <Checkbox
-                    className="outline border-2 text-sm font-light bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400"
-                  />
-                  <div className="text-xs font-light md:w-3/4 mb-1 bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400">
-                    I agree to The Clicks sending marketing communications related
-                    to The Clicks
+                  <Checkbox className="outline border-2 text-sm font-light bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400" />
+                  <div className="text-xs font-light md:w-3/4 mb-1 bg-clip-text text-[var(--text-label)] bg-gradient-to-b from-neutral-50 to-neutral-400">
+                    I agree to The Clicks sending marketing communications
+                    related to The Clicks
                   </div>
                 </div>
 

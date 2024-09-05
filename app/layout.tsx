@@ -18,6 +18,18 @@ export const metadata: Metadata = {
     "The Clicks is a digital marketing agency that helps businesses grow online.",
 };
 
+// Inject the theme initialization script
+const setInitialTheme = `
+  (function() {
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'dark') {
+      document.documentElement.classList.add('dark');
+    } else {
+      document.documentElement.classList.remove('dark');
+    }
+  })()
+`;
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -27,6 +39,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <GoogleTagManager gtmId="GTM-588PZWKW" />
+        <script dangerouslySetInnerHTML={{ __html: setInitialTheme }} />
         <link rel="icon" href="/app/favicon.ico" />
       </head>
       <body className={font.className}>

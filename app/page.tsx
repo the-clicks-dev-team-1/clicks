@@ -13,7 +13,7 @@ import ContactBlock from "./contactBlock";
 
 export default function Home() {
   return (
-    <div className="w-full md:items-center md:justify-center bg-black/[0.99] text-white antialiased bg-grid-white/[0.02] relative overflow-hidden">
+    <div className="w-full md:items-center md:justify-center bg-[var(--bg-99)] text-[var(--text)] antialiased bg-grid-white/[0.02] relative overflow-hidden">
       <Navbar />
       <Spotlight
         className="hidden md:flex md:left-80 md:-top-75"
@@ -27,7 +27,7 @@ export default function Home() {
             Transform your business <br /> with artificial intelligence
           </h1>
         </div>
-        <p className="mt-4 text-lg font-normal text-neutral-300 max-w-lg text-center mx-auto px-4">
+        <p className="mt-4 text-lg font-normal text-[var(--gray)] max-w-lg text-center mx-auto px-4">
           Revolutionize operations, optimize processes, and drive growth with
           smarter decisions and innovation.
         </p>
