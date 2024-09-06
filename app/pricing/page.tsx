@@ -19,7 +19,12 @@ const plans = [
     index: 0,
     name: "Basic",
     price: " CAD $3,000",
-    features: ["SEO", "Social Media Marketing", "Monthly Reporting"],
+    features: [
+      "SEO",
+      "PPC Advertising",
+      "Social Media Marketing",
+      "Monthly Reporting",
+    ],
     style:
       " rounded-3xl  py-10 bg-clip-text text-transparent* text-[var(--text-label)] bg-gradient-to-b from-neutral-300 to-neutral-50",
     description:
@@ -35,6 +40,8 @@ const plans = [
       "PPC Advertising",
       "Social Media Marketing",
       "Content Marketing",
+      "Email Marketing",
+      "Strategy Development",
       "Monthly Reporting",
     ],
     style:
