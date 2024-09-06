@@ -79,9 +79,9 @@ const PPC: FC = () => {
             </h2>
             <p className="text-lg mb-4">
               PPC, or Pay-Per-Click, is a form of online advertising where you
-              only pay when someone clicks on your ad. It’s a highly effective
-              way to drive targeted traffic to your website and can yield
-              immediate results.
+              only pay when someone clicks on your ad. It&apos;s a highly
+              effective way to drive targeted traffic to your website and can
+              yield immediate results.
             </p>
             <p className="text-lg mb-4">
               Think of PPC as a way to attract potential customers who are

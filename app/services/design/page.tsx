@@ -84,10 +84,10 @@ const GraphicDesign: FC = () => {
               specific message to your audience.
             </p>
             <p className="text-lg mb-4">
-              Whether it’s for your website, social media, or print materials,
-              strong graphic design is essential for making a lasting impression
-              and building a cohesive brand identity that resonates with your
-              audience.
+              Whether it&apos;s for your website, social media, or print
+              materials, strong graphic design is essential for making a lasting
+              impression and building a cohesive brand identity that resonates
+              with your audience.
             </p>
             <p className="text-lg">
               Our graphic design services are designed to help you create

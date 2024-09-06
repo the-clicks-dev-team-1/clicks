@@ -80,7 +80,7 @@ const SMM: FC = () => {
             <p className="text-lg mb-4">
               SMM, or Social Media Marketing, involves using social media
               platforms to connect with your audience, build your brand, and
-              drive traffic to your website. It’s an essential tool for
+              drive traffic to your website. It&apos;s an essential tool for
               businesses looking to grow their online presence.
             </p>
             <p className="text-lg mb-4">

@@ -103,8 +103,8 @@ const AnalyticsAndReporting: FC = () => {
             </h3>
             <p>
               By analyzing the performance of your campaigns, you can identify
-              what’s working and what’s not, allowing you to optimize your
-              strategies for better results.
+              what&apos;s working and what&apos;s not, allowing you to optimize
+              your strategies for better results.
             </p>
           </div>
           <div className="bg-[var(--bg800)] p-6 rounded-lg">
@@ -129,9 +129,9 @@ const AnalyticsAndReporting: FC = () => {
               Google Analytics Setup
             </h3>
             <p>
-              We set up and configure Google Analytics to track your website’s
-              performance, providing you with detailed insights into user
-              behavior and traffic sources.
+              We set up and configure Google Analytics to track your
+              website&apos;s performance, providing you with detailed insights
+              into user behavior and traffic sources.
             </p>
           </div>
           <div className="bg-[var(--bg800)] p-6 rounded-lg">
@@ -169,7 +169,8 @@ const AnalyticsAndReporting: FC = () => {
             <h3 className="text-xl font-semibold mb-4">Competitor Analysis</h3>
             <p>
               Our competitor analysis services provide insights into your
-              competitors’ strategies, helping you stay ahead in your industry.
+              competitors&apos; strategies, helping you stay ahead in your
+              industry.
             </p>
           </div>
         </div>

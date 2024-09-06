@@ -79,7 +79,7 @@ const SEO: FC = () => {
             </h2>
             <p className="text-lg mb-4">
               SEO, or Search Engine Optimization, is the practice of improving
-              your website’s visibility on search engines like Google. When
+              your website&apos;s visibility on search engines like Google. When
               people search for products or services that you offer, you want
               your website to appear at the top of the results. SEO helps make
               that happen.
@@ -87,9 +87,9 @@ const SEO: FC = () => {
             <p className="text-lg mb-4">
               Think of it this way: if your website were a store, SEO would be
               like setting up a big sign on the main street, so more people
-              notice and visit you. It’s not just about being seen, though. It’s
-              about being seen by the right people – those who are already
-              interested in what you have to offer.
+              notice and visit you. It&apos;s not just about being seen, though.
+              It&apos;s about being seen by the right people – those who are
+              already interested in what you have to offer.
             </p>
             <p className="text-lg">
               Our SEO services focus on optimizing your website in ways that
@@ -157,22 +157,23 @@ const SEO: FC = () => {
           <div className="bg-[var(--bg800)] p-6 rounded-lg">
             <h3 className="text-xl font-semibold mb-4">On-Page SEO</h3>
             <p>
-              We optimize your website’s content, meta tags, and structure to
-              ensure it’s search engine friendly.
+              We optimize your website&apos;s content, meta tags, and structure
+              to ensure it&apos;s search engine friendly.
             </p>
           </div>
           <div className="bg-[var(--bg800)] p-6 rounded-lg">
             <h3 className="text-xl font-semibold mb-4">Off-Page SEO</h3>
             <p>
               Our off-page SEO strategies focus on building high-quality
-              backlinks to boost your site’s authority.
+              backlinks to boost your site&apos;s authority.
             </p>
           </div>
           <div className="bg-[var(--bg800)] p-6 rounded-lg">
             <h3 className="text-xl font-semibold mb-4">Technical SEO</h3>
             <p>
-              We improve your website’s technical aspects, such as page speed
-              and mobile-friendliness, to enhance its search engine performance.
+              We improve your website&apos;s technical aspects, such as page
+              speed and mobile-friendliness, to enhance its search engine
+              performance.
             </p>
           </div>
           <div className="bg-[var(--bg800)] p-6 rounded-lg">

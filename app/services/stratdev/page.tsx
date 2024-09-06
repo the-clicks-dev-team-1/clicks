@@ -78,18 +78,18 @@ const StrategyDevelopment: FC = () => {
               What is Strategy Development?
             </h2>
             <p className="text-lg mb-4">
-              Strategy development is the process of defining your company’s
-              direction and making decisions on allocating resources to pursue
-              this strategy. It involves setting goals, determining actions to
-              achieve these goals, and mobilizing resources to execute the
-              actions.
+              Strategy development is the process of defining your
+              company&apos;s direction and making decisions on allocating
+              resources to pursue this strategy. It involves setting goals,
+              determining actions to achieve these goals, and mobilizing
+              resources to execute the actions.
             </p>
             <p className="text-lg mb-4">
-              Simply put, it’s about knowing where your business is going and
-              how to get there. A well-crafted strategy aligns your team’s
-              efforts, ensures everyone is working towards the same objectives,
-              and provides a roadmap to guide your business toward long-term
-              success.
+              Simply put, it&apos;s about knowing where your business is going
+              and how to get there. A well-crafted strategy aligns your
+              team&apos;s efforts, ensures everyone is working towards the same
+              objectives, and provides a roadmap to guide your business toward
+              long-term success.
             </p>
             <p className="text-lg">
               Our strategy development services are designed to help you clarify
@@ -118,7 +118,7 @@ const StrategyDevelopment: FC = () => {
           A well-defined strategy is essential for the growth and sustainability
           of any business. It provides a clear focus, helps in resource
           allocation, and ensures that all efforts are aligned with the
-          company’s long-term vision.
+          company&apos;s long-term vision.
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
           <div className="bg-[var(--bg800)] p-6 rounded-lg">
@@ -156,9 +156,9 @@ const StrategyDevelopment: FC = () => {
           <div className="bg-[var(--bg800)] p-6 rounded-lg">
             <h3 className="text-xl font-semibold mb-4">Business Strategy</h3>
             <p>
-              We help you define your company’s vision, mission, and long-term
-              objectives, ensuring that your business strategy is aligned with
-              your goals.
+              We help you define your company&apos;s vision, mission, and
+              long-term objectives, ensuring that your business strategy is
+              aligned with your goals.
             </p>
           </div>
           <div className="bg-[var(--bg800)] p-6 rounded-lg">

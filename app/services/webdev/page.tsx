@@ -168,8 +168,8 @@ const WebDevelopment: FC = () => {
           Ready to Take Your Online Presence to the Next Level?
         </h2>
         <p className="text-lg mb-8">
-          Contact us today to discuss your project, and let’s create something
-          amazing together.
+          Contact us today to discuss your project, and let&apos;s create
+          something amazing together.
         </p>
         <Link
           href="/contact"
