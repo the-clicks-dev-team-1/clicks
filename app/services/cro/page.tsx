@@ -4,6 +4,7 @@ import Footer from "@/app/footer";
 import Link from "next/link";
 import Image from "next/image";
 import { Metadata } from "next";
+import ContactServiceForm from "@/components/ContactServiceForm";
 
 export const metadata: Metadata = {
   title: "Conversion Rate Optimization (CRO) Services",
@@ -18,55 +19,22 @@ const CRO: FC = () => {
 
       {/* Header section with form */}
       <div className="bg-gradient-to-b from-sky-400 to-purple-500 py-20 text-center">
-        <h1 className="text-3xl mt-10 md:text-5xl font-bold">
-          Conversion Rate Optimization (CRO) Services
-        </h1>
-        <p className="mt-4 text-lg md:text-xl max-w-2xl mx-auto">
-          Maximize your website&apos;s potential by converting more visitors
-          into customers with our CRO services.
-        </p>
-        <div className="mt-10 max-w-xl mx-auto">
-          <h2 className="text-2xl font-semibold mb-4">
-            Get a Free CRO Consultation
-          </h2>
-          <form action="#" method="POST">
-            <div className="mb-4">
-              <input
-                type="text"
-                id="name"
-                name="name"
-                placeholder="Your Name"
-                className="w-full p-3 bg-neutral-800 rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-400"
-                required
-              />
-            </div>
-            <div className="mb-4">
-              <input
-                type="email"
-                id="email"
-                name="email"
-                placeholder="Your Email"
-                className="w-full p-3 bg-neutral-800 rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-400"
-                required
-              />
-            </div>
-            <div className="mb-4">
-              <textarea
-                id="message"
-                name="message"
-                placeholder="Your Message"
-                rows={4}
-                className="w-full p-3 bg-neutral-800 rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-400"
-                required
-              ></textarea>
-            </div>
-            <button
-              type="submit"
-              className="w-full bg-gradient-to-r from-sky-400 to-purple-500 text-white font-bold py-3 px-6 rounded-lg shadow-lg hover:bg-opacity-75 transition duration-300"
-            >
-              Submit
-            </button>
-          </form>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 py-20 px-4 md:px-20 lg:px-40">
+          <div className="flex flex-col">
+            <h1 className="text-3xl md:text-5xl font-bold">
+              Conversion Rate Optimization (CRO) Services
+            </h1>
+            <p className="mt-10 text-lg md:text-xl max-w-2xl mx-auto">
+              Maximize your website&apos;s potential by converting more visitors
+              into customers with our CRO services.
+            </p>
+          </div>
+          <div className="flex flex-col justify-between">
+            <h2 className="text-2xl font-semibold mb-4">
+              Get a Free CRO Consultation
+            </h2>
+            <ContactServiceForm />
+          </div>
         </div>
       </div>
 

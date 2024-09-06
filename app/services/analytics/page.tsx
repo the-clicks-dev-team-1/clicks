@@ -21,7 +21,7 @@ const AnalyticsAndReporting: FC = () => {
       <div className="bg-gradient-to-b from-sky-400 to-purple-500 py-20 text-center">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 py-20 px-4 md:px-20 lg:px-40">
           <div className="flex flex-col">
-            <h1 className="text-3xl mt-10 md:text-5xl font-bold">
+            <h1 className="text-3xl md:text-5xl font-bold">
               Analytics and Reporting Services
             </h1>
             <p className="mt-10 text-lg md:text-xl max-w-2xl mx-auto">
@@ -30,7 +30,7 @@ const AnalyticsAndReporting: FC = () => {
             </p>
           </div>
           <div className="flex flex-col justify-between">
-            <h2 className="text-2xl font-semibold mt-10 mb-4">
+            <h2 className="text-2xl font-semibold mb-4">
               Get a Free Analytics Consultation
             </h2>
             <ContactServiceForm />

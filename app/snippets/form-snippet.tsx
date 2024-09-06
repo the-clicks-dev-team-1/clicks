@@ -343,7 +343,8 @@ export default function ContactForm() {
                 <div className="flex items-center gap-4">
                   <Button
                     type="submit"
-                    className="text-sm font-light"
+                    className="text-sm font-light bg-gradient-to-b from-sky-400 
+            to-purple-500 bg-opacity-50"
                     disabled={loading}
                   >
                     Submit
