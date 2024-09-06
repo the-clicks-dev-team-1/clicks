@@ -24,9 +24,24 @@ const WebDevelopment: FC = () => {
             <h1 className="text-3xl md:text-5xl font-bold">
               Web Development Services
             </h1>
-            <p className="mt-10 text-lg md:text-xl max-w-2xl mx-auto">
+            <p className="mt-10 text-lg md:text-xl max-w-2xl mx-auto text-left">
               We build websites that not only look stunning but are also
               optimized for performance, scalability, and user experience.
+            </p>
+            <p className="mt-3 text-lg md:text-xl max-w-2xl mx-auto text-left">
+              A well-designed website is the cornerstone of your digital
+              presence. Our website development services focus on creating
+              responsive, user-friendly sites that not only look great but also
+              deliver results. We prioritize functionality, ensuring that your
+              website is easy to navigate and optimized for both desktop and
+              mobile devices, enhancing the user experience.
+            </p>
+            <p className="mt-3 text-lg md:text-xl max-w-2xl mx-auto text-left">
+              From e-commerce platforms to corporate websites, we build sites
+              tailored to your business needs. Our team of developers and
+              designers work closely with you to ensure the final product
+              reflects your brand identity and meets your goals, while also
+              being scalable and adaptable to future needs.
             </p>
           </div>
           <div className="flex flex-col justify-between">

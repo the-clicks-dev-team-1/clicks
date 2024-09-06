@@ -24,9 +24,25 @@ const StrategyDevelopment: FC = () => {
             <h1 className="text-3xl md:text-5xl font-bold">
               Strategy Development Services
             </h1>
-            <p className="mt-10 text-lg md:text-xl max-w-2xl mx-auto">
+            <p className="mt-10 text-lg md:text-xl max-w-2xl mx-auto text-left">
               Crafting tailored strategies to drive your business forward and
               achieve long-term success.
+            </p>
+            <p className="mt-3 text-lg md:text-xl max-w-2xl mx-auto text-left">
+              Developing a strong digital marketing strategy is crucial for
+              business success in today&apos;s competitive landscape. Our
+              strategy development services help you define clear objectives,
+              identify your target audience, and create a tailored approach that
+              leverages the most effective marketing channels. By aligning your
+              goals with data-driven tactics, we ensure every aspect of your
+              strategy works in harmony to achieve maximum impact.
+            </p>
+            <p className="mt-3 text-lg md:text-xl max-w-2xl mx-auto text-left">
+              We take a holistic view of your marketing efforts, from SEO and
+              PPC to social media and content marketing, to build a cohesive
+              plan that drives results. Whether you&apos;re just starting or
+              looking to refine your existing strategy, we provide the expertise
+              to help you grow.
             </p>
           </div>
           <div className="flex flex-col justify-between">

@@ -24,9 +24,25 @@ const PPC: FC = () => {
             <h1 className="text-3xl md:text-5xl font-bold">
               Pay-Per-Click (PPC) Advertising Services
             </h1>
-            <p className="mt-10 text-lg md:text-xl max-w-2xl mx-auto">
+            <p className="mt-10 text-lg md:text-xl max-w-2xl mx-auto text-left">
               Drive targeted traffic to your website and maximize ROI with our
               expert PPC management services.
+            </p>
+            <p className="mt-3 text-lg md:text-xl max-w-2xl mx-auto text-left">
+              Pay-Per-Click (PPC) advertising is a powerful way to drive
+              targeted traffic to your website. Our team of experts creates and
+              manages campaigns that maximize your return on investment by
+              targeting the right audience with precision. Whether you're
+              looking to increase sales, generate leads, or build brand
+              awareness, our data-driven PPC strategies are designed to meet
+              your business goals.
+            </p>
+            <p className="mt-3 text-lg md:text-xl max-w-2xl mx-auto text-left">
+              We optimize campaigns across platforms such as Google Ads and
+              social media, ensuring that your ad spend is used effectively.
+              With detailed performance tracking and continuous optimization, we
+              help you achieve measurable results and improve the efficiency of
+              your marketing budget.
             </p>
           </div>
           <div className="flex flex-col justify-between">

@@ -24,9 +24,24 @@ const MarketingAutomation: FC = () => {
             <h1 className="text-3xl md:text-5xl font-bold">
               Marketing Automation Services
             </h1>
-            <p className="mt-10 text-lg md:text-xl max-w-2xl mx-auto">
+            <p className="mt-10 text-lg md:text-xl max-w-2xl mx-auto text-left">
               Streamline your marketing processes, improve efficiency, and drive
               better results with our marketing automation solutions.
+            </p>
+            <p className="mt-3 text-lg md:text-xl max-w-2xl mx-auto text-left">
+              Marketing automation streamlines your marketing efforts, allowing
+              you to focus on strategy while automating repetitive tasks. Our
+              marketing automation services help you set up automated workflows
+              for email campaigns, lead nurturing, and customer segmentation,
+              ensuring you reach the right people with the right message at the
+              right time.
+            </p>
+            <p className="mt-3 text-lg md:text-xl max-w-2xl mx-auto text-left">
+              We integrate advanced tools that track customer behavior, allowing
+              you to tailor your marketing efforts based on individual
+              interactions. This approach not only saves you time but also
+              increases efficiency and improves the customer experience, leading
+              to higher engagement and conversion rates.
             </p>
           </div>
           <div className="flex flex-col justify-between">

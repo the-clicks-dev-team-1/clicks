@@ -24,9 +24,25 @@ const GraphicDesign: FC = () => {
             <h1 className="text-3xl md:text-5xl font-bold">
               Graphic Design Services
             </h1>
-            <p className="mt-10 text-lg md:text-xl max-w-2xl mx-auto">
+            <p className="mt-10 text-lg md:text-xl max-w-2xl mx-auto text-left">
               Elevate your brand with stunning visuals and creative graphic
               design solutions tailored to your needs.
+            </p>
+            <p className="mt-3 text-lg md:text-xl max-w-2xl mx-auto text-left">
+              First impressions matter, and your brand&apos;s visuals play a
+              critical role in how your business is perceived. Our graphic
+              design services bring your brand to life with professional,
+              high-quality designs that communicate your message clearly and
+              effectively. From logos and branding materials to marketing
+              collateral and web design, we create visuals that resonate with
+              your audience.
+            </p>
+            <p className="mt-3 text-lg md:text-xl max-w-2xl mx-auto text-left">
+              Our team works closely with you to understand your vision and
+              translate it into stunning designs that align with your brand
+              identity. Whether you need a complete rebranding or fresh
+              promotional materials, our graphic design services ensure your
+              brand stands out.
             </p>
           </div>
           <div className="flex flex-col justify-between">

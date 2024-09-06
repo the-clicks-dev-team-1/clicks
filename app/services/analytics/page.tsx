@@ -24,9 +24,23 @@ const AnalyticsAndReporting: FC = () => {
             <h1 className="text-3xl md:text-5xl font-bold">
               Analytics and Reporting Services
             </h1>
-            <p className="mt-10 text-lg md:text-xl max-w-2xl mx-auto">
+            <p className="mt-10 text-lg md:text-xl max-w-2xl mx-auto text-left">
               Unlock insights and drive growth with our comprehensive analytics
               and reporting services.
+            </p>
+            <p className="mt-3 text-lg md:text-xl max-w-2xl mx-auto text-left">
+              Understanding the performance of your marketing efforts is
+              essential for making informed decisions. Our analytics and
+              reporting services provide you with detailed insights into how
+              your campaigns are performing. From website traffic and SEO
+              rankings to social media engagement and PPC results, we deliver
+              comprehensive reports that highlight key metrics and trends.
+            </p>
+            <p className="mt-3 text-lg md:text-xl max-w-2xl mx-auto text-left">
+              We also provide actionable recommendations based on the data,
+              helping you optimize your marketing strategy and improve ROI. With
+              our analytics tools, you can track the success of your campaigns
+              in real time and adjust your tactics to achieve better results.
             </p>
           </div>
           <div className="flex flex-col justify-between">

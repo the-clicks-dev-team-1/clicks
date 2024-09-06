@@ -24,9 +24,25 @@ const EmailMarketing: FC = () => {
             <h1 className="text-3xl md:text-5xl font-bold">
               Email Marketing Services
             </h1>
-            <p className="mt-10 text-lg md:text-xl max-w-2xl mx-auto">
+            <p className="mt-10 text-lg md:text-xl max-w-2xl mx-auto text-left">
               Connect with your audience, build relationships, and drive
               conversions with our targeted email marketing strategies.
+            </p>
+            <p className="mt-3 text-lg md:text-xl max-w-2xl mx-auto text-left">
+              Email marketing remains one of the most effective ways to nurture
+              leads and build lasting customer relationships. Our email
+              marketing services are tailored to deliver personalized,
+              high-impact campaigns that engage your audience and drive
+              conversions. From crafting compelling messages to automating
+              follow-ups, we ensure your email campaigns are optimized for
+              success.
+            </p>
+            <p className="mt-3 text-lg md:text-xl max-w-2xl mx-auto text-left">
+              With our data-driven approach, we track open rates,
+              click-throughs, and conversions to refine strategies and improve
+              results. Whether you're launching a new product, promoting a sale,
+              or nurturing leads, our email marketing campaigns are designed to
+              deliver measurable outcomes.
             </p>
           </div>
           <div className="flex flex-col justify-between">

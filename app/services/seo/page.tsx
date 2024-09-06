@@ -24,9 +24,25 @@ const SEO: FC = () => {
             <h1 className="text-3xl md:text-5xl font-bold">
               Search Engine Optimization (SEO) Services
             </h1>
-            <p className="mt-10 text-lg md:text-xl max-w-2xl mx-auto">
+            <p className="mt-10 text-lg md:text-xl max-w-2xl mx-auto text-left">
               Increase your online visibility and drive more traffic to your
               website with our expert SEO services.
+            </p>
+            <p className="mt-3 text-lg md:text-xl max-w-2xl mx-auto text-left">
+              Search Engine Optimization (SEO) is the foundation of any
+              successful digital marketing strategy. Our SEO services focus on
+              improving your website's visibility on search engines like Google,
+              helping potential customers find you when they&apos;re searching
+              for your products or services. By optimizing your site&apos;s
+              structure, content, and technical aspects, we ensure it ranks
+              higher for relevant keywords, attracting more organic traffic.
+            </p>
+            <p className="mt-3 text-lg md:text-xl max-w-2xl mx-auto text-left">
+              With a tailored SEO strategy, we help you reach your target
+              audience while driving long-term growth. From on-page SEO and
+              keyword research to link building and technical audits, our
+              comprehensive approach is designed to boost your site&apos;s
+              performance and keep you ahead of the competition.
             </p>
           </div>
           <div className="flex flex-col justify-between">

@@ -24,9 +24,25 @@ const SMM: FC = () => {
             <h1 className="text-3xl md:text-5xl font-bold">
               Social Media Marketing (SMM) Services
             </h1>
-            <p className="mt-10 text-lg md:text-xl max-w-2xl mx-auto">
+            <p className="mt-10 text-lg md:text-xl max-w-2xl mx-auto text-left">
               Build your brand, engage with your audience, and drive traffic
               through our expert SMM strategies.
+            </p>
+            <p className="mt-3 text-lg md:text-xl max-w-2xl mx-auto text-left">
+              Social Media Marketing (SMM) is essential for building your
+              brand&apos;s online presence and engaging directly with your
+              audience. Our SMM services focus on creating compelling content
+              that resonates with your target demographic across platforms like
+              Facebook, Instagram, LinkedIn, and Twitter. From organic posts to
+              paid social campaigns, we ensure your brand stands out in the
+              crowded social landscape.
+            </p>
+            <p className="mt-3 text-lg md:text-xl max-w-2xl mx-auto text-left">
+              Our team also manages community engagement, responding to your
+              followers and fostering relationships that strengthen brand
+              loyalty. By analyzing performance metrics and audience behavior,
+              we continuously refine strategies to maximize engagement and
+              conversion rates.
             </p>
           </div>
           <div className="flex flex-col justify-between">

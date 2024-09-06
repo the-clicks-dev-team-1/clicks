@@ -24,9 +24,25 @@ const ContentMarketing: FC = () => {
             <h1 className="text-3xl md:text-5xl font-bold">
               Content Marketing Services
             </h1>
-            <p className="mt-10 text-lg md:text-xl max-w-2xl mx-auto">
+            <p className="mt-10 text-lg md:text-xl max-w-2xl mx-auto text-left">
               Engage your audience, build trust, and drive conversions with our
               strategic content marketing services.
+            </p>
+            <p className="mt-3 text-lg md:text-xl max-w-2xl mx-auto text-left">
+              Content is at the heart of every successful marketing campaign.
+              Our content marketing services focus on creating valuable,
+              engaging content that resonates with your audience and drives
+              action. From blog posts and articles to infographics and videos,
+              we craft a wide range of content that helps you connect with
+              potential customers and establish your brand as an industry
+              leader.
+            </p>
+            <p className="mt-3 text-lg md:text-xl max-w-2xl mx-auto text-left">
+              We develop content strategies that align with your business goals,
+              ensuring every piece of content serves a purpose. By analyzing
+              performance metrics and audience feedback, we continually refine
+              our approach to maximize engagement and drive meaningful results
+              for your business.
             </p>
           </div>
           <div className="flex flex-col justify-between">

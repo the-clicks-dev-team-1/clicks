@@ -24,9 +24,24 @@ const CRO: FC = () => {
             <h1 className="text-3xl md:text-5xl font-bold">
               Conversion Rate Optimization (CRO) Services
             </h1>
-            <p className="mt-10 text-lg md:text-xl max-w-2xl mx-auto">
+            <p className="mt-10 text-lg md:text-xl max-w-2xl mx-auto text-left">
               Maximize your website&apos;s potential by converting more visitors
               into customers with our CRO services.
+            </p>
+            <p className="mt-3 text-lg md:text-xl max-w-2xl mx-auto text-left">
+              Conversion Rate Optimization (CRO) is all about turning website
+              visitors into customers. Our CRO services focus on analyzing user
+              behavior and identifying opportunities to improve the performance
+              of your site. By optimizing key elements such as landing pages,
+              forms, and calls-to-action, we help you increase conversion rates
+              and generate more leads or sales.
+            </p>
+            <p className="mt-3 text-lg md:text-xl max-w-2xl mx-auto text-left">
+              We use a combination of A/B testing, heat mapping, and analytics
+              to understand how visitors interact with your website. Based on
+              this data, we implement changes that make your site more
+              user-friendly and effective in driving conversions, ultimately
+              boosting your ROI.
             </p>
           </div>
           <div className="flex flex-col justify-between">
