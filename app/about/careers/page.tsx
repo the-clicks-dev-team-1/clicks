@@ -43,11 +43,14 @@ const Careers: FC = async () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
           {jobs.map((job) => (
-            <div key={job.sys.id} className="bg-[var(--bg800)] rounded-lg p-6">
+            <div
+              key={job.sys.id}
+              className="bg-[var(--bg800-w)] rounded-lg p-6 border border-[var(--border-color-t)]"
+            >
               <h3 className="text-2xl font-bold">
                 {typeof job.fields.title === "string" ? job.fields.title : ""}
               </h3>
-              <p className="mt-2 text-lg text-neutral-300">
+              <p className="mt-2 text-lg text-[var(--text-gray)]">
                 {typeof job.fields.shortDescription === "string"
                   ? job.fields.shortDescription
                   : ""}

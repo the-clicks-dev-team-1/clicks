@@ -240,7 +240,7 @@ const Pricing = () => {
   };
 
   return (
-    <div className="w-full md:items-center md:justify-center bg-[var(--bg-96)] text-white antialiased bg-grid-white/[0.02] relative overflow-hidden pt-24">
+    <div className="w-full md:items-center md:justify-center bg-[var(--bg-96)] text-[var(--text)] antialiased bg-grid-white/[0.02] relative overflow-hidden pt-24">
       {" "}
       {/* Добавил отступ сверху */}
       <Navbar />
