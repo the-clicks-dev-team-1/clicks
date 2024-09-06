@@ -109,7 +109,7 @@ export default function ContactServiceForm() {
       {!submitted ? (
         <form
           onSubmit={form.handleSubmit(onSubmit)}
-          className="space-y-4 h-full *border *border-[var(--dark-border-t)] shadow-lg rounded-3xl p-6 flex flex-col justify-between"
+          className="space-y-4 h-full *border *border-[var(--dark-border-t)] bg-[var(--bgnew)] shadow-lg rounded-3xl p-6 flex flex-col justify-between"
         >
           <div className="md:flex items-center gap-6">
             <FormField
