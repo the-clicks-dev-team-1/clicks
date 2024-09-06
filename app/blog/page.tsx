@@ -83,7 +83,7 @@ const Blog: FC = () => {
   };
 
   return (
-    <div className="bg-black text-white">
+    <div className="bg-[var(--bgnew)] text-[var(--text)]">
       <Navbar />
 
       {/* Header Section */}
@@ -124,7 +124,7 @@ const Blog: FC = () => {
               <button
                 onClick={() => handleCategoryChange(null)}
                 className={`px-4 py-2 mx-2 flex-shrink-0 w-48 h-24 rounded-lg text-center flex items-center justify-center ${
-                  selectedCategory === null ? "bg-sky-500" : "bg-neutral-800"
+                  selectedCategory === null ? "bg-sky-500" : "bg-[var(--bg800)]"
                 } text-white font-bold shadow-lg hover:bg-neutral-700 transition duration-300`}
               >
                 All Categories
@@ -162,7 +162,7 @@ const Blog: FC = () => {
           {posts.slice(0, visiblePosts).map((post) => (
             <div
               key={post.sys.id}
-              className="relative bg-neutral-800 rounded-lg overflow-hidden shadow-lg"
+              className="relative bg-[var(--bg800)] rounded-lg overflow-hidden shadow-lg"
             >
               {post.fields?.previewImage?.fields?.file?.url && (
                 <Image

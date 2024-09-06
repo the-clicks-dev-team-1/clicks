@@ -22,7 +22,7 @@ const Careers: FC = async () => {
   const jobs = await fetchJobs();
 
   return (
-    <div className="bg-black text-white">
+    <div className="bg-[var(--bgnew)] text-[var(--text)]">
       <Navbar />
 
       {/* Header Section */}
@@ -43,7 +43,7 @@ const Careers: FC = async () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
           {jobs.map((job) => (
-            <div key={job.sys.id} className="bg-neutral-800 rounded-lg p-6">
+            <div key={job.sys.id} className="bg-[var(--bg800)] rounded-lg p-6">
               <h3 className="text-2xl font-bold">
                 {typeof job.fields.title === "string" ? job.fields.title : ""}
               </h3>
@@ -64,7 +64,7 @@ const Careers: FC = async () => {
       </div>
 
       {/* Life at The Clicks Section */}
-      <div className="py-20 bg-neutral-900">
+      <div className="py-20 bg-[var(--bg900)]">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-semibold mb-10 text-center bg-clip-text text-transparent bg-gradient-to-b from-sky-400 to bg-purple-500 bg-opacity-50">
             Life at The Clicks
@@ -105,20 +105,20 @@ const Careers: FC = async () => {
           Our Benefits
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-          <div className="bg-neutral-800 rounded-lg p-6 text-center">
+          <div className="bg-[var(--bg800)] rounded-lg p-6 text-center">
             <h3 className="text-xl font-bold">Health & Wellness</h3>
             <p className="mt-2 text-neutral-300">
               Comprehensive health and wellness plans to keep you and your
               family healthy.
             </p>
           </div>
-          <div className="bg-neutral-800 rounded-lg p-6 text-center">
+          <div className="bg-[var(--bg800)] rounded-lg p-6 text-center">
             <h3 className="text-xl font-bold">Career Growth</h3>
             <p className="mt-2 text-neutral-300">
               Opportunities for professional development and career advancement.
             </p>
           </div>
-          <div className="bg-neutral-800 rounded-lg p-6 text-center">
+          <div className="bg-[var(--bg800)] rounded-lg p-6 text-center">
             <h3 className="text-xl font-bold">Work-Life Balance</h3>
             <p className="mt-2 text-neutral-300">
               Flexible work hours and remote work options to support your

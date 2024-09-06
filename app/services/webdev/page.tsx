@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 
 const WebDevelopment: FC = () => {
   return (
-    <div className="bg-black text-white">
+    <div className="bg-[var(--bgnew)] text-[var(--text)]">
       <Navbar />
 
       {/* Header section with form */}
@@ -103,12 +103,12 @@ const WebDevelopment: FC = () => {
       </div>
 
       {/* Services section */}
-      <div className="bg-neutral-900 py-20 px-4 md:px-20 lg:px-40">
+      <div className="bg-[var(--bg900)] py-20 px-4 md:px-20 lg:px-40">
         <h2 className="text-2xl md:text-3xl font-semibold text-center mb-10">
           Our Web Development Services
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-          <div className="bg-neutral-800 p-6 rounded-lg">
+          <div className="bg-[var(--bg800)] p-6 rounded-lg">
             <h3 className="text-xl font-semibold mb-4">
               Custom Website Development
             </h3>
@@ -117,7 +117,7 @@ const WebDevelopment: FC = () => {
               requirements, built with the latest web technologies.
             </p>
           </div>
-          <div className="bg-neutral-800 p-6 rounded-lg">
+          <div className="bg-[var(--bg800)] p-6 rounded-lg">
             <h3 className="text-xl font-semibold mb-4">eCommerce Solutions</h3>
             <p>
               We create powerful eCommerce platforms that provide an intuitive
@@ -125,7 +125,7 @@ const WebDevelopment: FC = () => {
               business.
             </p>
           </div>
-          <div className="bg-neutral-800 p-6 rounded-lg">
+          <div className="bg-[var(--bg800)] p-6 rounded-lg">
             <h3 className="text-xl font-semibold mb-4">
               Content Management Systems (CMS)
             </h3>
@@ -134,7 +134,7 @@ const WebDevelopment: FC = () => {
               designed to be user-friendly and scalable.
             </p>
           </div>
-          <div className="bg-neutral-800 p-6 rounded-lg">
+          <div className="bg-[var(--bg800)] p-6 rounded-lg">
             <h3 className="text-xl font-semibold mb-4">
               Responsive Web Design
             </h3>
@@ -143,7 +143,7 @@ const WebDevelopment: FC = () => {
               seamless experience for users on mobile, tablet, and desktop.
             </p>
           </div>
-          <div className="bg-neutral-800 p-6 rounded-lg">
+          <div className="bg-[var(--bg800)] p-6 rounded-lg">
             <h3 className="text-xl font-semibold mb-4">
               Web Application Development
             </h3>
@@ -152,7 +152,7 @@ const WebDevelopment: FC = () => {
               processes and improve efficiency.
             </p>
           </div>
-          <div className="bg-neutral-800 p-6 rounded-lg">
+          <div className="bg-[var(--bg800)] p-6 rounded-lg">
             <h3 className="text-xl font-semibold mb-4">SEO Optimization</h3>
             <p>
               We build websites that are optimized for search engines, ensuring

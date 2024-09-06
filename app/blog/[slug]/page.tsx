@@ -64,7 +64,7 @@ const BlogPost: FC<PostProps> = ({ params }) => {
   const { title, description, body, featuredImage, category } = post.fields;
 
   return (
-    <div className="bg-black text-white">
+    <div className="bg-[var(--bgnew)] text-[var(--text)]">
       <Navbar />
 
       <div className="py-20 px-4 md:px-20 lg:px-40 max-w-7xl mx-auto">
@@ -85,19 +85,19 @@ const BlogPost: FC<PostProps> = ({ params }) => {
         )}
 
         {description && (
-          <div className="mt-4 text-neutral-300">
+          <div className="mt-4 text-[var(--text-gray)]">
             <p>{description}</p>
           </div>
         )}
 
         {body && (
-          <div className="mt-10 prose prose-invert max-w-none">
+          <div className="mt-10 prose prose-invert max-w-none text-[var(--text-gray)]">
             <ReactMarkdown rehypePlugins={[rehypeRaw]}>{body}</ReactMarkdown>
           </div>
         )}
 
         {category?.fields?.title && (
-          <div className="mt-4 text-neutral-300">
+          <div className="mt-4 text-[var(--text-gray)]">
             <strong>Category: </strong>
             {category.fields.title}
           </div>

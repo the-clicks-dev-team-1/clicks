@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 
 const StrategyDevelopment: FC = () => {
   return (
-    <div className="bg-black text-white">
+    <div className="bg-[var(--bgnew)] text-[var(--text)]">
       <Navbar />
 
       {/* Header section with form */}
@@ -110,7 +110,7 @@ const StrategyDevelopment: FC = () => {
       </div>
 
       {/* Why Strategy Matters Section */}
-      <div className="py-20 px-4 md:px-20 lg:px-40 bg-neutral-900">
+      <div className="py-20 px-4 md:px-20 lg:px-40 bg-[var(--bg900)]">
         <h2 className="text-2xl md:text-3xl font-semibold mb-6 text-center">
           Why Strategy Development Matters?
         </h2>
@@ -121,7 +121,7 @@ const StrategyDevelopment: FC = () => {
           company’s long-term vision.
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-          <div className="bg-neutral-800 p-6 rounded-lg">
+          <div className="bg-[var(--bg800)] p-6 rounded-lg">
             <h3 className="text-xl font-semibold mb-4">Clear Direction</h3>
             <p>
               A well-crafted strategy gives your business a clear direction,
@@ -129,7 +129,7 @@ const StrategyDevelopment: FC = () => {
               goals.
             </p>
           </div>
-          <div className="bg-neutral-800 p-6 rounded-lg">
+          <div className="bg-[var(--bg800)] p-6 rounded-lg">
             <h3 className="text-xl font-semibold mb-4">Resource Allocation</h3>
             <p>
               Effective strategy development ensures that your resources are
@@ -137,7 +137,7 @@ const StrategyDevelopment: FC = () => {
               initiatives.
             </p>
           </div>
-          <div className="bg-neutral-800 p-6 rounded-lg">
+          <div className="bg-[var(--bg800)] p-6 rounded-lg">
             <h3 className="text-xl font-semibold mb-4">Long-Term Success</h3>
             <p>
               A solid strategy helps your business achieve long-term success by
@@ -153,7 +153,7 @@ const StrategyDevelopment: FC = () => {
           Our Strategy Development Services
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-          <div className="bg-neutral-800 p-6 rounded-lg">
+          <div className="bg-[var(--bg800)] p-6 rounded-lg">
             <h3 className="text-xl font-semibold mb-4">Business Strategy</h3>
             <p>
               We help you define your company’s vision, mission, and long-term
@@ -161,7 +161,7 @@ const StrategyDevelopment: FC = () => {
               your goals.
             </p>
           </div>
-          <div className="bg-neutral-800 p-6 rounded-lg">
+          <div className="bg-[var(--bg800)] p-6 rounded-lg">
             <h3 className="text-xl font-semibold mb-4">Market Analysis</h3>
             <p>
               Our market analysis services provide insights into your industry,
@@ -169,7 +169,7 @@ const StrategyDevelopment: FC = () => {
               strategic decisions.
             </p>
           </div>
-          <div className="bg-neutral-800 p-6 rounded-lg">
+          <div className="bg-[var(--bg800)] p-6 rounded-lg">
             <h3 className="text-xl font-semibold mb-4">Financial Planning</h3>
             <p>
               We assist in developing financial plans that support your
@@ -177,7 +177,7 @@ const StrategyDevelopment: FC = () => {
               for growth.
             </p>
           </div>
-          <div className="bg-neutral-800 p-6 rounded-lg">
+          <div className="bg-[var(--bg800)] p-6 rounded-lg">
             <h3 className="text-xl font-semibold mb-4">Risk Management</h3>
             <p>
               We help identify potential risks and develop strategies to
@@ -185,7 +185,7 @@ const StrategyDevelopment: FC = () => {
               for challenges.
             </p>
           </div>
-          <div className="bg-neutral-800 p-6 rounded-lg">
+          <div className="bg-[var(--bg800)] p-6 rounded-lg">
             <h3 className="text-xl font-semibold mb-4">Operational Strategy</h3>
             <p>
               Our operational strategy services focus on improving efficiency
@@ -193,7 +193,7 @@ const StrategyDevelopment: FC = () => {
               your strategic goals.
             </p>
           </div>
-          <div className="bg-neutral-800 p-6 rounded-lg">
+          <div className="bg-[var(--bg800)] p-6 rounded-lg">
             <h3 className="text-xl font-semibold mb-4">
               Performance Measurement
             </h3>
@@ -206,7 +206,7 @@ const StrategyDevelopment: FC = () => {
       </div>
 
       {/* Call to Action section */}
-      <div className="py-20 px-4 md:px-20 lg:px-40 text-center bg-black">
+      <div className="py-20 px-4 md:px-20 lg:px-40 text-center bg-[var(--bgnew)]">
         <h2 className="text-2xl md:text-3xl font-semibold mb-6">
           Ready to Elevate Your Business Strategy?
         </h2>

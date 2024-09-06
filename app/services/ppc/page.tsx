@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 
 const PPC: FC = () => {
   return (
-    <div className="bg-black text-white">
+    <div className="bg-[var(--bgnew)] text-[var(--text)]">
       <Navbar />
 
       {/* Header section with form */}
@@ -108,7 +108,7 @@ const PPC: FC = () => {
       </div>
 
       {/* Why PPC Matters Section */}
-      <div className="py-20 px-4 md:px-20 lg:px-40 bg-neutral-900">
+      <div className="py-20 px-4 md:px-20 lg:px-40 bg-[var(--bg900)]">
         <h2 className="text-2xl md:text-3xl font-semibold mb-6 text-center">
           Why PPC Matters?
         </h2>
@@ -119,14 +119,14 @@ const PPC: FC = () => {
           audience.
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-          <div className="bg-neutral-800 p-6 rounded-lg">
+          <div className="bg-[var(--bg800)] p-6 rounded-lg">
             <h3 className="text-xl font-semibold mb-4">Immediate Results</h3>
             <p>
               PPC campaigns can start driving traffic to your website
               immediately, allowing you to see results quickly.
             </p>
           </div>
-          <div className="bg-neutral-800 p-6 rounded-lg">
+          <div className="bg-[var(--bg800)] p-6 rounded-lg">
             <h3 className="text-xl font-semibold mb-4">Targeted Traffic</h3>
             <p>
               With PPC, you can target specific audiences based on keywords,
@@ -134,7 +134,7 @@ const PPC: FC = () => {
               right people.
             </p>
           </div>
-          <div className="bg-neutral-800 p-6 rounded-lg">
+          <div className="bg-[var(--bg800)] p-6 rounded-lg">
             <h3 className="text-xl font-semibold mb-4">Cost Control</h3>
             <p>
               PPC allows you to set a budget and control your costs, making it a
@@ -150,28 +150,28 @@ const PPC: FC = () => {
           Our PPC Services
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-          <div className="bg-neutral-800 p-6 rounded-lg">
+          <div className="bg-[var(--bg800)] p-6 rounded-lg">
             <h3 className="text-xl font-semibold mb-4">Keyword Research</h3>
             <p>
               We identify the most effective keywords for your business,
               ensuring that your ads reach the right audience.
             </p>
           </div>
-          <div className="bg-neutral-800 p-6 rounded-lg">
+          <div className="bg-[var(--bg800)] p-6 rounded-lg">
             <h3 className="text-xl font-semibold mb-4">Ad Creation</h3>
             <p>
               Our team creates compelling ads that attract clicks and drive
               conversions, making the most of your ad spend.
             </p>
           </div>
-          <div className="bg-neutral-800 p-6 rounded-lg">
+          <div className="bg-[var(--bg800)] p-6 rounded-lg">
             <h3 className="text-xl font-semibold mb-4">Campaign Management</h3>
             <p>
               We manage your PPC campaigns from start to finish, optimizing
               performance and ensuring your ads are effective.
             </p>
           </div>
-          <div className="bg-neutral-800 p-6 rounded-lg">
+          <div className="bg-[var(--bg800)] p-6 rounded-lg">
             <h3 className="text-xl font-semibold mb-4">
               Landing Page Optimization
             </h3>
@@ -180,14 +180,14 @@ const PPC: FC = () => {
               into leads and sales, maximizing your ROI.
             </p>
           </div>
-          <div className="bg-neutral-800 p-6 rounded-lg">
+          <div className="bg-[var(--bg800)] p-6 rounded-lg">
             <h3 className="text-xl font-semibold mb-4">Performance Tracking</h3>
             <p>
               Our detailed reports provide insights into how your campaigns are
               performing, allowing for continuous improvement.
             </p>
           </div>
-          <div className="bg-neutral-800 p-6 rounded-lg">
+          <div className="bg-[var(--bg800)] p-6 rounded-lg">
             <h3 className="text-xl font-semibold mb-4">Remarketing</h3>
             <p>
               We use remarketing techniques to re-engage visitors who have
@@ -198,7 +198,7 @@ const PPC: FC = () => {
       </div>
 
       {/* Call to Action section */}
-      <div className="py-20 px-4 md:px-20 lg:px-40 text-center bg-black">
+      <div className="py-20 px-4 md:px-20 lg:px-40 text-center bg-[var(--bgnew)]">
         <h2 className="text-2xl md:text-3xl font-semibold mb-6">
           Ready to Drive Targeted Traffic to Your Website?
         </h2>

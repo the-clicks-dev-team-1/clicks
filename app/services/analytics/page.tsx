@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 
 const AnalyticsAndReporting: FC = () => {
   return (
-    <div className="bg-black text-white">
+    <div className="bg-[var(--bgnew)] text-[var(--text)]">
       <Navbar />
 
       {/* Header section with form */}
@@ -108,7 +108,7 @@ const AnalyticsAndReporting: FC = () => {
       </div>
 
       {/* Why Analytics and Reporting Matter Section */}
-      <div className="py-20 px-4 md:px-20 lg:px-40 bg-neutral-900">
+      <div className="py-20 px-4 md:px-20 lg:px-40 bg-[var(--bg900)]">
         <h2 className="text-2xl md:text-3xl font-semibold mb-6 text-center">
           Why Analytics and Reporting Matter?
         </h2>
@@ -119,7 +119,7 @@ const AnalyticsAndReporting: FC = () => {
           performance, and achieve better outcomes.
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-          <div className="bg-neutral-800 p-6 rounded-lg">
+          <div className="bg-[var(--bg800)] p-6 rounded-lg">
             <h3 className="text-xl font-semibold mb-4">
               Data-Driven Decisions
             </h3>
@@ -129,7 +129,7 @@ const AnalyticsAndReporting: FC = () => {
               not guesswork.
             </p>
           </div>
-          <div className="bg-neutral-800 p-6 rounded-lg">
+          <div className="bg-[var(--bg800)] p-6 rounded-lg">
             <h3 className="text-xl font-semibold mb-4">
               Performance Optimization
             </h3>
@@ -139,7 +139,7 @@ const AnalyticsAndReporting: FC = () => {
               strategies for better results.
             </p>
           </div>
-          <div className="bg-neutral-800 p-6 rounded-lg">
+          <div className="bg-[var(--bg800)] p-6 rounded-lg">
             <h3 className="text-xl font-semibold mb-4">Measure ROI</h3>
             <p>
               Analytics and reporting help you measure the return on investment
@@ -156,7 +156,7 @@ const AnalyticsAndReporting: FC = () => {
           Our Analytics and Reporting Services
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-          <div className="bg-neutral-800 p-6 rounded-lg">
+          <div className="bg-[var(--bg800)] p-6 rounded-lg">
             <h3 className="text-xl font-semibold mb-4">
               Google Analytics Setup
             </h3>
@@ -166,7 +166,7 @@ const AnalyticsAndReporting: FC = () => {
               behavior and traffic sources.
             </p>
           </div>
-          <div className="bg-neutral-800 p-6 rounded-lg">
+          <div className="bg-[var(--bg800)] p-6 rounded-lg">
             <h3 className="text-xl font-semibold mb-4">Custom Dashboards</h3>
             <p>
               Our team creates custom dashboards that provide you with the key
@@ -174,7 +174,7 @@ const AnalyticsAndReporting: FC = () => {
               decisions.
             </p>
           </div>
-          <div className="bg-neutral-800 p-6 rounded-lg">
+          <div className="bg-[var(--bg800)] p-6 rounded-lg">
             <h3 className="text-xl font-semibold mb-4">Campaign Tracking</h3>
             <p>
               We track the performance of your marketing campaigns across all
@@ -182,14 +182,14 @@ const AnalyticsAndReporting: FC = () => {
               results.
             </p>
           </div>
-          <div className="bg-neutral-800 p-6 rounded-lg">
+          <div className="bg-[var(--bg800)] p-6 rounded-lg">
             <h3 className="text-xl font-semibold mb-4">Conversion Tracking</h3>
             <p>
               We set up conversion tracking to measure the effectiveness of your
               website and campaigns in converting visitors into customers.
             </p>
           </div>
-          <div className="bg-neutral-800 p-6 rounded-lg">
+          <div className="bg-[var(--bg800)] p-6 rounded-lg">
             <h3 className="text-xl font-semibold mb-4">Regular Reporting</h3>
             <p>
               We provide regular reports that detail the performance of your
@@ -197,7 +197,7 @@ const AnalyticsAndReporting: FC = () => {
               improvement.
             </p>
           </div>
-          <div className="bg-neutral-800 p-6 rounded-lg">
+          <div className="bg-[var(--bg800)] p-6 rounded-lg">
             <h3 className="text-xl font-semibold mb-4">Competitor Analysis</h3>
             <p>
               Our competitor analysis services provide insights into your
@@ -208,7 +208,7 @@ const AnalyticsAndReporting: FC = () => {
       </div>
 
       {/* Call to Action section */}
-      <div className="py-20 px-4 md:px-20 lg:px-40 text-center bg-black">
+      <div className="py-20 px-4 md:px-20 lg:px-40 text-center bg-[var(--bgnew)]">
         <h2 className="text-2xl md:text-3xl font-semibold mb-6">
           Ready to Unlock Insights and Drive Growth?
         </h2>

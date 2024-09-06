@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 
 const PR: FC = () => {
   return (
-    <div className="bg-black text-white">
+    <div className="bg-[var(--bgnew)] text-[var(--text)]">
       <Navbar />
 
       {/* Header section with form */}
@@ -108,7 +108,7 @@ const PR: FC = () => {
       </div>
 
       {/* Why PR Matters Section */}
-      <div className="py-20 px-4 md:px-20 lg:px-40 bg-neutral-900">
+      <div className="py-20 px-4 md:px-20 lg:px-40 bg-[var(--bg900)]">
         <h2 className="text-2xl md:text-3xl font-semibold mb-6 text-center">
           Why PR Matters?
         </h2>
@@ -119,7 +119,7 @@ const PR: FC = () => {
           message reaches the right people.
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-          <div className="bg-neutral-800 p-6 rounded-lg">
+          <div className="bg-[var(--bg800)] p-6 rounded-lg">
             <h3 className="text-xl font-semibold mb-4">
               Reputation Management
             </h3>
@@ -128,14 +128,14 @@ const PR: FC = () => {
               positive narratives and handling negative publicity effectively.
             </p>
           </div>
-          <div className="bg-neutral-800 p-6 rounded-lg">
+          <div className="bg-[var(--bg800)] p-6 rounded-lg">
             <h3 className="text-xl font-semibold mb-4">Media Relations</h3>
             <p>
               Our media relations services help you secure positive media
               coverage, enhancing your brand&apos;s visibility and credibility.
             </p>
           </div>
-          <div className="bg-neutral-800 p-6 rounded-lg">
+          <div className="bg-[var(--bg800)] p-6 rounded-lg">
             <h3 className="text-xl font-semibold mb-4">Crisis Communication</h3>
             <p>
               We help you manage communication during crises, ensuring that your
@@ -151,14 +151,14 @@ const PR: FC = () => {
           Our PR Services
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-          <div className="bg-neutral-800 p-6 rounded-lg">
+          <div className="bg-[var(--bg800)] p-6 rounded-lg">
             <h3 className="text-xl font-semibold mb-4">Media Relations</h3>
             <p>
               We connect your brand with the media, securing interviews, press
               releases, and articles that enhance your brand&apos;s visibility.
             </p>
           </div>
-          <div className="bg-neutral-800 p-6 rounded-lg">
+          <div className="bg-[var(--bg800)] p-6 rounded-lg">
             <h3 className="text-xl font-semibold mb-4">Press Releases</h3>
             <p>
               Our team crafts compelling press releases that capture the
@@ -166,28 +166,28 @@ const PR: FC = () => {
               events.
             </p>
           </div>
-          <div className="bg-neutral-800 p-6 rounded-lg">
+          <div className="bg-[var(--bg800)] p-6 rounded-lg">
             <h3 className="text-xl font-semibold mb-4">Crisis Management</h3>
             <p>
               We provide expert crisis management services, helping you navigate
               and mitigate any negative situations that could harm your brand.
             </p>
           </div>
-          <div className="bg-neutral-800 p-6 rounded-lg">
+          <div className="bg-[var(--bg800)] p-6 rounded-lg">
             <h3 className="text-xl font-semibold mb-4">Event Planning</h3>
             <p>
               We help you plan and execute successful events that generate
               positive media coverage and engage your audience.
             </p>
           </div>
-          <div className="bg-neutral-800 p-6 rounded-lg">
+          <div className="bg-[var(--bg800)] p-6 rounded-lg">
             <h3 className="text-xl font-semibold mb-4">Influencer Outreach</h3>
             <p>
               We connect your brand with influencers who can help amplify your
               message and reach a wider audience.
             </p>
           </div>
-          <div className="bg-neutral-800 p-6 rounded-lg">
+          <div className="bg-[var(--bg800)] p-6 rounded-lg">
             <h3 className="text-xl font-semibold mb-4">
               Reputation Management
             </h3>
@@ -200,7 +200,7 @@ const PR: FC = () => {
       </div>
 
       {/* Call to Action section */}
-      <div className="py-20 px-4 md:px-20 lg:px-40 text-center bg-black">
+      <div className="py-20 px-4 md:px-20 lg:px-40 text-center bg-[var(--bgnew)]">
         <h2 className="text-2xl md:text-3xl font-semibold mb-6">
           Ready to Build a Stronger Public Image?
         </h2>

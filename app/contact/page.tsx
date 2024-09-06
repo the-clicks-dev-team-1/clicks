@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 
 const Contact: FC = () => {
   return (
-    <div className="bg-black text-white">
+    <div className="bg-[var(--bgnew)] text-[var(--text)]">
       <Navbar />
 
       {/* Header section */}
@@ -29,7 +29,7 @@ const Contact: FC = () => {
       <ContactBlock />
 
       {/* Map Section */}
-      <div className="bg-black py-20">
+      <div className="bg-[var(--bgnew)] py-20">
         <div className="max-w-7xl mx-auto px-4 md:px-8 lg:px-12">
           <h2 className="text-2xl md:text-3xl font-semibold mb-6 text-center">
             Our Location

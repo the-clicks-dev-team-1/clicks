@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 
 const ContentMarketing: FC = () => {
   return (
-    <div className="bg-black text-white">
+    <div className="bg-[var(--bgnew)] text-[var(--text)]">
       <Navbar />
 
       {/* Header section with form */}
@@ -108,7 +108,7 @@ const ContentMarketing: FC = () => {
       </div>
 
       {/* Why Content Marketing Matters Section */}
-      <div className="py-20 px-4 md:px-20 lg:px-40 bg-neutral-900">
+      <div className="py-20 px-4 md:px-20 lg:px-40 bg-[var(--bg900)]">
         <h2 className="text-2xl md:text-3xl font-semibold mb-6 text-center">
           Why Content Marketing Matters?
         </h2>
@@ -119,7 +119,7 @@ const ContentMarketing: FC = () => {
           with your customers and increase brand loyalty.
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-          <div className="bg-neutral-800 p-6 rounded-lg">
+          <div className="bg-[var(--bg800)] p-6 rounded-lg">
             <h3 className="text-xl font-semibold mb-4">Build Trust</h3>
             <p>
               By providing valuable and relevant content, you can build trust
@@ -127,14 +127,14 @@ const ContentMarketing: FC = () => {
               industry.
             </p>
           </div>
-          <div className="bg-neutral-800 p-6 rounded-lg">
+          <div className="bg-[var(--bg800)] p-6 rounded-lg">
             <h3 className="text-xl font-semibold mb-4">Increase Engagement</h3>
             <p>
               High-quality content drives engagement, encouraging your audience
               to interact with your brand and share your content with others.
             </p>
           </div>
-          <div className="bg-neutral-800 p-6 rounded-lg">
+          <div className="bg-[var(--bg800)] p-6 rounded-lg">
             <h3 className="text-xl font-semibold mb-4">Support SEO</h3>
             <p>
               Content marketing plays a crucial role in SEO by providing the
@@ -151,7 +151,7 @@ const ContentMarketing: FC = () => {
           Our Content Marketing Services
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-          <div className="bg-neutral-800 p-6 rounded-lg">
+          <div className="bg-[var(--bg800)] p-6 rounded-lg">
             <h3 className="text-xl font-semibold mb-4">Content Strategy</h3>
             <p>
               We develop a content strategy that aligns with your business
@@ -159,14 +159,14 @@ const ContentMarketing: FC = () => {
               marketing efforts.
             </p>
           </div>
-          <div className="bg-neutral-800 p-6 rounded-lg">
+          <div className="bg-[var(--bg800)] p-6 rounded-lg">
             <h3 className="text-xl font-semibold mb-4">Content Creation</h3>
             <p>
               Our team creates high-quality content tailored to your audience,
               from blog posts and articles to videos and infographics.
             </p>
           </div>
-          <div className="bg-neutral-800 p-6 rounded-lg">
+          <div className="bg-[var(--bg800)] p-6 rounded-lg">
             <h3 className="text-xl font-semibold mb-4">Content Distribution</h3>
             <p>
               We distribute your content across the right channels to maximize
@@ -174,14 +174,14 @@ const ContentMarketing: FC = () => {
               audience.
             </p>
           </div>
-          <div className="bg-neutral-800 p-6 rounded-lg">
+          <div className="bg-[var(--bg800)] p-6 rounded-lg">
             <h3 className="text-xl font-semibold mb-4">SEO Content</h3>
             <p>
               Our content is optimized for search engines, helping your website
               rank higher in search results and driving organic traffic.
             </p>
           </div>
-          <div className="bg-neutral-800 p-6 rounded-lg">
+          <div className="bg-[var(--bg800)] p-6 rounded-lg">
             <h3 className="text-xl font-semibold mb-4">Content Audits</h3>
             <p>
               We conduct thorough content audits to identify gaps and
@@ -189,7 +189,7 @@ const ContentMarketing: FC = () => {
               relevant.
             </p>
           </div>
-          <div className="bg-neutral-800 p-6 rounded-lg">
+          <div className="bg-[var(--bg800)] p-6 rounded-lg">
             <h3 className="text-xl font-semibold mb-4">
               Analytics & Reporting
             </h3>
@@ -203,7 +203,7 @@ const ContentMarketing: FC = () => {
       </div>
 
       {/* Call to Action section */}
-      <div className="py-20 px-4 md:px-20 lg:px-40 text-center bg-black">
+      <div className="py-20 px-4 md:px-20 lg:px-40 text-center bg-[var(--bgnew)]">
         <h2 className="text-2xl md:text-3xl font-semibold mb-6">
           Ready to Elevate Your Content Strategy?
         </h2>

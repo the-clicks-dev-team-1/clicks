@@ -7,6 +7,10 @@
     --bgnew: black;
     --bg-50: rgba(0, 0, 0, 0.5);
     --bg-99: rgba(0, 0, 0, 0.99);
+    --bg-96: rgba(0, 0, 0, 0.96);
+    --bg700: #404040;
+    --bg800: #262626;
+    --bg900: #171717;
     --text: white;
     --border-color: white;
     --text-gray: #d4d4d4;
@@ -15,6 +19,9 @@
     --title: #f4f4f5;
     --desc: #a1a1aa;
     --bg-block: black;
+    --dark-border: rgb(255 255 255 / 0.2);
+    --border-input: 214.3 31.8% 91.4%;
+    --overlay: transparent;
 
     --background: 0 0% 100%;
     --foreground: 222.2 84% 4.9%;
@@ -51,6 +58,10 @@
     --bgnew: white;
     --bg-50: black;
     --bg-99: rgba(255, 255, 255, 0.99);
+    --bg-96: rgba(255, 255, 255, 0.96);
+    --bg700: #94a3b8;
+    --bg800: #94a3b8;
+    --bg900: #64748b;
     --text: black;
     --border-color: black;
     --text-gray: #404040;
@@ -59,6 +70,9 @@
     --title: #101010;
     --desc: #1e1e1f;
     --bg-block: #d4d4d4;
+    --dark-border: transparent;
+    --border-input: transparent;
+    --overlay: rgb(0 0 0 / 0.2);
 
     --background: 222.2 84% 4.9%;
     --foreground: 210 40% 98%;

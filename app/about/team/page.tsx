@@ -16,19 +16,19 @@ export const metadata: Metadata = {
 
 const Team: FC = () => {
   return (
-    <div className="bg-black text-white">
+    <div className="bg-[var(--bgnew)] text-[var(--text)]">
       <Navbar />
 
       {/* Main content wrapper */}
       <div className="px-4 py-8 max-w-7xl mx-auto">
         {/* Header Section */}
-        <div className="bg-black py-20">
+        <div className="bg-[var(--bgnew)] py-20">
           <div className="flex flex-col mt-10 md:flex-row items-center justify-center">
             <div className="w-full md:w-1/2 px-4 md:px-16 text-center md:text-left">
               <div className="text-2xl md:text-4xl bg-clip-text text-transparent bg-gradient-to-b from-sky-400 to bg-purple-500 bg-opacity-50">
                 Meet the Clickers Driving Success for Our Clients.
               </div>
-              <p className="mt-4 text-sm md:text-m font-normal text-neutral-300 text-justify">
+              <p className="mt-4 text-sm md:text-m font-normal text-[var(--text-gray)] text-justify">
                 The Clicks team is a fusion of passion, experience, and
                 innovation, where every &quot;Clicker&quot; is not just an
                 employee but a driving force behind success. We are
@@ -40,7 +40,7 @@ const Team: FC = () => {
                 unique expertise, combining efforts to create marketing
                 campaigns that not only meet goals but exceed them.
               </p>
-              <p className="mt-4 text-sm md:text-m font-normal text-neutral-300 text-justify">
+              <p className="mt-4 text-sm md:text-m font-normal text-[var(--text-gray)] text-justify">
                 At the heart of our work is a partnership with clients, built on
                 mutual trust and understanding. We strive to ensure that every
                 project is a step towards long-term success. Clickers are not
@@ -82,7 +82,7 @@ const Team: FC = () => {
         </div>
 
         {/* Team Section */}
-        <div className="bg-black py-20">
+        <div className="bg-[var(--bgnew)] py-20">
           <div className="container mx-auto px-4 text-center">
             <h2 className="text-2xl sm:text-3xl md:text-4xl bg-clip-text text-transparent bg-gradient-to-b from-sky-400 to bg-purple-500 bg-opacity-50">
               Meet Our Team

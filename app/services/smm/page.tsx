@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 
 const SMM: FC = () => {
   return (
-    <div className="bg-black text-white">
+    <div className="bg-[var(--bgnew)] text-[var(--text)]">
       <Navbar />
 
       {/* Header section with form */}
@@ -108,7 +108,7 @@ const SMM: FC = () => {
       </div>
 
       {/* Why SMM Matters Section */}
-      <div className="py-20 px-4 md:px-20 lg:px-40 bg-neutral-900">
+      <div className="py-20 px-4 md:px-20 lg:px-40 bg-[var(--bg900)]">
         <h2 className="text-2xl md:text-3xl font-semibold mb-6 text-center">
           Why SMM Matters?
         </h2>
@@ -118,7 +118,7 @@ const SMM: FC = () => {
           brand awareness, drive website traffic, and generate leads.
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-          <div className="bg-neutral-800 p-6 rounded-lg">
+          <div className="bg-[var(--bg800)] p-6 rounded-lg">
             <h3 className="text-xl font-semibold mb-4">Brand Awareness</h3>
             <p>
               SMM helps you build brand recognition by consistently sharing
@@ -126,14 +126,14 @@ const SMM: FC = () => {
               platforms.
             </p>
           </div>
-          <div className="bg-neutral-800 p-6 rounded-lg">
+          <div className="bg-[var(--bg800)] p-6 rounded-lg">
             <h3 className="text-xl font-semibold mb-4">Audience Engagement</h3>
             <p>
               By engaging with your audience through social media, you can build
               trust, foster loyalty, and create a community around your brand.
             </p>
           </div>
-          <div className="bg-neutral-800 p-6 rounded-lg">
+          <div className="bg-[var(--bg800)] p-6 rounded-lg">
             <h3 className="text-xl font-semibold mb-4">Lead Generation</h3>
             <p>
               Our SMM strategies are designed to convert social media followers
@@ -149,14 +149,14 @@ const SMM: FC = () => {
           Our SMM Services
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-          <div className="bg-neutral-800 p-6 rounded-lg">
+          <div className="bg-[var(--bg800)] p-6 rounded-lg">
             <h3 className="text-xl font-semibold mb-4">Content Creation</h3>
             <p>
               We create engaging and relevant content that resonates with your
               audience and drives engagement on social media.
             </p>
           </div>
-          <div className="bg-neutral-800 p-6 rounded-lg">
+          <div className="bg-[var(--bg800)] p-6 rounded-lg">
             <h3 className="text-xl font-semibold mb-4">
               Social Media Management
             </h3>
@@ -165,7 +165,7 @@ const SMM: FC = () => {
               activity and engagement with your audience.
             </p>
           </div>
-          <div className="bg-neutral-800 p-6 rounded-lg">
+          <div className="bg-[var(--bg800)] p-6 rounded-lg">
             <h3 className="text-xl font-semibold mb-4">
               Paid Social Advertising
             </h3>
@@ -174,21 +174,21 @@ const SMM: FC = () => {
               platforms to increase your reach and drive conversions.
             </p>
           </div>
-          <div className="bg-neutral-800 p-6 rounded-lg">
+          <div className="bg-[var(--bg800)] p-6 rounded-lg">
             <h3 className="text-xl font-semibold mb-4">Community Management</h3>
             <p>
               We help build and manage online communities around your brand,
               fostering engagement and loyalty.
             </p>
           </div>
-          <div className="bg-neutral-800 p-6 rounded-lg">
+          <div className="bg-[var(--bg800)] p-6 rounded-lg">
             <h3 className="text-xl font-semibold mb-4">Social Media Audits</h3>
             <p>
               We conduct comprehensive audits of your social media presence,
               providing insights and recommendations for improvement.
             </p>
           </div>
-          <div className="bg-neutral-800 p-6 rounded-lg">
+          <div className="bg-[var(--bg800)] p-6 rounded-lg">
             <h3 className="text-xl font-semibold mb-4">
               Analytics & Reporting
             </h3>
@@ -202,7 +202,7 @@ const SMM: FC = () => {
       </div>
 
       {/* Call to Action section */}
-      <div className="py-20 px-4 md:px-20 lg:px-40 text-center bg-black">
+      <div className="py-20 px-4 md:px-20 lg:px-40 text-center bg-[var(--bgnew)]">
         <h2 className="text-2xl md:text-3xl font-semibold mb-6">
           Ready to Elevate Your Social Media Presence?
         </h2>

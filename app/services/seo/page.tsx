@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 
 const SEO: FC = () => {
   return (
-    <div className="bg-black text-white">
+    <div className="bg-[var(--bgnew)] text-[var(--text)]">
       <Navbar />
 
       {/* Header section with form */}
@@ -110,7 +110,7 @@ const SEO: FC = () => {
       </div>
 
       {/* Why SEO Matters Section */}
-      <div className="py-20 px-4 md:px-20 lg:px-40 bg-neutral-900">
+      <div className="py-20 px-4 md:px-20 lg:px-40 bg-[var(--bg900)]">
         <h2 className="text-2xl md:text-3xl font-semibold mb-6 text-center">
           Why SEO Matters?
         </h2>
@@ -120,7 +120,7 @@ const SEO: FC = () => {
           traffic to your site, leading to higher engagement and conversions.
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-          <div className="bg-neutral-800 p-6 rounded-lg">
+          <div className="bg-[var(--bg800)] p-6 rounded-lg">
             <h3 className="text-xl font-semibold mb-4">Increase Visibility</h3>
             <p>
               With our SEO strategies, your website will rank higher in search
@@ -128,7 +128,7 @@ const SEO: FC = () => {
               you.
             </p>
           </div>
-          <div className="bg-neutral-800 p-6 rounded-lg">
+          <div className="bg-[var(--bg800)] p-6 rounded-lg">
             <h3 className="text-xl font-semibold mb-4">Drive More Traffic</h3>
             <p>
               Our SEO services focus on driving more organic traffic to your
@@ -136,7 +136,7 @@ const SEO: FC = () => {
               customers.
             </p>
           </div>
-          <div className="bg-neutral-800 p-6 rounded-lg">
+          <div className="bg-[var(--bg800)] p-6 rounded-lg">
             <h3 className="text-xl font-semibold mb-4">
               Improve User Experience
             </h3>
@@ -154,42 +154,42 @@ const SEO: FC = () => {
           Our SEO Services
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-          <div className="bg-neutral-800 p-6 rounded-lg">
+          <div className="bg-[var(--bg800)] p-6 rounded-lg">
             <h3 className="text-xl font-semibold mb-4">On-Page SEO</h3>
             <p>
               We optimize your website’s content, meta tags, and structure to
               ensure it’s search engine friendly.
             </p>
           </div>
-          <div className="bg-neutral-800 p-6 rounded-lg">
+          <div className="bg-[var(--bg800)] p-6 rounded-lg">
             <h3 className="text-xl font-semibold mb-4">Off-Page SEO</h3>
             <p>
               Our off-page SEO strategies focus on building high-quality
               backlinks to boost your site’s authority.
             </p>
           </div>
-          <div className="bg-neutral-800 p-6 rounded-lg">
+          <div className="bg-[var(--bg800)] p-6 rounded-lg">
             <h3 className="text-xl font-semibold mb-4">Technical SEO</h3>
             <p>
               We improve your website’s technical aspects, such as page speed
               and mobile-friendliness, to enhance its search engine performance.
             </p>
           </div>
-          <div className="bg-neutral-800 p-6 rounded-lg">
+          <div className="bg-[var(--bg800)] p-6 rounded-lg">
             <h3 className="text-xl font-semibold mb-4">Local SEO</h3>
             <p>
               We help your business rank higher in local search results, making
               it easier for local customers to find you.
             </p>
           </div>
-          <div className="bg-neutral-800 p-6 rounded-lg">
+          <div className="bg-[var(--bg800)] p-6 rounded-lg">
             <h3 className="text-xl font-semibold mb-4">E-commerce SEO</h3>
             <p>
               Our e-commerce SEO services are designed to drive traffic to your
               online store and increase sales.
             </p>
           </div>
-          <div className="bg-neutral-800 p-6 rounded-lg">
+          <div className="bg-[var(--bg800)] p-6 rounded-lg">
             <h3 className="text-xl font-semibold mb-4">SEO Audits</h3>
             <p>
               We perform comprehensive SEO audits to identify areas for
@@ -200,7 +200,7 @@ const SEO: FC = () => {
       </div>
 
       {/* Call to Action section */}
-      <div className="py-20 px-4 md:px-20 lg:px-40 text-center bg-black">
+      <div className="py-20 px-4 md:px-20 lg:px-40 text-center bg-[var(--bgnew)]">
         <h2 className="text-2xl md:text-3xl font-semibold mb-6">
           Ready to Boost Your Online Visibility?
         </h2>

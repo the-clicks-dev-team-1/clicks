@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 
 const CRO: FC = () => {
   return (
-    <div className="bg-black text-white">
+    <div className="bg-[var(--bgnew)] text-[var(--text)]">
       <Navbar />
 
       {/* Header section with form */}
@@ -109,7 +109,7 @@ const CRO: FC = () => {
       </div>
 
       {/* Why CRO Matters Section */}
-      <div className="py-20 px-4 md:px-20 lg:px-40 bg-neutral-900">
+      <div className="py-20 px-4 md:px-20 lg:px-40 bg-[var(--bg900)]">
         <h2 className="text-2xl md:text-3xl font-semibold mb-6 text-center">
           Why CRO Matters?
         </h2>
@@ -120,14 +120,14 @@ const CRO: FC = () => {
           cost-effective strategy for growth.
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-          <div className="bg-neutral-800 p-6 rounded-lg">
+          <div className="bg-[var(--bg800)] p-6 rounded-lg">
             <h3 className="text-xl font-semibold mb-4">Increase Revenue</h3>
             <p>
               By converting more visitors into customers, CRO helps you increase
               your revenue without needing to spend more on acquiring traffic.
             </p>
           </div>
-          <div className="bg-neutral-800 p-6 rounded-lg">
+          <div className="bg-[var(--bg800)] p-6 rounded-lg">
             <h3 className="text-xl font-semibold mb-4">
               Improve User Experience
             </h3>
@@ -136,7 +136,7 @@ const CRO: FC = () => {
               a better experience for your visitors and higher satisfaction.
             </p>
           </div>
-          <div className="bg-neutral-800 p-6 rounded-lg">
+          <div className="bg-[var(--bg800)] p-6 rounded-lg">
             <h3 className="text-xl font-semibold mb-4">Maximize ROI</h3>
             <p>
               CRO helps you get the most out of your marketing spend by
@@ -153,14 +153,14 @@ const CRO: FC = () => {
           Our CRO Services
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-          <div className="bg-neutral-800 p-6 rounded-lg">
+          <div className="bg-[var(--bg800)] p-6 rounded-lg">
             <h3 className="text-xl font-semibold mb-4">A/B Testing</h3>
             <p>
               We conduct A/B testing to determine which variations of your
               website elements perform best, leading to higher conversions.
             </p>
           </div>
-          <div className="bg-neutral-800 p-6 rounded-lg">
+          <div className="bg-[var(--bg800)] p-6 rounded-lg">
             <h3 className="text-xl font-semibold mb-4">
               User Behavior Analysis
             </h3>
@@ -169,7 +169,7 @@ const CRO: FC = () => {
               barriers to conversion and areas for improvement.
             </p>
           </div>
-          <div className="bg-neutral-800 p-6 rounded-lg">
+          <div className="bg-[var(--bg800)] p-6 rounded-lg">
             <h3 className="text-xl font-semibold mb-4">
               Conversion Funnel Optimization
             </h3>
@@ -178,7 +178,7 @@ const CRO: FC = () => {
               smoothly through the process and are more likely to convert.
             </p>
           </div>
-          <div className="bg-neutral-800 p-6 rounded-lg">
+          <div className="bg-[var(--bg800)] p-6 rounded-lg">
             <h3 className="text-xl font-semibold mb-4">
               Landing Page Optimization
             </h3>
@@ -188,14 +188,14 @@ const CRO: FC = () => {
               sales.
             </p>
           </div>
-          <div className="bg-neutral-800 p-6 rounded-lg">
+          <div className="bg-[var(--bg800)] p-6 rounded-lg">
             <h3 className="text-xl font-semibold mb-4">Heatmaps & Analytics</h3>
             <p>
               We use heatmaps and analytics tools to visualize user interactions
               on your site, helping us identify opportunities for improvement.
             </p>
           </div>
-          <div className="bg-neutral-800 p-6 rounded-lg">
+          <div className="bg-[var(--bg800)] p-6 rounded-lg">
             <h3 className="text-xl font-semibold mb-4">Form Optimization</h3>
             <p>
               We optimize forms on your website to reduce friction and increase
@@ -206,7 +206,7 @@ const CRO: FC = () => {
       </div>
 
       {/* Call to Action section */}
-      <div className="py-20 px-4 md:px-20 lg:px-40 text-center bg-black">
+      <div className="py-20 px-4 md:px-20 lg:px-40 text-center bg-[var(--bgnew)]">
         <h2 className="text-2xl md:text-3xl font-semibold mb-6">
           Ready to Maximize Your Website&apos;s Potential?
         </h2>

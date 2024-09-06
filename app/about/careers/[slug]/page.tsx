@@ -69,7 +69,7 @@ const JobDetail: FC<JobProps> = ({ params }) => {
   } = job.fields;
 
   return (
-    <div className="bg-black text-white">
+    <div className="bg-[var(--bgnew)] text-[var(--text)]">
       <Navbar />
 
       <div className="py-20 px-4 md:px-20 lg:px-40 max-w-7xl mx-auto">
@@ -88,32 +88,32 @@ const JobDetail: FC<JobProps> = ({ params }) => {
         )}
 
         {shortDescription && (
-          <div className="mt-4 text-neutral-300">
+          <div className="mt-4 text-[var(--text-gray)]">
             <p>{shortDescription}</p>
           </div>
         )}
 
         {description && (
-          <div className="mt-10 prose prose-invert max-w-none">
+          <div className="mt-10 prose prose-invert max-w-none text-[var(--text-gray)]">
             {documentToReactComponents(description as Document)}
           </div>
         )}
 
         {location && (
-          <div className="mt-4 text-neutral-300">
+          <div className="mt-4 text-[var(--text-gray)]">
             <strong>Location: </strong>
             {location.lat}, {location.lon}
           </div>
         )}
 
         {salary && (
-          <div className="mt-4 text-neutral-300">
+          <div className="mt-4 text-[var(--text-gray)]">
             <strong>Salary: </strong>${salary} per year
           </div>
         )}
 
         {jobType && (
-          <div className="mt-4 text-neutral-300">
+          <div className="mt-4 text-[var(--text-gray)]">
             <strong>Job Type: </strong>
             {jobType}
           </div>

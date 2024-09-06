@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 
 const EmailMarketing: FC = () => {
   return (
-    <div className="bg-black text-white">
+    <div className="bg-[var(--bgnew)] text-[var(--text)]">
       <Navbar />
 
       {/* Header section with form */}
@@ -108,7 +108,7 @@ const EmailMarketing: FC = () => {
       </div>
 
       {/* Why Email Marketing Matters Section */}
-      <div className="py-20 px-4 md:px-20 lg:px-40 bg-neutral-900">
+      <div className="py-20 px-4 md:px-20 lg:px-40 bg-[var(--bg900)]">
         <h2 className="text-2xl md:text-3xl font-semibold mb-6 text-center">
           Why Email Marketing Matters?
         </h2>
@@ -119,21 +119,21 @@ const EmailMarketing: FC = () => {
           most cost-effective ways to grow your business.
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-          <div className="bg-neutral-800 p-6 rounded-lg">
+          <div className="bg-[var(--bg800)] p-6 rounded-lg">
             <h3 className="text-xl font-semibold mb-4">Direct Communication</h3>
             <p>
               Email marketing allows you to communicate directly with your
               audience, ensuring your message is delivered to their inbox.
             </p>
           </div>
-          <div className="bg-neutral-800 p-6 rounded-lg">
+          <div className="bg-[var(--bg800)] p-6 rounded-lg">
             <h3 className="text-xl font-semibold mb-4">Personalization</h3>
             <p>
               By sending personalized emails, you can create a more meaningful
               connection with your audience, leading to higher engagement.
             </p>
           </div>
-          <div className="bg-neutral-800 p-6 rounded-lg">
+          <div className="bg-[var(--bg800)] p-6 rounded-lg">
             <h3 className="text-xl font-semibold mb-4">Cost-Effective</h3>
             <p>
               Email marketing is one of the most cost-effective marketing
@@ -150,7 +150,7 @@ const EmailMarketing: FC = () => {
           Our Email Marketing Services
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-          <div className="bg-neutral-800 p-6 rounded-lg">
+          <div className="bg-[var(--bg800)] p-6 rounded-lg">
             <h3 className="text-xl font-semibold mb-4">Campaign Strategy</h3>
             <p>
               We develop a comprehensive email marketing strategy tailored to
@@ -158,28 +158,28 @@ const EmailMarketing: FC = () => {
               effective.
             </p>
           </div>
-          <div className="bg-neutral-800 p-6 rounded-lg">
+          <div className="bg-[var(--bg800)] p-6 rounded-lg">
             <h3 className="text-xl font-semibold mb-4">Email Design</h3>
             <p>
               Our team creates visually appealing and responsive email designs
               that capture attention and drive action.
             </p>
           </div>
-          <div className="bg-neutral-800 p-6 rounded-lg">
+          <div className="bg-[var(--bg800)] p-6 rounded-lg">
             <h3 className="text-xl font-semibold mb-4">List Management</h3>
             <p>
               We manage your email lists, ensuring they are clean, segmented,
               and targeted to maximize engagement and deliverability.
             </p>
           </div>
-          <div className="bg-neutral-800 p-6 rounded-lg">
+          <div className="bg-[var(--bg800)] p-6 rounded-lg">
             <h3 className="text-xl font-semibold mb-4">Automation</h3>
             <p>
               We set up automated email workflows that nurture leads and drive
               conversions, freeing up your time while delivering results.
             </p>
           </div>
-          <div className="bg-neutral-800 p-6 rounded-lg">
+          <div className="bg-[var(--bg800)] p-6 rounded-lg">
             <h3 className="text-xl font-semibold mb-4">
               Analytics & Reporting
             </h3>
@@ -189,7 +189,7 @@ const EmailMarketing: FC = () => {
               decisions.
             </p>
           </div>
-          <div className="bg-neutral-800 p-6 rounded-lg">
+          <div className="bg-[var(--bg800)] p-6 rounded-lg">
             <h3 className="text-xl font-semibold mb-4">A/B Testing</h3>
             <p>
               We conduct A/B testing on subject lines, content, and designs to
@@ -201,7 +201,7 @@ const EmailMarketing: FC = () => {
       </div>
 
       {/* Call to Action section */}
-      <div className="py-20 px-4 md:px-20 lg:px-40 text-center bg-black">
+      <div className="py-20 px-4 md:px-20 lg:px-40 text-center bg-[var(--bgnew)]">
         <h2 className="text-2xl md:text-3xl font-semibold mb-6">
           Ready to Boost Your Email Marketing Strategy?
         </h2>

@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 
 const GraphicDesign: FC = () => {
   return (
-    <div className="bg-black text-white">
+    <div className="bg-[var(--bgnew)] text-[var(--text)]">
       <Navbar />
 
       {/* Header section with form */}
@@ -108,7 +108,7 @@ const GraphicDesign: FC = () => {
       </div>
 
       {/* Why Graphic Design Matters Section */}
-      <div className="py-20 px-4 md:px-20 lg:px-40 bg-neutral-900">
+      <div className="py-20 px-4 md:px-20 lg:px-40 bg-[var(--bg900)]">
         <h2 className="text-2xl md:text-3xl font-semibold mb-6 text-center">
           Why Graphic Design Matters?
         </h2>
@@ -119,21 +119,21 @@ const GraphicDesign: FC = () => {
           competitors.
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-          <div className="bg-neutral-800 p-6 rounded-lg">
+          <div className="bg-[var(--bg800)] p-6 rounded-lg">
             <h3 className="text-xl font-semibold mb-4">Brand Identity</h3>
             <p>
               Graphic design helps you create a consistent visual identity that
               strengthens your brand and makes it easily recognizable.
             </p>
           </div>
-          <div className="bg-neutral-800 p-6 rounded-lg">
+          <div className="bg-[var(--bg800)] p-6 rounded-lg">
             <h3 className="text-xl font-semibold mb-4">Engagement</h3>
             <p>
               Well-designed visuals capture attention and encourage your
               audience to engage with your content, whether online or offline.
             </p>
           </div>
-          <div className="bg-neutral-800 p-6 rounded-lg">
+          <div className="bg-[var(--bg800)] p-6 rounded-lg">
             <h3 className="text-xl font-semibold mb-4">Communication</h3>
             <p>
               Effective graphic design communicates your message clearly and
@@ -150,14 +150,14 @@ const GraphicDesign: FC = () => {
           Our Graphic Design Services
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-          <div className="bg-neutral-800 p-6 rounded-lg">
+          <div className="bg-[var(--bg800)] p-6 rounded-lg">
             <h3 className="text-xl font-semibold mb-4">Logo Design</h3>
             <p>
               We create unique and memorable logos that represent your brand and
               make a lasting impression on your audience.
             </p>
           </div>
-          <div className="bg-neutral-800 p-6 rounded-lg">
+          <div className="bg-[var(--bg800)] p-6 rounded-lg">
             <h3 className="text-xl font-semibold mb-4">Branding</h3>
             <p>
               Our branding services ensure that every aspect of your visual
@@ -165,21 +165,21 @@ const GraphicDesign: FC = () => {
               values.
             </p>
           </div>
-          <div className="bg-neutral-800 p-6 rounded-lg">
+          <div className="bg-[var(--bg800)] p-6 rounded-lg">
             <h3 className="text-xl font-semibold mb-4">Print Design</h3>
             <p>
               We design stunning print materials, including brochures, business
               cards, and posters, that effectively communicate your message.
             </p>
           </div>
-          <div className="bg-neutral-800 p-6 rounded-lg">
+          <div className="bg-[var(--bg800)] p-6 rounded-lg">
             <h3 className="text-xl font-semibold mb-4">Web Design</h3>
             <p>
               Our web design services combine aesthetics with functionality to
               create visually appealing websites that drive results.
             </p>
           </div>
-          <div className="bg-neutral-800 p-6 rounded-lg">
+          <div className="bg-[var(--bg800)] p-6 rounded-lg">
             <h3 className="text-xl font-semibold mb-4">
               Social Media Graphics
             </h3>
@@ -188,7 +188,7 @@ const GraphicDesign: FC = () => {
               increase engagement, and drive traffic to your online platforms.
             </p>
           </div>
-          <div className="bg-neutral-800 p-6 rounded-lg">
+          <div className="bg-[var(--bg800)] p-6 rounded-lg">
             <h3 className="text-xl font-semibold mb-4">Infographics</h3>
             <p>
               Our infographics simplify complex information and present it in an
@@ -199,7 +199,7 @@ const GraphicDesign: FC = () => {
       </div>
 
       {/* Call to Action section */}
-      <div className="py-20 px-4 md:px-20 lg:px-40 text-center bg-black">
+      <div className="py-20 px-4 md:px-20 lg:px-40 text-center bg-[var(--bgnew)]">
         <h2 className="text-2xl md:text-3xl font-semibold mb-6">
           Ready to Elevate Your Brand with Stunning Designs?
         </h2>

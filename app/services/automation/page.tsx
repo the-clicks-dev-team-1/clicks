@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 
 const MarketingAutomation: FC = () => {
   return (
-    <div className="bg-black text-white">
+    <div className="bg-[var(--bgnew)] text-[var(--text)]">
       <Navbar />
 
       {/* Header section with form */}
@@ -109,7 +109,7 @@ const MarketingAutomation: FC = () => {
       </div>
 
       {/* Why Marketing Automation Matters Section */}
-      <div className="py-20 px-4 md:px-20 lg:px-40 bg-neutral-900">
+      <div className="py-20 px-4 md:px-20 lg:px-40 bg-[var(--bg900)]">
         <h2 className="text-2xl md:text-3xl font-semibold mb-6 text-center">
           Why Marketing Automation Matters?
         </h2>
@@ -120,7 +120,7 @@ const MarketingAutomation: FC = () => {
           save time, reduce costs, and drive better results.
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-          <div className="bg-neutral-800 p-6 rounded-lg">
+          <div className="bg-[var(--bg800)] p-6 rounded-lg">
             <h3 className="text-xl font-semibold mb-4">
               Efficiency and Productivity
             </h3>
@@ -129,7 +129,7 @@ const MarketingAutomation: FC = () => {
               team to focus on high-impact activities that drive growth.
             </p>
           </div>
-          <div className="bg-neutral-800 p-6 rounded-lg">
+          <div className="bg-[var(--bg800)] p-6 rounded-lg">
             <h3 className="text-xl font-semibold mb-4">
               Personalization at Scale
             </h3>
@@ -139,7 +139,7 @@ const MarketingAutomation: FC = () => {
               engagement and conversions.
             </p>
           </div>
-          <div className="bg-neutral-800 p-6 rounded-lg">
+          <div className="bg-[var(--bg800)] p-6 rounded-lg">
             <h3 className="text-xl font-semibold mb-4">
               Better Data Management
             </h3>
@@ -158,7 +158,7 @@ const MarketingAutomation: FC = () => {
           Our Marketing Automation Services
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-          <div className="bg-neutral-800 p-6 rounded-lg">
+          <div className="bg-[var(--bg800)] p-6 rounded-lg">
             <h3 className="text-xl font-semibold mb-4">
               Automation Strategy Development
             </h3>
@@ -168,14 +168,14 @@ const MarketingAutomation: FC = () => {
               marketing efforts.
             </p>
           </div>
-          <div className="bg-neutral-800 p-6 rounded-lg">
+          <div className="bg-[var(--bg800)] p-6 rounded-lg">
             <h3 className="text-xl font-semibold mb-4">Email Automation</h3>
             <p>
               We set up automated email campaigns that nurture leads, re-engage
               customers, and drive conversions with personalized messaging.
             </p>
           </div>
-          <div className="bg-neutral-800 p-6 rounded-lg">
+          <div className="bg-[var(--bg800)] p-6 rounded-lg">
             <h3 className="text-xl font-semibold mb-4">
               Lead Scoring and Nurturing
             </h3>
@@ -185,7 +185,7 @@ const MarketingAutomation: FC = () => {
               rates.
             </p>
           </div>
-          <div className="bg-neutral-800 p-6 rounded-lg">
+          <div className="bg-[var(--bg800)] p-6 rounded-lg">
             <h3 className="text-xl font-semibold mb-4">CRM Integration</h3>
             <p>
               We integrate your marketing automation tools with your CRM to
@@ -193,7 +193,7 @@ const MarketingAutomation: FC = () => {
               marketing.
             </p>
           </div>
-          <div className="bg-neutral-800 p-6 rounded-lg">
+          <div className="bg-[var(--bg800)] p-6 rounded-lg">
             <h3 className="text-xl font-semibold mb-4">
               Social Media Automation
             </h3>
@@ -202,7 +202,7 @@ const MarketingAutomation: FC = () => {
               to ensure consistent activity and maximize your social presence.
             </p>
           </div>
-          <div className="bg-neutral-800 p-6 rounded-lg">
+          <div className="bg-[var(--bg800)] p-6 rounded-lg">
             <h3 className="text-xl font-semibold mb-4">
               Analytics and Reporting
             </h3>
@@ -215,7 +215,7 @@ const MarketingAutomation: FC = () => {
       </div>
 
       {/* Call to Action section */}
-      <div className="py-20 px-4 md:px-20 lg:px-40 text-center bg-black">
+      <div className="py-20 px-4 md:px-20 lg:px-40 text-center bg-[var(--bgnew)]">
         <h2 className="text-2xl md:text-3xl font-semibold mb-6">
           Ready to Automate Your Marketing and Drive Growth?
         </h2>
