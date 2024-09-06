@@ -45,7 +45,7 @@ const Careers: FC = async () => {
           {jobs.map((job) => (
             <div
               key={job.sys.id}
-              className="bg-[var(--bg800-w)] rounded-lg p-6 border border-[var(--border-color-t)]"
+              className="bg-[var(--bg800-w)] rounded-lg p-6 shadow-lg"
             >
               <h3 className="text-2xl font-bold">
                 {typeof job.fields.title === "string" ? job.fields.title : ""}
