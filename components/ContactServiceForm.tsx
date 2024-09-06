@@ -121,7 +121,7 @@ export default function ContactServiceForm() {
                     First name *
                   </FormLabel>
                   <FormControl>
-                    <Input {...field} className="text-black" />
+                    <Input {...field} className="text-black border-none" />
                   </FormControl>
                 </FormItem>
               )}
@@ -136,7 +136,7 @@ export default function ContactServiceForm() {
                     Last name *
                   </FormLabel>
                   <FormControl>
-                    <Input {...field} className="text-black" />
+                    <Input {...field} className="text-black border-none" />
                   </FormControl>
                 </FormItem>
               )}
@@ -152,7 +152,7 @@ export default function ContactServiceForm() {
                   Email *
                 </FormLabel>
                 <FormControl>
-                  <Input {...field} className="text-black" />
+                  <Input {...field} className="text-black border-none" />
                 </FormControl>
               </FormItem>
             )}
@@ -167,7 +167,7 @@ export default function ContactServiceForm() {
                   Company name
                 </FormLabel>
                 <FormControl>
-                  <Input {...field} className="text-black" />
+                  <Input {...field} className="text-black border-none" />
                 </FormControl>
               </FormItem>
             )}
@@ -186,10 +186,10 @@ export default function ContactServiceForm() {
                   defaultValue={field.value}
                 >
                   <FormControl>
-                    <SelectTrigger className="text-black">
+                    <SelectTrigger className="text-black border-none">
                       <SelectValue
                         placeholder="Select an option"
-                        className="text-black"
+                        className="text-black border-none"
                       />
                     </SelectTrigger>
                   </FormControl>
@@ -251,10 +251,10 @@ export default function ContactServiceForm() {
                   defaultValue={field.value}
                 >
                   <FormControl>
-                    <SelectTrigger className="text-black">
+                    <SelectTrigger className="text-black border-none">
                       <SelectValue
                         placeholder="Select an option"
-                        className="text-black"
+                        className="text-black border-none"
                       />
                     </SelectTrigger>
                   </FormControl>
@@ -292,7 +292,7 @@ export default function ContactServiceForm() {
                 <FormControl>
                   <Textarea
                     style={{ height: "100px" }}
-                    className="text-black"
+                    className="text-black border-none"
                     {...field}
                   />
                 </FormControl>
