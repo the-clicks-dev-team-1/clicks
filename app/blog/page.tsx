@@ -162,7 +162,7 @@ const Blog: FC = () => {
           {posts.slice(0, visiblePosts).map((post) => (
             <div
               key={post.sys.id}
-              className="relative bg-[var(--bg800)] rounded-lg overflow-hidden shadow-lg"
+              className="relative bg-[var(--bg800-w)] rounded-lg overflow-hidden shadow-lg"
             >
               {post.fields?.previewImage?.fields?.file?.url && (
                 <Image
@@ -175,7 +175,7 @@ const Blog: FC = () => {
               )}
               <div className="p-6">
                 <h3 className="text-2xl font-bold">{post.fields.title}</h3>
-                <p className="mt-2 text-neutral-300">
+                <p className="mt-2 text-[var(--text-gray)]">
                   {post.fields.description}
                 </p>
                 {post.fields.category && (
