@@ -32,7 +32,7 @@ const PPC: FC = () => {
               Pay-Per-Click (PPC) advertising is a powerful way to drive
               targeted traffic to your website. Our team of experts creates and
               manages campaigns that maximize your return on investment by
-              targeting the right audience with precision. Whether you're
+              targeting the right audience with precision. Whether you&apos;re
               looking to increase sales, generate leads, or build brand
               awareness, our data-driven PPC strategies are designed to meet
               your business goals.

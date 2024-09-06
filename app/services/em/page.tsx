@@ -40,9 +40,9 @@ const EmailMarketing: FC = () => {
             <p className="mt-3 text-lg md:text-xl max-w-2xl mx-auto text-left">
               With our data-driven approach, we track open rates,
               click-throughs, and conversions to refine strategies and improve
-              results. Whether you're launching a new product, promoting a sale,
-              or nurturing leads, our email marketing campaigns are designed to
-              deliver measurable outcomes.
+              results. Whether you&apos;re launching a new product, promoting a
+              sale, or nurturing leads, our email marketing campaigns are
+              designed to deliver measurable outcomes.
             </p>
           </div>
           <div className="flex flex-col justify-between">

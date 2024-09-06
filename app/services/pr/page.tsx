@@ -30,18 +30,18 @@ const PR: FC = () => {
             </p>
             <p className="mt-3 text-lg md:text-xl max-w-2xl mx-auto text-left">
               Building a strong reputation in the marketplace is key to your
-              business's long-term success. Our public relations services focus
-              on creating a positive image for your brand through media
+              business&apos;s long-term success. Our public relations services
+              focus on creating a positive image for your brand through media
               outreach, press releases, and event coordination. We help you
               craft a narrative that resonates with your audience and positions
               your business as a trusted industry leader.
             </p>
             <p className="mt-3 text-lg md:text-xl max-w-2xl mx-auto text-left">
               With targeted PR campaigns, we ensure your brand gains visibility
-              in the right channels. Whether it's managing media relationships
-              or handling crisis communication, our PR team is dedicated to
-              enhancing your reputation and driving meaningful engagement with
-              your stakeholders.
+              in the right channels. Whether it&apos;s managing media
+              relationships or handling crisis communication, our PR team is
+              dedicated to enhancing your reputation and driving meaningful
+              engagement with your stakeholders.
             </p>
           </div>
           <div className="flex flex-col justify-between">
