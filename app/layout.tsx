@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
 import { GoogleTagManager } from "@next/third-parties/google";
+import ScrollToTop from "@/components/ScrollToTop";
 
 const font = Poppins({
   subsets: ["latin"],
@@ -52,6 +53,7 @@ export default function RootLayout({
           ></iframe>
         </noscript>
         {children}
+        <ScrollToTop />
       </body>
     </html>
   );
