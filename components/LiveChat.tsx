@@ -51,7 +51,7 @@ const LiveChat = () => {
     const script = document.createElement("script");
     script.src =
       // "https://downloads-global.3cx.com/downloads/livechatandtalk/v1/callus.js";
-      "../lib/chatscript.js";
+      "./lib/chatscript.js";
     script.id = "tcx-callus-js";
     script.defer = true;
     document.body.appendChild(script);
