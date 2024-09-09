@@ -20,7 +20,7 @@ const LiveChat = () => {
     callUsElement.setAttribute("allow-video", "false");
     callUsElement.setAttribute("allow-soundnotifications", "true");
     callUsElement.setAttribute("enable-mute", "true");
-    callUsElement.setAttribute("enable-onmobile", "true");
+    callUsElement.setAttribute("enable-onmobile", "false");
     callUsElement.setAttribute("offline-enabled", "true");
     callUsElement.setAttribute("enable", "true");
     callUsElement.setAttribute("ignore-queueownership", "false");
