@@ -9,7 +9,7 @@ const LiveChat = () => {
     callUsElement.setAttribute("phonesystem-url", "https://1551.3cx.cloud");
     callUsElement.setAttribute(
       "style",
-      "width: 300px; height: 309px; position:fixed;font-size:16px;line-height:17px;z-index: 50;right: 15px; bottom: 80px;--call-us-form-width: 300px; --call-us-form-height: 500px"
+      "width: 260px; height: 409px; position:fixed;font-size:16px;line-height:17px;z-index: 50;right: 15px; bottom: 80px;--call-us-form-width: 300px; --call-us-form-height: 500px"
     );
     callUsElement.setAttribute("id", "wp-live-chat-by-3CX");
     callUsElement.setAttribute("minimized", "true");
