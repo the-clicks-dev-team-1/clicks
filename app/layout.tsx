@@ -16,7 +16,6 @@ export const metadata: Metadata = {
     default: "The Clicks - Digital Marketing Agency",
     template: "%s | The Clicks",
   },
-
   description:
     "The Clicks is a digital marketing agency that helps businesses grow online.",
 };
@@ -47,6 +46,7 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: setInitialTheme }}
         />
         <link rel="icon" href="/app/favicon.ico" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
       </head>
       <body className={font.className}>
         <noscript>
