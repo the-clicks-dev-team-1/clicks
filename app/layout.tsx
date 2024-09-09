@@ -58,8 +58,10 @@ export default function RootLayout({
           ></iframe>
         </noscript>
         {children}
-        <LiveChat />
-        <ScrollToTop />
+        <div className="flex justify-center items-center">
+          <LiveChat />
+          <ScrollToTop />
+        </div>
       </body>
     </html>
   );
