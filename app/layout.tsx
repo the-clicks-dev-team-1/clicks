@@ -3,6 +3,8 @@ import { Poppins } from "next/font/google";
 import "./globals.css";
 import { GoogleTagManager } from "@next/third-parties/google";
 import ScrollToTop from "@/components/ScrollToTop";
+import LiveChat from "@/components/LiveChat";
+import Script from "next/script";
 
 const font = Poppins({
   subsets: ["latin"],
@@ -23,10 +25,10 @@ export const metadata: Metadata = {
 const setInitialTheme = `
   (function() {
     const savedTheme = localStorage.getItem('theme');
-    if (savedTheme === 'dark') {
-      document.documentElement.classList.add('dark');
+    if (savedTheme === 'light') {
+      document.documentElement.classList.add('light');
     } else {
-      document.documentElement.classList.remove('dark');
+      document.documentElement.classList.remove('light');
     }
   })()
 `;
@@ -40,7 +42,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <GoogleTagManager gtmId="GTM-588PZWKW" />
-        <script dangerouslySetInnerHTML={{ __html: setInitialTheme }} />
+        <Script dangerouslySetInnerHTML={{ __html: setInitialTheme }} />
         <link rel="icon" href="/app/favicon.ico" />
       </head>
       <body className={font.className}>
@@ -53,6 +55,7 @@ export default function RootLayout({
           ></iframe>
         </noscript>
         {children}
+        <LiveChat />
         <ScrollToTop />
       </body>
     </html>
