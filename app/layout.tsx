@@ -42,7 +42,10 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <GoogleTagManager gtmId="GTM-588PZWKW" />
-        <Script dangerouslySetInnerHTML={{ __html: setInitialTheme }} />
+        <Script
+          id="initialTheme"
+          dangerouslySetInnerHTML={{ __html: setInitialTheme }}
+        />
         <link rel="icon" href="/app/favicon.ico" />
       </head>
       <body className={font.className}>
