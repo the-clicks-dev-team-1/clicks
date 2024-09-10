@@ -1,6 +1,5 @@
 "use client";
-import React, { useEffect } from "react";
-import { IoIosChatboxes } from "react-icons/io";
+import { useEffect } from "react";
 
 const LiveChat = () => {
   useEffect(() => {
@@ -28,7 +27,7 @@ const LiveChat = () => {
     // callUsElement.setAttribute("operator-name", "Paul Dimension");
     // callUsElement.setAttribute("show-operator-actual-name", "false");
     // callUsElement.setAttribute("aknowledge-received", "true");
-    // // callUsElement.setAttribute("operator-icon", "data:image/png;base64,..."); // Truncated for brevity
+    // callUsElement.setAttribute("operator-icon", "data:image/png;base64,..."); // Truncated for brevity
     // callUsElement.setAttribute("gdpr-enabled", "true");
     // callUsElement.setAttribute("message-userinfo-format", "both");
     // callUsElement.setAttribute("message-dateformat", "both");
@@ -41,8 +40,8 @@ const LiveChat = () => {
     // callUsElement.setAttribute("enable-ga", "false");
 
     const callUsElement = document.createElement("call-us-selector");
-    callUsElement.setAttribute("phonesystem-url", "https://1551.3cx.cloud");
-    callUsElement.setAttribute("party", "viktorlytvynenko");
+    callUsElement.setAttribute("phonesystem-url", "https://1489.3cx.cloud");
+    callUsElement.setAttribute("party", "theclicksmarketingin");
 
     // Append the element to the body
     document.body.appendChild(callUsElement);
