@@ -7,6 +7,7 @@ import { useAutoAnimate } from "@formkit/auto-animate/react";
 
 import { PiStrategy, PiMegaphone, PiRocketLaunch } from "react-icons/pi";
 import { TbSeo, TbSettingsAutomation } from "react-icons/tb";
+import { FaUserLarge } from "react-icons/fa6";
 import {
   MdDeveloperMode,
   MdOutlineMarkEmailRead,
@@ -181,6 +182,14 @@ export default function Navbar() {
         </div>
 
         <div className="hidden md:flex flex-1 justify-end items-center">
+          <Link
+            href="https://portal.theclicks.ca"
+            className="mx-4"
+            title="Client Portal"
+            target="_blank"
+          >
+            <FaUserLarge className="h-5 w-5 text-[var(--text)]" />
+          </Link>
           <button
             onClick={handleToggleTheme}
             aria-label="Toggle Dark Mode"
@@ -200,6 +209,14 @@ export default function Navbar() {
         </div>
 
         <div className="flex items-center md:hidden">
+          <Link
+            href="https://portal.theclicks.ca"
+            className="mx-4"
+            title="Client Portal"
+            target="_blank"
+          >
+            <FaUserLarge className="h-5 w-5 text-[var(--text)]" />
+          </Link>
           <button
             onClick={handleToggleTheme}
             aria-label="Toggle Dark Mode"
