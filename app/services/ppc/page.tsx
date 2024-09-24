@@ -187,14 +187,14 @@ const PPC: FC = () => {
           Ready to Drive Targeted Traffic to Your Website?
         </h2>
         <p className="text-lg mb-8 max-w-2xl mx-auto">
-          Contact us today to learn more about our PPC services and how we can
+          Book a call today to learn more about our PPC services and how we can
           help your business grow.
         </p>
         <Link
-          href="/contact"
+          href="/book"
           className="inline-block bg-gradient-to-r from-sky-400 to-purple-500 text-white font-bold py-3 px-6 rounded-lg shadow-lg hover:bg-opacity-75 transition duration-300"
         >
-          Get in Touch
+          Book A Call
         </Link>
       </div>
 

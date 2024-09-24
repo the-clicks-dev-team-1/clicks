@@ -203,15 +203,15 @@ const MarketingAutomation: FC = () => {
           Ready to Automate Your Marketing and Drive Growth?
         </h2>
         <p className="text-lg mb-8 max-w-2xl mx-auto">
-          Contact us today to learn more about our marketing automation services
-          and how we can help you streamline your processes and achieve better
-          results.
+          Book a call today to learn more about our marketing automation
+          services and how we can help you streamline your processes and achieve
+          better results.
         </p>
         <Link
-          href="/contact"
+          href="/book"
           className="inline-block bg-gradient-to-r from-sky-400 to-purple-500 text-white font-bold py-3 px-6 rounded-lg shadow-lg hover:bg-opacity-75 transition duration-300"
         >
-          Get in Touch
+          Book A Call
         </Link>
       </div>
 

@@ -125,8 +125,8 @@ export default function ContactForm() {
             </p>
             <p className="text-lg mb-2">
               <strong>Phone:</strong>{" "}
-              <a href="tel:+1(506)477-0324" className="text-sky-400">
-                +1(506)477-0324
+              <a href="tel:+1(877)323-2326" className="text-sky-400">
+                +1(877)323-2326
               </a>
             </p>
             <p className="text-lg">

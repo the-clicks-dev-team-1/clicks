@@ -151,14 +151,14 @@ const WebDevelopment: FC = () => {
           Ready to Take Your Online Presence to the Next Level?
         </h2>
         <p className="text-lg mb-8">
-          Contact us today to discuss your project, and let&apos;s create
+          Book a call today to discuss your project, and let&apos;s create
           something amazing together.
         </p>
         <Link
-          href="/contact"
+          href="/book"
           className="inline-block bg-gradient-to-r from-sky-400 to-purple-500 text-white font-bold py-3 px-6 rounded-lg shadow-lg hover:bg-opacity-75 transition duration-300"
         >
-          Get Started
+          Book A Call
         </Link>
       </div>
 
