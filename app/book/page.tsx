@@ -67,7 +67,7 @@ const Book = () => {
         </div>
 
         <div id="calendly-container">
-          <InlineWidget url="https://calendly.com/p-demenshyn-theclicks/consultation" />
+          <InlineWidget url="https://calendly.com/p-demenshyn-theclicks" />
         </div>
       </div>
     </>
