@@ -7,14 +7,14 @@ import { useEffect } from "react";
 
 const Book = () => {
   useEffect(() => {
-    const handleCalendlyEvent = (event: MessageEvent) => {
-      if (event.data?.event === "calendly.event_scheduled") {
-        console.log("Calendly event scheduled: ", event);
+    const handleCalendlyEvent = (e: MessageEvent) => {
+      if (e.data?.event === "calendly.event_scheduled") {
+        console.log("Calendly event scheduled: ", e);
         if (window.dataLayer) {
           window.dataLayer.push({
             event: "CalendlyEventScheduled",
-            calendly_event_uri: event.data.payload.event.uri,
-            calendly_invitee_uri: event.data.payload.invitee.uri,
+            calendly_event_uri: e.data.payload.event.uri,
+            calendly_invitee_uri: e.data.payload.invitee.uri,
           });
         }
       }
