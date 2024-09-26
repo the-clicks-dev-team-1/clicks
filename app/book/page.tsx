@@ -29,11 +29,13 @@ const Book = () => {
             utm: {},
             onEvent: function (e: EventScheduledEvent) {
               if (e.data.event === "calendly.event_scheduled") {
-                window.dataLayer?.push({
-                  event: "CalendlyEventScheduled",
-                  calendly_event_uri: e.data.payload.event.uri,
-                  calendly_invitee_uri: e.data.payload.invitee.uri,
-                });
+                if (typeof window !== "undefined" && window.dataLayer) {
+                  window.dataLayer?.push({
+                    event: "CalendlyEventScheduled",
+                    calendly_event_uri: e.data.payload.event.uri,
+                    calendly_invitee_uri: e.data.payload.invitee.uri,
+                  });
+                }
               }
             },
           });
