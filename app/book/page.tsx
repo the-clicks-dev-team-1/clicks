@@ -1,6 +1,6 @@
 "use client";
 
-import { EventScheduledEvent, InlineWidget } from "react-calendly";
+import { InlineWidget } from "react-calendly";
 
 import Navbar from "@/components/navbar";
 import { useEffect } from "react";
