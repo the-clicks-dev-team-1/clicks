@@ -94,6 +94,14 @@ export default function ContactForm() {
       }
 
       setSubmitted(true);
+
+      // Добавляем событие в dataLayer после успешной отправки формы
+      if (typeof window !== "undefined" && window.dataLayer) {
+        window.dataLayer.push({
+          event: "customFormSubmit",
+          formMessage: "Cообщение об отправке",
+        });
+      }
     } catch (error) {
       toast({
         title: "Error",
@@ -140,8 +148,9 @@ export default function ContactForm() {
           <Form {...form}>
             {!submitted ? (
               <form
+                id="contactServiceForm"
                 onSubmit={form.handleSubmit(onSubmit)}
-                className="space-y-4 h-full border border-[var(--dark-border-t)] shadow-lg rounded-3xl p-6 flex flex-col justify-between"
+                className="contact-form space-y-4 h-full border border-[var(--dark-border-t)] shadow-lg rounded-3xl p-6 flex flex-col justify-between"
               >
                 <div className="md:flex items-center gap-6">
                   <FormField
