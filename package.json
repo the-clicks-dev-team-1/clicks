@@ -28,7 +28,7 @@
     "contentful": "^10.15.0",
     "framer-motion": "^11.3.0",
     "lucide-react": "^0.396.0",
-    "next": "^14.2.7",
+    "next": "^14.2.13",
     "next-sitemap": "^4.2.3",
     "nodemailer": "^6.9.14",
     "react": "^18",
