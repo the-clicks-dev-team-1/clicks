@@ -44,10 +44,15 @@ export function ThreeDCardDemo() {
     console.log("Attempting to open quiz...");
 
     // Удаляем предыдущий инстанс попапа, если он есть
-    // const marquizPopup = document.querySelector(".marquiz__bg");
-    // if (marquizPopup) {
-    //   marquizPopup.remove();
-    // }
+    const marquiz__bg = document.querySelector(".marquiz__bg");
+    const marquiz__frame = document.querySelector(".marquiz__frame");
+    console.log("Attempting to find Marquiz popup...");
+    if (marquiz__bg && marquiz__frame) {
+      // marquizPopup.remove();
+      // console.log("Marquiz popup...removed");
+      marquiz__bg.classList.add("marquiz__bg_open");
+      marquiz__frame.classList.add("marquiz__frame_open");
+    }
 
     if (window.Marquiz) {
       console.log("Marquiz is available.");
@@ -61,9 +66,6 @@ export function ThreeDCardDemo() {
       console.error("Marquiz is not defined.");
     }
   };
-
-  if (typeof window !== "undefined")
-    console.log("Current history state:", window.history.state);
 
   return (
     <CardContainer className="inter-var w-full max-w-none relative mx-4 md:mx-8 lg:mx-24">
