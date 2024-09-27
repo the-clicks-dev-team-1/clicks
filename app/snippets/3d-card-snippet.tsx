@@ -8,7 +8,7 @@ export function ThreeDCardDemo() {
   useEffect(() => {
     // Проверяем, не был ли уже загружен скрипт
     const existingScript = document.querySelector(
-      'script[src="//script.marquiz.io/v2.js"]'
+      'script[src="https://script.marquiz.io/v2.js"]'
     );
 
     if (!existingScript) {
@@ -27,7 +27,7 @@ export function ThreeDCardDemo() {
       };
 
       const script = document.createElement("script");
-      script.src = "//script.marquiz.io/v2.js";
+      script.src = "https://script.marquiz.io/v2.js";
       script.async = true;
       script.onload = initMarquiz;
 
