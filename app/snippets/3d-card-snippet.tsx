@@ -43,8 +43,15 @@ export function ThreeDCardDemo() {
     event.preventDefault();
     console.log("Attempting to open quiz...");
 
+    // Удаляем предыдущий инстанс попапа, если он есть
+    const marquizPopup = document.querySelector(".marquiz__bg");
+    if (marquizPopup) {
+      marquizPopup.remove();
+    }
+
     if (window.Marquiz) {
       console.log("Marquiz is available.");
+
       try {
         window.Marquiz.showModal("66f5f810439a5a00265f8849");
       } catch (error) {
