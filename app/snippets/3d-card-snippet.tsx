@@ -6,36 +6,37 @@ import { CardBody, CardContainer, CardItem } from "@/components/ui/3d-card";
 
 export function ThreeDCardDemo() {
   useEffect(() => {
-    // Проверяем, не был ли уже загружен скрипт
-    const existingScript = document.querySelector(
-      'script[src="https://script.marquiz.io/v2.js"]'
-    );
+    if (typeof window !== "undefined") {
+      const existingScript = document.querySelector(
+        'script[src="https://script.marquiz.io/v2.js"]'
+      );
 
-    if (!existingScript) {
-      const initMarquiz = () => {
-        if (window.Marquiz) {
-          window.Marquiz.init({
-            host: "//quiz.marquiz.io",
-            region: "us",
-            id: "66f5f810439a5a00265f8849",
-            autoOpen: 10,
-            autoOpenFreq: "once",
-            openOnExit: false,
-            disableOnMobile: false,
-          });
-        }
-      };
+      if (!existingScript) {
+        const initMarquiz = () => {
+          if (window.Marquiz) {
+            window.Marquiz.init({
+              host: "//quiz.marquiz.io",
+              region: "us",
+              id: "66f5f810439a5a00265f8849",
+              autoOpen: 10,
+              autoOpenFreq: "once",
+              openOnExit: false,
+              disableOnMobile: false,
+            });
+          }
+        };
 
-      const script = document.createElement("script");
-      script.src = "https://script.marquiz.io/v2.js";
-      script.async = true;
-      script.onload = initMarquiz;
+        const script = document.createElement("script");
+        script.src = "https://script.marquiz.io/v2.js";
+        script.async = true;
+        script.onload = initMarquiz;
 
-      document.head.appendChild(script);
+        document.head.appendChild(script);
 
-      return () => {
-        document.head.removeChild(script); // Clean up the script when unmounted
-      };
+        return () => {
+          document.head.removeChild(script); // Clean up the script when unmounted
+        };
+      }
     }
   }, []);
 
@@ -43,20 +44,14 @@ export function ThreeDCardDemo() {
     event.preventDefault();
     console.log("Attempting to open quiz...");
 
-    // Удаляем предыдущий инстанс попапа, если он есть
     const marquiz__bg = document.querySelector(".marquiz__bg");
     const marquiz__frame = document.querySelector(".marquiz__frame");
-    console.log("Attempting to find Marquiz popup...");
     if (marquiz__bg && marquiz__frame) {
-      // marquizPopup.remove();
-      // console.log("Marquiz popup...removed");
       marquiz__bg.classList.add("marquiz__bg_open");
       marquiz__frame.classList.add("marquiz__frame_open");
     }
 
-    if (window.Marquiz) {
-      console.log("Marquiz is available.");
-
+    if (typeof window !== "undefined" && window.Marquiz) {
       try {
         window.Marquiz.showModal("66f5f810439a5a00265f8849");
       } catch (error) {

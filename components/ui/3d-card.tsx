@@ -24,10 +24,40 @@ export const CardContainer = ({
 }) => {
   const containerRef = useRef<HTMLDivElement>(null);
   const [isMouseEntered, setIsMouseEntered] = useState(false);
+  const [scale, setScale] = useState(50);
+
+  useEffect(() => {
+    // Define a function to update the scale based on window width
+    const updateScale = () => {
+      if (typeof window !== "undefined") {
+        if (window.innerWidth > 1920) {
+          setScale(500);
+        } else if (window.innerWidth > 1200) {
+          setScale(300);
+        } else {
+          setScale(50);
+        }
+      }
+    };
+
+    updateScale(); // Set initial scale
+
+    // Attach the resize event listener if window is defined
+    if (typeof window !== "undefined") {
+      window.addEventListener("resize", updateScale);
+    }
+
+    // Clean up the event listener on unmount
+    return () => {
+      if (typeof window !== "undefined") {
+        window.removeEventListener("resize", updateScale);
+      }
+    };
+  }, []);
 
   // Рассчитываем масштаб вращения в зависимости от ширины экрана
-  const scale =
-    window.innerWidth > 1920 ? 500 : window.innerWidth > 1200 ? 300 : 50; // Увеличиваем делитель для больших экранов
+  // const scale =
+  //   window.innerWidth > 1920 ? 500 : window.innerWidth > 1200 ? 300 : 50; // Увеличиваем делитель для больших экранов
 
   const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
     if (!containerRef.current) return;

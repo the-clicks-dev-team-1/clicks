@@ -10,7 +10,6 @@ import Block2 from "./block2";
 import Block3 from "./block3";
 import Steps from "./steps";
 import ContactBlock from "./contactBlock";
-import MarquizScript from "@/components/MarquizScript";
 
 export default function Home() {
   return (
@@ -43,7 +42,6 @@ export default function Home() {
           </Link>
         </div>
         <div className="w-full pt-20 ">
-          <MarquizScript />
           <SliderOne />
           <Block />
           <Block2 />

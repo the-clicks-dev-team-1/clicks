@@ -1,36 +1,43 @@
-// components/MarquizScript.tsx
-import Script from "next/script";
+"use client";
+import { useEffect } from "react";
 
 const MarquizScript = () => {
-  return (
-    <>
-      <Script
-        id="marquiz-script"
-        strategy="afterInteractive"
-        dangerouslySetInnerHTML={{
-          __html: `
-            (function(w, d, s, o){
-              var j = d.createElement(s); j.async = true; j.src = 'https://script.marquiz.io/v2.js'; j.onload = function() {
-                if (document.readyState !== 'loading') Marquiz.init(o);
-                else document.addEventListener("DOMContentLoaded", function() {
-                  Marquiz.init(o);
-                });
-              };
-              d.head.insertBefore(j, d.head.firstElementChild);
-            })(window, document, 'script', {
-              host: '//quiz.marquiz.io',
-              region: 'us',
-              id: '66f5f810439a5a00265f8849',
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      // This ensures the script runs only on the client-side
+      const marquizScript = document.createElement("script");
+      marquizScript.src = "https://script.marquiz.io/v2.js";
+      marquizScript.async = true;
+      marquizScript.onload = function () {
+        if (document.readyState !== "loading") {
+          window.Marquiz.init({
+            host: "//quiz.marquiz.io",
+            region: "us",
+            id: "66f5f810439a5a00265f8849",
+            autoOpen: 10,
+            autoOpenFreq: "once",
+            openOnExit: false,
+            disableOnMobile: false,
+          });
+        } else {
+          document.addEventListener("DOMContentLoaded", function () {
+            window.Marquiz.init({
+              host: "//quiz.marquiz.io",
+              region: "us",
+              id: "66f5f810439a5a00265f8849",
               autoOpen: 10,
-              autoOpenFreq: 'once',
+              autoOpenFreq: "once",
               openOnExit: false,
-              disableOnMobile: false
+              disableOnMobile: false,
             });
-          `,
-        }}
-      />
-    </>
-  );
+          });
+        }
+      };
+      document.head.appendChild(marquizScript);
+    }
+  }, []);
+
+  return null; // No need to render anything, the script is appended dynamically
 };
 
 export default MarquizScript;
