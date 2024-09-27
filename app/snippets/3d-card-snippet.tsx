@@ -44,10 +44,10 @@ export function ThreeDCardDemo() {
     console.log("Attempting to open quiz...");
 
     // Удаляем предыдущий инстанс попапа, если он есть
-    const marquizPopup = document.querySelector(".marquiz__bg");
-    if (marquizPopup) {
-      marquizPopup.remove();
-    }
+    // const marquizPopup = document.querySelector(".marquiz__bg");
+    // if (marquizPopup) {
+    //   marquizPopup.remove();
+    // }
 
     if (window.Marquiz) {
       console.log("Marquiz is available.");
