@@ -46,6 +46,8 @@ const allowedRegions = [
 export function middleware(req: NextRequest) {
   const country = req.geo?.country || "Unknown";
 
+  console.log(`Incoming request from country: ${country}`);
+
   // If the country is not in the allowed list, redirect to the blocked page
   if (!allowedRegions.includes(country)) {
     return NextResponse.redirect(new URL("/blocked", req.url));
