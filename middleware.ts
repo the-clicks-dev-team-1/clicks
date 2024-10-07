@@ -48,6 +48,11 @@ export function middleware(req: NextRequest) {
 
   console.log(`Incoming request from country: ${country}`);
 
+  // If geo info is not available or country is unknown, you might want to allow access or set a default behavior.
+  if (country === "Unknown") {
+    return NextResponse.next(); // Allow or handle it as per your needs
+  }
+
   // Avoid redirect loops by ensuring no further redirects when already on the /blocked page
   if (req.nextUrl.pathname === "/blocked") {
     return NextResponse.next();
