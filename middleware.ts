@@ -48,14 +48,14 @@ export function middleware(req: NextRequest) {
 
   console.log(`Incoming request from country: ${country}`);
 
-  // If the country is not in the allowed list, redirect to the blocked page
-  if (!allowedRegions.includes(country)) {
-    return NextResponse.redirect(new URL("/blocked", req.url));
-  }
-
   // Avoid redirect loops by ensuring no further redirects when already on the /blocked page
   if (req.nextUrl.pathname === "/blocked") {
     return NextResponse.next();
+  }
+
+  // If the country is not in the allowed list, redirect to the blocked page
+  if (!allowedRegions.includes(country)) {
+    return NextResponse.redirect(new URL("/blocked", req.url));
   }
 
   return NextResponse.next(); // Continue for allowed countries
