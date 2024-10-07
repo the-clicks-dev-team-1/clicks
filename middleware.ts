@@ -53,6 +53,11 @@ export function middleware(req: NextRequest) {
     return NextResponse.redirect(new URL("/blocked", req.url));
   }
 
+  // Avoid redirect loops by ensuring no further redirects when already on the /blocked page
+  if (req.nextUrl.pathname === "/blocked") {
+    return NextResponse.next();
+  }
+
   return NextResponse.next(); // Continue for allowed countries
 }
 
