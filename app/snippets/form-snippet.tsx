@@ -27,36 +27,54 @@ import { Textarea } from "@/components/ui/textarea";
 import { PiCheckLight, PiSmiley } from "react-icons/pi";
 
 const FormSchema = z.object({
-  first_name: z.string(),
-  last_name: z.string(),
-  email: z.string().email(),
-  job_title: z.string(),
-  company_name: z.string(),
-  help: z.enum([
-    "-- Select an option --",
-    "Evaluate The Clicks for my company",
-    "Learn more about our services",
-    "Get a customized quote",
-    "Request a consultation",
-    "Other",
-  ]),
-  services: z.enum([
-    "-- Select an option --",
-    "Strategy Development",
-    "Web Development",
-    "SEO",
-    "PPC Advertising",
-    "Social Media Marketing",
-    "Content Marketing",
-    "Email Marketing",
-    "Conversion Rate Optimization",
-    "Analytics and Reporting",
-    "Marketing Automation",
-    "Branding",
-    "Public Relations",
-    "Graphic Design",
-  ]),
-  info: z.string(),
+  first_name: z
+    .string()
+    .min(1, { message: "First name is required" })
+    .min(2, { message: "First name must be at least 2 characters long" }),
+  last_name: z
+    .string()
+    .min(1, { message: "Last name is required" })
+    .min(2, { message: "Last name must be at least 2 characters long" }),
+  email: z.string().email({ message: "Invalid email address" }),
+  job_title: z.string().min(1, { message: "Job title is required" }),
+  company_name: z.string().optional(),
+  help: z
+    .enum([
+      "-- Select an option --",
+      "Evaluate The Clicks for my company",
+      "Learn more about our services",
+      "Get a customized quote",
+      "Request a consultation",
+      "Other",
+    ])
+    .optional(),
+  services: z
+    .enum([
+      "-- Select an option --",
+      "Strategy Development",
+      "Web Development",
+      "SEO",
+      "PPC Advertising",
+      "Social Media Marketing",
+      "Content Marketing",
+      "Email Marketing",
+      "Conversion Rate Optimization",
+      "Analytics and Reporting",
+      "Marketing Automation",
+      "Branding",
+      "Public Relations",
+      "Graphic Design",
+    ])
+    .optional(),
+  info: z
+    .string()
+    .min(10, {
+      message: "Please provide more information (at least 10 characters)",
+    })
+    .optional(),
+  consent: z.boolean().refine((val) => val === true, {
+    message: "You must agree to the data collection.",
+  }),
 });
 
 type FormValues = z.infer<typeof FormSchema>;
@@ -77,6 +95,7 @@ export default function ContactForm() {
       help: "-- Select an option --",
       services: "-- Select an option --",
       info: "",
+      consent: false,
     },
   });
 
@@ -164,6 +183,11 @@ export default function ContactForm() {
                         <FormControl>
                           <Input {...field} className="text-black" />
                         </FormControl>
+                        {form.formState.errors.first_name && (
+                          <p className="text-[var(--error)]">
+                            {form.formState.errors.first_name.message}
+                          </p>
+                        )}
                       </FormItem>
                     )}
                   />
@@ -179,6 +203,11 @@ export default function ContactForm() {
                         <FormControl>
                           <Input {...field} className="text-black" />
                         </FormControl>
+                        {form.formState.errors.last_name && (
+                          <p className="text-[var(--error)]">
+                            {form.formState.errors.last_name.message}
+                          </p>
+                        )}
                       </FormItem>
                     )}
                   />
@@ -195,6 +224,11 @@ export default function ContactForm() {
                       <FormControl>
                         <Input {...field} className="text-black" />
                       </FormControl>
+                      {form.formState.errors.email && (
+                        <p className="text-[var(--error)]">
+                          {form.formState.errors.email.message}
+                        </p>
+                      )}
                     </FormItem>
                   )}
                 />
@@ -328,7 +362,7 @@ export default function ContactForm() {
                   render={({ field }) => (
                     <FormItem className="items-center justify-center w-full">
                       <FormLabel className="text-sm bg-clip-text text-[var(--text-label)] bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50">
-                        Anything else?
+                        Anything else? *
                       </FormLabel>
                       <FormControl>
                         <Textarea
@@ -337,17 +371,41 @@ export default function ContactForm() {
                           {...field}
                         />
                       </FormControl>
+                      {form.formState.errors.info && (
+                        <p className="text-[var(--error)]">
+                          {form.formState.errors.info.message}
+                        </p>
+                      )}
                     </FormItem>
                   )}
                 />
 
-                <div className="flex gap-4 items-center">
-                  <Checkbox className="outline border-2 text-sm font-light bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400" />
-                  <div className="text-xs font-light md:w-3/4 mb-1 bg-clip-text text-[var(--text-label)] bg-gradient-to-b from-neutral-50 to-neutral-400">
-                    I agree to The Clicks sending marketing communications
-                    related to The Clicks
-                  </div>
-                </div>
+                <FormField
+                  control={form.control}
+                  name="consent"
+                  render={({ field }) => (
+                    <FormItem className="flex flex-col">
+                      <div className="flex items-center gap-4">
+                        <FormControl>
+                          <Checkbox
+                            checked={field.value} // Binds the checkbox state to the form field value
+                            onCheckedChange={field.onChange} // Updates the form state when the checkbox is toggled
+                            className="outline border-2 text-sm font-light bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400" // Optional styling for the checkbox
+                          />
+                        </FormControl>
+                        <div className="text-xs font-light md:w-3/4 mb-1 bg-clip-text text-[var(--text-label)] bg-gradient-to-b from-neutral-50 to-neutral-400">
+                          I agree to The Clicks sending marketing communications
+                          related to The Clicks
+                        </div>
+                      </div>
+                      {form.formState.errors.consent && (
+                        <p className="text-[var(--error)] text-sm">
+                          {form.formState.errors.consent.message}
+                        </p>
+                      )}
+                    </FormItem>
+                  )}
+                />
 
                 <div className="flex items-center gap-4">
                   <Button
