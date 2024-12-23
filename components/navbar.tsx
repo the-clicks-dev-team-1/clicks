@@ -18,7 +18,7 @@ import {
 import { SiGoogleads, SiGoogleanalytics } from "react-icons/si";
 import { GrOptimize } from "react-icons/gr";
 
-import logo from "../public/logo/logo.svg";
+import logo from "../public/logo/logo1.svg";
 import { IoIosArrowDown, IoMdMoon } from "react-icons/io";
 import { FiMenu } from "react-icons/fi";
 import { AiOutlineClose } from "react-icons/ai";
@@ -141,20 +141,20 @@ export default function Navbar() {
               alt=" logo"
               width={100}
               height={100}
-              className="w-14 h-14"
+              className="w-24 h-24"
             />
           </ActiveLink>
         </div>
 
         <div
           ref={animationParent}
-          className="hidden md:flex flex-1 justify-center items-center gap-4 bg-[var(--bg-50)] backdrop-blur-lg rounded-2xl p-4"
+          className="hidden md:flex flex-1 justify-center items-center gap-4 backdrop-blur-lg rounded-2xl p-4 light:border-[1px] light:border-[#2EC3E2]"
         >
           {navItems.map((d, i) => (
             <div key={`${d.label}-${i}`} className="relative group">
               <ActiveLink
                 href={d.link ?? "#"}
-                className="flex items-center gap-2 text-neutral-400 hover:text-white transition-all"
+                className="flex items-center gap-2 text-neutral-400 light:text-black hover:text-white transition-all"
                 onClick={handleLinkClick}
               >
                 <span>{d.label}</span>
@@ -163,7 +163,7 @@ export default function Navbar() {
                 )}
               </ActiveLink>
               {d.children && (
-                <div className="absolute left-0 top-full hidden group-hover:block flex-col bg-black/90 text-white rounded-lg shadow-md py-3 transition-all">
+                <div className="absolute left-0 top-full hidden group-hover:block flex-col bg-black/90 light:bg-white text-white light:text-black rounded-lg shadow-md py-3 transition-all">
                   {d.children.map((ch, j) => (
                     <ActiveLink
                       key={`${ch.label}-${j}`}
@@ -202,7 +202,7 @@ export default function Navbar() {
             )}
           </button>
           <ActiveLink href="/book">
-            <button className="px-4 py-2 animate-shimmer items-center justify-center rounded-2xl border border-[var(--border-color)] bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
+            <button className="px-4 py-2 animate-shimmer items-center justify-center rounded-2xl border border-[var(--border-color)] dark:bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 light:border-[1px] light:border-[#2EC3E2] light:bg-white light:text-black">
               Let&apos;s Talk
             </button>
           </ActiveLink>

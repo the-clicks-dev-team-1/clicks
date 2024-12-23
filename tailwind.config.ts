@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import type { PluginAPI } from "tailwindcss/types/config";
 
 const config = {
   darkMode: ["class"],
@@ -128,7 +129,14 @@ const config = {
       },
     },
   },
-  plugins: [require("tailwindcss-animate"), require("@tailwindcss/typography")],
+  plugins: [
+    require("tailwindcss-animate"),
+    require("@tailwindcss/typography"),
+    function (pluginApi: PluginAPI) {
+      const { addVariant } = pluginApi;
+      addVariant("light", '[class~="light"] &');
+    },
+  ],
 } satisfies Config;
 
 export default config;
