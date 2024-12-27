@@ -23,7 +23,7 @@ import { IoIosArrowDown, IoMdMoon } from "react-icons/io";
 import { FiMenu } from "react-icons/fi";
 import { AiOutlineClose } from "react-icons/ai";
 import ActiveLink from "./activelink";
-import { initTheme, toggleTheme } from "@/lib/theme";
+import { useTheme } from "next-themes";
 
 type NavItem = {
   label: string;
@@ -109,22 +109,15 @@ const navItems: NavItem[] = [
 export default function Navbar() {
   const [animationParent] = useAutoAnimate();
   const [isSideMenuOpen, setSideMenu] = useState(false);
-  const [isLightMode, setIsLightMode] = useState(false);
+  const { theme, setTheme } = useTheme();
+  const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
-    // Initialize the theme from localStorage and set the state accordingly
-    const savedTheme = localStorage.getItem("theme");
-    const isLight =
-      savedTheme === "light" ||
-      (!savedTheme &&
-        window.matchMedia("(prefers-color-scheme: light)").matches);
-    setIsLightMode(isLight);
-    initTheme(); // Initialize theme on first load
+    setMounted(true);
   }, []);
 
   const handleToggleTheme = () => {
-    toggleTheme();
-    setIsLightMode(!isLightMode);
+    setTheme(theme === "light" ? "dark" : "light");
   };
 
   const handleLinkClick = () => {
@@ -148,7 +141,7 @@ export default function Navbar() {
 
         <div
           ref={animationParent}
-          className="hidden md:flex flex-1 justify-center items-center gap-4 backdrop-blur-lg rounded-2xl p-4 light:border-[1px] light:border-[#2EC3E2]"
+          className="hidden md:flex flex-1 bg-[var(--bgnew)] justify-center items-center gap-4 backdrop-blur-lg rounded-2xl p-4 light:border-[1px] light:border-[#2EC3E2]"
         >
           {navItems.map((d, i) => (
             <div key={`${d.label}-${i}`} className="relative group">
@@ -190,19 +183,21 @@ export default function Navbar() {
           >
             <FaUserLarge className="h-5 w-5 text-[var(--text)]" />
           </Link>
-          <button
-            onClick={handleToggleTheme}
-            aria-label="Toggle Dark Mode"
-            className="mr-4"
-          >
-            {isLightMode ? (
-              <IoMdMoon className="h-6 w-6 text-[var(--text)]" />
-            ) : (
-              <MdOutlineWbSunny className="h-6 w-6 text-[var(--text)]" />
-            )}
-          </button>
+          {mounted && (
+            <button
+              onClick={handleToggleTheme}
+              aria-label="Toggle Dark Mode"
+              className="mr-4"
+            >
+              {theme === "light" ? (
+                <IoMdMoon className="h-6 w-6 text-[var(--text)]" />
+              ) : (
+                <MdOutlineWbSunny className="h-6 w-6 text-[var(--text)]" />
+              )}
+            </button>
+          )}
           <ActiveLink href="/book">
-            <button className="px-4 py-2 animate-shimmer items-center justify-center rounded-2xl border border-[var(--border-color)] dark:bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 light:border-[1px] light:border-[#2EC3E2] light:bg-white light:text-black">
+            <button className="px-4 py-2 animate-shimmer items-center justify-center rounded-2xl border border-[var(--border-color)] bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 light:border-[1px] light:border-[#2EC3E2] light:bg-white light:text-black light:bg-none">
               Let&apos;s Talk
             </button>
           </ActiveLink>
@@ -217,17 +212,19 @@ export default function Navbar() {
           >
             <FaUserLarge className="h-5 w-5 text-[var(--text)]" />
           </Link>
-          <button
-            onClick={handleToggleTheme}
-            aria-label="Toggle Dark Mode"
-            className="mr-4"
-          >
-            {isLightMode ? (
-              <IoMdMoon className="h-6 w-6 text-[var(--text)]" />
-            ) : (
-              <MdOutlineWbSunny className="h-6 w-6 text-[var(--text)]" />
-            )}
-          </button>
+          {mounted && (
+            <button
+              onClick={handleToggleTheme}
+              aria-label="Toggle Dark Mode"
+              className="mr-4"
+            >
+              {theme === "light" ? (
+                <IoMdMoon className="h-6 w-6 text-[var(--text)]" />
+              ) : (
+                <MdOutlineWbSunny className="h-6 w-6 text-[var(--text)]" />
+              )}
+            </button>
+          )}
           <FiMenu
             onClick={() => setSideMenu(true)}
             className="cursor-pointer text-4xl md:hidden text-[var(--text)]"

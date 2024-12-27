@@ -25,6 +25,7 @@ import { Input } from "@/components/ui/input";
 import { useToast } from "@/components/ui/use-toast";
 import { Textarea } from "@/components/ui/textarea";
 import { PiCheckLight, PiSmiley } from "react-icons/pi";
+import Image from "next/image";
 
 const FormSchema = z.object({
   first_name: z
@@ -132,32 +133,55 @@ export default function ContactForm() {
   }
 
   return (
-    <div className="py-20 px-4 md:px-20 lg:px-40 max-w-7xl mx-auto">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+    <div className="py-10 px-4 md:px-16 lg:px-16 mb-10 max-w-7xl mx-auto light:border-[1px] light:border-[#2EC3E2] rounded-3xl light:bg-[#F8FBFF]">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
         {/* Contact Info */}
         <div className="flex flex-col justify-between">
-          <h2 className="text-2xl md:text-3xl font-semibold mb-6">
+          <h2 className="text-2xl md:text-4xl font-semibold mb-4">
+            Have a questions?
+          </h2>
+          <h2 className="text-2xl md:text-4xl font-semibold mb-10">
             Get in Touch
           </h2>
           <div className="flex-1">
             <p className="text-lg mb-4">
-              Whether you have a question about our services, pricing, or
-              anything else, our team is ready to answer all your questions.
+              We value your feedback, questions, and inquiries. Whether you have
+              a suggestion, require assistance, or just want to reach out to us,
+              we are always here to provide support and assistance.
             </p>
-            <p className="text-lg mb-2">
-              <strong>Email:</strong>{" "}
-              <a href="mailto:info@theclicks.com" className="text-sky-400">
+            <p className="text-lg mb-2 flex gap-3">
+              <Image
+                src="/icons/iphone.svg"
+                alt="phone"
+                width={20}
+                height={20}
+                className="h-auto w-auto"
+              />
+              <a href="tel:+15068718210" className="">
+                +1 506 871 8210
+              </a>
+            </p>
+            <p className="text-lg mb-2 flex gap-3">
+              <Image
+                src="/icons/mail.svg"
+                alt="mail"
+                width={20}
+                height={20}
+                className="h-auto w-auto"
+              />
+              <a href="mailto:info@theclicks.com" className="">
                 info@theclicks.ca
               </a>
             </p>
-            <p className="text-lg mb-2">
-              <strong>Phone:</strong>{" "}
-              <a href="tel:+1(877)323-2326" className="text-sky-400">
-                +1(877)323-2326
-              </a>
-            </p>
-            <p className="text-lg">
-              <strong>Address:</strong> Dieppe, NB, Canada
+            <p className="text-lg flex gap-3">
+              <Image
+                src="/icons/map-marker.svg"
+                alt="map-marker"
+                width={20}
+                height={20}
+                className="h-auto w-auto"
+              />
+              860 Main Street, Moncton
             </p>
           </div>
         </div>
@@ -169,7 +193,7 @@ export default function ContactForm() {
               <form
                 id="contactServiceForm"
                 onSubmit={form.handleSubmit(onSubmit)}
-                className="contact-form space-y-4 h-full border border-[var(--dark-border-t)] shadow-lg rounded-3xl p-6 flex flex-col justify-between"
+                className="contact-form space-y-4 h-full border border-[var(--dark-border-t)] dark:shadow-lg rounded-3xl p-6 flex flex-col justify-between"
               >
                 <div className="md:flex items-center gap-6">
                   <FormField
@@ -410,8 +434,8 @@ export default function ContactForm() {
                 <div className="flex items-center gap-4">
                   <Button
                     type="submit"
-                    className="text-sm font-light bg-gradient-to-b from-sky-400 
-            to-purple-500 bg-opacity-50"
+                    className="text-sm font-light dark:bg-gradient-to-b from-sky-400 
+            to-purple-500 bg-opacity-50 light:bg-[#2EC3E2] light:text-white"
                     disabled={loading}
                   >
                     Submit

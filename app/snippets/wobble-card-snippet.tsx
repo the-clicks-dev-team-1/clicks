@@ -7,14 +7,14 @@ export function WobbleCardDemo() {
   return (
     <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 max-w-7xl mx-auto w-full">
       <WobbleCard
-        containerClassName="col-span-1 lg:col-span-2 h-full bg-transperent min-h-[500px] lg:min-h-[300px]"
-        className="bg-transperent opacity-100"
+        containerClassName="col-span-1 lg:col-span-2 h-full bg-transperent light:bg-white min-h-[500px] lg:min-h-[300px] light:shadow-lg"
+        className="bg-transperent opacity-100 light:bg-white light:shadow-lg"
       >
         <div className="max-w-xs">
-          <h2 className="text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
+          <h2 className="text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white light:text-[#35373F]">
             Global Marketing Expertise
           </h2>
-          <p className="mt-4 text-left  text-base/6 text-white">
+          <p className="mt-4 text-left  text-base/6 text-white light:text-[#8E93A2]">
             At The Clicks, we leverage our broad expertise across diverse
             marketing domains to offer rapid scalability and adaptable
             engagement models. Our goal is to help clients refine their
@@ -27,14 +27,14 @@ export function WobbleCardDemo() {
           width={300}
           height={300}
           alt="global marketing expertise"
-          className="absolute -right-4 lg:-right-[5%] filter -bottom-5 object-contain rounded-2xl"
+          className="absolute right-4 md:right-[5%] filter -bottom-20 md:bottom-[10%] object-contain rounded-2xl"
         />
       </WobbleCard>
-      <WobbleCard containerClassName="col-span-1 bg-transperent min-h-[300px]">
-        <h2 className="max-w-80  text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
+      <WobbleCard containerClassName="col-span-1 bg-transperent min-h-[300px] light:shadow-lg">
+        <h2 className="max-w-80  text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white light:text-[#35373F]">
           Your Growth Ally
         </h2>
-        <p className="mt-4 max-w-[26rem] text-left  text-base/6 text-neutral-200">
+        <p className="mt-4 max-w-[26rem] text-left  text-base/6 text-neutral-200 light:text-[#8E93A2]">
           We are committed to delivering immediate outcomes while fostering your
           long-term success. At The Clicks, your ROI and revenue go beyond mere
           metrics—we substantiate our impact by supporting your marketing
@@ -42,33 +42,33 @@ export function WobbleCardDemo() {
           results.
         </p>
       </WobbleCard>
-      <WobbleCard containerClassName="col-span-1 bg-transperent min-h-[300px]">
-        <h2 className="max-w-80  text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
+      <WobbleCard containerClassName="col-span-1 bg-transperent min-h-[300px] light:shadow-lg">
+        <h2 className="max-w-80  text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white light:text-[#35373F]">
           Data-Driven, Predictable, and Transparent
         </h2>
-        <p className="mt-4 max-w-[26rem] text-left  text-base/6 text-neutral-200">
+        <p className="mt-4 max-w-[26rem] text-left  text-base/6 text-neutral-200 light:text-[#8E93A2]">
           Our meticulously developed methods and processes have empowered a wide
           range of businesses, from startups to established enterprises, across
           more than 10 industries. We maintain our agility, adaptability, and
           ease of collaboration, regardless of our extensive experience.
         </p>
       </WobbleCard>
-      <WobbleCard containerClassName="col-span-1 bg-transperent min-h-[300px]">
-        <h2 className="max-w-80  text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
+      <WobbleCard containerClassName="col-span-1 bg-transperent min-h-[300px] light:shadow-lg">
+        <h2 className="max-w-80  text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-whitelight:text-[#35373F]">
           Tailored Marketing Solutions
         </h2>
-        <p className="mt-4 max-w-[26rem] text-left  text-base/6 text-neutral-200">
+        <p className="mt-4 max-w-[26rem] text-left  text-base/6 text-neutral-200 light:text-[#8E93A2]">
           We customize our strategies to meet your specific business needs and
           objectives, ensuring every marketing plan aligns with your goals. Our
           team stays updated on the latest trends and technologies to provide
           the best outcomes.
         </p>
       </WobbleCard>
-      <WobbleCard containerClassName="col-span-1 bg-transperent min-h-[300px]">
-        <h2 className="max-w-80  text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
+      <WobbleCard containerClassName="col-span-1 bg-transperent min-h-[300px] light:shadow-lg">
+        <h2 className="max-w-80  text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-whitelight:text-[#35373F]">
           Holistic Customer Engagement
         </h2>
-        <p className="mt-4 max-w-[26rem] text-left  text-base/6 text-neutral-200">
+        <p className="mt-4 max-w-[26rem] text-left  text-base/6 text-neutral-200 light:text-[#8E93A2]">
           We integrate multiple touchpoints and channels to create seamless
           customer experiences. Our comprehensive strategy covers everything
           from initial awareness to post-purchase support, enhancing customer

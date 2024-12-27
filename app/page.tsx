@@ -36,7 +36,7 @@ export default function Home() {
           {/* Add a flex container here to center the button */}
           <Link
             href="/book"
-            className="inline-block bg-gradient-to-r from-sky-400 to-purple-500 text-white font-bold py-3 px-6 rounded-lg shadow-lg hover:bg-opacity-75 transition duration-300"
+            className="inline-block bg-gradient-to-r from-sky-400 to-purple-500 text-white font-bold py-3 px-6 rounded-lg shadow-lg hover:bg-opacity-75 transition duration-300 light:bg-[#2EC3E2] light:bg-none"
           >
             Book A Call
           </Link>
