@@ -3,7 +3,7 @@ import ActiveLink from "@/components/activelink";
 import { useTheme } from "next-themes";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import logo from "../public/logo/logo1.svg";
+import logo from "../public/logo/Logo1.svg";
 import NewsletterForm from "./NewsLetterForm";
 
 const Footer = () => {
