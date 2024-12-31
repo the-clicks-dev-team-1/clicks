@@ -3,8 +3,8 @@ import Navbar from "@/components/navbar";
 import Image from "next/image";
 import Link from "next/link";
 import TextBlock from "@/components/text-block";
-import Footer from "@/app/footer";
-import ContactBlock from "@/app/contactBlock";
+import Footer from "@/components/footer";
+import ContactBlock from "@/components/contactBlock";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {

@@ -4,10 +4,10 @@ import { FC, useEffect, useState, useRef } from "react";
 import Navbar from "@/components/navbar";
 import Image from "next/image";
 import Link from "next/link";
-import Footer from "@/app/footer";
+import Footer from "@/components/footer";
 import client from "@/lib/contentful"; // Импортируем клиент Contentful
-import ContactBlock from "../contactBlock";
-import SubscriptionForm from "../subscription";
+import ContactBlock from "../../components/contactBlock";
+import SubscriptionForm from "../../components/subscription";
 import { BiChevronLeft, BiChevronRight } from "react-icons/bi";
 import { Metadata } from "next";
 

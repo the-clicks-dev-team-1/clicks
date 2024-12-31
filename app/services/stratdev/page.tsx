@@ -1,6 +1,6 @@
 import { FC } from "react";
 import Navbar from "@/components/navbar";
-import Footer from "@/app/footer";
+import Footer from "@/components/footer";
 import Link from "next/link";
 import Image from "next/image";
 import { Metadata } from "next";

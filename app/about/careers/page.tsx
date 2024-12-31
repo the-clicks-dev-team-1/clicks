@@ -2,8 +2,8 @@ import { FC } from "react";
 import Navbar from "@/components/navbar";
 import Image from "next/image";
 import Link from "next/link";
-import Footer from "@/app/footer";
-import ContactBlock from "@/app/contactBlock";
+import Footer from "@/components/footer";
+import ContactBlock from "@/components/contactBlock";
 import client from "@/lib/contentful";
 import { Metadata } from "next";
 

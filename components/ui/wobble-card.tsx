@@ -30,7 +30,6 @@ export const WobbleCard = ({
     setMousePosition({ x, y });
   };
 
-  // Initial render with minimal styling
   if (!mounted) {
     return (
       <div
@@ -66,7 +65,7 @@ export const WobbleCard = ({
       }}
       className={cn(
         "mx-auto w-full relative rounded-2xl overflow-hidden",
-        isDark ? "bg-indigo-800" : "bg-white",
+        isDark ? "bg-[var(--blue2)]" : "bg-white",
         // Add white background wrapper for light mode
         !isDark && "p-[1px] bg-white",
         containerClassName
@@ -87,7 +86,7 @@ export const WobbleCard = ({
             "z-20 relative h-full sm:mx-0 sm:rounded-2xl overflow-hidden",
             // Only apply gradient in dark mode
             isDark &&
-              "[background-image:radial-gradient(#084378,rgba(255,255,255,0))]",
+              "#[background-image:radial-gradient(#084378,rgba(255,255,255,0))]",
             !isDark && "bg-white", // Add white background in light mode
             {
               "shadow-[0_10px_32px_rgba(34,_42,_53,_0.12),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.05),_0_4px_6px_rgba(34,_42,_53,_0.08),_0_24px_108px_rgba(47,_48,_55,_0.10)]":

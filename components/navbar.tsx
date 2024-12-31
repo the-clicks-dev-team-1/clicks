@@ -141,13 +141,13 @@ export default function Navbar() {
 
         <div
           ref={animationParent}
-          className="hidden md:flex flex-1 bg-[var(--bgnew)] justify-center items-center gap-4 backdrop-blur-lg rounded-2xl p-4 light:border-[1px] light:border-[#2EC3E2]"
+          className="hidden md:flex flex-1 bg-[var(--bgnew)] justify-center items-center gap-4 backdrop-blur-lg rounded-lg p-4 light:border-[1px] light:border-[var(--ocean-blue)]"
         >
           {navItems.map((d, i) => (
             <div key={`${d.label}-${i}`} className="relative group">
               <ActiveLink
                 href={d.link ?? "#"}
-                className="flex items-center gap-2 text-neutral-400 light:text-black hover:text-white transition-all"
+                className="flex items-center gap-2 text-[var(--gray-blue)] light:text-[var(--gray-70)] hover:text-white transition-all"
                 onClick={handleLinkClick}
               >
                 <span>{d.label}</span>
@@ -156,7 +156,7 @@ export default function Navbar() {
                 )}
               </ActiveLink>
               {d.children && (
-                <div className="absolute left-0 top-full hidden group-hover:block flex-col bg-black/90 light:bg-white text-white light:text-black rounded-lg shadow-md py-3 transition-all">
+                <div className="absolute left-0 top-full hidden group-hover:block flex-col bg-black/90 light:bg-white text-[var(--gray-blue)] hover:text-white light:text-[var(--gray-70)] rounded-lg shadow-md py-3 transition-all">
                   {d.children.map((ch, j) => (
                     <ActiveLink
                       key={`${ch.label}-${j}`}
@@ -197,7 +197,7 @@ export default function Navbar() {
             </button>
           )}
           <ActiveLink href="/book">
-            <button className="px-4 py-2 animate-shimmer items-center justify-center rounded-2xl border border-[var(--border-color)] bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 light:border-[1px] light:border-[#2EC3E2] light:bg-white light:text-black light:bg-none">
+            <button className="px-4 py-2 animate-shimmer items-center justify-center rounded-lg border border-[var(--border-color)] light:border-[var(--ocean-blue)] bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 light:border-[1px] light:bg-white light:text-black light:bg-none">
               Let&apos;s Talk
             </button>
           </ActiveLink>
@@ -247,7 +247,7 @@ function MobileNav({ closeSideMenu }: { closeSideMenu: () => void }) {
             className="cursor-pointer text-4xl text-[var(--text)]"
           />
         </section>
-        <div className="flex flex-col gap-2 mt-4">
+        <div className="flex flex-col gap-2 mt-4 light:text-[var(--gray-70)]">
           {navItems.map((d, i) => (
             <SingleNavItem
               key={`${d.label}-${i}`}
@@ -260,7 +260,7 @@ function MobileNav({ closeSideMenu }: { closeSideMenu: () => void }) {
           <ActiveLink href="/book">
             <button
               onClick={closeSideMenu}
-              className="w-full max-w-[200px] px-4 py-2 animate-shimmer items-center justify-center rounded-2xl border border-white bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50"
+              className="w-full max-w-[200px] px-4 py-2 animate-shimmer items-center justify-center rounded-lg border border-white light:border-[var(--ocean-blue)] bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 light:bg-white light:text-black light:bg-none"
             >
               Let&apos;s Talk
             </button>
@@ -285,7 +285,7 @@ function SingleNavItem(d: NavItem & { closeSideMenu: () => void }) {
         <>
           <div
             onClick={toggleItem}
-            className="flex items-center justify-between px-2 py-3 text-neutral-400 hover:text-[var(--text)] cursor-pointer"
+            className="flex items-center justify-between px-2 py-3 text-neutral-400 light:text-[var(--gray-70)] hover:text-[var(--text)] light:hover:text-[var(--text)] light:hover:font-bold cursor-pointer"
           >
             <span>{d.label}</span>
             <IoIosArrowDown
@@ -313,7 +313,7 @@ function SingleNavItem(d: NavItem & { closeSideMenu: () => void }) {
       ) : (
         <ActiveLink
           href={d.link ?? "#"}
-          className="flex items-center px-2 py-3 text-neutral-400 hover:text-[var(--text)]"
+          className="flex items-center px-2 py-3 text-neutral-400 light:text-[var(--gray-70)] hover:text-[var(--text)] light:hover:text-[var(--text)] light:hover:font-bold"
           onClick={d.closeSideMenu}
         >
           <span>{d.label}</span>

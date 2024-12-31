@@ -2,7 +2,7 @@
 
 import { FC } from "react";
 import Navbar from "@/components/navbar";
-import Footer from "@/app/footer";
+import Footer from "@/components/footer";
 
 const PrivacyPolicy: FC = () => {
   return (

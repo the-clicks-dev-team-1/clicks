@@ -56,7 +56,20 @@
 
     --radius: 0.5rem;
 
-    --error: #b3261e;
+    --error: #ff3b30;
+
+    --main-blue: #182963;
+    --blue1: #1d2339;
+    --blue2: #2d3757;
+    --ocean-blue: #2ec3e2;
+    --jagged-ice: #c5e6ea;
+    --blue3: #edf8fe;
+    --light-blue: #f8fbff;
+    --gray-100: #000000;
+    --gray-70: #35373f;
+    --gray-40: #8e93a2;
+    --gray-blue: #b1b7c9;
+    --gray-0: #ffffff;
   }
 
   .light {

@@ -5,14 +5,14 @@ import Link from "next/link";
 import { PiCheckCircleFill } from "react-icons/pi";
 import Navbar from "@/components/navbar";
 import { WobbleCard } from "@/components/ui/wobble-card";
-import Footer from "../footer";
+import Footer from "../../components/footer";
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import ContactBlock from "../contactBlock";
+import ContactBlock from "../../components/contactBlock";
 
 const plans = [
   {

@@ -3,9 +3,9 @@ import Navbar from "@/components/navbar";
 import Image from "next/image";
 import Link from "next/link";
 import TextBlock from "@/components/text-block";
-import Footer from "@/app/footer";
-import Block4 from "@/app/block4";
-import ContactBlock from "@/app/contactBlock";
+import Footer from "@/components/footer";
+import Block4 from "@/components/block4";
+import ContactBlock from "@/components/contactBlock";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {

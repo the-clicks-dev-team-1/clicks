@@ -2,14 +2,14 @@ import Navbar from "@/components/navbar";
 import { Spotlight } from "@/components/ui/spotlight";
 import Link from "next/link";
 import SliderOne from "@/components/ui/slider";
-import Block from "./block";
-import Services from "./services";
-import Reviews from "./reviews";
-import Footer from "./footer";
-import Block2 from "./block2";
-import Block3 from "./block3";
-import Steps from "./steps";
-import ContactBlock from "./contactBlock";
+import Block from "../components/block";
+import Services from "../components/services";
+import Reviews from "../components/reviews";
+import Footer from "../components/footer";
+import Block2 from "../components/block2";
+import Block3 from "../components/block3";
+import Steps from "../components/steps";
+import ContactBlock from "../components/contactBlock";
 
 export default function Home() {
   return (
@@ -19,7 +19,7 @@ export default function Home() {
         className="hidden md:flex md:left-80 md:-top-75"
         fill="white"
       />
-      <div className="p-4 mx-auto relative z-10 w-full pt-32 md:pt-40 px-2">
+      <div className="mx-auto relative z-10 w-full pt-32 md:pt-40">
         {" "}
         {/* Adjusted padding here */}
         <div className="text-4xl pb-5 md:text-7xl px-6 text-center bg-clip-text text-transparent bg-gradient-to-b from-sky-400 to bg-purple-500 bg-opacity-50">
@@ -27,7 +27,7 @@ export default function Home() {
             Transform your business <br /> with artificial intelligence
           </h1>
         </div>
-        <p className="mt-4 text-lg font-normal text-[var(--gray)] max-w-lg text-center mx-auto px-4">
+        <p className="mt-4 text-lg font-normal text-[var(--gray-blue)] light:text-[var(--gray-70)] max-w-lg text-center mx-auto px-4">
           Revolutionize operations, optimize processes, and drive growth with
           smarter decisions and innovation.
         </p>
@@ -36,7 +36,7 @@ export default function Home() {
           {/* Add a flex container here to center the button */}
           <Link
             href="/book"
-            className="inline-block bg-gradient-to-r from-sky-400 to-purple-500 text-white font-bold py-3 px-6 rounded-lg shadow-lg hover:bg-opacity-75 transition duration-300 light:bg-[#2EC3E2] light:bg-none"
+            className="inline-block bg-[var(--ocean-blue)] #bg-gradient-to-r from-sky-400 to-purple-500 text-white font-bold py-3 px-6 rounded-lg shadow-lg hover:bg-opacity-75 transition duration-300 light:bg-[var(--ocean-blue)] light:bg-none"
           >
             Book A Call
           </Link>
