@@ -18,7 +18,7 @@ import {
 import { SiGoogleads, SiGoogleanalytics } from "react-icons/si";
 import { GrOptimize } from "react-icons/gr";
 
-import logo from "../public/logo/logo1.svg";
+import logo from "../public/logo/Logo1.svg";
 import { IoIosArrowDown, IoMdMoon } from "react-icons/io";
 import { FiMenu } from "react-icons/fi";
 import { AiOutlineClose } from "react-icons/ai";
