@@ -1,13 +1,13 @@
 "use client";
 
-import { FC, useEffect, useState } from 'react';
+import { FC, useEffect, useState } from "react";
 import client from "@/lib/contentful";
 import Navbar from "@/components/navbar";
-import Footer from "@/app/footer";
-import ContactBlock from "@/app/contactBlock";
-import Image from 'next/image';
-import ReactMarkdown from 'react-markdown';
-import rehypeRaw from 'rehype-raw';
+import Footer from "@/components/footer";
+import ContactBlock from "@/components/contactBlock";
+import Image from "next/image";
+import ReactMarkdown from "react-markdown";
+import rehypeRaw from "rehype-raw";
 
 type PostProps = {
   params: { slug: string };
@@ -24,13 +24,17 @@ const BlogPost: FC<PostProps> = ({ params }) => {
         const space = process.env.NEXT_PUBLIC_CONTENTFUL_SPACE_ID;
         const accessToken = process.env.NEXT_PUBLIC_CONTENTFUL_ACCESS_TOKEN;
         if (!space || !accessToken) {
-          console.error('Expected parameters space or accessToken are missing.');
-          throw new Error('Expected parameters space or accessToken are missing');
+          console.error(
+            "Expected parameters space or accessToken are missing."
+          );
+          throw new Error(
+            "Expected parameters space or accessToken are missing"
+          );
         }
 
         const entries = await client.getEntries({
-          content_type: 'blogPost',
-          'fields.slug': params.slug,
+          content_type: "blogPost",
+          "fields.slug": params.slug,
         });
 
         if (entries.items.length > 0) {
@@ -47,7 +51,7 @@ const BlogPost: FC<PostProps> = ({ params }) => {
     };
 
     fetchData();
-  }, [params.slug]);  
+  }, [params.slug]);
 
   if (loading) {
     return <div>Loading...</div>;
@@ -60,7 +64,7 @@ const BlogPost: FC<PostProps> = ({ params }) => {
   const { title, description, body, featuredImage, category } = post.fields;
 
   return (
-    <div className="bg-black text-white">
+    <div className="bg-[var(--bgnew)] text-[var(--text)]">
       <Navbar />
 
       <div className="py-20 px-4 md:px-20 lg:px-40 max-w-7xl mx-auto">
@@ -81,20 +85,21 @@ const BlogPost: FC<PostProps> = ({ params }) => {
         )}
 
         {description && (
-          <div className="mt-4 text-neutral-300">
+          <div className="mt-4 text-[var(--text-gray)]">
             <p>{description}</p>
           </div>
         )}
 
         {body && (
-          <div className="mt-10 prose prose-invert max-w-none">
+          <div className="mt-10 prose prose-invert max-w-none text-[var(--text-gray)]">
             <ReactMarkdown rehypePlugins={[rehypeRaw]}>{body}</ReactMarkdown>
           </div>
         )}
 
         {category?.fields?.title && (
-          <div className="mt-4 text-neutral-300">
-            <strong>Category: </strong>{category.fields.title}
+          <div className="mt-4 text-[var(--text-gray)]">
+            <strong>Category: </strong>
+            {category.fields.title}
           </div>
         )}
       </div>

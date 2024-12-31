@@ -1,0 +1,16 @@
+{
+  "redirects": [
+    {
+      "source": "/:path*/",
+      "has": [{ "type": "host", "value": "www.theclicks.ca" }],
+      "destination": "https://theclicks.ca/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "www.theclicks.ca" }],
+      "destination": "https://theclicks.ca/:path*",
+      "permanent": true
+    }
+  ]
+}

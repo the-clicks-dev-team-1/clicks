@@ -4,11 +4,12 @@ import { FC, useEffect, useState, useRef } from "react";
 import Navbar from "@/components/navbar";
 import Image from "next/image";
 import Link from "next/link";
-import Footer from "@/app/footer";
+import Footer from "@/components/footer";
 import client from "@/lib/contentful"; // Импортируем клиент Contentful
-import ContactBlock from "../contactBlock";
-import SubscriptionForm from "../subscription";
+import ContactBlock from "../../components/contactBlock";
+import SubscriptionForm from "../../components/subscription";
 import { BiChevronLeft, BiChevronRight } from "react-icons/bi";
+import { Metadata } from "next";
 
 const Blog: FC = () => {
   const [posts, setPosts] = useState<any[]>([]);
@@ -82,14 +83,17 @@ const Blog: FC = () => {
   };
 
   return (
-    <div className="bg-black text-white">
+    <div className="bg-[var(--bgnew)] text-[var(--text)]">
       <Navbar />
 
       {/* Header Section */}
       <div className="bg-gradient-to-b from-sky-400 to-purple-500 py-20 text-center">
-        <h1 className="text-4xl mt-10 md:text-6xl font-bold">The Clicks Blog</h1>
+        <h1 className="text-4xl mt-10 md:text-6xl font-bold">
+          The Clicks Blog
+        </h1>
         <p className="mt-4 text-lg md:text-xl max-w-2xl mx-auto">
-          Stay updated with the latest insights, tips, and trends in digital marketing. Our blog is your go-to resource for all things marketing.
+          Stay updated with the latest insights, tips, and trends in digital
+          marketing. Our blog is your go-to resource for all things marketing.
         </p>
       </div>
 
@@ -120,7 +124,7 @@ const Blog: FC = () => {
               <button
                 onClick={() => handleCategoryChange(null)}
                 className={`px-4 py-2 mx-2 flex-shrink-0 w-48 h-24 rounded-lg text-center flex items-center justify-center ${
-                  selectedCategory === null ? "bg-sky-500" : "bg-neutral-800"
+                  selectedCategory === null ? "bg-sky-500" : "bg-[var(--bg800)]"
                 } text-white font-bold shadow-lg hover:bg-neutral-700 transition duration-300`}
               >
                 All Categories
@@ -151,10 +155,15 @@ const Blog: FC = () => {
 
       {/* Featured Posts Section */}
       <div className="py-20 px-4 md:px-20 lg:px-40 max-w-7xl mx-auto">
-        <h2 className="text-3xl font-semibold mb-10 text-center">Featured Posts</h2>
+        <h2 className="text-3xl font-semibold mb-10 text-center">
+          Featured Posts
+        </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
           {posts.slice(0, visiblePosts).map((post) => (
-            <div key={post.sys.id} className="relative bg-neutral-800 rounded-lg overflow-hidden shadow-lg">
+            <div
+              key={post.sys.id}
+              className="relative bg-[var(--bg800-w)] rounded-lg overflow-hidden shadow-lg"
+            >
               {post.fields?.previewImage?.fields?.file?.url && (
                 <Image
                   src={`https:${post.fields.previewImage.fields.file.url}`}
@@ -166,7 +175,7 @@ const Blog: FC = () => {
               )}
               <div className="p-6">
                 <h3 className="text-2xl font-bold">{post.fields.title}</h3>
-                <p className="mt-2 text-neutral-300">
+                <p className="mt-2 text-[var(--text-gray)]">
                   {post.fields.description}
                 </p>
                 {post.fields.category && (
@@ -178,7 +187,8 @@ const Blog: FC = () => {
                   Author: {post.fields.author}
                 </p>
                 <p className="mt-2 text-neutral-500 text-sm">
-                  Publish Date: {new Date(post.fields.publishDate).toLocaleDateString()}
+                  Publish Date:{" "}
+                  {new Date(post.fields.publishDate).toLocaleDateString()}
                 </p>
                 <Link
                   href={`/blog/${post.fields.slug}`}

@@ -4,6 +4,28 @@
 
 @layer base {
   :root {
+    --bgnew: black;
+    --bg-50: rgba(0, 0, 0, 0.5);
+    --bg-99: rgba(0, 0, 0, 0.99);
+    --bg-96: rgba(0, 0, 0, 0.96);
+    --bg700: #404040;
+    --bg800: #262626;
+    --bg800-w: #262626;
+    --bg900: #171717;
+    --text: white;
+    --border-color: white;
+    --border-color-t: transparent;
+    --text-gray: #d4d4d4;
+    --text-label: transparent;
+    --bg-input: white;
+    --title: #f4f4f5;
+    --desc: #a1a1aa;
+    --bg-block: black;
+    --dark-border: rgb(255 255 255 / 0.2);
+    --dark-border-t: white;
+    --border-input: 214.3 31.8% 91.4%;
+    --overlay: transparent;
+
     --background: 0 0% 100%;
     --foreground: 222.2 84% 4.9%;
 
@@ -33,9 +55,46 @@
     --ring: 222.2 84% 4.9%;
 
     --radius: 0.5rem;
+
+    --error: #ff3b30;
+
+    --main-blue: #182963;
+    --blue1: #1d2339;
+    --blue2: #2d3757;
+    --ocean-blue: #2ec3e2;
+    --jagged-ice: #c5e6ea;
+    --blue3: #edf8fe;
+    --light-blue: #f8fbff;
+    --gray-100: #000000;
+    --gray-70: #35373f;
+    --gray-40: #8e93a2;
+    --gray-blue: #b1b7c9;
+    --gray-0: #ffffff;
   }
 
-  .dark {
+  .light {
+    --bgnew: white;
+    --bg-50: black;
+    --bg-99: rgba(255, 255, 255, 0.99);
+    --bg-96: rgba(255, 255, 255, 0.96);
+    --bg700: #94a3b8;
+    --bg800: #94a3b8;
+    --bg800-w: white;
+    --bg900: #64748b;
+    --text: black;
+    --border-color: black;
+    --border-color-t: black;
+    --text-gray: #404040;
+    --text-label: #404040;
+    --bg-input: white;
+    --title: #101010;
+    --desc: #404040;
+    --bg-block: #d4d4d4;
+    --dark-border: transparent;
+    --dark-border-t: transparent;
+    --border-input: #2ec3e2;
+    --overlay: rgb(0 0 0);
+
     --background: 222.2 84% 4.9%;
     --foreground: 210 40% 98%;
 

@@ -24,13 +24,48 @@ export const CardContainer = ({
 }) => {
   const containerRef = useRef<HTMLDivElement>(null);
   const [isMouseEntered, setIsMouseEntered] = useState(false);
+  const [scale, setScale] = useState(50);
+
+  useEffect(() => {
+    // Define a function to update the scale based on window width
+    const updateScale = () => {
+      if (typeof window !== "undefined") {
+        if (window.innerWidth > 1920) {
+          setScale(500);
+        } else if (window.innerWidth > 1200) {
+          setScale(300);
+        } else {
+          setScale(50);
+        }
+      }
+    };
+
+    updateScale(); // Set initial scale
+
+    // Attach the resize event listener if window is defined
+    if (typeof window !== "undefined") {
+      window.addEventListener("resize", updateScale);
+    }
+
+    // Clean up the event listener on unmount
+    return () => {
+      if (typeof window !== "undefined") {
+        window.removeEventListener("resize", updateScale);
+      }
+    };
+  }, []);
+
+  // Рассчитываем масштаб вращения в зависимости от ширины экрана
+  // const scale =
+  //   window.innerWidth > 1920 ? 500 : window.innerWidth > 1200 ? 300 : 50; // Увеличиваем делитель для больших экранов
 
   const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
     if (!containerRef.current) return;
     const { left, top, width, height } =
       containerRef.current.getBoundingClientRect();
-    const x = (e.clientX - left - width / 2) / 50;
-    const y = (e.clientY - top - height / 2) / 50;
+
+    const x = (e.clientX - left - width / 2) / scale;
+    const y = (e.clientY - top - height / 2) / scale;
     containerRef.current.style.transform = `rotateY(${x}deg) rotateX(${y}deg)`;
   };
 
@@ -48,8 +83,8 @@ export const CardContainer = ({
     if (!containerRef.current) return;
     const { left, top, width, height } =
       containerRef.current.getBoundingClientRect();
-    const x = (e.touches[0].clientX - left - width / 2) / 50;
-    const y = (e.touches[0].clientY - top - height / 2) / 50;
+    const x = (e.touches[0].clientX - left - width / 2) / scale;
+    const y = (e.touches[0].clientY - top - height / 2) / scale;
     containerRef.current.style.transform = `rotateY(${x}deg) rotateX(${y}deg)`;
   };
 
@@ -150,7 +185,15 @@ export const CardItem = ({
         ref.current.style.transform = `translateX(0px) translateY(0px) translateZ(0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg)`;
       }
     }
-  }, [isMouseEntered, translateX, translateY, translateZ, rotateX, rotateY, rotateZ]);
+  }, [
+    isMouseEntered,
+    translateX,
+    translateY,
+    translateZ,
+    rotateX,
+    rotateY,
+    rotateZ,
+  ]);
 
   return (
     <Tag
