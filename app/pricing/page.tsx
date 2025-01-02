@@ -81,7 +81,7 @@ const offers = [
       "Strategy document",
     ],
     style:
-      "rounded-3xl py-10 bg-clip-text text-transparent bg-gradient-to-b from-neutral-300 to-neutral-50",
+      "rounded-3xl bg-clip-text text-transparent bg-gradient-to-b from-neutral-300 to-neutral-50",
     description:
       "Detailed consultation to understand the client's business goals, target audience, and current marketing efforts. Development of a customized digital marketing strategy.",
     button: "Order Now",
@@ -98,7 +98,7 @@ const offers = [
       "Basic SEO optimization",
     ],
     style:
-      "rounded-3xl py-10 bg-clip-text text-transparent bg-gradient-to-b from-neutral-300 to-neutral-50",
+      "rounded-3xl bg-clip-text text-transparent bg-gradient-to-b from-neutral-300 to-neutral-50",
     description:
       "Creation of a modern, responsive website optimized for user experience and conversions.",
     button: "Order Now",
@@ -115,7 +115,7 @@ const offers = [
       "Monthly performance reports",
     ],
     style:
-      "rounded-3xl py-10 bg-clip-text text-transparent bg-gradient-to-b from-neutral-300 to-neutral-50",
+      "rounded-3xl bg-clip-text text-transparent bg-gradient-to-b from-neutral-300 to-neutral-50",
     description:
       "On-page and off-page SEO to improve search engine rankings and organic traffic.",
     button: "Order Now",
@@ -131,7 +131,7 @@ const offers = [
       "Monthly performance reports",
     ],
     style:
-      "rounded-3xl py-10 bg-clip-text text-transparent bg-gradient-to-b from-neutral-300 to-neutral-50",
+      "rounded-3xl bg-clip-text text-transparent bg-gradient-to-b from-neutral-300 to-neutral-50",
     description:
       "Management of PPC campaigns to drive targeted traffic and increase conversions.",
     button: "Order Now",
@@ -148,7 +148,7 @@ const offers = [
       "Monthly performance reports",
     ],
     style:
-      "rounded-3xl py-10 bg-clip-text text-transparent bg-gradient-to-b from-neutral-300 to-neutral-50",
+      "rounded-3xl bg-clip-text text-transparent bg-gradient-to-b from-neutral-300 to-neutral-50",
     description:
       "Social media strategy, content creation, and community management across platforms like Facebook, Instagram, Twitter, LinkedIn, and others.",
     button: "Order Now",
@@ -166,7 +166,7 @@ const offers = [
       "Monthly performance reports",
     ],
     style:
-      "rounded-3xl py-10 bg-clip-text text-transparent bg-gradient-to-b from-neutral-300 to-neutral-50",
+      "rounded-3xl bg-clip-text text-transparent bg-gradient-to-b from-neutral-300 to-neutral-50",
     description:
       "Creation and distribution of valuable content to attract and engage the target audience.",
     button: "Order Now",
@@ -183,7 +183,7 @@ const offers = [
       "Monthly performance reports",
     ],
     style:
-      "rounded-3xl py-10 bg-clip-text text-transparent bg-gradient-to-b from-neutral-300 to-neutral-50",
+      "rounded-3xl bg-clip-text text-transparent bg-gradient-to-b from-neutral-300 to-neutral-50",
     description:
       "Design and execution of email marketing campaigns to nurture leads and retain customers.",
     button: "Order Now",
@@ -200,7 +200,7 @@ const offers = [
       "Monthly performance reports",
     ],
     style:
-      "rounded-3xl py-10 bg-clip-text text-transparent bg-gradient-to-b from-neutral-300 to-neutral-50",
+      "rounded-3xl bg-clip-text text-transparent bg-gradient-to-b from-neutral-300 to-neutral-50",
     description:
       "Analysis and optimization of website and landing pages to improve conversion rates.",
     button: "Order Now",
@@ -216,7 +216,7 @@ const offers = [
       "Quarterly strategy reviews",
     ],
     style:
-      "rounded-3xl py-10 bg-clip-text text-transparent* text-[var(--text-label)] bg-gradient-to-b from-neutral-300 to-neutral-50",
+      "rounded-3xl bg-clip-text text-transparent* text-[var(--text-label)] bg-gradient-to-b from-neutral-300 to-neutral-50",
     description:
       "Comprehensive analytics and reporting to track the performance of digital marketing efforts.",
     button: "Order Now",
@@ -232,7 +232,7 @@ const offers = [
       "Training and support",
     ],
     style:
-      "rounded-3xl py-10 bg-clip-text text-transparent bg-gradient-to-b from-neutral-300 to-neutral-50",
+      "rounded-3xl bg-clip-text text-transparent bg-gradient-to-b from-neutral-300 to-neutral-50",
     description:
       "Implementation of marketing automation tools to streamline and enhance marketing efforts.",
     button: "Order Now",
@@ -249,7 +249,6 @@ const Pricing = () => {
   return (
     <div className="w-full md:items-center md:justify-center bg-[var(--bg-96)] text-[var(--text)] antialiased bg-grid-white/[0.02] relative overflow-hidden pt-24">
       {" "}
-      {/* Добавил отступ сверху */}
       <Navbar />
       <div className="flex items-center justify-center flex-col">
         <div className="text-4xl md:text-5xl py-8 md:py-20 text-slate-300 px-6 text-center bg-clip-text text-transparent bg-gradient-to-b from-sky-400 to bg-purple-500 bg-opacity-50">
@@ -257,30 +256,32 @@ const Pricing = () => {
             Simple Pricing <br /> Choose your plan
           </h1>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 px-6 md:w-4/5 2xl:w-3/4 cursor-pointer pb-10 md:pb-20 items-center">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 px-4 md:p-10 #md:w-4/5 #2xl:w-3/4 max-w-7xl pb-10 md:pb-20 items-center">
           {plans.map((plan, index) => (
             <div
               key={plan.name}
-              className="h-full flex flex-col justify-between border rounded-3xl px-6 py-4 md:py-0"
+              className="h-full flex flex-col justify-between border rounded-3xl px-6 py-4 md:py-6 light:bg-[var(--light-blue)] light:border-[var(--ocean-blue)]"
             >
               <div className={plan.style}>
-                <div className="text-3xl md:text-4xl flex items-center font-medium">
+                <div className="text-3xl md:text-4xl flex items-center font-medium text-[var(--light-blue)] light:text-[var(--gray-70)]">
                   {plan.name}
                   {plan.name === "Enterprise" && (
-                    <div className="text-sm font-medium text-blue-600 bg-blue-100 px-2 py-1 rounded-full ml-4 items-center">
+                    <div className="md:hidden lg:block text-sm font-medium text-blue-600 bg-blue-100 px-2 py-1 rounded-lg ml-4 items-center">
                       Contact Us
                     </div>
                   )}
                 </div>
-                <div className="text-2xl md:text-3xl pt-4 md:pt-6">
+                <div className="text-2xl md:text-3xl pt-4 md:pt-6 text-[var(--light-blue)] light:text-[var(--gray-70)]">
                   {plan.price}
                 </div>
-                <div className="py-4 md:py-6">{plan.description}</div>
+                <div className="py-4 md:py-6 text-[var(--gray-blue)] light:text-[var(--gray-40)]">
+                  {plan.description}
+                </div>
                 <ul>
                   {plan.features.map((feature) => (
                     <li
                       key={feature}
-                      className="text-lg py-2 flex space-x-2 items-center"
+                      className="text-lg py-2 flex space-x-2 items-center text-[var(--gray-blue)] light:text-[var(--gray-40)]"
                     >
                       {plan.name === "Enterprise" ? (
                         <PiCheckCircleFill className="text-blue-400 mr-2 text-xl" />
@@ -296,11 +297,7 @@ const Pricing = () => {
                 {index === 0 && (
                   <Link
                     href="https://buy.stripe.com/test_fZe9Ci73m8Ha8UgbII"
-                    className="rounded-3xl my-4 py-2 text-white w-full mx-auto items-center flex justify-center"
-                    style={{
-                      background:
-                        "linear-gradient(270deg, #084378, #0A437A, #483BB5, #347BB8, #12A6C8)",
-                    }}
+                    className="rounded-lg bg-[var(--ocean-blue)] my-4 py-2 text-white w-full mx-auto items-center flex justify-center"
                   >
                     Buy Now
                   </Link>
@@ -308,11 +305,7 @@ const Pricing = () => {
                 {index === 1 && (
                   <Link
                     href="https://buy.stripe.com/test_9AQ6q6cnG5uY9Yk5kl"
-                    className="rounded-3xl my-4 py-2 text-white w-full mx-auto items-center flex justify-center"
-                    style={{
-                      background:
-                        "linear-gradient(270deg, #084378, #0A437A, #483BB5, #347BB8, #12A6C8)",
-                    }}
+                    className="rounded-lg bg-[var(--ocean-blue)] my-4 py-2 text-white w-full mx-auto items-center flex justify-center"
                   >
                     Buy Now
                   </Link>
@@ -320,7 +313,7 @@ const Pricing = () => {
                 {index === 2 && (
                   <Link
                     href="/contact"
-                    className="rounded-3xl my-4 py-2 text-white w-full mx-auto items-center flex justify-center bg-gradient-to-r from-sky-400 to-purple-500"
+                    className="rounded-lg my-4 py-2 text-white w-full mx-auto items-center flex justify-center bg-[var(--ocean-blue)] #bg-gradient-to-r from-sky-400 to-purple-500"
                   >
                     Contact Us
                   </Link>
@@ -334,25 +327,28 @@ const Pricing = () => {
         <div className="text-4xl md:text-5xl pb-8 md:pb-20 text-slate-300 px-6 text-center bg-clip-text text-transparent bg-gradient-to-b from-sky-400 to bg-purple-500 bg-opacity-50">
           Marketing Service Suite <br /> Choose your services
         </div>
-        <div className="grid gap-6 px-2 md:px-6 py-0 md:w-4/5 2xl:w-3/4 cursor-pointer items-center">
+        <div className="grid gap-6 px-4 md:px-10 py-0 md:w-4/5 2xl:w-3/4 cursor-pointer items-center">
           {offers.slice(0, visibleOffers).map((offer, index) => (
             <div key={offer.name} className="flex flex-col">
               <div className="flex flex-col md:flex-row">
-                <WobbleCard containerClassName="bg-gray-900 rounded-3xl w-full max-w-screen-xl relative">
+                <WobbleCard
+                  containerClassName="bg-[var(--blue2)] light:bg-[var(--light-blue)] light:shadow-lg rounded-3xl w-full max-w-screen-xl relative"
+                  className="light:bg-[var(--light-blue)] light:shadow-lg"
+                >
                   <div className="md:w-2/3">
                     <div
-                      className={`text-3xl md:text-4xl font-medium ${offer.style}`}
+                      className={`text-3xl md:text-4xl font-medium ${offer.style} text-[var(--light-blue)] light:text-[var(--gray-70)] py-0`}
                     >
                       {offer.name}
                     </div>
-                    <div className="py-4 md:py-6 text-white">
+                    <div className="py-4 md:py-6 text-[var(--gray-blue)] light:text-[var(--gray-40)]">
                       {offer.description}
                     </div>
                     <ul>
                       {offer.features.map((feature) => (
                         <li
                           key={feature}
-                          className="text-lg py-2 flex space-x-2 items-center text-white"
+                          className="text-lg py-2 flex space-x-2 items-center text-[var(--gray-blue)] light:text-[var(--gray-40)]"
                         >
                           <PiCheckCircleFill className="text-green-600 mr-2 text-xl" />
                           {feature}
@@ -361,21 +357,18 @@ const Pricing = () => {
                     </ul>
                   </div>
                 </WobbleCard>
-                <div className="md:w-1/3 px-8 animate-shimmer items-center justify-center rounded-3xl border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
-                  <div className="whitespace-pre-line text-xl pt-4 md:pt-6 text-white">
+
+                <div className="md:w-1/3 px-8 animate-shimmer items-center justify-center light:shadow-lg rounded-3xl dark:border border-slate-800 light:border-[var(--ocean-blue)] dark:bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] light:bg-[linear-gradient(110deg,#f8fbff,45%,#edf8fe,55%,#f8fbff)] light:bg-[var(--light-blue)] bg-[length:200%_100%] transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
+                  <div className="whitespace-pre-line text-xl pt-4 md:pt-6 text-[var(--light-blue)] light:text-[var(--gray-70)]">
                     {offer.price}
                   </div>
-                  <div className="whitespace-pre-line text-sm pt-2 text-white">
+                  <div className="whitespace-pre-line text-sm pt-2 text-[var(--gray-blue)] light:text-[var(--gray-40)]">
                     {offer.price_description}
                   </div>
                   <div className="mt-4">
                     <Link
                       href="/contact"
-                      className="rounded-3xl my-4 py-2 text-white w-full mx-auto items-center flex justify-center"
-                      style={{
-                        background:
-                          "linear-gradient(270deg, #084378, #0A437A, #483BB5, #347BB8, #12A6C8)",
-                      }}
+                      className="rounded-lg bg-[var(--ocean-blue)] my-4 py-2 text-white w-full mx-auto items-center flex justify-center"
                     >
                       Order Now
                     </Link>
@@ -388,7 +381,7 @@ const Pricing = () => {
         {visibleOffers < offers.length && (
           <button
             onClick={handleLoadMore}
-            className="mt-6 px-4 py-2 bg-gradient-to-r from-sky-400 to-purple-500 text-white rounded-3xl"
+            className="mt-6 px-4 py-2 bg-[var(--ocean-blue)] #bg-gradient-to-r from-sky-400 to-purple-500 text-white rounded-lg"
           >
             Load More
           </button>

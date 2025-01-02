@@ -1,7 +1,6 @@
 "use client";
 
 import { cn } from "@/lib/utils";
-import { useTheme } from "next-themes";
 import React, { useEffect, useState, useRef } from "react";
 
 export const InfiniteMovingCards = ({
@@ -24,14 +23,8 @@ export const InfiniteMovingCards = ({
   const containerRef = useRef<HTMLDivElement>(null);
   const scrollerRef = useRef<HTMLUListElement>(null);
   const [start, setStart] = useState(false);
-  const [mounted, setMounted] = useState(false);
-  const { theme } = useTheme();
 
   useEffect(() => {
-    setMounted(true);
-  }, []);
-  useEffect(() => {
-    if (!mounted) return;
     function addAnimation() {
       if (containerRef.current && scrollerRef.current) {
         const scrollerContent = Array.from(scrollerRef.current.children);
@@ -78,22 +71,7 @@ export const InfiniteMovingCards = ({
     }
 
     addAnimation();
-  }, [direction, speed, mounted]);
-
-  if (!mounted) {
-    return (
-      <div
-        className={cn(
-          "scroller relative z-20 max-w-full overflow-hidden",
-          className
-        )}
-      >
-        <div className="h-[200px] flex items-center justify-center">
-          Loading...
-        </div>
-      </div>
-    );
-  }
+  }, [direction, speed]);
 
   return (
     <div
@@ -114,24 +92,13 @@ export const InfiniteMovingCards = ({
       >
         {items.map((item, idx) => (
           <li
-            className="w-[350px] max-w-full relative rounded-2xl flex-shrink-0 px-8 py-6 md:w-[450px]"
-            style={{
-              background:
-                theme === "dark" ? "var(--blue1)" : "var(--light-blue)",
-            }}
+            className="w-[350px] max-w-full relative rounded-2xl flex-shrink-0 px-8 py-6 md:w-[450px] bg-[var(--blue1)] light:bg-[var(--light-blue)]"
             key={idx}
           >
             <div
+              className="absolute p-[1px] rounded-2xl inset-0 bg-gradient-to-r from-sky-400 to bg-purple-500 bg-opacity-50"
               style={{
                 content: '""',
-                position: "absolute",
-                inset: 0,
-                borderRadius: "16px",
-                padding: "0.5px",
-                background:
-                  theme === "dark"
-                    ? "linear-gradient(90deg, #084378, #0A437A, #483BB5, #347BB8, #12A6C8)"
-                    : "linear-gradient(90deg, #084378, #0A437A, #483BB5, #347BB8, #12A6C8)",
                 WebkitMask:
                   "linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)",
                 WebkitMaskComposite: "xor",

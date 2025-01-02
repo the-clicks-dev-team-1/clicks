@@ -460,7 +460,7 @@ export default function ContactForm() {
                     <Button
                       type="submit"
                       className="text-sm font-light #dark:bg-gradient-to-b from-sky-400 
-            to-purple-500 bg-opacity-50 bg-[var(--ocean-blue)] light:text-white"
+            to-purple-500 bg-opacity-50 bg-[var(--ocean-blue)] hover:bg-[var(--ocean-blue)] light:text-white"
                       disabled={loading}
                     >
                       Submit

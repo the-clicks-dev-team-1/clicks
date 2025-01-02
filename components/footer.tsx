@@ -1,24 +1,14 @@
 "use client";
 import ActiveLink from "@/components/activelink";
-import { useTheme } from "next-themes";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import logo from "../public/logo/Logo1.svg";
 import NewsletterForm from "./NewsLetterForm";
 
 const Footer = () => {
-  const { resolvedTheme } = useTheme();
-  const isDark = resolvedTheme === "dark";
-
   return (
     <motion.section
-      className={`w-screen relative overflow-hidden ${
-        isDark ? "bg-[var(--blue2)]" : "bg-[var(--blue3)]"
-      }`}
-      style={{
-        backgroundImage: isDark ? "bg-[var(--blue2)]" : "bg-[var(--blue3)]",
-        backgroundSize: "cover",
-      }}
+      className={`w-screen relative overflow-hidden bg-[var(--blue2)] light:bg-[var(--blue3)]`}
     >
       <Noise />
       <footer className="relative max-w-7xl mx-auto">
