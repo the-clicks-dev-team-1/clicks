@@ -2,7 +2,7 @@
 
 import { FC, useEffect, useState } from "react";
 import Image from "next/image";
-import client from "@/lib/contentful";
+import clientNew from "@/lib/contentfulNew";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
 import ContactBlock from "@/components/contactBlock";
@@ -24,7 +24,7 @@ const JobDetail: FC<JobProps> = ({ params }) => {
       console.log("Fetching data for slug:", params.slug);
 
       try {
-        const entries = await client.getEntries({
+        const entries = await clientNew.getEntries({
           content_type: "jobOpening",
           "fields.slug": params.slug,
         });
@@ -57,7 +57,6 @@ const JobDetail: FC<JobProps> = ({ params }) => {
     return <div>Job not found</div>;
   }
 
-  // Проверка и извлечение данных из job.fields
   const {
     title,
     shortDescription,
@@ -73,12 +72,14 @@ const JobDetail: FC<JobProps> = ({ params }) => {
       <Navbar />
 
       <div className="py-20 px-4 md:px-20 lg:px-40 max-w-7xl mx-auto">
-        <h1 className="text-4xl mt-10 md:text-6xl font-bold">{title}</h1>
+        <h1 className="text-4xl mt-10 md:text-6xl font-bold text-[var(--light-blue)] light:text-[var(--gray-70)]">
+          {title}
+        </h1>
 
-        {image?.fields?.file?.url && (
+        {image[0]?.url && (
           <div className="mt-8">
             <Image
-              src={`https:${image.fields.file.url}`}
+              src={`${image[0].url}`}
               alt={title}
               width={800}
               height={400}
@@ -88,32 +89,32 @@ const JobDetail: FC<JobProps> = ({ params }) => {
         )}
 
         {shortDescription && (
-          <div className="mt-4 text-[var(--text-gray)]">
+          <div className="mt-4 text-[var(--gray-blue)] light:text-[var(--gray-40)]">
             <p>{shortDescription}</p>
           </div>
         )}
 
         {description && (
-          <div className="mt-10 prose prose-invert max-w-none text-[var(--text-gray)]">
+          <div className="mt-10 prose prose-invert max-w-none text-[var(--gray-blue)] light:text-[var(--gray-40)]">
             {documentToReactComponents(description as Document)}
           </div>
         )}
 
         {location && (
-          <div className="mt-4 text-[var(--text-gray)]">
+          <div className="mt-4 text-[var(--gray-blue)] light:text-[var(--gray-40)]">
             <strong>Location: </strong>
             {location.lat}, {location.lon}
           </div>
         )}
 
         {salary && (
-          <div className="mt-4 text-[var(--text-gray)]">
+          <div className="mt-4 text-[var(--gray-blue)] light:text-[var(--gray-40)]">
             <strong>Salary: </strong>${salary} per year
           </div>
         )}
 
         {jobType && (
-          <div className="mt-4 text-[var(--text-gray)]">
+          <div className="mt-4 text-[var(--gray-blue)] light:text-[var(--gray-40)]">
             <strong>Job Type: </strong>
             {jobType}
           </div>

@@ -6,6 +6,7 @@ import TextBlock from "@/components/text-block";
 import Footer from "@/components/footer";
 import ContactBlock from "@/components/contactBlock";
 import { Metadata } from "next";
+import TeamSection from "@/components/TeamSection";
 
 export const metadata: Metadata = {
   title: "About The Clicks",
@@ -27,14 +28,14 @@ const AboutAgency: FC = () => {
               <div className="text-2xl md:text-4xl bg-clip-text text-transparent bg-gradient-to-b from-sky-400 to bg-purple-500 bg-opacity-50">
                 <h1>About The Clicks</h1>
               </div>
-              <p className="mt-4 text-sm md:text-m font-normal text-[var(--text-gray)] text-justify">
+              <p className="mt-4 text-sm md:text-m font-normal text-[var(--gray-blue)] light:text-[var(--gray-40)] text-justify">
                 At The Clicks, we don&apos;t just focus on enhancing your
                 website&apos;s visibility; we partner with you to drive
                 meaningful results that positively impact your bottom line. Our
                 commitment to delivering tangible business outcomes is what sets
                 us apart in the digital marketing landscape.
               </p>
-              <p className="mt-4 text-sm md:text-m font-normal text-[var(--text-gray)] text-justify">
+              <p className="mt-4 text-sm md:text-m font-normal text-[var(--gray-blue)] light:text-[var(--gray-40)] text-justify">
                 Our greatest asset is our team. We prioritize continuous
                 learning and professional growth, ensuring that our employees
                 are always at the forefront of the latest industry trends and
@@ -45,7 +46,7 @@ const AboutAgency: FC = () => {
               <div className="mt-6 md:mt-8 flex justify-center md:justify-start relative z-20">
                 <Link
                   href="/contact"
-                  className="inline-block bg-gradient-to-r from-sky-400 to-purple-500 text-white font-bold py-3 px-6 rounded-lg shadow-lg hover:bg-opacity-75 transition duration-300"
+                  className="inline-block bg-[var(--ocean-blue)] #bg-gradient-to-r from-sky-400 to-purple-500 text-white font-bold py-3 px-6 rounded-lg shadow-lg hover:bg-opacity-75 transition duration-300"
                 >
                   Challenge Us
                 </Link>
@@ -53,7 +54,7 @@ const AboutAgency: FC = () => {
             </div>
             <div className="w-full md:w-1/2 flex justify-center items-center mt-4 md:mt-0 relative">
               <div className="absolute inset-0 flex justify-center items-center">
-                <Image
+                {/* <Image
                   src="/images/proposal.png"
                   alt="Background Image"
                   layout="intrinsic"
@@ -61,7 +62,7 @@ const AboutAgency: FC = () => {
                   height={500}
                   objectFit="cover"
                   className="rounded-2xl"
-                />
+                /> */}
               </div>
               <Image
                 src="/images/office.jpeg"
@@ -93,11 +94,11 @@ const AboutAgency: FC = () => {
                   className="rounded-2xl"
                 />
               </div>
-              <div className="w-full md:w-1/2 text-left md:text-right p-4 md:p-6">
+              <div className="w-full md:w-1/2 text-left #md:text-right p-4 md:p-6 text-[var(--light-blue)] light:text-[var(--gray-70)]">
                 <h3 className="text-lg sm:text-xl font-semibold mb-2">
                   About Us
                 </h3>
-                <p className="text-[var(--text-gray)] text-sm md:text-m pb-6 text-justify">
+                <p className="text-[var(--gray-blue)] light:text-[var(--gray-40)] text-sm md:text-m pb-6 text-justify">
                   The Clicks is a dynamic digital marketing agency where
                   creativity and innovation are at the forefront of everything
                   we do. Our team is driven by passion and energy, constantly
@@ -106,7 +107,7 @@ const AboutAgency: FC = () => {
                   and we are committed to driving business success and growth
                   for our clients in the digital space.
                 </p>
-                <p className="text-[var(--text-gray)] text-sm md:text-m pb-6 text-justify">
+                <p className="text-[var(--gray-blue)] light:text-[var(--gray-40)] text-sm md:text-m pb-6 text-justify">
                   Our approach to governance combines structured liberalism for
                   regulated aspects of our work with a corporate noocracy that
                   prioritizes flexibility and innovation. At The Clicks, we
@@ -121,12 +122,12 @@ const AboutAgency: FC = () => {
             </div>
 
             {/* Culture Item 2 */}
-            <div className="flex flex-col md:flex-row items-center gap-8">
+            <div className="flex flex-col md:flex-row items-center gap-8 text-[var(--light-blue)] light:text-[var(--gray-70)]">
               <div className="w-full md:w-1/2 text-left p-4 md:p-6 order-2 md:order-1">
                 <h3 className="text-lg sm:text-xl font-semibold mb-2">
                   Our Team
                 </h3>
-                <p className="text-[var(--text-gray)] text-sm md:text-m pb-6 text-justify">
+                <p className="text-[var(--gray-blue)] light:text-[var(--gray-40)] text-sm md:text-m pb-6 text-justify">
                   At The Clicks, our team is a close-knit community of
                   passionate and driven professionals who share a unified
                   vision. Each member embodies the spirit of a true
@@ -136,7 +137,7 @@ const AboutAgency: FC = () => {
                   but also innovators who constantly push boundaries to explore
                   new possibilities in digital marketing.
                 </p>
-                <p className="text-[var(--text-gray)] text-sm md:text-m pb-6 text-justify">
+                <p className="text-[var(--gray-blue)] light:text-[var(--gray-40)] text-sm md:text-m pb-6 text-justify">
                   We cultivate an environment where equality and collaboration
                   are paramount, ensuring that every team member&apos;s voice is
                   heard and valued. While we thrive on teamwork, our culture
@@ -160,7 +161,7 @@ const AboutAgency: FC = () => {
             </div>
 
             {/* Culture Item 3 */}
-            <div className="flex flex-col md:flex-row items-center gap-8">
+            <div className="flex flex-col md:flex-row items-center gap-8 text-[var(--light-blue)] light:text-[var(--gray-70)]">
               <div className="w-full md:w-1/2">
                 <Image
                   src="/images/respect.jpeg"
@@ -170,11 +171,11 @@ const AboutAgency: FC = () => {
                   className="rounded-2xl"
                 />
               </div>
-              <div className="w-full md:w-1/2 text-left md:text-right p-4 md:p-6">
+              <div className="w-full md:w-1/2 text-left p-4 md:p-6">
                 <h3 className="text-lg sm:text-xl font-semibold mb-2">
                   Work Process
                 </h3>
-                <p className="text-[var(--text-gray)] text-sm md:text-m pb-6 text-justify">
+                <p className="text-[var(--gray-blue)] light:text-[var(--gray-40)] text-sm md:text-m pb-6 text-justify">
                   At The Clicks, we recognize that our people are the core of
                   our success, and their well-being and productivity are our top
                   priorities. We are committed to creating a work environment
@@ -184,7 +185,7 @@ const AboutAgency: FC = () => {
                   member can perform at their best, driving the exceptional
                   results that define our agency.
                 </p>
-                <p className="text-[var(--text-gray)] text-sm md:text-m pb-6 text-justify">
+                <p className="text-[var(--gray-blue)] light:text-[var(--gray-40)] text-sm md:text-m pb-6 text-justify">
                   A distinctive feature of our work process is the integration
                   of gamification and automation. We make daily tasks more
                   engaging and enjoyable by incorporating elements of play,
@@ -204,63 +205,22 @@ const AboutAgency: FC = () => {
         {/* Mission & Values Section */}
         <TextBlock />
 
-        {/* Team Section */}
-        <div className="bg-[var(--bgnew)] py-20">
-          <div className="text-center">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl text-center bg-clip-text text-transparent bg-gradient-to-b from-sky-400 to bg-purple-500 bg-opacity-50">
-              Meet Our Team
-            </h2>
-            <div className="flex flex-wrap justify-center">
-              <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-4">
-                <Image
-                  src="/images/paul.png"
-                  alt="Team Member 1"
-                  className="rounded-full mb-4 mx-auto"
-                  width={200}
-                  height={200}
-                />
-                <h3 className="text-lg sm:text-xl font-semibold">
-                  Pavlo Demenshyn
-                </h3>
-                <p className="text-white">CEO & Founder</p>
-              </div>
-              <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-4">
-                <Image
-                  src="/images/val.png"
-                  alt="Team Member 2"
-                  className="rounded-full mb-4 mx-auto"
-                  width={200}
-                  height={200}
-                />
-                <h3 className="text-lg sm:text-xl font-semibold">
-                  Valerii Kryshtal
-                </h3>
-                <p className="text-white">Co-founder</p>
-              </div>
-              <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-4">
-                <Image
-                  src="/images/kate.png"
-                  alt="Team Member 3"
-                  className="rounded-full mb-4 mx-auto"
-                  width={200}
-                  height={200}
-                />
-                <h3 className="text-lg sm:text-xl font-semibold">
-                  Kateryna Kovalenko
-                </h3>
-                <p className="text-white">Creative Director & Co-founder</p>
-              </div>
-              {/* Add more team members as needed */}
-            </div>
-          </div>
-        </div>
+        <TeamSection />
 
-        {/* Contact Form Section */}
+        {/* <div className="relative w-full aspect-video">
+          <iframe
+            src="https://kuula.co/share/hpsvv/collection/7XkRW?logo=1&info=1&fs=1&vr=1&zoom=1&autorotate=0.3&thumbs=1&alpha=0.60"
+            className="absolute top-0 left-0 w-full h-full"
+            frameBorder="0"
+            allowFullScreen
+            allow="vr,gyroscope,accelerometer,fullscreen"
+            loading="lazy"
+          />
+        </div> */}
+
         <ContactBlock />
-
-        {/* Footer */}
-        <Footer />
       </div>
+      <Footer />
     </div>
   );
 };

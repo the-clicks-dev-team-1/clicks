@@ -7,6 +7,7 @@ import Footer from "@/components/footer";
 import Block4 from "@/components/block4";
 import ContactBlock from "@/components/contactBlock";
 import { Metadata } from "next";
+import TeamSection from "@/components/TeamSection";
 
 export const metadata: Metadata = {
   title: "Meet the Clickers Driving Success for Our Clients",
@@ -25,10 +26,10 @@ const Team: FC = () => {
         <div className="bg-[var(--bgnew)] py-20">
           <div className="flex flex-col mt-10 md:flex-row items-center justify-center">
             <div className="w-full md:w-1/2 px-4 md:px-16 text-center md:text-left">
-              <div className="text-2xl md:text-4xl bg-clip-text text-transparent bg-gradient-to-b from-sky-400 to bg-purple-500 bg-opacity-50">
+              <div className="text-2xl md:text-4xl bg-clip-text text-transparent bg-gradient-to-r from-sky-400 to bg-purple-500 bg-opacity-50">
                 Meet the Clickers Driving Success for Our Clients.
               </div>
-              <p className="mt-4 text-sm md:text-m font-normal text-[var(--text-gray)] text-justify">
+              <p className="mt-4 text-sm md:text-m font-normal text-[var(--gray-blue)] light:text-[var(--gray-40)] text-justify">
                 The Clicks team is a fusion of passion, experience, and
                 innovation, where every &quot;Clicker&quot; is not just an
                 employee but a driving force behind success. We are
@@ -40,7 +41,7 @@ const Team: FC = () => {
                 unique expertise, combining efforts to create marketing
                 campaigns that not only meet goals but exceed them.
               </p>
-              <p className="mt-4 text-sm md:text-m font-normal text-[var(--text-gray)] text-justify">
+              <p className="mt-4 text-sm md:text-m font-normal text-[var(--gray-blue)] light:text-[var(--gray-40)] text-justify">
                 At the heart of our work is a partnership with clients, built on
                 mutual trust and understanding. We strive to ensure that every
                 project is a step towards long-term success. Clickers are not
@@ -52,13 +53,14 @@ const Team: FC = () => {
               <div className="mt-8 flex justify-center md:justify-start relative z-20">
                 <Link
                   href="/about/careers"
-                  className="inline-block bg-gradient-to-r from-sky-400 to-purple-500 text-white font-bold py-3 px-6 rounded-lg shadow-lg hover:bg-opacity-75 transition duration-300"
+                  className="inline-block bg-[var(--ocean-blue)] #bg-gradient-to-r from-sky-400 to-purple-500 text-white font-bold py-3 px-6 rounded-lg shadow-lg hover:bg-opacity-75 transition duration-300"
                 >
                   Join Our Team
                 </Link>
               </div>
             </div>
-            <div className="w-full md:w-1/2 flex justify-center items-center mt-4 md:mt-0 relative">
+
+            <div className="w-full md:w-1/2 flex justify-center items-center mt-24 md:mt-0 relative">
               <div className="absolute inset-0 flex justify-center items-center z-10">
                 <Image
                   src="/images/team.png"
@@ -81,76 +83,22 @@ const Team: FC = () => {
           </div>
         </div>
 
-        {/* Team Section */}
-        <div className="bg-[var(--bgnew)] py-20">
-          <div className="container mx-auto px-4 text-center">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl bg-clip-text text-transparent bg-gradient-to-b from-sky-400 to bg-purple-500 bg-opacity-50">
-              Meet Our Team
-            </h2>
-            <div className="flex flex-wrap justify-center mt-8">
-              <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-4">
-                <Image
-                  src="/images/paul.png"
-                  alt="Team Member 1"
-                  className="rounded-full mb-4 mx-auto"
-                  width={200}
-                  height={200}
-                />
-                <h3 className="text-lg sm:text-xl font-semibold">
-                  Pavlo Demenshyn
-                </h3>
-                <p className="text-white">CEO & Founder</p>
-              </div>
-              <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-4">
-                <Image
-                  src="/images/val.png"
-                  alt="Team Member 2"
-                  className="rounded-full mb-4 mx-auto"
-                  width={200}
-                  height={200}
-                />
-                <h3 className="text-lg sm:text-xl font-semibold">
-                  Valerii Kryshtal
-                </h3>
-                <p className="text-white">Co-founder</p>
-              </div>
-              <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-4">
-                <Image
-                  src="/images/kate.png"
-                  alt="Team Member 3"
-                  className="rounded-full mb-4 mx-auto"
-                  width={200}
-                  height={200}
-                />
-                <h3 className="text-lg sm:text-xl font-semibold">
-                  Kateryna Kovalenko
-                </h3>
-                <p className="text-white">Creative Director & Co-founder</p>
-              </div>
-              {/* Add more team members as needed */}
-            </div>
-          </div>
-        </div>
+        <TeamSection />
 
-        {/* Additional Block Section */}
         <Block4 />
 
-        {/* Careers Link */}
         <div className="mt-8 flex justify-center">
           <Link
             href="/about/careers"
-            className="inline-block bg-gradient-to-r from-sky-400 to-purple-500 text-white font-bold py-3 px-6 rounded-lg shadow-lg hover:bg-opacity-75 transition duration-300"
+            className="inline-block bg-[var(--ocean-blue)] #bg-gradient-to-r from-sky-400 to-purple-500 text-white font-bold py-3 px-6 rounded-lg shadow-lg hover:bg-opacity-75 transition duration-300"
           >
             Our Current Job Openings
           </Link>
         </div>
 
-        {/* Contact Form Section */}
         <ContactBlock />
-
-        {/* Footer */}
-        <Footer />
       </div>
+      <Footer />
     </div>
   );
 };
