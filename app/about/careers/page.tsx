@@ -26,7 +26,7 @@ const Careers: FC = async () => {
       <Navbar />
 
       {/* Header Section */}
-      <div className="bg-[var(--blue1)] light:bg-[var(--light-blue)] #bg-gradient-to-b from-sky-400 to-purple-500 py-20 text-center">
+      <div className="bg-[var(--blue1)] light:bg-[var(--ice-blue)] #bg-gradient-to-b from-sky-400 to-purple-500 py-20 text-center">
         <h1 className="text-4xl mt-10 md:text-6xl font-normal bg-clip-text text-transparent bg-gradient-to-r from-sky-400 to bg-purple-500 bg-opacity-50">
           Join Our Team
         </h1>
@@ -69,11 +69,8 @@ const Careers: FC = async () => {
       </div>
 
       {/* Life at The Clicks Section */}
-      <div className="py-20 bg-[var(--bg900)]">
+      <div className="py-20 bg-[var(--bg900)] light:bg-[var(--ice-blue)]">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-semibold mb-10 text-center bg-clip-text text-transparent bg-gradient-to-b from-sky-400 to bg-purple-500 bg-opacity-50">
-            Life at The Clicks
-          </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
             <div>
               <Image
@@ -85,7 +82,10 @@ const Careers: FC = async () => {
               />
             </div>
             <div className="flex flex-col justify-center">
-              <p className="text-lg text-neutral-300">
+              <h2 className="text-3xl font-semibold mb-10 bg-clip-text text-transparent bg-gradient-to-b from-sky-400 to bg-purple-500 bg-opacity-50">
+                Life at The Clicks
+              </h2>
+              <p className="text-lg text-[var(--gray-blue)] light:text-[var(--gray-40)]">
                 At The Clicks, we believe that our people are our greatest
                 asset. We foster a collaborative, inclusive, and dynamic work
                 environment where creativity and innovation thrive. Whether
@@ -93,7 +93,7 @@ const Careers: FC = async () => {
                 team milestone, life at The Clicks is both rewarding and
                 fulfilling.
               </p>
-              <p className="mt-4 text-lg text-neutral-300">
+              <p className="mt-4 text-lg text-[var(--gray-blue)] light:text-[var(--gray-40)]">
                 We invest in our employees&apos; growth and provide
                 opportunities for continuous learning, professional development,
                 and career advancement. Join us, and let&apos;s build something

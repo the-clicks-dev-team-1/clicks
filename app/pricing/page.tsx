@@ -327,7 +327,7 @@ const Pricing = () => {
         <div className="text-4xl md:text-5xl pb-8 md:pb-20 text-slate-300 px-6 text-center bg-clip-text text-transparent bg-gradient-to-b from-sky-400 to bg-purple-500 bg-opacity-50">
           Marketing Service Suite <br /> Choose your services
         </div>
-        <div className="grid gap-6 px-4 md:px-10 py-0 md:w-4/5 2xl:w-3/4 cursor-pointer items-center">
+        <div className="grid gap-6 px-4 md:px-10 py-0 md:w-4/5 2xl:w-3/4 max-w-7xl cursor-pointer items-center">
           {offers.slice(0, visibleOffers).map((offer, index) => (
             <div key={offer.name} className="flex flex-col">
               <div className="flex flex-col md:flex-row">

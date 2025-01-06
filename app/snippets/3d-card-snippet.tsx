@@ -63,7 +63,7 @@ export function ThreeDCardDemo() {
 
   return (
     <CardContainer className="inter-var w-full 1max-w-none relative mx-4 md:mx-8 lg:mx-24">
-      <CardBody className="light:bg-[var(--blue3)] dark:bg-[var(--blue1)] #dark:bg-gradient-to-r from-sky-400 to bg-purple-500 bg-opacity-50 relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:border-white/[0.2] border-black/[0.1] w-full h-auto rounded-2xl p-6 border flex flex-col lg:flex-row">
+      <CardBody className="light:bg-[var(--ice-blue)] dark:bg-[var(--blue1)] #dark:bg-gradient-to-r from-sky-400 to bg-purple-500 bg-opacity-50 relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:border-white/[0.2] border-black/[0.1] w-full h-auto rounded-2xl p-6 border flex flex-col lg:flex-row">
         <div className="flex flex-col w-full lg:max-w-[700px] mx-auto py-14 #pt-8 #md:pt-16 #pl-4 #md:pl-8 #lg:pl-24">
           <CardItem
             translateZ="50"
