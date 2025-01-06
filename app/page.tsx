@@ -19,21 +19,15 @@ export default function Home() {
         className="hidden md:flex md:left-80 md:-top-75"
         fill="white"
       />
-      <div className="mx-auto relative z-10 w-full pt-32 md:pt-40">
-        {" "}
-        {/* Adjusted padding here */}
-        <div className="text-4xl pb-5 md:text-7xl px-6 text-center bg-clip-text text-transparent bg-gradient-to-b from-sky-400 to bg-purple-500 bg-opacity-50">
-          <h1>
-            Transform your business <br /> with artificial intelligence
-          </h1>
-        </div>
-        <p className="mt-4 text-lg font-normal text-[var(--gray-blue)] light:text-[var(--gray-70)] max-w-lg text-center mx-auto px-4">
+      <div className="mx-auto relative z-10 w-full pt-32 mb-32 md:pt-40 #light:bg-[var(--ice-blue)]">
+        <h1 className="mb-10 text-4xl md:text-7xl px-6 text-center bg-clip-text text-transparent bg-gradient-to-b from-sky-400 to bg-purple-500 bg-opacity-50">
+          Transform your business <br /> with artificial intelligence
+        </h1>
+        <p className="mb-10 text-lg font-normal text-[var(--gray-blue)] light:text-[var(--gray-70)] max-w-lg text-center mx-auto px-4">
           Revolutionize operations, optimize processes, and drive growth with
           smarter decisions and innovation.
         </p>
-        <div className="flex justify-center mt-2">
-          {" "}
-          {/* Add a flex container here to center the button */}
+        <div className="flex justify-center">
           <Link
             href="/book"
             className="inline-block bg-[var(--ocean-blue)] #bg-gradient-to-r from-sky-400 to-purple-500 text-white font-bold py-3 px-6 rounded-lg shadow-lg hover:bg-opacity-75 transition duration-300 light:bg-[var(--ocean-blue)] light:bg-none"
@@ -41,11 +35,13 @@ export default function Home() {
             Book A Call
           </Link>
         </div>
-        <div className="w-full pt-20 ">
+      </div>
+      <div className="mx-auto relative z-10 w-full">
+        <div className="w-full">
           <SliderOne />
           <Block />
           <Block2 />
-          <Block3 />
+          {/* <Block3 /> */}
           <Services />
           <Steps />
           <Reviews />

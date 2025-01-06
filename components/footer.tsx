@@ -8,7 +8,7 @@ import NewsletterForm from "./NewsLetterForm";
 const Footer = () => {
   return (
     <motion.section
-      className={`w-screen relative overflow-hidden bg-[var(--blue2)] light:bg-[var(--blue3)]`}
+      className={`w-screen relative overflow-hidden bg-[var(--blue2)] light:bg-[var(--ice-blue)]`}
     >
       <Noise />
       <footer className="relative max-w-7xl mx-auto">

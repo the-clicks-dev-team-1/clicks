@@ -8,7 +8,7 @@ import {
 const Steps = () => {
   return (
     <div
-      className=" mt-10 md:py-10 bg-transpatent w-full
+      className=" mt-20 md:py-10 bg-transpatent w-full
         rounded-3xl
         
         "

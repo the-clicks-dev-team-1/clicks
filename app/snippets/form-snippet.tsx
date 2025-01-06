@@ -134,7 +134,7 @@ export default function ContactForm() {
 
   return (
     <div className="px-4 md:px-10 max-w-7xl mx-auto">
-      <div className="py-10 px-4 md:px-16 lg:px-16 my-10 border-[1px] border-[var(--ocean-blue)] rounded-3xl bg-[var(--blue1)] light:bg-[var(--light-blue)]">
+      <div className="py-10 px-4 md:px-16 lg:px-16 my-10 mb-32 border-[1px] border-[var(--ocean-blue)] rounded-3xl bg-[var(--blue1)] light:bg-[var(--light-blue)]">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
           {/* Contact Info */}
           <div className="flex flex-col justify-between">
