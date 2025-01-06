@@ -13,6 +13,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import ContactBlock from "../../components/contactBlock";
+import Image from "next/image";
 
 const plans = [
   {
@@ -85,6 +86,7 @@ const offers = [
     description:
       "Detailed consultation to understand the client's business goals, target audience, and current marketing efforts. Development of a customized digital marketing strategy.",
     button: "Order Now",
+    image: "/images/group1.svg",
   },
   {
     index: 1,
@@ -102,6 +104,7 @@ const offers = [
     description:
       "Creation of a modern, responsive website optimized for user experience and conversions.",
     button: "Order Now",
+    image: "/images/group2.svg",
   },
   {
     index: 2,
@@ -119,6 +122,7 @@ const offers = [
     description:
       "On-page and off-page SEO to improve search engine rankings and organic traffic.",
     button: "Order Now",
+    image: "/images/group3.svg",
   },
   {
     index: 3,
@@ -135,6 +139,7 @@ const offers = [
     description:
       "Management of PPC campaigns to drive targeted traffic and increase conversions.",
     button: "Order Now",
+    image: "/images/group1.svg",
   },
   {
     index: 4,
@@ -152,6 +157,7 @@ const offers = [
     description:
       "Social media strategy, content creation, and community management across platforms like Facebook, Instagram, Twitter, LinkedIn, and others.",
     button: "Order Now",
+    image: "/images/group2.svg",
   },
   {
     index: 5,
@@ -170,6 +176,7 @@ const offers = [
     description:
       "Creation and distribution of valuable content to attract and engage the target audience.",
     button: "Order Now",
+    image: "/images/group3.svg",
   },
   {
     index: 6,
@@ -187,6 +194,7 @@ const offers = [
     description:
       "Design and execution of email marketing campaigns to nurture leads and retain customers.",
     button: "Order Now",
+    image: "/images/group1.svg",
   },
   {
     index: 7,
@@ -204,6 +212,7 @@ const offers = [
     description:
       "Analysis and optimization of website and landing pages to improve conversion rates.",
     button: "Order Now",
+    image: "/images/group2.svg",
   },
   {
     index: 8,
@@ -220,6 +229,7 @@ const offers = [
     description:
       "Comprehensive analytics and reporting to track the performance of digital marketing efforts.",
     button: "Order Now",
+    image: "/images/group3.svg",
   },
   {
     index: 9,
@@ -236,6 +246,7 @@ const offers = [
     description:
       "Implementation of marketing automation tools to streamline and enhance marketing efforts.",
     button: "Order Now",
+    image: "/images/group1.svg",
   },
 ];
 
@@ -327,7 +338,7 @@ const Pricing = () => {
         <div className="text-4xl md:text-5xl pb-8 md:pb-20 text-slate-300 px-6 text-center bg-clip-text text-transparent bg-gradient-to-b from-sky-400 to bg-purple-500 bg-opacity-50">
           Marketing Service Suite <br /> Choose your services
         </div>
-        <div className="grid gap-6 px-4 md:px-10 py-0 md:w-4/5 2xl:w-3/4 max-w-7xl cursor-pointer items-center">
+        <div className="grid gap-6 px-4 md:px-10 py-0 #md:w-4/5 #2xl:w-3/4 max-w-7xl cursor-pointer items-center">
           {offers.slice(0, visibleOffers).map((offer, index) => (
             <div key={offer.name} className="flex flex-col">
               <div className="flex flex-col md:flex-row">
@@ -335,26 +346,37 @@ const Pricing = () => {
                   containerClassName="bg-[var(--blue2)] light:bg-[var(--light-blue)] light:shadow-lg rounded-3xl w-full max-w-screen-xl relative"
                   className="light:bg-[var(--light-blue)] light:shadow-lg"
                 >
-                  <div className="md:w-2/3">
-                    <div
-                      className={`text-3xl md:text-4xl font-medium ${offer.style} text-[var(--light-blue)] light:text-[var(--gray-70)] py-0`}
-                    >
-                      {offer.name}
+                  <div className="flex relative">
+                    <div className="md:w-2/3">
+                      <div
+                        className={`text-3xl md:text-4xl font-medium ${offer.style} text-[var(--light-blue)] light:text-[var(--gray-70)] py-0`}
+                      >
+                        {offer.name}
+                      </div>
+                      <div className="py-4 md:py-6 text-[var(--gray-blue)] light:text-[var(--gray-40)]">
+                        {offer.description}
+                      </div>
+                      <ul>
+                        {offer.features.map((feature) => (
+                          <li
+                            key={feature}
+                            className="text-lg py-2 flex space-x-2 items-center text-[var(--gray-blue)] light:text-[var(--gray-40)]"
+                          >
+                            <PiCheckCircleFill className="text-green-600 mr-2 text-xl" />
+                            {feature}
+                          </li>
+                        ))}
+                      </ul>
                     </div>
-                    <div className="py-4 md:py-6 text-[var(--gray-blue)] light:text-[var(--gray-40)]">
-                      {offer.description}
+                    <div className="hidden md:w-2/5 md:block justify-end absolute -right-10 -bottom-20">
+                      <Image
+                        src={offer.image}
+                        alt="map-marker"
+                        width={300}
+                        height={300}
+                        className="object-cover w-auto h-auto"
+                      />
                     </div>
-                    <ul>
-                      {offer.features.map((feature) => (
-                        <li
-                          key={feature}
-                          className="text-lg py-2 flex space-x-2 items-center text-[var(--gray-blue)] light:text-[var(--gray-40)]"
-                        >
-                          <PiCheckCircleFill className="text-green-600 mr-2 text-xl" />
-                          {feature}
-                        </li>
-                      ))}
-                    </ul>
                   </div>
                 </WobbleCard>
 

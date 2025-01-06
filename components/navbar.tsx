@@ -161,7 +161,7 @@ export default function Navbar() {
                     <ActiveLink
                       key={`${ch.label}-${j}`}
                       href={ch.link ?? "#"}
-                      className="flex items-center px-4 py-2 hover:bg-sky-400"
+                      className="flex items-center px-4 py-2 hover:bg-[var(--ocean-blue)]"
                       onClick={handleLinkClick}
                     >
                       {ch.iconImage && <ch.iconImage className="text-xl" />}

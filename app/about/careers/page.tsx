@@ -26,11 +26,11 @@ const Careers: FC = async () => {
       <Navbar />
 
       {/* Header Section */}
-      <div className="bg-[var(--blue1)] light:bg-[var(--ice-blue)] #bg-gradient-to-b from-sky-400 to-purple-500 py-20 text-center">
-        <h1 className="text-4xl mt-10 md:text-6xl font-normal bg-clip-text text-transparent bg-gradient-to-r from-sky-400 to bg-purple-500 bg-opacity-50">
+      <div className="bg-[var(--blue1)] light:bg-[var(--ice-blue)] #bg-gradient-to-b from-sky-400 to-purple-500 pb-20 pt-32 text-center">
+        <h1 className="text-4xl my-10 md:text-6xl font-normal bg-clip-text text-transparent bg-gradient-to-r from-sky-400 to bg-purple-500 bg-opacity-50">
           Join Our Team
         </h1>
-        <p className="mt-4 text-lg md:text-xl max-w-2xl mx-auto text-[var(--gray-blue)] light:text-[var(--gray-40)]">
+        <p className="text-lg md:text-xl max-w-2xl mx-auto text-[var(--gray-blue)] light:text-[var(--gray-40)]">
           We&apos;re always looking for talented and passionate individuals to
           join our team. Explore our current job openings and find out more
           about life at The Clicks.

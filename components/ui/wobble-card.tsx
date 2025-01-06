@@ -65,7 +65,7 @@ export const WobbleCard = ({
       }}
       className={cn(
         "mx-auto w-full relative rounded-2xl overflow-hidden",
-        isDark ? "bg-[var(--blue2)]" : "bg-white",
+        // isDark ? "bg-[var(--blue2)]" : "bg-white",
         // Add white background wrapper for light mode
         !isDark && "p-[1px] bg-[var(--light-blue)]",
         containerClassName
@@ -105,7 +105,7 @@ export const WobbleCard = ({
             }}
             className={cn(
               "h-full px-4 py-20 sm:px-10",
-              !isDark && "bg-[var(--light-blue)]", // Add white background to inner div in light mode
+              !isDark && "bg-[var(--light-blue)]",
               className
             )}
           >

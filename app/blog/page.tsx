@@ -86,8 +86,8 @@ const Blog: FC = () => {
       <Navbar />
 
       {/* Header Section */}
-      <div className="bg-[var(--blue1)] light:bg-[var(--ice-blue)] #bg-gradient-to-b from-sky-400 to-purple-500 py-20 text-center">
-        <h1 className="pb-4 text-4xl mt-10 md:text-6xl bg-clip-text text-transparent bg-gradient-to-r from-sky-400 to bg-purple-500 bg-opacity-50">
+      <div className="pt-32 bg-[var(--blue1)] light:bg-[var(--ice-blue)] #bg-gradient-to-b from-sky-400 to-purple-500 py-20 text-center">
+        <h1 className="pb-4 text-4xl md:text-6xl bg-clip-text text-transparent bg-gradient-to-r from-sky-400 to bg-purple-500 bg-opacity-50">
           The Clicks Blog
         </h1>
         <p className="mt-4 text-lg md:text-xl max-w-2xl mx-auto text-[var(--gray-blue)] light:text-[var(--gray-40)]">
@@ -97,7 +97,7 @@ const Blog: FC = () => {
       </div>
 
       {/* Categories Filter Section */}
-      <div className="py-10 px-4 md:px-20 lg:px-40 max-w-7xl mx-auto text-center">
+      <div className="mt-32 px-4 md:px-20 lg:px-40 max-w-7xl mx-auto text-center">
         <div className="mb-5 flex justify-center">
           <input
             type="text"
@@ -110,7 +110,7 @@ const Blog: FC = () => {
         <div className="flex justify-between items-center">
           <button
             onClick={scrollLeft}
-            className="text-[var(--gray-blue)] light:text-[var(--gray-40)] bg-neutral-800 p-2 rounded-full hover:bg-neutral-700"
+            className="text-[var(--gray-0)] bg-[var(--gray-40)] p-2 rounded-full hover:bg-[var(--blue2)]"
           >
             <BiChevronLeft size={30} />
           </button>
@@ -123,8 +123,10 @@ const Blog: FC = () => {
               <button
                 onClick={() => handleCategoryChange(null)}
                 className={`px-4 py-2 mx-2 flex-shrink-0 w-48 h-24 rounded-lg text-center flex items-center justify-center ${
-                  selectedCategory === null ? "bg-sky-500" : "bg-[var(--bg800)]"
-                } text-white font-bold shadow-lg hover:bg-neutral-700 transition duration-300`}
+                  selectedCategory === null
+                    ? "bg-[var(--ocean-blue)]"
+                    : "bg-[var(--gray-40)]"
+                } text-white font-bold shadow-lg hover:bg-[var(--blue2)] transition duration-300`}
               >
                 All Categories
               </button>
@@ -134,9 +136,9 @@ const Blog: FC = () => {
                   onClick={() => handleCategoryChange(category.sys.id)}
                   className={`px-4 py-2 mx-2 flex-shrink-0 w-48 h-24 rounded-lg text-center flex items-center justify-center ${
                     selectedCategory === category.sys.id
-                      ? "bg-sky-500"
-                      : "bg-neutral-800"
-                  } text-white font-bold shadow-lg hover:bg-neutral-700 transition duration-300 whitespace-normal`}
+                      ? "bg-[var(--ocean-blue)]"
+                      : "bg-[var(--gray-40)]"
+                  } text-white font-bold shadow-lg hover:bg-[var(--blue2)] transition duration-300 whitespace-normal`}
                 >
                   {category.fields.title}
                 </button>
@@ -145,7 +147,7 @@ const Blog: FC = () => {
           </div>
           <button
             onClick={scrollRight}
-            className="text-[var(--gray-blue)] light:text-[var(--gray-40)] bg-neutral-800 p-2 rounded-full hover:bg-neutral-700"
+            className="text-[var(--gray-0)] bg-[var(--gray-40)] p-2 rounded-full hover:bg-[var(--blue2)]"
           >
             <BiChevronRight size={30} />
           </button>
@@ -153,7 +155,7 @@ const Blog: FC = () => {
       </div>
 
       {/* Featured Posts Section */}
-      <div className="py-20 px-4 md:px-20 lg:px-40 max-w-7xl mx-auto">
+      <div className="my-32 px-4 md:px-20 lg:px-40 max-w-7xl mx-auto">
         <h2 className="text-3xl font-semibold mb-10 text-center text-[var(--light-blue)] light:text-[var(--gray-70)]">
           Featured Posts
         </h2>
