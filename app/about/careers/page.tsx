@@ -2,9 +2,9 @@ import { FC } from "react";
 import Navbar from "@/components/navbar";
 import Image from "next/image";
 import Link from "next/link";
-import Footer from "@/app/footer";
-import ContactBlock from "@/app/contactBlock";
-import client from "@/lib/contentful";
+import Footer from "@/components/footer";
+import ContactBlock from "@/components/contactBlock";
+import clientNew from "@/lib/contentfulNew";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 };
 
 const fetchJobs = async () => {
-  const res = await client.getEntries({ content_type: "jobOpening" });
+  const res = await clientNew.getEntries({ content_type: "jobOpening" });
   return res.items;
 };
 
@@ -26,9 +26,11 @@ const Careers: FC = async () => {
       <Navbar />
 
       {/* Header Section */}
-      <div className="bg-gradient-to-b from-sky-400 to-purple-500 py-20 text-center">
-        <h1 className="text-4xl mt-10 md:text-6xl font-bold">Join Our Team</h1>
-        <p className="mt-4 text-lg md:text-xl max-w-2xl mx-auto">
+      <div className="bg-[var(--blue1)] light:bg-[var(--light-blue)] #bg-gradient-to-b from-sky-400 to-purple-500 py-20 text-center">
+        <h1 className="text-4xl mt-10 md:text-6xl font-normal bg-clip-text text-transparent bg-gradient-to-r from-sky-400 to bg-purple-500 bg-opacity-50">
+          Join Our Team
+        </h1>
+        <p className="mt-4 text-lg md:text-xl max-w-2xl mx-auto text-[var(--gray-blue)] light:text-[var(--gray-40)]">
           We&apos;re always looking for talented and passionate individuals to
           join our team. Explore our current job openings and find out more
           about life at The Clicks.
@@ -57,7 +59,7 @@ const Careers: FC = async () => {
               </p>
               <Link
                 href={`/about/careers/${job.fields.slug}`} // исправлено
-                className="inline-block mt-4 bg-gradient-to-r from-sky-400 to-purple-500 text-white font-bold py-2 px-4 rounded-lg shadow-lg hover:bg-opacity-75 transition duration-300"
+                className="inline-block mt-4 bg-[var(--ocean-blue)] #bg-gradient-to-r from-sky-400 to-purple-500 text-white font-bold py-2 px-4 rounded-lg shadow-lg hover:bg-opacity-75 transition duration-300"
               >
                 Learn More
               </Link>

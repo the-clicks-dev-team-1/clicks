@@ -3,8 +3,8 @@
 import { FC, useEffect, useState } from "react";
 import client from "@/lib/contentful";
 import Navbar from "@/components/navbar";
-import Footer from "@/app/footer";
-import ContactBlock from "@/app/contactBlock";
+import Footer from "@/components/footer";
+import ContactBlock from "@/components/contactBlock";
 import Image from "next/image";
 import ReactMarkdown from "react-markdown";
 import rehypeRaw from "rehype-raw";

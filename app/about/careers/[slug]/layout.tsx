@@ -7,12 +7,27 @@ export const generateMetadata = async ({
 }) => {
   const { slug } = params;
 
-  const job = await getJob(slug);
+  try {
+    const job = await getJob(slug);
 
-  return {
-    title: job.fields.title,
-    description: job.fields.shortDescription,
-  };
+    if (!job) {
+      return {
+        title: "Job Not Found",
+        description: "The requested job position could not be found.",
+      };
+    }
+
+    return {
+      title: job.fields.title,
+      description: job.fields.shortDescription,
+    };
+  } catch (error) {
+    console.error("Error fetching job:", error);
+    return {
+      title: "Error Loading Job",
+      description: "There was an error loading the job details.",
+    };
+  }
 };
 
 export default function JobDetailsLayout({

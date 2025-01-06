@@ -2,16 +2,18 @@
 
 import { FC } from "react";
 import Navbar from "@/components/navbar";
-import Footer from "@/app/footer";
+import Footer from "@/components/footer";
 
 const PrivacyPolicy: FC = () => {
   return (
-    <div className="bg-[var(--bgnew)] text-[var(--text)]">
+    <div className="bg-[var(--bgnew)] text-[var(--light-blue)] light:text-[var(--gray-70)]">
       <Navbar />
 
-      <div className="bg-gradient-to-b from-sky-400 to-purple-500 py-20 text-center">
-        <h1 className="text-4xl mt-10 md:text-6xl font-bold">Privacy Policy</h1>
-        <p className="mt-4 text-lg md:text-xl max-w-2xl mx-auto">
+      <div className="bg-[var(--blue1)] light:bg-[var(--light-blue)] #bg-gradient-to-b from-sky-400 to-purple-500 py-20 text-center">
+        <h1 className="text-4xl mt-10 md:text-6xl bg-clip-text text-transparent bg-gradient-to-r from-sky-400 to bg-purple-500 bg-opacity-50">
+          Privacy Policy
+        </h1>
+        <p className="mt-4 text-lg md:text-xl max-w-2xl mx-auto text-[var(--gray-blue)] light:text-[var(--gray-40)]">
           Your privacy is important to us. This Privacy Policy explains how The
           Clicks Full-Service Digital Marketing Agency collects, uses, and
           discloses your information.
@@ -23,11 +25,11 @@ const PrivacyPolicy: FC = () => {
           <h2 className="text-3xl font-semibold mb-4">
             1. Information We Collect
           </h2>
-          <p className="text-[var(--text-gray)]">
+          <p className="text-[var(--gray-blue)] light:text-[var(--gray-40)]">
             We collect various types of information in connection with the
             services we provide, including:
           </p>
-          <ul className="list-disc list-inside mt-4 text-[var(--text-gray)]">
+          <ul className="list-disc list-inside mt-4 text-[var(--gray-blue)] light:text-[var(--gray-40)]">
             <li>
               Personal Information: Name, email address, phone number, and other
               contact details.
@@ -47,10 +49,10 @@ const PrivacyPolicy: FC = () => {
           <h2 className="text-3xl font-semibold mb-4">
             2. How We Use Your Information
           </h2>
-          <p className="text-[var(--text-gray)]">
+          <p className="text-[var(--gray-blue)] light:text-[var(--gray-40)]">
             We use the information we collect for various purposes, including:
           </p>
-          <ul className="list-disc list-inside mt-4 text-[var(--text-gray)]">
+          <ul className="list-disc list-inside mt-4 text-[var(--gray-blue)] light:text-[var(--gray-40)]">
             <li>Providing and improving our services.</li>
             <li>Communicating with you about our services and offerings.</li>
             <li>
@@ -67,11 +69,11 @@ const PrivacyPolicy: FC = () => {
           <h2 className="text-3xl font-semibold mb-4">
             3. Sharing Your Information
           </h2>
-          <p className="text-[var(--text-gray)]">
+          <p className="text-[var(--gray-blue)] light:text-[var(--gray-40)]">
             We may share your information with third parties under certain
             circumstances, including:
           </p>
-          <ul className="list-disc list-inside mt-4 text-[var(--text-gray)]">
+          <ul className="list-disc list-inside mt-4 text-[var(--gray-blue)] light:text-[var(--gray-40)]">
             <li>
               Service Providers: We may share your information with service
               providers who help us operate our business.
@@ -90,11 +92,11 @@ const PrivacyPolicy: FC = () => {
 
         <section className="mb-10">
           <h2 className="text-3xl font-semibold mb-4">4. Your Rights</h2>
-          <p className="text-[var(--text-gray)]">
+          <p className="text-[var(--gray-blue)] light:text-[var(--gray-40)]">
             You have certain rights regarding your personal information,
             including:
           </p>
-          <ul className="list-disc list-inside mt-4 text-[var(--text-gray)]">
+          <ul className="list-disc list-inside mt-4 text-[var(--gray-blue)] light:text-[var(--gray-40)]">
             <li>
               The right to access the personal information we hold about you.
             </li>
@@ -116,7 +118,7 @@ const PrivacyPolicy: FC = () => {
           <h2 className="text-3xl font-semibold mb-4">
             5. Security of Your Information
           </h2>
-          <p className="text-[var(--text-gray)]">
+          <p className="text-[var(--gray-blue)] light:text-[var(--gray-40)]">
             We take the security of your information seriously and implement
             reasonable measures to protect it. However, no method of
             transmission over the Internet or method of electronic storage is
@@ -128,7 +130,7 @@ const PrivacyPolicy: FC = () => {
           <h2 className="text-3xl font-semibold mb-4">
             6. Changes to This Privacy Policy
           </h2>
-          <p className="text-[var(--text-gray)]">
+          <p className="text-[var(--gray-blue)] light:text-[var(--gray-40)]">
             We may update this Privacy Policy from time to time. Any changes
             will be posted on this page with an updated revision date. We
             encourage you to review this Privacy Policy periodically to stay
@@ -138,21 +140,21 @@ const PrivacyPolicy: FC = () => {
 
         <section>
           <h2 className="text-3xl font-semibold mb-4">7. Contact Us</h2>
-          <p className="text-[var(--text-gray)]">
+          <p className="text-[var(--gray-blue)] light:text-[var(--gray-40)]">
             If you have any questions or concerns about this Privacy Policy or
             our data practices, please contact us at:
           </p>
-          <p className="mt-4 text-[var(--text-gray)]">
+          <p className="mt-4 text-[var(--gray-blue)] light:text-[var(--gray-40)]">
             <strong>Email:</strong>{" "}
             <a href="mailto:info@theclicks.ca" className="text-sky-400">
               info@theclicks.ca
             </a>
           </p>
-          <p className="mt-2 text-[var(--text-gray)]">
-            <strong>Phone:</strong> +1 (506) 477-0324
+          <p className="mt-2 text-[var(--gray-blue)] light:text-[var(--gray-40)]">
+            <strong>Phone:</strong> +1 (506) 871-8210
           </p>
-          <p className="mt-2 text-[var(--text-gray)]">
-            <strong>Address:</strong> 46 Ruelle Désiré, Dieppe, NB, Canada, E1A
+          <p className="mt-2 text-[var(--gray-blue)] light:text-[var(--gray-40)]">
+            <strong>Address:</strong> 860 Main Street, Moncton, NB, Canada, E1A
             0G9
           </p>
         </section>

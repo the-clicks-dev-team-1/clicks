@@ -4,12 +4,11 @@ import { FC, useEffect, useState, useRef } from "react";
 import Navbar from "@/components/navbar";
 import Image from "next/image";
 import Link from "next/link";
-import Footer from "@/app/footer";
+import Footer from "@/components/footer";
 import client from "@/lib/contentful"; // Импортируем клиент Contentful
-import ContactBlock from "../contactBlock";
-import SubscriptionForm from "../subscription";
+import ContactBlock from "../../components/contactBlock";
+import SubscriptionForm from "../../components/subscription";
 import { BiChevronLeft, BiChevronRight } from "react-icons/bi";
-import { Metadata } from "next";
 
 const Blog: FC = () => {
   const [posts, setPosts] = useState<any[]>([]);
@@ -61,9 +60,9 @@ const Blog: FC = () => {
     } else {
       setSelectedCategory(categoryId); // Выбрать новую категорию
     }
-    if (carouselRef.current) {
-      carouselRef.current.scrollLeft = 0; // Сбрасываем позицию прокрутки
-    }
+    // if (carouselRef.current) {
+    //   carouselRef.current.scrollLeft = 0; // Сбрасываем позицию прокрутки
+    // }
   };
 
   const scrollLeft = () => {
@@ -87,11 +86,11 @@ const Blog: FC = () => {
       <Navbar />
 
       {/* Header Section */}
-      <div className="bg-gradient-to-b from-sky-400 to-purple-500 py-20 text-center">
-        <h1 className="text-4xl mt-10 md:text-6xl font-bold">
+      <div className="bg-[var(--blue1)] light:bg-[var(--light-blue)] #bg-gradient-to-b from-sky-400 to-purple-500 py-20 text-center">
+        <h1 className="pb-4 text-4xl mt-10 md:text-6xl bg-clip-text text-transparent bg-gradient-to-r from-sky-400 to bg-purple-500 bg-opacity-50">
           The Clicks Blog
         </h1>
-        <p className="mt-4 text-lg md:text-xl max-w-2xl mx-auto">
+        <p className="mt-4 text-lg md:text-xl max-w-2xl mx-auto text-[var(--gray-blue)] light:text-[var(--gray-40)]">
           Stay updated with the latest insights, tips, and trends in digital
           marketing. Our blog is your go-to resource for all things marketing.
         </p>
@@ -102,7 +101,7 @@ const Blog: FC = () => {
         <div className="mb-5 flex justify-center">
           <input
             type="text"
-            className="w-1/2 px-4 py-2 rounded-lg text-black"
+            className="w-1/2 px-4 py-2 rounded-lg light:border light:border-[var(--gray-40)]"
             placeholder="Search categories..."
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
@@ -111,7 +110,7 @@ const Blog: FC = () => {
         <div className="flex justify-between items-center">
           <button
             onClick={scrollLeft}
-            className="text-white bg-neutral-800 p-2 rounded-full hover:bg-neutral-700"
+            className="text-[var(--gray-blue)] light:text-[var(--gray-40)] bg-neutral-800 p-2 rounded-full hover:bg-neutral-700"
           >
             <BiChevronLeft size={30} />
           </button>
@@ -146,7 +145,7 @@ const Blog: FC = () => {
           </div>
           <button
             onClick={scrollRight}
-            className="text-white bg-neutral-800 p-2 rounded-full hover:bg-neutral-700"
+            className="text-[var(--gray-blue)] light:text-[var(--gray-40)] bg-neutral-800 p-2 rounded-full hover:bg-neutral-700"
           >
             <BiChevronRight size={30} />
           </button>
@@ -155,7 +154,7 @@ const Blog: FC = () => {
 
       {/* Featured Posts Section */}
       <div className="py-20 px-4 md:px-20 lg:px-40 max-w-7xl mx-auto">
-        <h2 className="text-3xl font-semibold mb-10 text-center">
+        <h2 className="text-3xl font-semibold mb-10 text-center text-[var(--light-blue)] light:text-[var(--gray-70)]">
           Featured Posts
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
@@ -174,25 +173,27 @@ const Blog: FC = () => {
                 />
               )}
               <div className="p-6">
-                <h3 className="text-2xl font-bold">{post.fields.title}</h3>
-                <p className="mt-2 text-[var(--text-gray)]">
+                <h3 className="text-2xl font-bold text-[var(--light-blue)] light:text-[var(--gray-70)]">
+                  {post.fields.title}
+                </h3>
+                <p className="mt-2 text-[var(--gray-blue)] light:text-[var(--gray-40)]">
                   {post.fields.description}
                 </p>
                 {post.fields.category && (
-                  <p className="mt-2 text-neutral-500 text-sm">
+                  <p className="mt-2 text-[var(--gray-blue)] light:text-[var(--gray-40)] text-sm">
                     Category: {post.fields.category.fields.title}
                   </p>
                 )}
-                <p className="mt-2 text-neutral-500 text-sm">
+                <p className="mt-2 text-[var(--gray-blue)] light:text-[var(--gray-40)] text-sm">
                   Author: {post.fields.author}
                 </p>
-                <p className="mt-2 text-neutral-500 text-sm">
+                <p className="mt-2 text-[var(--gray-blue)] light:text-[var(--gray-40)] text-sm">
                   Publish Date:{" "}
                   {new Date(post.fields.publishDate).toLocaleDateString()}
                 </p>
                 <Link
                   href={`/blog/${post.fields.slug}`}
-                  className="inline-block mt-4 bg-gradient-to-r from-sky-400 to-purple-500 text-white font-bold py-2 px-4 rounded-3xl shadow-lg hover:bg-opacity-75 transition duration-300"
+                  className="inline-block mt-4 bg-[var(--ocean-blue)] #bg-gradient-to-r from-sky-400 to-purple-500 text-white py-2 px-4 rounded-lg shadow-lg hover:bg-opacity-75 transition duration-300"
                 >
                   Read More
                 </Link>
@@ -204,7 +205,7 @@ const Blog: FC = () => {
           <div className="text-center mt-10">
             <button
               onClick={handleShowMorePosts}
-              className="px-6 py-3 bg-gradient-to-r from-sky-400 to-purple-500 text-white font-bold rounded-3xl shadow-lg hover:bg-opacity-75 transition duration-300"
+              className="px-6 py-3 bg-[var(--ocean-blue)] #bg-gradient-to-r from-sky-400 to-purple-500 text-white font-bold rounded-lg shadow-lg hover:bg-opacity-75 transition duration-300"
             >
               Show More Posts
             </button>
@@ -212,13 +213,10 @@ const Blog: FC = () => {
         )}
       </div>
 
-      {/* Newsletter Section */}
       <SubscriptionForm />
 
-      {/* Contact Form Section */}
       <ContactBlock />
 
-      {/* Footer */}
       <Footer />
     </div>
   );
