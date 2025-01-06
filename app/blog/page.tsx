@@ -86,7 +86,7 @@ const Blog: FC = () => {
       <Navbar />
 
       {/* Header Section */}
-      <div className="bg-[var(--blue1)] light:bg-[var(--light-blue)] #bg-gradient-to-b from-sky-400 to-purple-500 py-20 text-center">
+      <div className="bg-[var(--blue1)] light:bg-[var(--ice-blue)] #bg-gradient-to-b from-sky-400 to-purple-500 py-20 text-center">
         <h1 className="pb-4 text-4xl mt-10 md:text-6xl bg-clip-text text-transparent bg-gradient-to-r from-sky-400 to bg-purple-500 bg-opacity-50">
           The Clicks Blog
         </h1>

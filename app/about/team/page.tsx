@@ -87,7 +87,7 @@ const Team: FC = () => {
 
         <Block4 />
 
-        <div className="mt-8 flex justify-center">
+        <div className="flex justify-center mb-32">
           <Link
             href="/about/careers"
             className="inline-block bg-[var(--ocean-blue)] #bg-gradient-to-r from-sky-400 to-purple-500 text-white font-bold py-3 px-6 rounded-lg shadow-lg hover:bg-opacity-75 transition duration-300"

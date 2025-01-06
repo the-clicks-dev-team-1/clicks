@@ -260,7 +260,7 @@ const Pricing = () => {
           {plans.map((plan, index) => (
             <div
               key={plan.name}
-              className="h-full flex flex-col justify-between border rounded-3xl px-6 py-4 md:py-6 light:bg-[var(--light-blue)] light:border-[var(--ocean-blue)]"
+              className="h-full flex flex-col justify-between border rounded-3xl px-6 py-4 md:py-6 light:bg-[var(--light-blue)] border-[var(--ocean-blue)]"
             >
               <div className={plan.style}>
                 <div className="text-3xl md:text-4xl flex items-center font-medium text-[var(--light-blue)] light:text-[var(--gray-70)]">

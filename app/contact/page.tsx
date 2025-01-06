@@ -17,7 +17,7 @@ const Contact: FC = () => {
       <Navbar />
 
       {/* Header section */}
-      <div className="bg-[var(--blue1)] light:bg-[var(--light-blue)] #bg-gradient-to-b from-sky-400 to-purple-500 py-20 text-center">
+      <div className="bg-[var(--blue1)] light:bg-[var(--ice-blue)] #bg-gradient-to-b from-sky-400 to-purple-500 py-20 mb-32 text-center">
         <h1 className="mt-10 text-3xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-sky-400 to bg-purple-500 bg-opacity-50">
           Contact Us
         </h1>
@@ -31,9 +31,9 @@ const Contact: FC = () => {
       <ContactBlock />
 
       {/* Map Section */}
-      <div className="bg-[var(--bgnew)] py-20">
+      <div className="bg-[var(--bgnew)] pb-32">
         <div className="max-w-7xl mx-auto px-4 md:px-8 lg:px-12">
-          <h2 className="text-2xl md:text-3xl font-semibold mb-6 text-center text-[var(--light-blue)] light:text-[var(--gray-70)]">
+          <h2 className="text-2xl md:text-3xl font-semibold mb-10 text-center text-[var(--light-blue)] light:text-[var(--gray-70)]">
             Our Location
           </h2>
           <div className="w-full h-96 bg-black rounded-lg overflow-hidden relative">

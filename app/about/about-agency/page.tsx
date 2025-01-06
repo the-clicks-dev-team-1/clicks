@@ -77,10 +77,6 @@ const AboutAgency: FC = () => {
 
         {/* The Clicks Culture Section */}
         <div className="bg-[var(--bgnew)] text-[var(--text)] py-20">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl text-center pb-4 bg-clip-text text-transparent bg-gradient-to-b from-sky-400 to bg-purple-500 bg-opacity-50">
-            The Clicks Culture
-          </h2>
-
           {/* Culture Items */}
           <div className="space-y-12">
             {/* Culture Item 1 */}
@@ -95,6 +91,9 @@ const AboutAgency: FC = () => {
                 />
               </div>
               <div className="w-full md:w-1/2 text-left #md:text-right p-4 md:p-6 text-[var(--light-blue)] light:text-[var(--gray-70)]">
+                <h2 className="text-2xl sm:text-3xl md:text-4xl pb-4 bg-clip-text text-transparent bg-gradient-to-b from-sky-400 to bg-purple-500 bg-opacity-50">
+                  The Clicks Culture
+                </h2>
                 <h3 className="text-lg sm:text-xl font-semibold mb-2">
                   About Us
                 </h3>
