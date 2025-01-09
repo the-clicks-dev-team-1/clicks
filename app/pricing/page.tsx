@@ -86,7 +86,7 @@ const offers = [
     description:
       "Detailed consultation to understand the client's business goals, target audience, and current marketing efforts. Development of a customized digital marketing strategy.",
     button: "Order Now",
-    image: "/images/group1.svg",
+    image: "/images/Group1.png",
   },
   {
     index: 1,
@@ -104,7 +104,7 @@ const offers = [
     description:
       "Creation of a modern, responsive website optimized for user experience and conversions.",
     button: "Order Now",
-    image: "/images/group2.svg",
+    image: "/images/Group2.png",
   },
   {
     index: 2,
@@ -122,7 +122,7 @@ const offers = [
     description:
       "On-page and off-page SEO to improve search engine rankings and organic traffic.",
     button: "Order Now",
-    image: "/images/group3.svg",
+    image: "/images/Group3.png",
   },
   {
     index: 3,
@@ -139,7 +139,7 @@ const offers = [
     description:
       "Management of PPC campaigns to drive targeted traffic and increase conversions.",
     button: "Order Now",
-    image: "/images/group1.svg",
+    image: "/images/Group1.png",
   },
   {
     index: 4,
@@ -157,7 +157,7 @@ const offers = [
     description:
       "Social media strategy, content creation, and community management across platforms like Facebook, Instagram, Twitter, LinkedIn, and others.",
     button: "Order Now",
-    image: "/images/group2.svg",
+    image: "/images/Group2.png",
   },
   {
     index: 5,
@@ -176,7 +176,7 @@ const offers = [
     description:
       "Creation and distribution of valuable content to attract and engage the target audience.",
     button: "Order Now",
-    image: "/images/group3.svg",
+    image: "/images/Group3.png",
   },
   {
     index: 6,
@@ -194,7 +194,7 @@ const offers = [
     description:
       "Design and execution of email marketing campaigns to nurture leads and retain customers.",
     button: "Order Now",
-    image: "/images/group1.svg",
+    image: "/images/Group1.png",
   },
   {
     index: 7,
@@ -212,7 +212,7 @@ const offers = [
     description:
       "Analysis and optimization of website and landing pages to improve conversion rates.",
     button: "Order Now",
-    image: "/images/group2.svg",
+    image: "/images/Group2.png",
   },
   {
     index: 8,
@@ -229,7 +229,7 @@ const offers = [
     description:
       "Comprehensive analytics and reporting to track the performance of digital marketing efforts.",
     button: "Order Now",
-    image: "/images/group3.svg",
+    image: "/images/Group3.png",
   },
   {
     index: 9,
@@ -246,7 +246,7 @@ const offers = [
     description:
       "Implementation of marketing automation tools to streamline and enhance marketing efforts.",
     button: "Order Now",
-    image: "/images/group1.svg",
+    image: "/images/Group1.png",
   },
 ];
 
@@ -342,9 +342,9 @@ const Pricing = () => {
           {offers.slice(0, visibleOffers).map((offer, index) => (
             <div key={offer.name} className="flex flex-col">
               <div className="flex flex-col md:flex-row">
-                <WobbleCard
-                  containerClassName="bg-[var(--blue2)] light:bg-[var(--light-blue)] light:shadow-lg rounded-3xl w-full max-w-screen-xl relative"
-                  className="light:bg-[var(--light-blue)] light:shadow-lg"
+                <div
+                  // containerClassName="bg-[var(--blue2)] light:bg-[var(--light-blue)] light:shadow-lg rounded-3xl w-full max-w-screen-xl relative"
+                  className="px-20 py-20 light:bg-[var(--light-blue)] light:shadow-lg bg-[var(--blue2)] rounded-3xl w-full max-w-screen-xl relative"
                 >
                   <div className="flex relative">
                     <div className="md:w-2/3">
@@ -368,17 +368,17 @@ const Pricing = () => {
                         ))}
                       </ul>
                     </div>
-                    <div className="hidden md:w-2/5 md:block justify-end absolute -right-10 -bottom-20">
+                    <div className="hidden md:block absolute -right-20 -bottom-20">
                       <Image
                         src={offer.image}
                         alt="map-marker"
-                        width={300}
-                        height={300}
-                        className="object-cover w-auto h-auto"
+                        width={500}
+                        height={500}
+                        className="object-contain max-w-[250px] max-h-[250px] lg:max-w-[350px] lg:max-h-[350px]"
                       />
                     </div>
                   </div>
-                </WobbleCard>
+                </div>
 
                 <div className="md:w-1/3 px-8 animate-shimmer items-center justify-center light:shadow-lg rounded-3xl dark:border border-slate-800 light:border-[var(--ocean-blue)] dark:bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] light:bg-[linear-gradient(110deg,#f8fbff,45%,#edf8fe,55%,#f8fbff)] light:bg-[var(--light-blue)] bg-[length:200%_100%] transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
                   <div className="whitespace-pre-line text-xl pt-4 md:pt-6 text-[var(--light-blue)] light:text-[var(--gray-70)]">

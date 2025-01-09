@@ -1,88 +1,140 @@
 import { FC } from "react";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
-import Link from "next/link";
 import Image from "next/image";
 import { Metadata } from "next";
-import ContactServiceForm from "@/components/ContactServiceForm";
+import ContactBlock from "@/components/contactBlock";
+import ServiceCard from "@/components/ServiceCard";
 
 export const metadata: Metadata = {
-  title: "Pay-Per-Click (PPC) Advertising Services",
+  title: "Search Engine Optimization (SEO) Services",
   description:
-    "Drive targeted traffic to your website and maximize ROI with our expert PPC management services",
+    "Increase your online visibility and drive more traffic to your website with our expert SEO services",
 };
 
-const PPC: FC = () => {
+const servicesItems = [
+  {
+    count: "01",
+    image: "/images/group1.png",
+    title: "On-Page SEO",
+    description:
+      "We optimize your website's content, meta tags, and structure to ensure it's search engine friendly.",
+  },
+  {
+    count: "02",
+    image: "/images/group3.png",
+    title: "Off-Page SEO",
+    description:
+      "Our off-page SEO strategies focus on building high-quality backlinks to boost your site's authority.",
+  },
+  {
+    count: "03",
+    image: "/images/group4.png",
+    title: "Technical SEO",
+    description:
+      "We improve your website's technical aspects, such as page speed and mobile-friendliness, to enhance its search engine performance.",
+  },
+  {
+    count: "04",
+    image: "/images/group5.png",
+    title: "Local SEO",
+    description:
+      "We help your business rank higher in local search results, making it easier for local customers to find you.",
+  },
+  {
+    count: "05",
+    image: "/images/group6.png",
+    title: "E-commerce SEO",
+    description:
+      "Our e-commerce SEO services are designed to drive traffic to your online store and increase sales.",
+  },
+  {
+    count: "06",
+    image: "/images/group7.png",
+    title: "SEO Audits",
+    description:
+      "We perform comprehensive SEO audits to identify areas for improvement and optimize your site for better performance.",
+  },
+];
+
+const SEO: FC = () => {
   return (
     <div className="bg-[var(--bgnew)] text-[var(--text)]">
       <Navbar />
 
-      {/* Header section with form */}
-      <div className="bg-gradient-to-b from-sky-400 to-purple-500 py-20 text-center">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 py-20 px-4 md:px-20 lg:px-40">
-          <div className="flex flex-col">
-            <h1 className="text-3xl md:text-5xl font-bold">
-              Pay-Per-Click (PPC) Advertising Services
-            </h1>
-            <p className="mt-10 text-lg md:text-xl max-w-2xl mx-auto text-left">
-              Drive targeted traffic to your website and maximize ROI with our
-              expert PPC management services.
-            </p>
-            <p className="mt-3 text-lg md:text-xl max-w-2xl mx-auto text-left">
-              Pay-Per-Click (PPC) advertising is a powerful way to drive
-              targeted traffic to your website. Our team of experts creates and
-              manages campaigns that maximize your return on investment by
-              targeting the right audience with precision. Whether you&apos;re
-              looking to increase sales, generate leads, or build brand
-              awareness, our data-driven PPC strategies are designed to meet
-              your business goals.
-            </p>
-            <p className="mt-3 text-lg md:text-xl max-w-2xl mx-auto text-left">
-              We optimize campaigns across platforms such as Google Ads and
-              social media, ensuring that your ad spend is used effectively.
-              With detailed performance tracking and continuous optimization, we
-              help you achieve measurable results and improve the efficiency of
-              your marketing budget.
-            </p>
-          </div>
-          <div className="flex flex-col justify-between">
-            <h2 className="text-2xl font-semibold mb-4">
-              Get a Free PPC Consultation
-            </h2>
-            <ContactServiceForm />
-          </div>
+      <div className="container md:px-10 mb-32">
+        <div className="flex flex-col pt-32 md:pt-40">
+          <h1 className="mb-10 py-2 text-3xl md:text-5xl bg-clip-text text-transparent bg-gradient-to-r from-sky-400 to bg-purple-500 bg-opacity-50">
+            Search Engine Optimization (SEO) Services
+          </h1>
+          <p className="mt-3 text-lg md:text-xl max-w-2xl text-left text-[var(--gray-blue)] light:text-[var(--gray-40)]">
+            Increase your online visibility and drive more traffic to your
+            website with our expert SEO services. Our SEO services focus on
+            improving your website&apos;s visibility on search engines like
+            Google, helping potential customers find you when they&apos;re
+            searching for your products or services.
+          </p>
         </div>
       </div>
 
-      {/* Introduction Section */}
-      <div className="py-20 px-4 md:px-20 lg:px-40">
+      {/* Services section */}
+      <div className="container md:px-10 mb-32">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+          {servicesItems.map((item) => (
+            <ServiceCard
+              key={item.count}
+              count={item.count}
+              image={item.image}
+              title={item.title}
+              description={item.description}
+            />
+          ))}
+        </div>
+      </div>
+
+      {/* Introduction section */}
+      <div className="container md:px-10 mb-32">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
           <div>
-            <h2 className="text-2xl md:text-3xl font-semibold mb-6">
-              What is PPC and Why Does It Matter?
+            <h2 className="text-2xl md:text-3xl font-semibold mb-6 text-[var(--light-blue)] light:text-[var(--gray-70)]">
+              What is SEO and Why Does It Matter?
             </h2>
-            <p className="text-lg mb-4">
-              PPC, or Pay-Per-Click, is a form of online advertising where you
-              only pay when someone clicks on your ad. It&apos;s a highly
-              effective way to drive targeted traffic to your website and can
-              yield immediate results.
+            <p className="text-lg mb-6 text-[var(--gray-blue)] light:text-[var(--gray-40)]">
+              SEO, or Search Engine Optimization, is the practice of improving
+              your website&apos;s visibility on search engines like Google. When
+              people search for products or services that you offer, you want
+              your website to appear at the top of the results. SEO helps make
+              that happen.
             </p>
-            <p className="text-lg mb-4">
-              Think of PPC as a way to attract potential customers who are
-              already interested in what you offer. You can target specific
-              keywords, demographics, and even the time of day your ads appear,
-              making PPC a precise tool in your marketing arsenal.
-            </p>
-            <p className="text-lg">
-              Our PPC services are designed to maximize your return on
-              investment by carefully managing your campaigns, optimizing your
-              ads, and ensuring that your budget is spent efficiently.
-            </p>
+            <h2 className="text-lg md:text-xl font-semibold mb-6 text-[var(--light-blue)] light:text-[var(--gray-70)]">
+              By optimizing your website for search engines, you can increase:
+            </h2>
+            <div className="flex flex-col sm:flex-row md:flex-col gap-2 xl:flex-row justify-between items-center mb-6 text-lg text-[var(--gray-blue)] light:text-[var(--gray-40)]">
+              <div className="w-full inline-block bg-gradient-to-r from-sky-400 to-purple-500 p-[1px] rounded-full">
+                <span className="min-w-[148px] whitespace-nowrap w-full block bg-white dark:bg-black rounded-full px-4 py-3 text-center text-lg font-semibold">
+                  visibility
+                </span>
+              </div>
+              <div className="w-full inline-block bg-gradient-to-r from-sky-400 to-purple-500 p-[1px] rounded-full">
+                <span className="min-w-[148px] whitespace-nowrap w-full text-center block bg-white dark:bg-black  rounded-full px-4 py-3 text-lg font-semibold">
+                  traffic
+                </span>
+              </div>
+              <div className="w-full inline-block bg-gradient-to-r from-sky-400 to-purple-500 p-[1px] rounded-full">
+                <span className="min-w-[148px] whitespace-nowrap w-full text-center block bg-white dark:bg-black  rounded-full px-4 py-3 text-lg font-semibold">
+                  user experience
+                </span>
+              </div>
+            </div>
+            {/* <p className="text-lg text-[var(--gray-blue)] light:text-[var(--gray-40)]">
+              A well-defined strategy is essential for the growth and
+              sustainability of any business.
+            </p> */}
           </div>
           <div className="relative w-full h-64 md:h-96">
             <Image
-              src="/images/ppc.jpg"
-              alt="PPC Explanation"
+              src="/images/seo-hero.jpg"
+              alt="Web Development"
               layout="fill"
               objectFit="cover"
               className="rounded-lg"
@@ -91,104 +143,14 @@ const PPC: FC = () => {
         </div>
       </div>
 
-      {/* Why PPC Matters Section */}
-      <div className="py-20 px-4 md:px-20 lg:px-40 bg-[var(--bg900)]">
-        <h2 className="text-2xl md:text-3xl font-semibold mb-6 text-center">
-          Why PPC Matters?
-        </h2>
-        <p className="text-lg text-center mb-10 max-w-3xl mx-auto">
-          PPC advertising is crucial for businesses looking to quickly increase
-          their online presence, drive traffic, and generate leads. With the
-          right strategy, PPC can be a cost-effective way to reach your target
-          audience.
-        </p>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-          <div className="bg-[var(--bg800)] p-6 rounded-lg">
-            <h3 className="text-xl font-semibold mb-4">Immediate Results</h3>
-            <p>
-              PPC campaigns can start driving traffic to your website
-              immediately, allowing you to see results quickly.
-            </p>
-          </div>
-          <div className="bg-[var(--bg800)] p-6 rounded-lg">
-            <h3 className="text-xl font-semibold mb-4">Targeted Traffic</h3>
-            <p>
-              With PPC, you can target specific audiences based on keywords,
-              location, demographics, and more, ensuring your ads reach the
-              right people.
-            </p>
-          </div>
-          <div className="bg-[var(--bg800)] p-6 rounded-lg">
-            <h3 className="text-xl font-semibold mb-4">Cost Control</h3>
-            <p>
-              PPC allows you to set a budget and control your costs, making it a
-              flexible option for businesses of all sizes.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      {/* Our PPC Services Section */}
-      <div className="py-20 px-4 md:px-20 lg:px-40">
-        <h2 className="text-2xl md:text-3xl font-semibold mb-6 text-center">
-          Our PPC Services
-        </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-          <div className="bg-[var(--bg800)] p-6 rounded-lg">
-            <h3 className="text-xl font-semibold mb-4">Keyword Research</h3>
-            <p>
-              We identify the most effective keywords for your business,
-              ensuring that your ads reach the right audience.
-            </p>
-          </div>
-          <div className="bg-[var(--bg800)] p-6 rounded-lg">
-            <h3 className="text-xl font-semibold mb-4">Ad Creation</h3>
-            <p>
-              Our team creates compelling ads that attract clicks and drive
-              conversions, making the most of your ad spend.
-            </p>
-          </div>
-          <div className="bg-[var(--bg800)] p-6 rounded-lg">
-            <h3 className="text-xl font-semibold mb-4">Campaign Management</h3>
-            <p>
-              We manage your PPC campaigns from start to finish, optimizing
-              performance and ensuring your ads are effective.
-            </p>
-          </div>
-          <div className="bg-[var(--bg800)] p-6 rounded-lg">
-            <h3 className="text-xl font-semibold mb-4">
-              Landing Page Optimization
-            </h3>
-            <p>
-              We ensure that your landing pages are optimized to convert traffic
-              into leads and sales, maximizing your ROI.
-            </p>
-          </div>
-          <div className="bg-[var(--bg800)] p-6 rounded-lg">
-            <h3 className="text-xl font-semibold mb-4">Performance Tracking</h3>
-            <p>
-              Our detailed reports provide insights into how your campaigns are
-              performing, allowing for continuous improvement.
-            </p>
-          </div>
-          <div className="bg-[var(--bg800)] p-6 rounded-lg">
-            <h3 className="text-xl font-semibold mb-4">Remarketing</h3>
-            <p>
-              We use remarketing techniques to re-engage visitors who have
-              previously interacted with your site, increasing conversion rates.
-            </p>
-          </div>
-        </div>
-      </div>
-
       {/* Call to Action section */}
-      <div className="py-20 px-4 md:px-20 lg:px-40 text-center bg-[var(--bgnew)]">
+      {/* <div className="py-20 px-4 md:px-20 lg:px-40 text-center">
         <h2 className="text-2xl md:text-3xl font-semibold mb-6">
-          Ready to Drive Targeted Traffic to Your Website?
+          Ready to Take Your Online Presence to the Next Level?
         </h2>
-        <p className="text-lg mb-8 max-w-2xl mx-auto">
-          Book a call today to learn more about our PPC services and how we can
-          help your business grow.
+        <p className="text-lg mb-8">
+          Book a call today to discuss your project, and let&apos;s create
+          something amazing together.
         </p>
         <Link
           href="/book"
@@ -196,11 +158,13 @@ const PPC: FC = () => {
         >
           Book A Call
         </Link>
-      </div>
+      </div> */}
+
+      <ContactBlock consultation="Reach out for a free consultation and get the answers you need." />
 
       <Footer />
     </div>
   );
 };
 
-export default PPC;
+export default SEO;

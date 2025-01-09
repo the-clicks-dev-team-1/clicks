@@ -163,7 +163,7 @@ const Blog: FC = () => {
           {posts.slice(0, visiblePosts).map((post) => (
             <div
               key={post.sys.id}
-              className="relative bg-[var(--bg800-w)] rounded-lg overflow-hidden shadow-lg"
+              className="relative bg-[var(--blue2)] light:bg-[var(--light-blue)] rounded-lg overflow-hidden shadow-lg"
             >
               {post.fields?.previewImage?.fields?.file?.url && (
                 <Image

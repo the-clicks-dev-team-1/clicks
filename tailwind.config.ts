@@ -13,12 +13,21 @@ const config = {
   theme: {
     container: {
       center: true,
-      padding: "2rem",
+      padding: {
+        DEFAULT: "1rem",
+        md: "2.5rem",
+      },
       screens: {
-        "2xl": "1400px",
+        DEFAULT: "100%",
+        xl: "1280px",
       },
     },
     extend: {
+      boxShadow: {
+        subtle:
+          "2px 2px 5px rgba(0, 0, 0, 0.05), -2px -2px 3px rgba(0, 0, 0, 0.03)",
+        deep: "8px 8px 18px rgba(0, 0, 0, 0.2), -8px -8px 10px rgba(0, 0, 0, 0.15)",
+      },
       textColor: {
         light: {
           white: "#ffffff",
@@ -130,6 +139,7 @@ const config = {
     },
   },
   plugins: [
+    require("tailwindcss-filters"),
     require("tailwindcss-animate"),
     require("@tailwindcss/typography"),
     function (pluginApi: PluginAPI) {

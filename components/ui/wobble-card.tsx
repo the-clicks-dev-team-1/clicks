@@ -109,7 +109,7 @@ export const WobbleCard = ({
               className
             )}
           >
-            {mounted && isDark && <Noise />}
+            {/* {mounted && isDark && <Noise />} */}
             {children}
           </motion.div>
         </div>

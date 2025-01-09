@@ -6,6 +6,11 @@ import Footer from "@/components/footer";
 import ContactBlock from "@/components/contactBlock";
 import clientNew from "@/lib/contentfulNew";
 import { Metadata } from "next";
+import {
+  GlowingStarsBackgroundCard,
+  GlowingStarsDescription,
+  GlowingStarsTitle,
+} from "@/components/ui/glowing-stars";
 
 export const metadata: Metadata = {
   title: "Join Our Team",
@@ -47,7 +52,7 @@ const Careers: FC = async () => {
           {jobs.map((job) => (
             <div
               key={job.sys.id}
-              className="bg-[var(--bg800-w)] rounded-lg p-6 shadow-lg"
+              className="bg-[var(--blue2)] light:bg-[var(--light-blue)] rounded-lg p-6 shadow-lg"
             >
               <h3 className="text-2xl font-bold">
                 {typeof job.fields.title === "string" ? job.fields.title : ""}
@@ -69,7 +74,7 @@ const Careers: FC = async () => {
       </div>
 
       {/* Life at The Clicks Section */}
-      <div className="py-20 bg-[var(--bg900)] light:bg-[var(--ice-blue)]">
+      <div className="py-20 bg-[var(--blue2)] light:bg-[var(--ice-blue)]">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
             <div>
@@ -106,31 +111,66 @@ const Careers: FC = async () => {
 
       {/* Benefits Section */}
       <div className="py-20 px-4 md:px-20 lg:px-40 max-w-7xl mx-auto">
-        <h2 className="text-3xl font-semibold mb-10 text-center">
+        <h2 className="text-3xl font-semibold mb-10 text-center bg-clip-text text-transparent bg-gradient-to-b from-sky-400 to bg-purple-500 bg-opacity-50">
           Our Benefits
         </h2>
+
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-          <div className="bg-[var(--bg800)] rounded-lg p-6 text-center">
-            <h3 className="text-xl font-bold">Health & Wellness</h3>
-            <p className="mt-2 text-neutral-300">
-              Comprehensive health and wellness plans to keep you and your
-              family healthy.
-            </p>
+          <div className="flex items-center justify-center antialiased">
+            <GlowingStarsBackgroundCard>
+              <GlowingStarsTitle className="mb-2">
+                Health & Wellness
+              </GlowingStarsTitle>
+              <div className="flex justify-between items-end">
+                <GlowingStarsDescription>
+                  Comprehensive health and wellness plans to keep you and your
+                  family healthy.
+                </GlowingStarsDescription>
+              </div>
+            </GlowingStarsBackgroundCard>
           </div>
-          <div className="bg-[var(--bg800)] rounded-lg p-6 text-center">
-            <h3 className="text-xl font-bold">Career Growth</h3>
-            <p className="mt-2 text-neutral-300">
-              Opportunities for professional development and career advancement.
-            </p>
+
+          <div className="flex items-center justify-center antialiased">
+            <GlowingStarsBackgroundCard>
+              <GlowingStarsTitle className="mb-2">
+                Career Growth
+              </GlowingStarsTitle>
+              <div className="flex justify-between items-end">
+                <GlowingStarsDescription>
+                  Opportunities for professional development and career
+                  advancement.
+                </GlowingStarsDescription>
+              </div>
+            </GlowingStarsBackgroundCard>
           </div>
-          <div className="bg-[var(--bg800)] rounded-lg p-6 text-center">
-            <h3 className="text-xl font-bold">Work-Life Balance</h3>
-            <p className="mt-2 text-neutral-300">
-              Flexible work hours and remote work options to support your
-              work-life balance.
-            </p>
+
+          <div className="flex items-center justify-center antialiased">
+            <GlowingStarsBackgroundCard>
+              <GlowingStarsTitle className="mb-2">
+                Work-Life Balance
+              </GlowingStarsTitle>
+              <div className="flex justify-between items-end">
+                <GlowingStarsDescription>
+                  Flexible work hours and remote work options to support your
+                  work-life balance.
+                </GlowingStarsDescription>
+              </div>
+            </GlowingStarsBackgroundCard>
           </div>
-          {/* Add more benefits as needed */}
+
+          <div className="flex items-center justify-center antialiased">
+            <GlowingStarsBackgroundCard>
+              <GlowingStarsTitle className="mb-2">
+                Work Environment
+              </GlowingStarsTitle>
+              <div className="flex justify-between items-end">
+                <GlowingStarsDescription>
+                  Work with talented, supportive colleagues united by shared
+                  goals.
+                </GlowingStarsDescription>
+              </div>
+            </GlowingStarsBackgroundCard>
+          </div>
         </div>
       </div>
 

@@ -10,7 +10,7 @@ const Footer = () => {
     <motion.section
       className={`w-screen relative overflow-hidden bg-[var(--blue2)] light:bg-[var(--ice-blue)]`}
     >
-      <Noise />
+      {/* <Noise /> */}
       <footer className="relative max-w-7xl mx-auto">
         <div className="px-4 md:px-10 py-6 lg:py-16">
           <div className="grid grid-cols-[4.5fr_5.5fr] lg:grid-cols-[1.5fr_4fr_1.5fr_3fr] gap-2 md:gap-6">
