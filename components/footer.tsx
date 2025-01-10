@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import logo from "../public/logo/Logo1.svg";
 import NewsletterForm from "./NewsLetterForm";
+import Logo from "./Logo";
 
 const Footer = () => {
   return (
@@ -15,15 +16,7 @@ const Footer = () => {
         <div className="px-4 md:px-10 py-6 lg:py-16">
           <div className="grid grid-cols-[4.5fr_5.5fr] lg:grid-cols-[1.5fr_4fr_1.5fr_3fr] gap-2 md:gap-6">
             <div className="">
-              <ActiveLink href="/">
-                <Image
-                  src={logo}
-                  alt=" logo"
-                  width={100}
-                  height={100}
-                  className="w-24 h-24 mb-10"
-                />
-              </ActiveLink>
+              <Logo />
               <ul className="text-gray-500 dark:text-gray-400 font-medium flex items-center">
                 {/* <li className="mb-4">
                 <a

@@ -16,13 +16,15 @@ import {
 import { SiGoogleads, SiGoogleanalytics } from "react-icons/si";
 import { GrOptimize } from "react-icons/gr";
 
-import logo from "../public/logo/Logo1.svg";
+import logoLightMode from "../public/logo/Logo1.svg";
+import logoDarkMode from "../public/logo/LogoDark.png";
 import { IoIosArrowDown, IoMdMoon } from "react-icons/io";
 import { FiMenu } from "react-icons/fi";
 import { AiOutlineClose } from "react-icons/ai";
 import ActiveLink from "./activelink";
 import { useTheme } from "next-themes";
 import LocaleSwitcher from "./LocaleSwitcher";
+import Logo from "./Logo";
 
 type NavItem = {
   label: string;
@@ -127,15 +129,7 @@ export default function Navbar() {
     <div className="relative z-50 bg-black">
       <div className="p-6 md:p-10 flex gap-2 items-center justify-between text-white fixed w-full top-0 h-24">
         <div className="flex flex-1 justify-start items-center">
-          <ActiveLink href="/">
-            <Image
-              src={logo}
-              alt=" logo"
-              width={100}
-              height={100}
-              className="w-24 h-24"
-            />
-          </ActiveLink>
+          <Logo />
         </div>
 
         <div
