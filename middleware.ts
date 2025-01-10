@@ -45,10 +45,17 @@ const allowedRegions = [
   "CH", // Switzerland
 ];
 
+const defaultLocale = "en";
+
 export function geoMiddleware(req: NextRequest) {
   const country = req.geo?.country || "Unknown";
 
   console.log(`Incoming request from country: ${country}`);
+
+  // Redirect from `/` to `/en` if no locale is provided
+  if (req.nextUrl.pathname === "/") {
+    return NextResponse.redirect(new URL(`/${defaultLocale}`, req.url));
+  }
 
   // If geo info is not available or country is unknown, you might want to allow access or set a default behavior.
   if (country === "Unknown") {
