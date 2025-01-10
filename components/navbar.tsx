@@ -1,13 +1,11 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import Link from "next/link";
 import Image from "next/image";
 import { useAutoAnimate } from "@formkit/auto-animate/react";
 
 import { PiStrategy, PiMegaphone, PiRocketLaunch } from "react-icons/pi";
 import { TbSeo, TbSettingsAutomation } from "react-icons/tb";
-import { FaUserLarge } from "react-icons/fa6";
 import {
   MdDeveloperMode,
   MdOutlineMarkEmailRead,
@@ -24,6 +22,7 @@ import { FiMenu } from "react-icons/fi";
 import { AiOutlineClose } from "react-icons/ai";
 import ActiveLink from "./activelink";
 import { useTheme } from "next-themes";
+import LocaleSwitcher from "./LocaleSwitcher";
 
 type NavItem = {
   label: string;
@@ -126,7 +125,7 @@ export default function Navbar() {
 
   return (
     <div className="relative z-50 bg-black">
-      <div className="p-6 md:p-10 flex items-center justify-between text-white fixed w-full top-0 h-24">
+      <div className="p-6 md:p-10 flex gap-2 items-center justify-between text-white fixed w-full top-0 h-24">
         <div className="flex flex-1 justify-start items-center">
           <ActiveLink href="/">
             <Image
@@ -174,7 +173,7 @@ export default function Navbar() {
           ))}
         </div>
 
-        <div className="hidden md:flex flex-1 justify-end items-center">
+        <div className="flex flex-1 justify-end items-center">
           {/* <Link
             href="https://portal.theclicks.ca"
             className="mx-4"
@@ -183,6 +182,9 @@ export default function Navbar() {
           >
             <FaUserLarge className="h-5 w-5 text-[var(--text)]" />
           </Link> */}
+          <div className="">
+            <LocaleSwitcher />
+          </div>
           {mounted && (
             <button
               onClick={handleToggleTheme}
@@ -196,39 +198,19 @@ export default function Navbar() {
               )}
             </button>
           )}
-          <ActiveLink href="/book">
+
+          <ActiveLink href="/book" className="hidden md:block">
             <button className="px-4 py-2 animate-shimmer items-center justify-center rounded-lg border border-[var(--border-color)] light:border-[var(--ocean-blue)] light:bg-[var(--light-blue)] dark:bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] light:bg-[linear-gradient(110deg,#f8fbff,45%,#edf8fe,55%,#f8fbff)] bg-[length:200%_100%] transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 light:border-[1px] light:bg-white light:text-black #light:bg-none">
               Let&apos;s Talk
             </button>
           </ActiveLink>
-        </div>
 
-        <div className="flex items-center md:hidden">
-          {/* <Link
-            href="https://portal.theclicks.ca"
-            className="mx-4"
-            title="Client Portal"
-            target="_blank"
-          >
-            <FaUserLarge className="h-5 w-5 text-[var(--text)]" />
-          </Link> */}
-          {mounted && (
-            <button
-              onClick={handleToggleTheme}
-              aria-label="Toggle Dark Mode"
-              className="mr-4"
-            >
-              {theme === "light" ? (
-                <IoMdMoon className="h-6 w-6 text-[var(--text)]" />
-              ) : (
-                <MdOutlineWbSunny className="h-6 w-6 text-[var(--text)]" />
-              )}
-            </button>
-          )}
-          <FiMenu
-            onClick={() => setSideMenu(true)}
-            className="cursor-pointer text-4xl md:hidden text-[var(--text)]"
-          />
+          <div className="flex items-center md:hidden">
+            <FiMenu
+              onClick={() => setSideMenu(true)}
+              className="cursor-pointer text-4xl md:hidden text-[var(--text)]"
+            />
+          </div>
         </div>
 
         {isSideMenuOpen && <MobileNav closeSideMenu={handleLinkClick} />}

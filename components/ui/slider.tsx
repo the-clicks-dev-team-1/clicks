@@ -2,11 +2,11 @@
 
 import { useState, useEffect } from "react";
 import Slider from "react-slick";
-import Image from "next/image";
 import { useMediaQuery } from "react-responsive";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import LoadingSpinner from "./LoadingSpinner";
 
 const SliderOne = () => {
   const [isClient, setIsClient] = useState(false);
@@ -57,7 +57,7 @@ const SliderOne = () => {
 
   if (!isClient) {
     // Рендеринг простого содержимого на сервере для избежания ошибки гидратации
-    return <div>Loading...</div>;
+    return <LoadingSpinner color="#b1b7c9" />;
   }
 
   return (

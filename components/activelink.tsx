@@ -1,10 +1,10 @@
 "use client";
 
-import { usePathname } from "next/navigation";
-import Link, { LinkProps } from "next/link";
+import { LinkProps } from "next/link";
 import React from "react";
+import { Link, usePathname } from "@/i18n/routing";
 
-type ActiveLinkProps = LinkProps & {
+type ActiveLinkProps = Omit<LinkProps, "locale"> & {
   children: React.ReactNode;
   activeClassName?: string;
   className?: string;

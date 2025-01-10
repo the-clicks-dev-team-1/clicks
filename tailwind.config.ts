@@ -126,7 +126,9 @@ const config = {
         "glass-gradient":
           "linear-gradient(rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.05) 100%)",
       },
-
+      screens: {
+        "header-compact": "1100px",
+      },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",

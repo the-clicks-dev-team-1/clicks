@@ -1,5 +1,7 @@
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
+import createMiddleware from "next-intl/middleware";
+import { locales } from "./lib/config";
 
 // List of allowed countries (ISO country codes)
 const allowedRegions = [
@@ -66,6 +68,11 @@ export function middleware(req: NextRequest) {
   return NextResponse.next(); // Continue for allowed countries
 }
 
+export default createMiddleware({
+  locales,
+  defaultLocale: "en",
+});
+
 export const config = {
-  matcher: "/:path*", // Applies to all paths
+  matcher: ["/", "/(en|fr)/:path*"],
 };
