@@ -45,7 +45,7 @@ const allowedRegions = [
   "CH", // Switzerland
 ];
 
-export function middleware(req: NextRequest) {
+export function geoMiddleware(req: NextRequest) {
   const country = req.geo?.country || "Unknown";
 
   console.log(`Incoming request from country: ${country}`);
@@ -68,11 +68,20 @@ export function middleware(req: NextRequest) {
   return NextResponse.next(); // Continue for allowed countries
 }
 
-export default createMiddleware({
+const intlMiddleware = createMiddleware({
   locales,
   defaultLocale: "en",
 });
 
+export function middleware(req: NextRequest) {
+  // First, handle the geo-blocking
+  const geoResponse = geoMiddleware(req);
+  if (geoResponse) return geoResponse;
+
+  // Then, apply next-intl for locale-based routing
+  return intlMiddleware(req);
+}
+
 export const config = {
-  matcher: ["/", "/(en|fr)/:path*"],
+  matcher: ["/", "/(en|fr)/:path*", "/blocked"],
 };
