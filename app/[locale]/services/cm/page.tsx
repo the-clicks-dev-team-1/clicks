@@ -106,7 +106,7 @@ const ContentMarketing: FC = () => {
               customer actions.
             </p>
             <h2 className="text-lg md:text-xl font-semibold mb-6 text-[var(--light-blue)] light:text-[var(--gray-70)]">
-              Why Content Marketing Matters?
+              Why does Content Marketing Matter?
             </h2>
             <div className="flex flex-col sm:flex-row md:flex-col gap-2 xl:flex-row justify-between items-center mb-6 text-lg text-[var(--gray-blue)] light:text-[var(--gray-40)]">
               <div className="w-full inline-block bg-gradient-to-r from-sky-400 to-purple-500 p-[1px] rounded-full">
@@ -133,7 +133,7 @@ const ContentMarketing: FC = () => {
           <div className="relative w-full h-64 md:h-96">
             <Image
               src="/images/cm.jpg"
-              alt="Web Development"
+              alt="content management explanation"
               layout="fill"
               objectFit="cover"
               className="rounded-lg"

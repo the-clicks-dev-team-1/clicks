@@ -1,7 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
-import Image from "next/image";
+import { useCallback, useEffect, useRef, useState } from "react";
 import { useAutoAnimate } from "@formkit/auto-animate/react";
 
 import { PiStrategy, PiMegaphone, PiRocketLaunch } from "react-icons/pi";
@@ -16,8 +15,6 @@ import {
 import { SiGoogleads, SiGoogleanalytics } from "react-icons/si";
 import { GrOptimize } from "react-icons/gr";
 
-import logoLightMode from "../public/logo/Logo1.svg";
-import logoDarkMode from "../public/logo/LogoDark.png";
 import { IoIosArrowDown, IoMdMoon } from "react-icons/io";
 import { FiMenu } from "react-icons/fi";
 import { AiOutlineClose } from "react-icons/ai";
@@ -25,6 +22,8 @@ import ActiveLink from "./activelink";
 import { useTheme } from "next-themes";
 import LocaleSwitcher from "./LocaleSwitcher";
 import Logo from "./Logo";
+import { usePathname, useRouter } from "@/i18n/routing";
+import Runner from "./Runner";
 
 type NavItem = {
   label: string;
@@ -37,7 +36,7 @@ const navItems: NavItem[] = [
   { label: "Home", link: "/" },
   {
     label: "Services",
-    link: "#",
+    link: "/services/webdev",
     children: [
       {
         label: "Web Development",
@@ -96,7 +95,7 @@ const navItems: NavItem[] = [
   { label: "Pricing", link: "/pricing" },
   {
     label: "About",
-    link: "#",
+    link: "/about/about-agency",
     children: [
       { label: "About Agency", link: "/about/about-agency" },
       { label: "Our Team", link: "/about/team" },
@@ -108,22 +107,79 @@ const navItems: NavItem[] = [
 ];
 
 export default function Navbar() {
-  const [animationParent] = useAutoAnimate();
+  const [animationParent] = useAutoAnimate<HTMLDivElement>();
   const [isSideMenuOpen, setSideMenu] = useState(false);
   const { theme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
+  const [activeIndex, setActiveIndex] = useState(0); // Track active item
+  const [lineStyles, setLineStyles] = useState({ left: 0, width: 0 }); // Line styles
+  const navRef = useRef<HTMLDivElement>();
+  const pathname = usePathname();
+
+  console.log("pathname", pathname);
+  console.log("pathname11", "/" + pathname.split("/")[1]);
 
   useEffect(() => {
     setMounted(true);
   }, []);
 
+  useEffect(() => {
+    // Update activeIndex based on the current path
+    const activeItemIndex = navItems.findIndex((item) => {
+      // Compare the second segment of the path
+      return item.link!.split("/")[1] === pathname.split("/")[1];
+    });
+    console.log("activeItemIndex", activeItemIndex);
+    setActiveIndex(activeItemIndex !== -1 ? activeItemIndex : 0); // Default to 0 if not found
+  }, [pathname]);
+
+  useEffect(() => {
+    const updateLineStyles = () => {
+      if (navRef.current) {
+        const activeItem = navRef.current.children[activeIndex] as HTMLElement;
+        if (activeItem) {
+          const circleDiameter = 12; // Size of the glowing circle
+          setLineStyles({
+            left:
+              activeItem.offsetLeft +
+              activeItem.offsetWidth / 2 -
+              circleDiameter / 2,
+            width: activeItem.offsetWidth,
+          });
+        }
+      }
+    };
+
+    updateLineStyles();
+    window.addEventListener("resize", updateLineStyles);
+    return () => window.removeEventListener("resize", updateLineStyles);
+  }, [activeIndex]);
+
   const handleToggleTheme = () => {
     setTheme(theme === "light" ? "dark" : "light");
   };
 
-  const handleLinkClick = () => {
+  const handleLinkClick = (index: number) => {
+    setActiveIndex(index);
+  };
+
+  const handleMobileLinkClick = () => {
     setSideMenu(false);
   };
+
+  const mergeRefs = useCallback(
+    (el: HTMLDivElement | null) => {
+      if (el) {
+        if (animationParent && "current" in animationParent) {
+          animationParent.current = el;
+        }
+        if (navRef && "current" in navRef) {
+          navRef.current = el;
+        }
+      }
+    },
+    [animationParent]
+  );
 
   return (
     <div className="relative z-50 bg-black">
@@ -133,15 +189,15 @@ export default function Navbar() {
         </div>
 
         <div
-          ref={animationParent}
-          className="hidden md:flex flex-1 bg-[var(--bgnew)] justify-center items-center gap-4 backdrop-blur-lg rounded-lg p-4 light:border-[1px] light:border-[var(--ocean-blue)] light:bg-[var(--light-blue)] animate-shimmer"
+          ref={mergeRefs}
+          className="hidden md:flex flex-1 #bg-[var(--bgnew)] justify-center items-center gap-4 backdrop-blur-lg rounded-lg p-4 #light:border-[1px] #light:border-[var(--ocean-blue)] #light:bg-[var(--light-blue)] animate-shimmer"
         >
           {navItems.map((d, i) => (
             <div key={`${d.label}-${i}`} className="relative group">
               <ActiveLink
                 href={d.link ?? "#"}
                 className="flex items-center gap-2 text-[var(--gray-blue)] light:text-[var(--gray-70)] hover:text-white transition-all"
-                onClick={handleLinkClick}
+                onClick={() => handleLinkClick(i)}
               >
                 <span>{d.label}</span>
                 {d.children && (
@@ -149,13 +205,13 @@ export default function Navbar() {
                 )}
               </ActiveLink>
               {d.children && (
-                <div className="absolute left-0 top-full hidden group-hover:block flex-col bg-black/90 light:bg-white text-[var(--gray-blue)] hover:text-white light:text-[var(--gray-70)] rounded-lg shadow-md py-3 transition-all">
+                <div className="absolute z-10 left-0 top-full hidden group-hover:block flex-col bg-black/90 light:bg-white text-[var(--gray-blue)] hover:text-white light:text-[var(--gray-70)] rounded-lg shadow-md py-3 transition-all">
                   {d.children.map((ch, j) => (
                     <ActiveLink
                       key={`${ch.label}-${j}`}
                       href={ch.link ?? "#"}
                       className="flex items-center px-4 py-2 hover:bg-[var(--ocean-blue)]"
-                      onClick={handleLinkClick}
+                      onClick={() => handleLinkClick(i)}
                     >
                       {ch.iconImage && <ch.iconImage className="text-xl" />}
                       <span className="ml-3 whitespace-nowrap">{ch.label}</span>
@@ -165,6 +221,8 @@ export default function Navbar() {
               )}
             </div>
           ))}
+
+          <Runner activeIndex={activeIndex} navRef={navRef} />
         </div>
 
         <div className="flex flex-1 justify-end items-center">
@@ -207,7 +265,7 @@ export default function Navbar() {
           </div>
         </div>
 
-        {isSideMenuOpen && <MobileNav closeSideMenu={handleLinkClick} />}
+        {isSideMenuOpen && <MobileNav closeSideMenu={handleMobileLinkClick} />}
       </div>
     </div>
   );

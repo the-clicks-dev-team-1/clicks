@@ -104,7 +104,7 @@ const PPC: FC = () => {
               ads, and ensuring that your budget is spent efficiently.
             </p>
             <h2 className="text-lg md:text-xl font-semibold mb-6 text-[var(--light-blue)] light:text-[var(--gray-70)]">
-              Why PPC Matters?
+              Why does PPC Matter?
             </h2>
             <div className="flex flex-col sm:flex-row md:flex-col gap-2 xl:flex-row justify-between items-center mb-6 text-lg text-[var(--gray-blue)] light:text-[var(--gray-40)]">
               <div className="w-full inline-block bg-gradient-to-r from-sky-400 to-purple-500 p-[1px] rounded-full">
@@ -130,7 +130,7 @@ const PPC: FC = () => {
           </div>
           <div className="relative w-full h-64 md:h-96">
             <Image
-              src="/images/seo-hero.jpg"
+              src="/images/ppc.jpg"
               alt="Web Development"
               layout="fill"
               objectFit="cover"

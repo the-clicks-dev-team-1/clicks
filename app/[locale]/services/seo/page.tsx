@@ -134,7 +134,7 @@ const SEO: FC = () => {
           <div className="relative w-full h-64 md:h-96">
             <Image
               src="/images/seo-hero.jpg"
-              alt="Web Development"
+              alt="seo explanation"
               layout="fill"
               objectFit="cover"
               className="rounded-lg"

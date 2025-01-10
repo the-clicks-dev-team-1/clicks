@@ -121,7 +121,7 @@ const StrategyDevelopment: FC = () => {
               of achieving your goals.
             </p>
             <h2 className="text-lg md:text-xl font-semibold mb-6 text-[var(--light-blue)] light:text-[var(--gray-70)]">
-              Why Strategy Development Matters?
+              Why does Strategy Development Matter?
             </h2>
             <div className="flex flex-col sm:flex-row md:flex-col gap-2 xl:flex-row justify-between items-center mb-6 text-lg text-[var(--gray-blue)] light:text-[var(--gray-40)]">
               <div className="w-full inline-block bg-gradient-to-r from-sky-400 to-purple-500 p-[1px] rounded-full">
@@ -148,7 +148,7 @@ const StrategyDevelopment: FC = () => {
           <div className="relative w-full h-64 md:h-96">
             <Image
               src="/images/stratdev.jpg"
-              alt="Web Development"
+              alt="Strategy Development"
               layout="fill"
               objectFit="cover"
               className="rounded-lg"
