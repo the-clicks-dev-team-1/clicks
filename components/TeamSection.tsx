@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const TeamSection = () => {
   return (
-    <div className="bg-[var(--bgnew)] py-20">
+    <div className="bg-[var(--bgnew)] py-32">
       <div className="text-center">
         <h2 className="mb-10 text-2xl sm:text-3xl md:text-4xl text-center bg-clip-text text-transparent bg-gradient-to-b from-sky-400 to bg-purple-500 bg-opacity-50">
           Meet Our Team

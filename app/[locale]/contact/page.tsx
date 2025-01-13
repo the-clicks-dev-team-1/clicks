@@ -16,8 +16,8 @@ const Contact: FC = () => {
       <Navbar />
 
       {/* Header section */}
-      <div className="bg-[var(--blue1)] light:bg-[var(--ice-blue)] #bg-gradient-to-b from-sky-400 to-purple-500 py-20 mb-32 text-center">
-        <h1 className="mt-10 text-3xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-sky-400 to bg-purple-500 bg-opacity-50">
+      <div className="bg-[var(--blue1)] light:bg-[var(--ice-blue)] pb-20 pt-32 mb-32 text-center">
+        <h1 className="my-10 text-3xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-sky-400 to bg-purple-500 bg-opacity-50">
           Contact Us
         </h1>
         <p className="mt-4 text-lg md:text-xl max-w-2xl mx-auto text-[var(--gray-blue)] light:text-[var(--gray-40)]">
@@ -31,7 +31,7 @@ const Contact: FC = () => {
 
       {/* Map Section */}
       <div className="bg-[var(--bgnew)] pb-32">
-        <div className="max-w-7xl mx-auto px-4 md:px-8 lg:px-12">
+        <div className="container md:px-10">
           <h2 className="text-2xl md:text-3xl font-semibold mb-10 text-center text-[var(--light-blue)] light:text-[var(--gray-70)]">
             Our Location
           </h2>

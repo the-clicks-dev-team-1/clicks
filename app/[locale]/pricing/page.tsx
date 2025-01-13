@@ -13,6 +13,7 @@ import {
 import ContactBlock from "../../../components/contactBlock";
 import Image from "next/image";
 import { Link } from "@/i18n/routing";
+import AddOnServices from "@/components/AddOnServices";
 
 const plans = [
   {
@@ -266,7 +267,7 @@ const Pricing = () => {
             Simple Pricing <br /> Choose your plan
           </h1>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 px-4 md:p-10 #md:w-4/5 #2xl:w-3/4 max-w-7xl pb-10 md:pb-20 items-center">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 px-4 md:p-10 #md:w-4/5 #2xl:w-3/4 max-w-7xl mb-32 items-center">
           {plans.map((plan, index) => (
             <div
               key={plan.name}
@@ -333,7 +334,7 @@ const Pricing = () => {
           ))}
         </div>
       </div>
-      <div className="flex items-center justify-center flex-col">
+      <div className="flex items-center justify-center flex-col mb-32">
         <div className="text-4xl md:text-5xl pb-8 md:pb-20 text-slate-300 px-6 text-center bg-clip-text text-transparent bg-gradient-to-b from-sky-400 to bg-purple-500 bg-opacity-50">
           Marketing Service Suite <br /> Choose your services
         </div>
@@ -402,37 +403,13 @@ const Pricing = () => {
         {visibleOffers < offers.length && (
           <button
             onClick={handleLoadMore}
-            className="mt-6 px-4 py-2 bg-[var(--ocean-blue)] #bg-gradient-to-r from-sky-400 to-purple-500 text-white rounded-lg"
+            className="mt-10 px-4 py-2 bg-[var(--ocean-blue)] #bg-gradient-to-r from-sky-400 to-purple-500 text-white rounded-lg"
           >
             Load More
           </button>
         )}
       </div>
-      <div className="mt-10 md:py-10 bg-transparent w-full rounded-3xl">
-        <div className="p-6 md:p-10">
-          <div className="font-bold text-2xl md:text-3xl text-gradient bg-gradient-to-b from-sky-400 to bg-purple-500 bg-opacity-50 bg-clip-text text-transparent">
-            Add-On Services
-          </div>
-          <Accordion type="single" collapsible>
-            <AccordionItem value="item-1">
-              <AccordionTrigger>Video Production</AccordionTrigger>
-              <AccordionContent>$1,000 - $5,000 per video</AccordionContent>
-            </AccordionItem>
-            <AccordionItem value="item-2">
-              <AccordionTrigger>Influencer Marketing</AccordionTrigger>
-              <AccordionContent>$500 - $10,000 per campaign</AccordionContent>
-            </AccordionItem>
-            <AccordionItem value="item-3">
-              <AccordionTrigger>Local SEO</AccordionTrigger>
-              <AccordionContent>$500 - $2,000 per month</AccordionContent>
-            </AccordionItem>
-            <AccordionItem value="item-4">
-              <AccordionTrigger>Reputation Management</AccordionTrigger>
-              <AccordionContent>$1,000 - $5,000 per month</AccordionContent>
-            </AccordionItem>
-          </Accordion>
-        </div>
-      </div>
+      <AddOnServices />
       <ContactBlock />
       <Footer />
     </div>

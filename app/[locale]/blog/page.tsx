@@ -87,7 +87,7 @@ const Blog: FC = () => {
 
       {/* Header Section */}
       <div className="pt-32 bg-[var(--blue1)] light:bg-[var(--ice-blue)] #bg-gradient-to-b from-sky-400 to-purple-500 py-20 text-center">
-        <h1 className="pb-4 text-4xl md:text-6xl bg-clip-text text-transparent bg-gradient-to-r from-sky-400 to bg-purple-500 bg-opacity-50">
+        <h1 className="py-4 text-4xl md:text-6xl bg-clip-text text-transparent bg-gradient-to-r from-sky-400 to bg-purple-500 bg-opacity-50">
           The Clicks Blog
         </h1>
         <p className="mt-4 text-lg md:text-xl max-w-2xl mx-auto text-[var(--gray-blue)] light:text-[var(--gray-40)]">
@@ -97,7 +97,7 @@ const Blog: FC = () => {
       </div>
 
       {/* Categories Filter Section */}
-      <div className="mt-32 px-4 md:px-20 lg:px-40 max-w-7xl mx-auto text-center">
+      <div className="container md:px-10 mt-32 text-center">
         <div className="mb-5 flex justify-center">
           <input
             type="text"
@@ -155,11 +155,11 @@ const Blog: FC = () => {
       </div>
 
       {/* Featured Posts Section */}
-      <div className="my-32 px-4 md:px-20 lg:px-40 max-w-7xl mx-auto">
+      <div className="my-32 container md:px-10 ">
         <h2 className="text-3xl font-semibold mb-10 text-center text-[var(--light-blue)] light:text-[var(--gray-70)]">
           Featured Posts
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
           {posts.slice(0, visiblePosts).map((post) => (
             <div
               key={post.sys.id}

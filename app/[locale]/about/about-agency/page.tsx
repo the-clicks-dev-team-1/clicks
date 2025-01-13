@@ -20,13 +20,22 @@ const AboutAgency: FC = () => {
       <Navbar />
 
       {/* Main content wrapper */}
-      <div className="px-4 py-8 max-w-7xl mx-auto">
+      <div className="container md:px-10">
         {/* Header Section */}
-        <div className="bg-[var(--bgnew)] py-20">
-          <div className="flex flex-col mt-10 md:flex-row items-center justify-center">
-            <div className="w-full md:w-1/2 px-4 md:px-16 text-center md:text-left">
-              <div className="text-2xl md:text-4xl bg-clip-text text-transparent bg-gradient-to-b from-sky-400 to bg-purple-500 bg-opacity-50">
+        <div className="bg-[var(--bgnew)] py-32">
+          <div className="flex flex-col gap-8 mt-10 md:flex-row items-center justify-center">
+            <div className="w-full md:w-1/2 flex-1 text-center md:text-left">
+              <div className="mb-10 text-3xl md:text-4xl bg-clip-text text-transparent bg-gradient-to-b from-sky-400 to bg-purple-500 bg-opacity-50">
                 <h1>About The Clicks</h1>
+              </div>
+              <div className="w-full md:hidden overflow-hidden flex-1 rounded-2xl">
+                <Image
+                  src="/images/office.jpeg"
+                  alt="Marketing Wave"
+                  width={600}
+                  height={400}
+                  className="object-cover rounded-2xl w-full"
+                />
               </div>
               <p className="mt-4 text-sm md:text-m font-normal text-[var(--gray-blue)] light:text-[var(--gray-40)] text-justify">
                 At The Clicks, we don&apos;t just focus on enhancing your
@@ -43,6 +52,7 @@ const AboutAgency: FC = () => {
                 agency—we&apos;re a community, fostering a culture and mindset
                 that empowers both our team and our clients to thrive.
               </p>
+
               <div className="mt-6 md:mt-8 flex justify-center md:justify-start relative z-20">
                 <Link
                   href="/contact"
@@ -52,46 +62,39 @@ const AboutAgency: FC = () => {
                 </Link>
               </div>
             </div>
-            <div className="w-full md:w-1/2 flex justify-center items-center mt-4 md:mt-0 relative">
-              <div className="absolute inset-0 flex justify-center items-center">
-                {/* <Image
-                  src="/images/proposal.png"
-                  alt="Background Image"
-                  layout="intrinsic"
-                  width={500}
-                  height={500}
-                  objectFit="cover"
-                  className="rounded-2xl"
-                /> */}
-              </div>
+
+            <div className="hidden md:block w-full md:w-1/2 overflow-hidden flex-1 rounded-2xl">
               <Image
                 src="/images/office.jpeg"
                 alt="Marketing Wave"
-                width={500}
-                height={500}
-                className="rounded-2xl object-cover relative z-10"
+                width={600}
+                height={400}
+                className="object-cover rounded-2xl w-full"
               />
             </div>
           </div>
         </div>
 
         {/* The Clicks Culture Section */}
-        <div className="bg-[var(--bgnew)] text-[var(--text)] py-20">
+        <div className="bg-[var(--bgnew)] text-[var(--text)] mb-32">
           {/* Culture Items */}
           <div className="space-y-12">
             {/* Culture Item 1 */}
             <div className="flex flex-col md:flex-row items-center gap-8">
+              <h2 className="md:hidden text-2xl sm:text-3xl md:text-4xl place-self-start bg-clip-text text-transparent bg-gradient-to-b from-sky-400 to bg-purple-500 bg-opacity-50">
+                The Clicks Culture
+              </h2>
               <div className="w-full md:w-1/2">
                 <Image
                   src="/images/standup.jpeg"
                   alt="Culture Image 1"
                   width={600}
                   height={400}
-                  className="rounded-2xl"
+                  className="object-cover rounded-2xl w-full"
                 />
               </div>
-              <div className="w-full md:w-1/2 text-left #md:text-right p-4 md:p-6 text-[var(--light-blue)] light:text-[var(--gray-70)]">
-                <h2 className="text-2xl sm:text-3xl md:text-4xl pb-4 bg-clip-text text-transparent bg-gradient-to-b from-sky-400 to bg-purple-500 bg-opacity-50">
+              <div className="w-full md:w-1/2 text-left text-[var(--light-blue)] light:text-[var(--gray-70)]">
+                <h2 className="hidden md:block mb-10 text-2xl sm:text-3xl md:text-4xl bg-clip-text text-transparent bg-gradient-to-b from-sky-400 to bg-purple-500 bg-opacity-50">
                   The Clicks Culture
                 </h2>
                 <h3 className="text-lg sm:text-xl font-semibold mb-2">
@@ -122,7 +125,7 @@ const AboutAgency: FC = () => {
 
             {/* Culture Item 2 */}
             <div className="flex flex-col md:flex-row items-center gap-8 text-[var(--light-blue)] light:text-[var(--gray-70)]">
-              <div className="w-full md:w-1/2 text-left p-4 md:p-6 order-2 md:order-1">
+              <div className="w-full md:w-1/2 text-left order-2 md:order-1">
                 <h3 className="text-lg sm:text-xl font-semibold mb-2">
                   Our Team
                 </h3>
@@ -154,7 +157,7 @@ const AboutAgency: FC = () => {
                   alt="Culture Image 2"
                   width={600}
                   height={400}
-                  className="rounded-2xl"
+                  className="object-cover rounded-2xl w-full"
                 />
               </div>
             </div>
@@ -167,10 +170,10 @@ const AboutAgency: FC = () => {
                   alt="Culture Image 3"
                   width={600}
                   height={400}
-                  className="rounded-2xl"
+                  className="object-cover rounded-2xl w-full"
                 />
               </div>
-              <div className="w-full md:w-1/2 text-left p-4 md:p-6">
+              <div className="w-full md:w-1/2 text-left">
                 <h3 className="text-lg sm:text-xl font-semibold mb-2">
                   Work Process
                 </h3>
@@ -216,9 +219,8 @@ const AboutAgency: FC = () => {
             loading="lazy"
           />
         </div> */}
-
-        <ContactBlock />
       </div>
+      <ContactBlock />
       <Footer />
     </div>
   );

@@ -8,6 +8,7 @@ import Block2 from "../../components/block2";
 import Steps from "../../components/steps";
 import ContactBlock from "../../components/contactBlock";
 import { Link } from "@/i18n/routing";
+import { TheWayWeWork } from "@/components/TheWayWeWork";
 
 export default function Home() {
   return (
@@ -41,7 +42,8 @@ export default function Home() {
           <Block2 />
           {/* <Block3 /> */}
           <Services />
-          <Steps />
+          {/* <Steps /> */}
+          <TheWayWeWork />
           <Reviews />
           <ContactBlock />
           <Footer />

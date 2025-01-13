@@ -71,25 +71,25 @@ const JobDetail: FC<JobProps> = ({ params }) => {
     <div className="bg-[var(--bgnew)] text-[var(--text)]">
       <Navbar />
 
-      <div className="py-20 px-4 md:px-20 lg:px-40 max-w-7xl mx-auto">
-        <h1 className="text-4xl mt-10 md:text-6xl font-bold text-[var(--light-blue)] light:text-[var(--gray-70)]">
+      <div className="py-20 pt-32 container md:px-10">
+        <h1 className="text-4xl my-10 md:text-6xl font-bold text-[var(--light-blue)] light:text-[var(--gray-70)]">
           {title}
         </h1>
 
         {image[0]?.url && (
-          <div className="mt-8">
+          <div className="mt-8 flex justify-center">
             <Image
               src={`${image[0].url}`}
               alt={title}
               width={800}
               height={400}
-              className="object-cover w-full h-auto rounded-lg"
+              className="object-cover rounded-xl"
             />
           </div>
         )}
 
         {shortDescription && (
-          <div className="mt-4 text-[var(--gray-blue)] light:text-[var(--gray-40)]">
+          <div className="mt-10 text-[var(--gray-blue)] light:text-[var(--gray-40)]">
             <p>{shortDescription}</p>
           </div>
         )}

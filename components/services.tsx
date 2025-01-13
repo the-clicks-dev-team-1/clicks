@@ -5,7 +5,7 @@ import { CardHoverEffectDemo } from "../app/snippets/card-hover-effect-snippet";
 
 const Services = () => {
   return (
-    <div id="services" className="max-w-5xl mx-auto mt-32 px-4 md:px-10">
+    <div id="services" className="max-w-5xl mx-auto mt-32 mb-32 px-4 md:px-10">
       <div className="flex md:flex md:flex-row flex-col-reverse justify-center">
         <div className="flex flex-col justify-center items-center md:w-2/3">
           <div

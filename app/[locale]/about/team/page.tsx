@@ -21,11 +21,11 @@ const Team: FC = () => {
       <Navbar />
 
       {/* Main content wrapper */}
-      <div className="px-4 py-8 max-w-7xl mx-auto">
+      <div className="container md:px-10 pt-32">
         {/* Header Section */}
-        <div className="bg-[var(--bgnew)] py-20">
-          <div className="flex flex-col mt-10 md:flex-row items-center justify-center">
-            <div className="w-full md:w-1/2 px-4 md:px-16 text-center md:text-left">
+        <div className="bg-[var(--bgnew)] pt-10">
+          <div className="flex flex-col gap-8 mt-10 md:flex-row items-center justify-center">
+            <div className="w-full md:w-1/2 text-center md:text-left">
               <div className="text-2xl md:text-4xl bg-clip-text text-transparent bg-gradient-to-r from-sky-400 to bg-purple-500 bg-opacity-50">
                 Meet the Clickers Driving Success for Our Clients.
               </div>
@@ -69,13 +69,13 @@ const Team: FC = () => {
                   width={600}
                   height={600}
                   objectFit="cover"
-                  className="rounded-2xl"
+                  className="object-cover rounded-2xl w-full"
                 />
               </div>
               <Image
                 src="/images/happy-team.jpg"
                 alt="Happy Team"
-                width={400}
+                width={500}
                 height={500}
                 className="rounded-2xl object-cover relative z-10"
               />
@@ -95,9 +95,10 @@ const Team: FC = () => {
             Our Current Job Openings
           </Link>
         </div>
-
-        <ContactBlock />
       </div>
+
+      <ContactBlock />
+
       <Footer />
     </div>
   );
