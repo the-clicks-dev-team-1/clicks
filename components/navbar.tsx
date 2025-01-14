@@ -116,9 +116,6 @@ export default function Navbar() {
   const navRef = useRef<HTMLDivElement>();
   const pathname = usePathname();
 
-  console.log("pathname", pathname);
-  console.log("pathname11", "/" + pathname.split("/")[1]);
-
   useEffect(() => {
     setMounted(true);
   }, []);
@@ -129,7 +126,6 @@ export default function Navbar() {
       // Compare the second segment of the path
       return item.link!.split("/")[1] === pathname.split("/")[1];
     });
-    console.log("activeItemIndex", activeItemIndex);
     setActiveIndex(activeItemIndex !== -1 ? activeItemIndex : 0); // Default to 0 if not found
   }, [pathname]);
 

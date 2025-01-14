@@ -79,8 +79,8 @@ const SliderOne = () => {
             <svg
               version="1.0"
               xmlns="http://www.w3.org/2000/svg"
-              width="auto"
-              height="auto"
+              width="100%"
+              height="100%"
               viewBox="0 0 300.000000 200.000000"
               preserveAspectRatio="xMidYMid meet"
             >
@@ -172,8 +172,8 @@ l-40 0 0 -165 0 -165 40 0 40 0 0 113 c0 106 2 115 23 135 27 25 65 28 93 8
             <svg
               version="1.0"
               xmlns="http://www.w3.org/2000/svg"
-              width="auto"
-              height="auto"
+              width="100%"
+              height="100%"
               viewBox="0 0 300.000000 200.000000"
               preserveAspectRatio="xMidYMid meet"
             >
@@ -242,8 +242,8 @@ c-70 0 -76 12 -76 146 l0 114 48 0 c68 0 74 7 70 76 l-3 59 -57 3 -58 3 0 74
             <svg
               version="1.0"
               xmlns="http://www.w3.org/2000/svg"
-              width="auto"
-              height="auto"
+              width="100%"
+              height="100%"
               viewBox="0 0 900.000000 600.000000"
               preserveAspectRatio="xMidYMid meet"
             >
@@ -390,8 +390,8 @@ c1 244 -2 446 -5 449 -10 10 -179 8 -193 -2z m-100 -394 c56 -24 89 -69 95
             <svg
               version="1.0"
               xmlns="http://www.w3.org/2000/svg"
-              width="auto"
-              height="auto"
+              width="100%"
+              height="100%"
               viewBox="0 0 300.000000 200.000000"
               preserveAspectRatio="xMidYMid meet"
             >
@@ -463,8 +463,8 @@ c1 244 -2 446 -5 449 -10 10 -179 8 -193 -2z m-100 -394 c56 -24 89 -69 95
             <svg
               version="1.0"
               xmlns="http://www.w3.org/2000/svg"
-              width="auto"
-              height="auto"
+              width="100%"
+              height="100%"
               viewBox="0 0 300.000000 200.000000"
               preserveAspectRatio="xMidYMid meet"
             >
@@ -581,8 +581,8 @@ l-26 -30 7 33 c4 18 7 47 8 63 0 28 -3 30 -37 33 l-38 3 0 -155z"
             <svg
               version="1.0"
               xmlns="http://www.w3.org/2000/svg"
-              width="auto"
-              height="auto"
+              width="100%"
+              height="100%"
               viewBox="0 0 300.000000 200.000000"
               preserveAspectRatio="xMidYMid meet"
             >
@@ -647,8 +647,8 @@ l-71 0 0 84 0 84 -85 0 -85 0 0 -329z m270 -6 c16 -8 34 -24 40 -34 13 -26 13
             <svg
               version="1.0"
               xmlns="http://www.w3.org/2000/svg"
-              width="auto"
-              height="auto"
+              width="100%"
+              height="100%"
               viewBox="0 0 900.000000 600.000000"
               preserveAspectRatio="xMidYMid meet"
             >
@@ -790,8 +790,8 @@ m316 -302 c130 -58 203 -216 171 -371 -21 -98 -78 -171 -177 -224 -51 -27
             <svg
               version="1.0"
               xmlns="http://www.w3.org/2000/svg"
-              width="auto"
-              height="auto"
+              width="100%"
+              height="100%"
               viewBox="0 0 300.000000 200.000000"
               preserveAspectRatio="xMidYMid meet"
             >
