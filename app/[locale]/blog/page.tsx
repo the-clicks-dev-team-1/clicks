@@ -1,6 +1,6 @@
 "use client";
 
-import { FC, useEffect, useState, useRef } from "react";
+import { FC, useEffect, useState, useRef, useCallback } from "react";
 import Navbar from "@/components/navbar";
 import Image from "next/image";
 import Footer from "@/components/footer";
@@ -15,7 +15,7 @@ const Blog: FC = () => {
   const [categories, setCategories] = useState<any[]>([]);
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
   const [searchTerm, setSearchTerm] = useState("");
-  const [visiblePosts, setVisiblePosts] = useState(6);
+  const [postsToShow, setPostsToShow] = useState(6);
 
   const carouselRef = useRef<HTMLDivElement>(null);
 
@@ -54,32 +54,42 @@ const Blog: FC = () => {
     fetchCategories();
   }, []);
 
-  const handleCategoryChange = (categoryId: string | null) => {
-    if (selectedCategory === categoryId) {
-      setSelectedCategory(null); // Отменить выбор категории
-    } else {
-      setSelectedCategory(categoryId); // Выбрать новую категорию
-    }
-    // if (carouselRef.current) {
-    //   carouselRef.current.scrollLeft = 0; // Сбрасываем позицию прокрутки
-    // }
-  };
+  const handleCategoryChange = useCallback(
+    (categoryId: string | null) => {
+      if (selectedCategory === categoryId) {
+        setSelectedCategory(null); // Отменить выбор категории
+      } else {
+        setSelectedCategory(categoryId); // Выбрать новую категорию
+      }
+      // if (carouselRef.current) {
+      //   carouselRef.current.scrollLeft = 0; // Сбрасываем позицию прокрутки
+      // }
+    },
+    [selectedCategory]
+  );
 
-  const scrollLeft = () => {
+  const scrollLeft = useCallback(() => {
     if (carouselRef.current) {
       carouselRef.current.scrollLeft -= 200; // Прокрутка влево на 200px
     }
-  };
+  }, []);
 
-  const scrollRight = () => {
+  const scrollRight = useCallback(() => {
     if (carouselRef.current) {
       carouselRef.current.scrollLeft += 200; // Прокрутка вправо на 200px
     }
-  };
+  }, []);
 
-  const handleShowMorePosts = () => {
-    setVisiblePosts((prev) => prev + 6);
-  };
+  const handleShowMorePosts = useCallback(() => {
+    setPostsToShow((prev) => prev + 6);
+  }, []);
+
+  // Filter posts based on the search term
+  let visiblePosts = [...posts];
+
+  const filteredPosts = visiblePosts.filter((post) =>
+    post.fields.title.toLowerCase().includes(searchTerm.toLowerCase())
+  );
 
   return (
     <div className="bg-[var(--bgnew)] text-[var(--text)]">
@@ -102,7 +112,7 @@ const Blog: FC = () => {
           <input
             type="text"
             className="w-1/2 px-4 py-2 rounded-lg light:border light:border-[var(--gray-40)]"
-            placeholder="Search categories..."
+            placeholder="Search by post title..."
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
           />
@@ -160,7 +170,7 @@ const Blog: FC = () => {
           Featured Posts
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-          {posts.slice(0, visiblePosts).map((post) => (
+          {filteredPosts.slice(0, postsToShow).map((post) => (
             <div
               key={post.sys.id}
               className="relative bg-[var(--blue2)] light:bg-[var(--light-blue)] rounded-lg overflow-hidden shadow-lg"
@@ -203,7 +213,7 @@ const Blog: FC = () => {
             </div>
           ))}
         </div>
-        {visiblePosts < posts.length && (
+        {postsToShow < filteredPosts.length && (
           <div className="text-center mt-10">
             <button
               onClick={handleShowMorePosts}
