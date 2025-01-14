@@ -6,7 +6,7 @@ const Reviews = () => {
   return (
     <div className="full-w">
       <div
-        className="text-4xl mt-24 pb-5 md:text-7xl px-6 text-center
+        className="text-4xl mt-10 pb-5 md:text-7xl px-6 text-center
             bg-clip-text text-transparent 
             bg-gradient-to-b from-sky-400 
             to bg-purple-500 bg-opacity-50"
