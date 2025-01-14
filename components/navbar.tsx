@@ -22,7 +22,7 @@ import ActiveLink from "./activelink";
 import { useTheme } from "next-themes";
 import LocaleSwitcher from "./LocaleSwitcher";
 import Logo from "./Logo";
-import { usePathname, useRouter } from "@/i18n/routing";
+import { usePathname } from "@/i18n/routing";
 import Runner from "./Runner";
 
 type NavItem = {
@@ -183,7 +183,7 @@ export default function Navbar() {
 
   return (
     <div className="relative z-50 bg-black">
-      <div className="p-6 md:p-10 flex gap-2 items-center justify-between text-white fixed w-full top-0 h-24">
+      <div className="p-6 md:p-10 flex gap-2 items-center justify-between text-white fixed w-full top-0 h-24 backdrop-blur-lg">
         <div className="flex flex-1 justify-start items-center">
           <Logo />
         </div>

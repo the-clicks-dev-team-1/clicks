@@ -61,7 +61,7 @@ export function TheWayWeWork() {
   ];
 
   return (
-    <div className="container mb-32 md:px-10">
+    <div className="container mb-20 md:mb-32 md:px-10">
       <div
         className="text-3xl md:text-7xl text-gradient bg-gradient-to-b from-sky-400 
             to bg-purple-500 bg-opacity-50 bg-clip-text text-transparent #text-center"

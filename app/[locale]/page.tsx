@@ -18,7 +18,7 @@ export default function Home() {
         className="hidden md:flex md:left-80 md:-top-75"
         fill="white"
       /> */}
-      <div className="container md:px-10 relative z-10 w-full pt-32 mb-32 md:pt-40 #light:bg-[var(--ice-blue)]">
+      <div className="container md:px-10 relative z-10 w-full pt-32 mb-20 md:mb-32">
         <h1 className="mb-4 text-4xl md:text-7xl pb-6 text-center bg-clip-text text-transparent bg-gradient-to-b from-sky-400 to bg-purple-500 bg-opacity-50">
           Transform your business <br /> with artificial intelligence
         </h1>

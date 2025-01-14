@@ -61,9 +61,9 @@ const SliderOne = () => {
   }
 
   return (
-    <div className="mb-32">
+    <div className="mb-20 md:mb-32">
       <div className="container md:px-10">
-        <p className="px-10 py-4 text-[var(--gray-blue)] light:text-[var(--gray-70)]">
+        <p className="py-4 text-[var(--gray-blue)] light:text-[var(--gray-70)]">
           Our partners:
         </p>
       </div>
