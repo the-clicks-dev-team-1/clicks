@@ -18,13 +18,13 @@ const Block: React.FC = () => {
           enhancing profitability.
         </p>
       </div>
-      <div className="md:w-1/2 h-[450px] w-full flex justify-center items-center pb-5 relative">
+      <div className="1hidden 1md:flex md:w-1/2 h-full w-full flex justify-center items-center pb-5 relative flex justify-center py-5">
         <Image
           src="/images/wave.png"
           alt="Marketing Wave"
           width={521}
           height={640}
-          className="max-w-full h-auto min-h-20 object-contain absolute md:right-0"
+          className="max-w-full h-auto"
         />
       </div>
     </div>
