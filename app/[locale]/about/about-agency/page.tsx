@@ -35,6 +35,7 @@ const AboutAgency: FC = () => {
                   width={600}
                   height={400}
                   className="object-cover rounded-2xl w-full"
+                  priority
                 />
               </div>
               <p className="mt-4 text-sm md:text-m font-normal text-[var(--gray-blue)] light:text-[var(--gray-40)] text-justify">
@@ -70,6 +71,7 @@ const AboutAgency: FC = () => {
                 width={600}
                 height={400}
                 className="object-cover rounded-2xl w-full"
+                priority
               />
             </div>
           </div>

@@ -78,6 +78,7 @@ const Team: FC = () => {
                 width={500}
                 height={500}
                 className="rounded-2xl object-cover relative z-10"
+                priority
               />
             </div>
           </div>

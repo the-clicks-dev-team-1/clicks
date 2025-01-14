@@ -84,6 +84,7 @@ const JobDetail: FC<JobProps> = ({ params }) => {
               width={800}
               height={400}
               className="object-cover rounded-xl"
+              priority
             />
           </div>
         )}
