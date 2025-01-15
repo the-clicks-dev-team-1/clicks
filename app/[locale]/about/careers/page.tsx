@@ -30,7 +30,7 @@ const Careers: FC = async () => {
     <div className="bg-[var(--bgnew)] text-[var(--text)]">
       <Navbar />
 
-      <div className="bg-[var(--blue1)] light:bg-[var(--ice-blue)] pb-20 mb-32 pt-32 text-center">
+      <div className="bg-[var(--blue1)] light:bg-[var(--ice-blue)] pb-20 mb-32 pt-32  text-center">
         <h1 className="text-4xl my-10 md:text-6xl font-normal bg-clip-text text-transparent bg-gradient-to-r from-sky-400 to bg-purple-500 bg-opacity-50">
           Join Our Team
         </h1>

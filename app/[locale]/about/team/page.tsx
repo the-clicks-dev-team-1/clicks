@@ -1,7 +1,6 @@
 import { FC } from "react";
 import Navbar from "@/components/navbar";
 import Image from "next/image";
-import TextBlock from "@/components/text-block";
 import Footer from "@/components/footer";
 import Block4 from "@/components/block4";
 import ContactBlock from "@/components/contactBlock";

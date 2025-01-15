@@ -111,7 +111,7 @@ const Blog: FC = () => {
         <div className="mb-5 flex justify-center">
           <input
             type="text"
-            className="w-1/2 px-4 py-2 rounded-lg light:border light:border-[var(--gray-40)]"
+            className="w-3/4 px-4 py-2 rounded-lg light:border light:border-[var(--gray-40)]"
             placeholder="Search by post title..."
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}

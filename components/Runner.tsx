@@ -44,11 +44,11 @@ export default function Runner({ activeIndex, navRef }: RunnerProps) {
       <div
         className="absolute bg-white light:bg-[var(--ocean-blue)] rounded-full #transition-all #duration-300"
         style={{
-          top: `calc(100% + 4px)`, // Glow circle slightly below the text
+          top: `calc(100% + 7px)`, // Glow circle slightly below the text
           left: `${lineStyles.left}px`,
-          width: "12px",
-          height: "12px",
-          boxShadow: "0 0 10px 4px var(--runner-shadow)",
+          width: "8px",
+          height: "8px",
+          boxShadow: "0 0 10px 2px var(--runner-shadow)",
         }}
       ></div>
 
