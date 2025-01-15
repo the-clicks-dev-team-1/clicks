@@ -22,7 +22,7 @@ const AboutAgency: FC = () => {
       {/* Main content wrapper */}
       <div className="container md:px-10">
         {/* Header Section */}
-        <div className="bg-[var(--bgnew)] py-32">
+        <div className="bg-[var(--bgnew)] py-32 md:pt-40">
           <div className="flex flex-col gap-8 mt-10 md:flex-row items-center justify-center">
             <div className="w-full md:w-1/2 flex-1 text-center md:text-left">
               <div className="mb-10 text-3xl md:text-4xl bg-clip-text text-transparent bg-gradient-to-b from-sky-400 to bg-purple-500 bg-opacity-50">
