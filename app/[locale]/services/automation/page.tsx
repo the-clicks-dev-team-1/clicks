@@ -15,42 +15,42 @@ export const metadata: Metadata = {
 const servicesItems = [
   {
     count: "01",
-    image: "/images/group1.png",
+    image: "/images/Group1.png",
     title: "Automation Strategy Development",
     description:
       "We help you develop a tailored marketing automation strategy that aligns with your business goals and maximizes the impact of your marketing efforts.",
   },
   {
     count: "02",
-    image: "/images/group3.png",
+    image: "/images/Group3.png",
     title: "Email Automation",
     description:
       "We set up automated email campaigns that nurture leads, re-engage customers, and drive conversions with personalized messaging.",
   },
   {
     count: "03",
-    image: "/images/group4.png",
+    image: "/images/Group4.png",
     title: "Lead Scoring and Nurturing",
     description:
       "Our lead scoring and nurturing services ensure that your sales team focuses on the most qualified leads, improving conversion rates.",
   },
   {
     count: "04",
-    image: "/images/group5.png",
+    image: "/images/Group5.png",
     title: "CRM Integration",
     description:
       "We integrate your marketing automation tools with your CRM to ensure seamless data flow and better alignment between sales and marketing.",
   },
   {
     count: "05",
-    image: "/images/group6.png",
+    image: "/images/Group6.png",
     title: "Social Media Automation",
     description:
       " We automate your social media posting, engagement, and monitoring to ensure consistent activity and maximize your social presence.",
   },
   {
     count: "06",
-    image: "/images/group7.png",
+    image: "/images/Group7.png",
     title: "Analytics and Reporting",
     description:
       "Our detailed reports and analytics help you track the performance of your automated campaigns and make data-driven improvements.",

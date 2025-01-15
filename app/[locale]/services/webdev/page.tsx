@@ -15,42 +15,42 @@ export const metadata: Metadata = {
 const servicesItems = [
   {
     count: "01",
-    image: "/images/group1.png",
+    image: "/images/Group1.png",
     title: "Custom Website Development",
     description:
       "Tailored website solutions designed to meet your business requirements, built with the latest web technologies.",
   },
   {
     count: "02",
-    image: "/images/group3.png",
+    image: "/images/Group3.png",
     title: "eCommerce Solutions",
     description:
       "We create powerful eCommerce platforms that provide an intuitive shopping experience, helping you increase sales and grow your business.",
   },
   {
     count: "03",
-    image: "/images/group4.png",
+    image: "/images/Group4.png",
     title: "Content Management Systems (CMS)",
     description:
       " Manage your website content easily with our custom CMS solutions, designed to be user-friendly and scalable.",
   },
   {
     count: "04",
-    image: "/images/group5.png",
+    image: "/images/Group5.png",
     title: "Responsive Web Design",
     description:
       "We ensure your website looks great on all devices, providing a seamless experience for users on mobile, tablet, and desktop.",
   },
   {
     count: "05",
-    image: "/images/group6.png",
+    image: "/images/Group6.png",
     title: "Web Application Development",
     description:
       "Custom web applications built to streamline your business processes and improve efficiency.",
   },
   {
     count: "06",
-    image: "/images/group7.png",
+    image: "/images/Group7.png",
     title: "SEO Optimization",
     description:
       "We build websites that are optimized for search engines, ensuring your business gets the visibility it deserves.",

@@ -15,42 +15,42 @@ export const metadata: Metadata = {
 const servicesItems = [
   {
     count: "01",
-    image: "/images/group1.png",
+    image: "/images/Group1.png",
     title: "Content Creation",
     description:
       "We create engaging and relevant content that resonates with your audience and drives engagement on social media.",
   },
   {
     count: "02",
-    image: "/images/group3.png",
+    image: "/images/Group3.png",
     title: "Social Media Management",
     description:
       "Our team manages your social media profiles, ensuring consistent activity and engagement with your audience.",
   },
   {
     count: "03",
-    image: "/images/group4.png",
+    image: "/images/Group4.png",
     title: "Paid Social Advertising",
     description:
       "We design and manage targeted ad campaigns on social media platforms to increase your reach and drive conversions.",
   },
   {
     count: "04",
-    image: "/images/group5.png",
+    image: "/images/Group5.png",
     title: "Community Management",
     description:
       "We help build and manage online communities around your brand, fostering engagement and loyalty.",
   },
   {
     count: "05",
-    image: "/images/group6.png",
+    image: "/images/Group6.png",
     title: "Social Media Audits",
     description:
       "We conduct comprehensive audits of your social media presence, providing insights and recommendations for improvement.",
   },
   {
     count: "06",
-    image: "/images/group7.png",
+    image: "/images/Group7.png",
     title: "Analytics & Reporting",
     description:
       "Our detailed analytics and reports help you understand the performance of your social media campaigns and make data-driven decisions.",

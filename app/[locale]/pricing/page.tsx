@@ -4,12 +4,6 @@ import { useState } from "react";
 import { PiCheckCircleFill } from "react-icons/pi";
 import Navbar from "@/components/navbar";
 import Footer from "../../../components/footer";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
 import ContactBlock from "../../../components/contactBlock";
 import Image from "next/image";
 import { Link } from "@/i18n/routing";

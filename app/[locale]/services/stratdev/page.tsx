@@ -15,42 +15,42 @@ export const metadata: Metadata = {
 const servicesItems = [
   {
     count: "01",
-    image: "/images/group1.png",
+    image: "/images/Group1.png",
     title: "Business Strategy",
     description:
       "We help you define your company's vision, mission, and long-term objectives, ensuring that your business strategy is aligned with your goals.",
   },
   {
     count: "02",
-    image: "/images/group3.png",
+    image: "/images/Group3.png",
     title: "Market Analysis",
     description:
       "Our market analysis services provide insights into your industry, competitors, and market trends, helping you make informed strategic decisions.",
   },
   {
     count: "03",
-    image: "/images/group4.png",
+    image: "/images/Group4.png",
     title: "Financial Planning",
     description:
       "We assist in developing financial plans that support your strategic goals, ensuring your business is financially prepared for growth.",
   },
   {
     count: "04",
-    image: "/images/group5.png",
+    image: "/images/Group5.png",
     title: "Risk Management",
     description:
       "We help identify potential risks and develop strategies to mitigate them, ensuring your business is resilient and prepared for challenges.",
   },
   {
     count: "05",
-    image: "/images/group6.png",
+    image: "/images/Group6.png",
     title: "Operational Strategy",
     description:
       "Our operational strategy services focus on improving efficiency and effectiveness, ensuring that your operations are aligned with your strategic goals.",
   },
   {
     count: "06",
-    image: "/images/group7.png",
+    image: "/images/Group7.png",
     title: "Performance Measurement",
     description:
       "We develop metrics and KPIs to track your progress, ensuring that your strategy is delivering the desired results.",

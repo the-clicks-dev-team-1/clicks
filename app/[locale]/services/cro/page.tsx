@@ -15,42 +15,42 @@ export const metadata: Metadata = {
 const servicesItems = [
   {
     count: "01",
-    image: "/images/group1.png",
+    image: "/images/Group1.png",
     title: "A/B Testing",
     description:
       "We conduct A/B testing to determine which variations of your website elements perform best, leading to higher conversions.",
   },
   {
     count: "02",
-    image: "/images/group3.png",
+    image: "/images/Group3.png",
     title: "User Behavior Analysis",
     description:
       "Our team analyzes user behavior on your website to identify barriers to conversion and areas for improvement.",
   },
   {
     count: "03",
-    image: "/images/group4.png",
+    image: "/images/Group4.png",
     title: "Conversion Funnel Optimization",
     description:
       "We optimize your conversion funnel to ensure that visitors move smoothly through the process and are more likely to convert.",
   },
   {
     count: "04",
-    image: "/images/group5.png",
+    image: "/images/Group5.png",
     title: "Landing Page Optimization",
     description:
       "Our team creates and optimizes landing pages that are designed to convert, ensuring that your traffic results in more leads and sales.",
   },
   {
     count: "05",
-    image: "/images/group6.png",
+    image: "/images/Group6.png",
     title: "Heatmaps & Analytics",
     description:
       " We use heatmaps and analytics tools to visualize user interactions on your site, helping us identify opportunities for improvement.",
   },
   {
     count: "06",
-    image: "/images/group7.png",
+    image: "/images/Group7.png",
     title: "Form Optimization",
     description:
       "We optimize forms on your website to reduce friction and increase the likelihood that visitors will complete them.",

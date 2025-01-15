@@ -15,42 +15,42 @@ export const metadata: Metadata = {
 const servicesItems = [
   {
     count: "01",
-    image: "/images/group1.png",
+    image: "/images/Group1.png",
     title: "Google Analytics Setup",
     description:
       "We set up and configure Google Analytics to track your website&apos;s performance, providing you with detailed insights into user behavior and traffic sources.",
   },
   {
     count: "02",
-    image: "/images/group3.png",
+    image: "/images/Group3.png",
     title: "Custom Dashboards",
     description:
       "Our team creates custom dashboards that provide you with the key metrics you need to monitor your campaigns and make data-driven decisions.",
   },
   {
     count: "03",
-    image: "/images/group4.png",
+    image: "/images/Group4.png",
     title: "Campaign Tracking",
     description:
       "We track the performance of your marketing campaigns across all channels, helping you understand which strategies are driving results.",
   },
   {
     count: "04",
-    image: "/images/group5.png",
+    image: "/images/Group5.png",
     title: "Conversion Tracking",
     description:
       "We set up conversion tracking to measure the effectiveness of your website and campaigns in converting visitors into customers.",
   },
   {
     count: "05",
-    image: "/images/group6.png",
+    image: "/images/Group6.png",
     title: "Regular Reporting",
     description:
       "We provide regular reports that detail the performance of your marketing efforts, offering insights and recommendations for improvement.",
   },
   {
     count: "06",
-    image: "/images/group7.png",
+    image: "/images/Group7.png",
     title: "Competitor Analysis",
     description:
       "Our competitor analysis services provide insights into your competitors' strategies, helping you stay ahead in your industry.",

@@ -15,42 +15,42 @@ export const metadata: Metadata = {
 const servicesItems = [
   {
     count: "01",
-    image: "/images/group1.png",
+    image: "/images/Group1.png",
     title: "Campaign Strategy",
     description:
       "We develop a comprehensive email marketing strategy tailored to your business goals and audience, ensuring your campaigns are effective.",
   },
   {
     count: "02",
-    image: "/images/group3.png",
+    image: "/images/Group3.png",
     title: "Email Design",
     description:
       "Our team creates visually appealing and responsive email designs that capture attention and drive action.",
   },
   {
     count: "03",
-    image: "/images/group4.png",
+    image: "/images/Group4.png",
     title: "List Management",
     description:
       "We manage your email lists, ensuring they are clean, segmented, and targeted to maximize engagement and deliverability.",
   },
   {
     count: "04",
-    image: "/images/group5.png",
+    image: "/images/Group5.png",
     title: "Automation",
     description:
       "We set up automated email workflows that nurture leads and drive conversions, freeing up your time while delivering results.",
   },
   {
     count: "05",
-    image: "/images/group6.png",
+    image: "/images/Group6.png",
     title: "Analytics & Reporting",
     description:
       "Our detailed analytics and reports give you insights into the performance of your campaigns, helping you make data-driven decisions.",
   },
   {
     count: "06",
-    image: "/images/group7.png",
+    image: "/images/Group7.png",
     title: "A/B Testing",
     description:
       "We conduct A/B testing on subject lines, content, and designs to optimize your emails for better performance and higher conversions.",

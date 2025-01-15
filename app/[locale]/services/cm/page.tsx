@@ -15,42 +15,42 @@ export const metadata: Metadata = {
 const servicesItems = [
   {
     count: "01",
-    image: "/images/group1.png",
+    image: "/images/Group1.png",
     title: "Content Strategy",
     description:
       " We develop a content strategy that aligns with your business goals, ensuring that every piece of content supports your overall marketing efforts.",
   },
   {
     count: "02",
-    image: "/images/group3.png",
+    image: "/images/Group3.png",
     title: "Content Creation",
     description:
       "Our team creates high-quality content tailored to your audience, from blog posts and articles to videos and infographics.",
   },
   {
     count: "03",
-    image: "/images/group4.png",
+    image: "/images/Group4.png",
     title: "Content Distribution",
     description:
       "We distribute your content across the right channels to maximize reach and engagement, ensuring it gets in front of the right audience.",
   },
   {
     count: "04",
-    image: "/images/group5.png",
+    image: "/images/Group5.png",
     title: "SEO Content",
     description:
       "Our content is optimized for search engines, helping your website rank higher in search results and driving organic traffic.",
   },
   {
     count: "05",
-    image: "/images/group6.png",
+    image: "/images/Group6.png",
     title: "Content Audits",
     description:
       "We conduct thorough content audits to identify gaps and opportunities, ensuring that your content remains effective and relevant.",
   },
   {
     count: "06",
-    image: "/images/group7.png",
+    image: "/images/Group7.png",
     title: "Analytics & Reporting",
     description:
       "We provide detailed analytics and reporting, giving you insights into how your content is performing and where improvements can be made.",

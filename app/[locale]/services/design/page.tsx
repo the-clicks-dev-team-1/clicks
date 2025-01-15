@@ -15,42 +15,42 @@ export const metadata: Metadata = {
 const servicesItems = [
   {
     count: "01",
-    image: "/images/group1.png",
+    image: "/images/Group1.png",
     title: "Logo Design",
     description:
       "We create unique and memorable logos that represent your brand and make a lasting impression on your audience.",
   },
   {
     count: "02",
-    image: "/images/group3.png",
+    image: "/images/Group3.png",
     title: "Branding",
     description:
       "Our branding services ensure that every aspect of your visual identity is consistent, cohesive, and aligned with your brand values.",
   },
   {
     count: "03",
-    image: "/images/group4.png",
+    image: "/images/Group4.png",
     title: "Print Design",
     description:
       "We design stunning print materials, including brochures, business cards, and posters, that effectively communicate your message.",
   },
   {
     count: "04",
-    image: "/images/group5.png",
+    image: "/images/Group5.png",
     title: "Web Design",
     description:
       "Our web design services combine aesthetics with functionality to create visually appealing websites that drive results.",
   },
   {
     count: "05",
-    image: "/images/group6.png",
+    image: "/images/Group6.png",
     title: "Social Media Graphics",
     description:
       "We create engaging social media graphics that capture attention, increase engagement, and drive traffic to your online platforms.",
   },
   {
     count: "06",
-    image: "/images/group7.png",
+    image: "/images/Group7.png",
     title: "Infographics",
     description:
       "Our infographics simplify complex information and present it in an easy-to-understand, visually appealing format.",

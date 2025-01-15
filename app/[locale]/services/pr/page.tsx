@@ -15,42 +15,42 @@ export const metadata: Metadata = {
 const servicesItems = [
   {
     count: "01",
-    image: "/images/group1.png",
+    image: "/images/Group1.png",
     title: "Media Relations",
     description:
       "We connect your brand with the media, securing interviews, press releases, and articles that enhance your brand's visibility.",
   },
   {
     count: "02",
-    image: "/images/group3.png",
+    image: "/images/Group3.png",
     title: "Press Releases",
     description:
       " Our team crafts compelling press releases that capture the attention of journalists and promote your brand's news and events.",
   },
   {
     count: "03",
-    image: "/images/group4.png",
+    image: "/images/Group4.png",
     title: "Crisis Management",
     description:
       "We provide expert crisis management services, helping you navigate and mitigate any negative situations that could harm your brand.",
   },
   {
     count: "04",
-    image: "/images/group5.png",
+    image: "/images/Group5.png",
     title: "Event Planning",
     description:
       "We help you plan and execute successful events that generate positive media coverage and engage your audience.",
   },
   {
     count: "05",
-    image: "/images/group6.png",
+    image: "/images/Group6.png",
     title: "Influencer Outreach",
     description:
       "We connect your brand with influencers who can help amplify your message and reach a wider audience.",
   },
   {
     count: "06",
-    image: "/images/group7.png",
+    image: "/images/Group7.png",
     title: "Reputation Management",
     description:
       "We monitor and manage your online reputation, ensuring that your brand is presented in the best possible light.",

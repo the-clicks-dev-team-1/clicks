@@ -15,42 +15,42 @@ export const metadata: Metadata = {
 const servicesItems = [
   {
     count: "01",
-    image: "/images/group1.png",
+    image: "/images/Group1.png",
     title: "Keyword Research",
     description:
       "We identify the most effective keywords for your business, ensuring that your ads reach the right audience.",
   },
   {
     count: "02",
-    image: "/images/group3.png",
+    image: "/images/Group3.png",
     title: "Ad Creation",
     description:
       "Our team creates compelling ads that attract clicks and drive conversions, making the most of your ad spend.",
   },
   {
     count: "03",
-    image: "/images/group4.png",
+    image: "/images/Group4.png",
     title: "Campaign Management",
     description:
       "We manage your PPC campaigns from start to finish, optimizing performance and ensuring your ads are effective.",
   },
   {
     count: "04",
-    image: "/images/group5.png",
+    image: "/images/Group5.png",
     title: "Landing Page Optimization",
     description:
       "We ensure that your landing pages are optimized to convert traffic into leads and sales, maximizing your ROI.",
   },
   {
     count: "05",
-    image: "/images/group6.png",
+    image: "/images/Group6.png",
     title: "Performance Tracking",
     description:
       "Our detailed reports provide insights into how your campaigns are performing, allowing for continuous improvement.",
   },
   {
     count: "06",
-    image: "/images/group7.png",
+    image: "/images/Group7.png",
     title: "Remarketing",
     description:
       "We use remarketing techniques to re-engage visitors who have previously interacted with your site, increasing conversion rates.",
