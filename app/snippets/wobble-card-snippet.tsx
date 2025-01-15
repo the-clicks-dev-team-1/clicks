@@ -8,7 +8,7 @@ export function WobbleCardDemo() {
     <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 max-w-7xl mx-auto w-full px-4 md:px-10">
       <WobbleCard
         containerClassName="col-span-1 lg:col-span-2 h-full #bg-transperent #light:bg-white min-h-[500px] lg:min-h-[300px] light:shadow-lg"
-        className="#bg-transperent opacity-100 light:bg-[var(--light-blue)] light:shadow-lg"
+        className="#bg-transperent opacity-100 bg-[var(--blue2)] light:bg-[var(--light-blue)] light:shadow-lg"
       >
         <div className="max-w-xs">
           <h2 className="text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-[var(--light-blue)] light:text-[var(--gray-70)]">
@@ -32,7 +32,7 @@ export function WobbleCardDemo() {
       </WobbleCard>
       <WobbleCard
         containerClassName="col-span-1 #bg-transperent min-h-[300px] light:shadow-lg"
-        className="light:bg-[var(--light-blue)]"
+        className="light:bg-[var(--light-blue)] bg-[var(--blue2)]"
       >
         <h2 className="max-w-80  text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-[var(--light-blue)] light:text-[var(--gray-70)]">
           Your Growth Ally
@@ -47,7 +47,7 @@ export function WobbleCardDemo() {
       </WobbleCard>
       <WobbleCard
         containerClassName="col-span-1 #bg-transperent min-h-[300px] light:shadow-lg"
-        className="light:bg-[var(--light-blue)]"
+        className="light:bg-[var(--light-blue)] bg-[var(--blue2)]"
       >
         <h2 className="max-w-80  text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-[var(--light-blue)] light:text-[var(--gray-70)]">
           Data-Driven, Predictable, and Transparent
@@ -61,7 +61,7 @@ export function WobbleCardDemo() {
       </WobbleCard>
       <WobbleCard
         containerClassName="col-span-1 #bg-transperent min-h-[300px] light:shadow-lg"
-        className="light:bg-[var(--light-blue)]"
+        className="light:bg-[var(--light-blue)] bg-[var(--blue2)]"
       >
         <h2 className="max-w-80  text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-[var(--light-blue)] light:text-[var(--gray-70)]">
           Tailored Marketing Solutions
@@ -75,7 +75,7 @@ export function WobbleCardDemo() {
       </WobbleCard>
       <WobbleCard
         containerClassName="col-span-1 #bg-transperent min-h-[300px] light:shadow-lg"
-        className="light:bg-[var(--light-blue)]"
+        className="light:bg-[var(--light-blue)] bg-[var(--blue2)]"
       >
         <h2 className="max-w-80  text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-[var(--light-blue)] light:text-[var(--gray-70)]">
           Holistic Customer Engagement

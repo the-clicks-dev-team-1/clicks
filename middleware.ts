@@ -1,5 +1,7 @@
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
+import createMiddleware from "next-intl/middleware";
+import { locales } from "./lib/config";
 
 // List of allowed countries (ISO country codes)
 const allowedRegions = [
@@ -43,10 +45,17 @@ const allowedRegions = [
   "CH", // Switzerland
 ];
 
-export function middleware(req: NextRequest) {
+const defaultLocale = "en";
+
+export function geoMiddleware(req: NextRequest) {
   const country = req.geo?.country || "Unknown";
 
   console.log(`Incoming request from country: ${country}`);
+
+  // Redirect from `/` to `/en` if no locale is provided
+  if (req.nextUrl.pathname === "/") {
+    return NextResponse.redirect(new URL(`/${defaultLocale}`, req.url));
+  }
 
   // If geo info is not available or country is unknown, you might want to allow access or set a default behavior.
   if (country === "Unknown") {
@@ -66,6 +75,20 @@ export function middleware(req: NextRequest) {
   return NextResponse.next(); // Continue for allowed countries
 }
 
+const intlMiddleware = createMiddleware({
+  locales,
+  defaultLocale: "en",
+});
+
+export function middleware(req: NextRequest) {
+  // First, handle the geo-blocking
+  const geoResponse = geoMiddleware(req);
+  if (geoResponse) return geoResponse;
+
+  // Then, apply next-intl for locale-based routing
+  return intlMiddleware(req);
+}
+
 export const config = {
-  matcher: "/:path*", // Applies to all paths
+  matcher: ["/", "/(en|fr)/:path*", "/blocked"],
 };

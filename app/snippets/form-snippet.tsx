@@ -80,7 +80,11 @@ const FormSchema = z.object({
 
 type FormValues = z.infer<typeof FormSchema>;
 
-export default function ContactForm() {
+type ContactFormProps = {
+  consultation?: string;
+};
+
+export default function ContactForm({ consultation }: ContactFormProps) {
   const [loading, setLoading] = useState(false);
   const [submitted, setSubmitted] = useState(false);
   const { toast } = useToast();
@@ -134,22 +138,29 @@ export default function ContactForm() {
 
   return (
     <div className="px-4 md:px-10 max-w-7xl mx-auto">
-      <div className="py-10 px-4 md:px-16 lg:px-16 my-10 border-[1px] border-[var(--ocean-blue)] rounded-3xl bg-[var(--blue1)] light:bg-[var(--light-blue)]">
+      <div className="py-10 px-4 md:px-16 lg:px-16 mb-20 md:mb-32 border-[1px] border-[var(--ocean-blue)] rounded-3xl bg-[var(--blue1)] light:bg-[var(--light-blue)]">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
           {/* Contact Info */}
           <div className="flex flex-col justify-between">
             <h2
-              className="text-2xl md:text-4xl font-semibold mb-4 dark:text-gradient bg-gradient-to-b from-sky-400 
+              className="text-2xl md:text-4xl font-semibold mb-6 dark:text-gradient bg-gradient-to-b from-sky-400 
             to bg-purple-500 bg-opacity-50 bg-clip-text dark:text-transparent text-[var(--gray-70)]"
             >
               Have a questions?
             </h2>
-            <h2
-              className="text-2xl md:text-4xl font-semibold mb-10 dark:text-gradient bg-gradient-to-b from-sky-400 
+
+            {consultation ? (
+              <h2 className="text-2xl md:text-3xl mb-10 text-[var(--ocean-blue)] font-light">
+                {consultation}
+              </h2>
+            ) : (
+              <h2
+                className="text-2xl md:text-4xl font-semibold mb-10 dark:text-gradient bg-gradient-to-b from-sky-400 
             to bg-purple-500 bg-opacity-50 bg-clip-text dark:text-transparent text-[var(--gray-70)]"
-            >
-              Get in Touch
-            </h2>
+              >
+                Get in Touch
+              </h2>
+            )}
             <div className="flex-1">
               <p className="text-lg mb-10 text-[var(--gray-blue)] light:text-[var(--gray-70)]">
                 We value your feedback, questions, and inquiries. Whether you
@@ -206,7 +217,7 @@ export default function ContactForm() {
                 <form
                   id="contactServiceForm"
                   onSubmit={form.handleSubmit(onSubmit)}
-                  className="contact-form space-y-4 h-full dark:shadow-lg rounded-3xl p-6 flex flex-col justify-between"
+                  className="contact-form space-y-4 h-full rounded-3xl p-6 flex flex-col justify-between"
                 >
                   <div className="md:flex items-center gap-6">
                     <FormField
@@ -460,7 +471,7 @@ export default function ContactForm() {
                     <Button
                       type="submit"
                       className="text-sm font-light #dark:bg-gradient-to-b from-sky-400 
-            to-purple-500 bg-opacity-50 bg-[var(--ocean-blue)] light:text-white"
+            to-purple-500 bg-opacity-50 bg-[var(--ocean-blue)] hover:bg-[var(--ocean-blue)] light:text-white"
                       disabled={loading}
                     >
                       Submit

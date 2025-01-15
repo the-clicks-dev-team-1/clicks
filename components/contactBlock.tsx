@@ -2,8 +2,12 @@
 
 import ContactForm from "../app/snippets/form-snippet";
 
-const ContactBlock = () => {
-  return <ContactForm />;
+type ContactBlockProps = {
+  consultation?: string;
+};
+
+const ContactBlock = ({ consultation }: ContactBlockProps) => {
+  return <ContactForm consultation={consultation} />;
 };
 
 export default ContactBlock;

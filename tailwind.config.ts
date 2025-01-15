@@ -13,12 +13,21 @@ const config = {
   theme: {
     container: {
       center: true,
-      padding: "2rem",
+      padding: {
+        DEFAULT: "1rem",
+        md: "2.5rem",
+      },
       screens: {
-        "2xl": "1400px",
+        DEFAULT: "100%",
+        xl: "1280px",
       },
     },
     extend: {
+      boxShadow: {
+        subtle:
+          "2px 2px 5px rgba(0, 0, 0, 0.05), -2px -2px 3px rgba(0, 0, 0, 0.03)",
+        deep: "8px 8px 18px rgba(0, 0, 0, 0.2), -8px -8px 10px rgba(0, 0, 0, 0.15)",
+      },
       textColor: {
         light: {
           white: "#ffffff",
@@ -117,7 +126,9 @@ const config = {
         "glass-gradient":
           "linear-gradient(rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.05) 100%)",
       },
-
+      screens: {
+        "header-compact": "1100px",
+      },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
@@ -130,6 +141,7 @@ const config = {
     },
   },
   plugins: [
+    require("tailwindcss-filters"),
     require("tailwindcss-animate"),
     require("@tailwindcss/typography"),
     function (pluginApi: PluginAPI) {

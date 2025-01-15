@@ -42,6 +42,7 @@ const LiveChat = () => {
     const callUsElement = document.createElement("call-us-selector");
     callUsElement.setAttribute("phonesystem-url", "https://1489.3cx.cloud");
     callUsElement.setAttribute("party", "theclicksmarketingin");
+    callUsElement.id = "live-chat-element";
 
     // Append the element to the body
     document.body.appendChild(callUsElement);
@@ -57,8 +58,16 @@ const LiveChat = () => {
 
     // Clean up the element and script when the component unmounts
     return () => {
-      document.body.removeChild(callUsElement);
-      document.body.removeChild(script);
+      const chatElement = document.getElementById("live-chat-element");
+      if (chatElement && chatElement.parentNode) {
+        chatElement.parentNode.removeChild(chatElement);
+      }
+
+      // Safely remove script
+      const scriptElement = document.getElementById("tcx-callus-js");
+      if (scriptElement && scriptElement.parentNode) {
+        scriptElement.parentNode.removeChild(scriptElement);
+      }
     };
   }, []);
 

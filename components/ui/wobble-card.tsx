@@ -65,9 +65,9 @@ export const WobbleCard = ({
       }}
       className={cn(
         "mx-auto w-full relative rounded-2xl overflow-hidden",
-        isDark ? "bg-[var(--blue2)]" : "bg-white",
+        // isDark ? "bg-[var(--blue2)]" : "bg-white",
         // Add white background wrapper for light mode
-        !isDark && "p-[1px] bg-white",
+        !isDark && "p-[1px] bg-[var(--light-blue)]",
         containerClassName
       )}
     >
@@ -75,7 +75,7 @@ export const WobbleCard = ({
         className={cn(
           "relative h-full sm:mx-0 sm:rounded-2xl overflow-hidden",
           // Add matching background in light mode
-          !isDark && "bg-white"
+          !isDark && "bg-[var(--light-blue)]"
         )}
       >
         {mounted && isDark && (
@@ -87,7 +87,7 @@ export const WobbleCard = ({
             // Only apply gradient in dark mode
             isDark &&
               "#[background-image:radial-gradient(#084378,rgba(255,255,255,0))]",
-            !isDark && "bg-white", // Add white background in light mode
+            !isDark && "bg-[var(--light-blue)]", // Add white background in light mode
             {
               "shadow-[0_10px_32px_rgba(34,_42,_53,_0.12),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.05),_0_4px_6px_rgba(34,_42,_53,_0.08),_0_24px_108px_rgba(47,_48,_55,_0.10)]":
                 isDark,
@@ -105,11 +105,11 @@ export const WobbleCard = ({
             }}
             className={cn(
               "h-full px-4 py-20 sm:px-10",
-              !isDark && "bg-white", // Add white background to inner div in light mode
+              !isDark && "bg-[var(--light-blue)]",
               className
             )}
           >
-            {mounted && isDark && <Noise />}
+            {/* {mounted && isDark && <Noise />} */}
             {children}
           </motion.div>
         </div>
