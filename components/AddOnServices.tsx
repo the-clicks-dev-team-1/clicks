@@ -33,7 +33,7 @@ const AddOnServices = () => {
   ];
 
   return (
-    <div className="container mb-32 md:px-10">
+    <div className="container mb-20 md:mb-32 md:px-10">
       <div className="font-bold text-2xl md:text-3xl text-gradient bg-gradient-to-b from-sky-400 to bg-purple-500 bg-opacity-50 bg-clip-text text-transparent">
         Add-On Services
       </div>

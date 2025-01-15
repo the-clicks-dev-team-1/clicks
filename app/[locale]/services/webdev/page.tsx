@@ -78,8 +78,6 @@ const WebDevelopment: FC = () => {
             results.
           </p>
         </div>
-
-        {/* <ContactServiceForm /> */}
       </div>
 
       {/* Services section */}
