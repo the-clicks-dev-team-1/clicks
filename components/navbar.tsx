@@ -270,7 +270,7 @@ export default function Navbar() {
 function MobileNav({ closeSideMenu }: { closeSideMenu: () => void }) {
   return (
     <div className="fixed inset-0 z-50 bg-black/60 flex justify-end md:hidden">
-      <div className="h-full w-[75%] bg-[var(--bgnew)] px-4 py-4 overflow-y-auto">
+      <div className="h-lvh w-[75%] bg-[var(--bgnew)] px-4 py-4 overflow-y-auto">
         <section className="flex justify-end">
           <AiOutlineClose
             onClick={closeSideMenu}
