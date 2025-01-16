@@ -13,6 +13,289 @@
       "fr": "Fr"
     }
   },
+  "navbar": {
+    "home": "Home",
+    "services": "Services",
+    "pricing": "Pricing",
+    "about": "About",
+    "aboutAgency": "About Agency",
+    "team": "Our Team",
+    "careers": "Careers",
+    "blog": "Blog",
+    "contacts": "Contacts",
+    "webDev": "Web Development",
+    "strategyDev": "Strategy Development",
+    "seo": "SEO",
+    "ppc": "PPC Advertising",
+    "smm": "Social Media Marketing",
+    "cm": "Content Marketing",
+    "em": "Email Marketing",
+    "cro": "Conversion Rate Optimization",
+    "analytics": "Analytics and Reporting",
+    "automation": "Marketing Automation",
+    "pr": "Public Relations",
+    "design": "Graphic Design",
+    "book": "Let's Talk"
+  },
+  "footer": {
+    "newsletterTitle": "Get our newsletter",
+    "privacyPolicy": "Privacy Policy",
+    "licensing": "Licensing",
+    "termsAndConditions": "Terms & Conditions",
+    "company": "Company",
+    "services": "Services",
+    "pricing": "Pricing",
+    "about": "About",
+    "blog": "Blog",
+    "location": "Location",
+    "address": "860 Main Street, Moncton,\nNB, Canada",
+    "email": "info@theclicks.ca",
+    "phone": "+1 506 871 8210",
+    "rightsReserved": {
+      "year": "© 2024 ",
+      "clicks": "The Clicks™",
+      "allRights": ". All Rights Reserved."
+    },
+    "newsletterFormProps": {
+      "email": "Your Email",
+      "subscribe": "Subscribe",
+      "subscribing": "Subscribing..."
+    }
+  },
+  "home": {
+    "title": "Transform your business with artificial intelligence",
+    "description": "Revolutionize operations, optimize processes, and drive growth with smarter decisions and innovation.",
+    "cta": "Book A Call",
+    "ourPartners": "Our partners:",
+    "block": {
+      "whileYouSpentTime": "While you spent time with your family, our solutions work towards your success.",
+      "weLeverageTopTier": "We leverage top-tier Internet marketing tools to ensure the success of our valued partners. Our commitment includes a customer-centric approach, delivering predictable results, and an unwavering focus on enhancing profitability."
+    },
+    "wobbleCard": {
+      "1": {
+        "title": "Global Marketing Expertise",
+        "description": "At The Clicks, we leverage our broad expertise across diverse marketing domains to offer rapid scalability and adaptable engagement models. Our goal is to help clients refine their marketing strategies, foster a data-centric culture, and achieve sustainable growth."
+      },
+      "2": {
+        "title": "Your Growth Ally",
+        "description": "We are committed to delivering immediate outcomes while fostering your long-term success. At The Clicks, your ROI and revenue go beyond mere metrics—we substantiate our impact by supporting your marketing initiatives throughout the entire customer journey to maximize results."
+      },
+      "3": {
+        "title": "Data-Driven, Predictable, and Transparent",
+        "description": "Our meticulously developed methods and processes have empowered a wide range of businesses, from startups to established enterprises, across more than 10 industries. We maintain our agility, adaptability, and ease of collaboration, regardless of our extensive experience."
+      },
+      "4": {
+        "title": "Tailored Marketing Solutions",
+        "description": "We customize our strategies to meet your specific business needs and objectives, ensuring every marketing plan aligns with your goals. Our team stays updated on the latest trends and technologies to provide the best outcomes."
+      },
+      "5": {
+        "title": "Holistic Customer Engagement",
+        "description": "We integrate multiple touchpoints and channels to create seamless customer experiences. Our comprehensive strategy covers everything from initial awareness to post-purchase support, enhancing customer loyalty and driving repeat business."
+      }
+    },
+    "services": {
+      "ourServices": "Our Services",
+      "atOurCompany": "At our company, we cater to businesses of all sizes, ensuring that both small enterprises and large corporations receive top-notch services. Our dedicated efforts are aimed at fostering the growth and prosperity of your business."
+    },
+    "testimonials": {
+      "title": "The way we work",
+      "1": {
+        "quote": "We start with a casual conversation to understand your business, goals, and objectives. Tell us about your target audience and current marketing efforts.",
+        "name": "1. Initial Meeting: Let's Get Acquainted"
+      },
+      "2": {
+        "quote": "We conduct a detailed analysis of your current marketing strategies, evaluate competitors and the market. We'll review your website and social media presence to know exactly where to start.",
+        "name": "2. In-Depth Analysis: Diving into Details"
+      },
+      "3": {
+        "quote": "At this stage, we develop a marketing strategy, set goals, KPIs, and an action plan. We identify the channels and methods of promotion, allocate budget and resources.",
+        "name": "3. Strategic Planning: Building the Plan"
+      },
+      "4": {
+        "quote": "Our creative minds develop unique branding and visual elements. We create content for your website, blogs, social media, and ad campaigns. Videos, graphics, and other marketing materials – everything will be ready!",
+        "name": "4. Creativity and Content: Creating Magic"
+      },
+      "5": {
+        "quote": "We handle the development and optimization of your website, set up and manage ad campaigns (PPC, SEO, SMM). We implement analytical tools to track data.",
+        "name": "5. Technical Implementation: Innovating"
+      },
+      "6": {
+        "quote": "Content is published, ad campaigns are launched! We actively manage and optimize them to achieve maximum results.",
+        "name": "6. Campaign Launch: Onward to Success!"
+      },
+      "7": {
+        "quote": "We constantly monitor campaign results and regularly report to you. We share data analysis and recommendations to adjust the strategy and achieve better outcomes.",
+        "name": "7. Monitoring and Reporting: Keeping You Informed"
+      },
+      "8": {
+        "quote": "We discuss the results, make changes, and optimize the strategy based on your feedback. We plan the next steps and long-term strategies to ensure your business continues to grow.",
+        "name": "8. Feedback and Improvement: Growing Together"
+      }
+    },
+    "reviews": {
+      "title": "Customer Reviews",
+      "testimonials": [
+        {
+          "quote": "The Clicks helped us turn our digital marketing around. Our website traffic doubled, and we started seeing real results in just a few months.",
+          "title": "Owner, Thompson & Co."
+        },
+        {
+          "quote": "Their social media strategies were spot-on. We've seen a significant increase in engagement and our brand awareness has grown tremendously.",
+          "title": "Marketing Manager, GreenWave Solutions"
+        },
+        {
+          "quote": "We were struggling with our online presence, but The Clicks provided a clear and effective plan that improved our visibility and customer reach.",
+          "title": "CEO, Jackson Enterprises"
+        },
+        {
+          "quote": "The team at The Clicks understood our needs and delivered a tailored strategy that exceeded our expectations. Our sales have increased by 30% since we started working with them.",
+          "title": "Founder, Lee's Boutique"
+        },
+        {
+          "quote": "Their data-driven approach was exactly what we needed. We've seen a measurable improvement in our ROI thanks to their efforts.",
+          "title": "Director of Operations, FreshStart Inc."
+        },
+        {
+          "quote": "The Clicks transformed our online campaigns with innovative ideas and consistent support. We're thrilled with the results.",
+          "title": "Co-Founder, EcoHarmony"
+        },
+        {
+          "quote": "Working with The Clicks has been a game-changer for our business. Their insights into our market have helped us to fine-tune our strategy and grow our client base.",
+          "title": "Managing Director, BuildRight Construction"
+        },
+        {
+          "quote": "Their expertise in digital marketing has brought our brand to new heights. We've never been more visible online.",
+          "title": "Chief Marketing Officer, PureEssentials"
+        },
+        {
+          "quote": "The Clicks made a huge difference in our online strategy. We've seen a significant increase in traffic and leads since partnering with them.",
+          "title": "Owner, Scott's Landscaping"
+        },
+        {
+          "quote": "From the start, The Clicks has been attentive, professional, and effective. Our marketing efforts have never been stronger.",
+          "title": "CEO, TurnerTech Solutions"
+        }
+      ]
+    }
+  },
+  "projects": {
+    "stratdev": {
+      "title": "Strategy Development",
+      "description": "Detailed consultation to understand the client's business goals, target audience, and current marketing efforts. Development of a customized digital marketing strategy."
+    },
+    "webdev": {
+      "title": "Web Design & Development",
+      "description": "Creation of a modern, responsive website optimized for user experience and conversions."
+    },
+    "seo": {
+      "title": "Search Engine Optimization",
+      "description": "On-page and off-page SEO to improve search engine rankings and organic traffic."
+    },
+    "ppc": {
+      "title": "Pay-Per-Click Advertising",
+      "description": "Management of PPC campaigns to drive targeted traffic and increase conversions."
+    },
+    "smm": {
+      "title": "Social Media Marketing",
+      "description": "Social media strategy, content creation, and community management across platforms like Facebook, Instagram, Twitter, LinkedIn, and others."
+    },
+    "cm": {
+      "title": "Content Marketing",
+      "description": "Creation and distribution of valuable content to attract and engage the target audience."
+    },
+    "em": {
+      "title": "Email Marketing",
+      "description": "Design and execution of email marketing campaigns to nurture leads and retain customers."
+    },
+    "cro": {
+      "title": "Conversion Rate Optimization",
+      "description": "Analysis and optimization of website and landing pages to improve conversion rates."
+    },
+    "analytics": {
+      "title": "Analytics & Reporting",
+      "description": "Comprehensive analytics and reporting to track the performance of digital marketing efforts."
+    },
+    "automation": {
+      "title": "Marketing Automation",
+      "description": "Implementation of marketing automation tools to streamline and enhance marketing efforts."
+    },
+    "pr": {
+      "title": "Public Relations",
+      "description": "Public Relations is a strategic communication process that builds mutually beneficial relationships between organizations and their publics."
+    },
+    "design": {
+      "title": "Graphic Design",
+      "description": "Graphic Design is a creative service that involves crafting visually appealing and impactful designs to communicate messages and enhance brand identity."
+    }
+  },
+  "contactForm": {
+    "questions": "Have a questions?",
+    "getInTouch": "Get in Touch",
+    "description": "We value your feedback, questions, and inquiries. Whether you have a suggestion, require assistance, or just want to reach out to us, we are always here to provide support and assistance.",
+    "contact": {
+      "phone": "+1 506 871 8210",
+      "email": "info@theclicks.ca",
+      "address": "860 Main Street, Moncton"
+    },
+    "submit": "Submit",
+    "required": "This field is required",
+    "emailInvalid": "Invalid email address",
+    "success": "Form submitted successfully",
+    "error": "Something went wrong",
+    "help": {
+      "label": "How can we help?",
+      "default": "-- Select an option --",
+      "evaluate": "Evaluate The Clicks for my company",
+      "learnMore": "Learn more about our services",
+      "quote": "Get a customized quote",
+      "consultation": "Request a consultation",
+      "other": "Other"
+    },
+    "services": {
+      "label": "Services you are interested in",
+      "default": "-- Select an option --",
+      "strategy": "Strategy Development",
+      "web": "Web Development",
+      "seo": "SEO",
+      "ppc": "PPC Advertising",
+      "social": "Social Media Marketing",
+      "content": "Content Marketing",
+      "email": "Email Marketing",
+      "conversion": "Conversion Rate Optimization",
+      "analytics": "Analytics and Reporting",
+      "automation": "Marketing Automation",
+      "branding": "Branding",
+      "pr": "Public Relations",
+      "design": "Graphic Design"
+    },
+    "messages": {
+      "success": "We've received your inquiry and will be contacting you via email shortly.",
+      "error": "Something went wrong"
+    }
+  },
+  "fields": {
+    "firstName": "First name",
+    "lastName": "Last name",
+    "email": "Email",
+    "job": "Job title",
+    "companyName": "Company name",
+    "services": "Services you are interested in",
+    "help": "How can we help?",
+    "additionalInfo": "Anything else? *",
+    "consent": "I agree to The Clicks sending marketing communications related to The Clicks",
+    "validations": {
+      "firstNameRequired": "First name is required",
+      "lastNameRequired": "Last name is required",
+      "jobRequired": "Job title name is required",
+      "firstNameMin": "First name must be at least 2 characters long",
+      "lastNameMin": "Last name must be at least 2 characters long",
+      "required": "${field} is required",
+      "minLength": "${field} must be at least ${min} characters long",
+      "email": "Invalid email address",
+      "consent": "You must agree to the data collection.",
+      "minInfo": "Please provide more information (at least 10 characters)"
+    }
+  },
   "careers": {
     "title": "Join Our Team",
     "text": " We're always looking for talented and passionate individuals to join our team. Explore our current job openings and find out more about life at The Clicks.",

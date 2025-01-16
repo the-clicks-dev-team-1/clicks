@@ -1,6 +1,7 @@
 "use client";
 
 import { cn } from "@/lib/utils";
+import { useTranslations } from "next-intl";
 import React, { useEffect, useState, useRef } from "react";
 
 export const InfiniteMovingCards = ({
@@ -20,6 +21,7 @@ export const InfiniteMovingCards = ({
   pauseOnHover?: boolean;
   className?: string;
 }) => {
+  const t = useTranslations("home.reviews");
   const containerRef = useRef<HTMLDivElement>(null);
   const scrollerRef = useRef<HTMLUListElement>(null);
   const [start, setStart] = useState(false);
@@ -112,7 +114,7 @@ export const InfiniteMovingCards = ({
                 className="user-select-none -z-1 pointer-events-none absolute -left-0.5 -top-0.5 h-[calc(100%_+_4px)] w-[calc(100%_+_4px)]"
               ></div>
               <span className="relative z-20 text-sm leading-[1.6] text-[var(--light-blue)] light:text-[var(--gray-70)] font-normal">
-                {item.quote}
+                {t(`${item.quote}`)}
               </span>
               <div className="relative z-20 mt-6 flex flex-row items-center">
                 <span className="flex flex-col gap-1">
@@ -120,7 +122,7 @@ export const InfiniteMovingCards = ({
                     {item.name}
                   </span>
                   <span className="text-sm leading-[1.6] text-[var(--gray-blue)] light:text-[var(--gray-40)] font-normal">
-                    {item.title}
+                    {t(`${item.title}`)}
                   </span>
                 </span>
               </div>

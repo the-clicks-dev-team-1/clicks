@@ -1,12 +1,16 @@
 "use client";
+
 import ActiveLink from "@/components/activelink";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import logo from "../public/logo/Logo1.svg";
 import NewsletterForm from "./NewsLetterForm";
 import Logo from "./Logo";
+import { useTranslations } from "next-intl";
 
 const Footer = () => {
+  const t = useTranslations("footer");
+
   return (
     <motion.section
       className={`w-screen relative overflow-hidden bg-[var(--blue2)] light:bg-[var(--ice-blue)]`}
@@ -115,7 +119,7 @@ const Footer = () => {
 
             <div className="">
               <h2 className="mb-4 text-xl font-semibold light:text-[var(--gray-70)] text-[var(--gray-blue)]">
-                Get our newsletter
+                {t("newsletterTitle")}
               </h2>
               <div className="mb-4">
                 <NewsletterForm className="border border-[var(--ocean-blue)] bg-transparent" />
@@ -126,12 +130,12 @@ const Footer = () => {
                     href="/privacy-policy"
                     className="hover:underline"
                   >
-                    Privacy Policy
+                    {t("privacyPolicy")}
                   </ActiveLink>
                 </li>
                 <li className="mb-4">
                   <ActiveLink href="/licensing" className="hover:underline">
-                    Licensing
+                    {t("licensing")}
                   </ActiveLink>
                 </li>
                 <li className="mb-4">
@@ -139,7 +143,7 @@ const Footer = () => {
                     href="/terms-and-conditions"
                     className="hover:underline"
                   >
-                    Terms & Conditions
+                    {t("termsAndConditions")}
                   </ActiveLink>
                 </li>
               </ul>
@@ -147,17 +151,17 @@ const Footer = () => {
 
             <div className="">
               <h2 className="mb-6 text-xl font-semibold text-[var(--ocean-blue)]">
-                Company
+                {t("company")}
               </h2>
               <ul className="light:text-[var(--gray-70)] text-[var(--gray-blue)] font-medium">
                 <li className="mb-4">
                   <ActiveLink href="#services" className="hover:underline">
-                    Services
+                    {t("services")}
                   </ActiveLink>
                 </li>
                 <li className="mb-4">
                   <ActiveLink href="/pricing" className="hover:underline">
-                    Pricing
+                    {t("pricing")}
                   </ActiveLink>
                 </li>
                 <li className="mb-4">
@@ -165,12 +169,12 @@ const Footer = () => {
                     href="/about/about-agency"
                     className="hover:underline"
                   >
-                    About
+                    {t("about")}
                   </ActiveLink>
                 </li>
                 <li className="mb-4">
                   <ActiveLink href="/blog" className="hover:underline">
-                    Blog
+                    {t("blog")}
                   </ActiveLink>
                 </li>
               </ul>
@@ -178,21 +182,18 @@ const Footer = () => {
 
             <div className="">
               <h2 className="mb-6 text-xl font-semibold text-[var(--ocean-blue)]">
-                Location
+                {t("location")}
               </h2>
               <ul className="light:text-[var(--gray-70)] text-[var(--gray-blue)] font-medium">
-                <li className="mb-4">
-                  860 Main Street, Moncton,
-                  <br /> NB, Canada
-                </li>
+                <li className="mb-4 whitespace-pre-line">{t("address")}</li>
                 <li className="mb-4">
                   <a href="mailto:info@theclicks.com" className="">
-                    info@theclicks.ca
+                    {t("email")}
                   </a>
                 </li>
                 <li className="mb-4">
                   <a href="tel:+15068718210" className="">
-                    +1 506 871 8210
+                    {t("phone")}
                   </a>
                 </li>
               </ul>
@@ -202,9 +203,11 @@ const Footer = () => {
 
         <div className="pb-16 bg-opacity-50 md:flex md:items-center md:justify-between w-full">
           <span className="text-sm light:text-[var(--gray-70)] text-[var(--gray-40)] px-4 md:px-10 max-w-7xl w-full mx-auto">
-            © 2024{" "}
-            <ActiveLink href="https://theclicks.ca">The Clicks™</ActiveLink>.
-            All Rights Reserved.
+            {t("rightsReserved.year")}
+            <ActiveLink href="https://theclicks.ca">
+              {t("rightsReserved.clicks")}
+            </ActiveLink>
+            {t("rightsReserved.allRights")}
           </span>
         </div>
       </footer>
