@@ -43,7 +43,7 @@ export default async function RootLayout({
     <html lang={locale} suppressHydrationWarning>
       <head>
         <GoogleTagManager gtmId="GTM-588PZWKW" />
-        <link rel="icon" href="/app/favicon.ico" />
+        <link rel="icon" href="/favicon.ico" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </head>
       <body className={font.className}>

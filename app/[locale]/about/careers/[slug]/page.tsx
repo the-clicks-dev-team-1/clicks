@@ -9,30 +9,29 @@ import ContactBlock from "@/components/contactBlock";
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
 import { Document } from "@contentful/rich-text-types";
 import LoadingSpinner from "@/components/ui/LoadingSpinner";
+import { useLocale, useTranslations } from "next-intl";
 
 type JobProps = {
   params: { slug: string };
 };
 
 const JobDetail: FC<JobProps> = ({ params }) => {
+  const t = useTranslations("JobDetail");
+  const locale = useLocale();
   const [job, setJob] = useState<any>(null);
   const [loading, setLoading] = useState<boolean>(true);
   const [error, setError] = useState<boolean>(false);
 
   useEffect(() => {
     const fetchData = async () => {
-      console.log("Fetching data for slug:", params.slug);
-
       try {
         const entries = await clientNew.getEntries({
           content_type: "jobOpening",
           "fields.slug": params.slug,
+          locale,
         });
 
-        console.log("Entries fetched:", entries);
-
         if (entries.items.length > 0) {
-          console.log("Job found:", entries.items[0]);
           setJob(entries.items[0]);
         } else {
           console.warn("No job found for slug:", params.slug);
@@ -47,14 +46,14 @@ const JobDetail: FC<JobProps> = ({ params }) => {
     };
 
     fetchData();
-  }, [params.slug]);
+  }, [params.slug, locale]);
 
   if (loading) {
     return <LoadingSpinner color="#b1b7c9" />;
   }
 
   if (error || !job) {
-    return <div>Job not found</div>;
+    return <div>{t("jobNotFound")}</div>;
   }
 
   const {
@@ -77,13 +76,12 @@ const JobDetail: FC<JobProps> = ({ params }) => {
         </h1>
 
         {image[0]?.url && (
-          <div className="mt-8 flex justify-center">
+          <div className="mt-8 flex justify-center items-center relative w-full h-[500px]">
             <Image
               src={`${image[0].url}`}
               alt={title}
-              width={800}
-              height={400}
-              className="object-cover rounded-xl"
+              fill
+              className="object-cover rounded-xl max-w-[800px] place-self-center"
               priority
             />
           </div>
@@ -103,20 +101,20 @@ const JobDetail: FC<JobProps> = ({ params }) => {
 
         {location && (
           <div className="mt-4 text-[var(--gray-blue)] light:text-[var(--gray-40)]">
-            <strong>Location: </strong>
+            <strong>{t("location")}: </strong>
             {location.lat}, {location.lon}
           </div>
         )}
 
         {salary && (
           <div className="mt-4 text-[var(--gray-blue)] light:text-[var(--gray-40)]">
-            <strong>Salary: </strong>${salary} per year
+            <strong>{t("salary")}: </strong>${salary} {t("perYear")}
           </div>
         )}
 
         {jobType && (
           <div className="mt-4 text-[var(--gray-blue)] light:text-[var(--gray-40)]">
-            <strong>Job Type: </strong>
+            <strong>{t("jobType")}: </strong>
             {jobType}
           </div>
         )}
