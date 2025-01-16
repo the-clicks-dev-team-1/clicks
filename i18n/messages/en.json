@@ -295,5 +295,35 @@
       "consent": "You must agree to the data collection.",
       "minInfo": "Please provide more information (at least 10 characters)"
     }
+  },
+  "careers": {
+    "title": "Join Our Team",
+    "text": " We're always looking for talented and passionate individuals to join our team. Explore our current job openings and find out more about life at The Clicks.",
+    "subtitle": "Current Job Openings",
+    "learn_more": "Learn More",
+    "no_job": "No job openings available at the moment.",
+    "life_at_clicks": {
+      "title": "Life at The Clicks",
+      "text1": " At The Clicks, we believe that our people are our greatest asset. We foster a collaborative, inclusive, and dynamic work environment where creativity and innovation thrive. Whether you're working on a challenging project or celebrating a team milestone, life at The Clicks is both rewarding and fulfilling.",
+      "text2": "We invest in our employees' growth and provide opportunities for continuous learning, professional development, and career advancement. Join us, and let's build something amazing together!"
+    },
+    "benefits": {
+      "title": "Our Benefits",
+      "starstitle1": "Health & Wellness",
+      "desc1": "Comprehensive health and wellness plans to keep you and your family healthy.",
+      "starstitle2": "Career Growth",
+      "desc2": "Opportunities for professional development and career advancement.",
+      "starstitle3": "Work-Life Balance",
+      "desc3": "Flexible work hours and remote work options to support your work-life balance.",
+      "starstitle4": "Work Environment",
+      "desc4": "Work with talented, supportive colleagues united by shared goals."
+    }
+  },
+  "JobDetail": {
+    "jobNotFound": "Job not found",
+    "location": "Location",
+    "salary": "Salary",
+    "perYear": "per year",
+    "jobType": "Job Type"
   }
 }
