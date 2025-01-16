@@ -55,7 +55,8 @@ const BlogPost: FC<PostProps> = ({ params }) => {
   }, [params.slug]);
 
   if (loading) {
-    return <LoadingSpinner color="#b1b7c9" />;
+    // return <LoadingSpinner color="#b1b7c9" />;
+    return <LoadingSpinner colorScheme="gray" />;
   }
 
   if (error || !post) {
