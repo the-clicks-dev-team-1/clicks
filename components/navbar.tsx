@@ -34,77 +34,49 @@ type NavItem = {
 };
 
 const navItems: NavItem[] = [
-  { label: "Home", link: "/" },
+  { label: "home", link: "/" },
   {
-    label: "Services",
+    label: "services",
     link: "/services/webdev",
     children: [
+      { label: "webDev", link: "/services/webdev", iconImage: MdDeveloperMode },
       {
-        label: "Web Development",
-        link: "/services/webdev",
-        iconImage: MdDeveloperMode,
-      },
-      {
-        label: "Strategy Development",
+        label: "strategyDev",
         link: "/services/stratdev",
         iconImage: PiStrategy,
       },
-      { label: "SEO", link: "/services/seo", iconImage: TbSeo },
+      { label: "seo", link: "/services/seo", iconImage: TbSeo },
+      { label: "ppc", link: "/services/ppc", iconImage: SiGoogleads },
+      { label: "smm", link: "/services/smm", iconImage: PiMegaphone },
+      { label: "cm", link: "/services/cm", iconImage: MdContentPasteSearch },
+      { label: "em", link: "/services/em", iconImage: MdOutlineMarkEmailRead },
+      { label: "cro", link: "/services/cro", iconImage: GrOptimize },
       {
-        label: "PPC Advertising",
-        link: "/services/ppc",
-        iconImage: SiGoogleads,
-      },
-      {
-        label: "Social Media Marketing",
-        link: "/services/smm",
-        iconImage: PiMegaphone,
-      },
-      {
-        label: "Content Marketing",
-        link: "/services/cm",
-        iconImage: MdContentPasteSearch,
-      },
-      {
-        label: "Email Marketing",
-        link: "/services/em",
-        iconImage: MdOutlineMarkEmailRead,
-      },
-      {
-        label: "Conversion Rate Optimization",
-        link: "/services/cro",
-        iconImage: GrOptimize,
-      },
-      {
-        label: "Analytics and Reporting",
+        label: "analytics",
         link: "/services/analytics",
         iconImage: SiGoogleanalytics,
       },
       {
-        label: "Marketing Automation",
+        label: "automation",
         link: "/services/automation",
         iconImage: TbSettingsAutomation,
       },
-      {
-        label: "Public Relations",
-        link: "/services/pr",
-        iconImage: PiRocketLaunch,
-      },
-      { label: "Graphic Design", link: "/services/design", iconImage: MdBrush },
+      { label: "pr", link: "/services/pr", iconImage: PiRocketLaunch },
+      { label: "design", link: "/services/design", iconImage: MdBrush },
     ],
   },
-  { label: "Pricing", link: "/pricing" },
+  { label: "pricing", link: "/pricing" },
   {
-    label: "About",
+    label: "about",
     link: "/about/about-agency",
     children: [
-      { label: "About Agency", link: "/about/about-agency" },
-      { label: "Our Team", link: "/about/team" },
-      { label: "Careers", link: "/about/careers" },
+      { label: "aboutAgency", link: "/about/about-agency" },
+      { label: "team", link: "/about/team" },
+      { label: "careers", link: "/about/careers" },
     ],
   },
-  { label: "Blog", link: "/blog" },
-  { label: "Contacts", link: "/contact" },
+  { label: "blog", link: "/blog" },
+  { label: "contacts", link: "/contact" },
 ];
 
 export default function Navbar() {
@@ -197,7 +169,7 @@ export default function Navbar() {
                 className="flex items-center gap-2 text-[var(--gray-blue)] light:text-[var(--gray-70)] hover:text-white transition-all"
                 onClick={() => handleLinkClick(i)}
               >
-                <span>{d.label}</span>
+                <span>{t(`${d.label}`)}</span>
                 {d.children && (
                   <IoIosArrowDown className="transition-transform group-hover:rotate-180" />
                 )}
@@ -212,7 +184,9 @@ export default function Navbar() {
                       onClick={() => handleLinkClick(i)}
                     >
                       {ch.iconImage && <ch.iconImage className="text-xl" />}
-                      <span className="ml-3 whitespace-nowrap">{ch.label}</span>
+                      <span className="ml-3 whitespace-nowrap">
+                        {t(`${ch.label}`)}
+                      </span>
                     </ActiveLink>
                   ))}
                 </div>
@@ -251,7 +225,7 @@ export default function Navbar() {
 
           <ActiveLink href="/book" className="hidden md:block">
             <button className="px-4 py-2 animate-shimmer items-center justify-center rounded-lg border border-[var(--border-color)] light:border-[var(--ocean-blue)] light:bg-[var(--light-blue)] dark:bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] light:bg-[linear-gradient(110deg,#f8fbff,45%,#edf8fe,55%,#f8fbff)] bg-[length:200%_100%] transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 light:border-[1px] light:bg-white light:text-black #light:bg-none">
-              Let&apos;s Talk
+              {t("book")}
             </button>
           </ActiveLink>
 
