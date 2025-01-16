@@ -35,5 +35,12 @@
       "starstitle4": "Environnement de travail",
       "desc4": "Travaillez avec des collègues talentueux et solidaires, unis par des objectifs communs."
     }
+  },
+  "JobDetail": {
+    "jobNotFound": "Emploi introuvable",
+    "location": "Emplacement",
+    "salary": "Salaire",
+    "perYear": "par an",
+    "jobType": "Type d'emploi"
   }
 }

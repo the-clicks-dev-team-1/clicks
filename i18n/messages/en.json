@@ -35,5 +35,12 @@
       "starstitle4": "Work Environment",
       "desc4": "Work with talented, supportive colleagues united by shared goals."
     }
+  },
+  "JobDetail": {
+    "jobNotFound": "Job not found",
+    "location": "Location",
+    "salary": "Salary",
+    "perYear": "per year",
+    "jobType": "Job Type"
   }
 }
