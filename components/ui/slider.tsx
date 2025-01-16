@@ -7,8 +7,10 @@ import { useMediaQuery } from "react-responsive";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import LoadingSpinner from "./LoadingSpinner";
+import { useTranslations } from "next-intl";
 
 const SliderOne = () => {
+  const t = useTranslations("home");
   const [isClient, setIsClient] = useState(false);
 
   useEffect(() => {
@@ -64,7 +66,7 @@ const SliderOne = () => {
     <div className="mb-20 md:mb-32">
       <div className="container md:px-10">
         <p className="py-4 text-[var(--gray-blue)] light:text-[var(--gray-70)]">
-          Our partners:
+          {t("ourPartners")}
         </p>
       </div>
       <Slider {...settings}>

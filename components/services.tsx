@@ -2,8 +2,11 @@
 
 import Image from "next/image";
 import { CardHoverEffectDemo } from "../app/snippets/card-hover-effect-snippet";
+import { useTranslations } from "next-intl";
 
 const Services = () => {
+  const t = useTranslations("home.services");
+
   return (
     <div
       id="services"
@@ -17,14 +20,11 @@ const Services = () => {
             bg-gradient-to-b from-sky-400 
             to bg-purple-500 bg-opacity-50"
           >
-            Our Services
+            {t("ourServices")}
           </div>
           <div className="flex justify-center">
             <p className="mt-4 text-lg font-normal text-[var(--gray-blue)] light:text-[var(--gray-70)] w-full max-w-xl mx-auto px-4">
-              At our company, we cater to businesses of all sizes, ensuring that
-              both small enterprises and large corporations receive top-notch
-              services. Our dedicated efforts are aimed at fostering the growth
-              and prosperity of your business.
+              {t("atOurCompany")}
             </p>
           </div>
         </div>

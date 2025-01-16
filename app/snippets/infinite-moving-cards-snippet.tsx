@@ -1,8 +1,11 @@
 "use client";
 
 import { InfiniteMovingCards } from "@/components/ui/infinite-moving-cards";
+import { useTranslations } from "next-intl";
 
 export function InfiniteMovingCardsDemo() {
+  const t = useTranslations("home.reviews");
+
   return (
     <div className="h-[20rem] mb-20 md:mb-32 rounded-md flex flex-col antialiased dark:bg-black1 #dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
       <InfiniteMovingCards
@@ -16,63 +19,53 @@ export function InfiniteMovingCardsDemo() {
 
 const testimonials = [
   {
-    quote:
-      "The Clicks helped us turn our digital marketing around. Our website traffic doubled, and we started seeing real results in just a few months.",
+    quote: "testimonials.0.quote",
     name: "Alex Thompson",
-    title: "Owner, Thompson & Co.",
+    title: "testimonials.0.title",
   },
   {
-    quote:
-      "Their social media strategies were spot-on. We've seen a significant increase in engagement and our brand awareness has grown tremendously.",
+    quote: "testimonials.1.quote",
     name: "Megan Peters",
-    title: "Marketing Manager, GreenWave Solutions",
+    title: "testimonials.1.title",
   },
   {
-    quote:
-      "We were struggling with our online presence, but The Clicks provided a clear and effective plan that improved our visibility and customer reach.",
+    quote: "testimonials.2.quote",
     name: "Brian Jackson",
-    title: "CEO, Jackson Enterprises",
+    title: "testimonials.2.title",
   },
   {
-    quote:
-      "The team at The Clicks understood our needs and delivered a tailored strategy that exceeded our expectations. Our sales have increased by 30% since we started working with them.",
+    quote: "testimonials.3.quote",
     name: "Sophia Lee",
-    title: "Founder, Lee&apos;s Boutique",
+    title: "testimonials.3.title",
   },
   {
-    quote:
-      "Their data-driven approach was exactly what we needed. We&apos;ve seen a measurable improvement in our ROI thanks to their efforts.",
+    quote: "testimonials.4.quote",
     name: "Samuel Green",
-    title: "Director of Operations, FreshStart Inc.",
+    title: "testimonials.4.title",
   },
   {
-    quote:
-      "The Clicks transformed our online campaigns with innovative ideas and consistent support. We&apos;re thrilled with the results.",
+    quote: "testimonials.5.quote",
     name: "Linda White",
-    title: "Co-Founder, EcoHarmony",
+    title: "testimonials.5.title",
   },
   {
-    quote:
-      "Working with The Clicks has been a game-changer for our business. Their insights into our market have helped us to fine-tune our strategy and grow our client base.",
+    quote: "testimonials.6.quote",
     name: "David Johnson",
-    title: "Managing Director, BuildRight Construction",
+    title: "testimonials.6.title",
   },
   {
-    quote:
-      "Their expertise in digital marketing has brought our brand to new heights. We&apos;ve never been more visible online.",
+    quote: "testimonials.7.quote",
     name: "Olivia Harris",
-    title: "Chief Marketing Officer, PureEssentials",
+    title: "testimonials.7.title",
   },
   {
-    quote:
-      "The Clicks made a huge difference in our online strategy. We&apos;ve seen a significant increase in traffic and leads since partnering with them.",
+    quote: "testimonials.8.quote",
     name: "Ethan Scott",
-    title: "Owner, Scott&apos;s Landscaping",
+    title: "testimonials.8.title",
   },
   {
-    quote:
-      "From the start, The Clicks has been attentive, professional, and effective. Our marketing efforts have never been stronger.",
+    quote: "testimonials.9.quote",
     name: "Grace Turner",
-    title: "CEO, TurnerTech Solutions",
+    title: "testimonials.9.title",
   },
 ];

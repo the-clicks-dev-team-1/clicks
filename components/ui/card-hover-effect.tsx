@@ -1,6 +1,8 @@
 import { Link } from "@/i18n/routing";
+import client from "@/lib/contentful";
 import { cn } from "@/lib/utils";
 import { AnimatePresence, motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 import { useState } from "react";
 
 export const HoverEffect = ({
@@ -14,6 +16,7 @@ export const HoverEffect = ({
   }[];
   className?: string;
 }) => {
+  const t = useTranslations("projects");
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
   return (
@@ -52,8 +55,8 @@ export const HoverEffect = ({
             )}
           </AnimatePresence>
           <Card>
-            <CardTitle>{item.title}</CardTitle>
-            <CardDescription>{item.description}</CardDescription>
+            <CardTitle>{t(`${item.title}`)}</CardTitle>
+            <CardDescription>{t(`${item.description}`)}</CardDescription>
           </Card>
         </Link>
       ))}

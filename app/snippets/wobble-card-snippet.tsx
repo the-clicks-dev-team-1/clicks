@@ -1,9 +1,13 @@
 "use client";
+
 import Image from "next/image";
 import React from "react";
 import { WobbleCard } from "@/components/ui/wobble-card";
+import { useTranslations } from "next-intl";
 
 export function WobbleCardDemo() {
+  const t = useTranslations("home.wobbleCard");
+
   return (
     <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 max-w-7xl mx-auto w-full px-4 md:px-10">
       <WobbleCard
@@ -12,14 +16,10 @@ export function WobbleCardDemo() {
       >
         <div className="max-w-xs">
           <h2 className="text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-[var(--light-blue)] light:text-[var(--gray-70)]">
-            Global Marketing Expertise
+            {t("1.title")}
           </h2>
           <p className="mt-4 text-left  text-base/6 text-[var(--gray-blue)] light:text-[var(--gray-40)]">
-            At The Clicks, we leverage our broad expertise across diverse
-            marketing domains to offer rapid scalability and adaptable
-            engagement models. Our goal is to help clients refine their
-            marketing strategies, foster a data-centric culture, and achieve
-            sustainable growth.
+            {t("1.description")}
           </p>
         </div>
         <Image
@@ -35,14 +35,10 @@ export function WobbleCardDemo() {
         className="light:bg-[var(--light-blue)] bg-[var(--blue2)]"
       >
         <h2 className="max-w-80  text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-[var(--light-blue)] light:text-[var(--gray-70)]">
-          Your Growth Ally
+          {t("2.title")}
         </h2>
         <p className="mt-4 max-w-[26rem] text-left  text-base/6 text-[var(--gray-blue)] light:text-[var(--gray-40)]">
-          We are committed to delivering immediate outcomes while fostering your
-          long-term success. At The Clicks, your ROI and revenue go beyond mere
-          metrics—we substantiate our impact by supporting your marketing
-          initiatives throughout the entire customer journey to maximize
-          results.
+          {t("2.description")}
         </p>
       </WobbleCard>
       <WobbleCard
@@ -50,13 +46,10 @@ export function WobbleCardDemo() {
         className="light:bg-[var(--light-blue)] bg-[var(--blue2)]"
       >
         <h2 className="max-w-80  text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-[var(--light-blue)] light:text-[var(--gray-70)]">
-          Data-Driven, Predictable, and Transparent
+          {t("3.title")}
         </h2>
         <p className="mt-4 max-w-[26rem] text-left  text-base/6 text-[var(--gray-blue)] light:text-[var(--gray-40)]">
-          Our meticulously developed methods and processes have empowered a wide
-          range of businesses, from startups to established enterprises, across
-          more than 10 industries. We maintain our agility, adaptability, and
-          ease of collaboration, regardless of our extensive experience.
+          {t("3.description")}
         </p>
       </WobbleCard>
       <WobbleCard
@@ -64,13 +57,10 @@ export function WobbleCardDemo() {
         className="light:bg-[var(--light-blue)] bg-[var(--blue2)]"
       >
         <h2 className="max-w-80  text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-[var(--light-blue)] light:text-[var(--gray-70)]">
-          Tailored Marketing Solutions
+          {t("4.title")}
         </h2>
         <p className="mt-4 max-w-[26rem] text-left  text-base/6 text-[var(--gray-blue)] light:text-[var(--gray-40)]">
-          We customize our strategies to meet your specific business needs and
-          objectives, ensuring every marketing plan aligns with your goals. Our
-          team stays updated on the latest trends and technologies to provide
-          the best outcomes.
+          {t("4.description")}
         </p>
       </WobbleCard>
       <WobbleCard
@@ -78,13 +68,10 @@ export function WobbleCardDemo() {
         className="light:bg-[var(--light-blue)] bg-[var(--blue2)]"
       >
         <h2 className="max-w-80  text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-[var(--light-blue)] light:text-[var(--gray-70)]">
-          Holistic Customer Engagement
+          {t("5.title")}
         </h2>
         <p className="mt-4 max-w-[26rem] text-left  text-base/6 text-[var(--gray-blue)] light:text-[var(--gray-40)]">
-          We integrate multiple touchpoints and channels to create seamless
-          customer experiences. Our comprehensive strategy covers everything
-          from initial awareness to post-purchase support, enhancing customer
-          loyalty and driving repeat business.
+          {t("5.description")}
         </p>
       </WobbleCard>
       {/* <WobbleCard containerClassName="col-span-1 lg:col-span-2 bg-transparent min-h-[500px] lg:min-h-[600px] xl:min-h-[300px]">

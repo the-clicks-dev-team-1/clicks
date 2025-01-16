@@ -12,5 +12,222 @@
       "en": "Eng",
       "fr": "Fr"
     }
+  },
+  "navbar": {
+    "home": "Accueil",
+    "services": "Services",
+    "pricing": "Tarification",
+    "about": "À propos",
+    "blog": "Blog",
+    "contacts": "Contacts",
+    "webDev": "Développement Web",
+    "strategyDev": "Développement de stratégie",
+    "seo": "SEO",
+    "ppc": "Publicité PPC",
+    "smm": "Marketing des médias sociaux",
+    "cm": "Marketing de contenu",
+    "emailMarketing": "Marketing par email",
+    "cro": "Optimisation du taux de conversion",
+    "analytics": "Analyse et rapports",
+    "automation": "Automatisation du marketing",
+    "pr": "Relations publiques",
+    "design": "Conception graphique",
+    "book": "Parlons-en"
+  },
+  "footer": {
+    "newsletterTitle": "Abonnez-vous à notre newsletter",
+    "privacyPolicy": "Politique de confidentialité",
+    "licensing": "Licences",
+    "termsAndConditions": "Termes et conditions",
+    "company": "Entreprise",
+    "services": "Services",
+    "pricing": "Tarification",
+    "about": "À propos",
+    "blog": "Blog",
+    "location": "Emplacement",
+    "address": "860 Main Street, Moncton,\nNB, Canada",
+    "email": "info@theclicks.ca",
+    "phone": "+1 506 871 8210",
+    "rightsReserved": {
+      "year": "© 2024 ",
+      "clicks": "The Clicks™",
+      "allRights": ". Tous droits réservés."
+    },
+    "newsletterFormProps": {
+      "email": "Votre Email",
+      "subscribe": "S'abonner",
+      "subscribing": "En cours d'abonnement..."
+    }
+  },
+  "home": {
+    "title": "Transformez votre entreprise avec l'intelligence artificielle",
+    "description": "Révolutionnez les opérations, optimisez les processus et stimulez la croissance grâce à des décisions et des innovations plus intelligentes.",
+    "cta": "Réserver un appel",
+    "ourPartners": "Nos partenaires :",
+    "block": {
+      "whileYouSpentTime": {
+        "1": "Pendant que vous passiez du temps",
+        "2": "avec votre famille,",
+        "3": "nos solutions travaillent",
+        "4": "à votre succès."
+      },
+      "weLeverageTopTier": "Nous utilisons des outils de marketing Internet de premier ordre pour assurer le succès de nos précieux partenaires. Notre engagement comprend une approche centrée sur le client, la livraison de résultats prévisibles et une attention constante à l'amélioration de la rentabilité."
+    },
+    "wobbleCard": {
+      "1": {
+        "title": "Expertise en marketing mondial",
+        "description": "Chez The Clicks, nous exploitons notre vaste expertise dans divers domaines du marketing pour offrir une évolutivité rapide et des modèles d'engagement adaptables. Notre objectif est d'aider les clients à affiner leurs stratégies marketing, à favoriser une culture axée sur les données et à atteindre une croissance durable."
+      },
+      "2": {
+        "title": "Votre allié pour la croissance",
+        "description": "Nous nous engageons à fournir des résultats immédiats tout en favorisant votre succès à long terme. Chez The Clicks, votre retour sur investissement et vos revenus dépassent de simples métriques—nous prouvons notre impact en soutenant vos initiatives marketing tout au long du parcours client pour maximiser les résultats."
+      },
+      "3": {
+        "title": "Axé sur les données, prévisible et transparent",
+        "description": "Nos méthodes et processus soigneusement élaborés ont permis à un large éventail d'entreprises, des startups aux entreprises établies, dans plus de 10 industries. Nous maintenons notre agilité, notre adaptabilité et notre facilité de collaboration, quelles que soient nos expériences étendues."
+      },
+      "4": {
+        "title": "Solutions marketing sur mesure",
+        "description": "Nous personnalisons nos stratégies pour répondre aux besoins spécifiques de votre entreprise, garantissant que chaque plan marketing s'aligne sur vos objectifs. Notre équipe se tient à jour des dernières tendances et technologies pour fournir les meilleurs résultats."
+      },
+      "5": {
+        "title": "Engagement client holistique",
+        "description": "Nous intégrons plusieurs points de contact et canaux pour créer des expériences client transparentes. Notre stratégie globale couvre tout, de la sensibilisation initiale au support après achat, renforçant ainsi la fidélité des clients et stimulant les affaires répétées."
+      }
+    },
+    "services": {
+      "ourServices": "Nos services",
+      "atOurCompany": "Dans notre entreprise, nous répondons aux besoins des entreprises de toutes tailles, en veillant à ce que les petites entreprises comme les grandes reçoivent des services de premier ordre. Nos efforts dévoués visent à favoriser la croissance et la prospérité de votre entreprise."
+    },
+    "testimonials": {
+      "title": "La façon dont nous travaillons",
+      "1": {
+        "quote": "Nous commençons par une conversation informelle pour comprendre votre entreprise, vos objectifs et vos attentes. Parlez-nous de votre public cible et de vos efforts de marketing actuels.",
+        "name": "1. Réunion initiale : Faisons connaissance"
+      },
+      "2": {
+        "quote": "Nous effectuons une analyse détaillée de vos stratégies marketing actuelles, évaluons vos concurrents et le marché. Nous examinerons votre site Web et votre présence sur les réseaux sociaux pour savoir exactement par où commencer.",
+        "name": "2. Analyse approfondie : Plongée dans les détails"
+      },
+      "3": {
+        "quote": "À cette étape, nous élaborons une stratégie marketing, définissons des objectifs, des KPI et un plan d'action. Nous identifions les canaux et méthodes de promotion, allouons le budget et les ressources.",
+        "name": "3. Planification stratégique : Élaboration du plan"
+      },
+      "4": {
+        "quote": "Nos esprits créatifs développent des éléments visuels et de marque uniques. Nous créons du contenu pour votre site Web, des blogs, des réseaux sociaux et des campagnes publicitaires. Vidéos, graphiques et autres supports marketing – tout sera prêt !",
+        "name": "4. Créativité et contenu : Créer la magie"
+      },
+      "5": {
+        "quote": "Nous gérons le développement et l'optimisation de votre site Web, configurons et gérons des campagnes publicitaires (PPC, SEO, SMM). Nous mettons en place des outils analytiques pour suivre les données.",
+        "name": "5. Mise en œuvre technique : Innover"
+      },
+      "6": {
+        "quote": "Le contenu est publié, les campagnes publicitaires sont lancées ! Nous les gérons activement et les optimisons pour obtenir les meilleurs résultats.",
+        "name": "6. Lancement de la campagne : En avant vers le succès !"
+      },
+      "7": {
+        "quote": "Nous suivons constamment les résultats des campagnes et vous rapportons régulièrement. Nous partageons l'analyse des données et des recommandations pour ajuster la stratégie et obtenir de meilleurs résultats.",
+        "name": "7. Suivi et rapports : Vous tenir informé"
+      },
+      "8": {
+        "quote": "Nous discutons des résultats, apportons des modifications et optimisons la stratégie en fonction de vos retours. Nous planifions les prochaines étapes et les stratégies à long terme pour assurer la croissance continue de votre entreprise.",
+        "name": "8. Retours et amélioration : Grandir ensemble"
+      }
+    },
+    "reviews": {
+      "title": "Avis des clients",
+      "testimonials": [
+        {
+          "quote": "The Clicks nous a aidés à transformer notre marketing numérique. Le trafic de notre site web a doublé, et nous avons commencé à voir de vrais résultats en quelques mois.",
+          "title": "Propriétaire, Thompson & Co."
+        },
+        {
+          "quote": "Leurs stratégies sur les réseaux sociaux étaient parfaites. Nous avons constaté une augmentation significative de l'engagement et notre notoriété a considérablement augmenté.",
+          "title": "Responsable marketing, GreenWave Solutions"
+        },
+        {
+          "quote": "Nous avions des difficultés avec notre présence en ligne, mais The Clicks nous a fourni un plan clair et efficace qui a amélioré notre visibilité et notre portée client.",
+          "title": "PDG, Jackson Enterprises"
+        },
+        {
+          "quote": "L'équipe de The Clicks a compris nos besoins et a livré une stratégie sur mesure qui a dépassé nos attentes. Nos ventes ont augmenté de 30 % depuis que nous avons commencé à travailler avec eux.",
+          "title": "Fondatrice, Lee's Boutique"
+        },
+        {
+          "quote": "Leur approche axée sur les données était exactement ce dont nous avions besoin. Nous avons constaté une amélioration mesurable de notre ROI grâce à leurs efforts.",
+          "title": "Directeur des opérations, FreshStart Inc."
+        },
+        {
+          "quote": "The Clicks a transformé nos campagnes en ligne avec des idées innovantes et un soutien constant. Nous sommes ravis des résultats.",
+          "title": "Co-fondatrice, EcoHarmony"
+        },
+        {
+          "quote": "Travailler avec The Clicks a été un véritable tournant pour notre entreprise. Leurs analyses de notre marché nous ont aidés à affiner notre stratégie et à développer notre base de clients.",
+          "title": "Directeur général, BuildRight Construction"
+        },
+        {
+          "quote": "Leurs compétences en marketing numérique ont porté notre marque à de nouveaux sommets. Nous n'avons jamais été aussi visibles en ligne.",
+          "title": "Directrice marketing, PureEssentials"
+        },
+        {
+          "quote": "The Clicks a fait une grande différence dans notre stratégie en ligne. Nous avons constaté une augmentation significative du trafic et des prospects depuis que nous avons collaboré avec eux.",
+          "title": "Propriétaire, Scott's Landscaping"
+        },
+        {
+          "quote": "Dès le début, The Clicks a été attentif, professionnel et efficace. Nos efforts marketing n'ont jamais été aussi solides.",
+          "title": "PDG, TurnerTech Solutions"
+        }
+      ]
+    }
+  },
+  "projects": {
+    "stratdev": {
+      "title": "Développement de Stratégie",
+      "description": "Consultation détaillée pour comprendre les objectifs commerciaux, le public cible et les efforts marketing actuels du client. Élaboration d'une stratégie de marketing numérique personnalisée."
+    },
+    "webdev": {
+      "title": "Conception et Développement Web",
+      "description": "Création d'un site web moderne et réactif optimisé pour l'expérience utilisateur et les conversions."
+    },
+    "seo": {
+      "title": "Optimisation pour les Moteurs de Recherche",
+      "description": "SEO sur la page et hors page pour améliorer le classement dans les moteurs de recherche et le trafic organique."
+    },
+    "ppc": {
+      "title": "Publicité au Coût par Clic",
+      "description": "Gestion des campagnes PPC pour générer un trafic ciblé et augmenter les conversions."
+    },
+    "smm": {
+      "title": "Marketing sur les Réseaux Sociaux",
+      "description": "Stratégie de réseaux sociaux, création de contenu et gestion de communauté sur des plateformes comme Facebook, Instagram, Twitter, LinkedIn, et autres."
+    },
+    "cm": {
+      "title": "Marketing de Contenu",
+      "description": "Création et distribution de contenu précieux pour attirer et engager le public cible."
+    },
+    "em": {
+      "title": "Marketing par Courriel",
+      "description": "Conception et exécution de campagnes de marketing par courriel pour nourrir les prospects et fidéliser les clients."
+    },
+    "cro": {
+      "title": "Optimisation du Taux de Conversion",
+      "description": "Analyse et optimisation des sites web et des pages de destination pour améliorer les taux de conversion."
+    },
+    "analytics": {
+      "title": "Analytique et Rapports",
+      "description": "Analytique et rapports complets pour suivre les performances des efforts de marketing numérique."
+    },
+    "automation": {
+      "title": "Automatisation du Marketing",
+      "description": "Mise en œuvre d'outils d'automatisation du marketing pour rationaliser et améliorer les efforts marketing."
+    },
+    "pr": {
+      "title": "Relations Publiques",
+      "description": "Les relations publiques sont un processus de communication stratégique qui établit des relations mutuellement bénéfiques entre les organisations et leurs publics."
+    },
+    "design": {
+      "title": "Conception Graphique",
+      "description": "La conception graphique est un service créatif impliquant la création de designs visuellement attrayants et percutants pour communiquer des messages et renforcer l'identité de la marque."
+    }
   }
 }

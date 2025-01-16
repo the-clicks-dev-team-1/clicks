@@ -24,6 +24,7 @@ import LocaleSwitcher from "./LocaleSwitcher";
 import Logo from "./Logo";
 import { usePathname } from "@/i18n/routing";
 import Runner from "./Runner";
+import { useTranslations } from "next-intl";
 
 type NavItem = {
   label: string;
@@ -107,6 +108,7 @@ const navItems: NavItem[] = [
 ];
 
 export default function Navbar() {
+  const t = useTranslations("navbar");
   const [animationParent] = useAutoAnimate<HTMLDivElement>();
   const [isSideMenuOpen, setSideMenu] = useState(false);
   const { theme, setTheme } = useTheme();
