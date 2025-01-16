@@ -57,7 +57,8 @@ const SliderOne = () => {
 
   if (!isClient) {
     // Рендеринг простого содержимого на сервере для избежания ошибки гидратации
-    return <LoadingSpinner color="#b1b7c9" />;
+    // return <LoadingSpinner color="#b1b7c9" />;
+    return <LoadingSpinner colorScheme="gray" />;
   }
 
   return (
