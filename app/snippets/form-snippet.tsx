@@ -263,7 +263,7 @@ export default function ContactForm({ consultation }: ContactFormProps) {
                             />
                           </FormControl>
                           {form.formState.errors.first_name && (
-                            <p className="text-[var(--error)]">
+                            <p className="text-[var(--error)] text-xs">
                               {f(`${form.formState.errors.first_name.message}`)}
                             </p>
                           )}
@@ -286,7 +286,7 @@ export default function ContactForm({ consultation }: ContactFormProps) {
                             />
                           </FormControl>
                           {form.formState.errors.last_name && (
-                            <p className="text-[var(--error)]">
+                            <p className="text-[var(--error)] text-xs">
                               {f(`${form.formState.errors.last_name.message}`)}
                             </p>
                           )}
@@ -310,7 +310,7 @@ export default function ContactForm({ consultation }: ContactFormProps) {
                           />
                         </FormControl>
                         {form.formState.errors.email && (
-                          <p className="text-[var(--error)]">
+                          <p className="text-[var(--error)] text-xs">
                             {f(`${form.formState.errors.email.message}`)}
                           </p>
                         )}
@@ -422,7 +422,7 @@ export default function ContactForm({ consultation }: ContactFormProps) {
                           />
                         </FormControl>
                         {form.formState.errors.info && (
-                          <p className="text-[var(--error)]">
+                          <p className="text-[var(--error)] text-xs">
                             {f(`${form.formState.errors.info.message}`)}
                           </p>
                         )}
@@ -448,7 +448,7 @@ export default function ContactForm({ consultation }: ContactFormProps) {
                           </div>
                         </div>
                         {form.formState.errors.consent && (
-                          <p className="text-[var(--error)] text-sm">
+                          <p className="text-[var(--error)] text-xs">
                             {f(`${form.formState.errors.consent.message}`)}
                           </p>
                         )}

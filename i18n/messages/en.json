@@ -68,12 +68,7 @@
     "cta": "Book A Call",
     "ourPartners": "Our partners:",
     "block": {
-      "whileYouSpentTime": {
-        "1": "While you spent time",
-        "2": "with your family,",
-        "3": "our solutions work",
-        "4": "towards your success."
-      },
+      "whileYouSpentTime": "While you spent time with your family, our solutions work towards your success.",
       "weLeverageTopTier": "We leverage top-tier Internet marketing tools to ensure the success of our valued partners. Our commitment includes a customer-centric approach, delivering predictable results, and an unwavering focus on enhancing profitability."
     },
     "wobbleCard": {

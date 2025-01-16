@@ -8,12 +8,8 @@ const Block: React.FC = () => {
   return (
     <div className="mb-10 px-4 md:px-10 mx-auto relative z-10 w-full max-w-7xl flex flex-col-reverse md:flex-row 1items-center justify-center">
       <div className="md:w-1/2 md:pl-10">
-        <div className="text-2xl mb-10 md:text-4xl text-left bg-clip-text text-transparent bg-gradient-to-b from-sky-400 to bg-purple-500 bg-opacity-50">
-          {t("whileYouSpentTime.1")} <br />
-          {t("whileYouSpentTime.2")}
-          <br />
-          {t("whileYouSpentTime.3")} <br />
-          {t("whileYouSpentTime.4")}
+        <div className="max-w-[84%] text-2xl mb-10 md:text-4xl text-left bg-clip-text text-transparent bg-gradient-to-b from-sky-400 to bg-purple-500 bg-opacity-50">
+          {t("whileYouSpentTime")}
         </div>
         <p className="text-lg font-normal text-[var(--gray-blue)] light:text-[var(--gray-70)] max-w-lg text-left">
           {t("weLeverageTopTier")}

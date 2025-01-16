@@ -68,12 +68,7 @@
     "cta": "Réserver un appel",
     "ourPartners": "Nos partenaires :",
     "block": {
-      "whileYouSpentTime": {
-        "1": "Pendant que vous passiez du temps",
-        "2": "avec votre famille,",
-        "3": "nos solutions travaillent",
-        "4": "à votre succès."
-      },
+      "whileYouSpentTime": "Pendant que vous passiez du temps avec votre famille, nos solutions travaillent à votre succès.",
       "weLeverageTopTier": "Nous utilisons des outils de marketing Internet de premier ordre pour assurer le succès de nos précieux partenaires. Notre engagement comprend une approche centrée sur le client, la livraison de résultats prévisibles et une attention constante à l'amélioration de la rentabilité."
     },
     "wobbleCard": {
