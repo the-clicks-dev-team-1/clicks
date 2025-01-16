@@ -49,7 +49,8 @@ const JobDetail: FC<JobProps> = ({ params }) => {
   }, [params.slug, locale]);
 
   if (loading) {
-    return <LoadingSpinner color="#b1b7c9" />;
+    // return <LoadingSpinner color="#b1b7c9" />;
+    return <LoadingSpinner colorScheme="gray" />;
   }
 
   if (error || !job) {
