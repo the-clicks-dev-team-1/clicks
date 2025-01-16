@@ -11,6 +11,7 @@ import {
   GlowingStarsTitle,
 } from "@/components/ui/glowing-stars";
 import { Link } from "@/i18n/routing";
+import { getTranslations } from "next-intl/server";
 
 export const metadata: Metadata = {
   title: "Join Our Team",
@@ -18,13 +19,26 @@ export const metadata: Metadata = {
     "We're always looking for talented and passionate individuals to join our team. Explore our current job openings and find out more about life at The Clicks.",
 };
 
-const fetchJobs = async () => {
-  const res = await clientNew.getEntries({ content_type: "jobOpening" });
-  return res.items;
+const fetchJobs = async (locale: string) => {
+  try {
+    const res = await clientNew.getEntries({
+      content_type: "jobOpening",
+      locale,
+    });
+    return res.items;
+  } catch (error) {
+    console.error("Failed to fetch job openings:", error);
+    return [];
+  }
 };
 
-const Careers: FC = async () => {
-  const jobs = await fetchJobs();
+const Careers: FC<{ params: { locale: string } }> = async ({
+  params: { locale },
+}) => {
+  const t = await getTranslations({ locale, namespace: "localeSwitcher" });
+  console.log(t("label"));
+  console.log(locale);
+  const jobs = await fetchJobs(locale);
 
   return (
     <div className="bg-[var(--bgnew)] text-[var(--text)]">
@@ -48,27 +62,35 @@ const Careers: FC = async () => {
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-            {jobs.map((job) => (
-              <div
-                key={job.sys.id}
-                className="bg-[var(--blue2)] light:bg-[var(--light-blue)] rounded-lg p-6 shadow-lg"
-              >
-                <h3 className="text-2xl font-bold">
-                  {typeof job.fields.title === "string" ? job.fields.title : ""}
-                </h3>
-                <p className="mt-2 text-lg text-[var(--text-gray)]">
-                  {typeof job.fields.shortDescription === "string"
-                    ? job.fields.shortDescription
-                    : ""}
-                </p>
-                <Link
-                  href={`/about/careers/${job.fields.slug}`} // исправлено
-                  className="inline-block mt-4 bg-[var(--ocean-blue)] #bg-gradient-to-r from-sky-400 to-purple-500 text-white font-bold py-2 px-4 rounded-lg shadow-lg hover:bg-opacity-75 transition duration-300"
+            {jobs.length > 0 ? (
+              jobs.map((job) => (
+                <div
+                  key={job.sys.id}
+                  className="bg-[var(--blue2)] light:bg-[var(--light-blue)] rounded-lg p-6 shadow-lg"
                 >
-                  Learn More
-                </Link>
-              </div>
-            ))}
+                  <h3 className="text-2xl font-bold">
+                    {typeof job.fields.title === "string"
+                      ? job.fields.title
+                      : ""}
+                  </h3>
+                  <p className="mt-2 text-lg text-[var(--text-gray)]">
+                    {typeof job.fields.shortDescription === "string"
+                      ? job.fields.shortDescription
+                      : ""}
+                  </p>
+                  <Link
+                    href={`/about/careers/${job.fields.slug}`}
+                    className="inline-block mt-4 bg-[var(--ocean-blue)] #bg-gradient-to-r from-sky-400 to-purple-500 text-white font-bold py-2 px-4 rounded-lg shadow-lg hover:bg-opacity-75 transition duration-300"
+                  >
+                    Learn More
+                  </Link>
+                </div>
+              ))
+            ) : (
+              <p className="text-center text-lg">
+                No job openings available at the moment.
+              </p>
+            )}
           </div>
         </div>
       </div>
@@ -84,6 +106,7 @@ const Careers: FC = async () => {
                 width={600}
                 height={400}
                 className="rounded-lg"
+                loading="lazy"
               />
             </div>
             <div className="flex flex-col justify-center">
