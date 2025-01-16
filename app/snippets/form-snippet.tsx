@@ -26,55 +26,56 @@ import { useToast } from "@/components/ui/use-toast";
 import { Textarea } from "@/components/ui/textarea";
 import { PiCheckLight, PiSmiley } from "react-icons/pi";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 const FormSchema = z.object({
   first_name: z
     .string()
-    .min(1, { message: "First name is required" })
-    .min(2, { message: "First name must be at least 2 characters long" }),
+    .min(1, { message: "validations.firstNameRequired" })
+    .min(2, { message: "validations.firstNameMin" }),
   last_name: z
     .string()
-    .min(1, { message: "Last name is required" })
-    .min(2, { message: "Last name must be at least 2 characters long" }),
-  email: z.string().email({ message: "Invalid email address" }),
-  job_title: z.string().min(1, { message: "Job title is required" }),
+    .min(1, { message: "validations.lastNameRequired" })
+    .min(2, { message: "validations.lastNameMin" }),
+  email: z.string().email({ message: "validations.email" }),
+  job_title: z.string().min(1, { message: "validations.jobRequired" }),
   company_name: z.string().optional(),
   help: z
     .enum([
-      "-- Select an option --",
-      "Evaluate The Clicks for my company",
-      "Learn more about our services",
-      "Get a customized quote",
-      "Request a consultation",
-      "Other",
+      "help.default",
+      "help.evaluate",
+      "help.learnMore",
+      "help.quote",
+      "help.consultation",
+      "help.other",
     ])
     .optional(),
   services: z
     .enum([
-      "-- Select an option --",
-      "Strategy Development",
-      "Web Development",
-      "SEO",
-      "PPC Advertising",
-      "Social Media Marketing",
-      "Content Marketing",
-      "Email Marketing",
-      "Conversion Rate Optimization",
-      "Analytics and Reporting",
-      "Marketing Automation",
-      "Branding",
-      "Public Relations",
-      "Graphic Design",
+      "services.default",
+      "services.strategy",
+      "services.web",
+      "services.seo",
+      "services.ppc",
+      "services.social",
+      "services.content",
+      "services.email",
+      "services.conversion",
+      "services.analytics",
+      "services.automation",
+      "services.branding",
+      "services.pr",
+      "services.design",
     ])
     .optional(),
   info: z
     .string()
     .min(10, {
-      message: "Please provide more information (at least 10 characters)",
+      message: "validations.minInfo",
     })
     .optional(),
   consent: z.boolean().refine((val) => val === true, {
-    message: "You must agree to the data collection.",
+    message: "validations.consent",
   }),
 });
 
@@ -85,6 +86,35 @@ type ContactFormProps = {
 };
 
 export default function ContactForm({ consultation }: ContactFormProps) {
+  const t = useTranslations("contactForm");
+  const f = useTranslations("fields");
+
+  const helpOptions = [
+    { value: "help.default", label: t("help.default") },
+    { value: "help.evaluate", label: t("help.evaluate") },
+    { value: "help.learnMore", label: t("help.learnMore") },
+    { value: "help.quote", label: t("help.quote") },
+    { value: "help.consultation", label: t("help.consultation") },
+    { value: "help.other", label: t("help.other") },
+  ];
+
+  const serviceOptions = [
+    { value: "services.default", label: t("services.default") },
+    { value: "services.strategy", label: t("services.strategy") },
+    { value: "services.web", label: t("services.web") },
+    { value: "services.seo", label: t("services.seo") },
+    { value: "services.ppc", label: t("services.ppc") },
+    { value: "services.social", label: t("services.social") },
+    { value: "services.content", label: t("services.content") },
+    { value: "services.email", label: t("services.email") },
+    { value: "services.conversion", label: t("services.conversion") },
+    { value: "services.analytics", label: t("services.analytics") },
+    { value: "services.automation", label: t("services.automation") },
+    { value: "services.branding", label: t("services.branding") },
+    { value: "services.pr", label: t("services.pr") },
+    { value: "services.design", label: t("services.design") },
+  ];
+
   const [loading, setLoading] = useState(false);
   const [submitted, setSubmitted] = useState(false);
   const { toast } = useToast();
@@ -97,8 +127,8 @@ export default function ContactForm({ consultation }: ContactFormProps) {
       email: "",
       job_title: "",
       company_name: "",
-      help: "-- Select an option --",
-      services: "-- Select an option --",
+      help: "help.default",
+      services: "services.default",
       info: "",
       consent: false,
     },
@@ -146,7 +176,7 @@ export default function ContactForm({ consultation }: ContactFormProps) {
               className="text-2xl md:text-4xl font-semibold mb-6 dark:text-gradient bg-gradient-to-b from-sky-400 
             to bg-purple-500 bg-opacity-50 bg-clip-text dark:text-transparent text-[var(--gray-70)]"
             >
-              Have a questions?
+              {t("questions")}
             </h2>
 
             {consultation ? (
@@ -158,14 +188,12 @@ export default function ContactForm({ consultation }: ContactFormProps) {
                 className="text-2xl md:text-4xl font-semibold mb-10 dark:text-gradient bg-gradient-to-b from-sky-400 
             to bg-purple-500 bg-opacity-50 bg-clip-text dark:text-transparent text-[var(--gray-70)]"
               >
-                Get in Touch
+                {t("getInTouch")}
               </h2>
             )}
             <div className="flex-1">
               <p className="text-lg mb-10 text-[var(--gray-blue)] light:text-[var(--gray-70)]">
-                We value your feedback, questions, and inquiries. Whether you
-                have a suggestion, require assistance, or just want to reach out
-                to us, we are always here to provide support and assistance.
+                {t("description")}
               </p>
               <p className="text-lg mb-2 flex gap-3">
                 <Image
@@ -179,7 +207,7 @@ export default function ContactForm({ consultation }: ContactFormProps) {
                   href="tel:+15068718210"
                   className="text-[var(--gray-blue)] light:text-[var(--gray-100)]"
                 >
-                  +1 506 871 8210
+                  {t("contact.phone")}
                 </a>
               </p>
               <p className="text-lg mb-2 flex gap-3">
@@ -194,7 +222,7 @@ export default function ContactForm({ consultation }: ContactFormProps) {
                   href="mailto:info@theclicks.com"
                   className="text-[var(--gray-blue)] light:text-[var(--gray-100)]"
                 >
-                  info@theclicks.ca
+                  {t("contact.email")}
                 </a>
               </p>
               <p className="text-lg flex gap-3 text-[var(--gray-blue)] light:text-[var(--gray-100)]">
@@ -205,7 +233,7 @@ export default function ContactForm({ consultation }: ContactFormProps) {
                   height={20}
                   className="h-auto w-auto"
                 />
-                860 Main Street, Moncton
+                {t("contact.address")}
               </p>
             </div>
           </div>
@@ -226,7 +254,7 @@ export default function ContactForm({ consultation }: ContactFormProps) {
                       render={({ field }) => (
                         <FormItem className="items-center justify-center w-full">
                           <FormLabel className="text-sm bg-clip-text text-[var(--gray-blue)] light:text-[var(--gray-70)] #bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50">
-                            First name *
+                            {f("firstName")} *
                           </FormLabel>
                           <FormControl>
                             <Input
@@ -236,7 +264,7 @@ export default function ContactForm({ consultation }: ContactFormProps) {
                           </FormControl>
                           {form.formState.errors.first_name && (
                             <p className="text-[var(--error)]">
-                              {form.formState.errors.first_name.message}
+                              {f(`${form.formState.errors.first_name.message}`)}
                             </p>
                           )}
                         </FormItem>
@@ -249,7 +277,7 @@ export default function ContactForm({ consultation }: ContactFormProps) {
                       render={({ field }) => (
                         <FormItem className="items-center justify-center w-full">
                           <FormLabel className="text-sm bg-clip-text text-[var(--gray-blue)] light:text-[var(--gray-70)] #bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50">
-                            Last name *
+                            {f("lastName")} *
                           </FormLabel>
                           <FormControl>
                             <Input
@@ -259,7 +287,7 @@ export default function ContactForm({ consultation }: ContactFormProps) {
                           </FormControl>
                           {form.formState.errors.last_name && (
                             <p className="text-[var(--error)]">
-                              {form.formState.errors.last_name.message}
+                              {f(`${form.formState.errors.last_name.message}`)}
                             </p>
                           )}
                         </FormItem>
@@ -273,7 +301,7 @@ export default function ContactForm({ consultation }: ContactFormProps) {
                     render={({ field }) => (
                       <FormItem className="items-center justify-center w-full">
                         <FormLabel className="text-sm bg-clip-text text-[var(--gray-blue)] light:text-[var(--gray-70)] #bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50">
-                          Email *
+                          {f("email")} *
                         </FormLabel>
                         <FormControl>
                           <Input
@@ -283,7 +311,7 @@ export default function ContactForm({ consultation }: ContactFormProps) {
                         </FormControl>
                         {form.formState.errors.email && (
                           <p className="text-[var(--error)]">
-                            {form.formState.errors.email.message}
+                            {f(`${form.formState.errors.email.message}`)}
                           </p>
                         )}
                       </FormItem>
@@ -296,7 +324,7 @@ export default function ContactForm({ consultation }: ContactFormProps) {
                     render={({ field }) => (
                       <FormItem className="items-center justify-center w-full">
                         <FormLabel className="text-sm bg-clip-text text-[var(--gray-blue)] light:text-[var(--gray-70)] #bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50">
-                          Company name
+                          {f("companyName")}
                         </FormLabel>
                         <FormControl>
                           <Input
@@ -314,7 +342,7 @@ export default function ContactForm({ consultation }: ContactFormProps) {
                     render={({ field }) => (
                       <FormItem className="items-center justify-center w-full">
                         <FormLabel className="text-sm bg-clip-text text-[var(--gray-blue)] light:text-[var(--gray-70)] #bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50">
-                          Services you are interested in
+                          {t("services.label")}
                         </FormLabel>
                         <Select
                           onValueChange={field.onChange}
@@ -323,50 +351,20 @@ export default function ContactForm({ consultation }: ContactFormProps) {
                           <FormControl>
                             <SelectTrigger className="light:text-black text-[var(--gray-blue)] border border-[var(--ocean-blue)] dark:bg-[var(--blue2)]">
                               <SelectValue
-                                placeholder="Select an option"
+                                placeholder={t("services.default")}
                                 className="text-black"
                               />
                             </SelectTrigger>
                           </FormControl>
                           <SelectContent className="light:text-black text-[var(--gray-blue)] border border-[var(--ocean-blue)] dark:bg-[var(--blue2)]">
-                            <SelectItem value="-- Select an option --">
-                              -- Select an option --
-                            </SelectItem>
-                            <SelectItem value="Strategy Development">
-                              Strategy Development
-                            </SelectItem>
-                            <SelectItem value="Web Development">
-                              Web Development
-                            </SelectItem>
-                            <SelectItem value="SEO">SEO</SelectItem>
-                            <SelectItem value="PPC Advertising">
-                              PPC Advertising
-                            </SelectItem>
-                            <SelectItem value="Social Media Marketing">
-                              Social Media Marketing
-                            </SelectItem>
-                            <SelectItem value="Content Marketing">
-                              Content Marketing
-                            </SelectItem>
-                            <SelectItem value="Email Marketing">
-                              Email Marketing
-                            </SelectItem>
-                            <SelectItem value="Conversion Rate Optimization">
-                              Conversion Rate Optimization
-                            </SelectItem>
-                            <SelectItem value="Analytics and Reporting">
-                              Analytics and Reporting
-                            </SelectItem>
-                            <SelectItem value="Marketing Automation">
-                              Marketing Automation
-                            </SelectItem>
-                            <SelectItem value="Branding">Branding</SelectItem>
-                            <SelectItem value="Public Relations">
-                              Public Relations
-                            </SelectItem>
-                            <SelectItem value="Graphic Design">
-                              Graphic Design
-                            </SelectItem>
+                            {serviceOptions.map((option) => (
+                              <SelectItem
+                                key={option.value}
+                                value={option.value}
+                              >
+                                {option.label}
+                              </SelectItem>
+                            ))}
                           </SelectContent>
                         </Select>
                       </FormItem>
@@ -379,7 +377,7 @@ export default function ContactForm({ consultation }: ContactFormProps) {
                     render={({ field }) => (
                       <FormItem className="items-center justify-center w-full">
                         <FormLabel className="text-sm bg-clip-text text-[var(--gray-blue)] light:text-[var(--gray-70)] #bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50">
-                          How can we help?
+                          {t("help.label")}
                         </FormLabel>
                         <Select
                           onValueChange={field.onChange}
@@ -388,28 +386,20 @@ export default function ContactForm({ consultation }: ContactFormProps) {
                           <FormControl>
                             <SelectTrigger className="light:text-black text-[var(--gray-blue)] border border-[var(--ocean-blue)] dark:bg-[var(--blue2)]">
                               <SelectValue
-                                placeholder="Select an option"
+                                placeholder={t("help.default")}
                                 className="light:text-black text-[var(--gray-blue)] placeholder:text-[var(--gray-blue)]"
                               />
                             </SelectTrigger>
                           </FormControl>
                           <SelectContent className="light:text-black text-[var(--gray-blue)] border border-[var(--ocean-blue)] dark:bg-[var(--blue2)]">
-                            <SelectItem value="-- Select an option --">
-                              -- Select an option --
-                            </SelectItem>
-                            <SelectItem value="Evaluate The Clicks for my company">
-                              Evaluate The Clicks for my company
-                            </SelectItem>
-                            <SelectItem value="Learn more about our services">
-                              Learn More
-                            </SelectItem>
-                            <SelectItem value="Get a customized quote">
-                              Get a Quote
-                            </SelectItem>
-                            <SelectItem value="Request a consultation">
-                              Request a consultation
-                            </SelectItem>
-                            <SelectItem value="Other">Other</SelectItem>
+                            {helpOptions.map((option) => (
+                              <SelectItem
+                                key={option.value}
+                                value={option.value}
+                              >
+                                {option.label}
+                              </SelectItem>
+                            ))}
                           </SelectContent>
                         </Select>
                       </FormItem>
@@ -422,7 +412,7 @@ export default function ContactForm({ consultation }: ContactFormProps) {
                     render={({ field }) => (
                       <FormItem className="items-center justify-center w-full">
                         <FormLabel className="text-sm bg-clip-text text-[var(--gray-blue)] light:text-[var(--gray-70)] #bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50">
-                          Anything else? *
+                          {f("additionalInfo")}
                         </FormLabel>
                         <FormControl>
                           <Textarea
@@ -433,7 +423,7 @@ export default function ContactForm({ consultation }: ContactFormProps) {
                         </FormControl>
                         {form.formState.errors.info && (
                           <p className="text-[var(--error)]">
-                            {form.formState.errors.info.message}
+                            {f(`${form.formState.errors.info.message}`)}
                           </p>
                         )}
                       </FormItem>
@@ -454,13 +444,12 @@ export default function ContactForm({ consultation }: ContactFormProps) {
                             />
                           </FormControl>
                           <div className="text-xs font-light md:w-3/4 mb-1 bg-clip-text text-[var(--gray-blue)] light:text-[var(--gray-70)] #bg-gradient-to-b from-neutral-50 to-neutral-400">
-                            I agree to The Clicks sending marketing
-                            communications related to The Clicks
+                            {f("consent")}
                           </div>
                         </div>
                         {form.formState.errors.consent && (
                           <p className="text-[var(--error)] text-sm">
-                            {form.formState.errors.consent.message}
+                            {f(`${form.formState.errors.consent.message}`)}
                           </p>
                         )}
                       </FormItem>
@@ -474,7 +463,7 @@ export default function ContactForm({ consultation }: ContactFormProps) {
             to-purple-500 bg-opacity-50 bg-[var(--ocean-blue)] hover:bg-[var(--ocean-blue)] light:text-white"
                       disabled={loading}
                     >
-                      Submit
+                      {t("submit")}
                     </Button>
                   </div>
                 </form>

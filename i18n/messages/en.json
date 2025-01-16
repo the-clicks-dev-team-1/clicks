@@ -232,5 +232,73 @@
       "title": "Graphic Design",
       "description": "Graphic Design is a creative service that involves crafting visually appealing and impactful designs to communicate messages and enhance brand identity."
     }
+  },
+  "contactForm": {
+    "questions": "Have a questions?",
+    "getInTouch": "Get in Touch",
+    "description": "We value your feedback, questions, and inquiries. Whether you have a suggestion, require assistance, or just want to reach out to us, we are always here to provide support and assistance.",
+    "contact": {
+      "phone": "+1 506 871 8210",
+      "email": "info@theclicks.ca",
+      "address": "860 Main Street, Moncton"
+    },
+    "submit": "Submit",
+    "required": "This field is required",
+    "emailInvalid": "Invalid email address",
+    "success": "Form submitted successfully",
+    "error": "Something went wrong",
+    "help": {
+      "label": "How can we help?",
+      "default": "-- Select an option --",
+      "evaluate": "Evaluate The Clicks for my company",
+      "learnMore": "Learn more about our services",
+      "quote": "Get a customized quote",
+      "consultation": "Request a consultation",
+      "other": "Other"
+    },
+    "services": {
+      "label": "Services you are interested in",
+      "default": "-- Select an option --",
+      "strategy": "Strategy Development",
+      "web": "Web Development",
+      "seo": "SEO",
+      "ppc": "PPC Advertising",
+      "social": "Social Media Marketing",
+      "content": "Content Marketing",
+      "email": "Email Marketing",
+      "conversion": "Conversion Rate Optimization",
+      "analytics": "Analytics and Reporting",
+      "automation": "Marketing Automation",
+      "branding": "Branding",
+      "pr": "Public Relations",
+      "design": "Graphic Design"
+    },
+    "messages": {
+      "success": "We've received your inquiry and will be contacting you via email shortly.",
+      "error": "Something went wrong"
+    }
+  },
+  "fields": {
+    "firstName": "First name",
+    "lastName": "Last name",
+    "email": "Email",
+    "job": "Job title",
+    "companyName": "Company name",
+    "services": "Services you are interested in",
+    "help": "How can we help?",
+    "additionalInfo": "Anything else? *",
+    "consent": "I agree to The Clicks sending marketing communications related to The Clicks",
+    "validations": {
+      "firstNameRequired": "First name is required",
+      "lastNameRequired": "Last name is required",
+      "jobRequired": "Job title name is required",
+      "firstNameMin": "First name must be at least 2 characters long",
+      "lastNameMin": "Last name must be at least 2 characters long",
+      "required": "${field} is required",
+      "minLength": "${field} must be at least ${min} characters long",
+      "email": "Invalid email address",
+      "consent": "You must agree to the data collection.",
+      "minInfo": "Please provide more information (at least 10 characters)"
+    }
   }
 }

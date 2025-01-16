@@ -232,5 +232,73 @@
       "title": "Conception Graphique",
       "description": "La conception graphique est un service créatif impliquant la création de designs visuellement attrayants et percutants pour communiquer des messages et renforcer l'identité de la marque."
     }
+  },
+  "contactForm": {
+    "questions": "Vous avez des questions?",
+    "getInTouch": "Contactez-nous",
+    "description": "Nous attachons de l'importance à vos commentaires, questions et demandes. Que vous ayez une suggestion, besoin d'aide ou que vous souhaitiez simplement nous contacter, nous sommes toujours là pour vous apporter soutien et assistance.",
+    "contact": {
+      "phone": "+1 506 871 8210",
+      "email": "info@theclicks.ca",
+      "address": "860 rue Main, Moncton"
+    },
+    "submit": "Soumettre",
+    "required": "Ce champ est obligatoire",
+    "emailInvalid": "Adresse email invalide",
+    "success": "Formulaire soumis avec succès",
+    "error": "Une erreur s'est produite",
+    "help": {
+      "label": "Comment pouvons-nous vous aider?",
+      "default": "-- Sélectionnez une option --",
+      "evaluate": "Évaluer The Clicks pour mon entreprise",
+      "learnMore": "En savoir plus sur nos services",
+      "quote": "Obtenir un devis personnalisé",
+      "consultation": "Demander une consultation",
+      "other": "Autre"
+    },
+    "services": {
+      "label": "Services qui vous intéressent",
+      "default": "-- Sélectionnez une option --",
+      "strategy": "Développement de stratégie",
+      "web": "Développement web",
+      "seo": "Référencement naturel (SEO)",
+      "ppc": "Publicité payante (PPC)",
+      "social": "Marketing des réseaux sociaux",
+      "content": "Marketing de contenu",
+      "email": "Marketing par courriel",
+      "conversion": "Optimisation du taux de conversion",
+      "analytics": "Analyse et rapports",
+      "automation": "Automatisation du marketing",
+      "branding": "Image de marque",
+      "pr": "Relations publiques",
+      "design": "Design graphique"
+    },
+    "messages": {
+      "success": "Nous avons bien reçu votre demande et vous contacterons par courriel sous peu.",
+      "error": "Une erreur s'est produite"
+    }
+  },
+  "fields": {
+    "firstName": "Prénom",
+    "lastName": "Nom de famille",
+    "email": "Email",
+    "job": "Titre du poste",
+    "companyName": "Nom de l'entreprise",
+    "services": "Services qui vous intéressent",
+    "help": "Comment pouvons-nous vous aider?",
+    "additionalInfo": "Autres informations? *",
+    "consent": "J'accepte que The Clicks m'envoie des communications marketing liées à The Clicks",
+    "validations": {
+      "firstNameRequired": "Le prénom est requis",
+      "lastNameRequired": "Le nom de famille est requis",
+      "jobRequired": "Le titre du poste est requis",
+      "firstNameMin": "Le prénom doit contenir au moins 2 caractères",
+      "lastNameMin": "Le nom de famille doit contenir au moins 2 caractères",
+      "required": "${field} est requis",
+      "minLength": "${field} doit comporter au moins ${min} caractères",
+      "email": "Adresse e-mail invalide",
+      "consent": "Vous devez accepter la collecte des données.",
+      "minInfo": "Veuillez fournir plus d'informations (au moins 10 caractères)"
+    }
   }
 }
