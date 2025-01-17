@@ -325,5 +325,10 @@
     "salary": "Salary",
     "perYear": "per year",
     "jobType": "Job Type"
+  },
+  "contact": {
+    "title": "Contact Us",
+    "description": "Let's talk! We are here to help you grow your business. Reach out to us for any inquiries, and we will get back to you as soon as possible.",
+    "location": "Our Location"
   }
 }
