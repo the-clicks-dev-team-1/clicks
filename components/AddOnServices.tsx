@@ -1,7 +1,7 @@
 import { AnimatedTestimonials } from "./ui/animated-testimonials";
 
 const AddOnServices = () => {
-  const  = [
+  const testimonials = [
     {
       quote:
         "We create compelling videos that showcase your story, promote your products, and captivate viewers across all platforms. Whether it’s promotional videos, tutorials, or social media reels, we bring your vision to life with creativity and precision.",
