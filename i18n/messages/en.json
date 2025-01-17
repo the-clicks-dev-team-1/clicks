@@ -330,5 +330,39 @@
     "title": "Contact Us",
     "description": "Let's talk! We are here to help you grow your business. Reach out to us for any inquiries, and we will get back to you as soon as possible.",
     "location": "Our Location"
+  },
+  "aboutAgency": {
+    "title": "About The Clicks",
+    "description1": "At The Clicks, we don't just focus on enhancing your website's visibility; we partner with you to drive meaningful results that positively impact your bottom line. Our commitment to delivering tangible business outcomes is what sets us apart in the digital marketing landscape.",
+    "description2": "Our greatest asset is our team. We prioritize continuous learning and professional growth, ensuring that our employees are always at the forefront of the latest industry trends and practices. At The Clicks, we're more than just a marketing agency—we're a community, fostering a culture and mindset that empowers both our team and our clients to thrive.",
+    "cta": "Challenge Us",
+    "culture": "The Clicks Culture",
+    "about": {
+      "title": "About Us",
+      "description1": "The Clicks is a dynamic digital marketing agency where creativity and innovation are at the forefront of everything we do. Our team is driven by passion and energy, constantly pushing the boundaries to deliver outstanding results. We are perfectionists who value the quality and impact of our work, and we are committed to driving business success and growth for our clients in the digital space.",
+      "description2": "Our approach to governance combines structured liberalism for regulated aspects of our work with a corporate noocracy that prioritizes flexibility and innovation. At The Clicks, we emphasize common sense and rational decision-making, ensuring that every action is guided by logic and aimed at achieving the best outcomes. This balance of freedom and structure, coupled with our non-standard horizontal hierarchy, fosters collaboration and minimizes formalities, empowering our team to contribute their best."
+    },
+    "team": {
+      "title": "Our Team",
+      "description1": "At The Clicks, our team is a close-knit community of passionate and driven professionals who share a unified vision. Each member embodies the spirit of a true «Clicker», characterized by ambition, responsibility, and a deep commitment to excellence. Our team is made up of experts who are not only skilled in their fields but also innovators who constantly push boundaries to explore new possibilities in digital marketing.",
+      "description2": "We cultivate an environment where equality and collaboration are paramount, ensuring that every team member's voice is heard and valued. While we thrive on teamwork, our culture also embraces ambition and healthy competition, which drives us to continually elevate our performance. This unique blend of camaraderie and individual drive empowers us to consistently deliver exceptional results for our clients, fostering an atmosphere of creativity, initiative, and ongoing growth."
+    },
+    "workProcess": {
+      "title": "Work Process",
+      "description1": "At The Clicks, we recognize that our people are the core of our success, and their well-being and productivity are our top priorities. We are committed to creating a work environment that is both comfortable and highly efficient, providing our team with the tools and support they need to excel. By constantly enhancing our workplace, we ensure that every team member can perform at their best, driving the exceptional results that define our agency.",
+      "description2": "A distinctive feature of our work process is the integration of gamification and automation. We make daily tasks more engaging and enjoyable by incorporating elements of play, which fosters a collaborative and motivated atmosphere. At the same time, we utilize advanced automation to streamline repetitive tasks, allowing our team to focus on high-impact, strategic activities. This blend of fun and efficiency not only boosts productivity but also inspires creativity and innovation, enabling us to stay ahead in the ever-evolving digital marketing landscape."
+    },
+    "mission": {
+      "title": "Our Values and Mission",
+      "description": "At The Clicks, we are dedicated to becoming a leader in digital marketing, offering top-tier SEO, PPC, and online advertising services that deliver measurable results. Our team of highly skilled specialists is committed to exceeding client expectations by leveraging the latest technologies and a systematic approach to business growth. Beyond driving business success, our mission is to inspire positive change in the communities we serve. We believe that through continuous improvement and innovation, we can empower others to contribute to making their cities and countries better places, all while creating meaningful projects and initiatives that leave a lasting impact."
+    },
+    "teamSection": {
+      "title": "Meet Our Team",
+      "ceo": "CEO & Co-founder",
+      "cd": "Creative Director & Co-founder",
+      "pc": "Project Coordinator",
+      "gd": "Graphic Designer",
+      "dev": "Full-Stack Developer | Web2 & Web3 Specialist"
+    }
   }
 }
