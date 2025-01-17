@@ -399,5 +399,176 @@
       "title": "5. Contactez-nous",
       "description": "Si vous avez des questions ou des préoccupations concernant les informations relatives à nos licences, veuillez nous contacter à :"
     }
+  },
+  "pricing": {
+    "title": "Tarification Simple",
+    "subtitle": "Choisissez votre plan",
+    "serviceTitle": "Suite de Services Marketing",
+    "serviceSubtitle": "Choisissez vos services",
+    "contact": "Contactez-nous",
+    "plans": [
+      {
+        "name": "Basique",
+        "price": "CAD $3,000",
+        "features": [
+          "SEO",
+          "Publicité PPC",
+          "Marketing sur les réseaux sociaux",
+          "Rapports mensuels"
+        ],
+        "description": "Idéal pour : Les petites entreprises et les startups avec des budgets limités cherchant à améliorer le SEO local et à engager les utilisateurs sur les réseaux sociaux.",
+        "button": "Acheter maintenant"
+      },
+      {
+        "name": "Premium",
+        "price": "CAD $7,500",
+        "features": [
+          "SEO",
+          "Publicité PPC",
+          "Marketing sur les réseaux sociaux",
+          "Marketing de contenu",
+          "Email Marketing",
+          "Développement de stratégie",
+          "Rapports mensuels"
+        ],
+        "description": "Idéal pour : Les entreprises de taille moyenne cherchant à améliorer leur visibilité en ligne avec des services de marketing numérique complets, y compris le SEO, le PPC, les réseaux sociaux et le marketing de contenu.",
+        "button": "Acheter maintenant"
+      },
+      {
+        "name": "Entreprise",
+        "price": "Discutons-en !",
+        "features": [
+          "Tous les services listés",
+          "Gestionnaire de compte dédié",
+          "Revues de performance hebdomadaires"
+        ],
+        "description": "Idéal pour : Les grandes entreprises visant une croissance agressive avec des services de marketing numérique tout compris, un gestionnaire de compte dédié et des revues de performance hebdomadaires.",
+        "button": "Contactez-nous"
+      }
+    ],
+    "offers": {
+      "loadMore": "Voir plus",
+      "orderNow": "Commander maintenant",
+      "offersList": [
+        {
+          "name": "Consultation initiale et développement de stratégie",
+          "price": "CAD $1,000 - $3,000",
+          "priceDescription": "Frais uniques",
+          "features": [
+            "Analyse commerciale",
+            "Étude de marché",
+            "Analyse des concurrents",
+            "Document stratégique"
+          ],
+          "description": "Consultation détaillée pour comprendre les objectifs commerciaux du client, son public cible et ses efforts marketing actuels. Élaboration d'une stratégie de marketing numérique personnalisée."
+        },
+        {
+          "name": "Conception et développement de site web",
+          "price": "CAD $5,000 - $20,000",
+          "priceDescription": "Frais uniques \n (en fonction de la complexité)",
+          "features": [
+            "Design sur mesure",
+            "Développement (frontend et backend)",
+            "Configuration du système de gestion de contenu (CMS)",
+            "Optimisation SEO de base"
+          ],
+          "description": "Création d'un site web moderne et réactif, optimisé pour l'expérience utilisateur et les conversions."
+        },
+        {
+          "name": "Optimisation pour les moteurs de recherche (SEO)",
+          "price": "CAD $1,000 - $5,000",
+          "priceDescription": "Redevance mensuelle",
+          "features": [
+            "Recherche de mots-clés",
+            "Optimisation sur la page",
+            "Création de liens",
+            "Rapports de performance mensuels"
+          ],
+          "description": "Optimisation sur site et hors site pour améliorer les classements sur les moteurs de recherche et le trafic organique."
+        },
+        {
+          "name": "Publicité au coût par clic (PPC)",
+          "price": "CAD $1,500 - $10,000",
+          "priceDescription": "Redevance mensuelle \n (hors dépenses publicitaires)",
+          "features": [
+            "Configuration et gestion des annonces Google Ads",
+            "Configuration et gestion des annonces Bing Ads",
+            "Rapports de performance mensuels"
+          ],
+          "description": "Gestion des campagnes PPC pour générer un trafic ciblé et augmenter les conversions."
+        },
+        {
+          "name": "Marketing des réseaux sociaux",
+          "price": "CAD $1,000 - $7,000",
+          "priceDescription": "Redevance mensuelle",
+          "features": [
+            "Calendrier de contenu",
+            "Création et planification de publications",
+            "Engagement communautaire",
+            "Rapports de performance mensuels"
+          ],
+          "description": "Stratégie de marketing sur les réseaux sociaux, création de contenu et gestion communautaire sur des plateformes comme Facebook, Instagram, Twitter, LinkedIn et autres."
+        },
+        {
+          "name": "Marketing de contenu",
+          "price": "CAD $2,000 - $8,000",
+          "priceDescription": "Redevance mensuelle",
+          "features": [
+            "Articles de blog",
+            "Articles",
+            "Infographies",
+            "E-books/Livres blancs",
+            "Rapports de performance mensuels"
+          ],
+          "description": "Création et distribution de contenu de qualité pour attirer et engager le public cible."
+        },
+        {
+          "name": "Marketing par email",
+          "price": "CAD $1,000 - $5,000",
+          "priceDescription": "Redevance mensuelle",
+          "features": [
+            "Design de modèles d'email",
+            "Segmentation des listes",
+            "Gestion des campagnes",
+            "Rapports de performance mensuels"
+          ],
+          "description": "Conception et exécution de campagnes de marketing par email pour nourrir les prospects et fidéliser les clients."
+        },
+        {
+          "name": "Optimisation du taux de conversion (CRO)",
+          "price": "CAD $1,500 - $7,000",
+          "priceDescription": "Redevance mensuelle",
+          "features": [
+            "Tests A/B",
+            "Analyse du comportement utilisateur",
+            "Analyse du tunnel de conversion",
+            "Rapports de performance mensuels"
+          ],
+          "description": "Analyse et optimisation des sites web et des pages d'atterrissage pour améliorer les taux de conversion."
+        },
+        {
+          "name": "Analyse et rapports",
+          "price": "CAD $1,000 - $3,000",
+          "priceDescription": "Redevance mensuelle",
+          "features": [
+            "Configuration de Google Analytics",
+            "Rapports de performance mensuels",
+            "Révisions stratégiques trimestrielles"
+          ],
+          "description": "Analyses et rapports complets pour suivre la performance des efforts de marketing numérique."
+        },
+        {
+          "name": "Automatisation du marketing",
+          "price": "CAD 2,000 - $10,000 \n + $1,000 - $5,000",
+          "priceDescription": "Frais de configuration uniques \n + Redevance mensuelle",
+          "features": [
+            "Configuration et intégration des outils",
+            "Création de workflows",
+            "Formation et support"
+          ],
+          "description": "Mise en œuvre d'outils d'automatisation du marketing pour rationaliser et améliorer les efforts marketing."
+        }
+      ]
+    }
   }
 }

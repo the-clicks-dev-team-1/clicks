@@ -399,5 +399,177 @@
       "title": "5. Contact Us",
       "description": "If you have any questions or concerns about our licensing information, please contact us at:"
     }
+  },
+
+  "pricing": {
+    "title": "Simple Pricing",
+    "subtitle": "Choose your plan",
+    "serviceTitle": "Marketing Service Suite",
+    "serviceSubtitle": "Choose your services",
+    "contact": "Contact Us",
+    "plans": [
+      {
+        "name": "Basic",
+        "price": "CAD $3,000",
+        "features": [
+          "SEO",
+          "PPC Advertising",
+          "Social Media Marketing",
+          "Monthly Reporting"
+        ],
+        "description": "Best Suited For: Small businesses and startups with limited budgets looking to improve local SEO and engage on social media.",
+        "button": "Buy Now"
+      },
+      {
+        "name": "Premium",
+        "price": "CAD $7,500",
+        "features": [
+          "SEO",
+          "PPC Advertising",
+          "Social Media Marketing",
+          "Content Marketing",
+          "Email Marketing",
+          "Strategy Development",
+          "Monthly Reporting"
+        ],
+        "description": "Best Suited For: Medium-sized businesses seeking to enhance online visibility with comprehensive digital marketing services, including SEO, PPC, social media, and content marketing.",
+        "button": "Buy Now"
+      },
+      {
+        "name": "Enterprise",
+        "price": "Let's Talk!",
+        "features": [
+          "All services listed",
+          "Dedicated account manager",
+          "Weekly performance reviews"
+        ],
+        "description": "Best Suited For: Large businesses aiming for aggressive growth with all-inclusive digital marketing services, a dedicated account manager, and weekly performance reviews.",
+        "button": "Contact Us"
+      }
+    ],
+    "offers": {
+      "loadMore": "Load More",
+      "orderNow": "Order Now",
+      "offersList": [
+        {
+          "name": "Initial Consultation & Strategy Development",
+          "price": "CAD $1,000 - $3,000",
+          "priceDescription": "One-time fee",
+          "features": [
+            "Business analysis",
+            "Market research",
+            "Competitor analysis",
+            "Strategy document"
+          ],
+          "description": "Detailed consultation to understand the client's business goals, target audience, and current marketing efforts. Development of a customized digital marketing strategy."
+        },
+        {
+          "name": "Website Design & Development",
+          "price": "CAD $5,000 - $20,000",
+          "priceDescription": "One-time fee \n (depending on complexity)",
+          "features": [
+            "Custom design",
+            "Development (frontend and backend)",
+            "Content management system (CMS) setup",
+            "Basic SEO optimization"
+          ],
+          "description": "Creation of a modern, responsive website optimized for user experience and conversions."
+        },
+        {
+          "name": "Search Engine Optimization (SEO)",
+          "price": "CAD $1,000 - $5,000",
+          "priceDescription": "Monthly retainer",
+          "features": [
+            "Keyword research",
+            "On-page optimization",
+            "Link building",
+            "Monthly performance reports"
+          ],
+          "description": "On-page and off-page SEO to improve search engine rankings and organic traffic."
+        },
+        {
+          "name": "Pay-Per-Click (PPC) Advertising",
+          "price": "CAD $1,500 - $10,000",
+          "priceDescription": "Monthly retainer \n (excluding ad spend)",
+          "features": [
+            "Google Ads setup and management",
+            "Bing Ads setup and management",
+            "Monthly performance reports"
+          ],
+          "description": "Management of PPC campaigns to drive targeted traffic and increase conversions."
+        },
+        {
+          "name": "Social Media Marketing",
+          "price": "CAD $1,000 - $7,000",
+          "priceDescription": "Monthly retainer",
+          "features": [
+            "Content calendar",
+            "Post creation and scheduling",
+            "Community engagement",
+            "Monthly performance reports"
+          ],
+          "description": "Social media strategy, content creation, and community management across platforms like Facebook, Instagram, Twitter, LinkedIn, and others."
+        },
+        {
+          "name": "Content Marketing",
+          "price": "CAD $2,000 - $8,000",
+          "priceDescription": "Monthly retainer",
+          "features": [
+            "Blog posts",
+            "Articles",
+            "Infographics",
+            "E-books/Whitepapers",
+            "Monthly performance reports"
+          ],
+          "description": "Creation and distribution of valuable content to attract and engage the target audience."
+        },
+        {
+          "name": "Email Marketing",
+          "price": "CAD $1,000 - $5,000",
+          "priceDescription": "Monthly retainer",
+          "features": [
+            "Email template design",
+            "List segmentation",
+            "Campaign management",
+            "Monthly performance reports"
+          ],
+          "description": "Design and execution of email marketing campaigns to nurture leads and retain customers."
+        },
+        {
+          "name": "Conversion Rate Optimization (CRO)",
+          "price": "CAD $1,500 - $7,000",
+          "priceDescription": "Monthly retainer",
+          "features": [
+            "A/B testing",
+            "User behavior analysis",
+            "Conversion funnel analysis",
+            "Monthly performance reports"
+          ],
+          "description": "Analysis and optimization of website and landing pages to improve conversion rates."
+        },
+        {
+          "name": "Analytics & Reporting",
+          "price": "CAD $1,000 - $3,000",
+          "priceDescription": "Monthly retainer",
+          "features": [
+            "Google Analytics setup",
+            "Monthly performance reports",
+            "Quarterly strategy reviews"
+          ],
+          "description": "Comprehensive analytics and reporting to track the performance of digital marketing efforts."
+        },
+        {
+          "name": "Marketing Automation",
+          "price": "CAD 2,000 - $10,000 \n + $1,000 - $5,000",
+          "priceDescription": "One-time setup fee \n + Monthly retainer",
+          "features": [
+            "Tool setup and integration",
+            "Workflow creation",
+            "Training and support"
+          ],
+          "description": "Implementation of marketing automation tools to streamline and enhance marketing efforts."
+        }
+      ]
+    }
   }
 }
