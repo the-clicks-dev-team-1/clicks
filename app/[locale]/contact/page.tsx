@@ -1,8 +1,9 @@
 import { FC } from "react";
-import Navbar from "@/components/navbar";
-import Footer from "@/components/footer";
-import ContactBlock from "@/components/contactBlock";
 import { Metadata } from "next";
+import { getTranslations } from "next-intl/server";
+import ContactBlock from "@/components/contactBlock";
+import Footer from "@/components/footer";
+import Navbar from "@/components/navbar";
 
 export const metadata: Metadata = {
   title: "Contact Us",
@@ -10,7 +11,11 @@ export const metadata: Metadata = {
     "Let's talk! We're here to help you grow your business. Reach out to us for any inquiries, and we'll get back to you as soon as possible.",
 };
 
-const Contact: FC = () => {
+const Contact: FC<{ params: { locale: string } }> = async ({
+  params: { locale },
+}) => {
+  const t = await getTranslations({ locale, namespace: "contact" });
+
   return (
     <div className="bg-[var(--bgnew)] text-[var(--text)]">
       <Navbar />
@@ -18,12 +23,10 @@ const Contact: FC = () => {
       {/* Header section */}
       <div className="bg-[var(--blue1)] light:bg-[var(--ice-blue)] pb-20 pt-32 mb-32 text-center">
         <h1 className="my-10 text-3xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-sky-400 to bg-purple-500 bg-opacity-50">
-          Contact Us
+          {t("title")}
         </h1>
         <p className="mt-4 text-lg md:text-xl max-w-2xl mx-auto text-[var(--gray-blue)] light:text-[var(--gray-40)]">
-          Let&apos;s talk! We&apos;re here to help you grow your business. Reach
-          out to us for any inquiries, and we&apos;ll get back to you as soon as
-          possible.
+          {t("description")}
         </p>
       </div>
 
@@ -33,7 +36,7 @@ const Contact: FC = () => {
       <div className="bg-[var(--bgnew)] pb-32">
         <div className="container md:px-10">
           <h2 className="text-2xl md:text-3xl font-semibold mb-10 text-center text-[var(--light-blue)] light:text-[var(--gray-70)]">
-            Our Location
+            {t("location")}
           </h2>
           <div className="w-full h-96 bg-black rounded-lg overflow-hidden relative">
             <iframe

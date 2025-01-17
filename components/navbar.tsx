@@ -166,7 +166,7 @@ export default function Navbar() {
             <div key={`${d.label}-${i}`} className="relative group">
               <ActiveLink
                 href={d.link ?? "#"}
-                className="flex items-center gap-2 text-[var(--gray-blue)] light:text-[var(--gray-70)] hover:text-white transition-all"
+                className="flex items-center gap-2 text-[var(--gray-blue)] light:text-[var(--gray-70)] hover:text-white transition-all whitespace-nowrap"
                 onClick={() => handleLinkClick(i)}
               >
                 <span className="whitespace-nowrap">{t(`${d.label}`)}</span>

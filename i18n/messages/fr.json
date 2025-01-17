@@ -325,5 +325,10 @@
     "salary": "Salaire",
     "perYear": "par an",
     "jobType": "Type d'emploi"
+  },
+  "contact": {
+    "title": "Contactez-nous",
+    "description": "Discutons ensemble ! Nous sommes là pour vous aider à développer votre entreprise. N'hésitez pas à nous contacter pour toute question, et nous vous répondrons dans les plus brefs délais.",
+    "location": "Notre emplacement"
   }
 }
