@@ -235,7 +235,8 @@
     "contact": {
       "phone": "+1 506 871 8210",
       "email": "info@theclicks.ca",
-      "address": "860 rue Main, Moncton"
+      "address": "860 rue Main, Moncton",
+      "fullAddress": "860 rue Main, Moncton, NB, Canada, E1A 0G9"
     },
     "submit": "Soumettre",
     "required": "Ce champ est obligatoire",
@@ -276,13 +277,15 @@
   "fields": {
     "firstName": "Prénom",
     "lastName": "Nom de famille",
-    "email": "Email",
+    "email": "Email ",
     "job": "Titre du poste",
     "companyName": "Nom de l'entreprise",
     "services": "Services qui vous intéressent",
     "help": "Comment pouvons-nous vous aider?",
     "additionalInfo": "Autres informations? *",
     "consent": "J'accepte que The Clicks m'envoie des communications marketing liées à The Clicks",
+    "phone": "Téléphone ",
+    "address": "Adresse ",
     "validations": {
       "firstNameRequired": "Le prénom est requis",
       "lastNameRequired": "Le nom de famille est requis",
@@ -367,5 +370,34 @@
   },
   "book": {
     "title": "Réservez une réunion"
+  },
+  "licensing": {
+    "title": "Licences",
+    "description": "The Clicks, une agence de marketing numérique à service complet, s'engage à respecter toutes les licences et réglementations applicables. Cette page présente les informations relatives à nos licences.",
+    "overview": {
+      "title": "1. Aperçu des licences",
+      "description": "The Clicks est une agence de marketing numérique entièrement licenciée opérant conformément aux réglementations et directives établies par les autorités compétentes. Nos services sont fournis dans le respect des exigences légales des régions dans lesquelles nous opérons."
+    },
+    "intellectualProperty": {
+      "title": "2. Propriété intellectuelle",
+      "description": "Tous les contenus, marques et données de ce site, y compris mais sans s'y limiter les logiciels, bases de données, textes, graphiques, icônes, hyperliens, informations privées, designs et accords, sont la propriété de The Clicks ou de ses fournisseurs de contenu et sont protégés par les lois locales et internationales sur la propriété intellectuelle."
+    },
+    "thirdParty": {
+      "title": "3. Licences de tiers",
+      "description": "The Clicks peut utiliser des logiciels et services tiers sous diverses licences. Nous nous assurons que tous les composants tiers sont utilisés conformément à leurs licences respectives.",
+      "list": [
+        "Google Analytics : Utilisé pour le suivi et le rapport du trafic du site Web.",
+        "FontAwesome : Utilisé pour les icônes et les éléments visuels.",
+        "Unsplash : Utilisé pour les images libres de droits."
+      ]
+    },
+    "compliance": {
+      "title": "4. Conformité et signalement",
+      "description": "The Clicks s'engage à maintenir la conformité avec toutes les exigences en matière de licences. Si vous pensez qu'il y a une violation des termes de la licence, veuillez nous contacter immédiatement."
+    },
+    "contact": {
+      "title": "5. Contactez-nous",
+      "description": "Si vous avez des questions ou des préoccupations concernant les informations relatives à nos licences, veuillez nous contacter à :"
+    }
   }
 }
