@@ -364,5 +364,8 @@
       "gd": "Graphiste",
       "dev": "Développeur Full-Stack | Spécialiste Web2 & Web3"
     }
+  },
+  "book": {
+    "title": "Réservez une réunion"
   }
 }
