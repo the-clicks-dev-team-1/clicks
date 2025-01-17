@@ -1,20 +1,29 @@
-"use client";
-
+import { Metadata } from "next";
+import { getTranslations } from "next-intl/server";
+import Block from "@/components/block";
+import Block2 from "@/components/block2";
+import ContactBlock from "@/components/contactBlock";
+import Footer from "@/components/footer";
 import Navbar from "@/components/navbar";
-import SliderOne from "@/components/ui/slider";
-import Block from "../../components/block";
-import Services from "../../components/services";
-import Reviews from "../../components/reviews";
-import Footer from "../../components/footer";
-import Block2 from "../../components/block2";
-import Steps from "../../components/steps";
-import ContactBlock from "../../components/contactBlock";
-import { Link } from "@/i18n/routing";
+import Reviews from "@/components/reviews";
+import Services from "@/components/services";
+import Steps from "@/components/steps";
 import { TheWayWeWork } from "@/components/TheWayWeWork";
-import { useTranslations } from "next-intl";
+import SliderOne from "@/components/ui/slider";
+import { Link } from "@/i18n/routing";
 
-export default function Home() {
-  const t = useTranslations("home");
+export const metadata: Metadata = {
+  title: "Transform your business with artificial intelligence",
+  description:
+    "Revolutionize operations, optimize processes, and drive growth with smarter decisions and innovation.",
+};
+
+export default async function Home({
+  params: { locale },
+}: {
+  params: { locale: string };
+}) {
+  const t = await getTranslations({ locale, namespace: "home" });
 
   return (
     <div className="w-full md:items-center md:justify-center bg-[var(--bg-99)] text-[var(--text)] antialiased bg-grid-white/[0.02] relative overflow-hidden">
