@@ -169,7 +169,7 @@ export default function Navbar() {
                 className="flex items-center gap-2 text-[var(--gray-blue)] light:text-[var(--gray-70)] hover:text-white transition-all"
                 onClick={() => handleLinkClick(i)}
               >
-                <span>{t(`${d.label}`)}</span>
+                <span className="whitespace-nowrap">{t(`${d.label}`)}</span>
                 {d.children && (
                   <IoIosArrowDown className="transition-transform group-hover:rotate-180" />
                 )}
@@ -244,6 +244,8 @@ export default function Navbar() {
 }
 
 function MobileNav({ closeSideMenu }: { closeSideMenu: () => void }) {
+  const t = useTranslations("navbar");
+
   return (
     <div className="fixed inset-0 z-50 bg-black/60 flex justify-end md:hidden">
       <div className="h-lvh w-[75%] bg-[var(--bgnew)] px-4 py-4 overflow-y-auto">
@@ -268,7 +270,7 @@ function MobileNav({ closeSideMenu }: { closeSideMenu: () => void }) {
               onClick={closeSideMenu}
               className="w-full max-w-[200px] px-4 py-2 animate-shimmer items-center justify-center rounded-lg border border-white light:border-[var(--ocean-blue)] #light:bg-[var(--light-blue)] dark:bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] light:bg-[linear-gradient(110deg,#f8fbff,45%,#edf8fe,55%,#f8fbff)] bg-[length:200%_100%] transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 light:bg-white light:text-black"
             >
-              Let&apos;s Talk
+              {t("book")}
             </button>
           </ActiveLink>
         </section>
@@ -278,6 +280,7 @@ function MobileNav({ closeSideMenu }: { closeSideMenu: () => void }) {
 }
 
 function SingleNavItem(d: NavItem & { closeSideMenu: () => void }) {
+  const t = useTranslations("navbar");
   const [animationParent] = useAutoAnimate();
   const [isItemOpen, setItem] = useState(false);
 
@@ -293,7 +296,7 @@ function SingleNavItem(d: NavItem & { closeSideMenu: () => void }) {
             onClick={toggleItem}
             className="flex items-center justify-between px-2 py-3 text-neutral-400 light:text-[var(--gray-70)] hover:text-[var(--text)] light:hover:text-[var(--text)] light:hover:font-bold cursor-pointer"
           >
-            <span>{d.label}</span>
+            <span>{t(`${d.label}`)}</span>
             <IoIosArrowDown
               className={`text-xs transition-transform ${
                 isItemOpen ? "rotate-180" : ""
@@ -310,7 +313,9 @@ function SingleNavItem(d: NavItem & { closeSideMenu: () => void }) {
                   onClick={d.closeSideMenu}
                 >
                   {ch.iconImage && <ch.iconImage className="text-xl" />}
-                  <span className="ml-3 whitespace-nowrap">{ch.label}</span>
+                  <span className="ml-3 whitespace-nowrap">
+                    {t(`${ch.label}`)}
+                  </span>
                 </ActiveLink>
               ))}
             </div>
@@ -322,7 +327,7 @@ function SingleNavItem(d: NavItem & { closeSideMenu: () => void }) {
           className="flex items-center px-2 py-3 text-neutral-400 light:text-[var(--gray-70)] hover:text-[var(--text)] light:hover:text-[var(--text)] light:hover:font-bold"
           onClick={d.closeSideMenu}
         >
-          <span>{d.label}</span>
+          <span>{t(`${d.label}`)}</span>
         </ActiveLink>
       )}
     </div>
