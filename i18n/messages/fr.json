@@ -757,6 +757,52 @@
         ]
       },
       "contactFormMessage": "Contactez-nous pour une consultation gratuite et découvrez comment nous pouvons automatiser votre marketing."
+    },
+    "cm": {
+      "items": [
+        {
+          "title": "Stratégie de Contenu",
+          "description": "Nous développons une stratégie de contenu alignée sur vos objectifs commerciaux, garantissant que chaque contenu soutient vos efforts marketing globaux."
+        },
+        {
+          "title": "Création de Contenu",
+          "description": "Notre équipe crée un contenu de haute qualité adapté à votre audience, des articles de blog et articles aux vidéos et infographies."
+        },
+        {
+          "title": "Distribution de Contenu",
+          "description": "Nous distribuons votre contenu sur les bons canaux pour maximiser la portée et l'engagement, en veillant à ce qu'il atteigne le bon public."
+        },
+        {
+          "title": "Contenu SEO",
+          "description": "Notre contenu est optimisé pour les moteurs de recherche, aidant votre site web à se classer plus haut dans les résultats de recherche et à générer du trafic organique."
+        },
+        {
+          "title": "Audits de Contenu",
+          "description": "Nous effectuons des audits de contenu approfondis pour identifier les lacunes et les opportunités, en veillant à ce que votre contenu reste efficace et pertinent."
+        },
+        {
+          "title": "Analyse et Reporting",
+          "description": "Nous fournissons des analyses et des rapports détaillés, vous donnant des informations sur la performance de votre contenu et les améliorations possibles."
+        }
+      ],
+      "mainSection": {
+        "title": "Services de Marketing de Contenu",
+        "description": "Le contenu est au cœur de chaque campagne marketing réussie. Des articles de blog et articles aux infographies et vidéos, nous créons une large gamme de contenus qui vous aident à vous connecter avec vos clients potentiels et à établir votre marque en tant que leader de l'industrie."
+      },
+      "what": {
+        "title": "Qu'est-ce que le Marketing de Contenu et pourquoi est-il important ?",
+        "description": "Le marketing de contenu consiste à créer et partager un contenu précieux, pertinent et cohérent pour attirer et engager un public clairement défini. Il s'agit de fournir des informations qui intéressent votre audience, ce qui génère finalement des actions client rentables."
+      },
+      "why": {
+        "title": "Pourquoi le Marketing de Contenu est-il important ?",
+        "description": "Les médias sociaux sont l'un des outils les plus puissants pour se connecter avec votre audience.",
+        "benefitsList": [
+          "instaurer la confiance",
+          "soutenir le SEO",
+          "stimuler l'engagement"
+        ]
+      },
+      "contactFormMessage": "Contactez-nous pour une consultation gratuite et obtenez les réponses dont vous avez besoin."
     }
   }
 }
