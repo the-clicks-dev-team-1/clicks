@@ -979,6 +979,48 @@
         ]
       },
       "contactFormMessage": "Contactez-nous pour une consultation gratuite et obtenez les réponses dont vous avez besoin."
+    },
+    "pr": {
+      "items": [
+        {
+          "title": "Relations Médias",
+          "description": "Nous connectons votre marque avec les médias, en obtenant des interviews, des communiqués de presse et des articles qui renforcent la visibilité de votre marque."
+        },
+        {
+          "title": "Communiqués de Presse",
+          "description": "Notre équipe rédige des communiqués de presse percutants qui attirent l'attention des journalistes et promeuvent les nouvelles et événements de votre marque."
+        },
+        {
+          "title": "Gestion de Crise",
+          "description": "Nous fournissons des services experts de gestion de crise, vous aidant à naviguer et à atténuer toute situation négative pouvant nuire à votre marque."
+        },
+        {
+          "title": "Planification d'Événements",
+          "description": "Nous vous aidons à planifier et à organiser des événements réussis qui génèrent une couverture médiatique positive et engagent votre public."
+        },
+        {
+          "title": "Outreach avec des Influenceurs",
+          "description": "Nous connectons votre marque avec des influenceurs qui peuvent aider à amplifier votre message et atteindre un public plus large."
+        },
+        {
+          "title": "Gestion de la Réputation",
+          "description": "Nous surveillons et gérons votre réputation en ligne, en veillant à ce que votre marque soit présentée sous son meilleur jour."
+        }
+      ],
+      "mainSection": {
+        "title": "Services de Relations Publiques (RP)",
+        "description": "Construire une réputation solide sur le marché est essentiel pour le succès à long terme de votre entreprise. Nos services de relations publiques se concentrent sur la création d'une image positive pour votre marque grâce à la sensibilisation des médias, les communiqués de presse et la coordination d'événements. Nous vous aidons à créer un récit qui résonne avec votre public et positionne votre entreprise en tant que leader de confiance dans l'industrie."
+      },
+      "what": {
+        "title": "Qu'est-ce que les Relations Publiques (RP) ?",
+        "description": "Les Relations Publiques (RP) sont la pratique de gérer et de guider la perception publique de votre marque. Cela implique de construire et maintenir des relations avec les médias, de gérer la communication pendant les crises, et de créer une image positive pour votre entreprise."
+      },
+      "why": {
+        "title": "Pourquoi les RP sont-elles importantes ?",
+        "description": "Les RP sont essentielles pour maintenir une présence de marque forte et digne de confiance.",
+        "benefitsList": ["réputation", "visibilité", "relations médias"]
+      },
+      "contactFormMessage": "Contactez-nous pour une consultation gratuite et obtenez les réponses dont vous avez besoin."
     }
   }
 }
