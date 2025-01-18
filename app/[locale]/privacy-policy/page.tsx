@@ -1,163 +1,121 @@
-"use client";
-
 import { FC } from "react";
+import { getTranslations } from "next-intl/server";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
 
-const PrivacyPolicy: FC = () => {
+const PrivacyPolicy: FC<{ params: { locale: string } }> = async ({
+  params: { locale },
+}) => {
+  const t = await getTranslations({ locale, namespace: "privacyPolicy" });
+  const f = await getTranslations({ locale, namespace: "fields" });
+  const c = await getTranslations({ locale, namespace: "contactForm.contact" });
+
+  const sections = Object.keys(t.raw("sections"));
+
+  const renderItems = (sectionNumber: string) => {
+    try {
+      const items = t.raw(
+        `sections.${sectionNumber}.items`
+      ) as unknown as string[];
+
+      if (items && Array.isArray(items) && items.length > 0) {
+        return (
+          <ul className="list-disc list-inside mt-4 text-[var(--gray-blue)] light:text-[var(--gray-40)]">
+            {items.map((item, index) => (
+              <li key={index}>{item}</li>
+            ))}
+          </ul>
+        );
+      }
+    } catch {
+      return null; // if there are no items
+    }
+  };
+
+  const renderContact = (sectionNumber: string) => {
+    try {
+      const contact = t.raw(
+        `sections.${sectionNumber}.contact`
+      ) as unknown as Record<string, string>;
+
+      if (contact && typeof contact === "object") {
+        return (
+          <div className="text-[var(--gray-blue)] light:text-[var(--gray-40)]">
+            <p className="mt-4">
+              <strong>{f("email")}:</strong>{" "}
+              <a href="mailto:info@theclicks.ca" className="text-sky-400">
+                {c("email")}
+              </a>
+            </p>
+            <p className="mt-2">
+              <strong>{f("phone")}:</strong> {c("phone")}
+            </p>
+            <p className="mt-2">
+              <strong>{f("address")}:</strong> {c("fullAddress")}
+            </p>
+          </div>
+        );
+      }
+    } catch {
+      return null;
+    }
+  };
+
+  // const renderContact = (sectionNumber: string) => {
+  //   try {
+  //     const contact = t.raw(
+  //       `sections.${sectionNumber}.contact`
+  //     ) as unknown as Record<string, string>;
+
+  //     if (contact && typeof contact === "object") {
+  //       return (
+  //         <div className="text-[var(--gray-blue)] light:text-[var(--gray-40)]">
+  //           <p className="mt-4">
+  //             <strong>{f("email")}:</strong>{" "}
+  //             <a href="mailto:info@theclicks.ca" className="text-sky-400">
+  //               {contact.email}
+  //             </a>
+  //           </p>
+  //           <p className="mt-2">
+  //             <strong>{f("phone")}:</strong> {contact.phone}
+  //           </p>
+  //           <p className="mt-2">
+  //             <strong>{f("address")}:</strong> {contact.address}
+  //           </p>
+  //         </div>
+  //       );
+  //     }
+  //   } catch {
+  //     return null;
+  //   }
+  // };
+
   return (
     <div className="bg-[var(--bgnew)] text-[var(--light-blue)] light:text-[var(--gray-70)]">
       <Navbar />
 
-      <div className="bg-[var(--blue1)] light:bg-[var(--light-blue)] #bg-gradient-to-b from-sky-400 to-purple-500 py-20 text-center">
+      <div className="bg-[var(--blue1)] light:bg-[var(--light-blue)] py-20 text-center">
         <h1 className="text-4xl mt-10 md:text-6xl bg-clip-text text-transparent bg-gradient-to-r from-sky-400 to bg-purple-500 bg-opacity-50">
-          Privacy Policy
+          {t("title")}
         </h1>
         <p className="mt-4 text-lg md:text-xl max-w-2xl mx-auto text-[var(--gray-blue)] light:text-[var(--gray-40)]">
-          Your privacy is important to us. This Privacy Policy explains how The
-          Clicks Full-Service Digital Marketing Agency collects, uses, and
-          discloses your information.
+          {t("subtitle")}
         </p>
       </div>
 
       <div className="py-20 px-4 md:px-20 lg:px-40 max-w-7xl mx-auto">
-        <section className="mb-10">
-          <h2 className="text-3xl font-semibold mb-4">
-            1. Information We Collect
-          </h2>
-          <p className="text-[var(--gray-blue)] light:text-[var(--gray-40)]">
-            We collect various types of information in connection with the
-            services we provide, including:
-          </p>
-          <ul className="list-disc list-inside mt-4 text-[var(--gray-blue)] light:text-[var(--gray-40)]">
-            <li>
-              Personal Information: Name, email address, phone number, and other
-              contact details.
-            </li>
-            <li>
-              Usage Data: Information about how you interact with our website,
-              such as IP addresses, browser types, and pages viewed.
-            </li>
-            <li>
-              Cookies and Tracking Technologies: Information collected through
-              cookies and other tracking technologies.
-            </li>
-          </ul>
-        </section>
-
-        <section className="mb-10">
-          <h2 className="text-3xl font-semibold mb-4">
-            2. How We Use Your Information
-          </h2>
-          <p className="text-[var(--gray-blue)] light:text-[var(--gray-40)]">
-            We use the information we collect for various purposes, including:
-          </p>
-          <ul className="list-disc list-inside mt-4 text-[var(--gray-blue)] light:text-[var(--gray-40)]">
-            <li>Providing and improving our services.</li>
-            <li>Communicating with you about our services and offerings.</li>
-            <li>
-              Analyzing usage of our website to improve our content and user
-              experience.
-            </li>
-            <li>
-              Complying with legal obligations and protecting our legal rights.
-            </li>
-          </ul>
-        </section>
-
-        <section className="mb-10">
-          <h2 className="text-3xl font-semibold mb-4">
-            3. Sharing Your Information
-          </h2>
-          <p className="text-[var(--gray-blue)] light:text-[var(--gray-40)]">
-            We may share your information with third parties under certain
-            circumstances, including:
-          </p>
-          <ul className="list-disc list-inside mt-4 text-[var(--gray-blue)] light:text-[var(--gray-40)]">
-            <li>
-              Service Providers: We may share your information with service
-              providers who help us operate our business.
-            </li>
-            <li>
-              Legal Requirements: We may disclose your information to comply
-              with legal obligations or in response to lawful requests by public
-              authorities.
-            </li>
-            <li>
-              Business Transfers: We may share or transfer your information in
-              connection with a merger, sale, or other business transaction.
-            </li>
-          </ul>
-        </section>
-
-        <section className="mb-10">
-          <h2 className="text-3xl font-semibold mb-4">4. Your Rights</h2>
-          <p className="text-[var(--gray-blue)] light:text-[var(--gray-40)]">
-            You have certain rights regarding your personal information,
-            including:
-          </p>
-          <ul className="list-disc list-inside mt-4 text-[var(--gray-blue)] light:text-[var(--gray-40)]">
-            <li>
-              The right to access the personal information we hold about you.
-            </li>
-            <li>
-              The right to request that we correct any inaccuracies in your
-              personal information.
-            </li>
-            <li>
-              The right to request the deletion of your personal information.
-            </li>
-            <li>
-              The right to object to the processing of your personal
-              information.
-            </li>
-          </ul>
-        </section>
-
-        <section className="mb-10">
-          <h2 className="text-3xl font-semibold mb-4">
-            5. Security of Your Information
-          </h2>
-          <p className="text-[var(--gray-blue)] light:text-[var(--gray-40)]">
-            We take the security of your information seriously and implement
-            reasonable measures to protect it. However, no method of
-            transmission over the Internet or method of electronic storage is
-            completely secure.
-          </p>
-        </section>
-
-        <section className="mb-10">
-          <h2 className="text-3xl font-semibold mb-4">
-            6. Changes to This Privacy Policy
-          </h2>
-          <p className="text-[var(--gray-blue)] light:text-[var(--gray-40)]">
-            We may update this Privacy Policy from time to time. Any changes
-            will be posted on this page with an updated revision date. We
-            encourage you to review this Privacy Policy periodically to stay
-            informed about how we are protecting your information.
-          </p>
-        </section>
-
-        <section>
-          <h2 className="text-3xl font-semibold mb-4">7. Contact Us</h2>
-          <p className="text-[var(--gray-blue)] light:text-[var(--gray-40)]">
-            If you have any questions or concerns about this Privacy Policy or
-            our data practices, please contact us at:
-          </p>
-          <p className="mt-4 text-[var(--gray-blue)] light:text-[var(--gray-40)]">
-            <strong>Email:</strong>{" "}
-            <a href="mailto:info@theclicks.ca" className="text-sky-400">
-              info@theclicks.ca
-            </a>
-          </p>
-          <p className="mt-2 text-[var(--gray-blue)] light:text-[var(--gray-40)]">
-            <strong>Phone:</strong> +1 (506) 871-8210
-          </p>
-          <p className="mt-2 text-[var(--gray-blue)] light:text-[var(--gray-40)]">
-            <strong>Address:</strong> 860 Main Street, Moncton, NB, Canada, E1A
-            0G9
-          </p>
-        </section>
+        {sections.map((sectionNumber) => (
+          <section key={sectionNumber} className="mb-10">
+            <h2 className="text-3xl font-semibold mb-4">
+              {t(`sections.${sectionNumber}.title`)}
+            </h2>
+            <p className="text-[var(--gray-blue)] light:text-[var(--gray-40)]">
+              {t(`sections.${sectionNumber}.content`)}
+            </p>
+            {renderItems(sectionNumber)}
+            {renderContact(sectionNumber)}
+          </section>
+        ))}
       </div>
 
       <Footer />

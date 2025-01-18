@@ -603,5 +603,66 @@
         "designation": ""
       }
     }
+  },
+  "privacyPolicy": {
+    "title": "Politique de Confidentialité",
+    "subtitle": "Votre vie privée est importante pour nous. Cette politique de confidentialité explique comment The Clicks, une agence de marketing numérique complète, collecte, utilise et divulgue vos informations.",
+    "sections": {
+      "1": {
+        "title": "1. Informations que Nous Collectons",
+        "content": "Nous collectons différents types d'informations en lien avec les services que nous proposons, notamment :",
+        "items": [
+          "Informations Personnelles : Nom, adresse e-mail, numéro de téléphone et autres coordonnées.",
+          "Données d'Utilisation : Informations sur la manière dont vous interagissez avec notre site web, telles que les adresses IP, les types de navigateurs et les pages consultées.",
+          "Cookies et Technologies de Suivi : Informations collectées via des cookies et d'autres technologies de suivi."
+        ]
+      },
+      "2": {
+        "title": "2. Comment Nous Utilisons Vos Informations",
+        "content": "Nous utilisons les informations que nous collectons à diverses fins, notamment :",
+        "items": [
+          "Fournir et améliorer nos services.",
+          "Communiquer avec vous au sujet de nos services et offres.",
+          "Analyser l'utilisation de notre site web pour améliorer notre contenu et l'expérience utilisateur.",
+          "Respecter les obligations légales et protéger nos droits."
+        ]
+      },
+      "3": {
+        "title": "3. Partage de Vos Informations",
+        "content": "Nous pouvons partager vos informations avec des tiers dans certaines circonstances, notamment :",
+        "items": [
+          "Prestataires de Services : Nous pouvons partager vos informations avec des prestataires qui nous aident à exploiter notre entreprise.",
+          "Exigences Légales : Nous pouvons divulguer vos informations pour respecter des obligations légales ou en réponse à des demandes légales des autorités publiques.",
+          "Transferts Commerciaux : Nous pouvons partager ou transférer vos informations dans le cadre d'une fusion, d'une vente ou d'une autre transaction commerciale."
+        ]
+      },
+      "4": {
+        "title": "4. Vos Droits",
+        "content": "Vous avez certains droits concernant vos informations personnelles, notamment :",
+        "items": [
+          "Le droit d'accéder aux informations personnelles que nous détenons à votre sujet.",
+          "Le droit de demander que nous corrigions toute inexactitude dans vos informations personnelles.",
+          "Le droit de demander la suppression de vos informations personnelles.",
+          "Le droit de s'opposer au traitement de vos informations personnelles."
+        ]
+      },
+      "5": {
+        "title": "5. Sécurité de Vos Informations",
+        "content": "Nous prenons la sécurité de vos informations au sérieux et mettons en œuvre des mesures raisonnables pour les protéger. Cependant, aucun moyen de transmission sur Internet ou de stockage électronique n'est totalement sûr."
+      },
+      "6": {
+        "title": "6. Modifications de Cette Politique de Confidentialité",
+        "content": "Nous pouvons mettre à jour cette politique de confidentialité de temps à autre. Les modifications seront publiées sur cette page avec une date de révision mise à jour. Nous vous encourageons à consulter périodiquement cette politique de confidentialité pour rester informé de la manière dont nous protégeons vos informations."
+      },
+      "7": {
+        "title": "7. Nous Contacter",
+        "content": "Si vous avez des questions ou des préoccupations concernant cette politique de confidentialité ou nos pratiques en matière de données, veuillez nous contacter à :",
+        "contact": {
+          "email": "info@theclicks.ca",
+          "phone": "+1 (506) 871-8210",
+          "address": "860 Main Street, Moncton, NB, Canada, E1A 0G9"
+        }
+      }
+    }
   }
 }

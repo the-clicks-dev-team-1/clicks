@@ -603,5 +603,66 @@
         "designation": ""
       }
     }
+  },
+  "privacyPolicy": {
+    "title": "Privacy Policy",
+    "subtitle": "Your privacy is important to us. This Privacy Policy explains how The Clicks Full-Service Digital Marketing Agency collects, uses, and discloses your information.",
+    "sections": {
+      "1": {
+        "title": "1. Information We Collect",
+        "content": "We collect various types of information in connection with the services we provide, including:",
+        "items": [
+          "Personal Information: Name, email address, phone number, and other contact details.",
+          "Usage Data: Information about how you interact with our website, such as IP addresses, browser types, and pages viewed.",
+          "Cookies and Tracking Technologies: Information collected through cookies and other tracking technologies."
+        ]
+      },
+      "2": {
+        "title": "2. How We Use Your Information",
+        "content": "We use the information we collect for various purposes, including:",
+        "items": [
+          "Providing and improving our services.",
+          "Communicating with you about our services and offerings.",
+          "Analyzing usage of our website to improve our content and user experience.",
+          "Complying with legal obligations and protecting our legal rights."
+        ]
+      },
+      "3": {
+        "title": "3. Sharing Your Information",
+        "content": "We may share your information with third parties under certain circumstances, including:",
+        "items": [
+          "Service Providers: We may share your information with service providers who help us operate our business.",
+          "Legal Requirements: We may disclose your information to comply with legal obligations or in response to lawful requests by public authorities.",
+          "Business Transfers: We may share or transfer your information in connection with a merger, sale, or other business transaction."
+        ]
+      },
+      "4": {
+        "title": "4. Your Rights",
+        "content": "You have certain rights regarding your personal information, including:",
+        "items": [
+          "The right to access the personal information we hold about you.",
+          "The right to request that we correct any inaccuracies in your personal information.",
+          "The right to request the deletion of your personal information.",
+          "The right to object to the processing of your personal information."
+        ]
+      },
+      "5": {
+        "title": "5. Security of Your Information",
+        "content": "We take the security of your information seriously and implement reasonable measures to protect it. However, no method of transmission over the Internet or method of electronic storage is completely secure."
+      },
+      "6": {
+        "title": "6. Changes to This Privacy Policy",
+        "content": "We may update this Privacy Policy from time to time. Any changes will be posted on this page with an updated revision date. We encourage you to review this Privacy Policy periodically to stay informed about how we are protecting your information."
+      },
+      "7": {
+        "title": "7. Contact Us",
+        "content": "If you have any questions or concerns about this Privacy Policy or our data practices, please contact us at:",
+        "contact": {
+          "email": "info@theclicks.ca",
+          "phone": "+1 (506) 871-8210",
+          "address": "860 Main Street, Moncton, NB, Canada, E1A 0G9"
+        }
+      }
+    }
   }
 }
