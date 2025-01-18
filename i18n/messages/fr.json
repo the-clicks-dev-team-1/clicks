@@ -933,6 +933,52 @@
         "benefitsList": ["rentable", "personnalisation", "communication"]
       },
       "contactFormMessage": "Contactez-nous pour une consultation gratuite et obtenez les réponses dont vous avez besoin."
+    },
+    "ppc": {
+      "items": [
+        {
+          "title": "Recherche de mots-clés",
+          "description": "Nous identifions les mots-clés les plus efficaces pour votre entreprise, garantissant que vos annonces atteignent le bon public."
+        },
+        {
+          "title": "Création d'annonces",
+          "description": "Notre équipe crée des annonces attrayantes qui génèrent des clics et des conversions, maximisant ainsi l'efficacité de vos dépenses publicitaires."
+        },
+        {
+          "title": "Gestion de campagnes",
+          "description": "Nous gérons vos campagnes PPC du début à la fin, optimisant les performances et garantissant l'efficacité de vos annonces."
+        },
+        {
+          "title": "Optimisation des pages de destination",
+          "description": "Nous veillons à ce que vos pages de destination soient optimisées pour convertir le trafic en prospects et en ventes, maximisant ainsi votre retour sur investissement."
+        },
+        {
+          "title": "Suivi des performances",
+          "description": "Nos rapports détaillés fournissent des informations sur les performances de vos campagnes, permettant une amélioration continue."
+        },
+        {
+          "title": "Remarketing",
+          "description": "Nous utilisons des techniques de remarketing pour réengager les visiteurs qui ont déjà interagi avec votre site, augmentant ainsi les taux de conversion."
+        }
+      ],
+      "mainSection": {
+        "title": "Services de Publicité au Coût Par Clic (PPC)",
+        "description": "La publicité PPC (Pay-Per-Click) est un moyen puissant d'attirer un trafic ciblé vers votre site web. Que vous souhaitiez augmenter vos ventes, générer des prospects ou accroître la notoriété de votre marque, nos stratégies PPC basées sur les données sont conçues pour répondre à vos objectifs commerciaux."
+      },
+      "what": {
+        "title": "Qu'est-ce que le PPC et pourquoi cela importe-t-il ?",
+        "description": "Nos services PPC sont conçus pour maximiser votre retour sur investissement en gérant soigneusement vos campagnes, en optimisant vos annonces et en garantissant que votre budget est dépensé efficacement."
+      },
+      "why": {
+        "title": "Pourquoi le PPC est-il important ?",
+        "description": "Avec la bonne stratégie, le PPC peut être un moyen rentable d'atteindre votre public cible.",
+        "benefitsList": [
+          "trafic ciblé",
+          "contrôle des coûts",
+          "résultats immédiats"
+        ]
+      },
+      "contactFormMessage": "Contactez-nous pour une consultation gratuite et obtenez les réponses dont vous avez besoin."
     }
   }
 }

@@ -922,44 +922,48 @@
     "ppc": {
       "items": [
         {
-          "title": "",
-          "description": ""
+          "title": "Keyword Research",
+          "description": "We identify the most effective keywords for your business, ensuring that your ads reach the right audience."
         },
         {
-          "title": "",
-          "description": ""
+          "title": "Ad Creation",
+          "description": "Our team creates compelling ads that attract clicks and drive conversions, making the most of your ad spend."
         },
         {
-          "title": "",
-          "description": ""
+          "title": "Campaign Management",
+          "description": "We manage your PPC campaigns from start to finish, optimizing performance and ensuring your ads are effective."
         },
         {
-          "title": "",
-          "description": ""
+          "title": "Landing Page Optimization",
+          "description": "We ensure that your landing pages are optimized to convert traffic into leads and sales, maximizing your ROI."
         },
         {
-          "title": "",
-          "description": ""
+          "title": "Performance Tracking",
+          "description": "Our detailed reports provide insights into how your campaigns are performing, allowing for continuous improvement."
         },
         {
-          "title": "",
-          "description": ""
+          "title": "Remarketing",
+          "description": "We use remarketing techniques to re-engage visitors who have previously interacted with your site, increasing conversion rates."
         }
       ],
       "mainSection": {
-        "title": "",
-        "description": ""
+        "title": "Pay-Per-Click (PPC) Advertising Services",
+        "description": "Pay-Per-Click (PPC) advertising is a powerful way to drive targeted traffic to your website. Whether you're looking to increase sales, generate leads, or build brand awareness, our data-driven PPC strategies are designed to meet your business goals."
       },
       "what": {
-        "title": "",
-        "description": ""
+        "title": "What is PPC and Why Does It Matter?",
+        "description": "Our PPC services are designed to maximize your return on investment by carefully managing your campaigns, optimizing your ads, and ensuring that your budget is spent efficiently."
       },
       "why": {
-        "title": "",
-        "description": "",
-        "benefitsList": ["", "", ""]
+        "title": "Why does PPC Matter?",
+        "description": "With the right strategy, PPC can be a cost-effective way to reach your target audience.",
+        "benefitsList": [
+          "Targeted traffic",
+          "Cost control",
+          "Immediate results"
+        ]
       },
-      "contactFormMessage": ""
+      "contactFormMessage": "Reach out for a free consultation and get the answers you need."
     },
     "pr": {
       "items": [
