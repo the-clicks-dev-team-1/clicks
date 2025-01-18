@@ -406,6 +406,7 @@
     "serviceTitle": "Suite de Services Marketing",
     "serviceSubtitle": "Choisissez vos services",
     "contact": "Contactez-nous",
+    "addOns": "Services Supplémentaires",
     "plans": [
       {
         "name": "Basique",
@@ -579,6 +580,28 @@
           "button": "Commander maintenant"
         }
       ]
+    },
+    "testimonials": {
+      "video": {
+        "quote": "Nous créons des vidéos captivantes qui mettent en valeur votre histoire, promeuvent vos produits et captivent les spectateurs sur toutes les plateformes. Qu'il s'agisse de vidéos promotionnelles, de tutoriels ou de reels pour les réseaux sociaux, nous donnons vie à votre vision avec créativité et précision.",
+        "name": "Production Vidéo",
+        "designation": ""
+      },
+      "influencer": {
+        "quote": "Nous vous connectons avec des influenceurs qui correspondent à votre audience et à vos valeurs, en élaborant des campagnes authentiques qui stimulent l'engagement et apportent des résultats mesurables.",
+        "name": "Marketing d'Influence",
+        "designation": ""
+      },
+      "local": {
+        "quote": "Nous optimisons votre présence en ligne pour garantir que votre entreprise apparaisse en tête des résultats de recherche locale, que ce soit sur Google Maps ou dans les recherches 'près de chez moi'.",
+        "name": "SEO Local",
+        "designation": ""
+      },
+      "reputation": {
+        "quote": "Nous surveillons les avis en ligne, gérons la perception publique et mettons en œuvre des stratégies pour renforcer la confiance et la crédibilité. En répondant aux commentaires et en promouvant du contenu positif, nous aidons votre entreprise à maintenir une présence forte et fiable.",
+        "name": "Gestion de Réputation",
+        "designation": ""
+      }
     }
   }
 }

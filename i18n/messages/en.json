@@ -400,13 +400,13 @@
       "description": "If you have any questions or concerns about our licensing information, please contact us at:"
     }
   },
-
   "pricing": {
     "title": "Simple Pricing",
     "subtitle": "Choose your plan",
     "serviceTitle": "Marketing Service Suite",
     "serviceSubtitle": "Choose your services",
     "contact": "Contact Us",
+    "addOns": "Add-On Services",
     "plans": [
       {
         "name": "Basic",
@@ -580,6 +580,28 @@
           "button": "Order Now"
         }
       ]
+    },
+    "testimonials": {
+      "video": {
+        "quote": "We create compelling videos that showcase your story, promote your products, and captivate viewers across all platforms. Whether it’s promotional videos, tutorials, or social media reels, we bring your vision to life with creativity and precision.",
+        "name": "Video Production",
+        "designation": ""
+      },
+      "influencer": {
+        "quote": "We connect you with influencers who align with your audience and values, crafting authentic campaigns that drive engagement and deliver measurable results.",
+        "name": "Influencer Marketing",
+        "designation": ""
+      },
+      "local": {
+        "quote": "We optimize your online presence to ensure your business appears at the top of local search results, from Google Maps to 'near me' searches.",
+        "name": "Local SEO",
+        "designation": ""
+      },
+      "reputation": {
+        "quote": "We monitor online reviews, manage public perception, and implement strategies to build trust and credibility. By addressing feedback and promoting positive content, we help your business maintain a strong, reliable presence.",
+        "name": "Reputation Management",
+        "designation": ""
+      }
     }
   }
 }
