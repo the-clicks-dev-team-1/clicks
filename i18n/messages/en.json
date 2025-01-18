@@ -880,44 +880,44 @@
     "em": {
       "items": [
         {
-          "title": "",
-          "description": ""
+          "title": "Campaign Strategy",
+          "description": "We develop a comprehensive email marketing strategy tailored to your business goals and audience, ensuring your campaigns are effective."
         },
         {
-          "title": "",
-          "description": ""
+          "title": "Email Design",
+          "description": "Our team creates visually appealing and responsive email designs that capture attention and drive action."
         },
         {
-          "title": "",
-          "description": ""
+          "title": "List Management",
+          "description": "We manage your email lists, ensuring they are clean, segmented, and targeted to maximize engagement and deliverability."
         },
         {
-          "title": "",
-          "description": ""
+          "title": "Automation",
+          "description": "We set up automated email workflows that nurture leads and drive conversions, freeing up your time while delivering results."
         },
         {
-          "title": "",
-          "description": ""
+          "title": "Analytics & Reporting",
+          "description": "Our detailed analytics and reports give you insights into the performance of your campaigns, helping you make data-driven decisions."
         },
         {
-          "title": "",
-          "description": ""
+          "title": "A/B Testing",
+          "description": "We conduct A/B testing on subject lines, content, and designs to optimize your emails for better performance and higher conversions."
         }
       ],
       "mainSection": {
-        "title": "",
-        "description": ""
+        "title": "Email Marketing Services",
+        "description": "Connect with your audience, build relationships, and drive conversions with our targeted email marketing strategies. Our email marketing services are tailored to deliver personalized, high-impact campaigns that engage your audience and drive conversions."
       },
       "what": {
-        "title": "",
-        "description": ""
+        "title": "What is Email Marketing?",
+        "description": "Email marketing is a powerful tool for businesses to communicate directly with their audience. By sending personalized, targeted messages, you can build relationships, promote your brand, and drive sales."
       },
       "why": {
-        "title": "",
-        "description": "",
-        "benefitsList": ["", "", ""]
+        "title": "Why does Email Marketing Matter?",
+        "description": "Email marketing is crucial for creating a strong connection with your audience and driving conversions.",
+        "benefitsList": ["cost-effective", "personalization", "communication"]
       },
-      "contactFormMessage": ""
+      "contactFormMessage": "Reach out for a free consultation and get the answers you need."
     },
     "ppc": {
       "items": [

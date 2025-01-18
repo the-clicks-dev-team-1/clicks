@@ -891,6 +891,48 @@
         "benefitsList": ["engagement", "communication", "identité de marque"]
       },
       "contactFormMessage": "Contactez-nous pour une consultation gratuite et obtenez les réponses dont vous avez besoin."
+    },
+    "em": {
+      "items": [
+        {
+          "title": "Stratégie de campagne",
+          "description": "Nous développons une stratégie complète de marketing par e-mail, adaptée à vos objectifs commerciaux et à votre public, garantissant l'efficacité de vos campagnes."
+        },
+        {
+          "title": "Conception d'e-mails",
+          "description": "Notre équipe crée des conceptions d'e-mails visuellement attrayantes et réactives qui captent l'attention et incitent à l'action."
+        },
+        {
+          "title": "Gestion des listes",
+          "description": "Nous gérons vos listes de diffusion, en veillant à ce qu'elles soient propres, segmentées et ciblées pour maximiser l'engagement et la délivrabilité."
+        },
+        {
+          "title": "Automatisation",
+          "description": "Nous configurons des flux de travail automatisés par e-mail qui nourrissent les prospects et génèrent des conversions, vous libérant ainsi du temps tout en produisant des résultats."
+        },
+        {
+          "title": "Analyse et rapports",
+          "description": "Nos analyses détaillées et nos rapports vous fournissent des informations sur la performance de vos campagnes, vous aidant ainsi à prendre des décisions basées sur les données."
+        },
+        {
+          "title": "Tests A/B",
+          "description": "Nous effectuons des tests A/B sur les lignes de sujet, le contenu et les conceptions pour optimiser vos e-mails pour de meilleures performances et des conversions plus élevées."
+        }
+      ],
+      "mainSection": {
+        "title": "Services de marketing par e-mail",
+        "description": "Connectez-vous avec votre public, établissez des relations et générez des conversions grâce à nos stratégies de marketing par e-mail ciblées. Nos services de marketing par e-mail sont conçus pour offrir des campagnes personnalisées à fort impact qui engagent votre public et génèrent des conversions."
+      },
+      "what": {
+        "title": "Qu'est-ce que le marketing par e-mail ?",
+        "description": "Le marketing par e-mail est un outil puissant pour les entreprises souhaitant communiquer directement avec leur public. En envoyant des messages personnalisés et ciblés, vous pouvez établir des relations, promouvoir votre marque et augmenter les ventes."
+      },
+      "why": {
+        "title": "Pourquoi le marketing par e-mail est-il important ?",
+        "description": "Le marketing par e-mail est essentiel pour créer une connexion forte avec votre public et stimuler les conversions.",
+        "benefitsList": ["rentable", "personnalisation", "communication"]
+      },
+      "contactFormMessage": "Contactez-nous pour une consultation gratuite et obtenez les réponses dont vous avez besoin."
     }
   }
 }
