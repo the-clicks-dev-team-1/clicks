@@ -399,5 +399,318 @@
       "title": "5. Contactez-nous",
       "description": "Si vous avez des questions ou des préoccupations concernant les informations relatives à nos licences, veuillez nous contacter à :"
     }
+  },
+  "pricing": {
+    "title": "Tarification Simple",
+    "subtitle": "Choisissez votre plan",
+    "serviceTitle": "Suite de Services Marketing",
+    "serviceSubtitle": "Choisissez vos services",
+    "contact": "Contactez-nous",
+    "addOns": "Services Supplémentaires",
+    "plans": [
+      {
+        "name": "Basique",
+        "price": "CAD $3,000",
+        "features": [
+          "SEO",
+          "Publicité PPC",
+          "Marketing sur les réseaux sociaux",
+          "Rapports mensuels"
+        ],
+        "description": "Idéal pour : Les petites entreprises et les startups avec des budgets limités cherchant à améliorer le SEO local et à engager les utilisateurs sur les réseaux sociaux.",
+        "button": "Acheter maintenant"
+      },
+      {
+        "name": "Premium",
+        "price": "CAD $7,500",
+        "features": [
+          "SEO",
+          "Publicité PPC",
+          "Marketing sur les réseaux sociaux",
+          "Marketing de contenu",
+          "Email Marketing",
+          "Développement de stratégie",
+          "Rapports mensuels"
+        ],
+        "description": "Idéal pour : Les entreprises de taille moyenne cherchant à améliorer leur visibilité en ligne avec des services de marketing numérique complets, y compris le SEO, le PPC, les réseaux sociaux et le marketing de contenu.",
+        "button": "Acheter maintenant"
+      },
+      {
+        "name": "Entreprise",
+        "price": "Discutons-en !",
+        "features": [
+          "Tous les services listés",
+          "Gestionnaire de compte dédié",
+          "Revues de performance hebdomadaires"
+        ],
+        "description": "Idéal pour : Les grandes entreprises visant une croissance agressive avec des services de marketing numérique tout compris, un gestionnaire de compte dédié et des revues de performance hebdomadaires.",
+        "button": "Contactez-nous"
+      }
+    ],
+    "offers": {
+      "loadMore": "Voir plus",
+      "orderNow": "Commander maintenant",
+      "offersList": [
+        {
+          "name": "Consultation initiale et développement de stratégie",
+          "price": "CAD $1,000 - $3,000",
+          "priceDescription": "Frais uniques",
+          "features": [
+            "Analyse commerciale",
+            "Étude de marché",
+            "Analyse des concurrents",
+            "Document stratégique"
+          ],
+          "description": "Consultation détaillée pour comprendre les objectifs commerciaux du client, son public cible et ses efforts marketing actuels. Élaboration d'une stratégie de marketing numérique personnalisée.",
+          "button": "Commander maintenant"
+        },
+        {
+          "name": "Conception et développement de site web",
+          "price": "CAD $5,000 - $20,000",
+          "priceDescription": "Frais uniques \n (en fonction de la complexité)",
+          "features": [
+            "Design sur mesure",
+            "Développement (frontend et backend)",
+            "Configuration du système de gestion de contenu (CMS)",
+            "Optimisation SEO de base"
+          ],
+          "description": "Création d'un site web moderne et réactif, optimisé pour l'expérience utilisateur et les conversions.",
+          "button": "Commander maintenant"
+        },
+        {
+          "name": "Optimisation pour les moteurs de recherche (SEO)",
+          "price": "CAD $1,000 - $5,000",
+          "priceDescription": "Redevance mensuelle",
+          "features": [
+            "Recherche de mots-clés",
+            "Optimisation sur la page",
+            "Création de liens",
+            "Rapports de performance mensuels"
+          ],
+          "description": "Optimisation sur site et hors site pour améliorer les classements sur les moteurs de recherche et le trafic organique.",
+          "button": "Commander maintenant"
+        },
+        {
+          "name": "Publicité au coût par clic (PPC)",
+          "price": "CAD $1,500 - $10,000",
+          "priceDescription": "Redevance mensuelle \n (hors dépenses publicitaires)",
+          "features": [
+            "Configuration et gestion des annonces Google Ads",
+            "Configuration et gestion des annonces Bing Ads",
+            "Rapports de performance mensuels"
+          ],
+          "description": "Gestion des campagnes PPC pour générer un trafic ciblé et augmenter les conversions.",
+          "button": "Commander maintenant"
+        },
+        {
+          "name": "Marketing des réseaux sociaux",
+          "price": "CAD $1,000 - $7,000",
+          "priceDescription": "Redevance mensuelle",
+          "features": [
+            "Calendrier de contenu",
+            "Création et planification de publications",
+            "Engagement communautaire",
+            "Rapports de performance mensuels"
+          ],
+          "description": "Stratégie de marketing sur les réseaux sociaux, création de contenu et gestion communautaire sur des plateformes comme Facebook, Instagram, Twitter, LinkedIn et autres.",
+          "button": "Commander maintenant"
+        },
+        {
+          "name": "Marketing de contenu",
+          "price": "CAD $2,000 - $8,000",
+          "priceDescription": "Redevance mensuelle",
+          "features": [
+            "Articles de blog",
+            "Articles",
+            "Infographies",
+            "E-books/Livres blancs",
+            "Rapports de performance mensuels"
+          ],
+          "description": "Création et distribution de contenu de qualité pour attirer et engager le public cible.",
+          "button": "Commander maintenant"
+        },
+        {
+          "name": "Marketing par email",
+          "price": "CAD $1,000 - $5,000",
+          "priceDescription": "Redevance mensuelle",
+          "features": [
+            "Design de modèles d'email",
+            "Segmentation des listes",
+            "Gestion des campagnes",
+            "Rapports de performance mensuels"
+          ],
+          "description": "Conception et exécution de campagnes de marketing par email pour nourrir les prospects et fidéliser les clients.",
+          "button": "Commander maintenant"
+        },
+        {
+          "name": "Optimisation du taux de conversion (CRO)",
+          "price": "CAD $1,500 - $7,000",
+          "priceDescription": "Redevance mensuelle",
+          "features": [
+            "Tests A/B",
+            "Analyse du comportement utilisateur",
+            "Analyse du tunnel de conversion",
+            "Rapports de performance mensuels"
+          ],
+          "description": "Analyse et optimisation des sites web et des pages d'atterrissage pour améliorer les taux de conversion.",
+          "button": "Commander maintenant"
+        },
+        {
+          "name": "Analyse et rapports",
+          "price": "CAD $1,000 - $3,000",
+          "priceDescription": "Redevance mensuelle",
+          "features": [
+            "Configuration de Google Analytics",
+            "Rapports de performance mensuels",
+            "Révisions stratégiques trimestrielles"
+          ],
+          "description": "Analyses et rapports complets pour suivre la performance des efforts de marketing numérique.",
+          "button": "Commander maintenant"
+        },
+        {
+          "name": "Automatisation du marketing",
+          "price": "CAD 2,000 - $10,000 \n + $1,000 - $5,000",
+          "priceDescription": "Frais de configuration uniques \n + Redevance mensuelle",
+          "features": [
+            "Configuration et intégration des outils",
+            "Création de workflows",
+            "Formation et support"
+          ],
+          "description": "Mise en œuvre d'outils d'automatisation du marketing pour rationaliser et améliorer les efforts marketing.",
+          "button": "Commander maintenant"
+        }
+      ]
+    },
+    "testimonials": {
+      "video": {
+        "quote": "Nous créons des vidéos captivantes qui mettent en valeur votre histoire, promeuvent vos produits et captivent les spectateurs sur toutes les plateformes. Qu'il s'agisse de vidéos promotionnelles, de tutoriels ou de reels pour les réseaux sociaux, nous donnons vie à votre vision avec créativité et précision.",
+        "name": "Production Vidéo",
+        "designation": ""
+      },
+      "influencer": {
+        "quote": "Nous vous connectons avec des influenceurs qui correspondent à votre audience et à vos valeurs, en élaborant des campagnes authentiques qui stimulent l'engagement et apportent des résultats mesurables.",
+        "name": "Marketing d'Influence",
+        "designation": ""
+      },
+      "local": {
+        "quote": "Nous optimisons votre présence en ligne pour garantir que votre entreprise apparaisse en tête des résultats de recherche locale, que ce soit sur Google Maps ou dans les recherches 'près de chez moi'.",
+        "name": "SEO Local",
+        "designation": ""
+      },
+      "reputation": {
+        "quote": "Nous surveillons les avis en ligne, gérons la perception publique et mettons en œuvre des stratégies pour renforcer la confiance et la crédibilité. En répondant aux commentaires et en promouvant du contenu positif, nous aidons votre entreprise à maintenir une présence forte et fiable.",
+        "name": "Gestion de Réputation",
+        "designation": ""
+      }
+    }
+  },
+  "privacyPolicy": {
+    "title": "Politique de Confidentialité",
+    "subtitle": "Votre vie privée est importante pour nous. Cette politique de confidentialité explique comment The Clicks, une agence de marketing numérique complète, collecte, utilise et divulgue vos informations.",
+    "sections": {
+      "1": {
+        "title": "1. Informations que Nous Collectons",
+        "content": "Nous collectons différents types d'informations en lien avec les services que nous proposons, notamment :",
+        "items": [
+          "Informations Personnelles : Nom, adresse e-mail, numéro de téléphone et autres coordonnées.",
+          "Données d'Utilisation : Informations sur la manière dont vous interagissez avec notre site web, telles que les adresses IP, les types de navigateurs et les pages consultées.",
+          "Cookies et Technologies de Suivi : Informations collectées via des cookies et d'autres technologies de suivi."
+        ]
+      },
+      "2": {
+        "title": "2. Comment Nous Utilisons Vos Informations",
+        "content": "Nous utilisons les informations que nous collectons à diverses fins, notamment :",
+        "items": [
+          "Fournir et améliorer nos services.",
+          "Communiquer avec vous au sujet de nos services et offres.",
+          "Analyser l'utilisation de notre site web pour améliorer notre contenu et l'expérience utilisateur.",
+          "Respecter les obligations légales et protéger nos droits."
+        ]
+      },
+      "3": {
+        "title": "3. Partage de Vos Informations",
+        "content": "Nous pouvons partager vos informations avec des tiers dans certaines circonstances, notamment :",
+        "items": [
+          "Prestataires de Services : Nous pouvons partager vos informations avec des prestataires qui nous aident à exploiter notre entreprise.",
+          "Exigences Légales : Nous pouvons divulguer vos informations pour respecter des obligations légales ou en réponse à des demandes légales des autorités publiques.",
+          "Transferts Commerciaux : Nous pouvons partager ou transférer vos informations dans le cadre d'une fusion, d'une vente ou d'une autre transaction commerciale."
+        ]
+      },
+      "4": {
+        "title": "4. Vos Droits",
+        "content": "Vous avez certains droits concernant vos informations personnelles, notamment :",
+        "items": [
+          "Le droit d'accéder aux informations personnelles que nous détenons à votre sujet.",
+          "Le droit de demander que nous corrigions toute inexactitude dans vos informations personnelles.",
+          "Le droit de demander la suppression de vos informations personnelles.",
+          "Le droit de s'opposer au traitement de vos informations personnelles."
+        ]
+      },
+      "5": {
+        "title": "5. Sécurité de Vos Informations",
+        "content": "Nous prenons la sécurité de vos informations au sérieux et mettons en œuvre des mesures raisonnables pour les protéger. Cependant, aucun moyen de transmission sur Internet ou de stockage électronique n'est totalement sûr."
+      },
+      "6": {
+        "title": "6. Modifications de Cette Politique de Confidentialité",
+        "content": "Nous pouvons mettre à jour cette politique de confidentialité de temps à autre. Les modifications seront publiées sur cette page avec une date de révision mise à jour. Nous vous encourageons à consulter périodiquement cette politique de confidentialité pour rester informé de la manière dont nous protégeons vos informations."
+      },
+      "7": {
+        "title": "7. Nous Contacter",
+        "content": "Si vous avez des questions ou des préoccupations concernant cette politique de confidentialité ou nos pratiques en matière de données, veuillez nous contacter à :",
+        "contact": {
+          "email": "info@theclicks.ca",
+          "phone": "+1 (506) 871-8210",
+          "address": "860 Main Street, Moncton, NB, Canada, E1A 0G9"
+        }
+      }
+    }
+  },
+  "services": {
+    "analytics": {
+      "items": [
+        {
+          "title": "Configuration de Google Analytics",
+          "description": "Nous configurons Google Analytics pour suivre les performances de votre site web, vous offrant des informations détaillées sur le comportement des utilisateurs et les sources de trafic."
+        },
+        {
+          "title": "Tableaux de bord personnalisés",
+          "description": "Notre équipe crée des tableaux de bord personnalisés qui vous fournissent les indicateurs clés dont vous avez besoin pour surveiller vos campagnes et prendre des décisions basées sur les données."
+        },
+        {
+          "title": "Suivi des campagnes",
+          "description": "Nous suivons les performances de vos campagnes marketing sur tous les canaux, vous aidant à comprendre quelles stratégies génèrent des résultats."
+        },
+        {
+          "title": "Suivi des conversions",
+          "description": "Nous mettons en place un suivi des conversions pour mesurer l'efficacité de votre site web et de vos campagnes à convertir les visiteurs en clients."
+        },
+        {
+          "title": "Rapports réguliers",
+          "description": "Nous fournissons des rapports réguliers détaillant les performances de vos efforts marketing, offrant des analyses et des recommandations pour les améliorer."
+        },
+        {
+          "title": "Analyse des concurrents",
+          "description": "Nos services d'analyse des concurrents vous offrent des informations sur les stratégies de vos concurrents, vous aidant à garder une longueur d'avance dans votre secteur."
+        }
+      ],
+      "mainSection": {
+        "title": "Services d'analytique et de rapports",
+        "description": "Nos services d'analytique et de rapports vous offrent des informations détaillées sur les performances de vos campagnes. Du trafic web aux classements SEO, en passant par l'engagement sur les réseaux sociaux et les résultats PPC, nous fournissons des rapports complets mettant en avant les indicateurs clés et les tendances."
+      },
+      "what": {
+        "title": "Qu'est-ce que l'analytique et les rapports ?",
+        "description": "L'analytique et les rapports impliquent la collecte, l'analyse et l'interprétation des données pour mesurer les performances de vos efforts marketing. Ces informations vous permettent de prendre des décisions éclairées, d'optimiser vos stratégies et d'obtenir de meilleurs résultats."
+      },
+      "why": {
+        "title": "Pourquoi l'analytique et les rapports sont-ils importants ?",
+        "description": "L'analytique et les rapports permettent aux organisations de rester compétitives, agiles et centrées sur les clients dans un monde axé sur les données.",
+        "benefitsList": [
+          "rapports clairs",
+          "mesurer le ROI",
+          "décisions stratégiques"
+        ]
+      },
+      "contactFormMessage": "Contactez-nous pour une consultation gratuite et obtenez les réponses dont vous avez besoin."
+    }
   }
 }

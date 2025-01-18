@@ -236,6 +236,7 @@
       "phone": "+1 506 871 8210",
       "email": "info@theclicks.ca",
       "address": "860 Main Street, Moncton",
+      "address2": "860 Main Street, Moncton,\nNB, Canada",
       "fullAddress": "860 Main Street, Moncton, NB, Canada, E1A 0G9"
     },
     "submit": "Submit",
@@ -398,6 +399,315 @@
     "contact": {
       "title": "5. Contact Us",
       "description": "If you have any questions or concerns about our licensing information, please contact us at:"
+    }
+  },
+  "pricing": {
+    "title": "Simple Pricing",
+    "subtitle": "Choose your plan",
+    "serviceTitle": "Marketing Service Suite",
+    "serviceSubtitle": "Choose your services",
+    "contact": "Contact Us",
+    "addOns": "Add-On Services",
+    "plans": [
+      {
+        "name": "Basic",
+        "price": "CAD $3,000",
+        "features": [
+          "SEO",
+          "PPC Advertising",
+          "Social Media Marketing",
+          "Monthly Reporting"
+        ],
+        "description": "Best Suited For: Small businesses and startups with limited budgets looking to improve local SEO and engage on social media.",
+        "button": "Buy Now"
+      },
+      {
+        "name": "Premium",
+        "price": "CAD $7,500",
+        "features": [
+          "SEO",
+          "PPC Advertising",
+          "Social Media Marketing",
+          "Content Marketing",
+          "Email Marketing",
+          "Strategy Development",
+          "Monthly Reporting"
+        ],
+        "description": "Best Suited For: Medium-sized businesses seeking to enhance online visibility with comprehensive digital marketing services, including SEO, PPC, social media, and content marketing.",
+        "button": "Buy Now"
+      },
+      {
+        "name": "Enterprise",
+        "price": "Let's Talk!",
+        "features": [
+          "All services listed",
+          "Dedicated account manager",
+          "Weekly performance reviews"
+        ],
+        "description": "Best Suited For: Large businesses aiming for aggressive growth with all-inclusive digital marketing services, a dedicated account manager, and weekly performance reviews.",
+        "button": "Contact Us"
+      }
+    ],
+    "offers": {
+      "loadMore": "Load More",
+      "orderNow": "Order Now",
+      "offersList": [
+        {
+          "name": "Initial Consultation & Strategy Development",
+          "price": "CAD $1,000 - $3,000",
+          "priceDescription": "One-time fee",
+          "features": [
+            "Business analysis",
+            "Market research",
+            "Competitor analysis",
+            "Strategy document"
+          ],
+          "description": "Detailed consultation to understand the client's business goals, target audience, and current marketing efforts. Development of a customized digital marketing strategy.",
+          "button": "Order Now"
+        },
+        {
+          "name": "Website Design & Development",
+          "price": "CAD $5,000 - $20,000",
+          "priceDescription": "One-time fee \n (depending on complexity)",
+          "features": [
+            "Custom design",
+            "Development (frontend and backend)",
+            "Content management system (CMS) setup",
+            "Basic SEO optimization"
+          ],
+          "description": "Creation of a modern, responsive website optimized for user experience and conversions.",
+          "button": "Order Now"
+        },
+        {
+          "name": "Search Engine Optimization (SEO)",
+          "price": "CAD $1,000 - $5,000",
+          "priceDescription": "Monthly retainer",
+          "features": [
+            "Keyword research",
+            "On-page optimization",
+            "Link building",
+            "Monthly performance reports"
+          ],
+          "description": "On-page and off-page SEO to improve search engine rankings and organic traffic.",
+          "button": "Order Now"
+        },
+        {
+          "name": "Pay-Per-Click (PPC) Advertising",
+          "price": "CAD $1,500 - $10,000",
+          "priceDescription": "Monthly retainer \n (excluding ad spend)",
+          "features": [
+            "Google Ads setup and management",
+            "Bing Ads setup and management",
+            "Monthly performance reports"
+          ],
+          "description": "Management of PPC campaigns to drive targeted traffic and increase conversions.",
+          "button": "Order Now"
+        },
+        {
+          "name": "Social Media Marketing",
+          "price": "CAD $1,000 - $7,000",
+          "priceDescription": "Monthly retainer",
+          "features": [
+            "Content calendar",
+            "Post creation and scheduling",
+            "Community engagement",
+            "Monthly performance reports"
+          ],
+          "description": "Social media strategy, content creation, and community management across platforms like Facebook, Instagram, Twitter, LinkedIn, and others.",
+          "button": "Order Now"
+        },
+        {
+          "name": "Content Marketing",
+          "price": "CAD $2,000 - $8,000",
+          "priceDescription": "Monthly retainer",
+          "features": [
+            "Blog posts",
+            "Articles",
+            "Infographics",
+            "E-books/Whitepapers",
+            "Monthly performance reports"
+          ],
+          "description": "Creation and distribution of valuable content to attract and engage the target audience.",
+          "button": "Order Now"
+        },
+        {
+          "name": "Email Marketing",
+          "price": "CAD $1,000 - $5,000",
+          "priceDescription": "Monthly retainer",
+          "features": [
+            "Email template design",
+            "List segmentation",
+            "Campaign management",
+            "Monthly performance reports"
+          ],
+          "description": "Design and execution of email marketing campaigns to nurture leads and retain customers.",
+          "button": "Order Now"
+        },
+        {
+          "name": "Conversion Rate Optimization (CRO)",
+          "price": "CAD $1,500 - $7,000",
+          "priceDescription": "Monthly retainer",
+          "features": [
+            "A/B testing",
+            "User behavior analysis",
+            "Conversion funnel analysis",
+            "Monthly performance reports"
+          ],
+          "description": "Analysis and optimization of website and landing pages to improve conversion rates.",
+          "button": "Order Now"
+        },
+        {
+          "name": "Analytics & Reporting",
+          "price": "CAD $1,000 - $3,000",
+          "priceDescription": "Monthly retainer",
+          "features": [
+            "Google Analytics setup",
+            "Monthly performance reports",
+            "Quarterly strategy reviews"
+          ],
+          "description": "Comprehensive analytics and reporting to track the performance of digital marketing efforts.",
+          "button": "Order Now"
+        },
+        {
+          "name": "Marketing Automation",
+          "price": "CAD 2,000 - $10,000 \n + $1,000 - $5,000",
+          "priceDescription": "One-time setup fee \n + Monthly retainer",
+          "features": [
+            "Tool setup and integration",
+            "Workflow creation",
+            "Training and support"
+          ],
+          "description": "Implementation of marketing automation tools to streamline and enhance marketing efforts.",
+          "button": "Order Now"
+        }
+      ]
+    },
+    "testimonials": {
+      "video": {
+        "quote": "We create compelling videos that showcase your story, promote your products, and captivate viewers across all platforms. Whether it’s promotional videos, tutorials, or social media reels, we bring your vision to life with creativity and precision.",
+        "name": "Video Production",
+        "designation": ""
+      },
+      "influencer": {
+        "quote": "We connect you with influencers who align with your audience and values, crafting authentic campaigns that drive engagement and deliver measurable results.",
+        "name": "Influencer Marketing",
+        "designation": ""
+      },
+      "local": {
+        "quote": "We optimize your online presence to ensure your business appears at the top of local search results, from Google Maps to 'near me' searches.",
+        "name": "Local SEO",
+        "designation": ""
+      },
+      "reputation": {
+        "quote": "We monitor online reviews, manage public perception, and implement strategies to build trust and credibility. By addressing feedback and promoting positive content, we help your business maintain a strong, reliable presence.",
+        "name": "Reputation Management",
+        "designation": ""
+      }
+    }
+  },
+  "privacyPolicy": {
+    "title": "Privacy Policy",
+    "subtitle": "Your privacy is important to us. This Privacy Policy explains how The Clicks Full-Service Digital Marketing Agency collects, uses, and discloses your information.",
+    "sections": {
+      "1": {
+        "title": "1. Information We Collect",
+        "content": "We collect various types of information in connection with the services we provide, including:",
+        "items": [
+          "Personal Information: Name, email address, phone number, and other contact details.",
+          "Usage Data: Information about how you interact with our website, such as IP addresses, browser types, and pages viewed.",
+          "Cookies and Tracking Technologies: Information collected through cookies and other tracking technologies."
+        ]
+      },
+      "2": {
+        "title": "2. How We Use Your Information",
+        "content": "We use the information we collect for various purposes, including:",
+        "items": [
+          "Providing and improving our services.",
+          "Communicating with you about our services and offerings.",
+          "Analyzing usage of our website to improve our content and user experience.",
+          "Complying with legal obligations and protecting our legal rights."
+        ]
+      },
+      "3": {
+        "title": "3. Sharing Your Information",
+        "content": "We may share your information with third parties under certain circumstances, including:",
+        "items": [
+          "Service Providers: We may share your information with service providers who help us operate our business.",
+          "Legal Requirements: We may disclose your information to comply with legal obligations or in response to lawful requests by public authorities.",
+          "Business Transfers: We may share or transfer your information in connection with a merger, sale, or other business transaction."
+        ]
+      },
+      "4": {
+        "title": "4. Your Rights",
+        "content": "You have certain rights regarding your personal information, including:",
+        "items": [
+          "The right to access the personal information we hold about you.",
+          "The right to request that we correct any inaccuracies in your personal information.",
+          "The right to request the deletion of your personal information.",
+          "The right to object to the processing of your personal information."
+        ]
+      },
+      "5": {
+        "title": "5. Security of Your Information",
+        "content": "We take the security of your information seriously and implement reasonable measures to protect it. However, no method of transmission over the Internet or method of electronic storage is completely secure."
+      },
+      "6": {
+        "title": "6. Changes to This Privacy Policy",
+        "content": "We may update this Privacy Policy from time to time. Any changes will be posted on this page with an updated revision date. We encourage you to review this Privacy Policy periodically to stay informed about how we are protecting your information."
+      },
+      "7": {
+        "title": "7. Contact Us",
+        "content": "If you have any questions or concerns about this Privacy Policy or our data practices, please contact us at:",
+        "contact": {
+          "email": "info@theclicks.ca",
+          "phone": "+1 (506) 871-8210",
+          "address": "860 Main Street, Moncton, NB, Canada, E1A 0G9"
+        }
+      }
+    }
+  },
+  "services": {
+    "analytics": {
+      "items": [
+        {
+          "title": "Google Analytics Setup",
+          "description": "We set up and configure Google Analytics to track your website's performance, providing you with detailed insights into user behavior and traffic sources."
+        },
+        {
+          "title": "Custom Dashboards",
+          "description": "Our team creates custom dashboards that provide you with the key metrics you need to monitor your campaigns and make data-driven decisions."
+        },
+        {
+          "title:": "Campaign Tracking",
+          "description": "We track the performance of your marketing campaigns across all channels, helping you understand which strategies are driving results."
+        },
+        {
+          "title": "Conversion Tracking",
+          "description": "We set up conversion tracking to measure the effectiveness of your website and campaigns in converting visitors into customers."
+        },
+        {
+          "title": "Regular Reporting",
+          "description": "We provide regular reports that detail the performance of your marketing efforts, offering insights and recommendations for improvement."
+        },
+        {
+          "title": "Competitor Analysis",
+          "description": "Our competitor analysis services provide insights into your competitors' strategies, helping you stay ahead in your industry."
+        }
+      ],
+      "mainSection": {
+        "title": "Analytics and Reporting Services",
+        "description": "Our analytics and reporting services provide you with detailed insights into how your campaigns are performing. From website traffic and SEO rankings to social media engagement and PPC results, we deliver comprehensive reports that highlight key metrics and trends."
+      },
+      "what": {
+        "title": "What is Analytics and Reporting?",
+        "description": "Analytics and reporting involve the collection, analysis, and interpretation of data to measure the performance of your marketing efforts. These insights allow you to make informed decisions, optimize your strategies, and achieve better results."
+      },
+      "why": {
+        "title": "Why do Analytics and Reporting Matter?",
+        "description": "Analytics and reporting empower organizations to stay competitive, agile, and customer-focused in a data-driven world.",
+        "benefitsList": ["clear reports", "measure ROI", "strategic decisions"]
+      },
+      "contactFormMessage": "Reach out for a free consultation and get the answers you need."
     }
   }
 }
