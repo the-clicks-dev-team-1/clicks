@@ -849,6 +849,48 @@
         ]
       },
       "contactFormMessage": "Contactez-nous pour une consultation gratuite et obtenez les réponses dont vous avez besoin."
+    },
+    "design": {
+      "items": [
+        {
+          "title": "Conception de logo",
+          "description": "Nous créons des logos uniques et mémorables qui représentent votre marque et laissent une impression durable sur votre audience."
+        },
+        {
+          "title": "Branding",
+          "description": "Nos services de branding assurent que chaque aspect de votre identité visuelle est cohérent, homogène et aligné avec les valeurs de votre marque."
+        },
+        {
+          "title": "Conception imprimée",
+          "description": "Nous concevons des supports imprimés époustouflants, y compris des brochures, cartes de visite et affiches, qui communiquent efficacement votre message."
+        },
+        {
+          "title": "Conception Web",
+          "description": "Nos services de conception web allient esthétique et fonctionnalité pour créer des sites web visuellement attrayants qui produisent des résultats."
+        },
+        {
+          "title": "Graphiques pour les réseaux sociaux",
+          "description": "Nous créons des graphismes engageants pour les réseaux sociaux qui attirent l'attention, augmentent l'engagement et génèrent du trafic vers vos plateformes en ligne."
+        },
+        {
+          "title": "Infographies",
+          "description": "Nos infographies simplifient les informations complexes et les présentent dans un format facile à comprendre et visuellement attrayant."
+        }
+      ],
+      "mainSection": {
+        "title": "Services de conception graphique",
+        "description": "Les premières impressions comptent, et les visuels de votre marque jouent un rôle crucial dans la perception de votre entreprise. Nos services de conception graphique donnent vie à votre marque avec des conceptions professionnelles de haute qualité qui communiquent votre message de manière claire et efficace."
+      },
+      "what": {
+        "title": "Qu'est-ce que la conception graphique ?",
+        "description": "La conception graphique est l'art de créer du contenu visuel pour communiquer des messages. Elle consiste à combiner des images, de la typographie et des couleurs pour créer des supports qui attirent l'attention et transmettent un message spécifique à votre audience."
+      },
+      "why": {
+        "title": "Pourquoi la conception graphique est-elle importante ?",
+        "description": "La conception graphique est essentielle pour créer une identité visuelle forte pour votre marque.",
+        "benefitsList": ["engagement", "communication", "identité de marque"]
+      },
+      "contactFormMessage": "Contactez-nous pour une consultation gratuite et obtenez les réponses dont vous avez besoin."
     }
   }
 }
