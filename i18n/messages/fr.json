@@ -803,6 +803,52 @@
         ]
       },
       "contactFormMessage": "Contactez-nous pour une consultation gratuite et obtenez les réponses dont vous avez besoin."
+    },
+    "cro": {
+      "items": [
+        {
+          "title": "Test A/B",
+          "description": "Nous réalisons des tests A/B pour déterminer quelles variations des éléments de votre site Web offrent les meilleures performances, entraînant ainsi des conversions accrues."
+        },
+        {
+          "title": "Analyse du comportement des utilisateurs",
+          "description": "Notre équipe analyse le comportement des utilisateurs sur votre site Web afin d'identifier les obstacles à la conversion et les domaines à améliorer."
+        },
+        {
+          "title": "Optimisation du tunnel de conversion",
+          "description": "Nous optimisons votre tunnel de conversion pour garantir que les visiteurs progressent facilement dans le processus et soient plus susceptibles de convertir."
+        },
+        {
+          "title": "Optimisation des pages d'atterrissage",
+          "description": "Notre équipe crée et optimise des pages d'atterrissage conçues pour convertir, garantissant que votre trafic se traduit par davantage de prospects et de ventes."
+        },
+        {
+          "title": "Cartes de chaleur et analyses",
+          "description": "Nous utilisons des cartes de chaleur et des outils d'analyse pour visualiser les interactions des utilisateurs sur votre site, nous aidant à identifier les opportunités d'amélioration."
+        },
+        {
+          "title": "Optimisation des formulaires",
+          "description": "Nous optimisons les formulaires sur votre site Web pour réduire les frictions et augmenter la probabilité que les visiteurs les remplissent."
+        }
+      ],
+      "mainSection": {
+        "title": "Services d'optimisation du taux de conversion (CRO)",
+        "description": "Nos services de CRO se concentrent sur l'analyse du comportement des utilisateurs et l'identification des opportunités pour améliorer les performances de votre site. En optimisant des éléments clés tels que les pages d'atterrissage, les formulaires et les appels à l'action, nous vous aidons à augmenter les taux de conversion et à générer plus de prospects ou de ventes."
+      },
+      "what": {
+        "title": "Qu'est-ce que le CRO ?",
+        "description": "L'optimisation du taux de conversion (CRO) est le processus d'amélioration des performances de votre site Web en augmentant le pourcentage de visiteurs qui effectuent une action souhaitée, que ce soit un achat, le remplissage d'un formulaire ou l'abonnement à une newsletter."
+      },
+      "why": {
+        "title": "Pourquoi le CRO est-il important ?",
+        "description": "Nous utilisons une combinaison de tests A/B, de cartographie thermique et d'analyses pour comprendre comment les visiteurs interagissent avec votre site Web.",
+        "benefitsList": [
+          "augmenter les revenus",
+          "maximiser le ROI",
+          "expérience utilisateur"
+        ]
+      },
+      "contactFormMessage": "Contactez-nous pour une consultation gratuite et obtenez les réponses dont vous avez besoin."
     }
   }
 }

@@ -796,44 +796,44 @@
     "cro": {
       "items": [
         {
-          "title": "",
-          "description": ""
+          "title": "A/B Testing",
+          "description": "We conduct A/B testing to determine which variations of your website elements perform best, leading to higher conversions."
         },
         {
-          "title": "",
-          "description": ""
+          "title": "User Behavior Analysis",
+          "description": "Our team analyzes user behavior on your website to identify barriers to conversion and areas for improvement."
         },
         {
-          "title": "",
-          "description": ""
+          "title": "Conversion Funnel Optimization",
+          "description": "We optimize your conversion funnel to ensure that visitors move smoothly through the process and are more likely to convert."
         },
         {
-          "title": "",
-          "description": ""
+          "title": "Landing Page Optimization",
+          "description": "Our team creates and optimizes landing pages that are designed to convert, ensuring that your traffic results in more leads and sales."
         },
         {
-          "title": "",
-          "description": ""
+          "title": "Heatmaps & Analytics",
+          "description": "We use heatmaps and analytics tools to visualize user interactions on your site, helping us identify opportunities for improvement."
         },
         {
-          "title": "",
-          "description": ""
+          "title": "Form Optimization",
+          "description": "We optimize forms on your website to reduce friction and increase the likelihood that visitors will complete them."
         }
       ],
       "mainSection": {
-        "title": "",
-        "description": ""
+        "title": "Conversion Rate Optimization (CRO) Services",
+        "description": "Our CRO services focus on analyzing user behavior and identifying opportunities to improve the performance of your site. By optimizing key elements such as landing pages, forms, and calls-to-action, we help you increase conversion rates and generate more leads or sales."
       },
       "what": {
-        "title": "",
-        "description": ""
+        "title": "What is CRO?",
+        "description": "Conversion Rate Optimization (CRO) is the process of improving your website's performance by increasing the percentage of visitors who take a desired action—whether it's making a purchase, filling out a form, or subscribing to a newsletter."
       },
       "why": {
-        "title": "",
-        "description": "",
-        "benefitsList": ["", "", ""]
+        "title": "Why does CRO Matter?",
+        "description": "We use a combination of A/B testing, heat mapping, and analytics to understand how visitors interact with your website.",
+        "benefitsList": ["increase revenue", "maximize ROI", "user experience"]
       },
-      "contactFormMessage": ""
+      "contactFormMessage": "Reach out for a free consultation and get the answers you need."
     },
     "design": {
       "items": [
