@@ -664,5 +664,53 @@
         }
       }
     }
+  },
+  "services": {
+    "analytics": {
+      "items": [
+        {
+          "title": "Configuration de Google Analytics",
+          "description": "Nous configurons Google Analytics pour suivre les performances de votre site web, vous offrant des informations détaillées sur le comportement des utilisateurs et les sources de trafic."
+        },
+        {
+          "title": "Tableaux de bord personnalisés",
+          "description": "Notre équipe crée des tableaux de bord personnalisés qui vous fournissent les indicateurs clés dont vous avez besoin pour surveiller vos campagnes et prendre des décisions basées sur les données."
+        },
+        {
+          "title": "Suivi des campagnes",
+          "description": "Nous suivons les performances de vos campagnes marketing sur tous les canaux, vous aidant à comprendre quelles stratégies génèrent des résultats."
+        },
+        {
+          "title": "Suivi des conversions",
+          "description": "Nous mettons en place un suivi des conversions pour mesurer l'efficacité de votre site web et de vos campagnes à convertir les visiteurs en clients."
+        },
+        {
+          "title": "Rapports réguliers",
+          "description": "Nous fournissons des rapports réguliers détaillant les performances de vos efforts marketing, offrant des analyses et des recommandations pour les améliorer."
+        },
+        {
+          "title": "Analyse des concurrents",
+          "description": "Nos services d'analyse des concurrents vous offrent des informations sur les stratégies de vos concurrents, vous aidant à garder une longueur d'avance dans votre secteur."
+        }
+      ],
+      "mainSection": {
+        "title": "Services d'analytique et de rapports",
+        "description": "Nos services d'analytique et de rapports vous offrent des informations détaillées sur les performances de vos campagnes. Du trafic web aux classements SEO, en passant par l'engagement sur les réseaux sociaux et les résultats PPC, nous fournissons des rapports complets mettant en avant les indicateurs clés et les tendances."
+      },
+      "what": {
+        "title": "Qu'est-ce que l'analytique et les rapports ?",
+        "description": "L'analytique et les rapports impliquent la collecte, l'analyse et l'interprétation des données pour mesurer les performances de vos efforts marketing. Ces informations vous permettent de prendre des décisions éclairées, d'optimiser vos stratégies et d'obtenir de meilleurs résultats."
+      },
+      "why": {
+        "title": "Pourquoi l'analytique et les rapports sont-ils importants ?",
+        "description": "L'analytique et les rapports permettent aux organisations de rester compétitives, agiles et centrées sur les clients dans un monde axé sur les données.",
+        "benefitsList": [
+          "rapports clairs",
+          "mesurer le ROI",
+          "décisions stratégiques"
+        ]
+      },
+      "contactFormMessage": "Contactez-nous pour une consultation gratuite et obtenez les réponses dont vous avez besoin."
+    }
   }
 }

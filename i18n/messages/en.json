@@ -236,6 +236,7 @@
       "phone": "+1 506 871 8210",
       "email": "info@theclicks.ca",
       "address": "860 Main Street, Moncton",
+      "address2": "860 Main Street, Moncton,\nNB, Canada",
       "fullAddress": "860 Main Street, Moncton, NB, Canada, E1A 0G9"
     },
     "submit": "Submit",
@@ -663,6 +664,50 @@
           "address": "860 Main Street, Moncton, NB, Canada, E1A 0G9"
         }
       }
+    }
+  },
+  "services": {
+    "analytics": {
+      "items": [
+        {
+          "title": "Google Analytics Setup",
+          "description": "We set up and configure Google Analytics to track your website's performance, providing you with detailed insights into user behavior and traffic sources."
+        },
+        {
+          "title": "Custom Dashboards",
+          "description": "Our team creates custom dashboards that provide you with the key metrics you need to monitor your campaigns and make data-driven decisions."
+        },
+        {
+          "title:": "Campaign Tracking",
+          "description": "We track the performance of your marketing campaigns across all channels, helping you understand which strategies are driving results."
+        },
+        {
+          "title": "Conversion Tracking",
+          "description": "We set up conversion tracking to measure the effectiveness of your website and campaigns in converting visitors into customers."
+        },
+        {
+          "title": "Regular Reporting",
+          "description": "We provide regular reports that detail the performance of your marketing efforts, offering insights and recommendations for improvement."
+        },
+        {
+          "title": "Competitor Analysis",
+          "description": "Our competitor analysis services provide insights into your competitors' strategies, helping you stay ahead in your industry."
+        }
+      ],
+      "mainSection": {
+        "title": "Analytics and Reporting Services",
+        "description": "Our analytics and reporting services provide you with detailed insights into how your campaigns are performing. From website traffic and SEO rankings to social media engagement and PPC results, we deliver comprehensive reports that highlight key metrics and trends."
+      },
+      "what": {
+        "title": "What is Analytics and Reporting?",
+        "description": "Analytics and reporting involve the collection, analysis, and interpretation of data to measure the performance of your marketing efforts. These insights allow you to make informed decisions, optimize your strategies, and achieve better results."
+      },
+      "why": {
+        "title": "Why do Analytics and Reporting Matter?",
+        "description": "Analytics and reporting empower organizations to stay competitive, agile, and customer-focused in a data-driven world.",
+        "benefitsList": ["clear reports", "measure ROI", "strategic decisions"]
+      },
+      "contactFormMessage": "Reach out for a free consultation and get the answers you need."
     }
   }
 }

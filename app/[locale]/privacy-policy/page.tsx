@@ -43,8 +43,9 @@ const PrivacyPolicy: FC<{ params: { locale: string } }> = async ({
           <div className="text-[var(--gray-blue)] light:text-[var(--gray-40)]">
             <p className="mt-4">
               <strong>{f("email")}:</strong>{" "}
-              <a href="mailto:info@theclicks.ca" className="text-sky-400">
+              <a href={`mailto:${c("email")}`} className="text-sky-400">
                 {c("email")}
+                {/* {contact.email} */}
               </a>
             </p>
             <p className="mt-2">
@@ -60,35 +61,6 @@ const PrivacyPolicy: FC<{ params: { locale: string } }> = async ({
       return null;
     }
   };
-
-  // const renderContact = (sectionNumber: string) => {
-  //   try {
-  //     const contact = t.raw(
-  //       `sections.${sectionNumber}.contact`
-  //     ) as unknown as Record<string, string>;
-
-  //     if (contact && typeof contact === "object") {
-  //       return (
-  //         <div className="text-[var(--gray-blue)] light:text-[var(--gray-40)]">
-  //           <p className="mt-4">
-  //             <strong>{f("email")}:</strong>{" "}
-  //             <a href="mailto:info@theclicks.ca" className="text-sky-400">
-  //               {contact.email}
-  //             </a>
-  //           </p>
-  //           <p className="mt-2">
-  //             <strong>{f("phone")}:</strong> {contact.phone}
-  //           </p>
-  //           <p className="mt-2">
-  //             <strong>{f("address")}:</strong> {contact.address}
-  //           </p>
-  //         </div>
-  //       );
-  //     }
-  //   } catch {
-  //     return null;
-  //   }
-  // };
 
   return (
     <div className="bg-[var(--bgnew)] text-[var(--light-blue)] light:text-[var(--gray-70)]">
