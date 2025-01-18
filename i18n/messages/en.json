@@ -708,6 +708,48 @@
         "benefitsList": ["clear reports", "measure ROI", "strategic decisions"]
       },
       "contactFormMessage": "Reach out for a free consultation and get the answers you need."
+    },
+    "automation": {
+      "items": [
+        {
+          "title": "Automation Strategy Development",
+          "description": "We help you develop a tailored marketing automation strategy that aligns with your business goals and maximizes the impact of your marketing efforts."
+        },
+        {
+          "title": "Email Automation",
+          "description": "We set up automated email campaigns that nurture leads, re-engage customers, and drive conversions with personalized messaging."
+        },
+        {
+          "title": "Lead Scoring and Nurturing",
+          "description": "Our lead scoring and nurturing services ensure that your sales team focuses on the most qualified leads, improving conversion rates."
+        },
+        {
+          "title": "CRM Integration",
+          "description": "We integrate your marketing automation tools with your CRM to ensure seamless data flow and better alignment between sales and marketing."
+        },
+        {
+          "title": "Social Media Automation",
+          "description": "We automate your social media posting, engagement, and monitoring to ensure consistent activity and maximize your social presence."
+        },
+        {
+          "title": "Analytics and Reporting",
+          "description": "Our detailed reports and analytics help you track the performance of your automated campaigns and make data-driven improvements."
+        }
+      ],
+      "mainSection": {
+        "title": "Marketing Automation Services",
+        "description": "Streamline your marketing processes, improve efficiency, and drive better results with our marketing automation solutions."
+      },
+      "what": {
+        "title": "What is Marketing Automation?",
+        "description": "Marketing automation involves using software tools to automate repetitive tasks like email marketing, lead nurturing, and customer segmentation, allowing your team to focus on strategy and creativity."
+      },
+      "why": {
+        "title": "Why Choose Marketing Automation?",
+        "description": "Marketing automation helps businesses save time, personalize customer experiences, and improve ROI by streamlining and optimizing marketing processes.",
+        "benefitsList": ["Save time", "Improve ROI", "Enhance personalization"]
+      },
+      "contactFormMessage": "Reach out for a free consultation and learn how we can automate your marketing."
     }
   }
 }

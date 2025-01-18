@@ -711,6 +711,52 @@
         ]
       },
       "contactFormMessage": "Contactez-nous pour une consultation gratuite et obtenez les réponses dont vous avez besoin."
+    },
+    "automation": {
+      "items": [
+        {
+          "title": "Développement de stratégie d'automatisation",
+          "description": "Nous vous aidons à développer une stratégie d'automatisation marketing sur mesure qui s'aligne avec vos objectifs commerciaux et maximise l'impact de vos efforts marketing."
+        },
+        {
+          "title": "Automatisation des e-mails",
+          "description": "Nous mettons en place des campagnes d'e-mails automatisées qui fidélisent les prospects, réengagent les clients et augmentent les conversions avec des messages personnalisés."
+        },
+        {
+          "title": "Évaluation et nurturing des prospects",
+          "description": "Nos services d'évaluation et de nurturing des prospects garantissent que votre équipe commerciale se concentre sur les prospects les plus qualifiés, améliorant ainsi les taux de conversion."
+        },
+        {
+          "title": "Intégration CRM",
+          "description": "Nous intégrons vos outils d'automatisation marketing à votre CRM pour assurer un flux de données fluide et une meilleure coordination entre les ventes et le marketing."
+        },
+        {
+          "title": "Automatisation des réseaux sociaux",
+          "description": "Nous automatisons vos publications, interactions et suivis sur les réseaux sociaux pour garantir une activité cohérente et maximiser votre présence sociale."
+        },
+        {
+          "title": "Analyses et rapports",
+          "description": "Nos rapports détaillés et nos analyses vous aident à suivre les performances de vos campagnes automatisées et à apporter des améliorations basées sur les données."
+        }
+      ],
+      "mainSection": {
+        "title": "Services d'automatisation marketing",
+        "description": "Optimisez vos processus marketing, améliorez votre efficacité et obtenez de meilleurs résultats grâce à nos solutions d'automatisation marketing."
+      },
+      "what": {
+        "title": "Qu'est-ce que l'automatisation marketing ?",
+        "description": "L'automatisation marketing consiste à utiliser des outils logiciels pour automatiser les tâches répétitives telles que le marketing par e-mail, le nurturing des prospects et la segmentation des clients, permettant à votre équipe de se concentrer sur la stratégie et la créativité."
+      },
+      "why": {
+        "title": "Pourquoi choisir l'automatisation marketing ?",
+        "description": "L'automatisation marketing aide les entreprises à gagner du temps, à personnaliser l'expérience client et à améliorer le ROI en rationalisant et en optimisant les processus marketing.",
+        "benefitsList": [
+          "Gagnez du temps",
+          "Améliorez le ROI",
+          "Renforcez la personnalisation"
+        ]
+      },
+      "contactFormMessage": "Contactez-nous pour une consultation gratuite et découvrez comment nous pouvons automatiser votre marketing."
     }
   }
 }
