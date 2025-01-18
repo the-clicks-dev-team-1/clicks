@@ -460,7 +460,8 @@
             "Analyse des concurrents",
             "Document stratégique"
           ],
-          "description": "Consultation détaillée pour comprendre les objectifs commerciaux du client, son public cible et ses efforts marketing actuels. Élaboration d'une stratégie de marketing numérique personnalisée."
+          "description": "Consultation détaillée pour comprendre les objectifs commerciaux du client, son public cible et ses efforts marketing actuels. Élaboration d'une stratégie de marketing numérique personnalisée.",
+          "button": "Commander maintenant"
         },
         {
           "name": "Conception et développement de site web",
@@ -472,7 +473,8 @@
             "Configuration du système de gestion de contenu (CMS)",
             "Optimisation SEO de base"
           ],
-          "description": "Création d'un site web moderne et réactif, optimisé pour l'expérience utilisateur et les conversions."
+          "description": "Création d'un site web moderne et réactif, optimisé pour l'expérience utilisateur et les conversions.",
+          "button": "Commander maintenant"
         },
         {
           "name": "Optimisation pour les moteurs de recherche (SEO)",
@@ -484,7 +486,8 @@
             "Création de liens",
             "Rapports de performance mensuels"
           ],
-          "description": "Optimisation sur site et hors site pour améliorer les classements sur les moteurs de recherche et le trafic organique."
+          "description": "Optimisation sur site et hors site pour améliorer les classements sur les moteurs de recherche et le trafic organique.",
+          "button": "Commander maintenant"
         },
         {
           "name": "Publicité au coût par clic (PPC)",
@@ -495,7 +498,8 @@
             "Configuration et gestion des annonces Bing Ads",
             "Rapports de performance mensuels"
           ],
-          "description": "Gestion des campagnes PPC pour générer un trafic ciblé et augmenter les conversions."
+          "description": "Gestion des campagnes PPC pour générer un trafic ciblé et augmenter les conversions.",
+          "button": "Commander maintenant"
         },
         {
           "name": "Marketing des réseaux sociaux",
@@ -507,7 +511,8 @@
             "Engagement communautaire",
             "Rapports de performance mensuels"
           ],
-          "description": "Stratégie de marketing sur les réseaux sociaux, création de contenu et gestion communautaire sur des plateformes comme Facebook, Instagram, Twitter, LinkedIn et autres."
+          "description": "Stratégie de marketing sur les réseaux sociaux, création de contenu et gestion communautaire sur des plateformes comme Facebook, Instagram, Twitter, LinkedIn et autres.",
+          "button": "Commander maintenant"
         },
         {
           "name": "Marketing de contenu",
@@ -520,7 +525,8 @@
             "E-books/Livres blancs",
             "Rapports de performance mensuels"
           ],
-          "description": "Création et distribution de contenu de qualité pour attirer et engager le public cible."
+          "description": "Création et distribution de contenu de qualité pour attirer et engager le public cible.",
+          "button": "Commander maintenant"
         },
         {
           "name": "Marketing par email",
@@ -532,7 +538,8 @@
             "Gestion des campagnes",
             "Rapports de performance mensuels"
           ],
-          "description": "Conception et exécution de campagnes de marketing par email pour nourrir les prospects et fidéliser les clients."
+          "description": "Conception et exécution de campagnes de marketing par email pour nourrir les prospects et fidéliser les clients.",
+          "button": "Commander maintenant"
         },
         {
           "name": "Optimisation du taux de conversion (CRO)",
@@ -544,7 +551,8 @@
             "Analyse du tunnel de conversion",
             "Rapports de performance mensuels"
           ],
-          "description": "Analyse et optimisation des sites web et des pages d'atterrissage pour améliorer les taux de conversion."
+          "description": "Analyse et optimisation des sites web et des pages d'atterrissage pour améliorer les taux de conversion.",
+          "button": "Commander maintenant"
         },
         {
           "name": "Analyse et rapports",
@@ -555,7 +563,8 @@
             "Rapports de performance mensuels",
             "Révisions stratégiques trimestrielles"
           ],
-          "description": "Analyses et rapports complets pour suivre la performance des efforts de marketing numérique."
+          "description": "Analyses et rapports complets pour suivre la performance des efforts de marketing numérique.",
+          "button": "Commander maintenant"
         },
         {
           "name": "Automatisation du marketing",
@@ -566,7 +575,8 @@
             "Création de workflows",
             "Formation et support"
           ],
-          "description": "Mise en œuvre d'outils d'automatisation du marketing pour rationaliser et améliorer les efforts marketing."
+          "description": "Mise en œuvre d'outils d'automatisation du marketing pour rationaliser et améliorer les efforts marketing.",
+          "button": "Commander maintenant"
         }
       ]
     }

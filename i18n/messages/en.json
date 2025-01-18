@@ -461,7 +461,8 @@
             "Competitor analysis",
             "Strategy document"
           ],
-          "description": "Detailed consultation to understand the client's business goals, target audience, and current marketing efforts. Development of a customized digital marketing strategy."
+          "description": "Detailed consultation to understand the client's business goals, target audience, and current marketing efforts. Development of a customized digital marketing strategy.",
+          "button": "Order Now"
         },
         {
           "name": "Website Design & Development",
@@ -473,7 +474,8 @@
             "Content management system (CMS) setup",
             "Basic SEO optimization"
           ],
-          "description": "Creation of a modern, responsive website optimized for user experience and conversions."
+          "description": "Creation of a modern, responsive website optimized for user experience and conversions.",
+          "button": "Order Now"
         },
         {
           "name": "Search Engine Optimization (SEO)",
@@ -485,7 +487,8 @@
             "Link building",
             "Monthly performance reports"
           ],
-          "description": "On-page and off-page SEO to improve search engine rankings and organic traffic."
+          "description": "On-page and off-page SEO to improve search engine rankings and organic traffic.",
+          "button": "Order Now"
         },
         {
           "name": "Pay-Per-Click (PPC) Advertising",
@@ -496,7 +499,8 @@
             "Bing Ads setup and management",
             "Monthly performance reports"
           ],
-          "description": "Management of PPC campaigns to drive targeted traffic and increase conversions."
+          "description": "Management of PPC campaigns to drive targeted traffic and increase conversions.",
+          "button": "Order Now"
         },
         {
           "name": "Social Media Marketing",
@@ -508,7 +512,8 @@
             "Community engagement",
             "Monthly performance reports"
           ],
-          "description": "Social media strategy, content creation, and community management across platforms like Facebook, Instagram, Twitter, LinkedIn, and others."
+          "description": "Social media strategy, content creation, and community management across platforms like Facebook, Instagram, Twitter, LinkedIn, and others.",
+          "button": "Order Now"
         },
         {
           "name": "Content Marketing",
@@ -521,7 +526,8 @@
             "E-books/Whitepapers",
             "Monthly performance reports"
           ],
-          "description": "Creation and distribution of valuable content to attract and engage the target audience."
+          "description": "Creation and distribution of valuable content to attract and engage the target audience.",
+          "button": "Order Now"
         },
         {
           "name": "Email Marketing",
@@ -533,7 +539,8 @@
             "Campaign management",
             "Monthly performance reports"
           ],
-          "description": "Design and execution of email marketing campaigns to nurture leads and retain customers."
+          "description": "Design and execution of email marketing campaigns to nurture leads and retain customers.",
+          "button": "Order Now"
         },
         {
           "name": "Conversion Rate Optimization (CRO)",
@@ -545,7 +552,8 @@
             "Conversion funnel analysis",
             "Monthly performance reports"
           ],
-          "description": "Analysis and optimization of website and landing pages to improve conversion rates."
+          "description": "Analysis and optimization of website and landing pages to improve conversion rates.",
+          "button": "Order Now"
         },
         {
           "name": "Analytics & Reporting",
@@ -556,7 +564,8 @@
             "Monthly performance reports",
             "Quarterly strategy reviews"
           ],
-          "description": "Comprehensive analytics and reporting to track the performance of digital marketing efforts."
+          "description": "Comprehensive analytics and reporting to track the performance of digital marketing efforts.",
+          "button": "Order Now"
         },
         {
           "name": "Marketing Automation",
@@ -567,7 +576,8 @@
             "Workflow creation",
             "Training and support"
           ],
-          "description": "Implementation of marketing automation tools to streamline and enhance marketing efforts."
+          "description": "Implementation of marketing automation tools to streamline and enhance marketing efforts.",
+          "button": "Order Now"
         }
       ]
     }
