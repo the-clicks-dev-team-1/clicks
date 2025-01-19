@@ -1,10 +1,12 @@
 import { FC } from "react";
-import Navbar from "@/components/navbar";
-import Footer from "@/components/footer";
-import Image from "next/image";
 import { Metadata } from "next";
+import Image from "next/image";
+import { getTranslations } from "next-intl/server";
 import ContactBlock from "@/components/contactBlock";
+import Footer from "@/components/footer";
+import Navbar from "@/components/navbar";
 import ServiceCard from "@/components/ServiceCard";
+import en from "@/i18n/messages/en.json";
 
 export const metadata: Metadata = {
   title: "Graphic Design Services",
@@ -12,52 +14,18 @@ export const metadata: Metadata = {
     "Elevate your brand with stunning visuals and creative graphic design solutions tailored to your needs",
 };
 
-const servicesItems = [
-  {
-    count: "01",
-    image: "/images/Group1.png",
-    title: "Logo Design",
-    description:
-      "We create unique and memorable logos that represent your brand and make a lasting impression on your audience.",
-  },
-  {
-    count: "02",
-    image: "/images/Group3.png",
-    title: "Branding",
-    description:
-      "Our branding services ensure that every aspect of your visual identity is consistent, cohesive, and aligned with your brand values.",
-  },
-  {
-    count: "03",
-    image: "/images/Group4.png",
-    title: "Print Design",
-    description:
-      "We design stunning print materials, including brochures, business cards, and posters, that effectively communicate your message.",
-  },
-  {
-    count: "04",
-    image: "/images/Group5.png",
-    title: "Web Design",
-    description:
-      "Our web design services combine aesthetics with functionality to create visually appealing websites that drive results.",
-  },
-  {
-    count: "05",
-    image: "/images/Group6.png",
-    title: "Social Media Graphics",
-    description:
-      "We create engaging social media graphics that capture attention, increase engagement, and drive traffic to your online platforms.",
-  },
-  {
-    count: "06",
-    image: "/images/Group7.png",
-    title: "Infographics",
-    description:
-      "Our infographics simplify complex information and present it in an easy-to-understand, visually appealing format.",
-  },
-];
+const servicesItems = en.services.design.items.map((_, index) => ({
+  count: `0${index + 1}`,
+  image: `/images/Group${index + 1}.png`,
+  title: `items.${index}.title`,
+  description: `items.${index}.description`,
+}));
 
-const GraphicDesign: FC = () => {
+const GraphicDesign: FC<{ params: { locale: string } }> = async ({
+  params: { locale },
+}) => {
+  const t = await getTranslations({ locale, namespace: "services.design" });
+
   return (
     <div className="bg-[var(--bgnew)] text-[var(--text)]">
       <Navbar />
@@ -65,13 +33,10 @@ const GraphicDesign: FC = () => {
       <div className="container md:px-10 mb-32">
         <div className="flex flex-col pt-32 md:pt-40">
           <h1 className="mb-10 py-2 text-3xl md:text-5xl bg-clip-text text-transparent bg-gradient-to-r from-sky-400 to bg-purple-500 bg-opacity-50">
-            Graphic Design Services
+            {t("mainSection.title")}
           </h1>
           <p className="mt-3 text-lg md:text-xl max-w-2xl text-left text-[var(--gray-blue)] light:text-[var(--gray-40)]">
-            First impressions matter, and your brand&apos;s visuals play a
-            critical role in how your business is perceived. Our graphic design
-            services bring your brand to life with professional, high-quality
-            designs that communicate your message clearly and effectively.
+            {t("mainSection.description")}
           </p>
         </div>
       </div>
@@ -84,8 +49,8 @@ const GraphicDesign: FC = () => {
               key={item.count}
               count={item.count}
               image={item.image}
-              title={item.title}
-              description={item.description}
+              title={t(item.title)}
+              description={t(item.description)}
             />
           ))}
         </div>
@@ -96,37 +61,33 @@ const GraphicDesign: FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
           <div>
             <h2 className="text-2xl md:text-3xl font-semibold mb-6 text-[var(--light-blue)] light:text-[var(--gray-70)]">
-              What is Graphic Design?
+              {t("what.title")}
             </h2>
             <p className="text-lg mb-6 text-[var(--gray-blue)] light:text-[var(--gray-40)]">
-              Graphic design is the art of creating visual content to
-              communicate messages. It involves combining images, typography,
-              and color to create materials that capture attention and convey a
-              specific message to your audience.
+              {t("what.description")}
             </p>
             <h2 className="text-lg md:text-xl font-semibold mb-6 text-[var(--light-blue)] light:text-[var(--gray-70)]">
-              Why does Graphic Design Matter?
+              {t("why.title")}
             </h2>
             <div className="flex flex-col sm:flex-row md:flex-col gap-2 xl:flex-row justify-between items-center mb-6 text-lg text-[var(--gray-blue)] light:text-[var(--gray-40)]">
               <div className="w-full inline-block bg-gradient-to-r from-sky-400 to-purple-500 p-[1px] rounded-full">
                 <span className="min-w-[148px] whitespace-nowrap w-full block bg-white dark:bg-black rounded-full px-4 py-3 text-center text-lg font-semibold">
-                  engagement
+                  {t("why.benefitsList.0")}
                 </span>
               </div>
               <div className="w-full inline-block bg-gradient-to-r from-sky-400 to-purple-500 p-[1px] rounded-full">
                 <span className="min-w-[148px] whitespace-nowrap w-full text-center block bg-white dark:bg-black  rounded-full px-4 py-3 text-lg font-semibold">
-                  communication
+                  {t("why.benefitsList.1")}
                 </span>
               </div>
               <div className="w-full inline-block bg-gradient-to-r from-sky-400 to-purple-500 p-[1px] rounded-full">
                 <span className="min-w-[148px] whitespace-nowrap w-full text-center block bg-white dark:bg-black  rounded-full px-4 py-3 text-lg font-semibold">
-                  brand identity
+                  {t("why.benefitsList.2")}
                 </span>
               </div>
             </div>
             <p className="text-lg text-[var(--gray-blue)] light:text-[var(--gray-40)]">
-              Graphic design is crucial for creating a strong visual identity
-              for your brand.
+              {t("why.description")}
             </p>
           </div>
           <div className="relative w-full h-64 md:h-96">
@@ -141,7 +102,7 @@ const GraphicDesign: FC = () => {
         </div>
       </div>
 
-      <ContactBlock consultation="Reach out for a free consultation and get the answers you need." />
+      <ContactBlock consultation={t("contactFormMessage")} />
 
       <Footer />
     </div>

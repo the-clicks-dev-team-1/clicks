@@ -1,10 +1,12 @@
 import { FC } from "react";
-import Navbar from "@/components/navbar";
-import Footer from "@/components/footer";
-import Image from "next/image";
 import { Metadata } from "next";
+import Image from "next/image";
+import { getTranslations } from "next-intl/server";
 import ContactBlock from "@/components/contactBlock";
+import Footer from "@/components/footer";
+import Navbar from "@/components/navbar";
 import ServiceCard from "@/components/ServiceCard";
+import en from "@/i18n/messages/en.json";
 
 export const metadata: Metadata = {
   title: "Content Marketing Services",
@@ -12,52 +14,18 @@ export const metadata: Metadata = {
     "Engage your audience, build trust, and drive conversions with our strategic content marketing services",
 };
 
-const servicesItems = [
-  {
-    count: "01",
-    image: "/images/Group1.png",
-    title: "Content Strategy",
-    description:
-      " We develop a content strategy that aligns with your business goals, ensuring that every piece of content supports your overall marketing efforts.",
-  },
-  {
-    count: "02",
-    image: "/images/Group3.png",
-    title: "Content Creation",
-    description:
-      "Our team creates high-quality content tailored to your audience, from blog posts and articles to videos and infographics.",
-  },
-  {
-    count: "03",
-    image: "/images/Group4.png",
-    title: "Content Distribution",
-    description:
-      "We distribute your content across the right channels to maximize reach and engagement, ensuring it gets in front of the right audience.",
-  },
-  {
-    count: "04",
-    image: "/images/Group5.png",
-    title: "SEO Content",
-    description:
-      "Our content is optimized for search engines, helping your website rank higher in search results and driving organic traffic.",
-  },
-  {
-    count: "05",
-    image: "/images/Group6.png",
-    title: "Content Audits",
-    description:
-      "We conduct thorough content audits to identify gaps and opportunities, ensuring that your content remains effective and relevant.",
-  },
-  {
-    count: "06",
-    image: "/images/Group7.png",
-    title: "Analytics & Reporting",
-    description:
-      "We provide detailed analytics and reporting, giving you insights into how your content is performing and where improvements can be made.",
-  },
-];
+const servicesItems = en.services.cm.items.map((_, index) => ({
+  count: `0${index + 1}`,
+  image: `/images/Group${index + 1}.png`,
+  title: `items.${index}.title`,
+  description: `items.${index}.description`,
+}));
 
-const ContentMarketing: FC = () => {
+const ContentMarketing: FC<{ params: { locale: string } }> = async ({
+  params: { locale },
+}) => {
+  const t = await getTranslations({ locale, namespace: "services.cm" });
+
   return (
     <div className="bg-[var(--bgnew)] text-[var(--text)]">
       <Navbar />
@@ -65,13 +33,10 @@ const ContentMarketing: FC = () => {
       <div className="container md:px-10 mb-32">
         <div className="flex flex-col pt-32 md:pt-40">
           <h1 className="mb-10 py-2 text-3xl md:text-5xl bg-clip-text text-transparent bg-gradient-to-r from-sky-400 to bg-purple-500 bg-opacity-50">
-            Content Marketing Services
+            {t("mainSection.title")}
           </h1>
           <p className="mt-3 text-lg md:text-xl max-w-2xl text-left text-[var(--gray-blue)] light:text-[var(--gray-40)]">
-            Content is at the heart of every successful marketing campaign. From
-            blog posts and articles to infographics and videos, we craft a wide
-            range of content that helps you connect with potential customers and
-            establish your brand as an industry leader.
+            {t("mainSection.description")}
           </p>
         </div>
       </div>
@@ -84,8 +49,8 @@ const ContentMarketing: FC = () => {
               key={item.count}
               count={item.count}
               image={item.image}
-              title={item.title}
-              description={item.description}
+              title={t(item.title)}
+              description={t(item.description)}
             />
           ))}
         </div>
@@ -96,38 +61,33 @@ const ContentMarketing: FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
           <div>
             <h2 className="text-2xl md:text-3xl font-semibold mb-6 text-[var(--light-blue)] light:text-[var(--gray-70)]">
-              What is Content Marketing and Why Does It Matter?
+              {t("what.title")}
             </h2>
             <p className="text-lg mb-6 text-[var(--gray-blue)] light:text-[var(--gray-40)]">
-              Content marketing is the practice of creating and sharing
-              valuable, relevant, and consistent content to attract and engage a
-              clearly defined audience. It&apos;s about delivering information
-              that your audience cares about, which ultimately drives profitable
-              customer actions.
+              {t("what.description")}
             </p>
             <h2 className="text-lg md:text-xl font-semibold mb-6 text-[var(--light-blue)] light:text-[var(--gray-70)]">
-              Why does Content Marketing Matter?
+              {t("why.title")}
             </h2>
             <div className="flex flex-col sm:flex-row md:flex-col gap-2 xl:flex-row justify-between items-center mb-6 text-lg text-[var(--gray-blue)] light:text-[var(--gray-40)]">
               <div className="w-full inline-block bg-gradient-to-r from-sky-400 to-purple-500 p-[1px] rounded-full">
                 <span className="min-w-[148px] whitespace-nowrap w-full block bg-white dark:bg-black rounded-full px-4 py-3 text-center text-lg font-semibold">
-                  build trust
+                  {t("why.benefitsList.0")}
                 </span>
               </div>
               <div className="w-full inline-block bg-gradient-to-r from-sky-400 to-purple-500 p-[1px] rounded-full">
                 <span className="min-w-[148px] whitespace-nowrap w-full text-center block bg-white dark:bg-black  rounded-full px-4 py-3 text-lg font-semibold">
-                  support SEO
+                  {t("why.benefitsList.1")}
                 </span>
               </div>
               <div className="w-full inline-block bg-gradient-to-r from-sky-400 to-purple-500 p-[1px] rounded-full">
                 <span className="min-w-[148px] whitespace-nowrap w-full text-center block bg-white dark:bg-black  rounded-full px-4 py-3 text-lg font-semibold">
-                  drive engagement
+                  {t("why.benefitsList.2")}
                 </span>
               </div>
             </div>
             {/* <p className="text-lg text-[var(--gray-blue)] light:text-[var(--gray-40)]">
-              Social media is one of the most powerful tools for connecting with
-              your audience.
+                {t("why.description")}
             </p> */}
           </div>
           <div className="relative w-full h-64 md:h-96">
@@ -142,7 +102,7 @@ const ContentMarketing: FC = () => {
         </div>
       </div>
 
-      <ContactBlock consultation="Reach out for a free consultation and get the answers you need." />
+      <ContactBlock consultation={t("contactFormMessage")} />
 
       <Footer />
     </div>

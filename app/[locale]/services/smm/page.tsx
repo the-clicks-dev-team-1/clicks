@@ -1,10 +1,12 @@
 import { FC } from "react";
-import Navbar from "@/components/navbar";
-import Footer from "@/components/footer";
-import Image from "next/image";
 import { Metadata } from "next";
+import Image from "next/image";
+import { getTranslations } from "next-intl/server";
 import ContactBlock from "@/components/contactBlock";
+import Footer from "@/components/footer";
+import Navbar from "@/components/navbar";
 import ServiceCard from "@/components/ServiceCard";
+import en from "@/i18n/messages/en.json";
 
 export const metadata: Metadata = {
   title: "Social Media Marketing (SMM) Services",
@@ -12,52 +14,18 @@ export const metadata: Metadata = {
     "Build your brand, engage with your audience, and drive traffic through our expert SMM strategies",
 };
 
-const servicesItems = [
-  {
-    count: "01",
-    image: "/images/Group1.png",
-    title: "Content Creation",
-    description:
-      "We create engaging and relevant content that resonates with your audience and drives engagement on social media.",
-  },
-  {
-    count: "02",
-    image: "/images/Group3.png",
-    title: "Social Media Management",
-    description:
-      "Our team manages your social media profiles, ensuring consistent activity and engagement with your audience.",
-  },
-  {
-    count: "03",
-    image: "/images/Group4.png",
-    title: "Paid Social Advertising",
-    description:
-      "We design and manage targeted ad campaigns on social media platforms to increase your reach and drive conversions.",
-  },
-  {
-    count: "04",
-    image: "/images/Group5.png",
-    title: "Community Management",
-    description:
-      "We help build and manage online communities around your brand, fostering engagement and loyalty.",
-  },
-  {
-    count: "05",
-    image: "/images/Group6.png",
-    title: "Social Media Audits",
-    description:
-      "We conduct comprehensive audits of your social media presence, providing insights and recommendations for improvement.",
-  },
-  {
-    count: "06",
-    image: "/images/Group7.png",
-    title: "Analytics & Reporting",
-    description:
-      "Our detailed analytics and reports help you understand the performance of your social media campaigns and make data-driven decisions.",
-  },
-];
+const servicesItems = en.services.smm.items.map((_, index) => ({
+  count: `0${index + 1}`,
+  image: `/images/Group${index + 1}.png`,
+  title: `items.${index}.title`,
+  description: `items.${index}.description`,
+}));
 
-const SMM: FC = () => {
+const SMM: FC<{ params: { locale: string } }> = async ({
+  params: { locale },
+}) => {
+  const t = await getTranslations({ locale, namespace: "services.smm" });
+
   return (
     <div className="bg-[var(--bgnew)] text-[var(--text)]">
       <Navbar />
@@ -65,14 +33,10 @@ const SMM: FC = () => {
       <div className="container md:px-10 mb-32">
         <div className="flex flex-col pt-32 md:pt-40">
           <h1 className="mb-10 py-2 text-3xl md:text-5xl bg-clip-text text-transparent bg-gradient-to-r from-sky-400 to bg-purple-500 bg-opacity-50">
-            Social Media Marketing (SMM) Services
+            {t("mainSection.title")}
           </h1>
           <p className="mt-3 text-lg md:text-xl max-w-2xl text-left text-[var(--gray-blue)] light:text-[var(--gray-40)]">
-            Social Media Marketing (SMM) is essential for building your
-            brand&apos;s online presence and engaging directly with your
-            audience. Our SMM services focus on creating compelling content that
-            resonates with your target demographic across platforms like
-            Facebook, Instagram, LinkedIn, and Twitter.
+            {t("mainSection.description")}
           </p>
         </div>
       </div>
@@ -85,8 +49,8 @@ const SMM: FC = () => {
               key={item.count}
               count={item.count}
               image={item.image}
-              title={item.title}
-              description={item.description}
+              title={t(item.title)}
+              description={t(item.description)}
             />
           ))}
         </div>
@@ -97,38 +61,33 @@ const SMM: FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
           <div>
             <h2 className="text-2xl md:text-3xl font-semibold mb-6 text-[var(--light-blue)] light:text-[var(--gray-70)]">
-              What is SMM and Why Does It Matter?
+              {t("what.title")}
             </h2>
             <p className="text-lg mb-6 text-[var(--gray-blue)] light:text-[var(--gray-40)]">
-              Social media platforms like Facebook, Instagram, Twitter, and
-              LinkedIn are where people spend a significant amount of their time
-              online. By leveraging these platforms, you can reach your target
-              audience, engage with them, and build strong customer
-              relationships.
+              {t("what.description")}
             </p>
             <h2 className="text-lg md:text-xl font-semibold mb-6 text-[var(--light-blue)] light:text-[var(--gray-70)]">
-              Why does SMM Matter?
+              {t("why.title")}
             </h2>
             <div className="flex flex-col sm:flex-row md:flex-col gap-2 xl:flex-row justify-between items-center mb-6 text-lg text-[var(--gray-blue)] light:text-[var(--gray-40)]">
               <div className="w-full inline-block bg-gradient-to-r from-sky-400 to-purple-500 p-[1px] rounded-full">
                 <span className="min-w-[148px] whitespace-nowrap w-full block bg-white dark:bg-black rounded-full px-4 py-3 text-center text-lg font-semibold">
-                  brand awareness
+                  {t("why.benefitsList.0")}
                 </span>
               </div>
               <div className="w-full inline-block bg-gradient-to-r from-sky-400 to-purple-500 p-[1px] rounded-full">
                 <span className="min-w-[148px] whitespace-nowrap w-full text-center block bg-white dark:bg-black  rounded-full px-4 py-3 text-lg font-semibold">
-                  interaction
+                  {t("why.benefitsList.1")}
                 </span>
               </div>
               <div className="w-full inline-block bg-gradient-to-r from-sky-400 to-purple-500 p-[1px] rounded-full">
                 <span className="min-w-[148px] whitespace-nowrap w-full text-center block bg-white dark:bg-black  rounded-full px-4 py-3 text-lg font-semibold">
-                  lead generation
+                  {t("why.benefitsList.2")}
                 </span>
               </div>
             </div>
             <p className="text-lg text-[var(--gray-blue)] light:text-[var(--gray-40)]">
-              Social media is one of the most powerful tools for connecting with
-              your audience.
+              {t("why.description")}
             </p>
           </div>
           <div className="relative w-full h-64 md:h-96">
@@ -143,7 +102,7 @@ const SMM: FC = () => {
         </div>
       </div>
 
-      <ContactBlock consultation="Reach out for a free consultation and get the answers you need." />
+      <ContactBlock consultation={t("contactFormMessage")} />
 
       <Footer />
     </div>

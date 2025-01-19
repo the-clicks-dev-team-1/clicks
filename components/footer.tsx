@@ -10,6 +10,7 @@ import { useTranslations } from "next-intl";
 
 const Footer = () => {
   const t = useTranslations("footer");
+  const c = useTranslations("contactForm.contact");
 
   return (
     <motion.section
@@ -185,15 +186,15 @@ const Footer = () => {
                 {t("location")}
               </h2>
               <ul className="light:text-[var(--gray-70)] text-[var(--gray-blue)] font-medium">
-                <li className="mb-4 whitespace-pre-line">{t("address")}</li>
+                <li className="mb-4 whitespace-pre-line">{c("address2")}</li>
                 <li className="mb-4">
                   <a href="mailto:info@theclicks.com" className="">
-                    {t("email")}
+                    {c("email")}
                   </a>
                 </li>
                 <li className="mb-4">
                   <a href="tel:+15068718210" className="">
-                    {t("phone")}
+                    {c("phone")}
                   </a>
                 </li>
               </ul>

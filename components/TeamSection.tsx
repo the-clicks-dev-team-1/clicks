@@ -1,11 +1,16 @@
+"use client";
+
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 
 const TeamSection = () => {
+  const t = useTranslations("aboutAgency.teamSection");
+
   return (
     <div className="bg-[var(--bgnew)] py-32">
       <div className="text-center">
         <h2 className="mb-10 text-2xl sm:text-3xl md:text-4xl text-center bg-clip-text text-transparent bg-gradient-to-b from-sky-400 to bg-purple-500 bg-opacity-50">
-          Meet Our Team
+          {t("title")}
         </h2>
         <div className="flex flex-wrap justify-center">
           <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-4">
@@ -20,7 +25,7 @@ const TeamSection = () => {
               Valerii Kryshtal
             </h3>
             <p className="text-[var(--gray-blue)] light:text-[var(--gray-40)]">
-              CEO & Co-founder
+              {t("ceo")}
             </p>
           </div>
           <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-4">
@@ -35,7 +40,7 @@ const TeamSection = () => {
               Kateryna Kovalenko
             </h3>
             <p className="text-[var(--gray-blue)] light:text-[var(--gray-40)]">
-              Creative Director & Co-founder
+              {t("cd")}
             </p>
           </div>
           <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-4">
@@ -50,7 +55,7 @@ const TeamSection = () => {
               Vira Hladyniuk
             </h3>
             <p className="text-[var(--gray-blue)] light:text-[var(--gray-40)]">
-              Project Coordinator
+              {t("pc")}
             </p>
           </div>
           <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-4">
@@ -65,7 +70,7 @@ const TeamSection = () => {
               Taras Khutornyi
             </h3>
             <p className="text-[var(--gray-blue)] light:text-[var(--gray-40)]">
-              Graphic Designer
+              {t("gd")}
             </p>
           </div>
           <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-4">
@@ -80,7 +85,7 @@ const TeamSection = () => {
               Artem Martyniuk
             </h3>
             <p className="text-[var(--gray-blue)] light:text-[var(--gray-40)] max-w-52 w-full mx-auto text-center">
-              Full-Stack Developer | Web2 & Web3 Specialist
+              {t("dev")}
             </p>
           </div>
           <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-4">
@@ -95,7 +100,7 @@ const TeamSection = () => {
               Anastasia Dorfman
             </h3>
             <p className="text-[var(--gray-blue)] light:text-[var(--gray-40)] max-w-52 w-full mx-auto text-center">
-              Full-Stack Developer | Web2 & Web3 Specialist
+              {t("dev")}
             </p>
           </div>
           <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-4">
@@ -110,7 +115,7 @@ const TeamSection = () => {
               Borys Zahorodnii
             </h3>
             <p className="text-[var(--gray-blue)] light:text-[var(--gray-40)] max-w-52 w-full mx-auto text-center">
-              Full-Stack Developer | Web2 & Web3 Specialist
+              {t("dev")}
             </p>
           </div>
           <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-4">
@@ -125,7 +130,7 @@ const TeamSection = () => {
               Viktor Lytvynenko
             </h3>
             <p className="text-[var(--gray-blue)] light:text-[var(--gray-40)] max-w-52 w-full mx-auto text-center">
-              Full-Stack Developer | Web2 & Web3 Specialist
+              {t("dev")}
             </p>
           </div>
           <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-4">
@@ -137,10 +142,10 @@ const TeamSection = () => {
               height={200}
             />
             <h3 className="text-lg sm:text-xl font-semibold text-[var(--light-blue)] light:text-[var(--gray-70)]">
-              Konstantin
+              Konstantin Voitsekhovskyi
             </h3>
             <p className="text-[var(--gray-blue)] light:text-[var(--gray-40)] max-w-52 w-full mx-auto text-center">
-              Full-Stack Developer | Web2 & Web3 Specialist
+              {t("dev")}
             </p>
           </div>
           <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-4">
@@ -155,7 +160,7 @@ const TeamSection = () => {
               Gabriel Morris
             </h3>
             <p className="text-[var(--gray-blue)] light:text-[var(--gray-40)] max-w-52 w-full mx-auto text-center">
-              Full-Stack Developer | Web2 & Web3 Specialist
+              {t("dev")}
             </p>
           </div>
         </div>
