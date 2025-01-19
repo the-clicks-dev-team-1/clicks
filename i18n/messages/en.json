@@ -1010,44 +1010,44 @@
     "seo": {
       "items": [
         {
-          "title": "",
-          "description": ""
+          "title": "Keyword Research and Analysis",
+          "description": "Identify the most relevant keywords to target, ensuring your website ranks higher for the terms your audience searches for."
         },
         {
-          "title": "",
-          "description": ""
+          "title": "On-Page SEO Optimization",
+          "description": "Optimize your website’s content, meta tags, and images to improve its relevance and usability for search engines and users."
         },
         {
-          "title": "",
-          "description": ""
+          "title": "Technical SEO",
+          "description": "Ensure your website has a solid technical foundation, including fast loading times, mobile-friendliness, and secure connections."
         },
         {
-          "title": "",
-          "description": ""
+          "title": "Link Building",
+          "description": "Build high-quality backlinks to improve your domain authority and enhance your search engine rankings."
         },
         {
-          "title": "",
-          "description": ""
+          "title": "Local SEO",
+          "description": "Optimize your online presence to attract local customers and improve your visibility in local search results."
         },
         {
-          "title": "",
-          "description": ""
+          "title": "SEO Audits",
+          "description": "Conduct comprehensive audits to identify areas for improvement and implement strategies to boost your website’s performance."
         }
       ],
       "mainSection": {
-        "title": "",
-        "description": ""
+        "title": "Search Engine Optimization (SEO) Services",
+        "description": "Increase your online visibility and drive more traffic to your website with our expert SEO services. Our SEO services focus on improving your website's visibility on search engines like Google, helping potential customers find you when they're searching for your products or services."
       },
       "what": {
-        "title": "",
-        "description": ""
+        "title": "What is SEO and Why Does It Matter?",
+        "description": "SEO, or Search Engine Optimization, is the practice of improving your website's visibility on search engines like Google. When people search for products or services that you offer, you want your website to appear at the top of the results. SEO helps make that happen."
       },
       "why": {
-        "title": "",
+        "title": "By optimizing your website for search engines, you can increase:",
         "description": "",
-        "benefitsList": ["", "", ""]
+        "benefitsList": ["visibility", "traffic", "user experience"]
       },
-      "contactFormMessage": ""
+      "contactFormMessage": "Reach out for a free consultation and get the answers you need."
     },
     "smm": {
       "items": [

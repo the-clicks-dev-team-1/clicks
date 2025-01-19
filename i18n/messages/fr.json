@@ -1021,6 +1021,52 @@
         "benefitsList": ["réputation", "visibilité", "relations médias"]
       },
       "contactFormMessage": "Contactez-nous pour une consultation gratuite et obtenez les réponses dont vous avez besoin."
+    },
+    "seo": {
+      "items": [
+        {
+          "title": "Recherche et analyse de mots-clés",
+          "description": "Identifiez les mots-clés les plus pertinents à cibler, afin que votre site web soit mieux classé pour les termes recherchés par votre audience."
+        },
+        {
+          "title": "Optimisation SEO On-Page",
+          "description": "Optimisez le contenu, les balises meta et les images de votre site pour améliorer sa pertinence et son utilisabilité pour les moteurs de recherche et les utilisateurs."
+        },
+        {
+          "title": "SEO technique",
+          "description": "Assurez une base technique solide pour votre site, y compris des temps de chargement rapides, une compatibilité mobile et des connexions sécurisées."
+        },
+        {
+          "title": "Création de liens",
+          "description": "Créez des liens de haute qualité pour améliorer l'autorité de votre domaine et renforcer votre classement dans les moteurs de recherche."
+        },
+        {
+          "title": "SEO local",
+          "description": "Optimisez votre présence en ligne pour attirer des clients locaux et améliorer votre visibilité dans les résultats de recherche locaux."
+        },
+        {
+          "title": "Audits SEO",
+          "description": "Réalisez des audits complets pour identifier les domaines à améliorer et mettez en œuvre des stratégies pour améliorer les performances de votre site."
+        }
+      ],
+      "mainSection": {
+        "title": "Services d'optimisation pour les moteurs de recherche (SEO)",
+        "description": "Augmentez votre visibilité en ligne et générez plus de trafic sur votre site web grâce à nos services SEO experts. Nos services SEO se concentrent sur l'amélioration de la visibilité de votre site sur des moteurs de recherche comme Google, aidant ainsi vos clients potentiels à vous trouver lorsqu'ils recherchent vos produits ou services."
+      },
+      "what": {
+        "title": "Qu'est-ce que le SEO et pourquoi est-ce important ?",
+        "description": "Le SEO, ou l'optimisation pour les moteurs de recherche, est la pratique consistant à améliorer la visibilité de votre site web sur des moteurs de recherche comme Google. Lorsque les gens recherchent des produits ou services que vous proposez, vous voulez que votre site apparaisse en haut des résultats. Le SEO permet d'y parvenir."
+      },
+      "why": {
+        "title": "En optimisant votre site pour les moteurs de recherche, vous pouvez augmenter :",
+        "description": "",
+        "benefitsList": [
+          "la visibilité",
+          "le trafic",
+          "l'expérience utilisateur"
+        ]
+      },
+      "contactFormMessage": "Contactez-nous pour une consultation gratuite et obtenez les réponses dont vous avez besoin."
     }
   }
 }
