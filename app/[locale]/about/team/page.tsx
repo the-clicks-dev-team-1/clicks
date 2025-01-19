@@ -1,10 +1,11 @@
 import { FC } from "react";
-import Navbar from "@/components/navbar";
+import { Metadata } from "next";
+import { getTranslations } from "next-intl/server";
 import Image from "next/image";
-import Footer from "@/components/footer";
 import Block4 from "@/components/block4";
 import ContactBlock from "@/components/contactBlock";
-import { Metadata } from "next";
+import Footer from "@/components/footer";
+import Navbar from "@/components/navbar";
 import TeamSection from "@/components/TeamSection";
 import { Link } from "@/i18n/routing";
 
@@ -14,7 +15,11 @@ export const metadata: Metadata = {
     "The Clicks team is a fusion of passion, experience, and innovation, where every 'Clicker' is not just an employee but a driving force behind success. We are professionals who aren't afraid to challenge traditional marketing approaches, creating solutions that change the game.",
 };
 
-const Team: FC = () => {
+const Team: FC<{ params: { locale: string } }> = async ({
+  params: { locale },
+}) => {
+  const t = await getTranslations({ locale, namespace: "team" });
+
   return (
     <div className="bg-[var(--bgnew)] text-[var(--text)]">
       <Navbar />
@@ -26,35 +31,20 @@ const Team: FC = () => {
           <div className="flex flex-col gap-8 mt-10 md:flex-row items-center justify-center">
             <div className="w-full md:w-1/2 text-center md:text-left">
               <div className="text-2xl md:text-4xl bg-clip-text text-transparent bg-gradient-to-r from-sky-400 to bg-purple-500 bg-opacity-50">
-                Meet the Clickers Driving Success for Our Clients.
+                {t("header")}
               </div>
               <p className="mt-4 text-sm md:text-m font-normal text-[var(--gray-blue)] light:text-[var(--gray-40)] text-justify">
-                The Clicks team is a fusion of passion, experience, and
-                innovation, where every &quot;Clicker&quot; is not just an
-                employee but a driving force behind success. We are
-                professionals who aren&apos;t afraid to challenge traditional
-                marketing approaches, creating solutions that change the game.
-                Our arsenal includes cutting-edge technologies, analytical
-                methods, and creative strategies that help businesses attract,
-                retain, and amaze their customers. Each Clicker brings their
-                unique expertise, combining efforts to create marketing
-                campaigns that not only meet goals but exceed them.
+                {t("description1")}
               </p>
               <p className="mt-4 text-sm md:text-m font-normal text-[var(--gray-blue)] light:text-[var(--gray-40)] text-justify">
-                At the heart of our work is a partnership with clients, built on
-                mutual trust and understanding. We strive to ensure that every
-                project is a step towards long-term success. Clickers are not
-                just task executors; they are your strategic partners, helping
-                to build a sustainable digital ecosystem for your business. We
-                believe that together with you, we can not only keep pace with
-                the times but also set trends in digital marketing.
+                {t("description2")}
               </p>
               <div className="mt-8 flex justify-center md:justify-start relative z-20">
                 <Link
                   href="/about/careers"
                   className="inline-block bg-[var(--ocean-blue)] #bg-gradient-to-r from-sky-400 to-purple-500 text-white font-bold py-3 px-6 rounded-lg shadow-lg hover:bg-opacity-75 transition duration-300"
                 >
-                  Join Our Team
+                  {t("join")}
                 </Link>
               </div>
             </div>
@@ -92,7 +82,7 @@ const Team: FC = () => {
             href="/about/careers"
             className="inline-block bg-[var(--ocean-blue)] #bg-gradient-to-r from-sky-400 to-purple-500 text-white font-bold py-3 px-6 rounded-lg shadow-lg hover:bg-opacity-75 transition duration-300"
           >
-            Our Current Job Openings
+            {t("openings")}
           </Link>
         </div>
       </div>

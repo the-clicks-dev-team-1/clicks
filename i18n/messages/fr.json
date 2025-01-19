@@ -299,41 +299,6 @@
       "minInfo": "Veuillez fournir plus d'informations (au moins 10 caractères)"
     }
   },
-  "careers": {
-    "title": "Rejoignez notre équipe",
-    "text": "Nous recherchons toujours des personnes talentueuses et passionnées pour rejoindre notre équipe. Découvrez nos offres d'emploi actuelles et apprenez-en davantage sur la vie chez The Clicks.",
-    "subtitle": "Postes à pourvoir",
-    "learn_more": "En savoir plus",
-    "no_job": "Aucun poste disponible pour le moment.",
-    "life_at_clicks": {
-      "title": "La vie chez The Clicks",
-      "text1": "Chez The Clicks, nous croyons que nos collaborateurs sont notre plus grande richesse. Nous favorisons un environnement de travail collaboratif, inclusif et dynamique où la créativité et l'innovation s'épanouissent. Que vous travailliez sur un projet stimulant ou que vous célébriez une étape importante de l'équipe, la vie chez The Clicks est à la fois enrichissante et épanouissante.",
-      "text2": "Nous investissons dans le développement de nos employés et offrons des opportunités d'apprentissage continu, de développement professionnel et d'évolution de carrière. Rejoignez-nous et construisons quelque chose d'extraordinaire ensemble !"
-    },
-    "benefits": {
-      "title": "Nos avantages",
-      "starstitle1": "Santé et bien-être",
-      "desc1": "Des plans complets de santé et de bien-être pour vous et votre famille.",
-      "starstitle2": "Évolution professionnelle",
-      "desc2": "Des opportunités de développement professionnel et d'évolution de carrière.",
-      "starstitle3": "Équilibre travail-vie personnelle",
-      "desc3": "Des horaires flexibles et des options de télétravail pour soutenir votre équilibre travail-vie personnelle.",
-      "starstitle4": "Environnement de travail",
-      "desc4": "Travaillez avec des collègues talentueux et solidaires, unis par des objectifs communs."
-    }
-  },
-  "JobDetail": {
-    "jobNotFound": "Emploi introuvable",
-    "location": "Emplacement",
-    "salary": "Salaire",
-    "perYear": "par an",
-    "jobType": "Type d'emploi"
-  },
-  "contact": {
-    "title": "Contactez-nous",
-    "description": "Discutons ensemble ! Nous sommes là pour vous aider à développer votre entreprise. N'hésitez pas à nous contacter pour toute question, et nous vous répondrons dans les plus brefs délais.",
-    "location": "Notre emplacement"
-  },
   "aboutAgency": {
     "title": "À Propos de The Clicks",
     "description1": "Chez The Clicks, nous ne nous contentons pas d'améliorer la visibilité de votre site web ; nous collaborons avec vous pour obtenir des résultats significatifs qui ont un impact positif sur vos bénéfices. Notre engagement à produire des résultats commerciaux concrets nous distingue dans le paysage du marketing digital.",
@@ -367,6 +332,48 @@
       "gd": "Graphiste",
       "dev": "Développeur Full-Stack | Spécialiste Web2 & Web3"
     }
+  },
+  "careers": {
+    "title": "Rejoignez notre équipe",
+    "text": "Nous recherchons toujours des personnes talentueuses et passionnées pour rejoindre notre équipe. Découvrez nos offres d'emploi actuelles et apprenez-en davantage sur la vie chez The Clicks.",
+    "subtitle": "Postes à pourvoir",
+    "learn_more": "En savoir plus",
+    "no_job": "Aucun poste disponible pour le moment.",
+    "life_at_clicks": {
+      "title": "La vie chez The Clicks",
+      "text1": "Chez The Clicks, nous croyons que nos collaborateurs sont notre plus grande richesse. Nous favorisons un environnement de travail collaboratif, inclusif et dynamique où la créativité et l'innovation s'épanouissent. Que vous travailliez sur un projet stimulant ou que vous célébriez une étape importante de l'équipe, la vie chez The Clicks est à la fois enrichissante et épanouissante.",
+      "text2": "Nous investissons dans le développement de nos employés et offrons des opportunités d'apprentissage continu, de développement professionnel et d'évolution de carrière. Rejoignez-nous et construisons quelque chose d'extraordinaire ensemble !"
+    },
+    "benefits": {
+      "title": "Nos avantages",
+      "starstitle1": "Santé et bien-être",
+      "desc1": "Des plans complets de santé et de bien-être pour vous et votre famille.",
+      "starstitle2": "Évolution professionnelle",
+      "desc2": "Des opportunités de développement professionnel et d'évolution de carrière.",
+      "starstitle3": "Équilibre travail-vie personnelle",
+      "desc3": "Des horaires flexibles et des options de télétravail pour soutenir votre équilibre travail-vie personnelle.",
+      "starstitle4": "Environnement de travail",
+      "desc4": "Travaillez avec des collègues talentueux et solidaires, unis par des objectifs communs."
+    }
+  },
+  "team": {
+    "header": "Rencontrez les Clickers qui contribuent au succès de nos clients.",
+    "description1": "L'équipe Clicks est une fusion de passion, d'expérience et d'innovation, où chaque \"Clicker\" n'est pas seulement un employé, mais une force motrice derrière le succès. Nous sommes des professionnels qui n'ont pas peur de remettre en question les approches marketing traditionnelles, créant des solutions qui bouleversent les règles du jeu. Notre arsenal comprend des technologies de pointe, des méthodes analytiques et des stratégies créatives qui aident les entreprises à attirer, fidéliser et émerveiller leurs clients. Chaque Clicker apporte son expertise unique, combinant ses efforts pour créer des campagnes marketing qui non seulement atteignent leurs objectifs, mais les dépassent.",
+    "description2": "Au cœur de notre travail se trouve un partenariat avec nos clients, basé sur la confiance mutuelle et la compréhension. Nous nous efforçons de faire en sorte que chaque projet soit une étape vers un succès à long terme. Les Clickers ne sont pas de simples exécutants de tâches ; ils sont vos partenaires stratégiques, aidant à construire un écosystème numérique durable pour votre entreprise. Nous croyons qu'ensemble, avec vous, nous pouvons non seulement suivre l'évolution des temps, mais aussi définir des tendances en marketing digital.",
+    "join": "Rejoignez notre équipe",
+    "openings": "Nos offres d'emploi actuelles"
+  },
+  "JobDetail": {
+    "jobNotFound": "Emploi introuvable",
+    "location": "Emplacement",
+    "salary": "Salaire",
+    "perYear": "par an",
+    "jobType": "Type d'emploi"
+  },
+  "contact": {
+    "title": "Contactez-nous",
+    "description": "Discutons ensemble ! Nous sommes là pour vous aider à développer votre entreprise. N'hésitez pas à nous contacter pour toute question, et nous vous répondrons dans les plus brefs délais.",
+    "location": "Notre emplacement"
   },
   "book": {
     "title": "Réservez une réunion"
