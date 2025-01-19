@@ -1177,5 +1177,57 @@
       },
       "contactFormMessage": "Reach out for a free consultation and get the answers you need."
     }
+  },
+  "terms": {
+    "title": "Terms & Conditions",
+    "subtitle": "Please read these Terms and Conditions (\"Terms\", \"Terms and Conditions\") carefully before using The Clicks Full-Service Digital Marketing Agency website.",
+    "sections": [
+      {
+        "title": "1. Introduction",
+        "content": "By accessing or using the The Clicks website, you agree to be bound by these Terms. If you disagree with any part of the terms, then you may not access the service."
+      },
+      {
+        "title": "2. Intellectual Property",
+        "content": "The content, design, and logos on this website are owned by The Clicks Full-Service Digital Marketing Agency and are protected by intellectual property laws. You may not use, reproduce, or distribute any content without our permission."
+      },
+      {
+        "title": "3. Use of Service",
+        "content": "You agree to use the website only for lawful purposes and in a way that does not infringe the rights of others or restrict or inhibit anyone else use of the website."
+      },
+      {
+        "title": "4. Termination",
+        "content": "We may terminate or suspend your access to our service immediately, without prior notice or liability, for any reason whatsoever, including if you breach the Terms."
+      },
+      {
+        "title": "5. Limitation of Liability",
+        "content": "In no event shall The Clicks, nor its directors, employees, partners, agents, suppliers, or affiliates, be liable for any indirect, incidental, special, consequential, or punitive damages, including without limitation, loss of profits, data, use, goodwill, or other intangible losses."
+      },
+      {
+        "title": "6. Changes to Terms",
+        "content": "We reserve the right to modify or replace these Terms at any time. If a revision is material, we will try to provide at least 30 days notice before any new terms take effect. What constitutes a material change will be determined at our sole discretion."
+      },
+      {
+        "title": "7. Governing Law",
+        "content": "These Terms shall be governed and construed in accordance with the laws of Canada, without regard to its conflict of law provisions."
+      },
+      {
+        "title": "8. Contact Us",
+        "content": "If you have any questions about these Terms, please contact us at:",
+        "contact": {
+          "email": {
+            "label": "Email:",
+            "value": "info@theclicks.ca"
+          },
+          "phone": {
+            "label": "Phone:",
+            "value": "+1 (506) 871-8210"
+          },
+          "address": {
+            "label": "Address:",
+            "value": "860 Main Street, Moncton, NB, Canada, E1A 0G9"
+          }
+        }
+      }
+    ]
   }
 }

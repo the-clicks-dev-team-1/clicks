@@ -1204,5 +1204,57 @@
       },
       "contactFormMessage": "Contactez-nous pour une consultation gratuite et obtenez les réponses dont vous avez besoin."
     }
+  },
+  "terms": {
+    "title": "Conditions Générales",
+    "subtitle": "Veuillez lire attentivement ces Conditions Générales (\"Conditions\", \"Conditions Générales\") avant d'utiliser le site web de l'Agence de Marketing Numérique The Clicks.",
+    "sections": [
+      {
+        "title": "1. Introduction",
+        "content": "En accédant ou en utilisant le site web The Clicks, vous acceptez d'être lié par ces Conditions. Si vous n'êtes pas d'accord avec une partie des conditions, vous ne pouvez pas accéder au service."
+      },
+      {
+        "title": "2. Propriété Intellectuelle",
+        "content": "Le contenu, le design et les logos de ce site web appartiennent à l'Agence de Marketing Numérique The Clicks et sont protégés par les lois sur la propriété intellectuelle. Vous ne pouvez pas utiliser, reproduire ou distribuer tout contenu sans notre permission."
+      },
+      {
+        "title": "3. Utilisation du Service",
+        "content": "Vous acceptez d'utiliser le site web uniquement à des fins légales et d'une manière qui ne porte pas atteinte aux droits d'autrui ou ne restreint ni n'empêche l'utilisation du site web par quiconque."
+      },
+      {
+        "title": "4. Résiliation",
+        "content": "Nous pouvons résilier ou suspendre votre accès à notre service immédiatement, sans préavis ni responsabilité, pour quelque raison que ce soit, y compris si vous violez les Conditions."
+      },
+      {
+        "title": "5. Limitation de Responsabilité",
+        "content": "En aucun cas The Clicks, ni ses directeurs, employés, partenaires, agents, fournisseurs ou affiliés, ne seront responsables des dommages indirects, accessoires, spéciaux, consécutifs ou punitifs, y compris, sans limitation, la perte de profits, de données, d'utilisation, de clientèle ou d'autres pertes intangibles."
+      },
+      {
+        "title": "6. Modifications des Conditions",
+        "content": "Nous nous réservons le droit de modifier ou de remplacer ces Conditions à tout moment. Si une révision est importante, nous essaierons de donner un préavis d'au moins 30 jours avant l'entrée en vigueur de nouvelles conditions. Ce qui constitue un changement important sera déterminé à notre seule discrétion."
+      },
+      {
+        "title": "7. Loi Applicable",
+        "content": "Ces Conditions seront régies et interprétées conformément aux lois du Canada, sans égard à ses dispositions en matière de conflit de lois."
+      },
+      {
+        "title": "8. Contactez-nous",
+        "content": "Si vous avez des questions concernant ces Conditions, veuillez nous contacter à :",
+        "contact": {
+          "email": {
+            "label": "Courriel :",
+            "value": "info@theclicks.ca"
+          },
+          "phone": {
+            "label": "Téléphone :",
+            "value": "+1 (506) 871-8210"
+          },
+          "address": {
+            "label": "Adresse :",
+            "value": "860 Main Street, Moncton, NB, Canada, E1A 0G9"
+          }
+        }
+      }
+    ]
   }
 }
