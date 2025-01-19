@@ -14,51 +14,6 @@ export const metadata: Metadata = {
     "Increase your online visibility and drive more traffic to your website with our expert SEO services",
 };
 
-const servicesItems2 = [
-  {
-    count: "01",
-    image: "/images/Group1.png",
-    title: "On-Page SEO",
-    description:
-      "We optimize your website's content, meta tags, and structure to ensure it's search engine friendly.",
-  },
-  {
-    count: "02",
-    image: "/images/Group3.png",
-    title: "Off-Page SEO",
-    description:
-      "Our off-page SEO strategies focus on building high-quality backlinks to boost your site's authority.",
-  },
-  {
-    count: "03",
-    image: "/images/Group4.png",
-    title: "Technical SEO",
-    description:
-      "We improve your website's technical aspects, such as page speed and mobile-friendliness, to enhance its search engine performance.",
-  },
-  {
-    count: "04",
-    image: "/images/Group5.png",
-    title: "Local SEO",
-    description:
-      "We help your business rank higher in local search results, making it easier for local customers to find you.",
-  },
-  {
-    count: "05",
-    image: "/images/Group6.png",
-    title: "E-commerce SEO",
-    description:
-      "Our e-commerce SEO services are designed to drive traffic to your online store and increase sales.",
-  },
-  {
-    count: "06",
-    image: "/images/Group7.png",
-    title: "SEO Audits",
-    description:
-      "We perform comprehensive SEO audits to identify areas for improvement and optimize your site for better performance.",
-  },
-];
-
 const servicesItems = en.services.seo.items.map((_, index) => ({
   count: `0${index + 1}`,
   image: `/images/Group${index + 1}.png`,
