@@ -296,6 +296,23 @@
       "minInfo": "Please provide more information (at least 10 characters)"
     }
   },
+  "blog": {
+    "title": "The Clicks Blog",
+    "text": "Stay updated with the latest insights, tips, and trends in digital marketing. Our blog is your go-to resource for all things marketing.",
+    "searchPlaceholder": "Search by post title...",
+    "allCategories": "All Categories",
+    "featuredPosts": "Featured Posts",
+    "category": "Category",
+    "author": "Author",
+    "date": "Publish Date",
+    "readMore": "Read More",
+    "showMore": "Show More Posts"
+  },
+  "blogPost": {
+    "postNotFound": "Post not found",
+    "imageNotAvailable": "Image not available.",
+    "category": "Category"
+  },
   "careers": {
     "title": "Join Our Team",
     "text": " We're always looking for talented and passionate individuals to join our team. Explore our current job openings and find out more about life at The Clicks.",

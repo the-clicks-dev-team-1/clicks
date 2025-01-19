@@ -296,6 +296,23 @@
       "minInfo": "Veuillez fournir plus d'informations (au moins 10 caractères)"
     }
   },
+  "blog": {
+    "title": "Le Blog de The Clicks",
+    "text": "Restez informé des dernières idées, astuces et tendances en marketing digital. Notre blog est votre ressource incontournable pour tout ce qui concerne le marketing.",
+    "searchPlaceholder": "Rechercher par titre de l'article...",
+    "allCategories": "Toutes les catégories",
+    "featuredPosts": "Articles en vedette",
+    "category": "Catégorie",
+    "author": "Auteur",
+    "date": "Date de publication",
+    "readMore": "Lire la suite",
+    "showMore": "Afficher plus d'articles"
+  },
+  "blogPost": {
+    "postNotFound": "Article introuvable",
+    "imageNotAvailable": "Image non disponible.",
+    "category": "Catégorie"
+  },
   "careers": {
     "title": "Rejoignez notre équipe",
     "text": "Nous recherchons toujours des personnes talentueuses et passionnées pour rejoindre notre équipe. Découvrez nos offres d'emploi actuelles et apprenez-en davantage sur la vie chez The Clicks.",

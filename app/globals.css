@@ -135,6 +135,8 @@
 @layer base {
   * {
     border-color: hsl(var(--border));
+    margin: 0;
+    padding: 0;
   }
 
   body {
