@@ -1113,6 +1113,96 @@
         ]
       },
       "contactFormMessage": "Contactez-nous pour une consultation gratuite et obtenez les réponses dont vous avez besoin."
+    },
+    "stratdev": {
+      "items": [
+        {
+          "title": "Stratégie d'entreprise",
+          "description": "Nous vous aidons à définir la vision, la mission et les objectifs à long terme de votre entreprise, en veillant à ce que votre stratégie soit alignée sur vos objectifs."
+        },
+        {
+          "title": "Analyse de marché",
+          "description": "Nos services d'analyse de marché fournissent des informations sur votre secteur, vos concurrents et les tendances du marché, vous aidant à prendre des décisions stratégiques éclairées."
+        },
+        {
+          "title": "Planification financière",
+          "description": "Nous vous aidons à élaborer des plans financiers qui soutiennent vos objectifs stratégiques, en veillant à ce que votre entreprise soit prête financièrement pour la croissance."
+        },
+        {
+          "title": "Gestion des risques",
+          "description": "Nous aidons à identifier les risques potentiels et à développer des stratégies pour les atténuer, en veillant à ce que votre entreprise soit résiliente et prête à relever les défis."
+        },
+        {
+          "title": "Stratégie opérationnelle",
+          "description": "Nos services de stratégie opérationnelle visent à améliorer l'efficacité et l'efficience, en veillant à ce que vos opérations soient alignées sur vos objectifs stratégiques."
+        },
+        {
+          "title": "Mesure de la performance",
+          "description": "Nous développons des indicateurs et des KPI pour suivre vos progrès, en veillant à ce que votre stratégie produise les résultats souhaités."
+        }
+      ],
+      "mainSection": {
+        "title": "Services de Développement de Stratégies",
+        "description": "Développer une stratégie de marketing digital solide est crucial pour réussir dans le paysage concurrentiel d'aujourd'hui. Nos services de développement de stratégies vous aident à définir des objectifs clairs, à identifier votre audience cible et à créer une approche adaptée qui exploite les canaux de marketing les plus efficaces."
+      },
+      "what": {
+        "title": "Qu'est-ce que le Développement de Stratégies ?",
+        "description": "Nos services de développement de stratégies sont conçus pour vous aider à clarifier votre vision, élaborer des plans d'action et relever les défis pour atteindre vos objectifs."
+      },
+      "why": {
+        "title": "Pourquoi le Développement de Stratégies est-il Important ?",
+        "description": "Une stratégie bien définie est essentielle à la croissance et à la durabilité de toute entreprise.",
+        "benefitsList": [
+          "direction claire",
+          "ressources",
+          "succès à long terme"
+        ]
+      },
+      "contactFormMessage": "Contactez-nous pour une consultation gratuite et obtenez les réponses dont vous avez besoin."
+    },
+    "webdev": {
+      "items": [
+        {
+          "title": "Développement de sites web sur mesure",
+          "description": "Des solutions de sites web adaptées pour répondre aux besoins de votre entreprise, conçues avec les dernières technologies web."
+        },
+        {
+          "title": "Solutions eCommerce",
+          "description": "Nous créons des plateformes eCommerce performantes offrant une expérience d'achat intuitive pour augmenter vos ventes et développer votre entreprise."
+        },
+        {
+          "title": "Systèmes de gestion de contenu (CMS)",
+          "description": "Gérez facilement le contenu de votre site web avec nos solutions CMS personnalisées, conçues pour être conviviales et évolutives."
+        },
+        {
+          "title": "Conception web adaptative",
+          "description": "Nous veillons à ce que votre site web soit superbe sur tous les appareils, offrant une expérience fluide aux utilisateurs sur mobile, tablette et ordinateur."
+        },
+        {
+          "title": "Développement d'applications web",
+          "description": "Applications web personnalisées conçues pour simplifier vos processus métier et améliorer l'efficacité."
+        },
+        {
+          "title": "Optimisation SEO",
+          "description": "Nous concevons des sites web optimisés pour les moteurs de recherche, garantissant à votre entreprise la visibilité qu'elle mérite."
+        }
+      ],
+      "mainSection": {
+        "title": "Services de développement web",
+        "description": "Un site web bien conçu est la pierre angulaire de votre présence numérique. Nos services de développement web se concentrent sur la création de sites réactifs et conviviaux qui non seulement sont esthétiques mais aussi performants."
+      },
+      "what": {
+        "title": "",
+        "description": "",
+        "benefitsList": ["", "", ""]
+      },
+      "why": {
+        "title": "Pourquoi nous choisir pour le développement web ?",
+        "description1": "Notre équipe d'experts est spécialisée dans la création de sites web :",
+        "description2": "Nous utilisons les technologies et frameworks les plus récents pour créer des solutions web évolutives et faciles à maintenir. Que vous ayez besoin d'un site web simple ou d'une application web complexe, nous avons l'expertise pour donner vie à votre vision.",
+        "benefitsList": ["réactifs", "dynamiques", "SEO-optimisé"]
+      },
+      "contactFormMessage": "Contactez-nous pour une consultation gratuite et obtenez les réponses dont vous avez besoin."
     }
   }
 }

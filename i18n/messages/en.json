@@ -1094,86 +1094,88 @@
     "stratdev": {
       "items": [
         {
-          "title": "",
-          "description": ""
+          "title": "Business Strategy",
+          "description": "We help you define your company's vision, mission, and long-term objectives, ensuring that your business strategy is aligned with your goals."
         },
         {
-          "title": "",
-          "description": ""
+          "title": "Market Analysis",
+          "description": "Our market analysis services provide insights into your industry, competitors, and market trends, helping you make informed strategic decisions."
         },
         {
-          "title": "",
-          "description": ""
+          "title": "Financial Planning",
+          "description": "We assist in developing financial plans that support your strategic goals, ensuring your business is financially prepared for growth."
         },
         {
-          "title": "",
-          "description": ""
+          "title": "Risk Management",
+          "description": "We help identify potential risks and develop strategies to mitigate them, ensuring your business is resilient and prepared for challenges."
         },
         {
-          "title": "",
-          "description": ""
+          "title": "Operational Strategy",
+          "description": "Our operational strategy services focus on improving efficiency and effectiveness, ensuring that your operations are aligned with your strategic goals."
         },
         {
-          "title": "",
-          "description": ""
+          "title": "Performance Measurement",
+          "description": "We develop metrics and KPIs to track your progress, ensuring that your strategy is delivering the desired results."
         }
       ],
       "mainSection": {
-        "title": "",
-        "description": ""
+        "title": "Strategy Development Services",
+        "description": "Developing a strong digital marketing strategy is crucial for business success in today's competitive landscape. Our strategy development services help you define clear objectives, identify your target audience, and create a tailored approach that leverages the most effective marketing channels."
       },
       "what": {
-        "title": "",
-        "description": ""
+        "title": "What is Strategy Development?",
+        "description": "Our strategy development services are designed to help you clarify your vision, develop actionable plans, and navigate the challenges of achieving your goals."
       },
       "why": {
-        "title": "",
-        "description": "",
-        "benefitsList": ["", "", ""]
+        "title": "Why does Strategy Development Matter?",
+        "description": "A well-defined strategy is essential for the growth and sustainability of any business.",
+        "benefitsList": ["clear direction", "resourcing", "long-term success"]
       },
-      "contactFormMessage": ""
+      "contactFormMessage": "Reach out for a free consultation and get the answers you need."
     },
     "webdev": {
       "items": [
         {
-          "title": "",
-          "description": ""
+          "title": "Custom Website Development",
+          "description": "Tailored website solutions designed to meet your business requirements, built with the latest web technologies."
         },
         {
-          "title": "",
-          "description": ""
+          "title": "eCommerce Solutions",
+          "description": "We create powerful eCommerce platforms that provide an intuitive shopping experience, helping you increase sales and grow your business."
         },
         {
-          "title": "",
-          "description": ""
+          "title": "Content Management Systems (CMS)",
+          "description": "Manage your website content easily with our custom CMS solutions, designed to be user-friendly and scalable."
         },
         {
-          "title": "",
-          "description": ""
+          "title": "Responsive Web Design",
+          "description": "We ensure your website looks great on all devices, providing a seamless experience for users on mobile, tablet, and desktop."
         },
         {
-          "title": "",
-          "description": ""
+          "title": "Web Application Development",
+          "description": "Custom web applications built to streamline your business processes and improve efficiency."
         },
         {
-          "title": "",
-          "description": ""
+          "title": "SEO Optimization",
+          "description": "We build websites that are optimized for search engines, ensuring your business gets the visibility it deserves."
         }
       ],
       "mainSection": {
-        "title": "",
-        "description": ""
+        "title": "Web Development Services",
+        "description": "A well-designed website is the cornerstone of your digital presence. Our website development services focus on creating responsive, user-friendly sites that not only look great but also deliver results."
       },
       "what": {
-        "title": "",
-        "description": ""
-      },
-      "why": {
         "title": "",
         "description": "",
         "benefitsList": ["", "", ""]
       },
-      "contactFormMessage": ""
+      "why": {
+        "title": "Why Choose Us for Web Development?",
+        "description1": "Our team of experts specializes in creating websites:",
+        "description2": "We utilize the latest technologies and frameworks to build scalable and maintainable web solutions. Whether you need a simple website or a complex web application, we have the expertise to bring your vision to life.",
+        "benefitsList": ["responsive", "dynamic", "SEO-friendly"]
+      },
+      "contactFormMessage": "Reach out for a free consultation and get the answers you need."
     }
   }
 }
