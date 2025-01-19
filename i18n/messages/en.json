@@ -300,41 +300,6 @@
       "minInfo": "Please provide more information (at least 10 characters)"
     }
   },
-  "careers": {
-    "title": "Join Our Team",
-    "text": " We're always looking for talented and passionate individuals to join our team. Explore our current job openings and find out more about life at The Clicks.",
-    "subtitle": "Current Job Openings",
-    "learn_more": "Learn More",
-    "no_job": "No job openings available at the moment.",
-    "life_at_clicks": {
-      "title": "Life at The Clicks",
-      "text1": " At The Clicks, we believe that our people are our greatest asset. We foster a collaborative, inclusive, and dynamic work environment where creativity and innovation thrive. Whether you're working on a challenging project or celebrating a team milestone, life at The Clicks is both rewarding and fulfilling.",
-      "text2": "We invest in our employees' growth and provide opportunities for continuous learning, professional development, and career advancement. Join us, and let's build something amazing together!"
-    },
-    "benefits": {
-      "title": "Our Benefits",
-      "starstitle1": "Health & Wellness",
-      "desc1": "Comprehensive health and wellness plans to keep you and your family healthy.",
-      "starstitle2": "Career Growth",
-      "desc2": "Opportunities for professional development and career advancement.",
-      "starstitle3": "Work-Life Balance",
-      "desc3": "Flexible work hours and remote work options to support your work-life balance.",
-      "starstitle4": "Work Environment",
-      "desc4": "Work with talented, supportive colleagues united by shared goals."
-    }
-  },
-  "JobDetail": {
-    "jobNotFound": "Job not found",
-    "location": "Location",
-    "salary": "Salary",
-    "perYear": "per year",
-    "jobType": "Job Type"
-  },
-  "contact": {
-    "title": "Contact Us",
-    "description": "Let's talk! We are here to help you grow your business. Reach out to us for any inquiries, and we will get back to you as soon as possible.",
-    "location": "Our Location"
-  },
   "aboutAgency": {
     "title": "About The Clicks",
     "description1": "At The Clicks, we don't just focus on enhancing your website's visibility; we partner with you to drive meaningful results that positively impact your bottom line. Our commitment to delivering tangible business outcomes is what sets us apart in the digital marketing landscape.",
@@ -368,6 +333,48 @@
       "gd": "Graphic Designer",
       "dev": "Full-Stack Developer | Web2 & Web3 Specialist"
     }
+  },
+  "careers": {
+    "title": "Join Our Team",
+    "text": " We're always looking for talented and passionate individuals to join our team. Explore our current job openings and find out more about life at The Clicks.",
+    "subtitle": "Current Job Openings",
+    "learn_more": "Learn More",
+    "no_job": "No job openings available at the moment.",
+    "life_at_clicks": {
+      "title": "Life at The Clicks",
+      "text1": " At The Clicks, we believe that our people are our greatest asset. We foster a collaborative, inclusive, and dynamic work environment where creativity and innovation thrive. Whether you're working on a challenging project or celebrating a team milestone, life at The Clicks is both rewarding and fulfilling.",
+      "text2": "We invest in our employees' growth and provide opportunities for continuous learning, professional development, and career advancement. Join us, and let's build something amazing together!"
+    },
+    "benefits": {
+      "title": "Our Benefits",
+      "starstitle1": "Health & Wellness",
+      "desc1": "Comprehensive health and wellness plans to keep you and your family healthy.",
+      "starstitle2": "Career Growth",
+      "desc2": "Opportunities for professional development and career advancement.",
+      "starstitle3": "Work-Life Balance",
+      "desc3": "Flexible work hours and remote work options to support your work-life balance.",
+      "starstitle4": "Work Environment",
+      "desc4": "Work with talented, supportive colleagues united by shared goals."
+    }
+  },
+  "team": {
+    "header": "Meet the Clickers Driving Success for Our Clients.",
+    "description1": "The Clicks team is a fusion of passion, experience, and innovation, where every \"Clicker\" is not just an employee but a driving force behind success. We are professionals who aren't afraid to challenge traditional marketing approaches, creating solutions that change the game. Our arsenal includes cutting-edge technologies, analytical methods, and creative strategies that help businesses attract, retain, and amaze their customers. Each Clicker brings their unique expertise, combining efforts to create marketing campaigns that not only meet goals but exceed them.",
+    "description2": "At the heart of our work is a partnership with clients, built on mutual trust and understanding. We strive to ensure that every project is a step towards long-term success. Clickers are not just task executors; they are your strategic partners, helping to build a sustainable digital ecosystem for your business. We believe that together with you, we can not only keep pace with the times but also set trends in digital marketing.",
+    "join": "Join Our Team",
+    "openings": "Our Current Job Openings"
+  },
+  "JobDetail": {
+    "jobNotFound": "Job not found",
+    "location": "Location",
+    "salary": "Salary",
+    "perYear": "per year",
+    "jobType": "Job Type"
+  },
+  "contact": {
+    "title": "Contact Us",
+    "description": "Let's talk! We are here to help you grow your business. Reach out to us for any inquiries, and we will get back to you as soon as possible.",
+    "location": "Our Location"
   },
   "book": {
     "title": "Book a meeting"
@@ -708,6 +715,526 @@
         "benefitsList": ["clear reports", "measure ROI", "strategic decisions"]
       },
       "contactFormMessage": "Reach out for a free consultation and get the answers you need."
+    },
+    "automation": {
+      "items": [
+        {
+          "title": "Automation Strategy Development",
+          "description": "We help you develop a tailored marketing automation strategy that aligns with your business goals and maximizes the impact of your marketing efforts."
+        },
+        {
+          "title": "Email Automation",
+          "description": "We set up automated email campaigns that nurture leads, re-engage customers, and drive conversions with personalized messaging."
+        },
+        {
+          "title": "Lead Scoring and Nurturing",
+          "description": "Our lead scoring and nurturing services ensure that your sales team focuses on the most qualified leads, improving conversion rates."
+        },
+        {
+          "title": "CRM Integration",
+          "description": "We integrate your marketing automation tools with your CRM to ensure seamless data flow and better alignment between sales and marketing."
+        },
+        {
+          "title": "Social Media Automation",
+          "description": "We automate your social media posting, engagement, and monitoring to ensure consistent activity and maximize your social presence."
+        },
+        {
+          "title": "Analytics and Reporting",
+          "description": "Our detailed reports and analytics help you track the performance of your automated campaigns and make data-driven improvements."
+        }
+      ],
+      "mainSection": {
+        "title": "Marketing Automation Services",
+        "description": "Streamline your marketing processes, improve efficiency, and drive better results with our marketing automation solutions."
+      },
+      "what": {
+        "title": "What is Marketing Automation?",
+        "description": "Marketing automation involves using software tools to automate repetitive tasks like email marketing, lead nurturing, and customer segmentation, allowing your team to focus on strategy and creativity."
+      },
+      "why": {
+        "title": "Why Choose Marketing Automation?",
+        "description": "Marketing automation helps businesses save time, personalize customer experiences, and improve ROI by streamlining and optimizing marketing processes.",
+        "benefitsList": ["Save time", "Improve ROI", "Enhance personalization"]
+      },
+      "contactFormMessage": "Reach out for a free consultation and learn how we can automate your marketing."
+    },
+    "cm": {
+      "items": [
+        {
+          "title": "Content Strategy",
+          "description": "We develop a content strategy that aligns with your business goals, ensuring that every piece of content supports your overall marketing efforts."
+        },
+        {
+          "title": "Content Creation",
+          "description": "Our team creates high-quality content tailored to your audience, from blog posts and articles to videos and infographics."
+        },
+        {
+          "title": "Content Distribution",
+          "description": "We distribute your content across the right channels to maximize reach and engagement, ensuring it gets in front of the right audience."
+        },
+        {
+          "title": "SEO Content",
+          "description": "Our content is optimized for search engines, helping your website rank higher in search results and driving organic traffic."
+        },
+        {
+          "title": "Content Audits",
+          "description": "We conduct thorough content audits to identify gaps and opportunities, ensuring that your content remains effective and relevant."
+        },
+        {
+          "title": "Analytics & Reporting",
+          "description": "We provide detailed analytics and reporting, giving you insights into how your content is performing and where improvements can be made."
+        }
+      ],
+      "mainSection": {
+        "title": "Content Marketing Services",
+        "description": "Content is at the heart of every successful marketing campaign. From blog posts and articles to infographics and videos, we craft a wide range of content that helps you connect with potential customers and establish your brand as an industry leader."
+      },
+      "what": {
+        "title": "What is Content Marketing and Why Does It Matter?",
+        "description": "Content marketing is the practice of creating and sharing valuable, relevant, and consistent content to attract and engage a clearly defined audience. It's about delivering information that your audience cares about, which ultimately drives profitable customer actions."
+      },
+      "why": {
+        "title": "Why does Content Marketing Matter?",
+        "description": "Social media is one of the most powerful tools for connecting with your audience.",
+        "benefitsList": ["build trust", "support SEO", "drive engagement"]
+      },
+      "contactFormMessage": "Reach out for a free consultation and get the answers you need."
+    },
+    "cro": {
+      "items": [
+        {
+          "title": "A/B Testing",
+          "description": "We conduct A/B testing to determine which variations of your website elements perform best, leading to higher conversions."
+        },
+        {
+          "title": "User Behavior Analysis",
+          "description": "Our team analyzes user behavior on your website to identify barriers to conversion and areas for improvement."
+        },
+        {
+          "title": "Conversion Funnel Optimization",
+          "description": "We optimize your conversion funnel to ensure that visitors move smoothly through the process and are more likely to convert."
+        },
+        {
+          "title": "Landing Page Optimization",
+          "description": "Our team creates and optimizes landing pages that are designed to convert, ensuring that your traffic results in more leads and sales."
+        },
+        {
+          "title": "Heatmaps & Analytics",
+          "description": "We use heatmaps and analytics tools to visualize user interactions on your site, helping us identify opportunities for improvement."
+        },
+        {
+          "title": "Form Optimization",
+          "description": "We optimize forms on your website to reduce friction and increase the likelihood that visitors will complete them."
+        }
+      ],
+      "mainSection": {
+        "title": "Conversion Rate Optimization (CRO) Services",
+        "description": "Our CRO services focus on analyzing user behavior and identifying opportunities to improve the performance of your site. By optimizing key elements such as landing pages, forms, and calls-to-action, we help you increase conversion rates and generate more leads or sales."
+      },
+      "what": {
+        "title": "What is CRO?",
+        "description": "Conversion Rate Optimization (CRO) is the process of improving your website's performance by increasing the percentage of visitors who take a desired action—whether it's making a purchase, filling out a form, or subscribing to a newsletter."
+      },
+      "why": {
+        "title": "Why does CRO Matter?",
+        "description": "We use a combination of A/B testing, heat mapping, and analytics to understand how visitors interact with your website.",
+        "benefitsList": ["increase revenue", "maximize ROI", "user experience"]
+      },
+      "contactFormMessage": "Reach out for a free consultation and get the answers you need."
+    },
+    "design": {
+      "items": [
+        {
+          "title": "Logo Design",
+          "description": "We create unique and memorable logos that represent your brand and make a lasting impression on your audience."
+        },
+        {
+          "title": "Branding",
+          "description": "Our branding services ensure that every aspect of your visual identity is consistent, cohesive, and aligned with your brand values."
+        },
+        {
+          "title": "Print Design",
+          "description": "We design stunning print materials, including brochures, business cards, and posters, that effectively communicate your message."
+        },
+        {
+          "title": "Web Design",
+          "description": "Our web design services combine aesthetics with functionality to create visually appealing websites that drive results."
+        },
+        {
+          "title": "Social Media Graphics",
+          "description": "We create engaging social media graphics that capture attention, increase engagement, and drive traffic to your online platforms."
+        },
+        {
+          "title": "Infographics",
+          "description": "Our infographics simplify complex information and present it in an easy-to-understand, visually appealing format."
+        }
+      ],
+      "mainSection": {
+        "title": "Graphic Design Services",
+        "description": "First impressions matter, and your brand's visuals play a critical role in how your business is perceived. Our graphic design services bring your brand to life with professional, high-quality designs that communicate your message clearly and effectively."
+      },
+      "what": {
+        "title": "What is Graphic Design?",
+        "description": "Graphic design is the art of creating visual content to communicate messages. It involves combining images, typography, and color to create materials that capture attention and convey a specific message to your audience."
+      },
+      "why": {
+        "title": "Why does Graphic Design Matter?",
+        "description": "Graphic design is crucial for creating a strong visual identity for your brand.",
+        "benefitsList": ["engagement", "communication", "brand identity"]
+      },
+      "contactFormMessage": "Reach out for a free consultation and get the answers you need."
+    },
+    "em": {
+      "items": [
+        {
+          "title": "Campaign Strategy",
+          "description": "We develop a comprehensive email marketing strategy tailored to your business goals and audience, ensuring your campaigns are effective."
+        },
+        {
+          "title": "Email Design",
+          "description": "Our team creates visually appealing and responsive email designs that capture attention and drive action."
+        },
+        {
+          "title": "List Management",
+          "description": "We manage your email lists, ensuring they are clean, segmented, and targeted to maximize engagement and deliverability."
+        },
+        {
+          "title": "Automation",
+          "description": "We set up automated email workflows that nurture leads and drive conversions, freeing up your time while delivering results."
+        },
+        {
+          "title": "Analytics & Reporting",
+          "description": "Our detailed analytics and reports give you insights into the performance of your campaigns, helping you make data-driven decisions."
+        },
+        {
+          "title": "A/B Testing",
+          "description": "We conduct A/B testing on subject lines, content, and designs to optimize your emails for better performance and higher conversions."
+        }
+      ],
+      "mainSection": {
+        "title": "Email Marketing Services",
+        "description": "Connect with your audience, build relationships, and drive conversions with our targeted email marketing strategies. Our email marketing services are tailored to deliver personalized, high-impact campaigns that engage your audience and drive conversions."
+      },
+      "what": {
+        "title": "What is Email Marketing?",
+        "description": "Email marketing is a powerful tool for businesses to communicate directly with their audience. By sending personalized, targeted messages, you can build relationships, promote your brand, and drive sales."
+      },
+      "why": {
+        "title": "Why does Email Marketing Matter?",
+        "description": "Email marketing is crucial for creating a strong connection with your audience and driving conversions.",
+        "benefitsList": ["cost-effective", "personalization", "communication"]
+      },
+      "contactFormMessage": "Reach out for a free consultation and get the answers you need."
+    },
+    "ppc": {
+      "items": [
+        {
+          "title": "Keyword Research",
+          "description": "We identify the most effective keywords for your business, ensuring that your ads reach the right audience."
+        },
+        {
+          "title": "Ad Creation",
+          "description": "Our team creates compelling ads that attract clicks and drive conversions, making the most of your ad spend."
+        },
+        {
+          "title": "Campaign Management",
+          "description": "We manage your PPC campaigns from start to finish, optimizing performance and ensuring your ads are effective."
+        },
+        {
+          "title": "Landing Page Optimization",
+          "description": "We ensure that your landing pages are optimized to convert traffic into leads and sales, maximizing your ROI."
+        },
+        {
+          "title": "Performance Tracking",
+          "description": "Our detailed reports provide insights into how your campaigns are performing, allowing for continuous improvement."
+        },
+        {
+          "title": "Remarketing",
+          "description": "We use remarketing techniques to re-engage visitors who have previously interacted with your site, increasing conversion rates."
+        }
+      ],
+      "mainSection": {
+        "title": "Pay-Per-Click (PPC) Advertising Services",
+        "description": "Pay-Per-Click (PPC) advertising is a powerful way to drive targeted traffic to your website. Whether you're looking to increase sales, generate leads, or build brand awareness, our data-driven PPC strategies are designed to meet your business goals."
+      },
+      "what": {
+        "title": "What is PPC and Why Does It Matter?",
+        "description": "Our PPC services are designed to maximize your return on investment by carefully managing your campaigns, optimizing your ads, and ensuring that your budget is spent efficiently."
+      },
+      "why": {
+        "title": "Why does PPC Matter?",
+        "description": "With the right strategy, PPC can be a cost-effective way to reach your target audience.",
+        "benefitsList": [
+          "Targeted traffic",
+          "Cost control",
+          "Immediate results"
+        ]
+      },
+      "contactFormMessage": "Reach out for a free consultation and get the answers you need."
+    },
+    "pr": {
+      "items": [
+        {
+          "title": "Media Relations",
+          "description": "We connect your brand with the media, securing interviews, press releases, and articles that enhance your brand's visibility."
+        },
+        {
+          "title": "Press Releases",
+          "description": "Our team crafts compelling press releases that capture the attention of journalists and promote your brand's news and events."
+        },
+        {
+          "title": "Crisis Management",
+          "description": "We provide expert crisis management services, helping you navigate and mitigate any negative situations that could harm your brand."
+        },
+        {
+          "title": "Event Planning",
+          "description": "We help you plan and execute successful events that generate positive media coverage and engage your audience."
+        },
+        {
+          "title": "Influencer Outreach",
+          "description": "We connect your brand with influencers who can help amplify your message and reach a wider audience."
+        },
+        {
+          "title": "Reputation Management",
+          "description": "We monitor and manage your online reputation, ensuring that your brand is presented in the best possible light."
+        }
+      ],
+      "mainSection": {
+        "title": "Public Relations (PR) Services",
+        "description": "Building a strong reputation in the marketplace is key to your business's long-term success. Our public relations services focus on creating a positive image for your brand through media outreach, press releases, and event coordination. We help you craft a narrative that resonates with your audience and positions your business as a trusted industry leader."
+      },
+      "what": {
+        "title": "What is Public Relations (PR)?",
+        "description": "Public Relations (PR) is the practice of managing and guiding the public perception of your brand. It involves building and maintaining relationships with the media, managing communication during crises, and creating a positive image for your business."
+      },
+      "why": {
+        "title": "Why does PR Matter?",
+        "description": "PR is essential for maintaining a strong and trustworthy brand presence.",
+        "benefitsList": ["reputation", "visibility", "media relations"]
+      },
+      "contactFormMessage": "Reach out for a free consultation and get the answers you need."
+    },
+    "seo": {
+      "items": [
+        {
+          "title": "Keyword Research and Analysis",
+          "description": "Identify the most relevant keywords to target, ensuring your website ranks higher for the terms your audience searches for."
+        },
+        {
+          "title": "On-Page SEO Optimization",
+          "description": "Optimize your website’s content, meta tags, and images to improve its relevance and usability for search engines and users."
+        },
+        {
+          "title": "Technical SEO",
+          "description": "Ensure your website has a solid technical foundation, including fast loading times, mobile-friendliness, and secure connections."
+        },
+        {
+          "title": "Link Building",
+          "description": "Build high-quality backlinks to improve your domain authority and enhance your search engine rankings."
+        },
+        {
+          "title": "Local SEO",
+          "description": "Optimize your online presence to attract local customers and improve your visibility in local search results."
+        },
+        {
+          "title": "SEO Audits",
+          "description": "Conduct comprehensive audits to identify areas for improvement and implement strategies to boost your website’s performance."
+        }
+      ],
+      "mainSection": {
+        "title": "Search Engine Optimization (SEO) Services",
+        "description": "Increase your online visibility and drive more traffic to your website with our expert SEO services. Our SEO services focus on improving your website's visibility on search engines like Google, helping potential customers find you when they're searching for your products or services."
+      },
+      "what": {
+        "title": "What is SEO and Why Does It Matter?",
+        "description": "SEO, or Search Engine Optimization, is the practice of improving your website's visibility on search engines like Google. When people search for products or services that you offer, you want your website to appear at the top of the results. SEO helps make that happen."
+      },
+      "why": {
+        "title": "By optimizing your website for search engines, you can increase:",
+        "description": "",
+        "benefitsList": ["visibility", "traffic", "user experience"]
+      },
+      "contactFormMessage": "Reach out for a free consultation and get the answers you need."
+    },
+    "smm": {
+      "items": [
+        {
+          "title": "Content Creation",
+          "description": "We create engaging and relevant content that resonates with your audience and drives engagement on social media."
+        },
+        {
+          "title": "Social Media Management",
+          "description": "Our team manages your social media profiles, ensuring consistent activity and engagement with your audience."
+        },
+        {
+          "title": "Paid Social Advertising",
+          "description": "We design and manage targeted ad campaigns on social media platforms to increase your reach and drive conversions."
+        },
+        {
+          "title": "Community Management",
+          "description": "We help build and manage online communities around your brand, fostering engagement and loyalty."
+        },
+        {
+          "title": "Social Media Audits",
+          "description": "We conduct comprehensive audits of your social media presence, providing insights and recommendations for improvement."
+        },
+        {
+          "title": "Analytics & Reporting",
+          "description": "Our detailed analytics and reports help you understand the performance of your social media campaigns and make data-driven decisions."
+        }
+      ],
+      "mainSection": {
+        "title": "Social Media Marketing (SMM) Services",
+        "description": "Build your brand, engage with your audience, and drive traffic through our expert SMM strategies."
+      },
+      "what": {
+        "title": "What is SMM and Why Does It Matter?",
+        "description": "Social media platforms like Facebook, Instagram, Twitter, and LinkedIn are where people spend a significant amount of their time online. By leveraging these platforms, you can reach your target audience, engage with them, and build strong customer relationships."
+      },
+      "why": {
+        "title": "Why does SMM Matter?",
+        "description": "Social media is one of the most powerful tools for connecting with your audience.",
+        "benefitsList": ["Brand awareness", "Interaction", "Lead generation"]
+      },
+      "contactFormMessage": "Reach out for a free consultation and get the answers you need."
+    },
+    "stratdev": {
+      "items": [
+        {
+          "title": "Business Strategy",
+          "description": "We help you define your company's vision, mission, and long-term objectives, ensuring that your business strategy is aligned with your goals."
+        },
+        {
+          "title": "Market Analysis",
+          "description": "Our market analysis services provide insights into your industry, competitors, and market trends, helping you make informed strategic decisions."
+        },
+        {
+          "title": "Financial Planning",
+          "description": "We assist in developing financial plans that support your strategic goals, ensuring your business is financially prepared for growth."
+        },
+        {
+          "title": "Risk Management",
+          "description": "We help identify potential risks and develop strategies to mitigate them, ensuring your business is resilient and prepared for challenges."
+        },
+        {
+          "title": "Operational Strategy",
+          "description": "Our operational strategy services focus on improving efficiency and effectiveness, ensuring that your operations are aligned with your strategic goals."
+        },
+        {
+          "title": "Performance Measurement",
+          "description": "We develop metrics and KPIs to track your progress, ensuring that your strategy is delivering the desired results."
+        }
+      ],
+      "mainSection": {
+        "title": "Strategy Development Services",
+        "description": "Developing a strong digital marketing strategy is crucial for business success in today's competitive landscape. Our strategy development services help you define clear objectives, identify your target audience, and create a tailored approach that leverages the most effective marketing channels."
+      },
+      "what": {
+        "title": "What is Strategy Development?",
+        "description": "Our strategy development services are designed to help you clarify your vision, develop actionable plans, and navigate the challenges of achieving your goals."
+      },
+      "why": {
+        "title": "Why does Strategy Development Matter?",
+        "description": "A well-defined strategy is essential for the growth and sustainability of any business.",
+        "benefitsList": ["clear direction", "resourcing", "long-term success"]
+      },
+      "contactFormMessage": "Reach out for a free consultation and get the answers you need."
+    },
+    "webdev": {
+      "items": [
+        {
+          "title": "Custom Website Development",
+          "description": "Tailored website solutions designed to meet your business requirements, built with the latest web technologies."
+        },
+        {
+          "title": "eCommerce Solutions",
+          "description": "We create powerful eCommerce platforms that provide an intuitive shopping experience, helping you increase sales and grow your business."
+        },
+        {
+          "title": "Content Management Systems (CMS)",
+          "description": "Manage your website content easily with our custom CMS solutions, designed to be user-friendly and scalable."
+        },
+        {
+          "title": "Responsive Web Design",
+          "description": "We ensure your website looks great on all devices, providing a seamless experience for users on mobile, tablet, and desktop."
+        },
+        {
+          "title": "Web Application Development",
+          "description": "Custom web applications built to streamline your business processes and improve efficiency."
+        },
+        {
+          "title": "SEO Optimization",
+          "description": "We build websites that are optimized for search engines, ensuring your business gets the visibility it deserves."
+        }
+      ],
+      "mainSection": {
+        "title": "Web Development Services",
+        "description": "A well-designed website is the cornerstone of your digital presence. Our website development services focus on creating responsive, user-friendly sites that not only look great but also deliver results."
+      },
+      "what": {
+        "title": "",
+        "description": "",
+        "benefitsList": ["", "", ""]
+      },
+      "why": {
+        "title": "Why Choose Us for Web Development?",
+        "description1": "Our team of experts specializes in creating websites:",
+        "description2": "We utilize the latest technologies and frameworks to build scalable and maintainable web solutions. Whether you need a simple website or a complex web application, we have the expertise to bring your vision to life.",
+        "benefitsList": ["responsive", "dynamic", "SEO-friendly"]
+      },
+      "contactFormMessage": "Reach out for a free consultation and get the answers you need."
     }
+  },
+  "terms": {
+    "title": "Terms & Conditions",
+    "subtitle": "Please read these Terms and Conditions (\"Terms\", \"Terms and Conditions\") carefully before using The Clicks Full-Service Digital Marketing Agency website.",
+    "sections": [
+      {
+        "title": "1. Introduction",
+        "content": "By accessing or using the The Clicks website, you agree to be bound by these Terms. If you disagree with any part of the terms, then you may not access the service."
+      },
+      {
+        "title": "2. Intellectual Property",
+        "content": "The content, design, and logos on this website are owned by The Clicks Full-Service Digital Marketing Agency and are protected by intellectual property laws. You may not use, reproduce, or distribute any content without our permission."
+      },
+      {
+        "title": "3. Use of Service",
+        "content": "You agree to use the website only for lawful purposes and in a way that does not infringe the rights of others or restrict or inhibit anyone else use of the website."
+      },
+      {
+        "title": "4. Termination",
+        "content": "We may terminate or suspend your access to our service immediately, without prior notice or liability, for any reason whatsoever, including if you breach the Terms."
+      },
+      {
+        "title": "5. Limitation of Liability",
+        "content": "In no event shall The Clicks, nor its directors, employees, partners, agents, suppliers, or affiliates, be liable for any indirect, incidental, special, consequential, or punitive damages, including without limitation, loss of profits, data, use, goodwill, or other intangible losses."
+      },
+      {
+        "title": "6. Changes to Terms",
+        "content": "We reserve the right to modify or replace these Terms at any time. If a revision is material, we will try to provide at least 30 days notice before any new terms take effect. What constitutes a material change will be determined at our sole discretion."
+      },
+      {
+        "title": "7. Governing Law",
+        "content": "These Terms shall be governed and construed in accordance with the laws of Canada, without regard to its conflict of law provisions."
+      },
+      {
+        "title": "8. Contact Us",
+        "content": "If you have any questions about these Terms, please contact us at:",
+        "contact": {
+          "email": {
+            "label": "Email:",
+            "value": "info@theclicks.ca"
+          },
+          "phone": {
+            "label": "Phone:",
+            "value": "+1 (506) 871-8210"
+          },
+          "address": {
+            "label": "Address:",
+            "value": "860 Main Street, Moncton, NB, Canada, E1A 0G9"
+          }
+        }
+      }
+    ]
   }
 }

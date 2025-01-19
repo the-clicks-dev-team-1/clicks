@@ -299,41 +299,6 @@
       "minInfo": "Veuillez fournir plus d'informations (au moins 10 caractères)"
     }
   },
-  "careers": {
-    "title": "Rejoignez notre équipe",
-    "text": "Nous recherchons toujours des personnes talentueuses et passionnées pour rejoindre notre équipe. Découvrez nos offres d'emploi actuelles et apprenez-en davantage sur la vie chez The Clicks.",
-    "subtitle": "Postes à pourvoir",
-    "learn_more": "En savoir plus",
-    "no_job": "Aucun poste disponible pour le moment.",
-    "life_at_clicks": {
-      "title": "La vie chez The Clicks",
-      "text1": "Chez The Clicks, nous croyons que nos collaborateurs sont notre plus grande richesse. Nous favorisons un environnement de travail collaboratif, inclusif et dynamique où la créativité et l'innovation s'épanouissent. Que vous travailliez sur un projet stimulant ou que vous célébriez une étape importante de l'équipe, la vie chez The Clicks est à la fois enrichissante et épanouissante.",
-      "text2": "Nous investissons dans le développement de nos employés et offrons des opportunités d'apprentissage continu, de développement professionnel et d'évolution de carrière. Rejoignez-nous et construisons quelque chose d'extraordinaire ensemble !"
-    },
-    "benefits": {
-      "title": "Nos avantages",
-      "starstitle1": "Santé et bien-être",
-      "desc1": "Des plans complets de santé et de bien-être pour vous et votre famille.",
-      "starstitle2": "Évolution professionnelle",
-      "desc2": "Des opportunités de développement professionnel et d'évolution de carrière.",
-      "starstitle3": "Équilibre travail-vie personnelle",
-      "desc3": "Des horaires flexibles et des options de télétravail pour soutenir votre équilibre travail-vie personnelle.",
-      "starstitle4": "Environnement de travail",
-      "desc4": "Travaillez avec des collègues talentueux et solidaires, unis par des objectifs communs."
-    }
-  },
-  "JobDetail": {
-    "jobNotFound": "Emploi introuvable",
-    "location": "Emplacement",
-    "salary": "Salaire",
-    "perYear": "par an",
-    "jobType": "Type d'emploi"
-  },
-  "contact": {
-    "title": "Contactez-nous",
-    "description": "Discutons ensemble ! Nous sommes là pour vous aider à développer votre entreprise. N'hésitez pas à nous contacter pour toute question, et nous vous répondrons dans les plus brefs délais.",
-    "location": "Notre emplacement"
-  },
   "aboutAgency": {
     "title": "À Propos de The Clicks",
     "description1": "Chez The Clicks, nous ne nous contentons pas d'améliorer la visibilité de votre site web ; nous collaborons avec vous pour obtenir des résultats significatifs qui ont un impact positif sur vos bénéfices. Notre engagement à produire des résultats commerciaux concrets nous distingue dans le paysage du marketing digital.",
@@ -367,6 +332,48 @@
       "gd": "Graphiste",
       "dev": "Développeur Full-Stack | Spécialiste Web2 & Web3"
     }
+  },
+  "careers": {
+    "title": "Rejoignez notre équipe",
+    "text": "Nous recherchons toujours des personnes talentueuses et passionnées pour rejoindre notre équipe. Découvrez nos offres d'emploi actuelles et apprenez-en davantage sur la vie chez The Clicks.",
+    "subtitle": "Postes à pourvoir",
+    "learn_more": "En savoir plus",
+    "no_job": "Aucun poste disponible pour le moment.",
+    "life_at_clicks": {
+      "title": "La vie chez The Clicks",
+      "text1": "Chez The Clicks, nous croyons que nos collaborateurs sont notre plus grande richesse. Nous favorisons un environnement de travail collaboratif, inclusif et dynamique où la créativité et l'innovation s'épanouissent. Que vous travailliez sur un projet stimulant ou que vous célébriez une étape importante de l'équipe, la vie chez The Clicks est à la fois enrichissante et épanouissante.",
+      "text2": "Nous investissons dans le développement de nos employés et offrons des opportunités d'apprentissage continu, de développement professionnel et d'évolution de carrière. Rejoignez-nous et construisons quelque chose d'extraordinaire ensemble !"
+    },
+    "benefits": {
+      "title": "Nos avantages",
+      "starstitle1": "Santé et bien-être",
+      "desc1": "Des plans complets de santé et de bien-être pour vous et votre famille.",
+      "starstitle2": "Évolution professionnelle",
+      "desc2": "Des opportunités de développement professionnel et d'évolution de carrière.",
+      "starstitle3": "Équilibre travail-vie personnelle",
+      "desc3": "Des horaires flexibles et des options de télétravail pour soutenir votre équilibre travail-vie personnelle.",
+      "starstitle4": "Environnement de travail",
+      "desc4": "Travaillez avec des collègues talentueux et solidaires, unis par des objectifs communs."
+    }
+  },
+  "team": {
+    "header": "Rencontrez les Clickers qui contribuent au succès de nos clients.",
+    "description1": "L'équipe Clicks est une fusion de passion, d'expérience et d'innovation, où chaque \"Clicker\" n'est pas seulement un employé, mais une force motrice derrière le succès. Nous sommes des professionnels qui n'ont pas peur de remettre en question les approches marketing traditionnelles, créant des solutions qui bouleversent les règles du jeu. Notre arsenal comprend des technologies de pointe, des méthodes analytiques et des stratégies créatives qui aident les entreprises à attirer, fidéliser et émerveiller leurs clients. Chaque Clicker apporte son expertise unique, combinant ses efforts pour créer des campagnes marketing qui non seulement atteignent leurs objectifs, mais les dépassent.",
+    "description2": "Au cœur de notre travail se trouve un partenariat avec nos clients, basé sur la confiance mutuelle et la compréhension. Nous nous efforçons de faire en sorte que chaque projet soit une étape vers un succès à long terme. Les Clickers ne sont pas de simples exécutants de tâches ; ils sont vos partenaires stratégiques, aidant à construire un écosystème numérique durable pour votre entreprise. Nous croyons qu'ensemble, avec vous, nous pouvons non seulement suivre l'évolution des temps, mais aussi définir des tendances en marketing digital.",
+    "join": "Rejoignez notre équipe",
+    "openings": "Nos offres d'emploi actuelles"
+  },
+  "JobDetail": {
+    "jobNotFound": "Emploi introuvable",
+    "location": "Emplacement",
+    "salary": "Salaire",
+    "perYear": "par an",
+    "jobType": "Type d'emploi"
+  },
+  "contact": {
+    "title": "Contactez-nous",
+    "description": "Discutons ensemble ! Nous sommes là pour vous aider à développer votre entreprise. N'hésitez pas à nous contacter pour toute question, et nous vous répondrons dans les plus brefs délais.",
+    "location": "Notre emplacement"
   },
   "book": {
     "title": "Réservez une réunion"
@@ -711,6 +718,550 @@
         ]
       },
       "contactFormMessage": "Contactez-nous pour une consultation gratuite et obtenez les réponses dont vous avez besoin."
+    },
+    "automation": {
+      "items": [
+        {
+          "title": "Développement de stratégie d'automatisation",
+          "description": "Nous vous aidons à développer une stratégie d'automatisation marketing sur mesure qui s'aligne avec vos objectifs commerciaux et maximise l'impact de vos efforts marketing."
+        },
+        {
+          "title": "Automatisation des e-mails",
+          "description": "Nous mettons en place des campagnes d'e-mails automatisées qui fidélisent les prospects, réengagent les clients et augmentent les conversions avec des messages personnalisés."
+        },
+        {
+          "title": "Évaluation et nurturing des prospects",
+          "description": "Nos services d'évaluation et de nurturing des prospects garantissent que votre équipe commerciale se concentre sur les prospects les plus qualifiés, améliorant ainsi les taux de conversion."
+        },
+        {
+          "title": "Intégration CRM",
+          "description": "Nous intégrons vos outils d'automatisation marketing à votre CRM pour assurer un flux de données fluide et une meilleure coordination entre les ventes et le marketing."
+        },
+        {
+          "title": "Automatisation des réseaux sociaux",
+          "description": "Nous automatisons vos publications, interactions et suivis sur les réseaux sociaux pour garantir une activité cohérente et maximiser votre présence sociale."
+        },
+        {
+          "title": "Analyses et rapports",
+          "description": "Nos rapports détaillés et nos analyses vous aident à suivre les performances de vos campagnes automatisées et à apporter des améliorations basées sur les données."
+        }
+      ],
+      "mainSection": {
+        "title": "Services d'automatisation marketing",
+        "description": "Optimisez vos processus marketing, améliorez votre efficacité et obtenez de meilleurs résultats grâce à nos solutions d'automatisation marketing."
+      },
+      "what": {
+        "title": "Qu'est-ce que l'automatisation marketing ?",
+        "description": "L'automatisation marketing consiste à utiliser des outils logiciels pour automatiser les tâches répétitives telles que le marketing par e-mail, le nurturing des prospects et la segmentation des clients, permettant à votre équipe de se concentrer sur la stratégie et la créativité."
+      },
+      "why": {
+        "title": "Pourquoi choisir l'automatisation marketing ?",
+        "description": "L'automatisation marketing aide les entreprises à gagner du temps, à personnaliser l'expérience client et à améliorer le ROI en rationalisant et en optimisant les processus marketing.",
+        "benefitsList": [
+          "Gagnez du temps",
+          "Améliorez le ROI",
+          "Renforcez la personnalisation"
+        ]
+      },
+      "contactFormMessage": "Contactez-nous pour une consultation gratuite et découvrez comment nous pouvons automatiser votre marketing."
+    },
+    "cm": {
+      "items": [
+        {
+          "title": "Stratégie de Contenu",
+          "description": "Nous développons une stratégie de contenu alignée sur vos objectifs commerciaux, garantissant que chaque contenu soutient vos efforts marketing globaux."
+        },
+        {
+          "title": "Création de Contenu",
+          "description": "Notre équipe crée un contenu de haute qualité adapté à votre audience, des articles de blog et articles aux vidéos et infographies."
+        },
+        {
+          "title": "Distribution de Contenu",
+          "description": "Nous distribuons votre contenu sur les bons canaux pour maximiser la portée et l'engagement, en veillant à ce qu'il atteigne le bon public."
+        },
+        {
+          "title": "Contenu SEO",
+          "description": "Notre contenu est optimisé pour les moteurs de recherche, aidant votre site web à se classer plus haut dans les résultats de recherche et à générer du trafic organique."
+        },
+        {
+          "title": "Audits de Contenu",
+          "description": "Nous effectuons des audits de contenu approfondis pour identifier les lacunes et les opportunités, en veillant à ce que votre contenu reste efficace et pertinent."
+        },
+        {
+          "title": "Analyse et Reporting",
+          "description": "Nous fournissons des analyses et des rapports détaillés, vous donnant des informations sur la performance de votre contenu et les améliorations possibles."
+        }
+      ],
+      "mainSection": {
+        "title": "Services de Marketing de Contenu",
+        "description": "Le contenu est au cœur de chaque campagne marketing réussie. Des articles de blog et articles aux infographies et vidéos, nous créons une large gamme de contenus qui vous aident à vous connecter avec vos clients potentiels et à établir votre marque en tant que leader de l'industrie."
+      },
+      "what": {
+        "title": "Qu'est-ce que le Marketing de Contenu et pourquoi est-il important ?",
+        "description": "Le marketing de contenu consiste à créer et partager un contenu précieux, pertinent et cohérent pour attirer et engager un public clairement défini. Il s'agit de fournir des informations qui intéressent votre audience, ce qui génère finalement des actions client rentables."
+      },
+      "why": {
+        "title": "Pourquoi le Marketing de Contenu est-il important ?",
+        "description": "Les médias sociaux sont l'un des outils les plus puissants pour se connecter avec votre audience.",
+        "benefitsList": [
+          "instaurer la confiance",
+          "soutenir le SEO",
+          "stimuler l'engagement"
+        ]
+      },
+      "contactFormMessage": "Contactez-nous pour une consultation gratuite et obtenez les réponses dont vous avez besoin."
+    },
+    "cro": {
+      "items": [
+        {
+          "title": "Test A/B",
+          "description": "Nous réalisons des tests A/B pour déterminer quelles variations des éléments de votre site Web offrent les meilleures performances, entraînant ainsi des conversions accrues."
+        },
+        {
+          "title": "Analyse du comportement des utilisateurs",
+          "description": "Notre équipe analyse le comportement des utilisateurs sur votre site Web afin d'identifier les obstacles à la conversion et les domaines à améliorer."
+        },
+        {
+          "title": "Optimisation du tunnel de conversion",
+          "description": "Nous optimisons votre tunnel de conversion pour garantir que les visiteurs progressent facilement dans le processus et soient plus susceptibles de convertir."
+        },
+        {
+          "title": "Optimisation des pages d'atterrissage",
+          "description": "Notre équipe crée et optimise des pages d'atterrissage conçues pour convertir, garantissant que votre trafic se traduit par davantage de prospects et de ventes."
+        },
+        {
+          "title": "Cartes de chaleur et analyses",
+          "description": "Nous utilisons des cartes de chaleur et des outils d'analyse pour visualiser les interactions des utilisateurs sur votre site, nous aidant à identifier les opportunités d'amélioration."
+        },
+        {
+          "title": "Optimisation des formulaires",
+          "description": "Nous optimisons les formulaires sur votre site Web pour réduire les frictions et augmenter la probabilité que les visiteurs les remplissent."
+        }
+      ],
+      "mainSection": {
+        "title": "Services d'optimisation du taux de conversion (CRO)",
+        "description": "Nos services de CRO se concentrent sur l'analyse du comportement des utilisateurs et l'identification des opportunités pour améliorer les performances de votre site. En optimisant des éléments clés tels que les pages d'atterrissage, les formulaires et les appels à l'action, nous vous aidons à augmenter les taux de conversion et à générer plus de prospects ou de ventes."
+      },
+      "what": {
+        "title": "Qu'est-ce que le CRO ?",
+        "description": "L'optimisation du taux de conversion (CRO) est le processus d'amélioration des performances de votre site Web en augmentant le pourcentage de visiteurs qui effectuent une action souhaitée, que ce soit un achat, le remplissage d'un formulaire ou l'abonnement à une newsletter."
+      },
+      "why": {
+        "title": "Pourquoi le CRO est-il important ?",
+        "description": "Nous utilisons une combinaison de tests A/B, de cartographie thermique et d'analyses pour comprendre comment les visiteurs interagissent avec votre site Web.",
+        "benefitsList": [
+          "augmenter les revenus",
+          "maximiser le ROI",
+          "expérience utilisateur"
+        ]
+      },
+      "contactFormMessage": "Contactez-nous pour une consultation gratuite et obtenez les réponses dont vous avez besoin."
+    },
+    "design": {
+      "items": [
+        {
+          "title": "Conception de logo",
+          "description": "Nous créons des logos uniques et mémorables qui représentent votre marque et laissent une impression durable sur votre audience."
+        },
+        {
+          "title": "Branding",
+          "description": "Nos services de branding assurent que chaque aspect de votre identité visuelle est cohérent, homogène et aligné avec les valeurs de votre marque."
+        },
+        {
+          "title": "Conception imprimée",
+          "description": "Nous concevons des supports imprimés époustouflants, y compris des brochures, cartes de visite et affiches, qui communiquent efficacement votre message."
+        },
+        {
+          "title": "Conception Web",
+          "description": "Nos services de conception web allient esthétique et fonctionnalité pour créer des sites web visuellement attrayants qui produisent des résultats."
+        },
+        {
+          "title": "Graphiques pour les réseaux sociaux",
+          "description": "Nous créons des graphismes engageants pour les réseaux sociaux qui attirent l'attention, augmentent l'engagement et génèrent du trafic vers vos plateformes en ligne."
+        },
+        {
+          "title": "Infographies",
+          "description": "Nos infographies simplifient les informations complexes et les présentent dans un format facile à comprendre et visuellement attrayant."
+        }
+      ],
+      "mainSection": {
+        "title": "Services de conception graphique",
+        "description": "Les premières impressions comptent, et les visuels de votre marque jouent un rôle crucial dans la perception de votre entreprise. Nos services de conception graphique donnent vie à votre marque avec des conceptions professionnelles de haute qualité qui communiquent votre message de manière claire et efficace."
+      },
+      "what": {
+        "title": "Qu'est-ce que la conception graphique ?",
+        "description": "La conception graphique est l'art de créer du contenu visuel pour communiquer des messages. Elle consiste à combiner des images, de la typographie et des couleurs pour créer des supports qui attirent l'attention et transmettent un message spécifique à votre audience."
+      },
+      "why": {
+        "title": "Pourquoi la conception graphique est-elle importante ?",
+        "description": "La conception graphique est essentielle pour créer une identité visuelle forte pour votre marque.",
+        "benefitsList": ["engagement", "communication", "identité de marque"]
+      },
+      "contactFormMessage": "Contactez-nous pour une consultation gratuite et obtenez les réponses dont vous avez besoin."
+    },
+    "em": {
+      "items": [
+        {
+          "title": "Stratégie de campagne",
+          "description": "Nous développons une stratégie complète de marketing par e-mail, adaptée à vos objectifs commerciaux et à votre public, garantissant l'efficacité de vos campagnes."
+        },
+        {
+          "title": "Conception d'e-mails",
+          "description": "Notre équipe crée des conceptions d'e-mails visuellement attrayantes et réactives qui captent l'attention et incitent à l'action."
+        },
+        {
+          "title": "Gestion des listes",
+          "description": "Nous gérons vos listes de diffusion, en veillant à ce qu'elles soient propres, segmentées et ciblées pour maximiser l'engagement et la délivrabilité."
+        },
+        {
+          "title": "Automatisation",
+          "description": "Nous configurons des flux de travail automatisés par e-mail qui nourrissent les prospects et génèrent des conversions, vous libérant ainsi du temps tout en produisant des résultats."
+        },
+        {
+          "title": "Analyse et rapports",
+          "description": "Nos analyses détaillées et nos rapports vous fournissent des informations sur la performance de vos campagnes, vous aidant ainsi à prendre des décisions basées sur les données."
+        },
+        {
+          "title": "Tests A/B",
+          "description": "Nous effectuons des tests A/B sur les lignes de sujet, le contenu et les conceptions pour optimiser vos e-mails pour de meilleures performances et des conversions plus élevées."
+        }
+      ],
+      "mainSection": {
+        "title": "Services de marketing par e-mail",
+        "description": "Connectez-vous avec votre public, établissez des relations et générez des conversions grâce à nos stratégies de marketing par e-mail ciblées. Nos services de marketing par e-mail sont conçus pour offrir des campagnes personnalisées à fort impact qui engagent votre public et génèrent des conversions."
+      },
+      "what": {
+        "title": "Qu'est-ce que le marketing par e-mail ?",
+        "description": "Le marketing par e-mail est un outil puissant pour les entreprises souhaitant communiquer directement avec leur public. En envoyant des messages personnalisés et ciblés, vous pouvez établir des relations, promouvoir votre marque et augmenter les ventes."
+      },
+      "why": {
+        "title": "Pourquoi le marketing par e-mail est-il important ?",
+        "description": "Le marketing par e-mail est essentiel pour créer une connexion forte avec votre public et stimuler les conversions.",
+        "benefitsList": ["rentable", "personnalisation", "communication"]
+      },
+      "contactFormMessage": "Contactez-nous pour une consultation gratuite et obtenez les réponses dont vous avez besoin."
+    },
+    "ppc": {
+      "items": [
+        {
+          "title": "Recherche de mots-clés",
+          "description": "Nous identifions les mots-clés les plus efficaces pour votre entreprise, garantissant que vos annonces atteignent le bon public."
+        },
+        {
+          "title": "Création d'annonces",
+          "description": "Notre équipe crée des annonces attrayantes qui génèrent des clics et des conversions, maximisant ainsi l'efficacité de vos dépenses publicitaires."
+        },
+        {
+          "title": "Gestion de campagnes",
+          "description": "Nous gérons vos campagnes PPC du début à la fin, optimisant les performances et garantissant l'efficacité de vos annonces."
+        },
+        {
+          "title": "Optimisation des pages de destination",
+          "description": "Nous veillons à ce que vos pages de destination soient optimisées pour convertir le trafic en prospects et en ventes, maximisant ainsi votre retour sur investissement."
+        },
+        {
+          "title": "Suivi des performances",
+          "description": "Nos rapports détaillés fournissent des informations sur les performances de vos campagnes, permettant une amélioration continue."
+        },
+        {
+          "title": "Remarketing",
+          "description": "Nous utilisons des techniques de remarketing pour réengager les visiteurs qui ont déjà interagi avec votre site, augmentant ainsi les taux de conversion."
+        }
+      ],
+      "mainSection": {
+        "title": "Services de Publicité au Coût Par Clic (PPC)",
+        "description": "La publicité PPC (Pay-Per-Click) est un moyen puissant d'attirer un trafic ciblé vers votre site web. Que vous souhaitiez augmenter vos ventes, générer des prospects ou accroître la notoriété de votre marque, nos stratégies PPC basées sur les données sont conçues pour répondre à vos objectifs commerciaux."
+      },
+      "what": {
+        "title": "Qu'est-ce que le PPC et pourquoi cela importe-t-il ?",
+        "description": "Nos services PPC sont conçus pour maximiser votre retour sur investissement en gérant soigneusement vos campagnes, en optimisant vos annonces et en garantissant que votre budget est dépensé efficacement."
+      },
+      "why": {
+        "title": "Pourquoi le PPC est-il important ?",
+        "description": "Avec la bonne stratégie, le PPC peut être un moyen rentable d'atteindre votre public cible.",
+        "benefitsList": [
+          "trafic ciblé",
+          "contrôle des coûts",
+          "résultats immédiats"
+        ]
+      },
+      "contactFormMessage": "Contactez-nous pour une consultation gratuite et obtenez les réponses dont vous avez besoin."
+    },
+    "pr": {
+      "items": [
+        {
+          "title": "Relations Médias",
+          "description": "Nous connectons votre marque avec les médias, en obtenant des interviews, des communiqués de presse et des articles qui renforcent la visibilité de votre marque."
+        },
+        {
+          "title": "Communiqués de Presse",
+          "description": "Notre équipe rédige des communiqués de presse percutants qui attirent l'attention des journalistes et promeuvent les nouvelles et événements de votre marque."
+        },
+        {
+          "title": "Gestion de Crise",
+          "description": "Nous fournissons des services experts de gestion de crise, vous aidant à naviguer et à atténuer toute situation négative pouvant nuire à votre marque."
+        },
+        {
+          "title": "Planification d'Événements",
+          "description": "Nous vous aidons à planifier et à organiser des événements réussis qui génèrent une couverture médiatique positive et engagent votre public."
+        },
+        {
+          "title": "Outreach avec des Influenceurs",
+          "description": "Nous connectons votre marque avec des influenceurs qui peuvent aider à amplifier votre message et atteindre un public plus large."
+        },
+        {
+          "title": "Gestion de la Réputation",
+          "description": "Nous surveillons et gérons votre réputation en ligne, en veillant à ce que votre marque soit présentée sous son meilleur jour."
+        }
+      ],
+      "mainSection": {
+        "title": "Services de Relations Publiques (RP)",
+        "description": "Construire une réputation solide sur le marché est essentiel pour le succès à long terme de votre entreprise. Nos services de relations publiques se concentrent sur la création d'une image positive pour votre marque grâce à la sensibilisation des médias, les communiqués de presse et la coordination d'événements. Nous vous aidons à créer un récit qui résonne avec votre public et positionne votre entreprise en tant que leader de confiance dans l'industrie."
+      },
+      "what": {
+        "title": "Qu'est-ce que les Relations Publiques (RP) ?",
+        "description": "Les Relations Publiques (RP) sont la pratique de gérer et de guider la perception publique de votre marque. Cela implique de construire et maintenir des relations avec les médias, de gérer la communication pendant les crises, et de créer une image positive pour votre entreprise."
+      },
+      "why": {
+        "title": "Pourquoi les RP sont-elles importantes ?",
+        "description": "Les RP sont essentielles pour maintenir une présence de marque forte et digne de confiance.",
+        "benefitsList": ["réputation", "visibilité", "relations médias"]
+      },
+      "contactFormMessage": "Contactez-nous pour une consultation gratuite et obtenez les réponses dont vous avez besoin."
+    },
+    "seo": {
+      "items": [
+        {
+          "title": "Recherche et analyse de mots-clés",
+          "description": "Identifiez les mots-clés les plus pertinents à cibler, afin que votre site web soit mieux classé pour les termes recherchés par votre audience."
+        },
+        {
+          "title": "Optimisation SEO On-Page",
+          "description": "Optimisez le contenu, les balises meta et les images de votre site pour améliorer sa pertinence et son utilisabilité pour les moteurs de recherche et les utilisateurs."
+        },
+        {
+          "title": "SEO technique",
+          "description": "Assurez une base technique solide pour votre site, y compris des temps de chargement rapides, une compatibilité mobile et des connexions sécurisées."
+        },
+        {
+          "title": "Création de liens",
+          "description": "Créez des liens de haute qualité pour améliorer l'autorité de votre domaine et renforcer votre classement dans les moteurs de recherche."
+        },
+        {
+          "title": "SEO local",
+          "description": "Optimisez votre présence en ligne pour attirer des clients locaux et améliorer votre visibilité dans les résultats de recherche locaux."
+        },
+        {
+          "title": "Audits SEO",
+          "description": "Réalisez des audits complets pour identifier les domaines à améliorer et mettez en œuvre des stratégies pour améliorer les performances de votre site."
+        }
+      ],
+      "mainSection": {
+        "title": "Services d'optimisation pour les moteurs de recherche (SEO)",
+        "description": "Augmentez votre visibilité en ligne et générez plus de trafic sur votre site web grâce à nos services SEO experts. Nos services SEO se concentrent sur l'amélioration de la visibilité de votre site sur des moteurs de recherche comme Google, aidant ainsi vos clients potentiels à vous trouver lorsqu'ils recherchent vos produits ou services."
+      },
+      "what": {
+        "title": "Qu'est-ce que le SEO et pourquoi est-ce important ?",
+        "description": "Le SEO, ou l'optimisation pour les moteurs de recherche, est la pratique consistant à améliorer la visibilité de votre site web sur des moteurs de recherche comme Google. Lorsque les gens recherchent des produits ou services que vous proposez, vous voulez que votre site apparaisse en haut des résultats. Le SEO permet d'y parvenir."
+      },
+      "why": {
+        "title": "En optimisant votre site pour les moteurs de recherche, vous pouvez augmenter :",
+        "description": "",
+        "benefitsList": [
+          "la visibilité",
+          "le trafic",
+          "l'expérience utilisateur"
+        ]
+      },
+      "contactFormMessage": "Contactez-nous pour une consultation gratuite et obtenez les réponses dont vous avez besoin."
+    },
+    "smm": {
+      "items": [
+        {
+          "title": "Création de contenu",
+          "description": "Nous créons du contenu engageant et pertinent qui résonne avec votre audience et stimule l'engagement sur les réseaux sociaux."
+        },
+        {
+          "title": "Gestion des réseaux sociaux",
+          "description": "Notre équipe gère vos profils sur les réseaux sociaux, assurant une activité et un engagement constants avec votre audience."
+        },
+        {
+          "title": "Publicité payante sur les réseaux sociaux",
+          "description": "Nous concevons et gérons des campagnes publicitaires ciblées sur les plateformes de réseaux sociaux pour augmenter votre portée et générer des conversions."
+        },
+        {
+          "title": "Gestion de communauté",
+          "description": "Nous aidons à construire et à gérer des communautés en ligne autour de votre marque, favorisant l'engagement et la fidélité."
+        },
+        {
+          "title": "Audits des réseaux sociaux",
+          "description": "Nous réalisons des audits complets de votre présence sur les réseaux sociaux, fournissant des informations et des recommandations pour l'amélioration."
+        },
+        {
+          "title": "Analyse et rapports",
+          "description": "Nos analyses détaillées et nos rapports vous aident à comprendre les performances de vos campagnes sur les réseaux sociaux et à prendre des décisions basées sur les données."
+        }
+      ],
+      "mainSection": {
+        "title": "Services de marketing sur les réseaux sociaux (SMM)",
+        "description": "Construisez votre marque, engagez-vous avec votre audience et générez du trafic grâce à nos stratégies SMM expertes."
+      },
+      "what": {
+        "title": "Qu'est-ce que le SMM et pourquoi est-il important ?",
+        "description": "Les plateformes de réseaux sociaux comme Facebook, Instagram, Twitter et LinkedIn sont des lieux où les gens passent une part importante de leur temps en ligne. En tirant parti de ces plateformes, vous pouvez atteindre votre audience cible, interagir avec elle et établir de solides relations client."
+      },
+      "why": {
+        "title": "Pourquoi le SMM est-il important ?",
+        "description": "Les réseaux sociaux sont l'un des outils les plus puissants pour se connecter avec votre audience.",
+        "benefitsList": [
+          "Notoriété de la marque",
+          "Interaction",
+          "Génération de prospects"
+        ]
+      },
+      "contactFormMessage": "Contactez-nous pour une consultation gratuite et obtenez les réponses dont vous avez besoin."
+    },
+    "stratdev": {
+      "items": [
+        {
+          "title": "Stratégie d'entreprise",
+          "description": "Nous vous aidons à définir la vision, la mission et les objectifs à long terme de votre entreprise, en veillant à ce que votre stratégie soit alignée sur vos objectifs."
+        },
+        {
+          "title": "Analyse de marché",
+          "description": "Nos services d'analyse de marché fournissent des informations sur votre secteur, vos concurrents et les tendances du marché, vous aidant à prendre des décisions stratégiques éclairées."
+        },
+        {
+          "title": "Planification financière",
+          "description": "Nous vous aidons à élaborer des plans financiers qui soutiennent vos objectifs stratégiques, en veillant à ce que votre entreprise soit prête financièrement pour la croissance."
+        },
+        {
+          "title": "Gestion des risques",
+          "description": "Nous aidons à identifier les risques potentiels et à développer des stratégies pour les atténuer, en veillant à ce que votre entreprise soit résiliente et prête à relever les défis."
+        },
+        {
+          "title": "Stratégie opérationnelle",
+          "description": "Nos services de stratégie opérationnelle visent à améliorer l'efficacité et l'efficience, en veillant à ce que vos opérations soient alignées sur vos objectifs stratégiques."
+        },
+        {
+          "title": "Mesure de la performance",
+          "description": "Nous développons des indicateurs et des KPI pour suivre vos progrès, en veillant à ce que votre stratégie produise les résultats souhaités."
+        }
+      ],
+      "mainSection": {
+        "title": "Services de Développement de Stratégies",
+        "description": "Développer une stratégie de marketing digital solide est crucial pour réussir dans le paysage concurrentiel d'aujourd'hui. Nos services de développement de stratégies vous aident à définir des objectifs clairs, à identifier votre audience cible et à créer une approche adaptée qui exploite les canaux de marketing les plus efficaces."
+      },
+      "what": {
+        "title": "Qu'est-ce que le Développement de Stratégies ?",
+        "description": "Nos services de développement de stratégies sont conçus pour vous aider à clarifier votre vision, élaborer des plans d'action et relever les défis pour atteindre vos objectifs."
+      },
+      "why": {
+        "title": "Pourquoi le Développement de Stratégies est-il Important ?",
+        "description": "Une stratégie bien définie est essentielle à la croissance et à la durabilité de toute entreprise.",
+        "benefitsList": [
+          "direction claire",
+          "ressources",
+          "succès à long terme"
+        ]
+      },
+      "contactFormMessage": "Contactez-nous pour une consultation gratuite et obtenez les réponses dont vous avez besoin."
+    },
+    "webdev": {
+      "items": [
+        {
+          "title": "Développement de sites web sur mesure",
+          "description": "Des solutions de sites web adaptées pour répondre aux besoins de votre entreprise, conçues avec les dernières technologies web."
+        },
+        {
+          "title": "Solutions eCommerce",
+          "description": "Nous créons des plateformes eCommerce performantes offrant une expérience d'achat intuitive pour augmenter vos ventes et développer votre entreprise."
+        },
+        {
+          "title": "Systèmes de gestion de contenu (CMS)",
+          "description": "Gérez facilement le contenu de votre site web avec nos solutions CMS personnalisées, conçues pour être conviviales et évolutives."
+        },
+        {
+          "title": "Conception web adaptative",
+          "description": "Nous veillons à ce que votre site web soit superbe sur tous les appareils, offrant une expérience fluide aux utilisateurs sur mobile, tablette et ordinateur."
+        },
+        {
+          "title": "Développement d'applications web",
+          "description": "Applications web personnalisées conçues pour simplifier vos processus métier et améliorer l'efficacité."
+        },
+        {
+          "title": "Optimisation SEO",
+          "description": "Nous concevons des sites web optimisés pour les moteurs de recherche, garantissant à votre entreprise la visibilité qu'elle mérite."
+        }
+      ],
+      "mainSection": {
+        "title": "Services de développement web",
+        "description": "Un site web bien conçu est la pierre angulaire de votre présence numérique. Nos services de développement web se concentrent sur la création de sites réactifs et conviviaux qui non seulement sont esthétiques mais aussi performants."
+      },
+      "what": {
+        "title": "",
+        "description": "",
+        "benefitsList": ["", "", ""]
+      },
+      "why": {
+        "title": "Pourquoi nous choisir pour le développement web ?",
+        "description1": "Notre équipe d'experts est spécialisée dans la création de sites web :",
+        "description2": "Nous utilisons les technologies et frameworks les plus récents pour créer des solutions web évolutives et faciles à maintenir. Que vous ayez besoin d'un site web simple ou d'une application web complexe, nous avons l'expertise pour donner vie à votre vision.",
+        "benefitsList": ["réactifs", "dynamiques", "SEO-optimisé"]
+      },
+      "contactFormMessage": "Contactez-nous pour une consultation gratuite et obtenez les réponses dont vous avez besoin."
     }
+  },
+  "terms": {
+    "title": "Conditions Générales",
+    "subtitle": "Veuillez lire attentivement ces Conditions Générales (\"Conditions\", \"Conditions Générales\") avant d'utiliser le site web de l'Agence de Marketing Numérique The Clicks.",
+    "sections": [
+      {
+        "title": "1. Introduction",
+        "content": "En accédant ou en utilisant le site web The Clicks, vous acceptez d'être lié par ces Conditions. Si vous n'êtes pas d'accord avec une partie des conditions, vous ne pouvez pas accéder au service."
+      },
+      {
+        "title": "2. Propriété Intellectuelle",
+        "content": "Le contenu, le design et les logos de ce site web appartiennent à l'Agence de Marketing Numérique The Clicks et sont protégés par les lois sur la propriété intellectuelle. Vous ne pouvez pas utiliser, reproduire ou distribuer tout contenu sans notre permission."
+      },
+      {
+        "title": "3. Utilisation du Service",
+        "content": "Vous acceptez d'utiliser le site web uniquement à des fins légales et d'une manière qui ne porte pas atteinte aux droits d'autrui ou ne restreint ni n'empêche l'utilisation du site web par quiconque."
+      },
+      {
+        "title": "4. Résiliation",
+        "content": "Nous pouvons résilier ou suspendre votre accès à notre service immédiatement, sans préavis ni responsabilité, pour quelque raison que ce soit, y compris si vous violez les Conditions."
+      },
+      {
+        "title": "5. Limitation de Responsabilité",
+        "content": "En aucun cas The Clicks, ni ses directeurs, employés, partenaires, agents, fournisseurs ou affiliés, ne seront responsables des dommages indirects, accessoires, spéciaux, consécutifs ou punitifs, y compris, sans limitation, la perte de profits, de données, d'utilisation, de clientèle ou d'autres pertes intangibles."
+      },
+      {
+        "title": "6. Modifications des Conditions",
+        "content": "Nous nous réservons le droit de modifier ou de remplacer ces Conditions à tout moment. Si une révision est importante, nous essaierons de donner un préavis d'au moins 30 jours avant l'entrée en vigueur de nouvelles conditions. Ce qui constitue un changement important sera déterminé à notre seule discrétion."
+      },
+      {
+        "title": "7. Loi Applicable",
+        "content": "Ces Conditions seront régies et interprétées conformément aux lois du Canada, sans égard à ses dispositions en matière de conflit de lois."
+      },
+      {
+        "title": "8. Contactez-nous",
+        "content": "Si vous avez des questions concernant ces Conditions, veuillez nous contacter à :",
+        "contact": {
+          "email": {
+            "label": "Courriel :",
+            "value": "info@theclicks.ca"
+          },
+          "phone": {
+            "label": "Téléphone :",
+            "value": "+1 (506) 871-8210"
+          },
+          "address": {
+            "label": "Adresse :",
+            "value": "860 Main Street, Moncton, NB, Canada, E1A 0G9"
+          }
+        }
+      }
+    ]
   }
 }
