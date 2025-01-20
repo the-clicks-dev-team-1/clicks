@@ -8,11 +8,25 @@ import Navbar from "@/components/navbar";
 import ServiceCard from "@/components/ServiceCard";
 import en from "@/i18n/messages/en.json";
 
-export const metadata: Metadata = {
-  title: "Conversion Rate Optimization (CRO) Services",
-  description:
-    "Maximize your website's potential by converting more visitors into customers with our CRO services",
-};
+export async function generateMetadata({
+  params,
+}: {
+  params: { locale: string };
+}): Promise<Metadata> {
+  const { locale } = params;
+
+  const t = await getTranslations({
+    locale,
+    namespace: "services.cro.mainSection",
+  });
+
+  return {
+    title: t("title") || "Conversion Rate Optimization (CRO) Services",
+    description:
+      t("description") ||
+      "Maximize your website's potential by converting more visitors into customers with our CRO services",
+  };
+}
 
 const servicesItems = en.services.cro.items.map((_, index) => ({
   count: `0${index + 1}`,

@@ -27,7 +27,7 @@ const CategoriesFilter = ({
       //   carouselRef.current.scrollLeft = 0; // Сбрасываем позицию прокрутки
       // }
     },
-    [selectedCategory]
+    [selectedCategory, setSelectedCategory]
   );
 
   const scrollLeft = useCallback(() => {

@@ -8,6 +8,23 @@ import Navbar from "@/components/navbar";
 import Offers from "@/components/Offers";
 import en from "@/i18n/messages/en.json";
 import { Link } from "@/i18n/routing";
+import { Metadata } from "next";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: { locale: string };
+}): Promise<Metadata> {
+  const { locale } = params;
+
+  const t = await getTranslations({ locale, namespace: "pricing" });
+
+  return {
+    title: t("metaTitle") || "Pricing",
+    description:
+      t("metaDesc") || "Choose the plan that suits your needs the best.",
+  };
+}
 
 export interface Plan {
   link: string;

@@ -2,6 +2,24 @@ import { FC } from "react";
 import { getTranslations } from "next-intl/server";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
+import { Metadata } from "next";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: { locale: string };
+}): Promise<Metadata> {
+  const { locale } = params;
+
+  const t = await getTranslations({ locale, namespace: "privacyPolicy" });
+
+  return {
+    title: t("title") || "Privacy Policy",
+    description:
+      t("metaDesc") ||
+      "This Privacy Policy explains how The Clicks Full-Service Digital Marketing Agency collects, uses, and discloses your information.",
+  };
+}
 
 const PrivacyPolicy: FC<{ params: { locale: string } }> = async ({
   params: { locale },

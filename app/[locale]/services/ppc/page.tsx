@@ -8,11 +8,25 @@ import Navbar from "@/components/navbar";
 import ServiceCard from "@/components/ServiceCard";
 import en from "@/i18n/messages/en.json";
 
-export const metadata: Metadata = {
-  title: "Pay-Per-Click (PPC) Advertising Services",
-  description:
-    "Drive targeted traffic to your website and maximize ROI with our expert PPC management services",
-};
+export async function generateMetadata({
+  params,
+}: {
+  params: { locale: string };
+}): Promise<Metadata> {
+  const { locale } = params;
+
+  const t = await getTranslations({
+    locale,
+    namespace: "services.ppc.mainSection",
+  });
+
+  return {
+    title: t("title") || "Pay-Per-Click (PPC) Advertising Services",
+    description:
+      t("description") ||
+      "Drive targeted traffic to your website and maximize ROI with our expert PPC management services",
+  };
+}
 
 const servicesItems = en.services.ppc.items.map((_, index) => ({
   count: `0${index + 1}`,

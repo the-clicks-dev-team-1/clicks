@@ -8,11 +8,25 @@ import Navbar from "@/components/navbar";
 import ServiceCard from "@/components/ServiceCard";
 import en from "@/i18n/messages/en.json";
 
-export const metadata: Metadata = {
-  title: "Social Media Marketing (SMM) Services",
-  description:
-    "Build your brand, engage with your audience, and drive traffic through our expert SMM strategies",
-};
+export async function generateMetadata({
+  params,
+}: {
+  params: { locale: string };
+}): Promise<Metadata> {
+  const { locale } = params;
+
+  const t = await getTranslations({
+    locale,
+    namespace: "services.smm.mainSection",
+  });
+
+  return {
+    title: t("title") || "Social Media Marketing (SMM) Services",
+    description:
+      t("description") ||
+      "Build your brand, engage with your audience, and drive traffic through our expert SMM strategies",
+  };
+}
 
 const servicesItems = en.services.smm.items.map((_, index) => ({
   count: `0${index + 1}`,

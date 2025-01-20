@@ -8,11 +8,25 @@ import Navbar from "@/components/navbar";
 import ServiceCard from "@/components/ServiceCard";
 import en from "@/i18n/messages/en.json";
 
-export const metadata: Metadata = {
-  title: "Search Engine Optimization (SEO) Services",
-  description:
-    "Increase your online visibility and drive more traffic to your website with our expert SEO services",
-};
+export async function generateMetadata({
+  params,
+}: {
+  params: { locale: string };
+}): Promise<Metadata> {
+  const { locale } = params;
+
+  const t = await getTranslations({
+    locale,
+    namespace: "services.seo.mainSection",
+  });
+
+  return {
+    title: t("title") || "Search Engine Optimization (SEO) Services",
+    description:
+      t("description") ||
+      "Increase your online visibility and drive more traffic to your website with our expert SEO services",
+  };
+}
 
 const servicesItems = en.services.seo.items.map((_, index) => ({
   count: `0${index + 1}`,

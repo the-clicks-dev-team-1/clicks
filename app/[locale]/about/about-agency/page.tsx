@@ -9,11 +9,22 @@ import TeamSection from "@/components/TeamSection";
 import TextBlock from "@/components/text-block";
 import { Link } from "@/i18n/routing";
 
-export const metadata: Metadata = {
-  title: "About The Clicks",
-  description:
-    "At The Clicks, we don't just focus on enhancing your website's visibility; we partner with you to drive meaningful results that positively impact your bottom line. Our commitment to delivering tangible business outcomes is what sets us apart in the digital marketing landscape.",
-};
+export async function generateMetadata({
+  params,
+}: {
+  params: { locale: string };
+}): Promise<Metadata> {
+  const { locale } = params;
+
+  const t = await getTranslations({ locale, namespace: "aboutAgency" });
+
+  return {
+    title: t("title") || "About The Clicks",
+    description:
+      t("description1") ||
+      "At The Clicks, we don't just focus on enhancing your website's visibility; we partner with you to drive meaningful results that positively impact your bottom line. Our commitment to delivering tangible business outcomes is what sets us apart in the digital marketing landscape.",
+  };
+}
 
 const AboutAgency: FC<{ params: { locale: string } }> = async ({
   params: { locale },

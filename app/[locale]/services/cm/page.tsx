@@ -8,11 +8,25 @@ import Navbar from "@/components/navbar";
 import ServiceCard from "@/components/ServiceCard";
 import en from "@/i18n/messages/en.json";
 
-export const metadata: Metadata = {
-  title: "Content Marketing Services",
-  description:
-    "Engage your audience, build trust, and drive conversions with our strategic content marketing services",
-};
+export async function generateMetadata({
+  params,
+}: {
+  params: { locale: string };
+}): Promise<Metadata> {
+  const { locale } = params;
+
+  const t = await getTranslations({
+    locale,
+    namespace: "services.cm.mainSection",
+  });
+
+  return {
+    title: t("title") || "Content Marketing Services",
+    description:
+      t("description") ||
+      "Engage your audience, build trust, and drive conversions with our strategic content marketing services",
+  };
+}
 
 const servicesItems = en.services.cm.items.map((_, index) => ({
   count: `0${index + 1}`,

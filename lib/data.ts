@@ -1,10 +1,11 @@
 import clientNew from "@/lib/contentfulNew";
 
-export const getJob = async (slug: string) => {
+export const getJob = async (slug: string, locale: string) => {
   try {
     const entries = await clientNew.getEntries({
       content_type: "jobOpening",
       "fields.slug": slug,
+      locale,
     });
     return entries.items[0];
   } catch (err) {

@@ -20,7 +20,7 @@ export async function generateMetadata({
     title: t("title") || "The Clicks Blog",
     description:
       t("text") ||
-      "Stay updated with the latest insights, tips, and trends in digital marketing. Our blog is your go-to resource for all things marketing.", // Fallback to default description
+      "Stay updated with the latest insights, tips, and trends in digital marketing. Our blog is your go-to resource for all things marketing.",
   };
 }
 

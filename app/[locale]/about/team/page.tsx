@@ -9,11 +9,22 @@ import Navbar from "@/components/navbar";
 import TeamSection from "@/components/TeamSection";
 import { Link } from "@/i18n/routing";
 
-export const metadata: Metadata = {
-  title: "Meet the Clickers Driving Success for Our Clients",
-  description:
-    "The Clicks team is a fusion of passion, experience, and innovation, where every 'Clicker' is not just an employee but a driving force behind success. We are professionals who aren't afraid to challenge traditional marketing approaches, creating solutions that change the game.",
-};
+export async function generateMetadata({
+  params,
+}: {
+  params: { locale: string };
+}): Promise<Metadata> {
+  const { locale } = params;
+
+  const t = await getTranslations({ locale, namespace: "team" });
+
+  return {
+    title: t("metaTitle") || "Our team",
+    description:
+      t("metaDesc") ||
+      'The Clicks team is a fusion of passion, experience, and innovation, where every "Clicker" is not just an employee but a driving force behind success.',
+  };
+}
 
 const Team: FC<{ params: { locale: string } }> = async ({
   params: { locale },
