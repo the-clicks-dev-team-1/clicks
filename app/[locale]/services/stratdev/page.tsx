@@ -8,11 +8,25 @@ import Navbar from "@/components/navbar";
 import ServiceCard from "@/components/ServiceCard";
 import en from "@/i18n/messages/en.json";
 
-export const metadata: Metadata = {
-  title: "Strategy Development Services",
-  description:
-    "Crafting tailored strategies to drive your business forward and achieve long-term success",
-};
+export async function generateMetadata({
+  params,
+}: {
+  params: { locale: string };
+}): Promise<Metadata> {
+  const { locale } = params;
+
+  const t = await getTranslations({
+    locale,
+    namespace: "services.stratdev.mainSection",
+  });
+
+  return {
+    title: t("title") || "Strategy Development Services",
+    description:
+      t("description") ||
+      "Crafting tailored strategies to drive your business forward and achieve long-term success",
+  };
+}
 
 const servicesItems = en.services.stratdev.items.map((_, index) => ({
   count: `0${index + 1}`,

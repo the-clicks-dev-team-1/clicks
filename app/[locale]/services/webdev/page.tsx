@@ -8,11 +8,25 @@ import Navbar from "@/components/navbar";
 import ServiceCard from "@/components/ServiceCard";
 import en from "@/i18n/messages/en.json";
 
-export const metadata: Metadata = {
-  title: "Web Development Services",
-  description:
-    "We build websites that not only look stunning but are also optimized for performance, scalability, and user experience",
-};
+export async function generateMetadata({
+  params,
+}: {
+  params: { locale: string };
+}): Promise<Metadata> {
+  const { locale } = params;
+
+  const t = await getTranslations({
+    locale,
+    namespace: "services.webdev.mainSection",
+  });
+
+  return {
+    title: t("title") || "Web Development Services",
+    description:
+      t("description") ||
+      "We build websites that not only look stunning but are also optimized for performance, scalability, and user experience",
+  };
+}
 
 const servicesItems = en.services.webdev.items.map((_, index) => ({
   count: `0${index + 1}`,

@@ -13,11 +13,22 @@ import {
 import { Link } from "@/i18n/routing";
 import { getTranslations } from "next-intl/server";
 
-export const metadata: Metadata = {
-  title: "Join Our Team",
-  description:
-    "We're always looking for talented and passionate individuals to join our team. Explore our current job openings and find out more about life at The Clicks.",
-};
+export async function generateMetadata({
+  params,
+}: {
+  params: { locale: string };
+}): Promise<Metadata> {
+  const { locale } = params;
+
+  const t = await getTranslations({ locale, namespace: "careers" });
+
+  return {
+    title: t("title") || "Join Our Team",
+    description:
+      t("text") ||
+      "We're always looking for talented and passionate individuals to join our team. Explore our current job openings and find out more about life at The Clicks.",
+  };
+}
 
 const fetchJobs = async (locale: string) => {
   try {

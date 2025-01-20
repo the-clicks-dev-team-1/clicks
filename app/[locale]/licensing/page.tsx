@@ -2,6 +2,24 @@ import { FC } from "react";
 import { getTranslations } from "next-intl/server";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
+import { Metadata } from "next";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: { locale: string };
+}): Promise<Metadata> {
+  const { locale } = params;
+
+  const t = await getTranslations({ locale, namespace: "licensing" });
+
+  return {
+    title: t("title") || "Licensing",
+    description:
+      t("description") ||
+      "The Clicks Full-Service Digital Marketing Agency is committed to complying with all applicable licenses and regulations.",
+  };
+}
 
 const Licensing: FC<{ params: { locale: string } }> = async ({
   params: { locale },

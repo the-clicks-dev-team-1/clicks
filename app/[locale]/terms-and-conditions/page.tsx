@@ -2,6 +2,24 @@ import { FC } from "react";
 import { getTranslations } from "next-intl/server";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
+import { Metadata } from "next";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: { locale: string };
+}): Promise<Metadata> {
+  const { locale } = params;
+
+  const t = await getTranslations({ locale, namespace: "terms" });
+
+  return {
+    title: t("title") || "Terms & Conditions",
+    description:
+      t("subtitle") ||
+      'Please read these Terms and Conditions ("Terms", "Terms and Conditions") carefully before using The Clicks Full-Service Digital Marketing Agency website.',
+  };
+}
 
 const TermsAndConditions: FC<{ params: { locale: string } }> = async ({
   params: { locale },

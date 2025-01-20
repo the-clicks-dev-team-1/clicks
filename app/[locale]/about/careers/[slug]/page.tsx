@@ -1,6 +1,3 @@
-"use client";
-
-import { FC, useEffect, useState } from "react";
 import Image from "next/image";
 import clientNew from "@/lib/contentfulNew";
 import Navbar from "@/components/navbar";
@@ -8,49 +5,66 @@ import Footer from "@/components/footer";
 import ContactBlock from "@/components/contactBlock";
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
 import { Document } from "@contentful/rich-text-types";
-import LoadingSpinner from "@/components/ui/LoadingSpinner";
-import { useLocale, useTranslations } from "next-intl";
+import { getJob } from "@/lib/data";
+import { getTranslations } from "next-intl/server";
 
-type JobProps = {
-  params: { slug: string };
+export const generateMetadata = async ({
+  params,
+}: {
+  params: { slug: string; locale: string };
+}) => {
+  const { slug, locale } = params;
+
+  try {
+    const job = await getJob(slug, locale);
+
+    if (!job) {
+      return {
+        title: "Job Not Found",
+        description: "The requested job position could not be found.",
+      };
+    }
+
+    return {
+      title: job.fields.title,
+      description: job.fields.shortDescription,
+    };
+  } catch (error) {
+    console.error("Error fetching job:", error);
+    return {
+      title: "Error Loading Job",
+      description: "There was an error loading the job details.",
+    };
+  }
 };
 
-const JobDetail: FC<JobProps> = ({ params }) => {
-  const t = useTranslations("JobDetail");
-  const locale = useLocale();
-  const [job, setJob] = useState<any>(null);
-  const [loading, setLoading] = useState<boolean>(true);
-  const [error, setError] = useState<boolean>(false);
+const JobDetail = async ({
+  params,
+}: {
+  params: { slug: string; locale: string };
+}) => {
+  const t = await getTranslations({
+    locale: params.locale,
+    namespace: "JobDetail",
+  });
+  let job: any = null;
+  let error = false;
 
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const entries = await clientNew.getEntries({
-          content_type: "jobOpening",
-          "fields.slug": params.slug,
-          locale,
-        });
+  try {
+    const entries = await clientNew.getEntries({
+      content_type: "jobOpening",
+      "fields.slug": params.slug,
+      locale: params.locale,
+    });
 
-        if (entries.items.length > 0) {
-          setJob(entries.items[0]);
-        } else {
-          console.warn("No job found for slug:", params.slug);
-          setError(true);
-        }
-      } catch (error) {
-        console.error("Error fetching data from Contentful:", error);
-        setError(true);
-      } finally {
-        setLoading(false);
-      }
-    };
-
-    fetchData();
-  }, [params.slug, locale]);
-
-  if (loading) {
-    // return <LoadingSpinner color="#b1b7c9" />;
-    return <LoadingSpinner colorScheme="gray" />;
+    if (entries.items.length > 0) {
+      job = entries.items[0];
+    } else {
+      error = true;
+    }
+  } catch (error) {
+    console.error("Error fetching data from Contentful:", error);
+    error = true;
   }
 
   if (error || !job) {

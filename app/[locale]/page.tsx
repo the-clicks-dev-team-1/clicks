@@ -7,16 +7,26 @@ import Footer from "@/components/footer";
 import Navbar from "@/components/navbar";
 import Reviews from "@/components/reviews";
 import Services from "@/components/services";
-import Steps from "@/components/steps";
 import { TheWayWeWork } from "@/components/TheWayWeWork";
 import SliderOne from "@/components/ui/slider";
 import { Link } from "@/i18n/routing";
 
-export const metadata: Metadata = {
-  title: "Transform your business with artificial intelligence",
-  description:
-    "Revolutionize operations, optimize processes, and drive growth with smarter decisions and innovation.",
-};
+export async function generateMetadata({
+  params,
+}: {
+  params: { locale: string };
+}): Promise<Metadata> {
+  const { locale } = params;
+
+  const t = await getTranslations({ locale, namespace: "home" });
+
+  return {
+    title: t("title") || "Transform your business with artificial intelligence",
+    description:
+      t("description") ||
+      "Revolutionize operations, optimize processes, and drive growth with smarter decisions and innovation.",
+  };
+}
 
 export default async function Home({
   params: { locale },
@@ -53,9 +63,7 @@ export default async function Home({
           <SliderOne />
           <Block />
           <Block2 />
-          {/* <Block3 /> */}
           <Services />
-          {/* <Steps /> */}
           <TheWayWeWork />
           <Reviews />
           <ContactBlock />

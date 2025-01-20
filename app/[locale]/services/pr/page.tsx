@@ -8,11 +8,25 @@ import Navbar from "@/components/navbar";
 import ServiceCard from "@/components/ServiceCard";
 import en from "@/i18n/messages/en.json";
 
-export const metadata: Metadata = {
-  title: "Public Relations (PR) Services",
-  description:
-    "Build your brand's reputation and connect with your audience through our strategic PR services",
-};
+export async function generateMetadata({
+  params,
+}: {
+  params: { locale: string };
+}): Promise<Metadata> {
+  const { locale } = params;
+
+  const t = await getTranslations({
+    locale,
+    namespace: "services.pr.mainSection",
+  });
+
+  return {
+    title: t("title") || "Public Relations (PR) Services",
+    description:
+      t("description") ||
+      "Build your brand's reputation and connect with your audience through our strategic PR services",
+  };
+}
 
 const servicesItems = en.services.pr.items.map((_, index) => ({
   count: `0${index + 1}`,

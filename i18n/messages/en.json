@@ -334,6 +334,23 @@
       "dev": "Full-Stack Developer | Web2 & Web3 Specialist"
     }
   },
+  "blog": {
+    "title": "The Clicks Blog",
+    "text": "Stay updated with the latest insights, tips, and trends in digital marketing. Our blog is your go-to resource for all things marketing.",
+    "searchPlaceholder": "Search by post title...",
+    "allCategories": "All Categories",
+    "featuredPosts": "Featured Posts",
+    "category": "Category",
+    "author": "Author",
+    "date": "Publish Date",
+    "readMore": "Read More",
+    "showMore": "Show More Posts"
+  },
+  "blogPost": {
+    "postNotFound": "Post not found",
+    "imageNotAvailable": "Image not available.",
+    "category": "Category"
+  },
   "careers": {
     "title": "Join Our Team",
     "text": " We're always looking for talented and passionate individuals to join our team. Explore our current job openings and find out more about life at The Clicks.",
@@ -358,6 +375,8 @@
     }
   },
   "team": {
+    "metaTitle": "Our team",
+    "metaDesc": "The Clicks team is a fusion of passion, experience, and innovation, where every \"Clicker\" is not just an employee but a driving force behind success.",
     "header": "Meet the Clickers Driving Success for Our Clients.",
     "description1": "The Clicks team is a fusion of passion, experience, and innovation, where every \"Clicker\" is not just an employee but a driving force behind success. We are professionals who aren't afraid to challenge traditional marketing approaches, creating solutions that change the game. Our arsenal includes cutting-edge technologies, analytical methods, and creative strategies that help businesses attract, retain, and amaze their customers. Each Clicker brings their unique expertise, combining efforts to create marketing campaigns that not only meet goals but exceed them.",
     "description2": "At the heart of our work is a partnership with clients, built on mutual trust and understanding. We strive to ensure that every project is a step towards long-term success. Clickers are not just task executors; they are your strategic partners, helping to build a sustainable digital ecosystem for your business. We believe that together with you, we can not only keep pace with the times but also set trends in digital marketing.",
@@ -377,7 +396,8 @@
     "location": "Our Location"
   },
   "book": {
-    "title": "Book a meeting"
+    "title": "Book a meeting",
+    "description": "Let's talk! We're here to help you grow your business. Reach out to us for any inquiries, and we'll get back to you as soon as possible."
   },
   "licensing": {
     "title": "Licensing",
@@ -409,6 +429,8 @@
     }
   },
   "pricing": {
+    "metaTitle": "Pricing",
+    "metaDesc": "Choose the plan that suits your needs the best.",
     "title": "Simple Pricing",
     "subtitle": "Choose your plan",
     "serviceTitle": "Marketing Service Suite",
@@ -614,6 +636,7 @@
   },
   "privacyPolicy": {
     "title": "Privacy Policy",
+    "metaDesc": "This Privacy Policy explains how The Clicks Full-Service Digital Marketing Agency collects, uses, and discloses your information.",
     "subtitle": "Your privacy is important to us. This Privacy Policy explains how The Clicks Full-Service Digital Marketing Agency collects, uses, and discloses your information.",
     "sections": {
       "1": {

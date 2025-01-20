@@ -1,81 +1,96 @@
-"use client";
-
-import { FC, useEffect, useState } from "react";
-import client from "@/lib/contentful";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
 import ContactBlock from "@/components/contactBlock";
 import Image from "next/image";
-import ReactMarkdown from "react-markdown";
-import rehypeRaw from "rehype-raw";
-import LoadingSpinner from "@/components/ui/LoadingSpinner";
+import clientNew from "@/lib/contentfulNew";
+import { renderNode } from "@/lib/renderNode";
+import type { Entry, EntryCollection, EntrySkeletonType } from "contentful";
+import { getTranslations } from "next-intl/server";
+import { getBlogPost } from "@/lib/data";
 
-type PostProps = {
-  params: { slug: string };
+export const generateMetadata = async ({
+  params,
+}: {
+  params: { slug: string; locale: string };
+}) => {
+  const { slug, locale } = params;
+
+  const post = await getBlogPost(slug, locale);
+
+  return {
+    title: post.fields.title,
+    description: post.fields.description,
+  };
 };
 
-const BlogPost: FC<PostProps> = ({ params }) => {
-  const [post, setPost] = useState<any>(null);
-  const [loading, setLoading] = useState<boolean>(true);
-  const [error, setError] = useState<boolean>(false);
+interface BlogPostFields extends EntrySkeletonType {
+  title: string;
+  description?: string;
+  body?: any;
+  cloudinaryMedia?: { url: string }[];
+  category?: Entry<CategoryFields>;
+}
 
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const space = process.env.NEXT_PUBLIC_CONTENTFUL_SPACE_ID;
-        const accessToken = process.env.NEXT_PUBLIC_CONTENTFUL_ACCESS_TOKEN;
-        if (!space || !accessToken) {
-          console.error(
-            "Expected parameters space or accessToken are missing."
-          );
-          throw new Error(
-            "Expected parameters space or accessToken are missing"
-          );
-        }
+interface CategoryFields extends EntrySkeletonType {
+  title: string;
+}
 
-        const entries = await client.getEntries({
-          content_type: "blogPost",
-          "fields.slug": params.slug,
-        });
+type BlogPostEntry = Entry<BlogPostFields>;
 
-        if (entries.items.length > 0) {
-          setPost(entries.items[0]);
-        } else {
-          setError(true);
-        }
-      } catch (error) {
-        console.error("Ошибка получения данных c Contentful:", error);
-        setError(true);
-      } finally {
-        setLoading(false);
+const BlogPost = async ({
+  params,
+}: {
+  params: { slug: string; locale: string };
+}) => {
+  const t = await getTranslations({
+    locale: params.locale,
+    namespace: "blogPost",
+  });
+  let post: BlogPostEntry | null = null;
+  let error = false;
+
+  try {
+    const entries: EntryCollection<BlogPostFields> = await clientNew.getEntries(
+      {
+        content_type: "blogPost",
+        "fields.slug": params.slug,
+        locale: params.locale,
       }
-    };
+    );
 
-    fetchData();
-  }, [params.slug]);
-
-  if (loading) {
-    // return <LoadingSpinner color="#b1b7c9" />;
-    return <LoadingSpinner colorScheme="gray" />;
+    if (entries.items.length > 0) {
+      post = entries.items[0];
+    } else {
+      error = true;
+    }
+  } catch (error) {
+    console.error("Error with fetching data from Contentful:", error);
+    error = true;
   }
 
   if (error || !post) {
-    return <div>Post not found</div>;
+    return <div>{t("postNotFound")}</div>;
   }
 
-  const { title, description, body, featuredImage, category } = post.fields;
+  const { title, description, body, cloudinaryMedia, category } =
+    post.fields as unknown as BlogPostFields;
 
   return (
     <div className="bg-[var(--bgnew)] text-[var(--text)]">
       <Navbar />
 
-      <div className="py-20 px-4 md:px-20 lg:px-40 max-w-7xl mx-auto">
-        <h1 className="text-4xl mt-10 md:text-6xl font-bold">{title}</h1>
+      <div className="py-32 md:pt-40 container md:px-10">
+        <h1
+          className="text-4xl mt-10 md:text-6xl font-bold text-[var(--light-blue)] light:text-[var(--gray-70)]
+"
+        >
+          {title}
+        </h1>
 
-        {featuredImage && featuredImage.fields?.file?.url ? (
+        {cloudinaryMedia && cloudinaryMedia[0]?.url ? (
           <div className="mt-8">
             <Image
-              src={`https:${featuredImage.fields.file.url}`}
+              src={cloudinaryMedia[0].url}
               alt={title}
               width={800}
               height={400}
@@ -83,25 +98,25 @@ const BlogPost: FC<PostProps> = ({ params }) => {
             />
           </div>
         ) : (
-          <p>Image not available.</p>
+          <p>{t("imageNotAvailable")}</p>
         )}
 
         {description && (
-          <div className="mt-4 text-[var(--text-gray)]">
+          <div className="mt-4 text-[var(--gray-blue)] light:text-[var(--gray-40)]">
             <p>{description}</p>
           </div>
         )}
 
         {body && (
-          <div className="mt-10 prose prose-invert max-w-none text-[var(--text-gray)]">
-            <ReactMarkdown rehypePlugins={[rehypeRaw]}>{body}</ReactMarkdown>
+          <div className="mt-10 prose prose-p:my-0 prose-li:my-5 max-w-none text-[var(--gray-blue)] light:text-[var(--gray-40)]">
+            {renderNode(body)}
           </div>
         )}
 
-        {category?.fields?.title && (
-          <div className="mt-4 text-[var(--text-gray)]">
-            <strong>Category: </strong>
-            {category.fields.title}
+        {category && (category as Entry<CategoryFields>).fields?.title && (
+          <div className="mt-4 text-[var(--gray-blue)] light:text-[var(--gray-40)]">
+            <strong>{t("category")}: </strong>
+            {category.fields.title as React.ReactNode}
           </div>
         )}
       </div>

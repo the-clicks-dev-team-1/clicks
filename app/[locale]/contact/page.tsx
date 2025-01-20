@@ -5,11 +5,22 @@ import ContactBlock from "@/components/contactBlock";
 import Footer from "@/components/footer";
 import Navbar from "@/components/navbar";
 
-export const metadata: Metadata = {
-  title: "Contact Us",
-  description:
-    "Let's talk! We're here to help you grow your business. Reach out to us for any inquiries, and we'll get back to you as soon as possible.",
-};
+export async function generateMetadata({
+  params,
+}: {
+  params: { locale: string };
+}): Promise<Metadata> {
+  const { locale } = params;
+
+  const t = await getTranslations({ locale, namespace: "contact" });
+
+  return {
+    title: t("title") || "Contact Us",
+    description:
+      t("description") ||
+      "Let's talk! We're here to help you grow your business. Reach out to us for any inquiries, and we'll get back to you as soon as possible.",
+  };
+}
 
 const Contact: FC<{ params: { locale: string } }> = async ({
   params: { locale },

@@ -333,6 +333,23 @@
       "dev": "Développeur Full-Stack | Spécialiste Web2 & Web3"
     }
   },
+  "blog": {
+    "title": "Le Blog de The Clicks",
+    "text": "Restez informé des dernières idées, astuces et tendances en marketing digital. Notre blog est votre ressource incontournable pour tout ce qui concerne le marketing.",
+    "searchPlaceholder": "Rechercher par titre de l'article...",
+    "allCategories": "Toutes les catégories",
+    "featuredPosts": "Articles en vedette",
+    "category": "Catégorie",
+    "author": "Auteur",
+    "date": "Date de publication",
+    "readMore": "Lire la suite",
+    "showMore": "Afficher plus d'articles"
+  },
+  "blogPost": {
+    "postNotFound": "Article introuvable",
+    "imageNotAvailable": "Image non disponible.",
+    "category": "Catégorie"
+  },
   "careers": {
     "title": "Rejoignez notre équipe",
     "text": "Nous recherchons toujours des personnes talentueuses et passionnées pour rejoindre notre équipe. Découvrez nos offres d'emploi actuelles et apprenez-en davantage sur la vie chez The Clicks.",
@@ -357,6 +374,8 @@
     }
   },
   "team": {
+    "metaTitle": "Notre équipe",
+    "metaDesc": "L'équipe de The Clicks est une fusion de passion, d'expérience et d'innovation, où chaque \"Clicker\" n'est pas seulement un employé, mais une force motrice derrière le succès.",
     "header": "Rencontrez les Clickers qui contribuent au succès de nos clients.",
     "description1": "L'équipe Clicks est une fusion de passion, d'expérience et d'innovation, où chaque \"Clicker\" n'est pas seulement un employé, mais une force motrice derrière le succès. Nous sommes des professionnels qui n'ont pas peur de remettre en question les approches marketing traditionnelles, créant des solutions qui bouleversent les règles du jeu. Notre arsenal comprend des technologies de pointe, des méthodes analytiques et des stratégies créatives qui aident les entreprises à attirer, fidéliser et émerveiller leurs clients. Chaque Clicker apporte son expertise unique, combinant ses efforts pour créer des campagnes marketing qui non seulement atteignent leurs objectifs, mais les dépassent.",
     "description2": "Au cœur de notre travail se trouve un partenariat avec nos clients, basé sur la confiance mutuelle et la compréhension. Nous nous efforçons de faire en sorte que chaque projet soit une étape vers un succès à long terme. Les Clickers ne sont pas de simples exécutants de tâches ; ils sont vos partenaires stratégiques, aidant à construire un écosystème numérique durable pour votre entreprise. Nous croyons qu'ensemble, avec vous, nous pouvons non seulement suivre l'évolution des temps, mais aussi définir des tendances en marketing digital.",
@@ -372,11 +391,12 @@
   },
   "contact": {
     "title": "Contactez-nous",
-    "description": "Discutons ensemble ! Nous sommes là pour vous aider à développer votre entreprise. N'hésitez pas à nous contacter pour toute question, et nous vous répondrons dans les plus brefs délais.",
+    "description": "Discutons ensemble! Nous sommes là pour vous aider à développer votre entreprise. N'hésitez pas à nous contacter pour toute question, et nous vous répondrons dans les plus brefs délais.",
     "location": "Notre emplacement"
   },
   "book": {
-    "title": "Réservez une réunion"
+    "title": "Réserver une réunion",
+    "description": "Discutons ensemble! Nous sommes là pour vous aider à développer votre entreprise. Contactez-nous pour toute demande, et nous vous répondrons dès que possible."
   },
   "licensing": {
     "title": "Licences",
@@ -408,6 +428,8 @@
     }
   },
   "pricing": {
+    "metaTitle": "Tarification",
+    "metaDesc": "Choisissez le plan qui correspond le mieux à vos besoins.",
     "title": "Tarification Simple",
     "subtitle": "Choisissez votre plan",
     "serviceTitle": "Suite de Services Marketing",
@@ -613,6 +635,7 @@
   },
   "privacyPolicy": {
     "title": "Politique de Confidentialité",
+    "metaDesc": "Cette politique de confidentialité explique comment The Clicks, agence de marketing numérique tout-en-un, collecte, utilise et divulgue vos informations.",
     "subtitle": "Votre vie privée est importante pour nous. Cette politique de confidentialité explique comment The Clicks, une agence de marketing numérique complète, collecte, utilise et divulgue vos informations.",
     "sections": {
       "1": {

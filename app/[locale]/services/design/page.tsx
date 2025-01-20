@@ -8,11 +8,25 @@ import Navbar from "@/components/navbar";
 import ServiceCard from "@/components/ServiceCard";
 import en from "@/i18n/messages/en.json";
 
-export const metadata: Metadata = {
-  title: "Graphic Design Services",
-  description:
-    "Elevate your brand with stunning visuals and creative graphic design solutions tailored to your needs",
-};
+export async function generateMetadata({
+  params,
+}: {
+  params: { locale: string };
+}): Promise<Metadata> {
+  const { locale } = params;
+
+  const t = await getTranslations({
+    locale,
+    namespace: "services.design.mainSection",
+  });
+
+  return {
+    title: t("title") || "Graphic Design Services",
+    description:
+      t("description") ||
+      "Elevate your brand with stunning visuals and creative graphic design solutions tailored to your needs",
+  };
+}
 
 const servicesItems = en.services.design.items.map((_, index) => ({
   count: `0${index + 1}`,

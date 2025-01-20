@@ -1,10 +1,11 @@
-import client from "./contentful";
+import clientNew from "@/lib/contentfulNew";
 
-export const getJob = async (slug: string) => {
+export const getJob = async (slug: string, locale: string) => {
   try {
-    const entries = await client.getEntries({
+    const entries = await clientNew.getEntries({
       content_type: "jobOpening",
       "fields.slug": slug,
+      locale,
     });
     return entries.items[0];
   } catch (err) {
@@ -13,11 +14,12 @@ export const getJob = async (slug: string) => {
   }
 };
 
-export const getBlogPost = async (slug: string) => {
+export const getBlogPost = async (slug: string, locale: string) => {
   try {
-    const entries = await client.getEntries({
+    const entries = await clientNew.getEntries({
       content_type: "blogPost",
       "fields.slug": slug,
+      locale,
     });
     return entries.items[0];
   } catch (err) {
