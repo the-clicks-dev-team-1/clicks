@@ -10,6 +10,7 @@ import Services from "@/components/services";
 import { TheWayWeWork } from "@/components/TheWayWeWork";
 import SliderOne from "@/components/ui/slider";
 import { Link } from "@/i18n/routing";
+import ScrollButton from "@/components/ui/ScrollButton";
 
 export async function generateMetadata({
   params,
@@ -50,12 +51,7 @@ export default async function Home({
           {t("description")}
         </p>
         <div className="flex justify-center">
-          <Link
-            href="/book"
-            className="inline-block bg-[var(--ocean-blue)] #bg-gradient-to-r from-sky-400 to-purple-500 text-white font-bold py-3 px-6 rounded-lg shadow-lg hover:bg-opacity-75 transition duration-300 light:bg-[var(--ocean-blue)] light:bg-none"
-          >
-            {t("cta")}
-          </Link>
+          <ScrollButton targetSection="#contact">{t("cta")}</ScrollButton>
         </div>
       </div>
       <div className="mx-auto relative z-10 w-full">
