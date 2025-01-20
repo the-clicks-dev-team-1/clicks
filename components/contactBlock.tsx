@@ -7,7 +7,11 @@ type ContactBlockProps = {
 };
 
 const ContactBlock = ({ consultation }: ContactBlockProps) => {
-  return <ContactForm consultation={consultation} />;
+  return (
+    <div id="contact">
+      <ContactForm consultation={consultation} />
+    </div>
+  );
 };
 
 export default ContactBlock;
