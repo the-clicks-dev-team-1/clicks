@@ -7,9 +7,9 @@ import en from "@/i18n/messages/en.json";
 const AddOnServices = () => {
   const testimonials = Object.entries(en.pricing.testimonials).map(
     ([key, value]) => ({
-      quote: `${key}.quote`,
-      name: `${key}.name`,
-      designation: `${key}.designation`,
+      quote: `pricing.testimonials.${key}.quote`,
+      name: `pricing.testimonials.${key}.name`,
+      designation: `pricing.testimonials.${key}.designation`,
       src: `/images/addonservices/${key}.png`,
     })
   );
