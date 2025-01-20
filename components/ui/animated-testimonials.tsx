@@ -22,7 +22,7 @@ export const AnimatedTestimonials = ({
   testimonials: Testimonial[];
   autoplay?: boolean;
 }) => {
-  const t = useTranslations("pricing.testimonials");
+  const t = useTranslations();
   const [active, setActive] = useState(0);
 
   const handleNext = useCallback(() => {
