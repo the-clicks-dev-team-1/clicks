@@ -170,9 +170,9 @@ export default function Navbar() {
                 onClick={() => handleLinkClick(i)}
               >
                 <span className="whitespace-nowrap">{t(`${d.label}`)}</span>
-                {d.children && (
+                {/* {d.children && (
                   <IoIosArrowDown className="transition-transform group-hover:rotate-180" />
-                )}
+                )} */}
               </ActiveLink>
               {d.children && (
                 <div className="absolute z-10 left-0 top-full hidden group-hover:block flex-col bg-black/90 light:bg-white text-[var(--gray-blue)] hover:text-white light:text-[var(--gray-70)] rounded-lg shadow-md py-3 transition-all">
@@ -297,11 +297,11 @@ function SingleNavItem(d: NavItem & { closeSideMenu: () => void }) {
             className="flex items-center justify-between px-2 py-3 text-neutral-400 light:text-[var(--gray-70)] hover:text-[var(--text)] light:hover:text-[var(--text)] light:hover:font-bold cursor-pointer"
           >
             <span>{t(`${d.label}`)}</span>
-            <IoIosArrowDown
+            {/* <IoIosArrowDown
               className={`text-xs transition-transform ${
                 isItemOpen ? "rotate-180" : ""
               }`}
-            />
+            /> */}
           </div>
           {isItemOpen && (
             <div className="flex flex-col bg-[var(--bgnew)] text-[var(--text)] rounded-lg shadow-md py-3">
