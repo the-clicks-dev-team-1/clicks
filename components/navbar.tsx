@@ -22,9 +22,10 @@ import ActiveLink from "./activelink";
 import { useTheme } from "next-themes";
 import LocaleSwitcher from "./LocaleSwitcher";
 import Logo from "./Logo";
-import { usePathname } from "@/i18n/routing";
+import { Link, usePathname } from "@/i18n/routing";
 import Runner from "./Runner";
 import { useTranslations } from "next-intl";
+import ScrollButton from "./ui/ScrollButton";
 
 type NavItem = {
   label: string;
@@ -223,15 +224,13 @@ export default function Navbar() {
             </button>
           )}
 
-          <ActiveLink
-            href="/#contact-section"
-            scroll={true}
-            className="hidden md:block"
+          <ScrollButton
+            targetSection="#contact" // The section with id="contact"
+            className="px-4 py-2 animate-shimmer items-center justify-center rounded-lg border border-[var(--border-color)] light:border-[var(--ocean-blue)] light:bg-[var(--light-blue)] dark:bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] light:bg-[linear-gradient(110deg,#f8fbff,45%,#edf8fe,55%,#f8fbff)] bg-[length:200%_100%] transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 light:border-[1px] light:bg-white light:text-black #light:bg-none"
+            variant="primary" // You can still use variants like 'primary' if needed
           >
-            <button className="px-4 py-2 animate-shimmer items-center justify-center rounded-lg border border-[var(--border-color)] light:border-[var(--ocean-blue)] light:bg-[var(--light-blue)] dark:bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] light:bg-[linear-gradient(110deg,#f8fbff,45%,#edf8fe,55%,#f8fbff)] bg-[length:200%_100%] transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 light:border-[1px] light:bg-white light:text-black #light:bg-none">
-              {t("book")}
-            </button>
-          </ActiveLink>
+            {t("book")}
+          </ScrollButton>
 
           <div className="flex items-center md:hidden">
             <FiMenu

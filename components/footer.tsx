@@ -156,7 +156,7 @@ const Footer = () => {
               </h2>
               <ul className="light:text-[var(--gray-70)] text-[var(--gray-blue)] font-medium">
                 <li className="mb-4">
-                  <ActiveLink href="#services" className="hover:underline">
+                  <ActiveLink href="/#services" className="hover:underline">
                     {t("services")}
                   </ActiveLink>
                 </li>

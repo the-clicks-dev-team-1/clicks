@@ -26,7 +26,7 @@ export default function ScrollButton({
   targetPage,
   className = "",
   variant = "primary",
-  offset = -100,
+  offset = -140,
 }: ScrollButtonProps) {
   const router = useRouter();
 
@@ -70,7 +70,7 @@ export default function ScrollButton({
         rounded-lg 
         shadow-lg 
         transition 
-        duration-300 
+        #duration-300 
         ${variantStyles[variant]}
         ${className}
       `}
