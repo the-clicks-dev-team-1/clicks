@@ -1,14 +1,12 @@
-"use client";
-
 import { LinkProps } from "next/link";
-import React, { useEffect } from "react";
-import { Link, usePathname } from "@/i18n/routing";
+import { Link, usePathname, useRouter } from "@/i18n/routing";
 
 type ActiveLinkProps = Omit<LinkProps, "locale"> & {
   children: React.ReactNode;
   activeClassName?: string;
   className?: string;
   scroll?: boolean;
+  offset?: number;
 };
 
 const ActiveLink: React.FC<ActiveLinkProps> = ({
@@ -16,30 +14,42 @@ const ActiveLink: React.FC<ActiveLinkProps> = ({
   activeClassName,
   className,
   href,
-  scroll = false,
+  scroll = true,
+  offset = -120,
   ...props
 }) => {
   const pathname = usePathname();
+  const router = useRouter();
   const isHashLink = typeof href === "string" && href.startsWith("/#");
   const isActive = pathname === href; // Check if the current path matches the href
 
-  useEffect(() => {
-    if (isHashLink && typeof window !== "undefined") {
-      const hash = href.split("#")[1];
-      const element = document.getElementById(hash);
-
-      const scrollToElement = () => {
-        if (element) {
-          element.scrollIntoView({ behavior: "smooth" });
-        }
-      };
-
-      // If already on the correct page, scroll immediately
-      if (pathname === "/") {
-        scrollToElement();
-      }
+  const handleScroll = (hash: string) => {
+    const element = document.getElementById(hash);
+    if (element) {
+      const elementPosition =
+        element.getBoundingClientRect().top + window.pageYOffset;
+      window.scrollTo({
+        top: elementPosition + offset,
+        behavior: "smooth",
+      });
     }
-  }, [href, pathname, isHashLink]);
+  };
+
+  const handleClick = (e: React.MouseEvent) => {
+    e.preventDefault();
+
+    if (isHashLink && typeof href === "string") {
+      const hash = href.split("#")[1];
+      if (pathname === "/") {
+        handleScroll(hash); // Scroll immediately if already on the same page
+      } else {
+        router.push("/"); // Navigate to the home page first
+        setTimeout(() => handleScroll(hash), 1000); // Delay to ensure the DOM updates
+      }
+    } else {
+      router.push(href as string); // Navigate normally for non-hash links
+    }
+  };
 
   // Prevent the link from rendering or handling the click if it links to the current page
   if (isActive) {
@@ -54,7 +64,8 @@ const ActiveLink: React.FC<ActiveLinkProps> = ({
     <Link
       href={href}
       className={className}
-      scroll={isHashLink ? false : scroll}
+      onClick={handleClick}
+      scroll={isHashLink ? true : scroll}
       {...props}
     >
       {children}

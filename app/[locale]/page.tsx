@@ -51,7 +51,9 @@ export default async function Home({
           {t("description")}
         </p>
         <div className="flex justify-center">
-          <ScrollButton targetSection="#contact">{t("cta")}</ScrollButton>
+          <ScrollButton className="duration-300" targetSection="#contact">
+            {t("cta")}
+          </ScrollButton>
         </div>
       </div>
       <div className="mx-auto relative z-10 w-full">
