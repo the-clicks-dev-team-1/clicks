@@ -35,7 +35,6 @@ const LogoSlide = ({
 
     testImage.onload = () => setHasPngVariants(true);
     testImage.onerror = () => setHasPngVariants(false);
-
     setMounted(true);
   }, [logoName, theme]);
 
