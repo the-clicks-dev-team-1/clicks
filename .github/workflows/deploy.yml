@@ -1,0 +1,151 @@
+name: Deploy to DigitalOcean
+
+on:
+  push:
+    branches:
+      - main # Set to the branch you want to trigger deployment.
+
+permissions:
+  contents: write # Grant write access to repository contents
+  packages: write # Allow package creation
+
+jobs:
+  build-and-deploy-nextjs:
+    runs-on: ubuntu-latest
+
+    env:
+      NEXT_IMAGE: ghcr.io/the-clicks-dev-team-1/clicks-nextjs # Change to your GitHub Container Registry or Docker Hub image name
+      NEXT_PUBLIC_STRAPI_API_URL: ${{ secrets.NEXT_PUBLIC_CONTENTFUL_SPACE_ID_NEW }}
+      NEXT_PUBLIC_STRIPE_PUBLIC_KEY: ${{ secrets.NEXT_PUBLIC_CONTENTFUL_ACCESS_TOKEN_NEW }}
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Show environment variables
+        run: |
+          echo "NEXT_PUBLIC_CONTENTFUL_SPACE_ID_NEW=${{ secrets.NEXT_PUBLIC_CONTENTFUL_SPACE_ID_NEW }}"
+          echo "NEXT_PUBLIC_CONTENTFUL_ACCESS_TOKEN_NEW=${{ secrets.NEXT_PUBLIC_CONTENTFUL_ACCESS_TOKEN_NEW }}"
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      # Cache Docker layers to speed up builds
+      - name: Cache Docker layers
+        uses: actions/cache@v4
+        with:
+          path: /tmp/.buildx-cache
+          key: ${{ runner.os }}-docker-${{ github.sha }}
+          restore-keys: |
+            ${{ runner.os }}-docker-
+
+      - name: Log in to GitHub Container Registry
+        uses: docker/login-action@v3
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GHCR_PAT }}
+
+      - name: Build and push Next.js Docker image
+        run: |
+          # Added --pull to ensure latest base image layers are used
+          docker build \
+          --build-arg NEXT_PUBLIC_CONTENTFUL_SPACE_ID_NEW=${{ secrets.NEXT_PUBLIC_CONTENTFUL_SPACE_ID_NEW }} \
+          --build-arg NEXT_PUBLIC_CONTENTFUL_ACCESS_TOKEN_NEW=${{ secrets.NEXT_PUBLIC_CONTENTFUL_ACCESS_TOKEN_NEW }} \
+          --pull -t $NEXT_IMAGE:${{ github.sha }} .
+          docker tag $NEXT_IMAGE:${{ github.sha }} $NEXT_IMAGE:latest
+          docker push $NEXT_IMAGE:${{ github.sha }}
+          docker push $NEXT_IMAGE:latest
+
+      - name: Deploy to DigitalOcean Droplet via SSH
+        uses: appleboy/ssh-action@v0.1.8
+        with:
+          host: ${{ secrets.DO_HOST }}
+          username: ${{ secrets.DO_USER }}
+          key: ${{ secrets.DO_SSH_KEY }}
+          port: 22
+          script: |
+            NEXT_IMAGE="ghcr.io/the-clicks-dev-team-1/clicks-nextjs:latest"
+            PORT=3000
+            HOST_PORT=3000
+
+            # Create Docker network if it doesn’t already exist
+            docker network inspect my-network >/dev/null 2>&1 || docker network create my-network
+
+            echo "Deploying image: $NEXT_IMAGE"
+
+            # Stop and remove any existing container
+            docker stop nextjs-app || true
+            docker rm -f nextjs-app || true
+
+            # Check if port 3000 is in use, and kill processes if necessary
+            if sudo lsof -i :$PORT; then
+              echo "Port $PORT is in use. Terminating all processes using this port..."
+              sudo fuser -k $PORT/tcp
+            fi
+
+            # Pull the new image
+            docker pull $NEXT_IMAGE
+
+            # Run the container with the dynamically chosen port
+            docker run -d \
+              --name nextjs-app \
+              --env-file /root/clicks/.env \
+              --network my-network \
+              -p $HOST_PORT:$PORT \
+              -e NODE_ENV=production \
+              -e NEXT_TELEMETRY_DISABLED=1 \
+              -e PORT=$PORT \
+              -e HOSTNAME=0.0.0.0 \
+              -e NEXT_PUBLIC_CONTENTFUL_SPACE_ID_NEW=${{ secrets.NEXT_PUBLIC_CONTENTFUL_SPACE_ID_NEW }} \
+              -e NEXT_PUBLIC_CONTENTFUL_ACCESS_TOKEN_NEW=${{ secrets.NEXT_PUBLIC_CONTENTFUL_ACCESS_TOKEN_NEW }} \
+              $NEXT_IMAGE
+
+  clean-up-old-docker-images:
+    runs-on: ubuntu-latest
+    needs: [build-and-deploy-nextjs]
+    steps:
+      - name: SSH into DigitalOcean Droplet and clean up Docker images, volumes, and build cache
+        uses: appleboy/ssh-action@v0.1.8
+        with:
+          host: ${{ secrets.DO_HOST }}
+          username: ${{ secrets.DO_USER }}
+          key: ${{ secrets.DO_SSH_KEY }}
+          port: 22
+          script: |
+            echo "Starting Docker image, volume, and build cache cleanup..."
+
+            # List the last 6 images based on creation date and store their IDs
+            images_to_keep=$(docker images --all --format "{{.ID}} {{.CreatedAt}}" | sort -k2 -r | head -n 4 | awk '{print $1}')
+
+            # If no images are found, exit safely
+            if [ -z "$images_to_keep" ]; then
+                echo "No images found to keep or delete."
+                exit 0
+            fi
+
+            echo "Images to keep:"
+            echo "$images_to_keep"
+
+            # Create a pattern for grep to match IDs to keep
+            keep_pattern=$(echo "$images_to_keep" | tr '\n' '|' | sed 's/|$//')
+
+            # Delete images not in the keep list
+            echo "Deleting older images..."
+            docker images --all --format "{{.ID}}" --no-trunc | \
+            grep -v -E "$keep_pattern" | \
+            xargs -r docker rmi -f
+
+            # Clean up dangling volumes (volumes not associated with any container)
+            echo "Removing dangling volumes..."
+            docker volume prune -f
+
+            # Clean up build cache
+            echo "Removing build cache..."
+            docker builder prune -f
+
+            # Optionally, clean up stopped containers if you're sure they are no longer needed
+            echo "Removing stopped containers..."
+            docker container prune -f
+
+            echo "Docker cleanup complete."
