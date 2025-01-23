@@ -94,6 +94,7 @@ const BlogPost = async ({
               alt={title}
               width={800}
               height={400}
+              unoptimized
               className="object-cover w-full h-auto rounded-lg"
             />
           </div>

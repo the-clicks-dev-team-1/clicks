@@ -96,6 +96,7 @@ const JobDetail = async ({
               src={`${image[0].url}`}
               alt={title}
               fill
+              unoptimized
               className="object-cover rounded-xl max-w-[800px] place-self-center"
               priority
             />
