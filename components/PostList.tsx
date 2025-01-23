@@ -104,6 +104,7 @@ const PostList: FC<PostListProps> = ({ locale }) => {
                   alt={post.fields.title}
                   width={600}
                   height={400}
+                  unoptimized
                   className="object-cover w-full h-48 md:h-64"
                 />
               )}
