@@ -192,9 +192,9 @@ export default function ContactForm({ consultation }: ContactFormProps) {
               </h2>
             )}
             <div className="flex-1">
-              <p className="text-lg mb-10 text-[var(--gray-blue)] light:text-[var(--gray-70)]">
+              {/* <p className="text-lg mb-10 text-[var(--gray-blue)] light:text-[var(--gray-70)]">
                 {t("description")}
-              </p>
+              </p> */}
               <p className="text-lg mb-2 flex gap-3">
                 <Image
                   src="/icons/iphone.svg"
@@ -204,7 +204,7 @@ export default function ContactForm({ consultation }: ContactFormProps) {
                   className="h-auto w-auto"
                 />
                 <a
-                  href="tel:+15068718210"
+                  href="tel:+15068895740"
                   className="text-[var(--gray-blue)] light:text-[var(--gray-100)]"
                 >
                   {t("contact.phone")}
@@ -245,9 +245,9 @@ export default function ContactForm({ consultation }: ContactFormProps) {
                 <form
                   id="contactServiceForm"
                   onSubmit={form.handleSubmit(onSubmit)}
-                  className="contact-form space-y-4 h-full rounded-3xl p-6 flex flex-col justify-between"
+                  className="contact-form space-y-4 h-full rounded-3xl #p-6 flex flex-col justify-between"
                 >
-                  <div className="md:flex items-center gap-6">
+                  {/* <div className="md:flex items-center gap-6">
                     <FormField
                       control={form.control}
                       name="first_name"
@@ -293,7 +293,7 @@ export default function ContactForm({ consultation }: ContactFormProps) {
                         </FormItem>
                       )}
                     />
-                  </div>
+                  </div> */}
 
                   <FormField
                     control={form.control}
@@ -318,7 +318,7 @@ export default function ContactForm({ consultation }: ContactFormProps) {
                     )}
                   />
 
-                  <FormField
+                  {/* <FormField
                     control={form.control}
                     name="company_name"
                     render={({ field }) => (
@@ -404,7 +404,7 @@ export default function ContactForm({ consultation }: ContactFormProps) {
                         </Select>
                       </FormItem>
                     )}
-                  />
+                  /> */}
 
                   <FormField
                     control={form.control}
@@ -430,7 +430,7 @@ export default function ContactForm({ consultation }: ContactFormProps) {
                     )}
                   />
 
-                  <FormField
+                  {/* <FormField
                     control={form.control}
                     name="consent"
                     render={({ field }) => (
@@ -454,7 +454,7 @@ export default function ContactForm({ consultation }: ContactFormProps) {
                         )}
                       </FormItem>
                     )}
-                  />
+                  /> */}
 
                   <div className="flex items-center gap-4">
                     <Button
