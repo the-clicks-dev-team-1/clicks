@@ -193,7 +193,7 @@ const Footer = () => {
                   </a>
                 </li>
                 <li className="mb-4">
-                  <a href="tel:+15068718210" className="">
+                  <a href="tel:+15068895740" className="">
                     {c("phone")}
                   </a>
                 </li>
