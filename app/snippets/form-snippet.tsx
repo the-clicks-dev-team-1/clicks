@@ -225,7 +225,7 @@ export default function ContactForm({ consultation }: ContactFormProps) {
                   {t("contact.email")}
                 </a>
               </p>
-              <p className="text-lg flex gap-3 text-[var(--gray-blue)] light:text-[var(--gray-100)]">
+              <p className=" max-w-[380px] text-lg flex gap-3 text-[var(--gray-blue)] light:text-[var(--gray-100)]">
                 <Image
                   src="/icons/map-marker.svg"
                   alt="map-marker"

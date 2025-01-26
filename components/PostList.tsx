@@ -128,7 +128,7 @@ const PostList: FC<PostListProps> = ({ locale }) => {
                   {new Date(post.sys.updatedAt).toLocaleDateString()}
                 </p>
                 <Link
-                  href={`/blog/${post.fields.slug}`}
+                  href={`/about/blog/${post.fields.slug}`}
                   className="inline-block mt-4 bg-[var(--ocean-blue)] #bg-gradient-to-r from-sky-400 to-purple-500 text-white py-2 px-4 rounded-lg shadow-lg hover:bg-opacity-75 transition duration-300"
                 >
                   {t("readMore")}

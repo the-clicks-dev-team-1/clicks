@@ -235,9 +235,9 @@
     "contact": {
       "phone": "+1 506 871 8210",
       "email": "info@theclicks.ca",
-      "address": "860 rue Main, Moncton",
-      "address2": "860 rue Main, Moncton,\nNB, Canada",
-      "fullAddress": "860 rue Main, Moncton, NB, Canada, E1A 0G9"
+      "address": "860 rue Main, Bureau 801, Moncton, NB, Canada, E1A 0G9",
+      "address2": "860 rue Main, Bureau 801, Moncton,\nNB, Canada, E1A 0G9",
+      "fullAddress": "860 rue Main, Bureau 801, Moncton, NB, Canada, E1A 0G9"
     },
     "submit": "Soumettre",
     "required": "Ce champ est obligatoire",
