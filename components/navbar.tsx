@@ -74,9 +74,9 @@ const navItems: NavItem[] = [
       { label: "aboutAgency", link: "/about/about-agency" },
       { label: "team", link: "/about/team" },
       { label: "careers", link: "/about/careers" },
+      { label: "blog", link: "/about/blog" },
     ],
   },
-  { label: "blog", link: "/blog" },
   { label: "contacts", link: "/contact" },
 ];
 

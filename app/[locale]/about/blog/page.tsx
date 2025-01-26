@@ -1,8 +1,8 @@
 import { FC } from "react";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
-import ContactBlock from "../../../components/contactBlock";
-import SubscriptionForm from "../../../components/subscription";
+import ContactBlock from "../../../../components/contactBlock";
+import SubscriptionForm from "../../../../components/subscription";
 import { getTranslations } from "next-intl/server";
 import PostList from "@/components/PostList";
 import { Metadata } from "next";
