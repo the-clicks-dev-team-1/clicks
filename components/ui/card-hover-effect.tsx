@@ -1,5 +1,4 @@
 import { Link } from "@/i18n/routing";
-import client from "@/lib/contentful";
 import { cn } from "@/lib/utils";
 import { AnimatePresence, motion } from "framer-motion";
 import { useTranslations } from "next-intl";

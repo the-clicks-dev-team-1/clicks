@@ -64,39 +64,39 @@
     }
   },
   "home": {
-    "title": "Transform your business with artificial intelligence",
-    "description": "Revolutionize operations, optimize processes, and drive growth with smarter decisions and innovation.",
+    "title": "Transform your Canadian business with artificial intelligence",
+    "description": "Revolutionise your operations, optimise processes, and drive sustainable growth with Confident decisions and innovative solutions, tailored for Canadian businesses.",
     "cta": "Book A Call",
     "ourPartners": "Our partners:",
     "block": {
-      "whileYouSpentTime": "While you spent time with your family, our solutions work towards your success.",
-      "weLeverageTopTier": "We leverage top-tier Internet marketing tools to ensure the success of our valued partners. Our commitment includes a customer-centric approach, delivering predictable results, and an unwavering focus on enhancing profitability."
+      "whileYouSpentTime": "While you focus on your family, we focus on your success. Our solutions work tirelessly to help your Canadian business grow.",
+      "weLeverageTopTier": "We use top-tier internet marketing tools to help Canadian businesses succeed. Our customer-first approach delivers predictable results and enhances your profitability."
     },
     "wobbleCard": {
       "1": {
-        "title": "Global Marketing Expertise",
+        "title": "Global Marketing Expertise with a Canadian Focus",
         "description": "At The Clicks, we leverage our broad expertise across diverse marketing domains to offer rapid scalability and adaptable engagement models. Our goal is to help clients refine their marketing strategies, foster a data-centric culture, and achieve sustainable growth."
       },
       "2": {
-        "title": "Your Growth Ally",
+        "title": "Your Growth Ally in Canada",
         "description": "We are committed to delivering immediate outcomes while fostering your long-term success. At The Clicks, your ROI and revenue go beyond mere metrics—we substantiate our impact by supporting your marketing initiatives throughout the entire customer journey to maximize results."
       },
       "3": {
-        "title": "Data-Driven, Predictable, and Transparent",
+        "title": "Data-Driven, Predictable, and Transparent Marketing for Canadian Businesses",
         "description": "Our meticulously developed methods and processes have empowered a wide range of businesses, from startups to established enterprises, across more than 10 industries. We maintain our agility, adaptability, and ease of collaboration, regardless of our extensive experience."
       },
       "4": {
-        "title": "Tailored Marketing Solutions",
+        "title": "Tailored Marketing Solutions for Canadian Businesses",
         "description": "We customize our strategies to meet your specific business needs and objectives, ensuring every marketing plan aligns with your goals. Our team stays updated on the latest trends and technologies to provide the best outcomes."
       },
       "5": {
-        "title": "Holistic Customer Engagement",
+        "title": "Holistic Customer Engagement for Canadian Businesses",
         "description": "We integrate multiple touchpoints and channels to create seamless customer experiences. Our comprehensive strategy covers everything from initial awareness to post-purchase support, enhancing customer loyalty and driving repeat business."
       }
     },
     "services": {
-      "ourServices": "Our Services",
-      "atOurCompany": "At our company, we cater to businesses of all sizes, ensuring that both small enterprises and large corporations receive top-notch services. Our dedicated efforts are aimed at fostering the growth and prosperity of your business."
+      "ourServices": "Our Services for Canadian Businesses",
+      "atOurCompany": "We cater to Canadian businesses of all sizes, ensuring that small enterprises and large corporations receive world-class service. Our focus is on fostering your growth and prosperity."
     },
     "testimonials": {
       "title": "The way we work",
@@ -180,13 +180,21 @@
     }
   },
   "projects": {
+    "cm": {
+      "title": "Content Marketing",
+      "description": "Creating valuable content to attract and retain your target audience."
+    },
+    "smm": {
+      "title": "Social Media Marketing",
+      "description": "Managing content, strategies, and communities across key platforms."
+    },
     "stratdev": {
       "title": "Strategy Development",
-      "description": "Detailed consultation to understand the client's business goals, target audience, and current marketing efforts. Development of a customized digital marketing strategy."
+      "description": "Detailed consultation to understand the client's business goals, target audience, and current marketing efforts."
     },
     "webdev": {
       "title": "Web Design & Development",
-      "description": "Creation of a modern, responsive website optimized for user experience and conversions."
+      "description": "Building modern, responsive websites focused on user experience and conversion optimization."
     },
     "seo": {
       "title": "Search Engine Optimization",
@@ -195,14 +203,6 @@
     "ppc": {
       "title": "Pay-Per-Click Advertising",
       "description": "Management of PPC campaigns to drive targeted traffic and increase conversions."
-    },
-    "smm": {
-      "title": "Social Media Marketing",
-      "description": "Social media strategy, content creation, and community management across platforms like Facebook, Instagram, Twitter, LinkedIn, and others."
-    },
-    "cm": {
-      "title": "Content Marketing",
-      "description": "Creation and distribution of valuable content to attract and engage the target audience."
     },
     "em": {
       "title": "Email Marketing",
@@ -332,7 +332,9 @@
       "cd": "Creative Director & Co-founder",
       "pc": "Project Coordinator",
       "gd": "Graphic Designer",
-      "dev": "Full-Stack Developer | Web2 & Web3 Specialist"
+      "dev": "Full-Stack Developer | Web2 & Web3 Specialist",
+      "smm": "SMM Specialist",
+      "ai": "AI helper"
     }
   },
   "blog": {
@@ -424,6 +426,36 @@
     "salary": "Salary",
     "perYear": "per year",
     "jobType": "Job Type"
+  },
+  "portfolio": {
+    "title": "Our Works",
+    "description": "With a proven track record across diverse industries, our expertise knows no bounds. We excel in adapting to unique challenges and delivering exceptional results in any sector. By leveraging our deep understanding and valuable insights, we provide tailored solutions that elevate every project we undertake.",
+    "items": [
+      {
+        "imageTitle": "bursh",
+        "url": "https://bursh.com.ua/"
+      },
+      {
+        "imageTitle": "leech",
+        "url": "https://www.leechprotocol.com/"
+      },
+      {
+        "imageTitle": "investstream",
+        "url": "https://investream.us/"
+      },
+      {
+        "imageTitle": "indigo",
+        "url": "https://www.carsindigo.com/"
+      },
+      {
+        "imageTitle": "dressmaking",
+        "url": "https://dressmakingamore.com/"
+      },
+      {
+        "imageTitle": "osvita",
+        "url": "https://it-osvita.diia.gov.ua/"
+      }
+    ]
   },
   "contact": {
     "title": "Contact Us",
@@ -647,6 +679,16 @@
       ]
     },
     "testimonials": {
+      "dron": {
+        "quote": "Capture breathtaking aerial views with our professional drone videography service. Perfect for events, real estate, commercials, or creative projects, our high-quality drones deliver stunning visuals from unique perspectives.",
+        "name": "Drone video shoot",
+        "designation": ""
+      },
+      "content": {
+        "quote": "Bring your ideas to life with our professional content creation services. From engaging videos and eye-catching photography to compelling copy and social media assets, we craft content tailored to your brand's voice and vision.",
+        "name": "Content creation",
+        "designation": ""
+      },
       "video": {
         "quote": "We create compelling videos that showcase your story, promote your products, and captivate viewers across all platforms. Whether it’s promotional videos, tutorials, or social media reels, we bring your vision to life with creativity and precision.",
         "name": "Video Production",

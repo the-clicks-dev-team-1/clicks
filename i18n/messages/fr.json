@@ -64,39 +64,39 @@
     }
   },
   "home": {
-    "title": "Transformez votre entreprise avec l'intelligence artificielle",
-    "description": "Révolutionnez les opérations, optimisez les processus et stimulez la croissance grâce à des décisions et des innovations plus intelligentes.",
+    "title": "Transformez votre entreprise canadienne avec l'intelligence artificielle",
+    "description": "Révolutionnez vos opérations, optimisez les processus et stimulez une croissance durable grâce à des décisions confiantes et des solutions innovantes, adaptées aux entreprises canadiennes.",
     "cta": "Réserver un appel",
     "ourPartners": "Nos partenaires :",
     "block": {
-      "whileYouSpentTime": "Pendant que vous passiez du temps avec votre famille, nos solutions travaillent à votre succès.",
-      "weLeverageTopTier": "Nous utilisons des outils de marketing Internet de premier ordre pour assurer le succès de nos précieux partenaires. Notre engagement comprend une approche centrée sur le client, la livraison de résultats prévisibles et une attention constante à l'amélioration de la rentabilité."
+      "whileYouSpentTime": "Pendant que vous vous concentrez sur votre famille, nous nous concentrons sur votre succès. Nos solutions travaillent sans relâche pour aider votre entreprise canadienne à se développer.",
+      "weLeverageTopTier": "Nous utilisons des outils de marketing internet de premier plan pour aider les entreprises canadiennes à réussir. Notre approche centrée sur le client offre des résultats prévisibles et améliore votre rentabilité."
     },
     "wobbleCard": {
       "1": {
-        "title": "Expertise en marketing mondial",
+        "title": "Expertise en marketing mondial avec un accent canadien",
         "description": "Chez The Clicks, nous exploitons notre vaste expertise dans divers domaines du marketing pour offrir une évolutivité rapide et des modèles d'engagement adaptables. Notre objectif est d'aider les clients à affiner leurs stratégies marketing, à favoriser une culture axée sur les données et à atteindre une croissance durable."
       },
       "2": {
-        "title": "Votre allié pour la croissance",
+        "title": "Votre allié pour la croissance au Canada",
         "description": "Nous nous engageons à fournir des résultats immédiats tout en favorisant votre succès à long terme. Chez The Clicks, votre retour sur investissement et vos revenus dépassent de simples métriques—nous prouvons notre impact en soutenant vos initiatives marketing tout au long du parcours client pour maximiser les résultats."
       },
       "3": {
-        "title": "Axé sur les données, prévisible et transparent",
+        "title": "Marketing basé sur les données, prévisible et transparent pour les entreprises canadiennes",
         "description": "Nos méthodes et processus soigneusement élaborés ont permis à un large éventail d'entreprises, des startups aux entreprises établies, dans plus de 10 industries. Nous maintenons notre agilité, notre adaptabilité et notre facilité de collaboration, quelles que soient nos expériences étendues."
       },
       "4": {
-        "title": "Solutions marketing sur mesure",
+        "title": "Solutions de marketing sur mesure pour les entreprises canadiennes",
         "description": "Nous personnalisons nos stratégies pour répondre aux besoins spécifiques de votre entreprise, garantissant que chaque plan marketing s'aligne sur vos objectifs. Notre équipe se tient à jour des dernières tendances et technologies pour fournir les meilleurs résultats."
       },
       "5": {
-        "title": "Engagement client holistique",
+        "title": "Engagement client global pour les entreprises canadiennes",
         "description": "Nous intégrons plusieurs points de contact et canaux pour créer des expériences client transparentes. Notre stratégie globale couvre tout, de la sensibilisation initiale au support après achat, renforçant ainsi la fidélité des clients et stimulant les affaires répétées."
       }
     },
     "services": {
-      "ourServices": "Nos services",
-      "atOurCompany": "Dans notre entreprise, nous répondons aux besoins des entreprises de toutes tailles, en veillant à ce que les petites entreprises comme les grandes reçoivent des services de premier ordre. Nos efforts dévoués visent à favoriser la croissance et la prospérité de votre entreprise."
+      "ourServices": "Nos services pour les entreprises canadiennes",
+      "atOurCompany": "Nous nous adressons aux entreprises canadiennes de toutes tailles, en veillant à ce que les petites entreprises comme les grandes corporations reçoivent un service de classe mondiale. Notre objectif est de favoriser votre croissance et votre prospérité."
     },
     "testimonials": {
       "title": "La façon dont nous travaillons",
@@ -180,14 +180,6 @@
     }
   },
   "projects": {
-    "stratdev": {
-      "title": "Développement de Stratégie",
-      "description": "Consultation détaillée pour comprendre les objectifs commerciaux, le public cible et les efforts marketing actuels du client. Élaboration d'une stratégie de marketing numérique personnalisée."
-    },
-    "webdev": {
-      "title": "Conception et Développement Web",
-      "description": "Création d'un site web moderne et réactif optimisé pour l'expérience utilisateur et les conversions."
-    },
     "seo": {
       "title": "Optimisation pour les Moteurs de Recherche",
       "description": "SEO sur la page et hors page pour améliorer le classement dans les moteurs de recherche et le trafic organique."
@@ -195,14 +187,6 @@
     "ppc": {
       "title": "Publicité au Coût par Clic",
       "description": "Gestion des campagnes PPC pour générer un trafic ciblé et augmenter les conversions."
-    },
-    "smm": {
-      "title": "Marketing sur les Réseaux Sociaux",
-      "description": "Stratégie de réseaux sociaux, création de contenu et gestion de communauté sur des plateformes comme Facebook, Instagram, Twitter, LinkedIn, et autres."
-    },
-    "cm": {
-      "title": "Marketing de Contenu",
-      "description": "Création et distribution de contenu précieux pour attirer et engager le public cible."
     },
     "em": {
       "title": "Marketing par Courriel",
@@ -227,6 +211,22 @@
     "design": {
       "title": "Conception Graphique",
       "description": "La conception graphique est un service créatif impliquant la création de designs visuellement attrayants et percutants pour communiquer des messages et renforcer l'identité de la marque."
+    },
+    "cm": {
+      "title": "Marketing de Contenu",
+      "description": "Créer du contenu de valeur pour attirer et fidéliser votre public cible."
+    },
+    "smm": {
+      "title": "Marketing sur les Réseaux Sociaux",
+      "description": "Gérer le contenu, les stratégies et les communautés sur les principales plateformes."
+    },
+    "stratdev": {
+      "title": "Développement de Stratégie",
+      "description": "Consultation détaillée pour comprendre les objectifs commerciaux, le public cible et les efforts marketing actuels du client."
+    },
+    "webdev": {
+      "title": "Conception et Développement Web",
+      "description": "Créer des sites web modernes et responsives axés sur l'expérience utilisateur et l'optimisation des conversions."
     }
   },
   "contactForm": {
@@ -332,7 +332,9 @@
       "cd": "Directeur Créatif & Co-fondateur",
       "pc": "Coordinateur de Projet",
       "gd": "Graphiste",
-      "dev": "Développeur Full-Stack | Spécialiste Web2 & Web3"
+      "dev": "Développeur Full-Stack | Spécialiste Web2 & Web3",
+      "smm": "Spécialiste SMM",
+      "ai": "Assistant IA"
     }
   },
   "blog": {
@@ -424,6 +426,36 @@
     "salary": "Salaire",
     "perYear": "par an",
     "jobType": "Type d'emploi"
+  },
+  "portfolio": {
+    "title": "Nos Réalisations",
+    "description": "Forts d’un parcours éprouvé dans divers secteurs, notre expertise ne connaît aucune limite. Nous excellons dans l’adaptation aux défis uniques et la fourniture de résultats exceptionnels dans tous les domaines. En tirant parti de notre compréhension approfondie et de nos précieux insights, nous offrons des solutions sur mesure qui élèvent chaque projet que nous réalisons.",
+    "items": [
+      {
+        "imageTitle": "bursh",
+        "url": "https://bursh.com.ua/"
+      },
+      {
+        "imageTitle": "leech",
+        "url": "https://www.leechprotocol.com/"
+      },
+      {
+        "imageTitle": "investstream",
+        "url": "https://investream.us/"
+      },
+      {
+        "imageTitle": "indigo",
+        "url": "https://www.carsindigo.com/"
+      },
+      {
+        "imageTitle": "dressmaking",
+        "url": "https://dressmakingamore.com/"
+      },
+      {
+        "imageTitle": "osvita",
+        "url": "https://it-osvita.diia.gov.ua/"
+      }
+    ]
   },
   "contact": {
     "title": "Contactez-nous",
@@ -647,6 +679,16 @@
       ]
     },
     "testimonials": {
+      "dron": {
+        "quote": "Capturez des vues aériennes époustouflantes avec notre service professionnel de vidéographie par drone. Parfait pour les événements, l'immobilier, les publicités ou les projets créatifs, nos drones de haute qualité offrent des visuels impressionnants sous des perspectives uniques.",
+        "name": "Tournage vidéo par drone",
+        "designation": ""
+      },
+      "content": {
+        "quote": "Donnez vie à vos idées avec nos services professionnels de création de contenu. Des vidéos engageantes et des photos accrocheuses aux textes percutants et aux éléments pour les réseaux sociaux, nous créons du contenu sur mesure, adapté à la voix et à la vision de votre marque.",
+        "name": "Création de contenu",
+        "designation": ""
+      },
       "video": {
         "quote": "Nous créons des vidéos captivantes qui mettent en valeur votre histoire, promeuvent vos produits et captivent les spectateurs sur toutes les plateformes. Qu'il s'agisse de vidéos promotionnelles, de tutoriels ou de reels pour les réseaux sociaux, nous donnons vie à votre vision avec créativité et précision.",
         "name": "Production Vidéo",

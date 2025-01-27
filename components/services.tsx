@@ -15,7 +15,7 @@ const Services = () => {
       <div className="flex md:flex md:flex-row flex-col-reverse justify-center">
         <div className="flex flex-col justify-center items-center md:w-2/3">
           <div
-            className="text-4xl pb-5 md:text-7xl text-center
+            className="text-4xl pb-5 md:text-7xl
             bg-clip-text text-transparent 
             bg-gradient-to-b from-sky-400 
             to bg-purple-500 bg-opacity-50"
