@@ -381,7 +381,41 @@
     "description1": "L'équipe Clicks est une fusion de passion, d'expérience et d'innovation, où chaque \"Clicker\" n'est pas seulement un employé, mais une force motrice derrière le succès. Nous sommes des professionnels qui n'ont pas peur de remettre en question les approches marketing traditionnelles, créant des solutions qui bouleversent les règles du jeu. Notre arsenal comprend des technologies de pointe, des méthodes analytiques et des stratégies créatives qui aident les entreprises à attirer, fidéliser et émerveiller leurs clients. Chaque Clicker apporte son expertise unique, combinant ses efforts pour créer des campagnes marketing qui non seulement atteignent leurs objectifs, mais les dépassent.",
     "description2": "Au cœur de notre travail se trouve un partenariat avec nos clients, basé sur la confiance mutuelle et la compréhension. Nous nous efforçons de faire en sorte que chaque projet soit une étape vers un succès à long terme. Les Clickers ne sont pas de simples exécutants de tâches ; ils sont vos partenaires stratégiques, aidant à construire un écosystème numérique durable pour votre entreprise. Nous croyons qu'ensemble, avec vous, nous pouvons non seulement suivre l'évolution des temps, mais aussi définir des tendances en marketing digital.",
     "join": "Rejoignez notre équipe",
-    "openings": "Nos offres d'emploi actuelles"
+    "openings": "Nos offres d'emploi actuelles",
+    "imageDescriptions": [
+      {
+        "title": "Session stratégique chez The Clicks",
+        "description": "Chez The Clicks, notre équipe se réunit dans la salle de conférence pour développer ensemble des solutions et des stratégies marketing innovantes pour nos clients."
+      },
+      {
+        "title": "Travail collaboratif en cours",
+        "description": "Chez The Clicks, nos membres d'équipe s'engagent profondément dans le processus créatif, utilisant la technologie pour concrétiser des stratégies marketing innovantes."
+      },
+      {
+        "title": "Engagés dans l'apprentissage et le développement",
+        "description": "L'équipe de The Clicks participe activement à des séminaires et des ateliers pour rester en tête dans le monde en constante évolution du marketing digital, garantissant à nos clients les stratégies les plus informées et efficaces."
+      },
+      {
+        "title": "Planification stratégique en action",
+        "description": "Chez The Clicks, notre équipe collabore dans des séances de brainstorming dynamiques, transformant des idées en stratégies concrètes qui propulsent la réussite des entreprises de nos clients."
+      },
+      {
+        "title": "Collaboration créative",
+        "description": "The Clicks favorise une culture de créativité et de travail d'équipe, où nos membres diversifiés se réunissent pour partager des idées et créer des solutions innovantes qui stimulent le succès de nos clients."
+      },
+      {
+        "title": "Travail d'équipe dynamique en action",
+        "description": "Chez The Clicks, notre équipe prospère grâce à la collaboration, mêlant expertise et créativité pour fournir des résultats exceptionnels à nos clients dans le monde rapide du marketing digital."
+      },
+      {
+        "title": "Adopter l'Agilité pour une amélioration continue",
+        "description": "Chez The Clicks, notre équipe adopte les méthodologies Agiles pour rester adaptable et réactive aux changements, assurant une valeur continue et répondant aux besoins évolutifs de nos clients. Grâce à une planification itérative et à la collaboration, nous faisons avancer les projets avec efficacité et innovation."
+      },
+      {
+        "title": "Se connecter au-delà des frontières",
+        "description": "Chez The Clicks, nous exploitons les outils numériques pour rester connectés avec notre équipe et nos clients à l'échelle mondiale. Les réunions virtuelles sont une pierre angulaire de notre approche collaborative, nous permettant de maintenir des relations solides et de garantir une exécution sans faille des projets, peu importe la distance."
+      }
+    ]
   },
   "JobDetail": {
     "jobNotFound": "Emploi introuvable",

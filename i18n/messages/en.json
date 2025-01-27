@@ -381,7 +381,41 @@
     "description1": "The Clicks team is a fusion of passion, experience, and innovation, where every \"Clicker\" is not just an employee but a driving force behind success. We are professionals who aren't afraid to challenge traditional marketing approaches, creating solutions that change the game. Our arsenal includes cutting-edge technologies, analytical methods, and creative strategies that help businesses attract, retain, and amaze their customers. Each Clicker brings their unique expertise, combining efforts to create marketing campaigns that not only meet goals but exceed them.",
     "description2": "At the heart of our work is a partnership with clients, built on mutual trust and understanding. We strive to ensure that every project is a step towards long-term success. Clickers are not just task executors; they are your strategic partners, helping to build a sustainable digital ecosystem for your business. We believe that together with you, we can not only keep pace with the times but also set trends in digital marketing.",
     "join": "Join Our Team",
-    "openings": "Our Current Job Openings"
+    "openings": "Our Current Job Openings",
+    "imageDescriptions": [
+      {
+        "title": "Strategic Session at The Clicks",
+        "description": "At The Clicks, our team gathered in the conference room to collaboratively develop innovative marketing solutions and strategies for our clients."
+      },
+      {
+        "title": "Collaborative Work in Progress",
+        "description": "At The Clicks, our team members are deeply engaged in the creative process, utilizing technology to bring innovative marketing strategies to life."
+      },
+      {
+        "title": "Engaged in Learning and Development",
+        "description": "The Clicks team actively participates in seminars and workshops to stay ahead in the ever-evolving world of digital marketing, ensuring our clients receive the most informed and effective strategies."
+      },
+      {
+        "title": "Strategic Planning in Action",
+        "description": "At The Clicks, our team collaborates in dynamic brainstorming sessions, transforming ideas into actionable strategies that drive business success for our clients."
+      },
+      {
+        "title": "Creative Collaboration",
+        "description": "The Clicks fosters a culture of creativity and teamwork, where our diverse team members come together to share ideas and create innovative solutions that drive our clients success."
+      },
+      {
+        "title": "Dynamic Teamwork in Action",
+        "description": "At The Clicks, our team thrives on collaboration, bringing together a blend of expertise and creativity to deliver exceptional results for our clients in the fast-paced world of digital marketing."
+      },
+      {
+        "title": "Embracing Agile for Continuous Improvement",
+        "description": "At The Clicks, our team adopts Agile methodologies to stay adaptive and responsive to change, ensuring that we continuously deliver value and meet the evolving needs of our clients. Through iterative planning and collaboration, we drive projects forward with efficiency and innovation."
+      },
+      {
+        "title": "Connecting Beyond Borders",
+        "description": "At The Clicks, we leverage digital tools to stay connected with our global team and clients. Virtual meetings are a cornerstone of our collaborative approach, allowing us to maintain strong relationships and ensure seamless project execution, no matter the distance."
+      }
+    ]
   },
   "JobDetail": {
     "jobNotFound": "Job not found",

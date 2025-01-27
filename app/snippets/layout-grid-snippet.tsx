@@ -1,6 +1,8 @@
 "use client";
-import React, { useState, useRef, useEffect } from "react";
+
+import React from "react";
 import { LayoutGrid } from "@/components/ui/layout-grid";
+import { useTranslations } from "next-intl";
 
 export function LayoutGridDemo() {
   return (
@@ -11,125 +13,122 @@ export function LayoutGridDemo() {
 }
 
 const SkeletonOne = () => {
+  const t = useTranslations("team.imageDescriptions.0");
   return (
     <div className="flex flex-col justify-center items-center">
       <p className="font-bold md:text-4xl text-xl text-[var(--light-blue)]">
-        Strategic Session at The Clicks
+        {t("title")}
       </p>
       <p className="font-normal text-base text-white"></p>
       <p className="font-normal text-base my-4 max-w-lg text-[var(--gray-blue)]">
-        At The Clicks, our team gathered in the conference room to
-        collaboratively develop innovative marketing solutions and strategies
-        for our clients.
+        {t("description")}
       </p>
     </div>
   );
 };
 
 const SkeletonTwo = () => {
+  const t = useTranslations("team.imageDescriptions.1");
+
   return (
     <div className="flex flex-col justify-center items-center">
       <p className="font-bold md:text-4xl text-xl text-[var(--light-blue)]">
-        Collaborative Work in Progress
+        {t("title")}
       </p>
       <p className="font-normal text-base text-white"></p>
       <p className="font-normal text-base my-4 max-w-lg text-[var(--gray-blue)]">
-        At The Clicks, our team members are deeply engaged in the creative
-        process, utilizing technology to bring innovative marketing strategies
-        to life.
+        {t("description")}
       </p>
     </div>
   );
 };
 const SkeletonThree = () => {
+  const t = useTranslations("team.imageDescriptions.2");
+
   return (
     <div className="flex flex-col justify-center items-center">
       <p className="font-bold md:text-4xl text-xl text-[var(--light-blue)]">
-        Engaged in Learning and Development
+        {t("title")}
       </p>
       <p className="font-normal text-base text-white"></p>
       <p className="font-normal text-base my-4 max-w-lg text-[var(--gray-blue)]">
-        The Clicks team actively participates in seminars and workshops to stay
-        ahead in the ever-evolving world of digital marketing, ensuring our
-        clients receive the most informed and effective strategies.
+        {t("description")}
       </p>
     </div>
   );
 };
 const SkeletonFour = () => {
+  const t = useTranslations("team.imageDescriptions.3");
+
   return (
     <div className="flex flex-col justify-center items-center">
       <p className="font-bold md:text-4xl text-xl text-[var(--light-blue)]">
-        Strategic Planning in Action
+        {t("title")}
       </p>
       <p className="font-normal text-base text-white"></p>
       <p className="font-normal text-base my-4 max-w-lg text-[var(--gray-blue)]">
-        At The Clicks, our team collaborates in dynamic brainstorming sessions,
-        transforming ideas into actionable strategies that drive business
-        success for our clients.
+        {t("description")}
       </p>
     </div>
   );
 };
 const SkeletonFive = () => {
+  const t = useTranslations("team.imageDescriptions.4");
+
   return (
     <div className="flex flex-col justify-center items-center">
       <p className="font-bold md:text-4xl text-xl text-[var(--light-blue)]">
-        Creative Collaboration
+        {t("title")}
       </p>
       <p className="font-normal text-base text-white"></p>
       <p className="font-normal text-base my-4 max-w-lg text-[var(--gray-blue)]">
-        The Clicks fosters a culture of creativity and teamwork, where our
-        diverse team members come together to share ideas and create innovative
-        solutions that drive our clients success.
+        {t("description")}
       </p>
     </div>
   );
 };
 
 const SkeletonSix = () => {
+  const t = useTranslations("team.imageDescriptions.5");
+
   return (
     <div className="flex flex-col justify-center items-center">
       <p className="font-bold md:text-4xl text-xl text-[var(--light-blue)]">
-        Dynamic Teamwork in Action
+        {t("title")}
       </p>
       <p className="font-normal text-base text-white"></p>
       <p className="font-normal text-base my-4 max-w-lg text-[var(--gray-blue)]">
-        At The Clicks, our team thrives on collaboration, bringing together a
-        blend of expertise and creativity to deliver exceptional results for our
-        clients in the fast-paced world of digital marketing.
+        {t("description")}
       </p>
     </div>
   );
 };
 const SkeletonSeven = () => {
+  const t = useTranslations("team.imageDescriptions.6");
+
   return (
     <div className="flex flex-col justify-center items-center">
       <p className="font-bold md:text-4xl text-xl text-[var(--light-blue)]">
-        Embracing Agile for Continuous Improvement
+        {t("title")}
       </p>
       <p className="font-normal text-base text-white"></p>
       <p className="font-normal text-base my-4 max-w-lg text-[var(--gray-blue)]">
-        At The Clicks, our team adopts Agile methodologies to stay adaptive and
-        responsive to change, ensuring that we continuously deliver value and
-        meet the evolving needs of our clients. Through iterative planning and
-        collaboration, we drive projects forward with efficiency and innovation.
+        {t("description")}
       </p>
     </div>
   );
 };
 const SkeletonEight = () => {
+  const t = useTranslations("team.imageDescriptions.7");
+
   return (
     <div className="flex flex-col justify-center items-center">
       <p className="font-bold md:text-4xl text-xl text-[var(--light-blue)]">
-        Connecting Beyond Borders
+        {t("title")}
       </p>
       <p className="font-normal text-base text-white"></p>
       <p className="font-normal text-base my-4 max-w-lg text-[var(--gray-blue)]">
-        At The Clicks, we leverage digital tools to stay connected with our
-        global team and clients. Virtual meetings are a cornerstone of our
-        collaborative approach, allowing us to maintain strong relationships and
-        ensure seamless project execution, no matter the distance.
+        {t("description")}
       </p>
     </div>
   );
