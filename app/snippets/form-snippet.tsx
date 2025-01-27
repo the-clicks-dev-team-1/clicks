@@ -29,54 +29,54 @@ import Image from "next/image";
 import { useTranslations } from "next-intl";
 
 const FormSchema = z.object({
-  first_name: z
-    .string()
-    .min(1, { message: "validations.firstNameRequired" })
-    .min(2, { message: "validations.firstNameMin" }),
-  last_name: z
-    .string()
-    .min(1, { message: "validations.lastNameRequired" })
-    .min(2, { message: "validations.lastNameMin" }),
+  // first_name: z
+  //   .string()
+  //   .min(1, { message: "validations.firstNameRequired" })
+  //   .min(2, { message: "validations.firstNameMin" }),
+  // last_name: z
+  //   .string()
+  //   .min(1, { message: "validations.lastNameRequired" })
+  //   .min(2, { message: "validations.lastNameMin" }),
   email: z.string().email({ message: "validations.email" }),
-  job_title: z.string().min(1, { message: "validations.jobRequired" }),
-  company_name: z.string().optional(),
-  help: z
-    .enum([
-      "help.default",
-      "help.evaluate",
-      "help.learnMore",
-      "help.quote",
-      "help.consultation",
-      "help.other",
-    ])
-    .optional(),
-  services: z
-    .enum([
-      "services.default",
-      "services.strategy",
-      "services.web",
-      "services.seo",
-      "services.ppc",
-      "services.social",
-      "services.content",
-      "services.email",
-      "services.conversion",
-      "services.analytics",
-      "services.automation",
-      "services.branding",
-      "services.pr",
-      "services.design",
-    ])
-    .optional(),
+  // job_title: z.string().min(1, { message: "validations.jobRequired" }),
+  // company_name: z.string().optional(),
+  // help: z
+  //   .enum([
+  //     "help.default",
+  //     "help.evaluate",
+  //     "help.learnMore",
+  //     "help.quote",
+  //     "help.consultation",
+  //     "help.other",
+  //   ])
+  //   .optional(),
+  // services: z
+  //   .enum([
+  //     "services.default",
+  //     "services.strategy",
+  //     "services.web",
+  //     "services.seo",
+  //     "services.ppc",
+  //     "services.social",
+  //     "services.content",
+  //     "services.email",
+  //     "services.conversion",
+  //     "services.analytics",
+  //     "services.automation",
+  //     "services.branding",
+  //     "services.pr",
+  //     "services.design",
+  //   ])
+  //   .optional(),
   info: z
     .string()
     .min(10, {
       message: "validations.minInfo",
     })
     .optional(),
-  consent: z.boolean().refine((val) => val === true, {
-    message: "validations.consent",
-  }),
+  // consent: z.boolean().refine((val) => val === true, {
+  //   message: "validations.consent",
+  // }),
 });
 
 type FormValues = z.infer<typeof FormSchema>;
@@ -122,19 +122,20 @@ export default function ContactForm({ consultation }: ContactFormProps) {
   const form = useForm<FormValues>({
     resolver: zodResolver(FormSchema),
     defaultValues: {
-      first_name: "",
-      last_name: "",
+      // first_name: "",
+      // last_name: "",
       email: "",
-      job_title: "",
-      company_name: "",
-      help: "help.default",
-      services: "services.default",
+      // job_title: "",
+      // company_name: "",
+      // help: "help.default",
+      // services: "services.default",
       info: "",
-      consent: false,
+      // consent: false,
     },
   });
 
   async function onSubmit(data: FormValues) {
+    console.log("Form submitted with data:", data);
     try {
       setLoading(true);
       const res = await fetch("/api/contact", {
