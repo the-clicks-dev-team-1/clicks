@@ -102,11 +102,11 @@ const BlogPost = async ({
           <p>{t("imageNotAvailable")}</p>
         )}
 
-        {description && (
+        {/* {description && (
           <div className="mt-4 text-[var(--gray-blue)] light:text-[var(--gray-40)]">
             <p>{description}</p>
           </div>
-        )}
+        )} */}
 
         {body && (
           <div className="mt-10 prose prose-p:my-0 prose-li:my-5 max-w-none text-[var(--gray-blue)] light:text-[var(--gray-40)]">

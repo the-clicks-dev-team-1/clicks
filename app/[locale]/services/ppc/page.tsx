@@ -83,23 +83,33 @@ const PPC: FC<{ params: { locale: string } }> = async ({
             <h2 className="text-lg md:text-xl font-semibold mb-6 text-[var(--light-blue)] light:text-[var(--gray-70)]">
               {t("why.title")}
             </h2>
-            <div className="flex flex-col sm:flex-row md:flex-col gap-2 xl:flex-row justify-between items-center mb-6 text-lg text-[var(--gray-blue)] light:text-[var(--gray-40)]">
-              <div className="w-full inline-block bg-gradient-to-r from-sky-400 to-purple-500 p-[1px] rounded-full">
-                <span className="min-w-[148px] whitespace-nowrap w-full block bg-white dark:bg-black rounded-full px-4 py-3 text-center text-lg font-semibold">
-                  {t("why.benefitsList.0")}
-                </span>
+
+            <div className="flex flex-col sm:flex-row md:flex-col gap-2 xl:flex-row justify-between mb-6 text-lg text-[var(--gray-blue)] light:text-[var(--gray-40)]">
+              <div className="flex-1 flex">
+                <div className="h-full w-full inline-block bg-gradient-to-r from-sky-400 to-purple-500 p-[1px] rounded-full">
+                  <span className="h-full min-w-[148px] w-full flex items-center justify-center text-center block bg-white dark:bg-black rounded-full px-4 py-3 text-lg font-semibold">
+                    {t("why.benefitsList.0")}
+                  </span>
+                </div>
               </div>
-              <div className="w-full inline-block bg-gradient-to-r from-sky-400 to-purple-500 p-[1px] rounded-full">
-                <span className="min-w-[148px] whitespace-nowrap w-full text-center block bg-white dark:bg-black  rounded-full px-4 py-3 text-lg font-semibold">
-                  {t("why.benefitsList.1")}
-                </span>
+
+              <div className="flex-1 flex">
+                <div className="h-full w-full inline-block bg-gradient-to-r from-sky-400 to-purple-500 p-[1px] rounded-full">
+                  <span className="h-full min-w-[148px] w-full flex items-center justify-center text-center block bg-white dark:bg-black rounded-full px-4 py-3 text-lg font-semibold">
+                    {t("why.benefitsList.1")}
+                  </span>
+                </div>
               </div>
-              <div className="w-full inline-block bg-gradient-to-r from-sky-400 to-purple-500 p-[1px] rounded-full">
-                <span className="min-w-[148px] whitespace-nowrap w-full text-center block bg-white dark:bg-black  rounded-full px-4 py-3 text-lg font-semibold">
-                  {t("why.benefitsList.2")}
-                </span>
+
+              <div className="flex-1 flex">
+                <div className="h-full w-full inline-block bg-gradient-to-r from-sky-400 to-purple-500 p-[1px] rounded-full">
+                  <span className="h-full min-w-[148px] w-full flex items-center justify-center text-center block bg-white dark:bg-black rounded-full px-4 py-3 text-lg font-semibold">
+                    {t("why.benefitsList.2")}
+                  </span>
+                </div>
               </div>
             </div>
+
             <p className="text-lg text-[var(--gray-blue)] light:text-[var(--gray-40)]">
               {t("why.description")}
             </p>
