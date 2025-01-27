@@ -191,6 +191,7 @@ const SliderOne = () => {
     },
     {
       name: "bliss",
+      // svgContent:(),
     },
     {
       name: "github",
