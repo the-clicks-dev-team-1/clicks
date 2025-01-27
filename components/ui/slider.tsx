@@ -8,6 +8,7 @@ import Image from "next/image";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import LoadingSpinner from "./LoadingSpinner";
+import { useRouter } from "@/i18n/routing";
 
 interface Logo {
   name: string;
@@ -28,6 +29,7 @@ const LogoSlide = ({
   const { theme, setTheme } = useTheme();
   const [hasPngVariants, setHasPngVariants] = useState<boolean>(false);
   const [mounted, setMounted] = useState(false);
+  const router = useRouter();
 
   useEffect(() => {
     const testImage = document.createElement("img");
@@ -38,8 +40,13 @@ const LogoSlide = ({
     setMounted(true);
   }, [logoName, theme]);
 
+  const handleClick = () => {
+    router.push("/portfolio");
+  };
+
   return (
     <div
+      onClick={handleClick}
       className={`flex justify-center items-center px-10 light:text-[var(--gray-100)] text-[var(--gray-0)] ${
         isSmallScreen ? "" : ""
       }`}

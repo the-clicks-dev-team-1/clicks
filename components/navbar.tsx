@@ -77,6 +77,7 @@ const navItems: NavItem[] = [
       { label: "blog", link: "/about/blog" },
     ],
   },
+  { label: "portfolio", link: "/portfolio" },
   { label: "contacts", link: "/contact" },
 ];
 
