@@ -29,54 +29,54 @@ import Image from "next/image";
 import { useTranslations } from "next-intl";
 
 const FormSchema = z.object({
-  first_name: z
-    .string()
-    .min(1, { message: "validations.firstNameRequired" })
-    .min(2, { message: "validations.firstNameMin" }),
-  last_name: z
-    .string()
-    .min(1, { message: "validations.lastNameRequired" })
-    .min(2, { message: "validations.lastNameMin" }),
+  // first_name: z
+  //   .string()
+  //   .min(1, { message: "validations.firstNameRequired" })
+  //   .min(2, { message: "validations.firstNameMin" }),
+  // last_name: z
+  //   .string()
+  //   .min(1, { message: "validations.lastNameRequired" })
+  //   .min(2, { message: "validations.lastNameMin" }),
   email: z.string().email({ message: "validations.email" }),
-  job_title: z.string().min(1, { message: "validations.jobRequired" }),
-  company_name: z.string().optional(),
-  help: z
-    .enum([
-      "help.default",
-      "help.evaluate",
-      "help.learnMore",
-      "help.quote",
-      "help.consultation",
-      "help.other",
-    ])
-    .optional(),
-  services: z
-    .enum([
-      "services.default",
-      "services.strategy",
-      "services.web",
-      "services.seo",
-      "services.ppc",
-      "services.social",
-      "services.content",
-      "services.email",
-      "services.conversion",
-      "services.analytics",
-      "services.automation",
-      "services.branding",
-      "services.pr",
-      "services.design",
-    ])
-    .optional(),
+  // job_title: z.string().min(1, { message: "validations.jobRequired" }),
+  // company_name: z.string().optional(),
+  // help: z
+  //   .enum([
+  //     "help.default",
+  //     "help.evaluate",
+  //     "help.learnMore",
+  //     "help.quote",
+  //     "help.consultation",
+  //     "help.other",
+  //   ])
+  //   .optional(),
+  // services: z
+  //   .enum([
+  //     "services.default",
+  //     "services.strategy",
+  //     "services.web",
+  //     "services.seo",
+  //     "services.ppc",
+  //     "services.social",
+  //     "services.content",
+  //     "services.email",
+  //     "services.conversion",
+  //     "services.analytics",
+  //     "services.automation",
+  //     "services.branding",
+  //     "services.pr",
+  //     "services.design",
+  //   ])
+  //   .optional(),
   info: z
     .string()
     .min(10, {
       message: "validations.minInfo",
     })
     .optional(),
-  consent: z.boolean().refine((val) => val === true, {
-    message: "validations.consent",
-  }),
+  // consent: z.boolean().refine((val) => val === true, {
+  //   message: "validations.consent",
+  // }),
 });
 
 type FormValues = z.infer<typeof FormSchema>;
@@ -122,19 +122,20 @@ export default function ContactForm({ consultation }: ContactFormProps) {
   const form = useForm<FormValues>({
     resolver: zodResolver(FormSchema),
     defaultValues: {
-      first_name: "",
-      last_name: "",
+      // first_name: "",
+      // last_name: "",
       email: "",
-      job_title: "",
-      company_name: "",
-      help: "help.default",
-      services: "services.default",
+      // job_title: "",
+      // company_name: "",
+      // help: "help.default",
+      // services: "services.default",
       info: "",
-      consent: false,
+      // consent: false,
     },
   });
 
   async function onSubmit(data: FormValues) {
+    console.log("Form submitted with data:", data);
     try {
       setLoading(true);
       const res = await fetch("/api/contact", {
@@ -192,9 +193,9 @@ export default function ContactForm({ consultation }: ContactFormProps) {
               </h2>
             )}
             <div className="flex-1">
-              <p className="text-lg mb-10 text-[var(--gray-blue)] light:text-[var(--gray-70)]">
+              {/* <p className="text-lg mb-10 text-[var(--gray-blue)] light:text-[var(--gray-70)]">
                 {t("description")}
-              </p>
+              </p> */}
               <p className="text-lg mb-2 flex gap-3">
                 <Image
                   src="/icons/iphone.svg"
@@ -204,7 +205,7 @@ export default function ContactForm({ consultation }: ContactFormProps) {
                   className="h-auto w-auto"
                 />
                 <a
-                  href="tel:+15068718210"
+                  href="tel:+15068895740"
                   className="text-[var(--gray-blue)] light:text-[var(--gray-100)]"
                 >
                   {t("contact.phone")}
@@ -225,7 +226,7 @@ export default function ContactForm({ consultation }: ContactFormProps) {
                   {t("contact.email")}
                 </a>
               </p>
-              <p className="text-lg flex gap-3 text-[var(--gray-blue)] light:text-[var(--gray-100)]">
+              <p className=" max-w-[380px] text-lg flex gap-3 text-[var(--gray-blue)] light:text-[var(--gray-100)]">
                 <Image
                   src="/icons/map-marker.svg"
                   alt="map-marker"
@@ -245,9 +246,9 @@ export default function ContactForm({ consultation }: ContactFormProps) {
                 <form
                   id="contactServiceForm"
                   onSubmit={form.handleSubmit(onSubmit)}
-                  className="contact-form space-y-4 h-full rounded-3xl p-6 flex flex-col justify-between"
+                  className="contact-form space-y-4 h-full rounded-3xl #p-6 flex flex-col justify-between"
                 >
-                  <div className="md:flex items-center gap-6">
+                  {/* <div className="md:flex items-center gap-6">
                     <FormField
                       control={form.control}
                       name="first_name"
@@ -293,7 +294,7 @@ export default function ContactForm({ consultation }: ContactFormProps) {
                         </FormItem>
                       )}
                     />
-                  </div>
+                  </div> */}
 
                   <FormField
                     control={form.control}
@@ -318,7 +319,7 @@ export default function ContactForm({ consultation }: ContactFormProps) {
                     )}
                   />
 
-                  <FormField
+                  {/* <FormField
                     control={form.control}
                     name="company_name"
                     render={({ field }) => (
@@ -404,7 +405,7 @@ export default function ContactForm({ consultation }: ContactFormProps) {
                         </Select>
                       </FormItem>
                     )}
-                  />
+                  /> */}
 
                   <FormField
                     control={form.control}
@@ -430,7 +431,7 @@ export default function ContactForm({ consultation }: ContactFormProps) {
                     )}
                   />
 
-                  <FormField
+                  {/* <FormField
                     control={form.control}
                     name="consent"
                     render={({ field }) => (
@@ -454,7 +455,7 @@ export default function ContactForm({ consultation }: ContactFormProps) {
                         )}
                       </FormItem>
                     )}
-                  />
+                  /> */}
 
                   <div className="flex items-center gap-4">
                     <Button

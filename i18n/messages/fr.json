@@ -22,6 +22,7 @@
     "team": "Notre équipe",
     "careers": "Carrières",
     "blog": "Blog",
+    "portfolio": "Portfolio",
     "contacts": "Contacts",
     "webDev": "Développement Web",
     "strategyDev": "Développement de stratégie",
@@ -233,11 +234,11 @@
     "getInTouch": "Contactez-nous",
     "description": "Nous attachons de l'importance à vos commentaires, questions et demandes. Que vous ayez une suggestion, besoin d'aide ou que vous souhaitiez simplement nous contacter, nous sommes toujours là pour vous apporter soutien et assistance.",
     "contact": {
-      "phone": "+1 506 871 8210",
+      "phone": "+1 506 889 5740",
       "email": "info@theclicks.ca",
-      "address": "860 rue Main, Moncton",
-      "address2": "860 rue Main, Moncton,\nNB, Canada",
-      "fullAddress": "860 rue Main, Moncton, NB, Canada, E1A 0G9"
+      "address": "860 rue Main, Bureau 801, Moncton, NB, Canada, E1A 0G9",
+      "address2": "860 rue Main, Bureau 801, Moncton,\nNB, Canada, E1A 0G9",
+      "fullAddress": "860 rue Main, Bureau 801, Moncton, NB, Canada, E1A 0G9"
     },
     "submit": "Soumettre",
     "required": "Ce champ est obligatoire",
@@ -283,7 +284,7 @@
     "companyName": "Nom de l'entreprise",
     "services": "Services qui vous intéressent",
     "help": "Comment pouvons-nous vous aider?",
-    "additionalInfo": "Autres informations? *",
+    "additionalInfo": "Votre message *",
     "consent": "J'accepte que The Clicks m'envoie des communications marketing liées à The Clicks",
     "phone": "Téléphone ",
     "address": "Adresse ",

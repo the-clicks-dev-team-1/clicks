@@ -134,11 +134,11 @@ const Footer = () => {
                     {t("privacyPolicy")}
                   </ActiveLink>
                 </li>
-                <li className="mb-4">
+                {/* <li className="mb-4">
                   <ActiveLink href="/licensing" className="hover:underline">
                     {t("licensing")}
                   </ActiveLink>
-                </li>
+                </li> */}
                 <li className="mb-4">
                   <ActiveLink
                     href="/terms-and-conditions"
@@ -193,7 +193,7 @@ const Footer = () => {
                   </a>
                 </li>
                 <li className="mb-4">
-                  <a href="tel:+15068718210" className="">
+                  <a href="tel:+15068895740" className="">
                     {c("phone")}
                   </a>
                 </li>
