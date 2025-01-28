@@ -128,12 +128,14 @@ const Pricing: FC<{ params: { locale: string } }> = async ({
           ))}
         </div>
       </div>
-      <div className="flex items-center justify-center flex-col mb-32">
+
+      {/* <div className="flex items-center justify-center flex-col mb-32">
         <div className="text-4xl md:text-5xl pb-8 md:pb-20 text-slate-300 px-6 text-center bg-clip-text text-transparent bg-gradient-to-b from-sky-400 to bg-purple-500 bg-opacity-50">
           {t("serviceTitle")} <br /> {t("serviceSubtitle")}
         </div>
         <Offers />
-      </div>
+      </div> */}
+
       <AddOnServices />
       <ContactBlock />
       <Footer />

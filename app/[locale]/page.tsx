@@ -9,7 +9,6 @@ import Reviews from "@/components/reviews";
 import Services from "@/components/services";
 import { TheWayWeWork } from "@/components/TheWayWeWork";
 import SliderOne from "@/components/ui/slider";
-import { Link } from "@/i18n/routing";
 import ScrollButton from "@/components/ui/ScrollButton";
 
 export async function generateMetadata({
