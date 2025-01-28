@@ -64,13 +64,13 @@
     }
   },
   "home": {
-    "title": "Transformez votre entreprise canadienne avec l'intelligence artificielle",
+    "title": "Transformez votre entreprise avec l'intelligence artificielle",
     "description": "Révolutionnez vos opérations, optimisez les processus et stimulez une croissance durable grâce à des décisions confiantes et des solutions innovantes, adaptées aux entreprises canadiennes.",
     "cta": "Réserver un appel",
     "ourPartners": "Nos partenaires :",
     "block": {
-      "whileYouSpentTime": "Pendant que vous vous concentrez sur votre famille, nous nous concentrons sur votre succès. Nos solutions travaillent sans relâche pour aider votre entreprise canadienne à se développer.",
-      "weLeverageTopTier": "Nous utilisons des outils de marketing internet de premier plan pour aider les entreprises canadiennes à réussir. Notre approche centrée sur le client offre des résultats prévisibles et améliore votre rentabilité."
+      "whileYouSpentTime": "Pendant que vous vous concentrez sur votre famille, nous nous concentrons sur votre succès. Nos solutions travaillent sans relâche pour aider votre entreprise à se développer.",
+      "weLeverageTopTier": "Nous utilisons des outils de premier plan pour aider les entreprises canadiennes à réussir. Notre approche axée sur le client offre des résultats prévisibles et améliore votre rentabilité."
     },
     "wobbleCard": {
       "1": {
@@ -82,7 +82,7 @@
         "description": "Nous nous engageons à fournir des résultats immédiats tout en favorisant votre succès à long terme. Chez The Clicks, votre retour sur investissement et vos revenus dépassent de simples métriques—nous prouvons notre impact en soutenant vos initiatives marketing tout au long du parcours client pour maximiser les résultats."
       },
       "3": {
-        "title": "Marketing basé sur les données, prévisible et transparent pour les entreprises canadiennes",
+        "title": "Marketing basé sur les données, prévisible et transparent",
         "description": "Nos méthodes et processus soigneusement élaborés ont permis à un large éventail d'entreprises, des startups aux entreprises établies, dans plus de 10 industries. Nous maintenons notre agilité, notre adaptabilité et notre facilité de collaboration, quelles que soient nos expériences étendues."
       },
       "4": {
@@ -90,13 +90,13 @@
         "description": "Nous personnalisons nos stratégies pour répondre aux besoins spécifiques de votre entreprise, garantissant que chaque plan marketing s'aligne sur vos objectifs. Notre équipe se tient à jour des dernières tendances et technologies pour fournir les meilleurs résultats."
       },
       "5": {
-        "title": "Engagement client global pour les entreprises canadiennes",
+        "title": "Engagement client holistique",
         "description": "Nous intégrons plusieurs points de contact et canaux pour créer des expériences client transparentes. Notre stratégie globale couvre tout, de la sensibilisation initiale au support après achat, renforçant ainsi la fidélité des clients et stimulant les affaires répétées."
       }
     },
     "services": {
-      "ourServices": "Nos services pour les entreprises canadiennes",
-      "atOurCompany": "Nous nous adressons aux entreprises canadiennes de toutes tailles, en veillant à ce que les petites entreprises comme les grandes corporations reçoivent un service de classe mondiale. Notre objectif est de favoriser votre croissance et votre prospérité."
+      "ourServices": "Nos services pour les entreprises",
+      "atOurCompany": "Nous nous adressons aux entreprises de toutes tailles, en veillant à ce que les petites entreprises comme les grandes corporations reçoivent un service de classe mondiale. Notre objectif est de favoriser votre croissance et votre prospérité."
     },
     "testimonials": {
       "title": "La façon dont nous travaillons",
@@ -432,8 +432,20 @@
     "description": "Forts d’un parcours éprouvé dans divers secteurs, notre expertise ne connaît aucune limite. Nous excellons dans l’adaptation aux défis uniques et la fourniture de résultats exceptionnels dans tous les domaines. En tirant parti de notre compréhension approfondie et de nos précieux insights, nous offrons des solutions sur mesure qui élèvent chaque projet que nous réalisons.",
     "items": [
       {
+        "imageTitle": "castors",
+        "url": "https://castors.hockey/"
+      },
+      {
+        "imageTitle": "lana",
+        "url": "https://lana.clinic/en"
+      },
+      {
+        "imageTitle": "karate",
+        "url": "https://theclicks-karate.vercel.app/"
+      },
+      {
         "imageTitle": "bursh",
-        "url": "https://bursh.com.ua/"
+        "url": "https://bursh.com.ua/en/"
       },
       {
         "imageTitle": "leech",

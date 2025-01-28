@@ -73,11 +73,11 @@ const Team: FC<{ params: { locale: string } }> = async ({
                 />
               </div>
               <Image
-                src="/images/happy-team.jpg"
+                src="/images/company/IMG_9442_1.jpg"
                 alt="Happy Team"
                 width={500}
                 height={500}
-                className="rounded-2xl object-cover relative z-10"
+                className="rounded-2xl h-[360px] object-cover relative z-10"
                 priority
               />
             </div>

@@ -106,7 +106,7 @@ const Careers: FC<{ params: { locale: string } }> = async ({
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
             <div>
               <Image
-                src="/images/team.jpg"
+                src="/images/company/IMG_8860_1.jpg"
                 alt="Life at The Clicks"
                 width={600}
                 height={400}

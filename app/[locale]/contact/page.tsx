@@ -41,8 +41,6 @@ const Contact: FC<{ params: { locale: string } }> = async ({
         </p>
       </div>
 
-      <ContactBlock />
-
       {/* Map Section */}
       <div className="bg-[var(--bgnew)] pb-32">
         <div className="container md:px-10">
@@ -59,6 +57,8 @@ const Contact: FC<{ params: { locale: string } }> = async ({
           </div>
         </div>
       </div>
+
+      <ContactBlock />
 
       <Footer />
     </div>

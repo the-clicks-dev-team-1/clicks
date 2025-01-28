@@ -91,13 +91,13 @@
     }
   },
   "home": {
-    "title": "Transform your Canadian business with artificial intelligence",
+    "title": "Transform your business with artificial intelligence",
     "description": "Revolutionise your operations, optimise processes, and drive sustainable growth with Confident decisions and innovative solutions, tailored for Canadian businesses.",
     "cta": "Book A Call",
     "ourPartners": "Our partners:",
     "block": {
-      "whileYouSpentTime": "While you focus on your family, we focus on your success. Our solutions work tirelessly to help your Canadian business grow.",
-      "weLeverageTopTier": "We use top-tier internet marketing tools to help Canadian businesses succeed. Our customer-first approach delivers predictable results and enhances your profitability."
+      "whileYouSpentTime": "While you focus on your family, we focus on your success. Our solutions work tirelessly to help your business grow.",
+      "weLeverageTopTier": "We use top-tier tools to help Canadian businesses succeed. Our customer-first approach delivers predictable results and enhances your profitability."
     },
     "wobbleCard": {
       "1": {
@@ -109,7 +109,7 @@
         "description": "We are committed to delivering immediate outcomes while fostering your long-term success. At The Clicks, your ROI and revenue go beyond mere metrics—we substantiate our impact by supporting your marketing initiatives throughout the entire customer journey to maximize results."
       },
       "3": {
-        "title": "Data-Driven, Predictable, and Transparent Marketing for Canadian Businesses",
+        "title": "Data-Driven, Predictable, and Transparent Marketing",
         "description": "Our meticulously developed methods and processes have empowered a wide range of businesses, from startups to established enterprises, across more than 10 industries. We maintain our agility, adaptability, and ease of collaboration, regardless of our extensive experience."
       },
       "4": {
@@ -117,13 +117,13 @@
         "description": "We customize our strategies to meet your specific business needs and objectives, ensuring every marketing plan aligns with your goals. Our team stays updated on the latest trends and technologies to provide the best outcomes."
       },
       "5": {
-        "title": "Holistic Customer Engagement for Canadian Businesses",
+        "title": "Holistic Customer Engagement",
         "description": "We integrate multiple touchpoints and channels to create seamless customer experiences. Our comprehensive strategy covers everything from initial awareness to post-purchase support, enhancing customer loyalty and driving repeat business."
       }
     },
     "services": {
-      "ourServices": "Our Services for Canadian Businesses",
-      "atOurCompany": "We cater to Canadian businesses of all sizes, ensuring that small enterprises and large corporations receive world-class service. Our focus is on fostering your growth and prosperity."
+      "ourServices": "Our Services for Businesses",
+      "atOurCompany": "We cater to businesses of all sizes, ensuring that small enterprises and large corporations receive world-class service. Our focus is on fostering your growth and prosperity."
     },
     "testimonials": {
       "title": "The way we work",
