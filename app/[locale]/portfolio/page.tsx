@@ -56,13 +56,13 @@ const Portfolio: FC<{ params: { locale: string } }> = async ({
         <div className="grid grid-cols-1 #md:grid-cols-2 lg:grid-cols-2 gap-5">
           {workItems.map((item) => (
             <Link key={item.url} href={item.url} target="_blank">
-              <div className="relative overflow-hidden w-full h-64 md:h-[560px] rounded-lg">
+              <div className="relative overflow-hidden w-full h-64 md:h-[560px] rounded-2xl">
                 <Image
                   src={item.image}
                   alt={item.image}
                   layout="fill"
                   objectFit="cover"
-                  className="rounded-lg transition duration-500 hover:scale-110"
+                  className="rounded-2xl transition duration-500 hover:scale-110"
                 />
               </div>
             </Link>
