@@ -6,6 +6,7 @@ import { FC } from "react";
 import en from "@/i18n/messages/en.json";
 import Image from "next/image";
 import { Link } from "@/i18n/routing";
+import { CardHoverEffectPortfolio } from "@/components/ui/card-hover-effect-portfolio";
 
 export async function generateMetadata({
   params,
@@ -27,10 +28,10 @@ export async function generateMetadata({
   };
 }
 
-const workItems = en.portfolio.items.map((item, index) => ({
-  image: `/images/portfolio/${item.imageTitle}.png`,
-  url: `${item.url}`,
-}));
+// const workItems = en.portfolio.items.map((item, index) => ({
+//   image: `/images/portfolio/${item.imageTitle}.png`,
+//   url: `${item.url}`,
+// }));
 
 const Portfolio: FC<{ params: { locale: string } }> = async ({
   params: { locale },
@@ -52,11 +53,13 @@ const Portfolio: FC<{ params: { locale: string } }> = async ({
         </div>
       </div>
 
-      <div className="container md:px-10 mb-32">
-        <div className="grid grid-cols-1 #md:grid-cols-2 lg:grid-cols-2 gap-5">
+      <CardHoverEffectPortfolio />
+
+      {/* <div className="container md:px-10 mb-32">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
           {workItems.map((item) => (
             <Link key={item.url} href={item.url} target="_blank">
-              <div className="relative overflow-hidden w-full h-64 md:h-[560px] rounded-2xl">
+              <div className="relative overflow-hidden w-full h-64 md:h-[360px] rounded-2xl">
                 <Image
                   src={item.image}
                   alt={item.image}
@@ -68,7 +71,7 @@ const Portfolio: FC<{ params: { locale: string } }> = async ({
             </Link>
           ))}
         </div>
-      </div>
+      </div> */}
 
       <Footer />
     </div>
