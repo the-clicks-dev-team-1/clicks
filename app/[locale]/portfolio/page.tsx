@@ -28,10 +28,10 @@ export async function generateMetadata({
   };
 }
 
-const workItems = en.portfolio.items.map((item, index) => ({
-  image: `/images/portfolio/${item.imageTitle}.png`,
-  url: `${item.url}`,
-}));
+// const workItems = en.portfolio.items.map((item, index) => ({
+//   image: `/images/portfolio/${item.imageTitle}.png`,
+//   url: `${item.url}`,
+// }));
 
 const Portfolio: FC<{ params: { locale: string } }> = async ({
   params: { locale },
