@@ -432,8 +432,20 @@
     "description": "Forts d’un parcours éprouvé dans divers secteurs, notre expertise ne connaît aucune limite. Nous excellons dans l’adaptation aux défis uniques et la fourniture de résultats exceptionnels dans tous les domaines. En tirant parti de notre compréhension approfondie et de nos précieux insights, nous offrons des solutions sur mesure qui élèvent chaque projet que nous réalisons.",
     "items": [
       {
+        "imageTitle": "castors",
+        "url": "https://castors.hockey/"
+      },
+      {
+        "imageTitle": "lana",
+        "url": "https://lana.clinic/en"
+      },
+      {
+        "imageTitle": "karate",
+        "url": "https://theclicks-karate.vercel.app/"
+      },
+      {
         "imageTitle": "bursh",
-        "url": "https://bursh.com.ua/"
+        "url": "https://bursh.com.ua/en/"
       },
       {
         "imageTitle": "leech",

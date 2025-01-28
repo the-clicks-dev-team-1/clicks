@@ -45,7 +45,7 @@ const AboutAgency: FC<{ params: { locale: string } }> = async ({
               </div>
               <div className="w-full md:hidden overflow-hidden flex-1 rounded-2xl">
                 <Image
-                  src="/images/office.jpeg"
+                  src="/images/company/IMG_8878_1.jpg"
                   alt="Marketing Wave"
                   width={600}
                   height={400}
@@ -72,7 +72,7 @@ const AboutAgency: FC<{ params: { locale: string } }> = async ({
 
             <div className="hidden md:block w-full md:w-1/2 overflow-hidden flex-1 rounded-2xl">
               <Image
-                src="/images/office.jpeg"
+                src="/images/company/IMG_8878_1.jpg"
                 alt="Marketing Wave"
                 width={600}
                 height={400}
@@ -94,7 +94,7 @@ const AboutAgency: FC<{ params: { locale: string } }> = async ({
               </h2>
               <div className="w-full md:w-1/2">
                 <Image
-                  src="/images/standup.jpeg"
+                  src="/images/company/IMG_9159_1.jpg"
                   alt="Culture Image 1"
                   width={600}
                   height={400}
@@ -132,7 +132,7 @@ const AboutAgency: FC<{ params: { locale: string } }> = async ({
               </div>
               <div className="w-full md:w-1/2 order-1 md:order-2">
                 <Image
-                  src="/images/break.jpeg"
+                  src="/images/company/IMG_8940_1.jpg"
                   alt="Culture Image 2"
                   width={600}
                   height={400}
@@ -145,7 +145,7 @@ const AboutAgency: FC<{ params: { locale: string } }> = async ({
             <div className="flex flex-col md:flex-row items-center gap-8 text-[var(--light-blue)] light:text-[var(--gray-70)]">
               <div className="w-full md:w-1/2">
                 <Image
-                  src="/images/respect.jpeg"
+                  src="/images/company/IMG_9471_1.jpg"
                   alt="Culture Image 3"
                   width={600}
                   height={400}

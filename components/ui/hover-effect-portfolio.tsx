@@ -29,6 +29,7 @@ export const HoverEffectPortfolio = ({
         <Link
           href={item?.link}
           key={item?.link}
+          target="_blanc"
           className="relative group block p-2 h-full w-full"
           onMouseEnter={() => setHoveredIndex(idx)}
           onMouseLeave={() => setHoveredIndex(null)}
