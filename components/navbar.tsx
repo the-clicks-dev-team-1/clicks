@@ -40,30 +40,180 @@ const navItems: NavItem[] = [
     label: "services",
     link: "/services/webdev",
     children: [
-      { label: "webDev", link: "/services/webdev", iconImage: MdDeveloperMode },
       {
-        label: "strategyDev",
-        link: "/services/stratdev",
-        iconImage: PiStrategy,
+        label: "marketing",
+        link: "/services/webdev",
+        children: [
+          {
+            label: "webDev",
+            link: "/services/webdev",
+            iconImage: MdDeveloperMode,
+          },
+          {
+            label: "strategyDev",
+            link: "/services/stratdev",
+            iconImage: PiStrategy,
+          },
+          { label: "seo", link: "/services/seo", iconImage: TbSeo },
+          { label: "ppc", link: "/services/ppc", iconImage: SiGoogleads },
+          { label: "smm", link: "/services/smm", iconImage: PiMegaphone },
+          {
+            label: "cm",
+            link: "/services/cm",
+            iconImage: MdContentPasteSearch,
+          },
+          {
+            label: "em",
+            link: "/services/em",
+            iconImage: MdOutlineMarkEmailRead,
+          },
+          { label: "cro", link: "/services/cro", iconImage: GrOptimize },
+          {
+            label: "analytics",
+            link: "/services/analytics",
+            iconImage: SiGoogleanalytics,
+          },
+          {
+            label: "automation",
+            link: "/services/automation",
+            iconImage: TbSettingsAutomation,
+          },
+          { label: "pr", link: "/services/pr", iconImage: PiRocketLaunch },
+          { label: "design", link: "/services/design", iconImage: MdBrush },
+        ],
       },
-      { label: "seo", link: "/services/seo", iconImage: TbSeo },
-      { label: "ppc", link: "/services/ppc", iconImage: SiGoogleads },
-      { label: "smm", link: "/services/smm", iconImage: PiMegaphone },
-      { label: "cm", link: "/services/cm", iconImage: MdContentPasteSearch },
-      { label: "em", link: "/services/em", iconImage: MdOutlineMarkEmailRead },
-      { label: "cro", link: "/services/cro", iconImage: GrOptimize },
       {
-        label: "analytics",
-        link: "/services/analytics",
-        iconImage: SiGoogleanalytics,
+        label: "ai",
+        link: "/services/business-process-automation",
+        children: [
+          {
+            label: "businessProcess",
+            link: "/services/business-process-automation",
+            iconImage: MdDeveloperMode,
+          },
+          {
+            label: "nlp",
+            link: "/services/nlp",
+            iconImage: PiStrategy,
+          },
+          {
+            label: "chatbots",
+            link: "/services/chatbots-and-virtual-assistants",
+            iconImage: TbSeo,
+          },
+          {
+            label: "predictive",
+            link: "/services/predictive-analytics",
+            iconImage: SiGoogleads,
+          },
+          {
+            label: "powered",
+            link: "/services/ai-powered-analytics",
+            iconImage: PiMegaphone,
+          },
+          {
+            label: "optimization",
+            link: "/services/ai-driven-marketing-optimization",
+            iconImage: MdContentPasteSearch,
+          },
+          {
+            label: "image",
+            link: "/services/image-recognition-and-analysis",
+            iconImage: MdOutlineMarkEmailRead,
+          },
+          {
+            label: "recommendation",
+            link: "/services/recommendation-systems",
+            iconImage: GrOptimize,
+          },
+          {
+            label: "cybersecurity",
+            link: "/services/ai-enhanced-cybersecurity",
+            iconImage: SiGoogleanalytics,
+          },
+          {
+            label: "human",
+            link: "/services/ai-for-human-resources",
+            iconImage: TbSettingsAutomation,
+          },
+          {
+            label: "voice",
+            link: "/services/voice-recognition-solutions",
+            iconImage: PiRocketLaunch,
+          },
+          {
+            label: "custom",
+            link: "/services/custom-ai-development",
+            iconImage: MdBrush,
+          },
+        ],
       },
       {
-        label: "automation",
-        link: "/services/automation",
-        iconImage: TbSettingsAutomation,
+        label: "blockchain",
+        link: "/services/custom-blockchain-solutions",
+        children: [
+          {
+            label: "customBlockchain",
+            link: "/services/custom-blockchain-solutions",
+            iconImage: MdDeveloperMode,
+          },
+          {
+            label: "smart",
+            link: "/services/smart-contracts-development",
+            iconImage: PiStrategy,
+          },
+          {
+            label: "decentralized",
+            link: "/services/decentralized-applications",
+            iconImage: TbSeo,
+          },
+          {
+            label: "integration",
+            link: "/services/blockchain-integration",
+            iconImage: SiGoogleads,
+          },
+          {
+            label: "nft",
+            link: "/services/nft-platform-development",
+            iconImage: PiMegaphone,
+          },
+          {
+            label: "tokenization",
+            link: "/services/tokenization-services",
+            iconImage: MdContentPasteSearch,
+          },
+          {
+            label: "private",
+            link: "/services/private-blockchain-development",
+            iconImage: MdOutlineMarkEmailRead,
+          },
+          {
+            label: "supply",
+            link: "/services/supply-chain-blockchain",
+            iconImage: GrOptimize,
+          },
+          {
+            label: "security",
+            link: "/services/blockchain-security-audits",
+            iconImage: SiGoogleanalytics,
+          },
+          {
+            label: "cryptoWallet",
+            link: "/services/crypto-wallet-development",
+            iconImage: TbSettingsAutomation,
+          },
+          {
+            label: "training",
+            link: "/services/blockchain-training",
+            iconImage: PiRocketLaunch,
+          },
+          {
+            label: "consulting",
+            link: "/services/blockchain-consulting",
+            iconImage: MdBrush,
+          },
+        ],
       },
-      { label: "pr", link: "/services/pr", iconImage: PiRocketLaunch },
-      { label: "design", link: "/services/design", iconImage: MdBrush },
     ],
   },
   { label: "pricing", link: "/pricing" },
@@ -91,6 +241,7 @@ export default function Navbar() {
   const [lineStyles, setLineStyles] = useState({ left: 0, width: 0 }); // Line styles
   const navRef = useRef<HTMLDivElement>();
   const pathname = usePathname();
+  const [hoveredItem, setHoveredItem] = useState<string | null>(null);
 
   useEffect(() => {
     setMounted(true);
@@ -153,6 +304,14 @@ export default function Navbar() {
     [animationParent]
   );
 
+  const handleMouseEnter = (id: string) => {
+    setHoveredItem(id);
+  };
+
+  const handleMouseLeave = () => {
+    setHoveredItem(null);
+  };
+
   return (
     <div className="relative z-50 bg-black">
       <div className="p-6 md:p-10 flex gap-2 items-center justify-between text-white fixed w-full top-0 h-24 backdrop-blur-lg">
@@ -165,31 +324,64 @@ export default function Navbar() {
           className="hidden md:flex flex-1 #bg-[var(--bgnew)] justify-center items-center gap-4 backdrop-blur-lg rounded-lg p-4 #light:border-[1px] #light:border-[var(--ocean-blue)] #light:bg-[var(--light-blue)] animate-shimmer"
         >
           {navItems.map((d, i) => (
-            <div key={`${d.label}-${i}`} className="relative group">
+            <div
+              key={`${d.label}-${i}`}
+              className="relative group"
+              onMouseEnter={() => handleMouseEnter(i.toString())}
+              onMouseLeave={handleMouseLeave}
+            >
+              {/* First Level Link */}
               <ActiveLink
                 href={d.link ?? "#"}
                 className="flex items-center gap-2 text-[var(--gray-blue)] light:text-[var(--gray-70)] hover:text-white transition-all whitespace-nowrap"
                 onClick={() => handleLinkClick(i)}
               >
                 <span className="whitespace-nowrap">{t(`${d.label}`)}</span>
-                {/* {d.children && (
-                  <IoIosArrowDown className="transition-transform group-hover:rotate-180" />
-                )} */}
               </ActiveLink>
+
+              {/* First Level Children */}
               {d.children && (
-                <div className="absolute z-10 left-0 top-full hidden group-hover:block flex-col bg-black/90 light:bg-white text-[var(--gray-blue)] hover:text-white light:text-[var(--gray-70)] rounded-lg shadow-md py-3 transition-all">
+                <div className="absolute z-10 left-0 top-full hidden group-hover:flex flex-col bg-black/90 light:bg-white text-[var(--gray-blue)] light:text-[var(--gray-70)] rounded-lg shadow-md py-3 transition-all">
                   {d.children.map((ch, j) => (
-                    <ActiveLink
+                    <div
                       key={`${ch.label}-${j}`}
-                      href={ch.link ?? "#"}
-                      className="flex items-center px-4 py-2 hover:bg-[var(--ocean-blue)]"
-                      onClick={() => handleLinkClick(i)}
+                      className="relative"
+                      onMouseEnter={() => handleMouseEnter(`${i}-${j}`)} // Hover on the second level
+                      onMouseLeave={handleMouseLeave}
                     >
-                      {ch.iconImage && <ch.iconImage className="text-xl" />}
-                      <span className="ml-3 whitespace-nowrap">
-                        {t(`${ch.label}`)}
-                      </span>
-                    </ActiveLink>
+                      {/* Second Level Link */}
+                      <ActiveLink
+                        href={ch.link ?? "#"}
+                        className="flex items-center px-4 py-2 hover:bg-[var(--ocean-blue)]"
+                        onClick={() => handleLinkClick(i)}
+                      >
+                        {ch.iconImage && <ch.iconImage className="text-xl" />}
+                        <span className="ml-3 whitespace-nowrap">
+                          {t(`${ch.label}`)}
+                        </span>
+                      </ActiveLink>
+
+                      {/* Second Level Children */}
+                      {ch.children && hoveredItem === `${i}-${j}` && (
+                        <div className="absolute z-10 left-full top-0 hidden group-hover:flex flex-col bg-black/90 light:bg-white text-[var(--gray-blue)] light:text-[var(--gray-70)] rounded-lg shadow-md py-3 transition-all">
+                          {ch.children.map((nested, k) => (
+                            <ActiveLink
+                              key={`${nested.label}-${k}`}
+                              href={nested.link ?? "#"}
+                              className="flex items-center px-4 py-2 hover:bg-[var(--ocean-blue)]"
+                              onClick={() => handleLinkClick(i)}
+                            >
+                              {nested.iconImage && (
+                                <nested.iconImage className="text-xl" />
+                              )}
+                              <span className="ml-3 whitespace-nowrap">
+                                {t(`${nested.label}`)}
+                              </span>
+                            </ActiveLink>
+                          ))}
+                        </div>
+                      )}
+                    </div>
                   ))}
                 </div>
               )}

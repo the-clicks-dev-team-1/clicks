@@ -24,6 +24,7 @@
     "blog": "Blog",
     "portfolio": "Portfolio",
     "contacts": "Contacts",
+    "marketing": "Digital Marketing Solutions",
     "webDev": "Web Development",
     "strategyDev": "Strategy Development",
     "seo": "SEO",
@@ -36,6 +37,32 @@
     "automation": "Marketing Automation",
     "pr": "Public Relations",
     "design": "Graphic Design",
+    "ai": "AI Integration Made Simple",
+    "businessProcess": "Business Process Automation",
+    "nlp": "Natural Language Processing (NLP)",
+    "chatbots": "Chatbots and Virtual Assistants",
+    "predictive": "Predictive Analytics",
+    "powered": "AI-Powered Analytics",
+    "optimization": "AI-Driven Marketing Optimization",
+    "image": "Image Recognition and Analysis",
+    "recommendation": "Recommendation Systems",
+    "cybersecurity": "AI-Enhanced Cybersecurity",
+    "human": "AI for Human Resources",
+    "voice": "Voice Recognition Solutions",
+    "custom": "Custom AI Development",
+    "blockchain": "Blockchain for Business",
+    "customBlockchain": "Custom Blockchain Solutions",
+    "smart": "Smart Contracts Development",
+    "decentralized": "Decentralized Applications (DApps)",
+    "integration": "Blockchain Integration",
+    "nft": "NFT Platform Development",
+    "tokenization": "Tokenization Services",
+    "private": "Private Blockchain Development",
+    "supply": "Supply Chain Blockchain",
+    "security": "Blockchain Security Audits",
+    "cryptoWallet": "Crypto Wallet Development",
+    "training": "Blockchain Training",
+    "consulting": "Blockchain Consulting",
     "book": "Let's Talk"
   },
   "footer": {
@@ -431,6 +458,18 @@
     "title": "Our Works",
     "description": "With a proven track record across diverse industries, our expertise knows no bounds. We excel in adapting to unique challenges and delivering exceptional results in any sector. By leveraging our deep understanding and valuable insights, we provide tailored solutions that elevate every project we undertake.",
     "items": [
+      {
+        "imageTitle": "castors",
+        "url": "https://castors.hockey/"
+      },
+      {
+        "imageTitle": "lana",
+        "url": "https://lana.clinic/en"
+      },
+      {
+        "imageTitle": "karate",
+        "url": "https://theclicks-karate.vercel.app/"
+      },
       {
         "imageTitle": "bursh",
         "url": "https://bursh.com.ua/"
