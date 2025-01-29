@@ -545,6 +545,67 @@
     "addOns": "Services Supplémentaires",
     "plans": [
       {
+        "name": "Blockchain pour les Entreprises",
+        "price": "À partir de 100 CAD",
+        "features": [
+          "Blockchain pour les Entreprises",
+          "Solutions Blockchain Personnalisées",
+          "Développement de Contrats Intelligents",
+          "Applications Décentralisées (DApps)",
+          "Intégration Blockchain",
+          "Développement de Plateformes NFT",
+          "Services de Tokenisation",
+          "Développement de Blockchain Privée",
+          "Blockchain pour la Chaîne d'Approvisionnement",
+          "Audits de Sécurité Blockchain",
+          "Développement de Portefeuilles Crypto",
+          "Formation Blockchain",
+          "Consultation Blockchain"
+        ],
+        "button": "Contactez-nous"
+      },
+      {
+        "name": "Intégration de l'IA Simplifiée",
+        "price": "À partir de 100 CAD",
+        "features": [
+          "Automatisation des Processus Métiers",
+          "Traitement du Langage Naturel (NLP)",
+          "Chatbots et Assistants Virtuels",
+          "Analytique Prédictive",
+          "Analytique Alimentée par l'IA",
+          "Optimisation Marketing Basée sur l'IA",
+          "Reconnaissance et Analyse d'Images",
+          "Systèmes de Recommandation",
+          "Cybersécurité Améliorée par l'IA",
+          "IA pour les Ressources Humaines",
+          "Solutions de Reconnaissance Vocale",
+          "Développement d'IA sur Mesure"
+        ],
+        "button": "Contactez-nous"
+      },
+      {
+        "name": "Solutions de Marketing Digital",
+        "price": "À partir de 100 CAD",
+        "features": [
+          "Développement Web",
+          "Développement de stratégie",
+          "SEO",
+          "Publicité PPC",
+          "Marketing des médias sociaux",
+          "Marketing de contenu",
+          "Marketing par email",
+          "Optimisation du taux de conversion",
+          "Analyse et rapports",
+          "Automatisation du marketing",
+          "Relations publiques",
+          "Conception graphique"
+        ],
+        "button": "Contactez-nous"
+      }
+    ],
+    "moneyBack": "Garantie de remboursement 6 mois",
+    "plans_old": [
+      {
         "name": "Basique",
         "price": "CAD $3,000",
         "features": [
