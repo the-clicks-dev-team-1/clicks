@@ -95,7 +95,7 @@ const SupplyChainBlockchain: FC<{
           </div>
           <div className="relative w-full h-64 md:h-96">
             <Image
-              src="/images/analytics.jpg"
+              src="/images/blockchain/supplyChain.jpg"
               alt="Analytics and Reporting Explanation"
               layout="fill"
               objectFit="cover"

@@ -1384,7 +1384,7 @@
           "description": "Des systèmes blockchain sur mesure pour votre entreprise, garantissant une intégration fluide et une amélioration des opérations.\nGagnez du temps et réduisez les erreurs manuelles avec des processus blockchain automatisés. Renforcez la confiance et la transparence dans toutes vos opérations commerciales."
         },
         "what": {
-          "title": "Pourquoi utiliser des solutions Blockchain ?",
+          "title": "Comment ça fonctionne en pratique",
           "description": "Imaginez que vous gérez un magasin de jouets et utilisez un système blockchain pour suivre votre inventaire. Lorsqu'un client achète un jouet, le système met automatiquement à jour votre stock et indique exactement où chaque article a été fabriqué et livré. Fini les comptages manuels ou la perte de suivi des articles !"
         },
         "why": {
@@ -1426,7 +1426,7 @@
           "description": "Des contrats intelligents efficaces et sécurisés pour automatiser les accords et rationaliser les transactions.\nRéduisez l'intervention manuelle et éliminez les intermédiaires tout en garantissant la transparence et l'exécution inviolable des accords."
         },
         "what": {
-          "title": "Pourquoi utiliser des contrats intelligents ?",
+          "title": "Comment ça fonctionne en pratique",
           "description": "Imaginez que vous louez un appartement. Avec un contrat intelligent, le paiement du loyer du locataire est automatiquement transféré sur votre compte à la date d'échéance. Si le paiement n'est pas effectué, le système refuse automatiquement l'accès à la propriété jusqu'à ce que le problème soit résolu — pas besoin d'intermédiaires ni de relances manuelles."
         },
         "why": {
@@ -1468,7 +1468,7 @@
           "description": "Développez des portefeuilles de crypto-monnaies sécurisés et conviviaux pour les transactions et la gestion des actifs.\nPermettez une gestion fluide des actifs numériques avec un support multi-devises et une sécurité avancée."
         },
         "what": {
-          "title": "Pourquoi utiliser un portefeuille crypto ?",
+          "title": "Comment ça fonctionne en pratique",
           "description": "Imaginez un portefeuille numérique qui conserve en toute sécurité votre Bitcoin, Ethereum et d'autres crypto-monnaies. Vous pouvez envoyer ou recevoir des paiements, surveiller votre portefeuille et échanger sur des plateformes — tout depuis une application sécurisée et facile à utiliser."
         },
         "why": {
@@ -1510,7 +1510,7 @@
           "description": "Créez des DApps sécurisées et évolutives pour améliorer les opérations commerciales et l'expérience client.\nExploitez une infrastructure décentralisée pour des solutions fiables et performantes."
         },
         "what": {
-          "title": "Qu'est-ce qu'une application décentralisée ?",
+          "title": "Comment ça fonctionne en pratique",
           "description": "Imaginez un marché peer-to-peer pour les artistes où ils peuvent vendre leur travail directement aux acheteurs sans frais de plateforme. Le processus entier — de l'annonce à la paiement — est géré par une application décentralisée, garantissant la confiance et l'équité."
         },
         "why": {
@@ -1552,7 +1552,7 @@
           "description": "Concevez et développez des plateformes pour acheter, vendre et gérer des NFTs et des actifs numériques.\nOffrez aux entreprises des opportunités de branding et des expériences de trading sécurisées."
         },
         "what": {
-          "title": "Pourquoi utiliser une plateforme NFT ?",
+          "title": "Comment ça fonctionne en pratique",
           "description": "Imaginez une plateforme où un artiste télécharge une œuvre numérique sous forme de NFT. Les acheteurs peuvent acheter le NFT en toute sécurité, garantissant que l'artiste est payé instantanément et que l'acheteur possède un actif numérique unique et vérifié."
         },
         "why": {
@@ -1594,7 +1594,7 @@
           "description": "Assurez la sécurité de vos applications blockchain avec des audits de sécurité complets.\nIdentifiez les vulnérabilités et renforcez votre système contre les hacks potentiels."
         },
         "what": {
-          "title": "Pourquoi utiliser des audits de sécurité Blockchain ?",
+          "title": "Comment ça fonctionne en pratique",
           "description": "Imaginez que votre plateforme blockchain soit évaluée par des experts qui identifient les points faibles avant que les hackers ne puissent en profiter. Le système est ensuite renforcé avec les mises à jour recommandées, garantissant une sécurité continue."
         },
         "why": {
@@ -1636,7 +1636,7 @@
           "description": "Optimisez les chaînes d'approvisionnement avec la blockchain pour une meilleure transparence et une efficacité opérationnelle.\nRéduisez le temps de traitement et prévenez la contrefaçon grâce au traitement automatisé des transactions."
         },
         "what": {
-          "title": "Pourquoi utiliser des solutions Blockchain pour la chaîne d'approvisionnement ?",
+          "title": "Comment ça fonctionne en pratique",
           "description": "Imaginez suivre chaque étape du parcours d'un produit, de l'usine au client, garantissant l'authenticité et vérifiant les données à chaque étape. Les clients peuvent scanner un code pour voir l'historique complet du produit."
         },
         "why": {
@@ -1678,7 +1678,7 @@
           "description": "Transformez les actifs réels en tokens numériques pour une liquidité et une flexibilité accrues.\nDébloquez de nouvelles opportunités d'investissement avec des actifs sécurisés et tokenisés."
         },
         "what": {
-          "title": "Pourquoi utiliser les services de tokenisation ?",
+          "title": "Comment ça fonctionne en pratique",
           "description": "Imaginez tokeniser des propriétés immobilières, permettant aux investisseurs d'acheter des parts fractionnées d'un bâtiment plutôt que la propriété entière, rendant les investissements plus accessibles."
         },
         "why": {
@@ -1720,7 +1720,7 @@
           "description": "Développez des réseaux de blockchain privés pour des opérations internes sécurisées et efficaces.\nOffrez une confidentialité accrue, un contrôle total des données et une scalabilité adaptée aux besoins de votre entreprise."
         },
         "what": {
-          "title": "Pourquoi utiliser une Blockchain Privée ?",
+          "title": "Comment ça fonctionne en pratique",
           "description": "Imaginez une entreprise qui doit gérer en toute sécurité les données des employés, les dossiers de projets et les communications internes. Avec une blockchain privée, seules les personnes autorisées peuvent accéder aux informations, assurant ainsi la confidentialité et l'intégrité des données sans se soucier des fuites."
         },
         "why": {
@@ -1762,7 +1762,7 @@
           "description": "Des conseils d'experts pour aider les entreprises à identifier les opportunités blockchain et à mettre en œuvre les bonnes solutions.\nRenforcez votre entreprise avec des stratégies qui maximisent le potentiel de la blockchain tout en minimisant les risques."
         },
         "what": {
-          "title": "Qu'est-ce que la consultation Blockchain ?",
+          "title": "Comment ça fonctionne en pratique",
           "description": "Imaginez une chaîne de magasins explorant la blockchain pour la gestion de sa chaîne d'approvisionnement. Les consultants évaluent vos systèmes actuels, recommandent la meilleure plateforme blockchain et conçoivent une stratégie pour l'intégrer, garantissant ainsi un rapport coût-efficacité et une efficacité opérationnelle."
         },
         "why": {
@@ -1805,7 +1805,7 @@
           "description": "Intégrez de manière transparente la blockchain dans vos systèmes existants pour améliorer l'efficacité et la sécurité.\nRéduisez les perturbations opérationnelles tout en augmentant les performances avec des solutions blockchain personnalisées."
         },
         "what": {
-          "title": "Pourquoi intégrer la Blockchain ?",
+          "title": "Comment ça fonctionne en pratique",
           "description": "Imaginez une entreprise de logistique ajoutant la blockchain à son système actuel. Les livraisons sont suivies automatiquement et les données sont partagées de manière sécurisée avec les partenaires, accélérant les opérations et réduisant les erreurs."
         },
         "why": {
@@ -1847,7 +1847,7 @@
           "description": "Des programmes de formation complets pour aider votre équipe à comprendre et à utiliser efficacement la blockchain.\nEquipez votre personnel des compétences nécessaires pour exploiter la blockchain pour un succès à long terme."
         },
         "what": {
-          "title": "Pourquoi investir dans la formation Blockchain ?",
+          "title": "Comment ça fonctionne en pratique",
           "description": "Imaginez votre équipe financière apprenant comment la blockchain peut rationaliser le traitement des paiements. Grâce à des exercices pratiques, ils s'entraînent à utiliser des contrats intelligents et à gérer les transactions de manière sécurisée et efficace."
         },
         "why": {
@@ -1863,27 +1863,27 @@
         "items": [
           {
             "title": "Élimine les erreurs humaines",
-            "description": ""
+            "description": "L'IA garantit la précision en réduisant les erreurs dans les tâches répétitives, améliorant ainsi la fiabilité globale."
           },
           {
-            "title": "Automatise les opérations routinières",
-            "description": ""
+            "title": "Automatise les opérations de routine",
+            "description": "Libérez votre équipe en laissant l'IA gérer les processus répétitifs et chronophages."
           },
           {
             "title": "S'intègre aux systèmes CRM et ERP",
-            "description": ""
+            "description": "Connectez l'automatisation IA de manière fluide à vos outils commerciaux existants pour un flux de travail unifié"
           },
           {
             "title": "Améliore l'efficacité opérationnelle",
-            "description": ""
+            "description": "Accomplissez les tâches plus rapidement et plus efficacement, permettant à votre équipe de se concentrer sur des travaux à plus forte valeur ajoutée"
           },
           {
-            "title": "Support complet lors de l'implémentation",
-            "description": ""
+            "title": "Soutien complet lors de l'implémentation",
+            "description": "Bénéficiez de l'assistance d'experts pour garantir une configuration et une intégration de l'IA dans vos processus sans accroc"
           },
           {
             "title": "Économise du temps et des ressources",
-            "description": ""
+            "description": "Réduisez les charges de travail manuelles et les coûts opérationnels tout en augmentant la productivité"
           }
         ],
         "mainSection": {
@@ -1891,7 +1891,7 @@
           "description": "Simplifiez les tâches répétitives grâce à l'automatisation pilotée par l'IA, économisant du temps et réduisant les erreurs.\nAméliorez l'efficacité opérationnelle tout en éliminant les erreurs humaines grâce à l'automatisation intelligente des processus."
         },
         "what": {
-          "title": "Pourquoi automatiser les processus métier ?",
+          "title": "Comment ça fonctionne en pratique",
           "description": "Imaginez une entreprise automatisant le traitement des factures. Au lieu de saisir manuellement les données, l'IA scanne les factures, extrait les détails et met à jour les systèmes financiers automatiquement, réduisant les erreurs et économisant des heures de travail."
         },
         "why": {
@@ -1904,28 +1904,28 @@
       "nlp": {
         "items": [
           {
-            "title": "Analyse des sentiments pour les textes",
-            "description": ""
+            "title": "Analyse de sentiment pour le texte",
+            "description": "Évaluer le sentiment des clients à partir des avis ou des réseaux sociaux"
           },
           {
-            "title": "Compréhension approfondie des données clients",
-            "description": ""
+            "title": "Compréhension améliorée des données clients",
+            "description": "Extraire des informations à partir des données textuelles"
           },
           {
             "title": "Traitement automatique des requêtes clients",
-            "description": ""
+            "description": "Répondre plus rapidement aux requêtes grâce à l'automatisation"
           },
           {
-            "title": "Génération de textes et de rapports",
-            "description": ""
+            "title": "Génération de texte et de rapports",
+            "description": "Créer automatiquement des résumés ou des rapports détaillés"
           },
           {
             "title": "Amélioration de l'expérience client",
-            "description": ""
+            "description": "Offrir un meilleur support en analysant les besoins des clients"
           },
           {
             "title": "Intégration avec les assistants vocaux",
-            "description": ""
+            "description": "Utiliser le traitement du langage naturel dans les appareils intelligents pour des services vocaux"
           }
         ],
         "mainSection": {
@@ -1933,7 +1933,7 @@
           "description": "Exploitez le NLP pour améliorer la communication, les connaissances clients et l'analyse de contenu.\nTransformez les données non structurées en informations exploitables pour de meilleures expériences clients."
         },
         "what": {
-          "title": "Pourquoi utiliser le traitement du langage naturel ?",
+          "title": "Comment ça fonctionne en pratique",
           "description": "Imaginez un hôtel analysant les avis en ligne grâce au NLP pour identifier les préoccupations courantes des clients, comme la propreté ou la qualité du service, et y répondre de manière proactive."
         },
         "why": {
@@ -1947,27 +1947,27 @@
         "items": [
           {
             "title": "Support client 24/7",
-            "description": ""
+            "description": "Soyez toujours disponible pour aider les clients, même en dehors des heures de bureau"
           },
           {
             "title": "Capacités multilingues",
-            "description": ""
+            "description": "Communiquez avec les clients dans leur langue préférée pour un meilleur engagement"
           },
           {
             "title": "Intégration avec les sites web et applications",
-            "description": ""
+            "description": "Ajoutez facilement des chatbots à vos plateformes existantes pour une interaction fluide"
           },
           {
             "title": "Interactions personnalisées avec les clients",
-            "description": ""
+            "description": "Adaptez les réponses aux clients individuels en fonction de leurs besoins et préférences"
           },
           {
             "title": "Réduit la charge de travail du personnel",
-            "description": ""
+            "description": "Traitez automatiquement les requêtes courantes, libérant ainsi le personnel pour des tâches plus complexes"
           },
           {
-            "title": "Mise en place et déploiement rapides",
-            "description": ""
+            "title": "Configuration et déploiement rapides",
+            "description": "Implémentez les chatbots rapidement, avec un minimum de perturbation pour vos opérations"
           }
         ],
         "mainSection": {
@@ -1975,7 +1975,7 @@
           "description": "Améliorez l'expérience client avec des chatbots intelligents qui fournissent un support instantané et personnalisé.\nOffrez un service client 24/7 sans surcharger votre personnel."
         },
         "what": {
-          "title": "Pourquoi utiliser les chatbots et assistants virtuels ?",
+          "title": "Comment ça fonctionne en pratique",
           "description": "Imaginez un site de commerce électronique où un chatbot aide les clients avec des questions sur les produits, suit les commandes et traite les retours, tout en temps réel sans attendre une intervention humaine."
         },
         "why": {
@@ -1988,28 +1988,28 @@
       "predictiveAnalytics": {
         "items": [
           {
-            "title": "Prévisions des ventes",
-            "description": ""
+            "title": "Prévision des ventes",
+            "description": "Prédire les tendances futures des ventes pour une planification plus précise"
           },
           {
             "title": "Analyse du comportement des clients",
-            "description": ""
+            "description": "Comprendre les comportements des clients pour améliorer l'engagement"
           },
           {
             "title": "Évaluation des risques financiers",
-            "description": ""
+            "description": "Anticiper les risques pour réduire les incertitudes financières"
           },
           {
             "title": "Optimisation de la chaîne d'approvisionnement",
-            "description": ""
+            "description": "Améliorer l'efficacité de la chaîne d'approvisionnement en prédisant les problèmes potentiels"
           },
           {
             "title": "Amélioration de l'efficacité des campagnes",
-            "description": ""
+            "description": "Évaluer les campagnes pour améliorer les résultats"
           },
           {
-            "title": "Intégration avec des outils BI",
-            "description": ""
+            "title": "Intégration avec les outils BI",
+            "description": "Associer l'IA aux outils d'analyse existants pour des informations plus approfondies"
           }
         ],
         "mainSection": {
@@ -2017,7 +2017,7 @@
           "description": "Utilisez les outils prédictifs basés sur l'IA pour anticiper les tendances, le comportement des clients et les besoins opérationnels.\nAnticipez les résultats futurs et prenez des décisions proactives en toute confiance."
         },
         "what": {
-          "title": "Pourquoi utiliser l'analytique prédictive ?",
+          "title": "Comment ça fonctionne en pratique",
           "description": "Imaginez une agence de voyage utilisant l'IA pour prévoir la demande saisonnière pour certaines destinations. Elle ajuste les prix et les promotions en conséquence, maximisant les réservations pendant les périodes de pointe."
         },
         "why": {
@@ -2031,35 +2031,36 @@
         "items": [
           {
             "title": "Analyse approfondie de grands ensembles de données",
-            "description": ""
+            "description": "L'IA traite d'énormes volumes de données pour extraire des insights exploitables plus rapidement que les humains"
           },
           {
             "title": "Prévision des tendances du marché",
-            "description": ""
+            "description": "Anticiper les tendances à venir et le comportement des consommateurs pour garder une longueur d'avance sur la concurrence"
           },
           {
             "title": "Visualisation des indicateurs clés",
-            "description": ""
+            "description": "Transformer les données brutes en graphiques et tableaux faciles à interpréter pour une meilleure prise de décision"
           },
           {
             "title": "Optimisation des stratégies marketing",
-            "description": ""
+            "description": "Identifier les tactiques marketing les plus efficaces et allouer les ressources de manière plus efficiente"
           },
           {
             "title": "Réduction des risques",
-            "description": ""
+            "description": "Analyser les risques potentiels et fournir des recommandations pour les atténuer avant qu'ils ne surviennent"
           },
           {
-            "title": "Soutien à la prise de décision en temps réel",
-            "description": ""
+            "title": "Support à la prise de décision en temps réel",
+            "description": "Accéder instantanément à des insights pour prendre des décisions commerciales rapides et précises"
           }
         ],
+
         "mainSection": {
           "title": "Analytique Alimentée par l'IA",
           "description": "Utilisez l'IA pour analyser de grands ensembles de données, révéler des insights et prendre des décisions plus intelligentes. Décelez les schémas et tendances cachés dans vos données pour rester compétitif sur le marché."
         },
         "what": {
-          "title": "Pourquoi utiliser l'Analytique Alimentée par l'IA ?",
+          "title": "Comment ça fonctionne en pratique",
           "description": "Imaginez un détaillant analysant les données de ventes pour prédire la demande future. L'IA identifie les produits tendance et suggère des niveaux de stock optimaux, assurant ainsi des rayons toujours bien approvisionnés."
         },
         "why": {
@@ -2072,28 +2073,28 @@
       "aiMarketing": {
         "items": [
           {
-            "title": "Automatise les campagnes marketing",
-            "description": ""
+            "title": "Automatisation des campagnes marketing",
+            "description": "L'IA prend en charge l'exécution complète des campagnes"
           },
           {
-            "title": "Augmente les taux de conversion",
-            "description": ""
+            "title": "Augmentation des taux de conversion",
+            "description": "Les publicités ciblées génèrent plus de ventes"
           },
           {
             "title": "Segmentation de l'audience",
-            "description": ""
+            "description": "Divisez les audiences en groupes spécifiques pour des messages personnalisés"
           },
           {
-            "title": "Personnalise les messages publicitaires",
-            "description": ""
+            "title": "Personnalisation des messages publicitaires",
+            "description": "Adaptez les publicités en fonction des préférences de votre audience"
           },
           {
             "title": "Exécution de campagnes en temps réel",
-            "description": ""
+            "description": "Lancez ou ajustez des campagnes instantanément"
           },
           {
             "title": "Réduction des coûts publicitaires",
-            "description": ""
+            "description": "Dépensez moins grâce à un ciblage efficace"
           }
         ],
         "mainSection": {
@@ -2101,7 +2102,7 @@
           "description": "Optimisez vos campagnes et votre ciblage client avec des outils alimentés par l'IA pour un meilleur retour sur investissement. Diffusez des publicités ciblées et maximisez votre budget marketing grâce aux insights de l'IA."
         },
         "what": {
-          "title": "Pourquoi utiliser l'Optimisation Marketing Alimentée par l'IA ?",
+          "title": "Comment ça fonctionne en pratique",
           "description": "Imaginez une marque de vêtements utilisant l'IA pour cibler les publicités de manteaux d'hiver aux clients dans les régions froides, augmentant ainsi les ventes tout en réduisant les dépenses publicitaires."
         },
         "why": {
@@ -2115,27 +2116,27 @@
         "items": [
           {
             "title": "Analyse automatique des images",
-            "description": ""
+            "description": "L'IA traite les images pour détecter des problèmes ou des tendances"
           },
           {
             "title": "Intégration aux systèmes de sécurité",
-            "description": ""
+            "description": "Améliorez la surveillance grâce à la reconnaissance intelligente"
           },
           {
             "title": "Contrôle qualité pour la fabrication",
-            "description": ""
+            "description": "Détectez les défauts en temps réel"
           },
           {
-            "title": "Gestion automatique des stocks",
-            "description": ""
+            "title": "Gestion automatisée des stocks",
+            "description": "Suivez les stocks grâce aux données visuelles"
           },
           {
             "title": "Prise en charge de multiples formats de données",
-            "description": ""
+            "description": "Gérez les images dans divers formats"
           },
           {
-            "title": "Intégration avec des services cloud",
-            "description": ""
+            "title": "Intégration aux services cloud",
+            "description": "Stockez et traitez les données en toute sécurité dans le cloud"
           }
         ],
         "mainSection": {
@@ -2143,7 +2144,7 @@
           "description": "Automatisez le traitement des données visuelles pour le contrôle qualité, la sécurité et la gestion des stocks. Réduisez les erreurs et gagnez du temps grâce à l'IA pour une analyse rapide et précise des images."
         },
         "what": {
-          "title": "Pourquoi utiliser la Reconnaissance et l'Analyse d'Images ?",
+          "title": "Comment ça fonctionne en pratique",
           "description": "Imaginez une usine utilisant des caméras alimentées par l'IA pour inspecter les produits sur la chaîne de montage. Les articles défectueux sont automatiquement signalés et retirés, garantissant que seuls des produits de haute qualité atteignent les clients."
         },
         "why": {
@@ -2157,27 +2158,27 @@
         "items": [
           {
             "title": "Personnalisation des produits et services",
-            "description": ""
+            "description": "Recommandez des articles adaptés aux préférences individuelles"
           },
           {
             "title": "Amélioration de la satisfaction client",
-            "description": ""
+            "description": "Optimisez l'expérience utilisateur avec des suggestions pertinentes"
           },
           {
             "title": "Augmentation des achats répétés",
-            "description": ""
+            "description": "Encouragez les clients à revenir pour acheter davantage"
           },
           {
             "title": "Analyse des préférences des clients",
-            "description": ""
+            "description": "Comprenez ce que les clients apprécient"
           },
           {
-            "title": "Intégration aux plateformes de e-commerce",
-            "description": ""
+            "title": "Intégration aux plateformes e-commerce",
+            "description": "Ajoutez des moteurs de recommandation aux sites web ou applications"
           },
           {
             "title": "Mises à jour automatiques des recommandations",
-            "description": ""
+            "description": "Maintenez des suggestions actualisées et pertinentes"
           }
         ],
         "mainSection": {
@@ -2185,7 +2186,7 @@
           "description": "Améliorez l'expérience utilisateur grâce à des recommandations personnalisées alimentées par l'IA. Offrez des suggestions adaptées pour augmenter la satisfaction et les achats répétés."
         },
         "what": {
-          "title": "Pourquoi utiliser les Systèmes de Recommandation Alimentés par l'IA ?",
+          "title": "Comment ça fonctionne en pratique",
           "description": "Imaginez une librairie en ligne suggérant des livres en fonction des achats et des avis précédents d'un client. Les clients se sentent compris et sont plus enclins à revenir pour de futurs achats."
         },
         "why": {
@@ -2199,27 +2200,27 @@
         "items": [
           {
             "title": "Surveillance des menaces en temps réel",
-            "description": ""
+            "description": "Détectez et répondez aux menaces de sécurité dès qu'elles surviennent"
           },
           {
-            "title": "Détection automatique des anomalies",
-            "description": ""
+            "title": "Détection automatisée des anomalies",
+            "description": "Identifiez les schémas inhabituels dans les données pour prévenir les violations"
           },
           {
             "title": "Protection contre les cyberattaques",
-            "description": ""
+            "description": "Protégez les systèmes contre les malwares, le phishing et autres menaces"
           },
           {
             "title": "Analyse des vulnérabilités",
-            "description": ""
+            "description": "Évaluez en continu les points faibles de votre infrastructure de sécurité"
           },
           {
             "title": "Réponse rapide aux incidents",
-            "description": ""
+            "description": "Traitez rapidement les problèmes de sécurité pour minimiser les dommages"
           },
           {
             "title": "Renforcement de la protection des données",
-            "description": ""
+            "description": "Sécurisez les informations sensibles grâce à un chiffrement avancé"
           }
         ],
         "mainSection": {
@@ -2227,7 +2228,7 @@
           "description": "Renforcez votre cybersécurité avec des outils d'IA qui détectent et préviennent les menaces en temps réel.\nRestez protégé grâce à des systèmes intelligents qui identifient les vulnérabilités et réagissent instantanément."
         },
         "what": {
-          "title": "Pourquoi utiliser une cybersécurité améliorée par l'IA ?",
+          "title": "Comment ça fonctionne en pratique",
           "description": "Imaginez une institution financière utilisant l'IA pour surveiller les transactions. Le système détecte et bloque les activités inhabituelles, telles que les connexions non autorisées ou les transferts frauduleux, avant qu'elles ne causent des dommages."
         },
         "why": {
@@ -2240,28 +2241,28 @@
       "hr": {
         "items": [
           {
-            "title": "Analyse automatique des CV",
-            "description": ""
+            "title": "Analyse automatisée des CV",
+            "description": "Examinez et classez rapidement les CV pour identifier les meilleurs candidats"
           },
           {
             "title": "Optimisation des processus de recrutement",
-            "description": ""
+            "description": "Simplifiez les flux de travail de recrutement pour une embauche plus rapide"
           },
           {
             "title": "Prévision de la satisfaction des employés",
-            "description": ""
+            "description": "Anticipez le bien-être des employés et prenez des mesures proactives"
           },
           {
             "title": "Programmes de formation personnalisés",
-            "description": ""
+            "description": "Créez des plans de formation adaptés pour améliorer les compétences des employés"
           },
           {
-            "title": "Réduction du turnover des employés",
-            "description": ""
+            "title": "Réduction du taux de rotation des employés",
+            "description": "Identifiez les risques de départ et intervenez avant de perdre des talents"
           },
           {
-            "title": "Intégration avec les systèmes de gestion RH",
-            "description": ""
+            "title": "Intégration avec les systèmes RH",
+            "description": "Connectez l'IA aux outils RH existants pour un fonctionnement fluide"
           }
         ],
         "mainSection": {
@@ -2269,7 +2270,7 @@
           "description": "Simplifiez le recrutement et la gestion des employés grâce à des solutions RH alimentées par l'IA.\nAméliorez les processus d'embauche et fidélisez les talents avec des outils de gestion intelligente des effectifs."
         },
         "what": {
-          "title": "Pourquoi utiliser l'IA pour les ressources humaines ?",
+          "title": "Comment ça fonctionne en pratique",
           "description": "Imaginez une équipe RH utilisant l'IA pour analyser les CV. Le système identifie rapidement les meilleurs candidats en fonction des exigences du poste, économisant du temps et garantissant les meilleures embauches."
         },
         "why": {
@@ -2282,28 +2283,28 @@
       "voice": {
         "items": [
           {
-            "title": "Reconnaissance vocale",
-            "description": ""
+            "title": "Capacités de reconnaissance vocale",
+            "description": "Transcrire et comprendre les paroles avec précision"
           },
           {
             "title": "Commandes vocales pour l'automatisation",
-            "description": ""
+            "description": "Effectuer des tâches en mode mains libres grâce aux commandes vocales"
           },
           {
             "title": "Support pour les utilisateurs en situation de handicap",
-            "description": ""
+            "description": "Améliorer l'accessibilité pour les personnes ayant des limitations"
           },
           {
-            "title": "Interactions client améliorées",
-            "description": ""
+            "title": "Amélioration des interactions client",
+            "description": "Offrir un service client plus rapide et plus naturel"
           },
           {
             "title": "Intégration rapide avec les appareils",
-            "description": ""
+            "description": "Mettre en œuvre facilement la reconnaissance vocale sur plusieurs dispositifs"
           },
           {
             "title": "Support multilingue",
-            "description": ""
+            "description": "Communiquer dans différentes langues pour une portée mondiale"
           }
         ],
         "mainSection": {
@@ -2311,7 +2312,7 @@
           "description": "Activez des solutions basées sur la voix pour le support client, l'accessibilité et l'automatisation.\nSimplifiez les interactions et améliorez l'accessibilité grâce à une technologie de reconnaissance vocale avancée."
         },
         "what": {
-          "title": "Pourquoi utiliser la reconnaissance vocale ?",
+          "title": "Comment ça fonctionne en pratique",
           "description": "Imaginez un client utilisant des commandes vocales pour vérifier son solde bancaire ou transférer des fonds. Le système traite instantanément la demande, offrant commodité et accessibilité."
         },
         "why": {
@@ -2325,27 +2326,27 @@
         "items": [
           {
             "title": "Approche personnalisée",
-            "description": ""
+            "description": "Développer une IA spécifiquement adaptée aux flux de travail de votre entreprise"
           },
           {
             "title": "Intégration avec les systèmes existants",
-            "description": ""
+            "description": "Connecter l'IA de manière transparente à vos outils et logiciels actuels"
           },
           {
             "title": "Déploiement rapide",
-            "description": ""
+            "description": "Mettre en œuvre des solutions d'IA rapidement pour obtenir des résultats plus tôt"
           },
           {
             "title": "Support complet et formation",
-            "description": ""
+            "description": "Fournir une assistance experte et des ressources pour maximiser l’impact de l’IA"
           },
           {
-            "title": "Optimisation des processus métiers",
-            "description": ""
+            "title": "Optimisation des processus métier",
+            "description": "Rationaliser les opérations et améliorer l’efficacité dans tous les départements"
           },
           {
             "title": "Mises à jour technologiques continues",
-            "description": ""
+            "description": "Garder vos solutions d’IA à jour avec les dernières avancées"
           }
         ],
         "mainSection": {
@@ -2353,7 +2354,7 @@
           "description": "Développez des solutions d'IA adaptées aux besoins de votre entreprise pour un impact et une efficacité maximaux.\nPersonnalisez l'IA pour transformer vos processus uniques et garantir des résultats optimaux."
         },
         "what": {
-          "title": "Pourquoi utiliser des solutions d'IA sur mesure ?",
+          "title": "Comment ça fonctionne en pratique",
           "description": "Imaginez une entreprise de logistique développant un outil d'IA personnalisé pour prédire les retards de livraison. Le système analyse les schémas de trafic, la météo et les performances des conducteurs pour optimiser les itinéraires en temps réel."
         },
         "why": {

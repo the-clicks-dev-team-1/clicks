@@ -824,7 +824,7 @@
           "description": "Our team creates custom dashboards that provide you with the key metrics you need to monitor your campaigns and make data-driven decisions."
         },
         {
-          "title:": "Campaign Tracking",
+          "title": "Campaign Tracking",
           "description": "We track the performance of your marketing campaigns across all channels, helping you understand which strategies are driving results."
         },
         {
@@ -1356,7 +1356,7 @@
           "description": "Tailored blockchain systems for your business, ensuring seamless integration and improved operations.\nSave time and reduce manual errors with automated blockchain processes. Enhance trust and transparency across all your business operations."
         },
         "what": {
-          "title": "Why Use Blockchain Solutions?",
+          "title": "How It Works in Practice",
           "description": "Imagine you run a toy store and use a blockchain system to track your inventory. When a customer buys a toy, the system automatically updates your stock and shows exactly where each item was made and delivered. No more manual counting or losing track of items!"
         },
         "why": {
@@ -1398,7 +1398,7 @@
           "description": "Efficient and secure smart contracts to automate agreements and streamline transactions.\nReduce manual intervention and eliminate intermediaries while ensuring transparency and tamper-proof execution of agreements."
         },
         "what": {
-          "title": "Why Use Smart Contracts",
+          "title": "How It Works in Practice",
           "description": "Imagine you’re renting out an apartment. With a smart contract, the tenant’s rent payment is automatically transferred to your account on the due date. If the payment isn’t made, the system automatically denies access to the property until the issue is resolved—no need for intermediaries or manual follow-ups"
         },
         "why": {
@@ -1440,7 +1440,7 @@
           "description": "Develop secure and user-friendly cryptocurrency wallets for transactions and asset management.\nEnable seamless management of digital assets with multi-currency support and advanced security."
         },
         "what": {
-          "title": "Why Use Crypto Wallet",
+          "title": "How It Works in Practice",
           "description": "Imagine a digital wallet that safely holds your Bitcoin, Ethereum, and other cryptocurrencies. You can send or receive payments, monitor your portfolio, and trade on exchanges—all from one secure and easy-to-use app."
         },
         "why": {
@@ -1482,7 +1482,7 @@
           "description": "Build secure and scalable DApps to enhance business operations and customer experiences.\nLeverage decentralized infrastructure for reliable and high-performing solutions"
         },
         "what": {
-          "title": "What is Decentralized Applications?",
+          "title": "How It Works in Practice",
           "description": "Imagine a peer-to-peer marketplace for artists where they can sell their work directly to buyers without any platform fees. The entire process—from listing to payment—is managed by a decentralized app, ensuring trust and fairness."
         },
         "why": {
@@ -1524,7 +1524,7 @@
           "description": "Design and develop platforms for buying, selling, and managing NFTs and digital assets.\nEmpower businesses with branding opportunities and secure trading experiences."
         },
         "what": {
-          "title": "Why Use NFT Platform?",
+          "title": "How It Works in Practice",
           "description": "Imagine a platform where an artist uploads digital art as an NFT. Buyers can securely purchase the NFT, ensuring the artist gets paid instantly and the buyer owns a verified, unique digital asset"
         },
         "why": {
@@ -1566,7 +1566,7 @@
           "description": "Ensure the safety of your blockchain applications with comprehensive security audits.\nIdentify vulnerabilities and strengthen your system against potential hacks."
         },
         "what": {
-          "title": "Why Use Blockchain Security Audits",
+          "title": "How It Works in Practice",
           "description": "Imagine your blockchain platform being evaluated by experts who identify weak spots before hackers can exploit them. The system is then fortified with recommended updates, ensuring ongoing security"
         },
         "why": {
@@ -1608,7 +1608,7 @@
           "description": "Optimize supply chains with blockchain for better transparency and operational efficiency.\nReduce processing time and prevent counterfeiting with automated transaction processing."
         },
         "what": {
-          "title": "Why Use Blockchain Solutions For Supply Chain?",
+          "title": "How It Works in Practice",
           "description": "Imagine tracking every step of a product’s journey, from the factory to the customer, ensuring authenticity and verifying data at every stage. Customers can scan a code to see the product’s full history."
         },
         "why": {
@@ -1650,7 +1650,7 @@
           "description": "Transform real-world assets into digital tokens for increased liquidity and flexibility.\nUnlock new investment opportunities with secure, tokenized assets."
         },
         "what": {
-          "title": "Why Use Tokenization Services",
+          "title": "How It Works in Practice",
           "description": "Imagine tokenizing real estate properties, allowing investors to buy fractional shares of a building instead of the entire property, making investments more accessible."
         },
         "why": {
@@ -1692,7 +1692,7 @@
           "description": "Develop private blockchain networks for secure and efficient internal operations.\nEnable enhanced privacy, complete data control, and scalability tailored to your enterprise needs."
         },
         "what": {
-          "title": "Why Use Private Blockchain?",
+          "title": "How It Works in Practice",
           "description": "Imagine a company that needs to securely manage employee data, project records, and internal communications. With a private blockchain, only authorized users can access the information, ensuring confidentiality and data integrity without worrying about leaks."
         },
         "why": {
@@ -1734,7 +1734,7 @@
           "description": "Expert guidance to help businesses identify blockchain opportunities and implement the right solutions.\nEmpower your business with strategies that maximize blockchain's potential while minimizing risks."
         },
         "what": {
-          "title": "What is Blockchain Consulting?",
+          "title": "How It Works in Practice",
           "description": "Imagine a retail chain exploring blockchain for supply chain management. Consultants evaluate your current systems, recommend the best blockchain platform, and design a strategy to integrate it, ensuring cost-effectiveness and operational efficiency."
         },
         "why": {
@@ -1748,27 +1748,27 @@
         "items": [
           {
             "title": "Minimal disruption to existing infrastructure",
-            "description": ""
+            "description": "Integrate blockchain without overhauling your current systems, ensuring a smooth transition"
           },
           {
             "title": "Increased operational speed",
-            "description": ""
+            "description": "Accelerate business processes with blockchain’s ability to handle transactions quickly and securely"
           },
           {
             "title": "Reduced operational costs",
-            "description": ""
+            "description": "Save money by automating processes and eliminating the need for intermediaries"
           },
           {
             "title": "High performance and reliability",
-            "description": ""
+            "description": "Achieve consistent, dependable performance even as your business scales"
           },
           {
             "title": "API integration for flexibility",
-            "description": ""
+            "description": "Easily connect blockchain solutions to your existing tools and software via APIs"
           },
           {
             "title": "Fast and efficient implementation",
-            "description": ""
+            "description": "Quickly deploy blockchain technology tailored to your business needs with expert guidance"
           }
         ],
         "mainSection": {
@@ -1776,7 +1776,7 @@
           "description": "Seamlessly integrate blockchain into your existing systems to enhance efficiency and security.\nReduce operational disruptions while boosting performance with customized blockchain solutions."
         },
         "what": {
-          "title": "Why Integrate Blockchain?",
+          "title": "How It Works in Practice",
           "description": "Imagine a logistics company adding blockchain to its current system. Deliveries are tracked automatically, and data is securely shared with partners, speeding up operations and reducing errors."
         },
         "why": {
@@ -1790,27 +1790,27 @@
         "items": [
           {
             "title": "Customized training sessions for teams",
-            "description": ""
+            "description": "Tailor training content to suit your team’s specific roles and business goals"
           },
           {
             "title": "Hands-on case studies and exercises",
-            "description": ""
+            "description": "Provide practical, real-world examples to help employees apply their blockchain knowledge"
           },
           {
             "title": "Simple explanations for complex topics",
-            "description": ""
+            "description": "Break down technical blockchain concepts into easy-to-understand language"
           },
           {
             "title": "Post-training support",
-            "description": ""
+            "description": "Offer ongoing assistance and resources to help your team implement what they’ve learned."
           },
           {
             "title": "Access to exclusive blockchain resources",
-            "description": ""
+            "description": "Provide guides, tools, and materials for continued learning and reference"
           },
           {
             "title": "Preparation for certifications",
-            "description": ""
+            "description": "Help employees earn recognized blockchain certifications to validate their expertise"
           }
         ],
         "mainSection": {
@@ -1818,7 +1818,7 @@
           "description": "Comprehensive training programs to help your team understand and utilize blockchain effectively.\nEquip your workforce with the skills to leverage blockchain for long-term success."
         },
         "what": {
-          "title": "Why Invest in Blockchain Training?",
+          "title": "How It Works in Practice",
           "description": "Imagine your finance team learning how blockchain can streamline payment processing. Through hands-on exercises, they practice using smart contracts and learn to handle transactions securely and efficiently."
         },
         "why": {
@@ -1834,27 +1834,27 @@
         "items": [
           {
             "title": "Eliminates human error",
-            "description": ""
+            "description": "AI ensures accuracy by reducing mistakes in repetitive tasks, improving overall reliability."
           },
           {
             "title": "Automates routine operations",
-            "description": ""
+            "description": "Free up your team by letting AI handle time-consuming, repetitive processes."
           },
           {
             "title": "Integrates with CRM and ERP systems",
-            "description": ""
+            "description": "Seamlessly connect AI automation to your existing business tools for a unified workflow"
           },
           {
             "title": "Boosts operational efficiency",
-            "description": ""
+            "description": "Complete tasks faster and more effectively, allowing your team to focus on higher-value work"
           },
           {
             "title": "Full support during implementation",
-            "description": ""
+            "description": "Get expert assistance to ensure a smooth setup and integration of AI into your processes"
           },
           {
             "title": "Saves time and resources",
-            "description": ""
+            "description": "Reduce manual workloads and operational costs while increasing productivity"
           }
         ],
         "mainSection": {
@@ -1862,7 +1862,7 @@
           "description": "Streamline repetitive tasks with AI-powered automation, saving time and reducing errors.\nBoost operational efficiency while eliminating human errors through intelligent process automation."
         },
         "what": {
-          "title": "Why Automate Business Process?",
+          "title": "How It Works in Practice",
           "description": "Imagine a company automating invoice processing. Instead of manually entering data, AI scans invoices, extracts details, and updates financial systems automatically, reducing errors and saving hours of work."
         },
         "why": {
@@ -1876,27 +1876,27 @@
         "items": [
           {
             "title": "Sentiment analysis for text",
-            "description": ""
+            "description": "Gauge customer sentiment from reviews or social media"
           },
           {
             "title": "Enhanced understanding of customer data",
-            "description": ""
+            "description": "Extract insights from text data"
           },
           {
             "title": "Automatic processing of customer queries",
-            "description": ""
+            "description": "Respond to queries faster with automation"
           },
           {
             "title": "Text and report generation",
-            "description": ""
+            "description": "Automatically create summaries or detailed reports"
           },
           {
             "title": "Improved customer experience",
-            "description": ""
+            "description": "Offer better support by analyzing customer needs"
           },
           {
             "title": "Integration with voice assistants",
-            "description": ""
+            "description": "Use NLP in smart devices for voice-based services"
           }
         ],
         "mainSection": {
@@ -1904,7 +1904,7 @@
           "description": "Leverage NLP for better communication, customer insights, and content analysis.\nTurn unstructured data into actionable insights for better customer experiences."
         },
         "what": {
-          "title": "Why Use Natural Language Processing?",
+          "title": "How It Works in Practice",
           "description": "Imagine a hotel analyzing online reviews with NLP to identify common customer concerns, like cleanliness or service quality, and addressing them proactively."
         },
         "why": {
@@ -1918,27 +1918,27 @@
         "items": [
           {
             "title": "24/7 customer support",
-            "description": ""
+            "description": "Always be available to help customers, even outside of business hours"
           },
           {
             "title": "Multilingual capabilities",
-            "description": ""
+            "description": "Communicate with customers in their preferred language for better engagement"
           },
           {
             "title": "Integration with websites and apps",
-            "description": ""
+            "description": "Easily add chatbots to your existing platforms for seamless interaction"
           },
           {
             "title": "Personalized customer interactions",
-            "description": ""
+            "description": "Tailor responses to individual customers based on their needs and preferences"
           },
           {
             "title": "Reduces workload for staff",
-            "description": ""
+            "description": "Handle common queries automatically, freeing up staff for more complex tasks"
           },
           {
             "title": "Quick setup and deployment",
-            "description": ""
+            "description": "Implement chatbots rapidly, with minimal disruption to your operations"
           }
         ],
         "mainSection": {
@@ -1946,7 +1946,7 @@
           "description": "Enhance customer experience with intelligent chatbots that provide instant, personalized support.\nDeliver 24/7 customer service without overburdening your staff."
         },
         "what": {
-          "title": "Why Use Chatbots and Virtual Assistants?",
+          "title": "How It Works in Practice",
           "description": "Imagine an e-commerce website where a chatbot assists customers with product questions, tracks orders, and processes returns, all in real time without waiting for human intervention."
         },
         "why": {
@@ -1960,27 +1960,27 @@
         "items": [
           {
             "title": "Sales forecasting",
-            "description": ""
+            "description": "Predict future sales trends for more accurate planning"
           },
           {
             "title": "Customer behaviour analysis",
-            "description": ""
+            "description": "Understand customer patterns to improve engagement"
           },
           {
             "title": "Financial risk assessment",
-            "description": ""
+            "description": "Anticipate risks to reduce financial uncertainties"
           },
           {
             "title": "Supply chain optimization",
-            "description": ""
+            "description": "Improve supply chain efficiency by predicting potential "
           },
           {
             "title": "Campaign effectiveness improvement",
-            "description": ""
+            "description": "Evaluate campaigns to enhance results"
           },
           {
             "title": "Integration with BI tools",
-            "description": ""
+            "description": "Combine AI with existing analytics tools for deeper insights"
           }
         ],
         "mainSection": {
@@ -1988,7 +1988,7 @@
           "description": "Use predictive AI tools to forecast trends, customer behaviour, and operational needs.\nAnticipate future outcomes and make proactive decisions with confidence."
         },
         "what": {
-          "title": "Why Use Predictive Analytics?",
+          "title": "How It Works in Practice",
           "description": "Imagine a travel agency using AI to predict seasonal demand for destinations. They adjust pricing and promotions accordingly, maximizing bookings during peak periods."
         },
         "why": {
@@ -2002,27 +2002,27 @@
         "items": [
           {
             "title": "Deep analysis of large data sets",
-            "description": ""
+            "description": "AI processes massive amounts of data to find actionable insights faster than humans"
           },
           {
             "title": "Forecasting market trends",
-            "description": ""
+            "description": "Predict upcoming trends and consumer behavior to stay ahead of the competition"
           },
           {
             "title": "Visualization of key metrics",
-            "description": ""
+            "description": "Transform raw data into easy-to-read charts and graphs for better decision-making"
           },
           {
             "title": "Optimization of marketing strategies",
-            "description": ""
+            "description": "Identify the most effective marketing tactics and allocate resources more efficiently"
           },
           {
             "title": "Risk reduction",
-            "description": ""
+            "description": "Analyze potential risks and provide insights to mitigate them before they occur"
           },
           {
             "title": "Real-time decision-making support",
-            "description": ""
+            "description": "Access instant insights to make better business decisions quickly and accurately"
           }
         ],
         "mainSection": {
@@ -2030,7 +2030,7 @@
           "description": "Use AI to analyze large datasets, uncover insights, and support smarter decision-making.\nUnlock hidden patterns and trends in your data to stay ahead in the market."
         },
         "what": {
-          "title": "Why Use AI-Powered Analytics?",
+          "title": "How It Works in Practice",
           "description": "Imagine a retailer analyzing sales data to predict future demand. AI identifies trending products and suggests optimal stock levels, ensuring shelves are always stocked with popular items."
         },
         "why": {
@@ -2044,27 +2044,27 @@
         "items": [
           {
             "title": "Automates marketing campaigns",
-            "description": ""
+            "description": "AI handles end-to-end campaign execution"
           },
           {
             "title": "Increases conversion rates",
-            "description": ""
+            "description": "Targeted ads generate more sales"
           },
           {
             "title": "Audience segmentation",
-            "description": ""
+            "description": "Divide audiences into focused groups for personalized messaging"
           },
           {
             "title": "Personalizes advertising messages",
-            "description": ""
+            "description": "Tailor ads based on audience preferences"
           },
           {
             "title": "Real-time campaign execution",
-            "description": ""
+            "description": "Launch or adjust campaigns instantly"
           },
           {
             "title": "Reduces advertising costs.",
-            "description": ""
+            "description": "Spend less by targeting effectively"
           }
         ],
         "mainSection": {
@@ -2072,7 +2072,7 @@
           "description": "Optimize campaigns and customer targeting with AI-powered tools for better ROI.\nDeliver highly targeted ads and maximize your marketing budget with AI insights."
         },
         "what": {
-          "title": "Why Use AI-Driven Marketing Optimization?",
+          "title": "How It Works in Practice",
           "description": "Imagine a clothing brand using AI to target ads for winter coats to customers in colder regions, resulting in increased sales and reduced ad spend."
         },
         "why": {
@@ -2086,27 +2086,27 @@
         "items": [
           {
             "title": "Automatic image analysis",
-            "description": ""
+            "description": "AI processes images to detect issues or trends"
           },
           {
             "title": "Security systems integration",
-            "description": ""
+            "description": "Improve surveillance with intelligent recognition"
           },
           {
             "title": "Quality control for manufacturing",
-            "description": ""
+            "description": "Detect defects in real time"
           },
           {
             "title": "Automated inventory management",
-            "description": ""
+            "description": "Track inventory using visual data"
           },
           {
             "title": "Support for multiple data formats",
-            "description": ""
+            "description": "Handle images in various formats"
           },
           {
             "title": "Cloud service integration",
-            "description": ""
+            "description": "Store and process data securely in the cloud"
           }
         ],
         "mainSection": {
@@ -2114,7 +2114,7 @@
           "description": "Automate visual data processing for quality control, security, and inventory management.\nReduce errors and save time by leveraging AI for fast and accurate image analysis."
         },
         "what": {
-          "title": "Why Use Image Recognition and Analysis?",
+          "title": "How It Works in Practice",
           "description": "Imagine a manufacturing plant using AI-powered cameras to inspect products on the assembly line. Defective items are automatically flagged and removed, ensuring only high-quality products reach customers."
         },
         "why": {
@@ -2128,27 +2128,27 @@
         "items": [
           {
             "title": "Personalization of products and services",
-            "description": ""
+            "description": "Recommend items tailored to individual preferences"
           },
           {
             "title": "Improved customer satisfaction",
-            "description": ""
+            "description": "Enhance user experience with relevant suggestions"
           },
           {
             "title": "Increased repeat purchases",
-            "description": ""
+            "description": "Encourage customers to return for more"
           },
           {
             "title": "Analysis of customer preferences",
-            "description": ""
+            "description": "Understand what customers like"
           },
           {
             "title": "Integration into e-commerce platforms",
-            "description": ""
+            "description": "Add recommendation engines to websites or apps"
           },
           {
             "title": "Automatic updates for recommendations",
-            "description": ""
+            "description": "Keep suggestions fresh and relevant"
           }
         ],
         "mainSection": {
@@ -2156,7 +2156,7 @@
           "description": "Enhance user experience with personalized recommendations powered by AI.\nDeliver tailored suggestions to increase satisfaction and repeat purchases"
         },
         "what": {
-          "title": "Why Use Recommendation Systems Powered By AI?",
+          "title": "How It Works in Practice",
           "description": "Imagine an online bookstore suggesting books based on a customer's previous purchases and reviews. Customers feel understood and are more likely to return for future purchases."
         },
         "why": {
@@ -2170,27 +2170,27 @@
         "items": [
           {
             "title": "Real-time threat monitoring",
-            "description": ""
+            "description": "Detect and respond to security threats as they happen"
           },
           {
             "title": "Automated anomaly detection",
-            "description": ""
+            "description": "Identify unusual patterns in data to prevent breaches"
           },
           {
             "title": "Protection against cyberattacks",
-            "description": ""
+            "description": "Shield systems from malware, phishing, and other threats"
           },
           {
             "title": "Vulnerability analysis",
-            "description": ""
+            "description": "Continuously assess weak points in your security framework"
           },
           {
             "title": "Rapid incident response",
-            "description": ""
+            "description": "Address security issues quickly to minimize damage"
           },
           {
             "title": "Enhanced data protection",
-            "description": ""
+            "description": "Keep sensitive information secure with advanced encryption"
           }
         ],
         "mainSection": {
@@ -2198,7 +2198,7 @@
           "description": "Strengthen your cybersecurity with AI tools that detect and prevent threats in real time.\nStay protected with intelligent systems that identify vulnerabilities and respond instantly."
         },
         "what": {
-          "title": "Why Use AI-Enhanced Cybersecurity?",
+          "title": "How It Works in Practice",
           "description": "Imagine a financial institution using AI to monitor transactions. The system detects and stops unusual activity, such as unauthorized logins or fraudulent transfers, before they cause harm."
         },
         "why": {
@@ -2212,27 +2212,27 @@
         "items": [
           {
             "title": "Automated resume analysis",
-            "description": ""
+            "description": "Quickly screen and rank resumes to find the best candidates"
           },
           {
             "title": "Optimization of hiring processes",
-            "description": ""
+            "description": "Streamline recruitment workflows for faster hiring"
           },
           {
             "title": "Employee satisfaction forecasting",
-            "description": ""
+            "description": "Predict employee happiness and take proactive actions"
           },
           {
             "title": "Personalized training programs",
-            "description": ""
+            "description": "Create tailored training plans to boost employee skills"
           },
           {
             "title": "Reduces employee turnover",
-            "description": ""
+            "description": "Identify retention risks and address them before losing talent"
           },
           {
             "title": "Integration with HRM systems",
-            "description": ""
+            "description": "Connect AI to existing HR tools for seamless operation"
           }
         ],
         "mainSection": {
@@ -2240,7 +2240,7 @@
           "description": "Streamline recruitment and employee management with AI-powered HR solutions.\nImprove hiring processes and retain talent with intelligent workforce management tools."
         },
         "what": {
-          "title": "Why Use AI for Human Resources?",
+          "title": "How It Works in Practice",
           "description": "Imagine an HR team using AI to review resumes. The system quickly identifies top candidates based on job requirements, saving time and ensuring the best hires."
         },
         "why": {
@@ -2254,27 +2254,27 @@
         "items": [
           {
             "title": "Speech recognition capabilities",
-            "description": ""
+            "description": "Transcribe and understand spoken words accurately"
           },
           {
             "title": "Voice commands for automation",
-            "description": ""
+            "description": "Perform tasks hands-free with voice-enabled controls"
           },
           {
             "title": "Support for users with disabilities",
-            "description": ""
+            "description": "Enhance accessibility for individuals with impairments"
           },
           {
             "title": "Enhanced customer interactions",
-            "description": ""
+            "description": "Provide faster and more natural customer service experiences"
           },
           {
             "title": "Fast integration with devices",
-            "description": ""
+            "description": "Easily implement voice recognition across multiple devices"
           },
           {
             "title": "Multilingual support",
-            "description": ""
+            "description": "Communicate in different languages for global reach"
           }
         ],
         "mainSection": {
@@ -2282,7 +2282,7 @@
           "description": "Enable voice-based solutions for customer support, accessibility, and automation.\nStreamline interactions and enhance accessibility with cutting-edge voice recognition technology."
         },
         "what": {
-          "title": "Why Use Voice Recognition?",
+          "title": "How It Works in Practice",
           "description": "Imagine a customer using voice commands to check their bank balance or transfer funds. The system processes the request instantly, providing convenience and accessibility."
         },
         "why": {
@@ -2296,27 +2296,27 @@
         "items": [
           {
             "title": "Customized approach",
-            "description": ""
+            "description": "Develop AI specifically designed to fit your business workflows"
           },
           {
             "title": "Integration with existing systems",
-            "description": ""
+            "description": "Seamlessly connect AI to your current tools and software"
           },
           {
             "title": "Quick deployment",
-            "description": ""
+            "description": "Implement AI solutions rapidly to start seeing results sooner"
           },
           {
             "title": "Full support and training",
-            "description": ""
+            "description": "Provide expert guidance and resources to maximize AI’s impact"
           },
           {
             "title": "Optimization of business processes",
-            "description": ""
+            "description": "Streamline operations and enhance efficiency across departments"
           },
           {
             "title": "Continuous technology updates",
-            "description": ""
+            "description": "Keep your AI solutions up-to-date with the latest advancements"
           }
         ],
         "mainSection": {
@@ -2324,7 +2324,7 @@
           "description": "Develop AI solutions tailored to your business needs for maximum impact and efficiency.\nCustomize AI to transform your unique processes, ensuring optimal results."
         },
         "what": {
-          "title": "Why Use Customized AI Solutions?",
+          "title": "How It Works in Practice",
           "description": "Imagine a logistics company developing a custom AI tool to predict delivery delays. The system analyzes traffic patterns, weather, and driver performance to optimize routes in real time."
         },
         "why": {

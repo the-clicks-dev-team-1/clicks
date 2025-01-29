@@ -95,7 +95,7 @@ const BlockchainIntegration: FC<{ params: { locale: string } }> = async ({
           </div>
           <div className="relative w-full h-64 md:h-96">
             <Image
-              src="/images/analytics.jpg"
+              src="/images/blockchain/integration.jpg"
               alt="Analytics and Reporting Explanation"
               layout="fill"
               objectFit="cover"
