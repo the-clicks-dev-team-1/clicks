@@ -468,6 +468,11 @@ export default function Navbar() {
 
 function MobileNav({ closeSideMenu }: { closeSideMenu: () => void }) {
   const t = useTranslations("navbar");
+  const [activeIndex, setActiveIndex] = useState<number | null>(null);
+
+  function handleToggleMenu(index: number | null) {
+    setActiveIndex((prevIndex) => (prevIndex === index ? null : index));
+  }
 
   return (
     <div className="fixed inset-0 z-50 bg-black/60 flex justify-end md:hidden">
@@ -482,8 +487,11 @@ function MobileNav({ closeSideMenu }: { closeSideMenu: () => void }) {
           {navItems.map((d, i) => (
             <SingleNavItem
               key={`${d.label}-${i}`}
-              {...d}
+              d={d}
               closeSideMenu={closeSideMenu}
+              i={i}
+              activeIndex={activeIndex}
+              setActiveIndex={handleToggleMenu}
             />
           ))}
         </div>
@@ -502,13 +510,32 @@ function MobileNav({ closeSideMenu }: { closeSideMenu: () => void }) {
   );
 }
 
-function SingleNavItem(d: NavItem & { closeSideMenu: () => void }) {
+function SingleNavItem({
+  i,
+  d,
+  closeSideMenu,
+  activeIndex,
+  setActiveIndex,
+}: {
+  i: number;
+  d: NavItem;
+  closeSideMenu: () => void;
+  activeIndex: number | null;
+  setActiveIndex: (index: number | null) => void;
+}) {
   const t = useTranslations("navbar");
   const [animationParent] = useAutoAnimate();
   const [isItemOpen, setItem] = useState(false);
+  const [hoveredItem, setHoveredItem] = useState<string | null>(null);
+  const [activeSubIndex, setActiveSubIndex] = useState<number | null>(null);
 
-  function toggleItem() {
-    setItem(!isItemOpen);
+  function toggleMenu(index: number) {
+    setActiveIndex(activeIndex === index ? null : index);
+    setActiveSubIndex(null);
+  }
+
+  function toggleSubMenu(index: number) {
+    setActiveSubIndex(activeSubIndex === index ? null : index);
   }
 
   return (
@@ -516,7 +543,7 @@ function SingleNavItem(d: NavItem & { closeSideMenu: () => void }) {
       {d.children ? (
         <>
           <div
-            onClick={toggleItem}
+            onClick={() => toggleMenu(i)}
             className="flex items-center justify-between px-2 py-3 text-neutral-400 light:text-[var(--gray-70)] hover:text-[var(--text)] light:hover:text-[var(--text)] light:hover:font-bold cursor-pointer"
           >
             <span>{t(`${d.label}`)}</span>
@@ -526,29 +553,76 @@ function SingleNavItem(d: NavItem & { closeSideMenu: () => void }) {
               }`}
             /> */}
           </div>
-          {isItemOpen && (
-            <div className="flex flex-col bg-[var(--bgnew)] text-[var(--text)] rounded-lg shadow-md py-3">
-              {d.children.map((ch, i) => (
-                <ActiveLink
-                  key={`${ch.label}-${i}`}
-                  href={ch.link ?? "#"}
-                  className="flex items-center px-4 py-2 hover:bg-sky-400"
-                  onClick={d.closeSideMenu}
-                >
-                  {ch.iconImage && <ch.iconImage className="text-xl" />}
-                  <span className="ml-3 whitespace-nowrap">
-                    {t(`${ch.label}`)}
-                  </span>
-                </ActiveLink>
-              ))}
-            </div>
-          )}
+          {/* First Level Children */}
+          {activeIndex === i &&
+            // hoveredItem === `${i}` &&
+            d.children && (
+              <div className="flex flex-col bg-[var(--bgnew)] rounded-lg shadow-md py-2">
+                {d.children.map((ch, j) => (
+                  <>
+                    {ch.children ? (
+                      <div
+                        key={j}
+                        className="relative"
+                        // onMouseEnter={() => handleMouseEnter(`${i}-${j}`)} // Hover on the second level
+                        // onMouseLeave={handleMouseLeave}
+                      >
+                        {/* Second Level Link */}
+                        <div
+                          className="flex items-center justify-between px-4 py-2 cursor-pointer hover:bg-[var(--ocean-blue)] transition-all duration-500"
+                          onClick={() => toggleSubMenu(j)}
+                        >
+                          {ch.iconImage && (
+                            <ch.iconImage className="text-xl mr-2" />
+                          )}
+                          <span>{t(ch.label)}</span>
+                        </div>
+
+                        {/* Second Level Children */}
+                        <div
+                          className={`${
+                            activeSubIndex === j
+                              ? "max-h-screen opacity-100 transition-all duration-1000 ease-in-out"
+                              : "max-h-0 opacity-0 overflow-hidden"
+                          } flex flex-col bg-[var(--bgnew)] rounded-lg shadow-md py-2 ml-4`}
+                        >
+                          {activeSubIndex === j &&
+                            // hoveredItem === `${i}-${j}` &&
+                            ch.children &&
+                            ch.children.map((nested, k) => (
+                              <ActiveLink
+                                key={k}
+                                href={nested.link ?? "#"}
+                                className="flex items-center px-4 py-2 hover:bg-[var(--ocean-blue)]"
+                                onClick={closeSideMenu}
+                              >
+                                {nested.iconImage && (
+                                  <nested.iconImage className="text-xl mr-2" />
+                                )}
+                                {t(nested.label)}
+                              </ActiveLink>
+                            ))}
+                        </div>
+                      </div>
+                    ) : (
+                      <ActiveLink
+                        href={ch.link ?? "#"}
+                        className="flex items-center justify-between px-4 py-2 cursor-pointer hover:bg-[var(--ocean-blue)]"
+                        onClick={closeSideMenu}
+                      >
+                        <span>{t(`${ch.label}`)}</span>
+                      </ActiveLink>
+                    )}
+                  </>
+                ))}
+              </div>
+            )}
         </>
       ) : (
         <ActiveLink
           href={d.link ?? "#"}
           className="flex items-center px-2 py-3 text-neutral-400 light:text-[var(--gray-70)] hover:text-[var(--text)] light:hover:text-[var(--text)] light:hover:font-bold"
-          onClick={d.closeSideMenu}
+          onClick={closeSideMenu}
         >
           <span>{t(`${d.label}`)}</span>
         </ActiveLink>
