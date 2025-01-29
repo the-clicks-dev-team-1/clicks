@@ -1,10 +1,42 @@
 "use client";
 
 import { useCallback, useEffect, useRef, useState } from "react";
+import { useTranslations } from "next-intl";
+import { useTheme } from "next-themes";
 import { useAutoAnimate } from "@formkit/auto-animate/react";
+import { AiOutlineClose } from "react-icons/ai";
+import { FiMenu } from "react-icons/fi";
+import { GrOptimize } from "react-icons/gr";
+import { IoIosArrowDown, IoMdMoon } from "react-icons/io";
+import {
+  // AI Services Icons
+  Workflow,
+  MessageSquare,
+  Bot,
+  TrendingUp,
+  Brain,
+  Target,
+  Image,
+  ListFilter,
+  Shield,
+  Users,
+  Mic,
+  Code,
 
-import { PiStrategy, PiMegaphone, PiRocketLaunch } from "react-icons/pi";
-import { TbSeo, TbSettingsAutomation } from "react-icons/tb";
+  // Blockchain Services Icons
+  Database,
+  FileCheck,
+  Network,
+  Package,
+  Coins,
+  Link as LinkIcon,
+  Lock,
+  Truck,
+  FileSearch,
+  Wallet,
+  GraduationCap,
+  HelpCircle,
+} from "lucide-react";
 import {
   MdDeveloperMode,
   MdOutlineMarkEmailRead,
@@ -12,20 +44,15 @@ import {
   MdBrush,
   MdOutlineWbSunny,
 } from "react-icons/md";
+import { PiStrategy, PiMegaphone, PiRocketLaunch } from "react-icons/pi";
+import { TbSeo, TbSettingsAutomation } from "react-icons/tb";
 import { SiGoogleads, SiGoogleanalytics } from "react-icons/si";
-import { GrOptimize } from "react-icons/gr";
-
-import { IoIosArrowDown, IoMdMoon } from "react-icons/io";
-import { FiMenu } from "react-icons/fi";
-import { AiOutlineClose } from "react-icons/ai";
-import ActiveLink from "./activelink";
-import { useTheme } from "next-themes";
-import LocaleSwitcher from "./LocaleSwitcher";
-import Logo from "./Logo";
+import ActiveLink from "@/components/activelink";
+import LocaleSwitcher from "@/components/LocaleSwitcher";
+import Logo from "@/components/Logo";
+import Runner from "@/components/Runner";
+import ScrollButton from "@/components/ui/ScrollButton";
 import { Link, usePathname } from "@/i18n/routing";
-import Runner from "./Runner";
-import { useTranslations } from "next-intl";
-import ScrollButton from "./ui/ScrollButton";
 
 type NavItem = {
   label: string;
@@ -89,62 +116,62 @@ const navItems: NavItem[] = [
           {
             label: "businessProcess",
             link: "/services/business-process-automation",
-            iconImage: MdDeveloperMode,
+            iconImage: Workflow,
           },
           {
             label: "nlp",
             link: "/services/nlp",
-            iconImage: PiStrategy,
+            iconImage: MessageSquare,
           },
           {
             label: "chatbots",
             link: "/services/chatbots-and-virtual-assistants",
-            iconImage: TbSeo,
+            iconImage: Bot,
           },
           {
             label: "predictive",
             link: "/services/predictive-analytics",
-            iconImage: SiGoogleads,
+            iconImage: TrendingUp,
           },
           {
             label: "powered",
             link: "/services/ai-powered-analytics",
-            iconImage: PiMegaphone,
+            iconImage: Brain,
           },
           {
             label: "optimization",
             link: "/services/ai-driven-marketing-optimization",
-            iconImage: MdContentPasteSearch,
+            iconImage: Target,
           },
           {
             label: "image",
             link: "/services/image-recognition-and-analysis",
-            iconImage: MdOutlineMarkEmailRead,
+            iconImage: Image,
           },
           {
             label: "recommendation",
             link: "/services/recommendation-systems",
-            iconImage: GrOptimize,
+            iconImage: ListFilter,
           },
           {
             label: "cybersecurity",
             link: "/services/ai-enhanced-cybersecurity",
-            iconImage: SiGoogleanalytics,
+            iconImage: Shield,
           },
           {
             label: "human",
             link: "/services/ai-for-human-resources",
-            iconImage: TbSettingsAutomation,
+            iconImage: Users,
           },
           {
             label: "voice",
             link: "/services/voice-recognition-solutions",
-            iconImage: PiRocketLaunch,
+            iconImage: Mic,
           },
           {
             label: "custom",
             link: "/services/custom-ai-development",
-            iconImage: MdBrush,
+            iconImage: Code,
           },
         ],
       },
@@ -155,62 +182,62 @@ const navItems: NavItem[] = [
           {
             label: "customBlockchain",
             link: "/services/custom-blockchain-solutions",
-            iconImage: MdDeveloperMode,
+            iconImage: Database,
           },
           {
             label: "smart",
             link: "/services/smart-contracts-development",
-            iconImage: PiStrategy,
+            iconImage: FileCheck,
           },
           {
             label: "decentralized",
             link: "/services/decentralized-applications",
-            iconImage: TbSeo,
+            iconImage: Network,
           },
           {
             label: "integration",
             link: "/services/blockchain-integration",
-            iconImage: SiGoogleads,
+            iconImage: LinkIcon,
           },
           {
             label: "nft",
             link: "/services/nft-platform-development",
-            iconImage: PiMegaphone,
+            iconImage: Package,
           },
           {
             label: "tokenization",
             link: "/services/tokenization-services",
-            iconImage: MdContentPasteSearch,
+            iconImage: Coins,
           },
           {
             label: "private",
             link: "/services/private-blockchain-development",
-            iconImage: MdOutlineMarkEmailRead,
+            iconImage: Lock,
           },
           {
             label: "supply",
             link: "/services/supply-chain-blockchain",
-            iconImage: GrOptimize,
+            iconImage: Truck,
           },
           {
             label: "security",
             link: "/services/blockchain-security-audits",
-            iconImage: SiGoogleanalytics,
+            iconImage: FileSearch,
           },
           {
             label: "cryptoWallet",
             link: "/services/crypto-wallet-development",
-            iconImage: TbSettingsAutomation,
+            iconImage: Wallet,
           },
           {
             label: "training",
             link: "/services/blockchain-training",
-            iconImage: PiRocketLaunch,
+            iconImage: GraduationCap,
           },
           {
             label: "consulting",
             link: "/services/blockchain-consulting",
-            iconImage: MdBrush,
+            iconImage: HelpCircle,
           },
         ],
       },

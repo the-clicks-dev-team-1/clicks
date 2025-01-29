@@ -24,6 +24,7 @@
     "blog": "Blog",
     "portfolio": "Portfolio",
     "contacts": "Contacts",
+    "marketing": "Solutions de Marketing Digital",
     "webDev": "Développement Web",
     "strategyDev": "Développement de stratégie",
     "seo": "SEO",
@@ -36,6 +37,32 @@
     "automation": "Automatisation du marketing",
     "pr": "Relations publiques",
     "design": "Conception graphique",
+    "ai": "Intégration de l'IA Simplifiée",
+    "businessProcess": "Automatisation des Processus Métiers",
+    "nlp": "Traitement du Langage Naturel (NLP)",
+    "chatbots": "Chatbots et Assistants Virtuels",
+    "predictive": "Analytique Prédictive",
+    "powered": "Analytique Alimentée par l'IA",
+    "optimization": "Optimisation Marketing Basée sur l'IA",
+    "image": "Reconnaissance et Analyse d'Images",
+    "recommendation": "Systèmes de Recommandation",
+    "cybersecurity": "Cybersécurité Améliorée par l'IA",
+    "human": "IA pour les Ressources Humaines",
+    "voice": "Solutions de Reconnaissance Vocale",
+    "custom": "Développement d'IA sur Mesure",
+    "blockchain": "Blockchain pour les Entreprises",
+    "customBlockchain": "Solutions Blockchain Personnalisées",
+    "smart": "Développement de Contrats Intelligents",
+    "decentralized": "Applications Décentralisées (DApps)",
+    "integration": "Intégration Blockchain",
+    "nft": "Développement de Plateformes NFT",
+    "tokenization": "Services de Tokenisation",
+    "private": "Développement de Blockchain Privée",
+    "supply": "Blockchain pour la Chaîne d'Approvisionnement",
+    "security": "Audits de Sécurité Blockchain",
+    "cryptoWallet": "Développement de Portefeuilles Crypto",
+    "training": "Formation Blockchain",
+    "consulting": "Consultation Blockchain",
     "book": "Parlons-en"
   },
   "footer": {
@@ -1328,28 +1355,28 @@
       "customSolutions": {
         "items": [
           {
-            "title": "Architecture unique conçue pour vos besoins professionnels",
-            "description": ""
+            "title": "Architecture unique conçue pour les besoins de votre entreprise",
+            "description": "Nous construisons un système blockchain spécifiquement adapté aux processus et objectifs uniques de votre entreprise"
           },
           {
             "title": "Protocoles de sécurité de haut niveau",
-            "description": ""
+            "description": "Vos données sont protégées par une sécurité de pointe pour prévenir tout accès non autorisé ou toute violation"
           },
           {
-            "title": "Scalabilité pour la croissance future",
-            "description": ""
+            "title": "Scalabilité pour une croissance future",
+            "description": "Le système peut évoluer avec votre entreprise, répondant à des demandes croissantes à mesure que vous vous développez"
           },
           {
             "title": "Intégration transparente avec les systèmes existants",
-            "description": ""
+            "description": "Notre solution fonctionne harmonieusement avec les outils et logiciels que vous utilisez déjà, évitant toute perturbation"
           },
           {
-            "title": "Support des principales plateformes blockchain",
-            "description": ""
+            "title": "Support pour les principales plateformes blockchain",
+            "description": "Nous utilisons des plateformes populaires comme Ethereum et Solana pour fournir une technologie fiable et éprouvée"
           },
           {
-            "title": "Consultation experte lors de l'implémentation",
-            "description": ""
+            "title": "Consultation experte pendant l'implémentation",
+            "description": "Nos experts vous accompagnent à chaque étape du processus pour garantir une mise en place fluide et réussie"
           }
         ],
         "mainSection": {
@@ -1370,28 +1397,28 @@
       "smartContracts": {
         "items": [
           {
-            "title": "Automatise les processus et réduit l'intervention manuelle",
-            "description": ""
+            "title": "Automatise les processus et réduit les interventions manuelles",
+            "description": "Gagnez du temps et réduisez l'implication humaine dans les opérations de routine"
           },
           {
-            "title": "Supprime les intermédiaires",
-            "description": ""
+            "title": "Élimine les intermédiaires",
+            "description": "Supprime le besoin de tiers, rendant les processus plus rapides et plus rentables"
           },
           {
-            "title": "Transparent et inviolable",
-            "description": ""
+            "title": "Transparent et infalsifiable",
+            "description": "Toutes les transactions sont enregistrées de manière sécurisée et ne peuvent pas être modifiées, garantissant confiance et clarté"
           },
           {
             "title": "Auditabilité facile",
-            "description": ""
+            "description": "Fournit des enregistrements clairs de toutes les activités, facilitant le suivi et la révision des processus"
           },
           {
-            "title": "Supporte Ethereum, Solana, et autres plateformes",
-            "description": ""
+            "title": "Compatible avec Ethereum, Solana et d'autres plateformes",
+            "description": "Fonctionne avec les principales plateformes blockchain pour garantir compatibilité et flexibilité"
           },
           {
-            "title": "Conforme légalement et minutieusement testé",
-            "description": ""
+            "title": "Conforme aux lois et rigoureusement testé",
+            "description": "Respecte les normes légales et subit des tests rigoureux pour garantir fiabilité et conformité"
           }
         ],
         "mainSection": {
@@ -1412,28 +1439,28 @@
       "cryptoWallet": {
         "items": [
           {
-            "title": "Support multi-devises",
-            "description": ""
+            "title": "Prise en charge multi-devises",
+            "description": "Gérez plusieurs cryptomonnaies comme Bitcoin, Ethereum, et bien d'autres, le tout dans un seul portefeuille"
           },
           {
-            "title": "Interface conviviale pour l'accessibilité",
-            "description": ""
+            "title": "Interface conviviale pour une accessibilité optimale",
+            "description": "Un design intuitif permet à tout le monde de naviguer et d'utiliser le portefeuille efficacement"
           },
           {
             "title": "Fonctionnalités de sécurité avancées",
-            "description": ""
+            "description": "Protégez vos actifs numériques avec le cryptage, des clés sécurisées, et une prévention avancée des fraudes"
           },
           {
-            "title": "Intégration avec les échanges de crypto-monnaies",
-            "description": ""
+            "title": "Intégration avec les plateformes d'échange de cryptomonnaies",
+            "description": "Échangez et transférez facilement des cryptomonnaies en vous connectant aux plateformes populaires"
           },
           {
             "title": "Authentification à deux facteurs",
-            "description": ""
+            "description": "Ajoutez une couche de sécurité supplémentaire avec l'A2F pour protéger votre compte contre les accès non autorisés"
           },
           {
-            "title": "Mises à jour régulières de la sécurité",
-            "description": ""
+            "title": "Mises à jour régulières de sécurité",
+            "description": "Restez protégé grâce à des mises à jour fréquentes pour faire face aux nouvelles menaces et améliorer la sécurité"
           }
         ],
         "mainSection": {
@@ -1455,27 +1482,27 @@
         "items": [
           {
             "title": "Infrastructure entièrement décentralisée",
-            "description": ""
+            "description": "Éliminez la dépendance à une seule autorité centrale, garantissant une meilleure sécurité et confiance"
           },
           {
-            "title": "Haute performance pour des opérations complexes",
-            "description": ""
+            "title": "Haute performance pour les opérations complexes",
+            "description": "Gérez des tâches exigeantes et des opérations à grande échelle avec des performances rapides et efficaces"
           },
           {
-            "title": "Sécurité des données et fiabilité",
-            "description": ""
+            "title": "Sécurité et fiabilité des données",
+            "description": "Protégez les données des utilisateurs et des entreprises grâce aux systèmes sécurisés et infalsifiables de la blockchain"
           },
           {
             "title": "Interfaces utilisateur intuitives",
-            "description": ""
+            "description": "Offrez une expérience simple et attrayante aux utilisateurs, même avec des fonctionnalités complexes"
           },
           {
-            "title": "Scalabilité pour supporter les bases d'utilisateurs croissantes",
-            "description": ""
+            "title": "Évolutivité pour prendre en charge des bases d'utilisateurs croissantes",
+            "description": "Augmentez facilement la capacité de l'application à mesure que votre entreprise ou votre base d'utilisateurs se développe"
           },
           {
             "title": "Compatibilité avec plusieurs plateformes blockchain",
-            "description": ""
+            "description": "Intégrez des plateformes de premier plan comme Ethereum, Solana, et bien d'autres pour une flexibilité maximale"
           }
         ],
         "mainSection": {
@@ -1497,27 +1524,27 @@
         "items": [
           {
             "title": "Expérience de trading fluide",
-            "description": ""
+            "description": "Achetez, vendez et gérez facilement des NFTs grâce à une plateforme conviviale et intuitive"
           },
           {
             "title": "Contrats intelligents personnalisables",
-            "description": ""
+            "description": "Créez des contrats intelligents uniques et adaptés aux besoins de votre entreprise ou de votre projet NFT"
           },
           {
             "title": "Sécurité des actifs numériques",
-            "description": ""
+            "description": "Protégez les NFTs et les transactions avec des protocoles de sécurité de pointe pour garantir confiance et sécurité"
           },
           {
             "title": "Intégration avec les portefeuilles crypto",
-            "description": ""
+            "description": "Connectez-vous facilement à des portefeuilles crypto populaires, permettant aux utilisateurs de stocker et d'échanger des NFTs"
           },
           {
             "title": "Opportunités de branding pour les entreprises",
-            "description": ""
+            "description": "Utilisez les NFTs pour promouvoir votre marque, interagir avec les clients et créer des expériences numériques uniques"
           },
           {
-            "title": "Scalable pour des audiences mondiales",
-            "description": ""
+            "title": "Évolutif pour un public mondial",
+            "description": "Prenez en charge des millions d'utilisateurs et de transactions avec une plateforme conçue pour la croissance"
           }
         ],
         "mainSection": {
@@ -1539,27 +1566,27 @@
         "items": [
           {
             "title": "Identification des vulnérabilités",
-            "description": ""
+            "description": "Repérez les points faibles de votre système blockchain avant qu'ils ne puissent être exploités"
           },
           {
             "title": "Analyse technique complète",
-            "description": ""
+            "description": "Effectuez des examens approfondis de l'architecture, du code et des processus de votre système"
           },
           {
-            "title": "Protection contre les hacks potentiels",
-            "description": ""
+            "title": "Protection contre les piratages potentiels",
+            "description": "Renforcez votre application pour prévenir tout accès non autorisé et toute attaque malveillante"
           },
           {
-            "title": "Recommandations pour l'amélioration de la sécurité",
-            "description": ""
+            "title": "Recommandations pour des améliorations de sécurité",
+            "description": "Recevez des suggestions concrètes pour renforcer la sécurité et les performances de votre système"
           },
           {
-            "title": "Mise en œuvre rapide des corrections",
-            "description": ""
+            "title": "Mise en œuvre rapide des correctifs",
+            "description": "Corrigez rapidement les problèmes de sécurité pour minimiser les risques et les interruptions"
           },
           {
-            "title": "Conformité aux normes de sécurité mondiales",
-            "description": ""
+            "title": "Conformité avec les normes de sécurité mondiales",
+            "description": "Assurez-vous que votre système respecte les directives et les meilleures pratiques de sécurité reconnues"
           }
         ],
         "mainSection": {
@@ -1580,28 +1607,28 @@
       "supplyChain": {
         "items": [
           {
-            "title": "Visibilité complète sur les processus de la chaîne d'approvisionnement",
-            "description": ""
+            "title": "Visibilité complète des processus de la chaîne d'approvisionnement",
+            "description": "Suivez chaque étape de votre chaîne d'approvisionnement, des matières premières aux produits finis, en temps réel"
           },
           {
             "title": "Traitement automatisé des transactions",
-            "description": ""
+            "description": "Rationalisez les flux de travail de la chaîne d'approvisionnement avec l'enregistrement et la vérification automatiques des transactions"
           },
           {
             "title": "Vérification rapide et précise des données",
-            "description": ""
+            "description": "Assurez l'intégrité et la précision des données de la chaîne d'approvisionnement grâce aux processus de validation intégrés de la blockchain"
           },
           {
             "title": "Protection contre la contrefaçon",
-            "description": ""
+            "description": "Vérifiez l'authenticité des produits à chaque étape, réduisant ainsi le risque de fraude ou de produits contrefaits"
           },
           {
             "title": "Intégration avec les systèmes ERP",
-            "description": ""
+            "description": "Connectez facilement la blockchain à vos systèmes ERP existants pour une vue unifiée des opérations"
           },
           {
-            "title": "Réduction du temps de traitement et des coûts",
-            "description": ""
+            "title": "Réduction du temps et des coûts de traitement",
+            "description": "Gagnez du temps et de l'argent en éliminant les processus manuels et en rationalisant les opérations"
           }
         ],
         "mainSection": {
@@ -1622,28 +1649,28 @@
       "tokenization": {
         "items": [
           {
-            "title": "Support pour des classes d'actifs diverses",
-            "description": ""
+            "title": "Prise en charge de classes d'actifs diversifiées",
+            "description": "Tokenisez une variété d'actifs, y compris l'immobilier, les actions, l'art, et bien plus, les rendant négociables et accessibles"
           },
           {
-            "title": "Liquidité améliorée des actifs",
-            "description": ""
+            "title": "Liquidité accrue des actifs",
+            "description": "Transformez les actifs illiquides en jetons numériques pour permettre des opportunités de négociation plus rapides et plus simples"
           },
           {
-            "title": "Simplification des processus de transaction",
-            "description": ""
+            "title": "Processus de transaction simplifiés",
+            "description": "Rationalisez l'achat, la vente et le transfert d'actifs grâce à des transactions basées sur des jetons automatisées et efficaces"
           },
           {
-            "title": "Conformité légale totale",
-            "description": ""
+            "title": "Conformité légale complète",
+            "description": "Assurez-vous que tous les processus de tokenisation respectent les normes réglementaires et offrent une transparence aux investisseurs"
           },
           {
-            "title": "Stockage et sécurité des données fiables",
-            "description": ""
+            "title": "Stockage de données fiable et sécurisé",
+            "description": "Protégez les actifs tokenisés et les enregistrements de transactions avec une technologie blockchain sécurisée et inviolable"
           },
           {
             "title": "Réduction des coûts opérationnels",
-            "description": ""
+            "description": "Réduisez les coûts associés à la gestion traditionnelle des actifs en utilisant la blockchain pour l'automatisation et l'efficacité"
           }
         ],
         "mainSection": {
@@ -1665,27 +1692,27 @@
         "items": [
           {
             "title": "Accès restreint pour une confidentialité accrue",
-            "description": ""
+            "description": "Seuls les utilisateurs autorisés peuvent accéder à la blockchain, garantissant confidentialité et sécurité"
           },
           {
             "title": "Contrôle total des données pour l'organisation",
-            "description": ""
+            "description": "Votre entreprise conserve un contrôle complet sur les données stockées et partagées au sein du réseau"
           },
           {
-            "title": "Mise en place et déploiement rapides du réseau",
-            "description": ""
+            "title": "Configuration et déploiement rapide du réseau",
+            "description": "Établissez rapidement une blockchain privée adaptée aux besoins opérationnels spécifiques de votre entreprise"
           },
           {
-            "title": "Scalabilité pour les applications d'entreprise",
-            "description": ""
+            "title": "Évolutivité pour les applications d'entreprise",
+            "description": "Augmentez facilement la capacité du réseau à mesure que votre entreprise se développe et que les exigences opérationnelles augmentent"
           },
           {
-            "title": "Haute confidentialité et sécurité",
-            "description": ""
+            "title": "Confidentialité et sécurité de haut niveau",
+            "description": "Protégez les données internes sensibles avec des protocoles de chiffrement et de sécurité avancés"
           },
           {
             "title": "Intégration avec les systèmes internes",
-            "description": ""
+            "description": "Connectez de manière transparente la blockchain privée avec vos outils et systèmes d'entreprise existants"
           }
         ],
         "mainSection": {
@@ -1707,27 +1734,27 @@
         "items": [
           {
             "title": "Évaluation des besoins commerciaux",
-            "description": ""
+            "description": "Analyser vos processus commerciaux pour déterminer où la blockchain peut créer de la valeur"
           },
           {
-            "title": "Recommandations de plateforme",
-            "description": ""
+            "title": "Recommandations de plateformes",
+            "description": "Suggérer les plateformes blockchain les plus adaptées (par exemple, Ethereum, Solana) en fonction de vos objectifs"
           },
           {
             "title": "Analyse de faisabilité économique",
-            "description": ""
+            "description": "Évaluer les coûts et les avantages de la mise en œuvre de la blockchain pour assurer un retour sur investissement solide"
           },
           {
-            "title": "Planification de mise en œuvre",
-            "description": ""
+            "title": "Planification de l'implémentation",
+            "description": "Développer une feuille de route claire pour intégrer la blockchain dans vos opérations de manière efficace"
           },
           {
             "title": "Soutien continu au projet",
-            "description": ""
+            "description": "Fournir des conseils et un soutien continus tout au long du processus d'implémentation et au-delà"
           },
           {
             "title": "Audits technologiques réguliers",
-            "description": ""
+            "description": "Surveiller et évaluer vos systèmes blockchain pour les maintenir sécurisés, optimisés et à jour"
           }
         ],
         "mainSection": {
@@ -1749,29 +1776,30 @@
         "items": [
           {
             "title": "Perturbation minimale de l'infrastructure existante",
-            "description": ""
+            "description": "Intégrer la blockchain sans réorganiser vos systèmes actuels, assurant une transition fluide"
           },
           {
-            "title": "Augmentation de la vitesse opérationnelle",
-            "description": ""
+            "title": "Vitesse opérationnelle accrue",
+            "description": "Accélérer les processus commerciaux grâce à la capacité de la blockchain à traiter les transactions rapidement et de manière sécurisée"
           },
           {
             "title": "Réduction des coûts opérationnels",
-            "description": ""
+            "description": "Économiser de l'argent en automatisant les processus et en éliminant le besoin d'intermédiaires"
           },
           {
             "title": "Haute performance et fiabilité",
-            "description": ""
+            "description": "Obtenez des performances constantes et fiables même à mesure que votre entreprise se développe"
           },
           {
-            "title": "Intégration API pour plus de flexibilité",
-            "description": ""
+            "title": "Intégration d'API pour plus de flexibilité",
+            "description": "Connectez facilement les solutions blockchain à vos outils et logiciels existants via des API"
           },
           {
-            "title": "Mise en œuvre rapide et efficace",
-            "description": ""
+            "title": "Implémentation rapide et efficace",
+            "description": "Déployez rapidement la technologie blockchain adaptée à vos besoins commerciaux avec des conseils d'experts"
           }
         ],
+
         "mainSection": {
           "title": "Services d'Intégration Blockchain",
           "description": "Intégrez de manière transparente la blockchain dans vos systèmes existants pour améliorer l'efficacité et la sécurité.\nRéduisez les perturbations opérationnelles tout en augmentant les performances avec des solutions blockchain personnalisées."
@@ -1791,27 +1819,27 @@
         "items": [
           {
             "title": "Sessions de formation personnalisées pour les équipes",
-            "description": ""
+            "description": "Adapter le contenu de la formation pour correspondre aux rôles spécifiques et aux objectifs commerciaux de votre équipe"
           },
           {
             "title": "Études de cas pratiques et exercices",
-            "description": ""
+            "description": "Fournir des exemples concrets et réels pour aider les employés à appliquer leurs connaissances en blockchain"
           },
           {
             "title": "Explications simples pour des sujets complexes",
-            "description": ""
+            "description": "Simplifier les concepts techniques de la blockchain en un langage facile à comprendre"
           },
           {
             "title": "Soutien post-formation",
-            "description": ""
+            "description": "Offrir une assistance continue et des ressources pour aider votre équipe à mettre en œuvre ce qu’elle a appris"
           },
           {
             "title": "Accès à des ressources exclusives sur la blockchain",
-            "description": ""
+            "description": "Fournir des guides, des outils et des matériaux pour un apprentissage et une référence continus"
           },
           {
             "title": "Préparation aux certifications",
-            "description": ""
+            "description": "Aider les employés à obtenir des certifications blockchain reconnues pour valider leur expertise"
           }
         ],
         "mainSection": {
