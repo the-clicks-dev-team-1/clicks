@@ -545,6 +545,66 @@
     "addOns": "Add-On Services",
     "plans": [
       {
+        "name": "Blockchain for Business",
+        "price": "Starting From CAD $100",
+        "features": [
+          "Custom Blockchain Solutions",
+          "Smart Contracts Development",
+          "Decentralized Applications (DApps)",
+          "Blockchain Integration",
+          "NFT Platform Development",
+          "Tokenization Services",
+          "Private Blockchain Development",
+          "Supply Chain Blockchain",
+          "Blockchain Security Audits",
+          "Crypto Wallet Development",
+          "Blockchain Training",
+          "Blockchain Consulting"
+        ],
+        "button": "Contact Us"
+      },
+      {
+        "name": "AI Integration Made Simple",
+        "price": "Starting From CAD $100",
+        "features": [
+          "Business Process Automation",
+          "Natural Language Processing (NLP)",
+          "Chatbots and Virtual Assistants",
+          "Predictive Analytics",
+          "AI-Powered Analytics",
+          "AI-Driven Marketing Optimization",
+          "Image Recognition and Analysis",
+          "Recommendation Systems",
+          "AI-Enhanced Cybersecurity",
+          "AI for Human Resources",
+          "Voice Recognition Solutions",
+          "Custom AI Development"
+        ],
+        "button": "Contact Us"
+      },
+      {
+        "name": "Digital Marketing Solutions",
+        "price": "Starting From CAD $100",
+        "features": [
+          "Web Development",
+          "Strategy Development",
+          "SEO",
+          "PPC Advertising",
+          "Social Media Marketing",
+          "Content Marketing",
+          "Email Marketing",
+          "Conversion Rate Optimization",
+          "Analytics and Reporting",
+          "Marketing Automation",
+          "Public Relations",
+          "Graphic Design"
+        ],
+        "button": "Contact Us"
+      }
+    ],
+    "moneyBack": "6-Month Money-Back Guarantee",
+    "plans_old": [
+      {
         "name": "Basic",
         "price": "CAD $3,000",
         "features": [
