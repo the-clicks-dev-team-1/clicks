@@ -32,7 +32,7 @@ export interface Plan {
   name: string;
   price: string;
   features: string[];
-  description: string;
+  description?: string;
   button: string;
 }
 
@@ -61,7 +61,7 @@ plansBase.forEach((base, index) => {
     name: en.pricing.plans[index].name,
     price: en.pricing.plans[index].price,
     features: en.pricing.plans[index].features,
-    description: en.pricing.plans[index].description,
+    // description: en.pricing.plans[index].description,
     button: en.pricing.plans[index].button,
   };
   plans.push(plan);
