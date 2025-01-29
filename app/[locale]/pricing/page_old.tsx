@@ -32,24 +32,25 @@ export interface Plan {
   name: string;
   price: string;
   features: string[];
+  description: string;
   button: string;
 }
 
 const plansBase = [
   {
-    link: "/contact",
+    link: "https://buy.stripe.com/test_fZe9Ci73m8Ha8UgbII",
     style:
-      "rounded-3xl py-10 bg-clip-text text-transparent* text-[var(--text-label)] bg-gradient-to-b from-neutral-300 to-neutral-50",
+      "rounded-3xl  py-10 bg-clip-text text-transparent* text-[var(--text-label)] bg-gradient-to-b from-neutral-300 to-neutral-50",
+  },
+  {
+    link: "//buy.stripe.com/test_9AQ6q6cnG5uY9Yk5kl",
+    style:
+      "rounded-3xl  py-10 bg-clip-text text-transparent* text-[var(--text-label)] bg-gradient-to-b from-neutral-300 to-neutral-50",
   },
   {
     link: "/contact",
     style:
-      "rounded-3xl py-10 bg-clip-text text-transparent* text-[var(--text-label)] bg-gradient-to-b from-neutral-300 to-neutral-50",
-  },
-  {
-    link: "/contact",
-    style:
-      "rounded-3xl py-10 bg-clip-text text-transparent* text-[var(--text-label)] bg-gradient-to-b from-neutral-300 to-neutral-50 h-full flex flex-col ",
+      "h-full rounded-3xl py-10 flex flex-col  bg-clip-text text-transparent* text-[var(--text-label)] bg-gradient-to-b from-neutral-300 to-neutral-50",
   },
 ];
 
@@ -60,6 +61,7 @@ plansBase.forEach((base, index) => {
     name: en.pricing.plans[index].name,
     price: en.pricing.plans[index].price,
     features: en.pricing.plans[index].features,
+    description: en.pricing.plans[index].description,
     button: en.pricing.plans[index].button,
   };
   plans.push(plan);
@@ -88,12 +90,17 @@ const Pricing: FC<{ params: { locale: string } }> = async ({
               <div className={plan.style}>
                 <div className="text-3xl md:text-4xl flex items-center font-medium text-[var(--light-blue)] light:text-[var(--gray-70)]">
                   {t(`plans.${index}.name`)}
-                  <div className="md:hidden lg:block text-sm font-medium text-blue-600 bg-blue-100 px-2 py-1 rounded-lg ml-4 items-center">
-                    {t("moneyBack")}
-                  </div>
+                  {plan.name === "Enterprise" && (
+                    <div className="md:hidden lg:block text-sm font-medium text-blue-600 bg-blue-100 px-2 py-1 rounded-lg ml-4 items-center">
+                      {t("contact")}
+                    </div>
+                  )}
                 </div>
                 <div className="text-2xl md:text-3xl pt-4 md:pt-6 text-[var(--light-blue)] light:text-[var(--gray-70)]">
                   {t(`plans.${index}.price`)}
+                </div>
+                <div className="py-4 md:py-6 text-[var(--gray-blue)] light:text-[var(--gray-40)]">
+                  {t(`plans.${index}.description`)}
                 </div>
                 <ul>
                   {plan.features.map((feature, i) => (
@@ -101,7 +108,7 @@ const Pricing: FC<{ params: { locale: string } }> = async ({
                       key={feature}
                       className="text-lg py-2 flex space-x-2 items-center text-[var(--gray-blue)] light:text-[var(--gray-40)]"
                     >
-                      {plan.name.includes("AI") || plan.name.includes("IA") ? (
+                      {plan.name === "Enterprise" ? (
                         <PiCheckCircleFill className="text-blue-400 mr-2 text-xl" />
                       ) : (
                         <PiCheckCircleFill className="text-green-600 mr-2 text-xl" />
