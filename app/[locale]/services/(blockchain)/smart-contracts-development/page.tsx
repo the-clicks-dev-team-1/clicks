@@ -53,6 +53,16 @@ const SmartContractsDevelopment: FC<{
       <div className="container md:px-10 mb-32 pt-32 md:pt-40">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
           <div>
+            <div className="mb-10">
+              <div className="flex flex-col">
+                <h1 className="mb-10 py-2 text-3xl md:text-5xl bg-clip-text text-transparent bg-gradient-to-r from-sky-400 to bg-purple-500 bg-opacity-50">
+                  {t("mainSection.title")}
+                </h1>
+                <p className="mt-3 text-lg md:text-xl max-w-2xl text-left text-[var(--gray-blue)] light:text-[var(--gray-40)]">
+                  {t("mainSection.description")}
+                </p>
+              </div>
+            </div>
             <h2 className="text-2xl md:text-3xl font-semibold mb-6 text-[var(--light-blue)] light:text-[var(--gray-70)]">
               {t("what.title")}
             </h2>
@@ -93,7 +103,7 @@ const SmartContractsDevelopment: FC<{
               {t("why.description")}
             </p>
           </div>
-          <div className="relative w-full h-64 md:h-96">
+          <div className="relative w-full h-96 md:h-full md:max-h-[800px]">
             <Image
               src="/images/blockchain/smartContracts.jpg"
               alt="Analytics and Reporting Explanation"
@@ -117,17 +127,6 @@ const SmartContractsDevelopment: FC<{
               description={t(item.description)}
             />
           ))}
-        </div>
-      </div>
-
-      <div className="container md:px-10 mb-32">
-        <div className="flex flex-col">
-          <h1 className="mb-10 py-2 text-3xl md:text-5xl bg-clip-text text-transparent bg-gradient-to-r from-sky-400 to bg-purple-500 bg-opacity-50">
-            {t("mainSection.title")}
-          </h1>
-          <p className="mt-3 text-lg md:text-xl max-w-2xl text-left text-[var(--gray-blue)] light:text-[var(--gray-40)]">
-            {t("mainSection.description")}
-          </p>
         </div>
       </div>
 
