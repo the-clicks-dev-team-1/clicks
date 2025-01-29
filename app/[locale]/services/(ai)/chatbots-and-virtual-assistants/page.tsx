@@ -93,7 +93,7 @@ const ChatbotsAndVirtualAssistants: FC<{
           </div>
           <div className="relative w-full h-64 md:h-96">
             <Image
-              src="/images/ai/chatbots.jpg"
+              src="/images/ai/chatbots.png"
               alt="Analytics and Reporting Explanation"
               layout="fill"
               objectFit="cover"

@@ -51,7 +51,8 @@ const AIDrivenMarketingOptimization: FC<{
       <div className="container md:px-10 mb-32 pt-32 md:pt-40">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
           <div>
-            <h2 className="text-2xl md:text-3xl font-semibold mb-6 text-[var(--light-blue)] light:text-[var(--gray-70)]">
+            {/* <h2 className="text-2xl md:text-3xl font-semibold mb-6 text-[var(--light-blue)] light:text-[var(--gray-70)]"> */}
+            <h2 className="text-2xl md:text-3xl font-semibold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-sky-400 to bg-purple-500 bg-opacity-50">
               {t("what.title")}
             </h2>
             <p className="text-lg mb-6 text-[var(--gray-blue)] light:text-[var(--gray-40)]">
@@ -90,10 +91,18 @@ const AIDrivenMarketingOptimization: FC<{
             <p className="text-lg text-[var(--gray-blue)] light:text-[var(--gray-40)]">
               {t("why.description")}
             </p>
+            <div className="flex flex-col">
+              <h1 className="mb-10 py-2 text-3xl md:text-5xl text-[var(--light-blue)] light:text-[var(--gray-70)]">
+                {t("mainSection.title")}
+              </h1>
+              <p className="mt-3 text-lg md:text-xl max-w-2xl text-left text-[var(--gray-blue)] light:text-[var(--gray-40)]">
+                {t("mainSection.description")}
+              </p>
+            </div>
           </div>
           <div className="relative w-full h-64 md:h-96">
             <Image
-              src="/images/ai/marketing.jpg"
+              src="/images/ai/aiMarketing.jpg"
               alt="Analytics and Reporting Explanation"
               layout="fill"
               objectFit="cover"
@@ -118,7 +127,7 @@ const AIDrivenMarketingOptimization: FC<{
         </div>
       </div>
 
-      <div className="container md:px-10 mb-32">
+      {/* <div className="container md:px-10 mb-32">
         <div className="flex flex-col">
           <h1 className="mb-10 py-2 text-3xl md:text-5xl bg-clip-text text-transparent bg-gradient-to-r from-sky-400 to bg-purple-500 bg-opacity-50">
             {t("mainSection.title")}
@@ -127,7 +136,7 @@ const AIDrivenMarketingOptimization: FC<{
             {t("mainSection.description")}
           </p>
         </div>
-      </div>
+      </div> */}
 
       <ContactBlock consultation={t("contactFormMessage")} />
 

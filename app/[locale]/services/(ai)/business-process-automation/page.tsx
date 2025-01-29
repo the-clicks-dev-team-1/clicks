@@ -93,7 +93,7 @@ const BusinessProcessAutomation: FC<{
           </div>
           <div className="relative w-full h-64 md:h-96">
             <Image
-              src="/images/ai/automation.jpg"
+              src="/images/ai/automation.png"
               alt="Analytics and Reporting Explanation"
               layout="fill"
               objectFit="cover"
