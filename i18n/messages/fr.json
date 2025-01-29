@@ -1372,7 +1372,7 @@
           "description": "Des systèmes blockchain sur mesure pour votre entreprise, garantissant une intégration fluide et une amélioration des opérations.\nGagnez du temps et réduisez les erreurs manuelles avec des processus blockchain automatisés. Renforcez la confiance et la transparence dans toutes vos opérations commerciales."
         },
         "what": {
-          "title": "Pourquoi utiliser des solutions Blockchain ?",
+          "title": "Comment ça fonctionne en pratique",
           "description": "Imaginez que vous gérez un magasin de jouets et utilisez un système blockchain pour suivre votre inventaire. Lorsqu'un client achète un jouet, le système met automatiquement à jour votre stock et indique exactement où chaque article a été fabriqué et livré. Fini les comptages manuels ou la perte de suivi des articles !"
         },
         "why": {
@@ -1414,7 +1414,7 @@
           "description": "Des contrats intelligents efficaces et sécurisés pour automatiser les accords et rationaliser les transactions.\nRéduisez l'intervention manuelle et éliminez les intermédiaires tout en garantissant la transparence et l'exécution inviolable des accords."
         },
         "what": {
-          "title": "Pourquoi utiliser des contrats intelligents ?",
+          "title": "Comment ça fonctionne en pratique",
           "description": "Imaginez que vous louez un appartement. Avec un contrat intelligent, le paiement du loyer du locataire est automatiquement transféré sur votre compte à la date d'échéance. Si le paiement n'est pas effectué, le système refuse automatiquement l'accès à la propriété jusqu'à ce que le problème soit résolu — pas besoin d'intermédiaires ni de relances manuelles."
         },
         "why": {
@@ -1456,7 +1456,7 @@
           "description": "Développez des portefeuilles de crypto-monnaies sécurisés et conviviaux pour les transactions et la gestion des actifs.\nPermettez une gestion fluide des actifs numériques avec un support multi-devises et une sécurité avancée."
         },
         "what": {
-          "title": "Pourquoi utiliser un portefeuille crypto ?",
+          "title": "Comment ça fonctionne en pratique",
           "description": "Imaginez un portefeuille numérique qui conserve en toute sécurité votre Bitcoin, Ethereum et d'autres crypto-monnaies. Vous pouvez envoyer ou recevoir des paiements, surveiller votre portefeuille et échanger sur des plateformes — tout depuis une application sécurisée et facile à utiliser."
         },
         "why": {
@@ -1498,7 +1498,7 @@
           "description": "Créez des DApps sécurisées et évolutives pour améliorer les opérations commerciales et l'expérience client.\nExploitez une infrastructure décentralisée pour des solutions fiables et performantes."
         },
         "what": {
-          "title": "Qu'est-ce qu'une application décentralisée ?",
+          "title": "Comment ça fonctionne en pratique",
           "description": "Imaginez un marché peer-to-peer pour les artistes où ils peuvent vendre leur travail directement aux acheteurs sans frais de plateforme. Le processus entier — de l'annonce à la paiement — est géré par une application décentralisée, garantissant la confiance et l'équité."
         },
         "why": {
@@ -1540,7 +1540,7 @@
           "description": "Concevez et développez des plateformes pour acheter, vendre et gérer des NFTs et des actifs numériques.\nOffrez aux entreprises des opportunités de branding et des expériences de trading sécurisées."
         },
         "what": {
-          "title": "Pourquoi utiliser une plateforme NFT ?",
+          "title": "Comment ça fonctionne en pratique",
           "description": "Imaginez une plateforme où un artiste télécharge une œuvre numérique sous forme de NFT. Les acheteurs peuvent acheter le NFT en toute sécurité, garantissant que l'artiste est payé instantanément et que l'acheteur possède un actif numérique unique et vérifié."
         },
         "why": {
@@ -1582,7 +1582,7 @@
           "description": "Assurez la sécurité de vos applications blockchain avec des audits de sécurité complets.\nIdentifiez les vulnérabilités et renforcez votre système contre les hacks potentiels."
         },
         "what": {
-          "title": "Pourquoi utiliser des audits de sécurité Blockchain ?",
+          "title": "Comment ça fonctionne en pratique",
           "description": "Imaginez que votre plateforme blockchain soit évaluée par des experts qui identifient les points faibles avant que les hackers ne puissent en profiter. Le système est ensuite renforcé avec les mises à jour recommandées, garantissant une sécurité continue."
         },
         "why": {
@@ -1624,7 +1624,7 @@
           "description": "Optimisez les chaînes d'approvisionnement avec la blockchain pour une meilleure transparence et une efficacité opérationnelle.\nRéduisez le temps de traitement et prévenez la contrefaçon grâce au traitement automatisé des transactions."
         },
         "what": {
-          "title": "Pourquoi utiliser des solutions Blockchain pour la chaîne d'approvisionnement ?",
+          "title": "Comment ça fonctionne en pratique",
           "description": "Imaginez suivre chaque étape du parcours d'un produit, de l'usine au client, garantissant l'authenticité et vérifiant les données à chaque étape. Les clients peuvent scanner un code pour voir l'historique complet du produit."
         },
         "why": {
@@ -1666,7 +1666,7 @@
           "description": "Transformez les actifs réels en tokens numériques pour une liquidité et une flexibilité accrues.\nDébloquez de nouvelles opportunités d'investissement avec des actifs sécurisés et tokenisés."
         },
         "what": {
-          "title": "Pourquoi utiliser les services de tokenisation ?",
+          "title": "Comment ça fonctionne en pratique",
           "description": "Imaginez tokeniser des propriétés immobilières, permettant aux investisseurs d'acheter des parts fractionnées d'un bâtiment plutôt que la propriété entière, rendant les investissements plus accessibles."
         },
         "why": {
@@ -1708,7 +1708,7 @@
           "description": "Développez des réseaux de blockchain privés pour des opérations internes sécurisées et efficaces.\nOffrez une confidentialité accrue, un contrôle total des données et une scalabilité adaptée aux besoins de votre entreprise."
         },
         "what": {
-          "title": "Pourquoi utiliser une Blockchain Privée ?",
+          "title": "Comment ça fonctionne en pratique",
           "description": "Imaginez une entreprise qui doit gérer en toute sécurité les données des employés, les dossiers de projets et les communications internes. Avec une blockchain privée, seules les personnes autorisées peuvent accéder aux informations, assurant ainsi la confidentialité et l'intégrité des données sans se soucier des fuites."
         },
         "why": {
@@ -1750,7 +1750,7 @@
           "description": "Des conseils d'experts pour aider les entreprises à identifier les opportunités blockchain et à mettre en œuvre les bonnes solutions.\nRenforcez votre entreprise avec des stratégies qui maximisent le potentiel de la blockchain tout en minimisant les risques."
         },
         "what": {
-          "title": "Qu'est-ce que la consultation Blockchain ?",
+          "title": "Comment ça fonctionne en pratique",
           "description": "Imaginez une chaîne de magasins explorant la blockchain pour la gestion de sa chaîne d'approvisionnement. Les consultants évaluent vos systèmes actuels, recommandent la meilleure plateforme blockchain et conçoivent une stratégie pour l'intégrer, garantissant ainsi un rapport coût-efficacité et une efficacité opérationnelle."
         },
         "why": {
@@ -1793,7 +1793,7 @@
           "description": "Intégrez de manière transparente la blockchain dans vos systèmes existants pour améliorer l'efficacité et la sécurité.\nRéduisez les perturbations opérationnelles tout en augmentant les performances avec des solutions blockchain personnalisées."
         },
         "what": {
-          "title": "Pourquoi intégrer la Blockchain ?",
+          "title": "Comment ça fonctionne en pratique",
           "description": "Imaginez une entreprise de logistique ajoutant la blockchain à son système actuel. Les livraisons sont suivies automatiquement et les données sont partagées de manière sécurisée avec les partenaires, accélérant les opérations et réduisant les erreurs."
         },
         "why": {
@@ -1835,7 +1835,7 @@
           "description": "Des programmes de formation complets pour aider votre équipe à comprendre et à utiliser efficacement la blockchain.\nEquipez votre personnel des compétences nécessaires pour exploiter la blockchain pour un succès à long terme."
         },
         "what": {
-          "title": "Pourquoi investir dans la formation Blockchain ?",
+          "title": "Comment ça fonctionne en pratique",
           "description": "Imaginez votre équipe financière apprenant comment la blockchain peut rationaliser le traitement des paiements. Grâce à des exercices pratiques, ils s'entraînent à utiliser des contrats intelligents et à gérer les transactions de manière sécurisée et efficace."
         },
         "why": {
@@ -1879,7 +1879,7 @@
           "description": "Simplifiez les tâches répétitives grâce à l'automatisation pilotée par l'IA, économisant du temps et réduisant les erreurs.\nAméliorez l'efficacité opérationnelle tout en éliminant les erreurs humaines grâce à l'automatisation intelligente des processus."
         },
         "what": {
-          "title": "Pourquoi automatiser les processus métier ?",
+          "title": "Comment ça fonctionne en pratique",
           "description": "Imaginez une entreprise automatisant le traitement des factures. Au lieu de saisir manuellement les données, l'IA scanne les factures, extrait les détails et met à jour les systèmes financiers automatiquement, réduisant les erreurs et économisant des heures de travail."
         },
         "why": {
@@ -1921,7 +1921,7 @@
           "description": "Exploitez le NLP pour améliorer la communication, les connaissances clients et l'analyse de contenu.\nTransformez les données non structurées en informations exploitables pour de meilleures expériences clients."
         },
         "what": {
-          "title": "Pourquoi utiliser le traitement du langage naturel ?",
+          "title": "Comment ça fonctionne en pratique",
           "description": "Imaginez un hôtel analysant les avis en ligne grâce au NLP pour identifier les préoccupations courantes des clients, comme la propreté ou la qualité du service, et y répondre de manière proactive."
         },
         "why": {
@@ -1963,7 +1963,7 @@
           "description": "Améliorez l'expérience client avec des chatbots intelligents qui fournissent un support instantané et personnalisé.\nOffrez un service client 24/7 sans surcharger votre personnel."
         },
         "what": {
-          "title": "Pourquoi utiliser les chatbots et assistants virtuels ?",
+          "title": "Comment ça fonctionne en pratique",
           "description": "Imaginez un site de commerce électronique où un chatbot aide les clients avec des questions sur les produits, suit les commandes et traite les retours, tout en temps réel sans attendre une intervention humaine."
         },
         "why": {
@@ -2005,7 +2005,7 @@
           "description": "Utilisez les outils prédictifs basés sur l'IA pour anticiper les tendances, le comportement des clients et les besoins opérationnels.\nAnticipez les résultats futurs et prenez des décisions proactives en toute confiance."
         },
         "what": {
-          "title": "Pourquoi utiliser l'analytique prédictive ?",
+          "title": "Comment ça fonctionne en pratique",
           "description": "Imaginez une agence de voyage utilisant l'IA pour prévoir la demande saisonnière pour certaines destinations. Elle ajuste les prix et les promotions en conséquence, maximisant les réservations pendant les périodes de pointe."
         },
         "why": {
@@ -2048,7 +2048,7 @@
           "description": "Utilisez l'IA pour analyser de grands ensembles de données, révéler des insights et prendre des décisions plus intelligentes. Décelez les schémas et tendances cachés dans vos données pour rester compétitif sur le marché."
         },
         "what": {
-          "title": "Pourquoi utiliser l'Analytique Alimentée par l'IA ?",
+          "title": "Comment ça fonctionne en pratique",
           "description": "Imaginez un détaillant analysant les données de ventes pour prédire la demande future. L'IA identifie les produits tendance et suggère des niveaux de stock optimaux, assurant ainsi des rayons toujours bien approvisionnés."
         },
         "why": {
@@ -2090,7 +2090,7 @@
           "description": "Optimisez vos campagnes et votre ciblage client avec des outils alimentés par l'IA pour un meilleur retour sur investissement. Diffusez des publicités ciblées et maximisez votre budget marketing grâce aux insights de l'IA."
         },
         "what": {
-          "title": "Pourquoi utiliser l'Optimisation Marketing Alimentée par l'IA ?",
+          "title": "Comment ça fonctionne en pratique",
           "description": "Imaginez une marque de vêtements utilisant l'IA pour cibler les publicités de manteaux d'hiver aux clients dans les régions froides, augmentant ainsi les ventes tout en réduisant les dépenses publicitaires."
         },
         "why": {
@@ -2132,7 +2132,7 @@
           "description": "Automatisez le traitement des données visuelles pour le contrôle qualité, la sécurité et la gestion des stocks. Réduisez les erreurs et gagnez du temps grâce à l'IA pour une analyse rapide et précise des images."
         },
         "what": {
-          "title": "Pourquoi utiliser la Reconnaissance et l'Analyse d'Images ?",
+          "title": "Comment ça fonctionne en pratique",
           "description": "Imaginez une usine utilisant des caméras alimentées par l'IA pour inspecter les produits sur la chaîne de montage. Les articles défectueux sont automatiquement signalés et retirés, garantissant que seuls des produits de haute qualité atteignent les clients."
         },
         "why": {
@@ -2174,7 +2174,7 @@
           "description": "Améliorez l'expérience utilisateur grâce à des recommandations personnalisées alimentées par l'IA. Offrez des suggestions adaptées pour augmenter la satisfaction et les achats répétés."
         },
         "what": {
-          "title": "Pourquoi utiliser les Systèmes de Recommandation Alimentés par l'IA ?",
+          "title": "Comment ça fonctionne en pratique",
           "description": "Imaginez une librairie en ligne suggérant des livres en fonction des achats et des avis précédents d'un client. Les clients se sentent compris et sont plus enclins à revenir pour de futurs achats."
         },
         "why": {
@@ -2216,7 +2216,7 @@
           "description": "Renforcez votre cybersécurité avec des outils d'IA qui détectent et préviennent les menaces en temps réel.\nRestez protégé grâce à des systèmes intelligents qui identifient les vulnérabilités et réagissent instantanément."
         },
         "what": {
-          "title": "Pourquoi utiliser une cybersécurité améliorée par l'IA ?",
+          "title": "Comment ça fonctionne en pratique",
           "description": "Imaginez une institution financière utilisant l'IA pour surveiller les transactions. Le système détecte et bloque les activités inhabituelles, telles que les connexions non autorisées ou les transferts frauduleux, avant qu'elles ne causent des dommages."
         },
         "why": {
@@ -2258,7 +2258,7 @@
           "description": "Simplifiez le recrutement et la gestion des employés grâce à des solutions RH alimentées par l'IA.\nAméliorez les processus d'embauche et fidélisez les talents avec des outils de gestion intelligente des effectifs."
         },
         "what": {
-          "title": "Pourquoi utiliser l'IA pour les ressources humaines ?",
+          "title": "Comment ça fonctionne en pratique",
           "description": "Imaginez une équipe RH utilisant l'IA pour analyser les CV. Le système identifie rapidement les meilleurs candidats en fonction des exigences du poste, économisant du temps et garantissant les meilleures embauches."
         },
         "why": {
@@ -2300,7 +2300,7 @@
           "description": "Activez des solutions basées sur la voix pour le support client, l'accessibilité et l'automatisation.\nSimplifiez les interactions et améliorez l'accessibilité grâce à une technologie de reconnaissance vocale avancée."
         },
         "what": {
-          "title": "Pourquoi utiliser la reconnaissance vocale ?",
+          "title": "Comment ça fonctionne en pratique",
           "description": "Imaginez un client utilisant des commandes vocales pour vérifier son solde bancaire ou transférer des fonds. Le système traite instantanément la demande, offrant commodité et accessibilité."
         },
         "why": {
@@ -2342,7 +2342,7 @@
           "description": "Développez des solutions d'IA adaptées aux besoins de votre entreprise pour un impact et une efficacité maximaux.\nPersonnalisez l'IA pour transformer vos processus uniques et garantir des résultats optimaux."
         },
         "what": {
-          "title": "Pourquoi utiliser des solutions d'IA sur mesure ?",
+          "title": "Comment ça fonctionne en pratique",
           "description": "Imaginez une entreprise de logistique développant un outil d'IA personnalisé pour prédire les retards de livraison. Le système analyse les schémas de trafic, la météo et les performances des conducteurs pour optimiser les itinéraires en temps réel."
         },
         "why": {
