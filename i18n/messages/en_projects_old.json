@@ -207,46 +207,6 @@
     }
   },
   "projects": {
-    "custom": {
-      "title": "Custom Blockchain Solutions",
-      "description": "Development of unique blockchain solutions to automate business processes.",
-      "link": "custom-blockchain-solutions"
-    },
-    "smart": {
-      "title": "Smart Contracts Development",
-      "description": "Creation and auditing of smart contracts for secure and transparent transactions.",
-      "link": "smart-contracts-development"
-    },
-    "nft": {
-      "title": "NFT Development and Platforms",
-      "description": "Development of NFT platforms for trading and managing digital assets.",
-      "link": "nft-platform-development"
-    },
-    "decentralized": {
-      "title": "Decentralized Applications (DApps)",
-      "description": "Creation of decentralized applications using Ethereum, Solana, or other networks.",
-      "link": "decentralized-applications"
-    },
-    "business": {
-      "title": "Business Process Automation",
-      "description": "Integration of AI to automate internal processes, such as customer management and data tracking.",
-      "link": "business-process-automation"
-    },
-    "powered": {
-      "title": "AI-Powered Analytics",
-      "description": "Utilizing AI for deep data analysis to enhance decision-making processes.",
-      "link": "ai-powered-analytics"
-    },
-    "chatbots": {
-      "title": "Chatbots and Virtual Assistants",
-      "description": "Development and implementation of chatbots to improve customer service quality.",
-      "link": "chatbots-and-virtual-assistants"
-    },
-    "predictive": {
-      "title": "Predictive Analytics",
-      "description": "AI-driven solutions for forecasting trends and customer behaviour.",
-      "link": "predictive-analytics"
-    },
     "cm": {
       "title": "Content Marketing",
       "description": "Creating valuable content to attract and retain your target audience.",
@@ -266,6 +226,46 @@
       "title": "Web Design & Development",
       "description": "Building modern, responsive websites focused on user experience and conversion optimization.",
       "link": "webdev"
+    },
+    "seo": {
+      "title": "Search Engine Optimization",
+      "description": "On-page and off-page SEO to improve search engine rankings and organic traffic.",
+      "link": "cm"
+    },
+    "ppc": {
+      "title": "Pay-Per-Click Advertising",
+      "description": "Management of PPC campaigns to drive targeted traffic and increase conversions.",
+      "link": "cm"
+    },
+    "em": {
+      "title": "Email Marketing",
+      "description": "Design and execution of email marketing campaigns to nurture leads and retain customers.",
+      "link": "cm"
+    },
+    "cro": {
+      "title": "Conversion Rate Optimization",
+      "description": "Analysis and optimization of website and landing pages to improve conversion rates.",
+      "link": "cm"
+    },
+    "analytics": {
+      "title": "Analytics & Reporting",
+      "description": "Comprehensive analytics and reporting to track the performance of digital marketing efforts.",
+      "link": "cm"
+    },
+    "automation": {
+      "title": "Marketing Automation",
+      "description": "Implementation of marketing automation tools to streamline and enhance marketing efforts.",
+      "link": "cm"
+    },
+    "pr": {
+      "title": "Public Relations",
+      "description": "Public Relations is a strategic communication process that builds mutually beneficial relationships between organizations and their publics.",
+      "link": "cm"
+    },
+    "design": {
+      "title": "Graphic Design",
+      "description": "Graphic Design is a creative service that involves crafting visually appealing and impactful designs to communicate messages and enhance brand identity.",
+      "link": "cm"
     }
   },
   "contactForm": {

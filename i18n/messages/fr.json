@@ -207,53 +207,65 @@
     }
   },
   "projects": {
-    "seo": {
-      "title": "Optimisation pour les Moteurs de Recherche",
-      "description": "SEO sur la page et hors page pour améliorer le classement dans les moteurs de recherche et le trafic organique."
+    "custom": {
+      "title": "Solutions Blockchain Personnalisées",
+      "description": "Développement de solutions blockchain uniques pour automatiser les processus commerciaux.",
+      "link": "custom-blockchain-solutions"
     },
-    "ppc": {
-      "title": "Publicité au Coût par Clic",
-      "description": "Gestion des campagnes PPC pour générer un trafic ciblé et augmenter les conversions."
+    "smart": {
+      "title": "Développement de Contrats Intelligents",
+      "description": "Création et audit de contrats intelligents pour des transactions sécurisées et transparentes.",
+      "link": "smart-contracts-development"
     },
-    "em": {
-      "title": "Marketing par Courriel",
-      "description": "Conception et exécution de campagnes de marketing par courriel pour nourrir les prospects et fidéliser les clients."
+    "nft": {
+      "title": "Développement et Plateformes NFT",
+      "description": "Développement de plateformes NFT pour l’échange et la gestion d’actifs numériques.",
+      "link": "nft-platform-development"
     },
-    "cro": {
-      "title": "Optimisation du Taux de Conversion",
-      "description": "Analyse et optimisation des sites web et des pages de destination pour améliorer les taux de conversion."
+    "decentralized": {
+      "title": "Applications Décentralisées (DApps)",
+      "description": "Création d’applications décentralisées utilisant Ethereum, Solana ou d'autres réseaux.",
+      "link": "decentralized-applications"
     },
-    "analytics": {
-      "title": "Analytique et Rapports",
-      "description": "Analytique et rapports complets pour suivre les performances des efforts de marketing numérique."
+    "business": {
+      "title": "Automatisation des Processus Métier",
+      "description": "Intégration de l'IA pour automatiser les processus internes, tels que la gestion des clients et le suivi des données.",
+      "link": "business-process-automation"
     },
-    "automation": {
-      "title": "Automatisation du Marketing",
-      "description": "Mise en œuvre d'outils d'automatisation du marketing pour rationaliser et améliorer les efforts marketing."
+    "powered": {
+      "title": "Analytique Alimentée par l'IA",
+      "description": "Utilisation de l’IA pour une analyse approfondie des données afin d'améliorer la prise de décision.",
+      "link": "ai-powered-analytics"
     },
-    "pr": {
-      "title": "Relations Publiques",
-      "description": "Les relations publiques sont un processus de communication stratégique qui établit des relations mutuellement bénéfiques entre les organisations et leurs publics."
+    "chatbots": {
+      "title": "Chatbots et Assistants Virtuels",
+      "description": "Développement et implémentation de chatbots pour améliorer la qualité du service client.",
+      "link": "chatbots-and-virtual-assistants"
     },
-    "design": {
-      "title": "Conception Graphique",
-      "description": "La conception graphique est un service créatif impliquant la création de designs visuellement attrayants et percutants pour communiquer des messages et renforcer l'identité de la marque."
+    "predictive": {
+      "title": "Analyse Prédictive",
+      "description": "Solutions basées sur l’IA pour prévoir les tendances et le comportement des clients.",
+      "link": "predictive-analytics"
     },
     "cm": {
       "title": "Marketing de Contenu",
-      "description": "Créer du contenu de valeur pour attirer et fidéliser votre public cible."
+      "description": "Créer du contenu de valeur pour attirer et fidéliser votre public cible.",
+      "link": "cm"
     },
     "smm": {
       "title": "Marketing sur les Réseaux Sociaux",
-      "description": "Gérer le contenu, les stratégies et les communautés sur les principales plateformes."
+      "description": "Gérer le contenu, les stratégies et les communautés sur les principales plateformes.",
+      "link": "smm"
     },
     "stratdev": {
       "title": "Développement de Stratégie",
-      "description": "Consultation détaillée pour comprendre les objectifs commerciaux, le public cible et les efforts marketing actuels du client."
+      "description": "Consultation détaillée pour comprendre les objectifs commerciaux, le public cible et les efforts marketing actuels du client.",
+      "link": "stratdev"
     },
     "webdev": {
       "title": "Conception et Développement Web",
-      "description": "Créer des sites web modernes et responsives axés sur l'expérience utilisateur et l'optimisation des conversions."
+      "description": "Créer des sites web modernes et responsives axés sur l'expérience utilisateur et l'optimisation des conversions.",
+      "link": "webdev"
     }
   },
   "contactForm": {

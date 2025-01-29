@@ -12,7 +12,7 @@ export function CardHoverEffectDemo() {
 export const projects = Object.entries(en.projects).map(([key, value]) => ({
   title: `${key}.title`,
   description: `${key}.description`,
-  link: `/services/${key}`,
+  link: `/services/${value.link}`,
 }));
 
 // export const projects = [

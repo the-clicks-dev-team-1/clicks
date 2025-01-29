@@ -110,6 +110,7 @@ const SmartContractsDevelopment: FC<{
               layout="fill"
               objectFit="cover"
               className="rounded-lg"
+              priority
             />
           </div>
         </div>

@@ -111,6 +111,7 @@ const CustomBlockchainSolutions: FC<{ params: { locale: string } }> = async ({
               layout="fill"
               objectFit="cover"
               className="rounded-lg"
+              priority
             />
           </div>
         </div>
