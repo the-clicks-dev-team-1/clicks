@@ -93,7 +93,7 @@ const ImageRecognitionAndAnalysis: FC<{
           </div>
           <div className="relative w-full h-64 md:h-96">
             <Image
-              src="/images/ai/imageRecognition.jpg"
+              src="/images/ai/imageRecognition.png"
               alt="Analytics and Reporting Explanation"
               layout="fill"
               objectFit="cover"
