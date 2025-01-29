@@ -1851,27 +1851,27 @@
         "items": [
           {
             "title": "Élimine les erreurs humaines",
-            "description": ""
+            "description": "L'IA garantit la précision en réduisant les erreurs dans les tâches répétitives, améliorant ainsi la fiabilité globale."
           },
           {
-            "title": "Automatise les opérations routinières",
-            "description": ""
+            "title": "Automatise les opérations de routine",
+            "description": "Libérez votre équipe en laissant l'IA gérer les processus répétitifs et chronophages."
           },
           {
             "title": "S'intègre aux systèmes CRM et ERP",
-            "description": ""
+            "description": "Connectez l'automatisation IA de manière fluide à vos outils commerciaux existants pour un flux de travail unifié"
           },
           {
             "title": "Améliore l'efficacité opérationnelle",
-            "description": ""
+            "description": "Accomplissez les tâches plus rapidement et plus efficacement, permettant à votre équipe de se concentrer sur des travaux à plus forte valeur ajoutée"
           },
           {
-            "title": "Support complet lors de l'implémentation",
-            "description": ""
+            "title": "Soutien complet lors de l'implémentation",
+            "description": "Bénéficiez de l'assistance d'experts pour garantir une configuration et une intégration de l'IA dans vos processus sans accroc"
           },
           {
             "title": "Économise du temps et des ressources",
-            "description": ""
+            "description": "Réduisez les charges de travail manuelles et les coûts opérationnels tout en augmentant la productivité"
           }
         ],
         "mainSection": {
@@ -1892,28 +1892,28 @@
       "nlp": {
         "items": [
           {
-            "title": "Analyse des sentiments pour les textes",
-            "description": ""
+            "title": "Analyse de sentiment pour le texte",
+            "description": "Évaluer le sentiment des clients à partir des avis ou des réseaux sociaux"
           },
           {
-            "title": "Compréhension approfondie des données clients",
-            "description": ""
+            "title": "Compréhension améliorée des données clients",
+            "description": "Extraire des informations à partir des données textuelles"
           },
           {
             "title": "Traitement automatique des requêtes clients",
-            "description": ""
+            "description": "Répondre plus rapidement aux requêtes grâce à l'automatisation"
           },
           {
-            "title": "Génération de textes et de rapports",
-            "description": ""
+            "title": "Génération de texte et de rapports",
+            "description": "Créer automatiquement des résumés ou des rapports détaillés"
           },
           {
             "title": "Amélioration de l'expérience client",
-            "description": ""
+            "description": "Offrir un meilleur support en analysant les besoins des clients"
           },
           {
             "title": "Intégration avec les assistants vocaux",
-            "description": ""
+            "description": "Utiliser le traitement du langage naturel dans les appareils intelligents pour des services vocaux"
           }
         ],
         "mainSection": {
@@ -1935,27 +1935,27 @@
         "items": [
           {
             "title": "Support client 24/7",
-            "description": ""
+            "description": "Soyez toujours disponible pour aider les clients, même en dehors des heures de bureau"
           },
           {
             "title": "Capacités multilingues",
-            "description": ""
+            "description": "Communiquez avec les clients dans leur langue préférée pour un meilleur engagement"
           },
           {
             "title": "Intégration avec les sites web et applications",
-            "description": ""
+            "description": "Ajoutez facilement des chatbots à vos plateformes existantes pour une interaction fluide"
           },
           {
             "title": "Interactions personnalisées avec les clients",
-            "description": ""
+            "description": "Adaptez les réponses aux clients individuels en fonction de leurs besoins et préférences"
           },
           {
             "title": "Réduit la charge de travail du personnel",
-            "description": ""
+            "description": "Traitez automatiquement les requêtes courantes, libérant ainsi le personnel pour des tâches plus complexes"
           },
           {
-            "title": "Mise en place et déploiement rapides",
-            "description": ""
+            "title": "Configuration et déploiement rapides",
+            "description": "Implémentez les chatbots rapidement, avec un minimum de perturbation pour vos opérations"
           }
         ],
         "mainSection": {
@@ -1976,28 +1976,28 @@
       "predictiveAnalytics": {
         "items": [
           {
-            "title": "Prévisions des ventes",
-            "description": ""
+            "title": "Prévision des ventes",
+            "description": "Prédire les tendances futures des ventes pour une planification plus précise"
           },
           {
             "title": "Analyse du comportement des clients",
-            "description": ""
+            "description": "Comprendre les comportements des clients pour améliorer l'engagement"
           },
           {
             "title": "Évaluation des risques financiers",
-            "description": ""
+            "description": "Anticiper les risques pour réduire les incertitudes financières"
           },
           {
             "title": "Optimisation de la chaîne d'approvisionnement",
-            "description": ""
+            "description": "Améliorer l'efficacité de la chaîne d'approvisionnement en prédisant les problèmes potentiels"
           },
           {
             "title": "Amélioration de l'efficacité des campagnes",
-            "description": ""
+            "description": "Évaluer les campagnes pour améliorer les résultats"
           },
           {
-            "title": "Intégration avec des outils BI",
-            "description": ""
+            "title": "Intégration avec les outils BI",
+            "description": "Associer l'IA aux outils d'analyse existants pour des informations plus approfondies"
           }
         ],
         "mainSection": {
@@ -2019,29 +2019,30 @@
         "items": [
           {
             "title": "Analyse approfondie de grands ensembles de données",
-            "description": ""
+            "description": "L'IA traite d'énormes volumes de données pour extraire des insights exploitables plus rapidement que les humains"
           },
           {
             "title": "Prévision des tendances du marché",
-            "description": ""
+            "description": "Anticiper les tendances à venir et le comportement des consommateurs pour garder une longueur d'avance sur la concurrence"
           },
           {
             "title": "Visualisation des indicateurs clés",
-            "description": ""
+            "description": "Transformer les données brutes en graphiques et tableaux faciles à interpréter pour une meilleure prise de décision"
           },
           {
             "title": "Optimisation des stratégies marketing",
-            "description": ""
+            "description": "Identifier les tactiques marketing les plus efficaces et allouer les ressources de manière plus efficiente"
           },
           {
             "title": "Réduction des risques",
-            "description": ""
+            "description": "Analyser les risques potentiels et fournir des recommandations pour les atténuer avant qu'ils ne surviennent"
           },
           {
-            "title": "Soutien à la prise de décision en temps réel",
-            "description": ""
+            "title": "Support à la prise de décision en temps réel",
+            "description": "Accéder instantanément à des insights pour prendre des décisions commerciales rapides et précises"
           }
         ],
+
         "mainSection": {
           "title": "Analytique Alimentée par l'IA",
           "description": "Utilisez l'IA pour analyser de grands ensembles de données, révéler des insights et prendre des décisions plus intelligentes. Décelez les schémas et tendances cachés dans vos données pour rester compétitif sur le marché."
@@ -2060,28 +2061,28 @@
       "aiMarketing": {
         "items": [
           {
-            "title": "Automatise les campagnes marketing",
-            "description": ""
+            "title": "Automatisation des campagnes marketing",
+            "description": "L'IA prend en charge l'exécution complète des campagnes"
           },
           {
-            "title": "Augmente les taux de conversion",
-            "description": ""
+            "title": "Augmentation des taux de conversion",
+            "description": "Les publicités ciblées génèrent plus de ventes"
           },
           {
             "title": "Segmentation de l'audience",
-            "description": ""
+            "description": "Divisez les audiences en groupes spécifiques pour des messages personnalisés"
           },
           {
-            "title": "Personnalise les messages publicitaires",
-            "description": ""
+            "title": "Personnalisation des messages publicitaires",
+            "description": "Adaptez les publicités en fonction des préférences de votre audience"
           },
           {
             "title": "Exécution de campagnes en temps réel",
-            "description": ""
+            "description": "Lancez ou ajustez des campagnes instantanément"
           },
           {
             "title": "Réduction des coûts publicitaires",
-            "description": ""
+            "description": "Dépensez moins grâce à un ciblage efficace"
           }
         ],
         "mainSection": {
@@ -2103,27 +2104,27 @@
         "items": [
           {
             "title": "Analyse automatique des images",
-            "description": ""
+            "description": "L'IA traite les images pour détecter des problèmes ou des tendances"
           },
           {
             "title": "Intégration aux systèmes de sécurité",
-            "description": ""
+            "description": "Améliorez la surveillance grâce à la reconnaissance intelligente"
           },
           {
             "title": "Contrôle qualité pour la fabrication",
-            "description": ""
+            "description": "Détectez les défauts en temps réel"
           },
           {
-            "title": "Gestion automatique des stocks",
-            "description": ""
+            "title": "Gestion automatisée des stocks",
+            "description": "Suivez les stocks grâce aux données visuelles"
           },
           {
             "title": "Prise en charge de multiples formats de données",
-            "description": ""
+            "description": "Gérez les images dans divers formats"
           },
           {
-            "title": "Intégration avec des services cloud",
-            "description": ""
+            "title": "Intégration aux services cloud",
+            "description": "Stockez et traitez les données en toute sécurité dans le cloud"
           }
         ],
         "mainSection": {
@@ -2145,27 +2146,27 @@
         "items": [
           {
             "title": "Personnalisation des produits et services",
-            "description": ""
+            "description": "Recommandez des articles adaptés aux préférences individuelles"
           },
           {
             "title": "Amélioration de la satisfaction client",
-            "description": ""
+            "description": "Optimisez l'expérience utilisateur avec des suggestions pertinentes"
           },
           {
             "title": "Augmentation des achats répétés",
-            "description": ""
+            "description": "Encouragez les clients à revenir pour acheter davantage"
           },
           {
             "title": "Analyse des préférences des clients",
-            "description": ""
+            "description": "Comprenez ce que les clients apprécient"
           },
           {
-            "title": "Intégration aux plateformes de e-commerce",
-            "description": ""
+            "title": "Intégration aux plateformes e-commerce",
+            "description": "Ajoutez des moteurs de recommandation aux sites web ou applications"
           },
           {
             "title": "Mises à jour automatiques des recommandations",
-            "description": ""
+            "description": "Maintenez des suggestions actualisées et pertinentes"
           }
         ],
         "mainSection": {
@@ -2187,27 +2188,27 @@
         "items": [
           {
             "title": "Surveillance des menaces en temps réel",
-            "description": ""
+            "description": "Détectez et répondez aux menaces de sécurité dès qu'elles surviennent"
           },
           {
-            "title": "Détection automatique des anomalies",
-            "description": ""
+            "title": "Détection automatisée des anomalies",
+            "description": "Identifiez les schémas inhabituels dans les données pour prévenir les violations"
           },
           {
             "title": "Protection contre les cyberattaques",
-            "description": ""
+            "description": "Protégez les systèmes contre les malwares, le phishing et autres menaces"
           },
           {
             "title": "Analyse des vulnérabilités",
-            "description": ""
+            "description": "Évaluez en continu les points faibles de votre infrastructure de sécurité"
           },
           {
             "title": "Réponse rapide aux incidents",
-            "description": ""
+            "description": "Traitez rapidement les problèmes de sécurité pour minimiser les dommages"
           },
           {
             "title": "Renforcement de la protection des données",
-            "description": ""
+            "description": "Sécurisez les informations sensibles grâce à un chiffrement avancé"
           }
         ],
         "mainSection": {
@@ -2228,28 +2229,28 @@
       "hr": {
         "items": [
           {
-            "title": "Analyse automatique des CV",
-            "description": ""
+            "title": "Analyse automatisée des CV",
+            "description": "Examinez et classez rapidement les CV pour identifier les meilleurs candidats"
           },
           {
             "title": "Optimisation des processus de recrutement",
-            "description": ""
+            "description": "Simplifiez les flux de travail de recrutement pour une embauche plus rapide"
           },
           {
             "title": "Prévision de la satisfaction des employés",
-            "description": ""
+            "description": "Anticipez le bien-être des employés et prenez des mesures proactives"
           },
           {
             "title": "Programmes de formation personnalisés",
-            "description": ""
+            "description": "Créez des plans de formation adaptés pour améliorer les compétences des employés"
           },
           {
-            "title": "Réduction du turnover des employés",
-            "description": ""
+            "title": "Réduction du taux de rotation des employés",
+            "description": "Identifiez les risques de départ et intervenez avant de perdre des talents"
           },
           {
-            "title": "Intégration avec les systèmes de gestion RH",
-            "description": ""
+            "title": "Intégration avec les systèmes RH",
+            "description": "Connectez l'IA aux outils RH existants pour un fonctionnement fluide"
           }
         ],
         "mainSection": {
@@ -2270,28 +2271,28 @@
       "voice": {
         "items": [
           {
-            "title": "Reconnaissance vocale",
-            "description": ""
+            "title": "Capacités de reconnaissance vocale",
+            "description": "Transcrire et comprendre les paroles avec précision"
           },
           {
             "title": "Commandes vocales pour l'automatisation",
-            "description": ""
+            "description": "Effectuer des tâches en mode mains libres grâce aux commandes vocales"
           },
           {
             "title": "Support pour les utilisateurs en situation de handicap",
-            "description": ""
+            "description": "Améliorer l'accessibilité pour les personnes ayant des limitations"
           },
           {
-            "title": "Interactions client améliorées",
-            "description": ""
+            "title": "Amélioration des interactions client",
+            "description": "Offrir un service client plus rapide et plus naturel"
           },
           {
             "title": "Intégration rapide avec les appareils",
-            "description": ""
+            "description": "Mettre en œuvre facilement la reconnaissance vocale sur plusieurs dispositifs"
           },
           {
             "title": "Support multilingue",
-            "description": ""
+            "description": "Communiquer dans différentes langues pour une portée mondiale"
           }
         ],
         "mainSection": {
@@ -2313,27 +2314,27 @@
         "items": [
           {
             "title": "Approche personnalisée",
-            "description": ""
+            "description": "Développer une IA spécifiquement adaptée aux flux de travail de votre entreprise"
           },
           {
             "title": "Intégration avec les systèmes existants",
-            "description": ""
+            "description": "Connecter l'IA de manière transparente à vos outils et logiciels actuels"
           },
           {
             "title": "Déploiement rapide",
-            "description": ""
+            "description": "Mettre en œuvre des solutions d'IA rapidement pour obtenir des résultats plus tôt"
           },
           {
             "title": "Support complet et formation",
-            "description": ""
+            "description": "Fournir une assistance experte et des ressources pour maximiser l’impact de l’IA"
           },
           {
-            "title": "Optimisation des processus métiers",
-            "description": ""
+            "title": "Optimisation des processus métier",
+            "description": "Rationaliser les opérations et améliorer l’efficacité dans tous les départements"
           },
           {
             "title": "Mises à jour technologiques continues",
-            "description": ""
+            "description": "Garder vos solutions d’IA à jour avec les dernières avancées"
           }
         ],
         "mainSection": {
