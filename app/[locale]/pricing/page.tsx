@@ -39,17 +39,17 @@ const plansBase = [
   {
     link: "/contact",
     style:
-      "rounded-3xl py-10 bg-clip-text text-transparent* text-[var(--text-label)] bg-gradient-to-b from-neutral-300 to-neutral-50",
+      "rounded-3xl py-6 bg-clip-text text-transparent* text-[var(--text-label)] bg-gradient-to-b from-neutral-300 to-neutral-50 h-full flex flex-col",
   },
   {
     link: "/contact",
     style:
-      "rounded-3xl py-10 bg-clip-text text-transparent* text-[var(--text-label)] bg-gradient-to-b from-neutral-300 to-neutral-50",
+      "rounded-3xl py-6 bg-clip-text text-transparent* text-[var(--text-label)] bg-gradient-to-b from-neutral-300 to-neutral-50 h-full flex flex-col",
   },
   {
     link: "/contact",
     style:
-      "rounded-3xl py-10 bg-clip-text text-transparent* text-[var(--text-label)] bg-gradient-to-b from-neutral-300 to-neutral-50 h-full flex flex-col ",
+      "rounded-3xl py-6 bg-clip-text text-transparent* text-[var(--text-label)] bg-gradient-to-b from-neutral-300 to-neutral-50 h-full flex flex-col ",
   },
 ];
 
@@ -86,11 +86,11 @@ const Pricing: FC<{ params: { locale: string } }> = async ({
               className="h-full flex flex-col justify-between border rounded-3xl px-6 py-4 md:py-6 light:bg-[var(--light-blue)] border-[var(--ocean-blue)]"
             >
               <div className={plan.style}>
+                <div className="w-fit text-sm font-medium text-blue-600 bg-blue-100 px-2 py-1 mb-4 rounded-lg">
+                  {t("moneyBack")}
+                </div>
                 <div className="text-3xl md:text-4xl flex items-center font-medium text-[var(--light-blue)] light:text-[var(--gray-70)]">
                   {t(`plans.${index}.name`)}
-                  <div className="md:hidden lg:block text-sm font-medium text-blue-600 bg-blue-100 px-2 py-1 rounded-lg ml-4 items-center">
-                    {t("moneyBack")}
-                  </div>
                 </div>
                 <div className="text-2xl md:text-3xl pt-4 md:pt-6 text-[var(--light-blue)] light:text-[var(--gray-70)]">
                   {t(`plans.${index}.price`)}

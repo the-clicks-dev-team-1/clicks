@@ -557,7 +557,7 @@
     "addOns": "Services Supplémentaires",
     "plans": [
       {
-        "name": "Blockchain pour les Entreprises",
+        "name": "Blockchain",
         "price": "À partir de 100 CAD",
         "features": [
           "Blockchain pour les Entreprises",
@@ -577,7 +577,7 @@
         "button": "Contactez-nous"
       },
       {
-        "name": "Intégration de l'IA Simplifiée",
+        "name": "Intégration de l'IA",
         "price": "À partir de 100 CAD",
         "features": [
           "Automatisation des Processus Métiers",
@@ -596,7 +596,7 @@
         "button": "Contactez-nous"
       },
       {
-        "name": "Solutions de Marketing Digital",
+        "name": "Marketing numérique",
         "price": "À partir de 100 CAD",
         "features": [
           "Développement Web",

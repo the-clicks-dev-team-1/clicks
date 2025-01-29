@@ -557,8 +557,8 @@
     "addOns": "Add-On Services",
     "plans": [
       {
-        "name": "Blockchain for Business",
-        "price": "Starting From CAD $100",
+        "name": "Blockchain",
+        "price": "From CAD $100",
         "features": [
           "Custom Blockchain Solutions",
           "Smart Contracts Development",
@@ -576,8 +576,8 @@
         "button": "Contact Us"
       },
       {
-        "name": "AI Integration Made Simple",
-        "price": "Starting From CAD $100",
+        "name": "AI Integration",
+        "price": "From CAD $100",
         "features": [
           "Business Process Automation",
           "Natural Language Processing (NLP)",
@@ -595,8 +595,8 @@
         "button": "Contact Us"
       },
       {
-        "name": "Digital Marketing Solutions",
-        "price": "Starting From CAD $100",
+        "name": "Digital Marketing",
+        "price": "From CAD $100",
         "features": [
           "Web Development",
           "Strategy Development",
