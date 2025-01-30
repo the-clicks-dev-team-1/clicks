@@ -65,12 +65,21 @@ const LiveChat = () => {
 
         // If chat is open and the click is outside, minimize it
         if (!isMinimized && !chatRef.current.contains(event.target as Node)) {
-          chatRef.current.setAttribute("minimized", "true");
+          setTimeout(() => {
+            chatRef.current?.setAttribute("minimized", "true");
+          }, 100);
         }
       }
     };
 
-    document.addEventListener("click", handleClickOutside);
+    const observer = new MutationObserver(() => {
+      if (document.getElementById("live-chat-element")) {
+        document.addEventListener("click", handleClickOutside);
+        observer.disconnect(); // Stop observing once element is found
+      }
+    });
+
+    observer.observe(document.body, { childList: true, subtree: true });
 
     // Clean up the element and script when the component unmounts
     return () => {
@@ -86,6 +95,7 @@ const LiveChat = () => {
       }
 
       document.removeEventListener("click", handleClickOutside);
+      observer.disconnect();
     };
   }, []);
 
