@@ -101,13 +101,13 @@ const AIEnhancedCybersecurity: FC<{
               {t("why.description")}
             </p>
           </div>
-          <div className="relative w-full h-64 md:h-96">
+          <div className="relative w-full h-96 md:h-full md:max-h-[800px]">
             <Image
               src="/images/ai/cybersecurity.jpg"
               alt="Analytics and Reporting Explanation"
               layout="fill"
               objectFit="cover"
-              className="rounded-lg"
+              className="rounded-2xl"
             />
           </div>
         </div>
