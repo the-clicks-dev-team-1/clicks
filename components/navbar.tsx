@@ -379,7 +379,7 @@ export default function Navbar() {
                       {/* Second Level Link */}
                       <ActiveLink
                         href={ch.link ?? "#"}
-                        className="flex items-center px-4 py-2 hover:bg-[var(--ocean-blue)]"
+                        className="flex items-center px-4 py-2 hover:bg-[var(--ocean-blue)] dark:hover:bg-opacity-50"
                         onClick={() => handleLinkClick(i)}
                       >
                         {ch.iconImage && <ch.iconImage className="text-xl" />}
@@ -569,7 +569,7 @@ function SingleNavItem({
                       >
                         {/* Second Level Link */}
                         <div
-                          className="flex items-center justify-between px-4 py-2 cursor-pointer hover:bg-[var(--ocean-blue)] transition-all duration-500"
+                          className="flex items-center justify-between px-4 py-2 cursor-pointer hover:bg-[var(--ocean-blue)] hover:text-black transition-all duration-500"
                           onClick={() => toggleSubMenu(j)}
                         >
                           {ch.iconImage && (
@@ -593,7 +593,7 @@ function SingleNavItem({
                               <ActiveLink
                                 key={k}
                                 href={nested.link ?? "#"}
-                                className="flex items-center px-4 py-2 hover:bg-[var(--ocean-blue)]"
+                                className="flex items-center px-4 py-2 hover:bg-[var(--ocean-blue)] hover:bg-opacity-100 hover:text-black"
                                 onClick={closeSideMenu}
                               >
                                 {nested.iconImage && (
@@ -607,7 +607,7 @@ function SingleNavItem({
                     ) : (
                       <ActiveLink
                         href={ch.link ?? "#"}
-                        className="flex items-center justify-between px-4 py-2 cursor-pointer hover:bg-[var(--ocean-blue)]"
+                        className="flex items-center justify-between px-4 py-2 cursor-pointer hover:bg-[var(--ocean-blue)] hover:text-black"
                         onClick={closeSideMenu}
                       >
                         <span>{t(`${ch.label}`)}</span>
