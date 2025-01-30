@@ -1,7 +1,8 @@
 "use client";
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 
 const LiveChat = () => {
+  const chatRef = useRef<HTMLElement | null>(null);
   useEffect(() => {
     // Create the custom element
     // const callUsElement = document.createElement("call-us");
@@ -46,6 +47,7 @@ const LiveChat = () => {
 
     // Append the element to the body
     document.body.appendChild(callUsElement);
+    chatRef.current = callUsElement;
 
     // Load the chat functionality script
     const script = document.createElement("script");
@@ -55,6 +57,14 @@ const LiveChat = () => {
     script.id = "tcx-callus-js";
     script.defer = true;
     document.body.appendChild(script);
+
+    const handleClickOutside = (event: MouseEvent) => {
+      if (chatRef.current && !chatRef.current.contains(event.target as Node)) {
+        chatRef.current.setAttribute("minimized", "true");
+      }
+    };
+
+    document.addEventListener("click", handleClickOutside);
 
     // Clean up the element and script when the component unmounts
     return () => {
@@ -68,6 +78,8 @@ const LiveChat = () => {
       if (scriptElement && scriptElement.parentNode) {
         scriptElement.parentNode.removeChild(scriptElement);
       }
+
+      document.removeEventListener("click", handleClickOutside);
     };
   }, []);
 
