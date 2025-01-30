@@ -379,7 +379,7 @@ export default function Navbar() {
                       {/* Second Level Link */}
                       <ActiveLink
                         href={ch.link ?? "#"}
-                        className="flex items-center px-4 py-2 hover:bg-[var(--ocean-blue)]"
+                        className="flex items-center px-4 py-2 hover:bg-[var(--ocean-blue)] hover:text-white"
                         onClick={() => handleLinkClick(i)}
                       >
                         {ch.iconImage && <ch.iconImage className="text-xl" />}
@@ -395,7 +395,7 @@ export default function Navbar() {
                             <ActiveLink
                               key={`${nested.label}-${k}`}
                               href={nested.link ?? "#"}
-                              className="flex items-center px-4 py-2 hover:bg-[var(--ocean-blue)]"
+                              className="flex items-center px-4 py-2 hover:bg-[var(--ocean-blue)] hover:text-white"
                               onClick={() => handleLinkClick(i)}
                             >
                               {nested.iconImage && (
