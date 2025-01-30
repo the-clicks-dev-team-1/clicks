@@ -108,6 +108,7 @@ const AIDrivenMarketingOptimization: FC<{
               layout="fill"
               objectFit="cover"
               className="rounded-2xl"
+              priority
             />
           </div>
         </div>
