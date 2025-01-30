@@ -360,7 +360,7 @@ export default function Navbar() {
               {/* First Level Link */}
               <ActiveLink
                 href={d.link ?? "#"}
-                className="flex items-center gap-2 text-[var(--gray-blue)] light:text-[var(--gray-70)] hover:text-white transition-all whitespace-nowrap"
+                className="flex items-center gap-2 text-[var(--gray-blue)] light:text-[var(--gray-70)] hover:font-bold hover:text-black dark:hover:text-white transition-all whitespace-nowrap"
                 onClick={() => handleLinkClick(i)}
               >
                 <span className="whitespace-nowrap">{t(`${d.label}`)}</span>
@@ -379,7 +379,7 @@ export default function Navbar() {
                       {/* Second Level Link */}
                       <ActiveLink
                         href={ch.link ?? "#"}
-                        className="flex items-center px-4 py-2 hover:bg-[var(--ocean-blue)] hover:text-white"
+                        className="flex items-center px-4 py-2 hover:bg-[var(--ocean-blue)] dark:hover:bg-opacity-50 hover:text-black dark:hover:text-white"
                         onClick={() => handleLinkClick(i)}
                       >
                         {ch.iconImage && <ch.iconImage className="text-xl" />}
@@ -395,7 +395,7 @@ export default function Navbar() {
                             <ActiveLink
                               key={`${nested.label}-${k}`}
                               href={nested.link ?? "#"}
-                              className="flex items-center px-4 py-2 hover:bg-[var(--ocean-blue)] hover:text-white"
+                              className="flex items-center px-4 py-2 hover:bg-[var(--ocean-blue)] hover:text-black dark:hover:text-white"
                               onClick={() => handleLinkClick(i)}
                             >
                               {nested.iconImage && (
@@ -446,7 +446,7 @@ export default function Navbar() {
 
           <ScrollButton
             targetSection="#contact"
-            className="hidden md:block px-4 py-2 animate-shimmer items-center justify-center rounded-lg border border-[var(--border-color)] light:border-[var(--ocean-blue)] light:bg-[var(--light-blue)] dark:bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] light:bg-[linear-gradient(110deg,#f8fbff,45%,#edf8fe,55%,#f8fbff)] bg-[length:200%_100%] transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 light:border-[1px] light:bg-white light:text-black #light:bg-none"
+            className="hidden duration-1000 md:block px-4 py-2 animate-shimmer items-center justify-center rounded-lg border border-[var(--border-color)] light:border-[var(--ocean-blue)] light:bg-[var(--light-blue)] dark:bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] light:bg-[linear-gradient(110deg,#f8fbff,45%,#edf8fe,55%,#f8fbff)] bg-[length:200%_100%] transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 light:border-[1px] light:bg-white light:text-black #light:bg-none"
             variant="primary"
           >
             {t("book")}
@@ -495,15 +495,17 @@ function MobileNav({ closeSideMenu }: { closeSideMenu: () => void }) {
             />
           ))}
         </div>
-        <section className="mt-4 flex flex-col items-center gap-8">
-          <ActiveLink href="/book">
-            <button
-              onClick={closeSideMenu}
-              className="w-full max-w-[200px] px-4 py-2 animate-shimmer items-center justify-center rounded-lg border border-white light:border-[var(--ocean-blue)] #light:bg-[var(--light-blue)] dark:bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] light:bg-[linear-gradient(110deg,#f8fbff,45%,#edf8fe,55%,#f8fbff)] bg-[length:200%_100%] transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 light:bg-white light:text-black"
-            >
-              {t("book")}
-            </button>
-          </ActiveLink>
+        <section
+          className="mt-4 flex flex-col items-center gap-8"
+          onClick={closeSideMenu}
+        >
+          <ScrollButton
+            targetSection="#contact"
+            className="md:hidden duration-1000 px-4 py-2 animate-shimmer items-center justify-center rounded-lg border border-[var(--border-color)] light:border-[var(--ocean-blue)] light:bg-[var(--light-blue)] dark:bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] light:bg-[linear-gradient(110deg,#f8fbff,45%,#edf8fe,55%,#f8fbff)] bg-[length:200%_100%] transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 light:border-[1px] light:bg-white light:text-black #light:bg-none"
+            variant="primary"
+          >
+            {t("book")}
+          </ScrollButton>
         </section>
       </div>
     </div>
@@ -544,7 +546,7 @@ function SingleNavItem({
         <>
           <div
             onClick={() => toggleMenu(i)}
-            className="flex items-center justify-between px-2 py-3 text-neutral-400 light:text-[var(--gray-70)] hover:text-[var(--text)] light:hover:text-[var(--text)] light:hover:font-bold cursor-pointer"
+            className="flex items-center justify-between px-2 py-3 text-[var(--gray-blue)] light:text-[var(--gray-70)] hover:text-[var(--text)] light:hover:text-[var(--text)] light:hover:font-bold cursor-pointer"
           >
             <span>{t(`${d.label}`)}</span>
             {/* <IoIosArrowDown
@@ -569,7 +571,7 @@ function SingleNavItem({
                       >
                         {/* Second Level Link */}
                         <div
-                          className="flex items-center justify-between px-4 py-2 cursor-pointer hover:bg-[var(--ocean-blue)] transition-all duration-500"
+                          className="flex items-center justify-between px-4 py-2 cursor-pointer hover:bg-[var(--ocean-blue)] text-[var(--gray-blue)] light:text-[var(--gray-70)] hover:text-black dark:hover:text-white transition-all duration-500"
                           onClick={() => toggleSubMenu(j)}
                         >
                           {ch.iconImage && (
@@ -593,7 +595,7 @@ function SingleNavItem({
                               <ActiveLink
                                 key={k}
                                 href={nested.link ?? "#"}
-                                className="flex items-center px-4 py-2 hover:bg-[var(--ocean-blue)]"
+                                className="flex items-center px-4 py-2 hover:bg-[var(--ocean-blue)] hover:bg-opacity-100 text-[var(--gray-blue)] light:text-[var(--gray-70)] hover:text-black dark:hover:text-white"
                                 onClick={closeSideMenu}
                               >
                                 {nested.iconImage && (
@@ -607,7 +609,7 @@ function SingleNavItem({
                     ) : (
                       <ActiveLink
                         href={ch.link ?? "#"}
-                        className="flex items-center justify-between px-4 py-2 cursor-pointer hover:bg-[var(--ocean-blue)]"
+                        className="flex items-center justify-between px-4 py-2 cursor-pointer hover:bg-[var(--ocean-blue)] text-[var(--gray-blue)] light:text-[var(--gray-70)] hover:text-black dark:hover:text-white"
                         onClick={closeSideMenu}
                       >
                         <span>{t(`${ch.label}`)}</span>
@@ -621,7 +623,7 @@ function SingleNavItem({
       ) : (
         <ActiveLink
           href={d.link ?? "#"}
-          className="flex items-center px-2 py-3 text-neutral-400 light:text-[var(--gray-70)] hover:text-[var(--text)] light:hover:text-[var(--text)] light:hover:font-bold"
+          className="flex items-center px-2 py-3 text-[var(--gray-blue)] light:text-[var(--gray-70)] hover:text-[var(--text)] light:hover:text-[var(--text)] light:hover:font-bold"
           onClick={closeSideMenu}
         >
           <span>{t(`${d.label}`)}</span>
