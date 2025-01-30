@@ -53,7 +53,7 @@ const AIForHumanResources: FC<{
           <div>
             <div className="mb-10">
               <div className="flex flex-col">
-                <h1 className="mb-1 py-2 text-3xl md:text-5xl bg-clip-text text-transparent bg-gradient-to-r from-sky-400 to bg-purple-500 bg-opacity-50">
+                <h1 className="py-2 text-3xl md:text-5xl bg-clip-text text-transparent bg-gradient-to-r from-sky-400 to bg-purple-500 bg-opacity-50">
                   {t("mainSection.title")}
                 </h1>
                 <p className="whitespace-pre-wrap mt-3 text-lg md:text-xl max-w-2xl text-left text-[var(--gray-blue)] light:text-[var(--gray-40)]">
@@ -61,13 +61,13 @@ const AIForHumanResources: FC<{
                 </p>
               </div>
             </div>
-            <h2 className="text-2xl md:text-3xl font-semibold mb-6 text-[var(--light-blue)] light:text-[var(--gray-70)]">
+            <h2 className="text-2xl md:text-3xl font-semibold mb-2 text-[var(--light-blue)] light:text-[var(--gray-70)]">
               {t("what.title")}
             </h2>
             <p className="text-lg mb-6 text-[var(--gray-blue)] light:text-[var(--gray-40)]">
               {t("what.description")}
             </p>
-            <h2 className="text-lg md:text-xl font-semibold mb-6 text-[var(--light-blue)] light:text-[var(--gray-70)]">
+            <h2 className="text-lg md:text-xl font-semibold mb-2 text-[var(--light-blue)] light:text-[var(--gray-70)]">
               {t("why.title")}
             </h2>
             {t("why.benefitsList.0").length > 0 && (
