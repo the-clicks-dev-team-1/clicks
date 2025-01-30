@@ -59,8 +59,14 @@ const LiveChat = () => {
     document.body.appendChild(script);
 
     const handleClickOutside = (event: MouseEvent) => {
-      if (chatRef.current && !chatRef.current.contains(event.target as Node)) {
-        chatRef.current.setAttribute("minimized", "true");
+      if (chatRef.current) {
+        const isMinimized =
+          chatRef.current.getAttribute("minimized") === "true";
+
+        // If chat is open and the click is outside, minimize it
+        if (!isMinimized && !chatRef.current.contains(event.target as Node)) {
+          chatRef.current.setAttribute("minimized", "true");
+        }
       }
     };
 
