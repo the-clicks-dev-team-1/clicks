@@ -17,7 +17,7 @@ export function TheWayWeWork() {
       quote: t("2.quote"),
       name: t("2.name"),
       designation: "",
-      src: "/images/thewaywework/in-debth.webp",
+      src: "/images/thewaywework/in-depth.jpeg",
     },
     {
       quote: t("3.quote"),
