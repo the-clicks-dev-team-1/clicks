@@ -53,10 +53,10 @@ const CustomAIDevelopment: FC<{
           <div>
             <div className="mb-10">
               <div className="flex flex-col">
-                <h1 className="py-2 text-3xl md:text-5xl bg-clip-text text-transparent bg-gradient-to-r from-sky-400 to bg-purple-500 bg-opacity-50">
+                <h1 className="text-3xl md:text-5xl bg-clip-text text-transparent bg-gradient-to-r from-sky-400 to bg-purple-500 bg-opacity-50">
                   {t("mainSection.title")}
                 </h1>
-                <p className="whitespace-pre-wrap mt-3 text-lg md:text-xl max-w-2xl text-left text-[var(--gray-blue)] light:text-[var(--gray-40)]">
+                <p className="whitespace-pre-wrap mt-2 text-lg md:text-xl max-w-2xl text-left text-[var(--gray-blue)] light:text-[var(--gray-40)]">
                   {t("mainSection.description")}
                 </p>
               </div>
