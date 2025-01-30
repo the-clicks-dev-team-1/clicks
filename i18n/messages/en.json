@@ -93,7 +93,7 @@
   "home": {
     "title": "Transform your business with artificial intelligence",
     "description": "Revolutionise your operations, optimise processes, and drive sustainable growth with Confident decisions and innovative solutions, tailored for Canadian businesses.",
-    "cta": "Book A Call",
+    "cta": "Get Started",
     "ourPartners": "Our partners:",
     "block": {
       "whileYouSpentTime": "While you focus on your family, we focus on your success. Our solutions work tirelessly to help your business grow.",
@@ -537,8 +537,8 @@
   "pricing": {
     "metaTitle": "Pricing",
     "metaDesc": "Choose the plan that suits your needs the best.",
-    "title": "Simple Pricing",
-    "subtitle": "Choose your plan",
+    "title": "Your Path to Digital Success",
+    "subtitle": "Starts Here",
     "serviceTitle": "Marketing Service Suite",
     "serviceSubtitle": "Choose your services",
     "contact": "Contact Us",
@@ -546,11 +546,11 @@
     "plans": [
       {
         "name": "Blockchain",
-        "price": "From CAD $100",
+        "price": "From $100 CAD",
         "features": [
           "Custom Blockchain Solutions",
           "Smart Contracts Development",
-          "Decentralized Applications (DApps)",
+          "Decentralized Applications",
           "Blockchain Integration",
           "NFT Platform Development",
           "Tokenization Services",
@@ -565,10 +565,10 @@
       },
       {
         "name": "AI Integration",
-        "price": "From CAD $100",
+        "price": "From $100 CAD",
         "features": [
           "Business Process Automation",
-          "Natural Language Processing (NLP)",
+          "Natural Language Processing",
           "Chatbots and Virtual Assistants",
           "Predictive Analytics",
           "AI-Powered Analytics",
@@ -584,7 +584,7 @@
       },
       {
         "name": "Digital Marketing",
-        "price": "From CAD $100",
+        "price": "From $100 CAD",
         "features": [
           "Web Development",
           "Strategy Development",
