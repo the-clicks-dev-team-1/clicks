@@ -11,6 +11,7 @@ type ScrollButtonProps = {
   className?: string;
   variant?: "primary" | "secondary" | "outline";
   offset?: number;
+  onClick?: () => void;
 };
 
 const variantStyles = {

@@ -109,7 +109,7 @@ const SmartContractsDevelopment: FC<{
               alt="Analytics and Reporting Explanation"
               layout="fill"
               objectFit="cover"
-              className="rounded-lg"
+              className="rounded-2xl"
               priority
             />
           </div>

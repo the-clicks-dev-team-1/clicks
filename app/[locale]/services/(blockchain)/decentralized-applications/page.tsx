@@ -107,7 +107,7 @@ const DecentralizedApplications: FC<{ params: { locale: string } }> = async ({
               alt="Analytics and Reporting Explanation"
               layout="fill"
               objectFit="cover"
-              className="rounded-lg"
+              className="rounded-2xl"
               priority
             />
           </div>
