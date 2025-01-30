@@ -105,6 +105,7 @@ const SMM: FC<{ params: { locale: string } }> = async ({
               layout="fill"
               objectFit="cover"
               className="rounded-2xl"
+              priority
             />
           </div>
         </div>

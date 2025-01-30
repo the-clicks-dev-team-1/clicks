@@ -103,11 +103,12 @@ const ImageRecognitionAndAnalysis: FC<{
           </div>
           <div className="relative w-full h-96 md:h-full md:max-h-[800px]">
             <Image
-              src="/images/ai/imageRecognition.png"
+              src="/images/ai/imageRecognition.jpg"
               alt="Analytics and Reporting Explanation"
               layout="fill"
               objectFit="cover"
               className="rounded-2xl"
+              priority
             />
           </div>
         </div>
