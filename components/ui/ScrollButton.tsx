@@ -77,7 +77,7 @@ export default function ScrollButton({
       : targetPage
     : targetSection
     ? `#${targetSection.replace("#", "")}`
-    : "/#contact";
+    : "#";
 
   return (
     <Link
