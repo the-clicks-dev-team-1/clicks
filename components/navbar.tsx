@@ -262,7 +262,7 @@ export default function Navbar() {
   const t = useTranslations("navbar");
   const [animationParent] = useAutoAnimate<HTMLDivElement>();
   const [isSideMenuOpen, setSideMenu] = useState(false);
-  const { theme, setTheme } = useTheme();
+  const { theme, setTheme, resolvedTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
   const [activeIndex, setActiveIndex] = useState(0); // Track active item
   const [lineStyles, setLineStyles] = useState({ left: 0, width: 0 }); // Line styles
@@ -306,7 +306,7 @@ export default function Navbar() {
   }, [activeIndex]);
 
   const handleToggleTheme = () => {
-    setTheme(theme === "light" ? "dark" : "light");
+    setTheme(resolvedTheme === "light" ? "dark" : "light");
   };
 
   const handleLinkClick = (index: number) => {
@@ -338,6 +338,8 @@ export default function Navbar() {
   const handleMouseLeave = () => {
     setHoveredItem(null);
   };
+
+  console.log("theme", theme);
 
   return (
     <div className="relative z-50 bg-black">
@@ -436,7 +438,7 @@ export default function Navbar() {
               aria-label="Toggle Dark Mode"
               className="mr-4"
             >
-              {theme === "light" ? (
+              {resolvedTheme === "light" ? (
                 <IoMdMoon className="h-6 w-6 text-[var(--text)]" />
               ) : (
                 <MdOutlineWbSunny className="h-6 w-6 text-[var(--text)]" />
