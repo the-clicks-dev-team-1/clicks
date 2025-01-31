@@ -79,16 +79,18 @@ const Pricing: FC<{ params: { locale: string } }> = async ({
             {t("title")} <br /> {t("subtitle")}
           </h1>
         </div>
+
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 px-4 md:p-10 #md:w-4/5 #2xl:w-3/4 max-w-7xl mb-32 items-center">
           {plans.map((plan, index) => (
             <div
               key={plan.name}
-              className="h-full flex flex-col justify-between border rounded-3xl px-6 py-4 md:py-6 light:bg-[var(--light-blue)] border-[var(--ocean-blue)]"
+              className="relative h-full flex flex-col justify-between border rounded-3xl  px-4 pb-4 pt-8 p md:pb-6 md:pt-12 light:bg-[var(--light-blue)] border-[var(--ocean-blue)]"
             >
+              <div className="whitespace-nowrap absolute left-1/2 -translate-x-1/2 -top-8 flex flex-col items-center text-blue-600 bg-blue-100 py-4 px-6 rounded-xl">
+                <span className="text-base">{t("moneyBack1")}</span>
+                <span className="text-xs">{t("moneyBack2")}</span>
+              </div>
               <div className={plan.style}>
-                <div className="w-fit text-sm font-medium text-blue-600 bg-blue-100 px-2 py-1 mb-4 rounded-lg">
-                  {t("moneyBack")}
-                </div>
                 <div className="text-3xl md:text-4xl flex items-center font-medium text-[var(--light-blue)] light:text-[var(--gray-70)]">
                   {t(`plans.${index}.name`)}
                 </div>

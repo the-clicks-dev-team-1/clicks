@@ -614,7 +614,8 @@
         "button": "Contact Us"
       }
     ],
-    "moneyBack": "6-Month Money-Back Guarantee",
+    "moneyBack1": "6-Month",
+    "moneyBack2": "Money-Back Guarantee",
     "plans_old": [
       {
         "name": "Basic",

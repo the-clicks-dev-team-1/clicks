@@ -615,7 +615,8 @@
         "button": "Contactez-nous"
       }
     ],
-    "moneyBack": "Garantie de remboursement 6 mois",
+    "moneyBack1": "6 mois",
+    "moneyBack2": "Garantie de remboursement",
     "plans_old": [
       {
         "name": "Basique",

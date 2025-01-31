@@ -17,7 +17,7 @@ export function TheWayWeWork() {
       quote: t("2.quote"),
       name: t("2.name"),
       designation: "",
-      src: "/images/thewaywework/in-debth.webp",
+      src: "/images/thewaywework/in-depth.jpeg",
     },
     {
       quote: t("3.quote"),
@@ -41,13 +41,13 @@ export function TheWayWeWork() {
       quote: t("6.quote"),
       name: t("6.name"),
       designation: "",
-      src: "/images/thewaywework/campaign.webp",
+      src: "/images/thewaywework/campaign.jpg",
     },
     {
       quote: t("7.quote"),
       name: t("7.name"),
       designation: "",
-      src: "/images/thewaywework/monitoring-reporting.webp",
+      src: "/images/thewaywework/monitoring-reporting.jpg",
     },
     {
       quote: t("8.quote"),
