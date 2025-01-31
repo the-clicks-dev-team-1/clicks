@@ -1,8 +1,7 @@
 "use client";
 
-import React from "react";
-import { Link } from "@/i18n/routing";
-import { useRouter } from "next/navigation";
+import React, { useEffect } from "react";
+import { Link, usePathname, useRouter } from "@/i18n/routing";
 
 type ScrollButtonProps = {
   children: React.ReactNode;
@@ -30,6 +29,24 @@ export default function ScrollButton({
   offset = -140,
 }: ScrollButtonProps) {
   const router = useRouter();
+  const pathname = usePathname();
+
+  // Scroll after page navigation completes
+  useEffect(() => {
+    if (typeof window !== "undefined" && window.location.hash) {
+      const section = document.querySelector(window.location.hash);
+      if (section) {
+        setTimeout(() => {
+          const elementPosition =
+            section.getBoundingClientRect().top + window.scrollY;
+          window.scrollTo({
+            top: elementPosition + offset,
+            behavior: "smooth",
+          });
+        }, 200); // Small delay to allow the page to load
+      }
+    }
+  }, [pathname, offset]);
 
   const handleClick = (e: React.MouseEvent) => {
     e.preventDefault();
@@ -48,6 +65,8 @@ export default function ScrollButton({
           top: elementPosition + offset,
           behavior: "smooth",
         });
+      } else {
+        router.push(`/#contact`);
       }
     }
   };
@@ -58,7 +77,7 @@ export default function ScrollButton({
       : targetPage
     : targetSection
     ? `#${targetSection.replace("#", "")}`
-    : "#";
+    : "/#contact";
 
   return (
     <Link
