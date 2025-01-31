@@ -45,6 +45,10 @@ export default async function RootLayout({
         <GoogleTagManager gtmId="GTM-588PZWKW" />
         <link rel="icon" href="/favicon.ico" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        {/* <script
+          src="https://downloads-global.3cx.com/downloads/livechatandtalk/v1/callus.js"
+          defer
+        /> */}
       </head>
       <body className={font.className}>
         <noscript>
