@@ -339,8 +339,6 @@ export default function Navbar() {
     setHoveredItem(null);
   };
 
-  console.log("theme", theme);
-
   return (
     <div className="relative z-50 bg-black">
       <div className="p-6 md:p-10 flex gap-2 items-center justify-between text-white fixed w-full top-0 h-24 backdrop-blur-lg">
