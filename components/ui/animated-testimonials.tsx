@@ -5,7 +5,6 @@ import {
   MdOutlineArrowBackIos,
   MdOutlineArrowForwardIos,
 } from "react-icons/md";
-import { useTranslations } from "next-intl";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -22,7 +21,6 @@ export const AnimatedTestimonials = ({
   testimonials: Testimonial[];
   autoplay?: boolean;
 }) => {
-  const t = useTranslations();
   const [active, setActive] = useState(0);
 
   const handleNext = useCallback(() => {
@@ -118,37 +116,35 @@ export const AnimatedTestimonials = ({
             }}
           >
             <h3 className="text-2xl font-bold dark:text-white text-black">
-              {t(testimonials[active].name)}
+              {testimonials[active].name}
             </h3>
             <p className="text-sm text-gray-500 dark:text-neutral-500">
-              {t(testimonials[active].designation)}
+              {testimonials[active].designation}
             </p>
             <motion.p className="text-lg text-gray-500 mt-6 dark:text-neutral-300">
-              {t(testimonials[active].quote)
-                .split(" ")
-                .map((word, index) => (
-                  <motion.span
-                    key={index}
-                    initial={{
-                      filter: "blur(10px)",
-                      opacity: 0,
-                      y: 5,
-                    }}
-                    animate={{
-                      filter: "blur(0px)",
-                      opacity: 1,
-                      y: 0,
-                    }}
-                    transition={{
-                      duration: 0.2,
-                      ease: "easeInOut",
-                      delay: 0.02 * index,
-                    }}
-                    className="inline-block"
-                  >
-                    {word}&nbsp;
-                  </motion.span>
-                ))}
+              {testimonials[active].quote.split(" ").map((word, index) => (
+                <motion.span
+                  key={index}
+                  initial={{
+                    filter: "blur(10px)",
+                    opacity: 0,
+                    y: 5,
+                  }}
+                  animate={{
+                    filter: "blur(0px)",
+                    opacity: 1,
+                    y: 0,
+                  }}
+                  transition={{
+                    duration: 0.2,
+                    ease: "easeInOut",
+                    delay: 0.02 * index,
+                  }}
+                  className="inline-block"
+                >
+                  {word}&nbsp;
+                </motion.span>
+              ))}
             </motion.p>
           </motion.div>
           <div className="flex gap-4 pt-12 md:pt-0 items-center justify-center">

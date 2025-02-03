@@ -5,16 +5,16 @@ import { AnimatedTestimonials } from "./ui/animated-testimonials";
 import en from "@/i18n/messages/en.json";
 
 const AddOnServices = () => {
+  const t = useTranslations("pricing");
+
   const testimonials = Object.entries(en.pricing.testimonials).map(
     ([key, value]) => ({
-      quote: `pricing.testimonials.${key}.quote`,
-      name: `pricing.testimonials.${key}.name`,
-      designation: `pricing.testimonials.${key}.designation`,
+      quote: t(`testimonials.${key}.quote`),
+      name: t(`testimonials.${key}.name`),
+      designation: t(`testimonials.${key}.designation`),
       src: `/images/addonservices/${key}.png`,
     })
   );
-
-  const t = useTranslations("pricing");
 
   return (
     <div className="container mb-20 md:mb-32 md:px-10">
