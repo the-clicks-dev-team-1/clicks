@@ -471,40 +471,67 @@
     "description": "Forts d’un parcours éprouvé dans divers secteurs, notre expertise ne connaît aucune limite. Nous excellons dans l’adaptation aux défis uniques et la fourniture de résultats exceptionnels dans tous les domaines. En tirant parti de notre compréhension approfondie et de nos précieux insights, nous offrons des solutions sur mesure qui élèvent chaque projet que nous réalisons.",
     "items": [
       {
-        "imageTitle": "castors",
-        "url": "https://castors.hockey/"
+        "image": "/images/portfolio/castors.png",
+        "url": "https://castors.hockey/",
+        "name": "Castors",
+        "description": "Site web d'une équipe de hockey, présentant des mises à jour de l'équipe, des calendriers et une boutique en ligne de produits dérivés pour les fans",
+        "category": "Sport / équipe de hockey"
       },
       {
-        "imageTitle": "lana",
-        "url": "https://lana.clinic/en"
+        "image": "/images/portfolio/lana.png",
+        "url": "https://lana.clinic/en",
+        "name": "Clinique de Beauté Lana",
+        "description": "Clinique esthétique moderne offrant des soins de la peau avancés, des solutions de beauté personnalisées et une boutique en ligne de produits de beauté",
+        "category": "Industrie de la beauté"
       },
       {
-        "imageTitle": "karate",
-        "url": "https://theclicks-karate.vercel.app/"
+        "image": "/images/portfolio/karate.png",
+        "url": "https://theclicks-karate.vercel.app/",
+        "name": "École de Karaté",
+        "description": "Site web pour une école de karaté présentant les horaires des cours, les détails des programmes et une boutique en ligne d'équipements d'arts martiaux",
+        "category": "Sport / Karaté"
       },
       {
-        "imageTitle": "bursh",
-        "url": "https://bursh.com.ua/en/"
+        "image": "/images/portfolio/bursh.png",
+        "url": "https://bursh.com.ua/",
+        "name": "BURSH-PRO",
+        "description": "Service exclusif qui aide les utilisateurs à tirer profit des marchés financiers, offrant des cours, des services liés aux NFT et des outils pour les débutants comme pour les traders expérimentés",
+        "category": "Marché crypto"
       },
       {
-        "imageTitle": "leech",
-        "url": "https://www.leechprotocol.com/"
+        "image": "/images/portfolio/leech.png",
+        "url": "https://www.leechprotocol.com/",
+        "name": "Leech Protocol",
+        "description": "Plateforme décentralisée offrant des stratégies de yield farming automatisées, l'intégration des NFT et des outils pour maximiser les profits dans la DeFi",
+        "category": "Marché crypto"
       },
       {
-        "imageTitle": "investstream",
-        "url": "https://investream.us/"
+        "image": "/images/portfolio/investstream.png",
+        "url": "https://investream.us/",
+        "name": "Investream",
+        "description": "Travail de conception complet pour une nouvelle plateforme",
+        "category": "Immobilier"
       },
       {
-        "imageTitle": "indigo",
-        "url": "https://www.carsindigo.com/"
+        "image": "/images/portfolio/indigo.png",
+        "url": "https://www.carsindigo.com/",
+        "name": "INDIGO CARS",
+        "description": "Plateforme complète de recherche automobile offrant des avis d'experts, des comparaisons et des analyses pour vous aider à trouver le véhicule parfait",
+        "category": "Logistique"
       },
       {
-        "imageTitle": "dressmaking",
-        "url": "https://dressmakingamore.com/"
+        "image": "/images/portfolio/dressmaking.png",
+        "url": "https://dressmakingamore.com/",
+        "name": "DRESSMAKING AMÓRE",
+        "description": "Service de confection sur mesure offrant des créations personnalisées, des cours de couture et une boutique en ligne de tissus et d'accessoires",
+        "category": "Boutique"
       },
       {
-        "imageTitle": "osvita",
-        "url": "https://it-osvita.diia.gov.ua/"
+        "image": "/images/portfolio/osvita.png",
+        "url": "https://it-osvita.diia.gov.ua/",
+        "name": "DIIA",
+        "description": "Plateforme éducative offrant des cours en informatique, des certifications et des ressources pour développer des compétences numériques à tous les niveaux d'expérience",
+        "category": "Éducation"
       }
     ]
   },

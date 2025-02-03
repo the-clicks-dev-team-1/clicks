@@ -471,40 +471,67 @@
     "description": "With a proven track record across diverse industries, our expertise knows no bounds. We excel in adapting to unique challenges and delivering exceptional results in any sector. By leveraging our deep understanding and valuable insights, we provide tailored solutions that elevate every project we undertake.",
     "items": [
       {
-        "imageTitle": "castors",
-        "url": "https://castors.hockey/"
+        "image": "/images/portfolio/castors.png",
+        "url": "https://castors.hockey/",
+        "name": "Castors",
+        "description": "Website of a hockey team, featuring team updates, schedules, and an online store for fan merchandise",
+        "category": "Sport / hockey team"
       },
       {
-        "imageTitle": "lana",
-        "url": "https://lana.clinic/en"
+        "image": "/images/portfolio/lana.png",
+        "url": "https://lana.clinic/en",
+        "name": "Lana Beauty clinic",
+        "description": "Modern aesthetic clinic offering advanced skincare treatments, personalized beauty solutions, and an online store for beauty products",
+        "category": "Beauty industry"
       },
       {
-        "imageTitle": "karate",
-        "url": "https://theclicks-karate.vercel.app/"
+        "image": "/images/portfolio/karate.png",
+        "url": "https://theclicks-karate.vercel.app/",
+        "name": "Karate School",
+        "description": "Website for a karate school featuring class schedules, program details, and an online store for martial arts gear",
+        "category": "Sport / Karate"
       },
       {
-        "imageTitle": "bursh",
-        "url": "https://bursh.com.ua/"
+        "image": "/images/portfolio/bursh.png",
+        "url": "https://bursh.com.ua/",
+        "name": "BURSH-PRO",
+        "description": "Exclusive service that helps users profit in financial markets, offering courses, NFT-related services, and tools for both beginners and experienced traders",
+        "category": "Crypto market"
       },
       {
-        "imageTitle": "leech",
-        "url": "https://www.leechprotocol.com/"
+        "image": "/images/portfolio/leech.png",
+        "url": "https://www.leechprotocol.com/",
+        "name": "Leech Protocol",
+        "description": "Decentralized platform offering automated yield farming strategies, NFT integration, and tools to maximize profits in DeFi",
+        "category": "Crypto market"
       },
       {
-        "imageTitle": "investstream",
-        "url": "https://investream.us/"
+        "image": "/images/portfolio/investstream.png",
+        "url": "https://investream.us/",
+        "name": "Investream",
+        "description": "Comprehensive design work for a new platform",
+        "category": "real estate"
       },
       {
-        "imageTitle": "indigo",
-        "url": "https://www.carsindigo.com/"
+        "image": "/images/portfolio/indigo.png",
+        "url": "https://www.carsindigo.com/",
+        "name": "INDIGO CARS",
+        "description": "Comprehensive car research platform providing expert reviews, comparisons, and insights to help you find the perfect vehicle",
+        "category": "LOGISTICS"
       },
       {
-        "imageTitle": "dressmaking",
-        "url": "https://dressmakingamore.com/"
+        "image": "/images/portfolio/dressmaking.png",
+        "url": "https://dressmakingamore.com/",
+        "name": "DRESSMAKING AMÓRE",
+        "description": "Custom dressmaking service offering tailored designs, sewing courses, and an online store for fabrics and accessories",
+        "category": "Shop"
       },
       {
-        "imageTitle": "osvita",
-        "url": "https://it-osvita.diia.gov.ua/"
+        "image": "/images/portfolio/osvita.png",
+        "url": "https://it-osvita.diia.gov.ua/",
+        "name": "DIIA",
+        "description": "Educational platform offering IT courses, certifications, and resources to develop digital skills for all experience levels",
+        "category": "Education"
       }
     ]
   },
