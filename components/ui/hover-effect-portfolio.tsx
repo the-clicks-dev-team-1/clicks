@@ -1,9 +1,11 @@
 "use client";
+
 import { Link } from "@/i18n/routing";
 import { cn } from "@/lib/utils";
 import { AnimatePresence, motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 import Image from "next/image";
-import { useState } from "react";
+import { useState, useTransition } from "react";
 
 export const HoverEffectPortfolio = ({
   items,
@@ -11,12 +13,18 @@ export const HoverEffectPortfolio = ({
 }: {
   items: {
     image: string;
+    name: string;
     description: string;
+    category: string;
     link: string;
   }[];
   className?: string;
 }) => {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
+  const [isPending, startTransition] = useTransition();
+  const t = useTranslations("portfolio.items");
+
+  console.log("items:", items);
 
   return (
     <div
@@ -27,8 +35,8 @@ export const HoverEffectPortfolio = ({
     >
       {items.map((item, idx) => (
         <Link
-          href={item?.link}
-          key={item?.link}
+          href={t(item?.link)}
+          key={t(item?.link)}
           target="_blanc"
           className="relative group block p-2 h-full w-full"
           onMouseEnter={() => setHoveredIndex(idx)}
@@ -56,12 +64,34 @@ export const HoverEffectPortfolio = ({
           </AnimatePresence>
           <div className="relative overflow-hidden w-full h-64 md:h-[360px] rounded-2xl border border-transparent shadow-lg group-hover:border-slate-700 group-hover:border-[var(--dark-border)] relative z-20">
             <Image
-              src={item.image}
-              alt={item.image}
+              src={t(item.image)}
+              alt={t(item.image)}
               layout="fill"
               objectFit="cover"
               className="rounded-2xl transition duration-500 hover:scale-110"
             />
+            <AnimatePresence>
+              {hoveredIndex === idx && (
+                <motion.div
+                  className="absolute inset-0 h-full flex flex-col justify-between bg-[#ededed]/90 text-[var(--text-70)] px-2 py-8 text-center"
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  exit={{ opacity: 0 }}
+                >
+                  <div className="flex-1 flex flex-col items-center justify-center">
+                    <div className="">
+                      <h3 className="text-2xl font-[900] uppercase mb-1">
+                        {t(item.name)}
+                      </h3>
+                      <p className="text-lg">{t(item.description)}</p>
+                    </div>
+                  </div>
+                  <span className="text-xl font-bold uppercase">
+                    {t(item.category)}
+                  </span>
+                </motion.div>
+              )}
+            </AnimatePresence>
           </div>
         </Link>
       ))}
