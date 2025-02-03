@@ -73,7 +73,7 @@ export const HoverEffectPortfolio = ({
             <AnimatePresence>
               {hoveredIndex === idx && (
                 <motion.div
-                  className="absolute inset-0 h-full flex flex-col justify-between bg-[#ededed]/90 text-[var(--text-70)] px-2 py-8 text-center"
+                  className="absolute inset-0 h-full flex flex-col justify-between bg-[#ededed]/90 text-[var(--gray-70)] px-2 py-8 text-center"
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   exit={{ opacity: 0 }}
