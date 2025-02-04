@@ -70,16 +70,16 @@ const Team: FC<{ params: { locale: string } }> = async ({
                   className="object-cover rounded-2xl w-full"
                   sizes="(max-width: 768px) 100vw, 50vw"
                   quality={90}
+                  priority
                 />
               </div>
               <Image
                 src="/images/company/IMG_9442_1.jpg"
                 alt="Happy Team"
                 width={500}
-                height={500}
+                height={360}
                 className="rounded-2xl h-[360px] object-cover relative z-10"
                 priority
-                style={{ width: "500px", height: "360px" }}
               />
             </div>
           </div>
