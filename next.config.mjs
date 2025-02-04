@@ -7,7 +7,6 @@ const nextConfig = {
   reactStrictMode: true, // Enable React Strict Mode
 
   images: {
-    domains: ["res.cloudinary.com"],
     remotePatterns: [
       {
         protocol: "https",
