@@ -24,8 +24,6 @@ export const HoverEffectPortfolio = ({
   const [isPending, startTransition] = useTransition();
   const t = useTranslations("portfolio.items");
 
-  console.log("items:", items);
-
   return (
     <div
       className={cn(
@@ -66,9 +64,10 @@ export const HoverEffectPortfolio = ({
             <Image
               src={t(item.image)}
               alt={t(item.image)}
-              layout="fill"
-              objectFit="cover"
-              className="rounded-2xl transition duration-500 hover:scale-110"
+              fill
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              className="rounded-2xl transition duration-500 hover:scale-110 object-cover"
+              priority={idx < 3}
             />
             <AnimatePresence>
               {hoveredIndex === idx && (
