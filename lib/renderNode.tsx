@@ -70,7 +70,7 @@ export const renderNode = (node: any): React.ReactNode => {
 
     case "heading-1":
       return (
-        <h1 className="text-3xl font-bold my-6">
+        <h1 className="text-3xl font-bold my-6 text-[var(--light-blue)] light:text-[var(--gray-70)]">
           {node.content?.map((childNode: any, index: number) => (
             <React.Fragment key={index}>{renderNode(childNode)}</React.Fragment>
           ))}
@@ -79,7 +79,7 @@ export const renderNode = (node: any): React.ReactNode => {
 
     case "heading-2":
       return (
-        <h2 className="text-2xl font-bold my-5">
+        <h2 className="text-2xl font-bold my-5 text-[var(--light-blue)] light:text-[var(--gray-70)]">
           {node.content?.map((childNode: any, index: number) => (
             <React.Fragment key={index}>{renderNode(childNode)}</React.Fragment>
           ))}
@@ -88,7 +88,7 @@ export const renderNode = (node: any): React.ReactNode => {
 
     case "heading-3":
       return (
-        <h3 className="text-xl font-bold my-4">
+        <h3 className="text-xl font-bold my-4 text-[var(--light-blue)] light:text-[var(--gray-70)]">
           {node.content?.map((childNode: any, index: number) => (
             <React.Fragment key={index}>{renderNode(childNode)}</React.Fragment>
           ))}
@@ -97,7 +97,7 @@ export const renderNode = (node: any): React.ReactNode => {
 
     case "heading-4":
       return (
-        <h4 className="text-lg font-bold my-3">
+        <h4 className="text-lg font-bold my-3 text-[var(--light-blue)] light:text-[var(--gray-70)]">
           {node.content?.map((childNode: any, index: number) => (
             <React.Fragment key={index}>{renderNode(childNode)}</React.Fragment>
           ))}
@@ -106,7 +106,7 @@ export const renderNode = (node: any): React.ReactNode => {
 
     case "heading-5":
       return (
-        <h5 className="text-base font-bold my-2">
+        <h5 className="text-base font-bold my-2 text-[var(--light-blue)] light:text-[var(--gray-70)]">
           {node.content?.map((childNode: any, index: number) => (
             <React.Fragment key={index}>{renderNode(childNode)}</React.Fragment>
           ))}
@@ -115,7 +115,7 @@ export const renderNode = (node: any): React.ReactNode => {
 
     case "heading-6":
       return (
-        <h6 className="text-sm font-bold my-2">
+        <h6 className="text-sm font-bold my-2 text-[var(--light-blue)] light:text-[var(--gray-70)]">
           {node.content?.map((childNode: any, index: number) => (
             <React.Fragment key={index}>{renderNode(childNode)}</React.Fragment>
           ))}
