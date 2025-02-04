@@ -15,13 +15,14 @@ const Block: React.FC = () => {
           {t("weLeverageTopTier")}
         </p>
       </div>
-      <div className="1hidden 1md:flex md:w-1/2 h-full w-full flex justify-center items-center relative flex justify-center">
+      <div className="hidden md:flex md:w-1/2 h-full w-full flex justify-center items-center relative flex justify-center">
         <Image
           src="/images/wave.png"
           alt="Marketing Wave"
           width={521}
-          height={540}
+          height={360}
           className="max-w-full h-[360px]"
+          // className="w-[521px] h-[360px]"
         />
       </div>
     </div>
