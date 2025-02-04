@@ -176,7 +176,7 @@ const Footer = () => {
                   </ActiveLink>
                 </li>
                 <li className="mb-4">
-                  <ActiveLink href="/blog" className="hover:underline">
+                  <ActiveLink href="/about/blog" className="hover:underline">
                     {t("blog")}
                   </ActiveLink>
                 </li>
