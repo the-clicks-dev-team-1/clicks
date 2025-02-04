@@ -1,13 +1,14 @@
-import { ThemeProvider } from "next-themes";
-import { NextIntlClientProvider } from "next-intl";
 import type { Metadata } from "next";
+import { notFound } from "next/navigation";
+import { NextIntlClientProvider } from "next-intl";
+import { getMessages } from "next-intl/server";
+import { ThemeProvider } from "next-themes";
 import { Poppins } from "next/font/google";
 import "../globals.css";
 import { GoogleTagManager } from "@next/third-parties/google";
-import ScrollToTop from "@/components/ScrollToTop";
+import FacebookPixel from "@/components/FacebookPixel";
 import LiveChat from "@/components/LiveChat";
-import { getMessages } from "next-intl/server";
-import { notFound } from "next/navigation";
+import ScrollToTop from "@/components/ScrollToTop";
 import { routing } from "@/i18n/routing";
 
 const font = Poppins({
@@ -55,6 +56,7 @@ export default async function RootLayout({
             style={{ display: "none", visibility: "hidden" }}
           ></iframe>
         </noscript>
+        <FacebookPixel />
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
