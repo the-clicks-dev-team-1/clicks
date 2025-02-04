@@ -28,7 +28,7 @@ export const AnimatedTestimonials = ({
       // Use the index to generate a deterministic value between -10 and 10
       return ((index * 7) % 21) - 10;
     });
-  }, [testimonials.length]);
+  }, [testimonials]);
 
   const handleNext = useCallback(() => {
     setActive((prev) => (prev + 1) % testimonials.length);
