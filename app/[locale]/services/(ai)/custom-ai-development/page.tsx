@@ -105,10 +105,11 @@ const CustomAIDevelopment: FC<{
             <Image
               src="/images/ai/development.jpg"
               alt="Analytics and Reporting Explanation"
-              layout="fill"
-              objectFit="cover"
-              className="rounded-2xl"
+              fill
+              sizes="(max-width: 768px) 100vw, 50vw"
+              className="rounded-2xl object-cover"
               priority
+              quality={90}
             />
           </div>
         </div>

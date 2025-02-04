@@ -65,11 +65,11 @@ const Team: FC<{ params: { locale: string } }> = async ({
                 <Image
                   src="/images/team.png"
                   alt="Background Image"
-                  layout="intrinsic"
                   width={600}
                   height={600}
-                  objectFit="cover"
                   className="object-cover rounded-2xl w-full"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  quality={90}
                 />
               </div>
               <Image
@@ -79,6 +79,7 @@ const Team: FC<{ params: { locale: string } }> = async ({
                 height={500}
                 className="rounded-2xl h-[360px] object-cover relative z-10"
                 priority
+                style={{ width: "500px", height: "360px" }}
               />
             </div>
           </div>
