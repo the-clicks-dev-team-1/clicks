@@ -370,6 +370,7 @@
       "ceo": "PDG & Fondateur",
       "cd": "Directeur Créatif & Co-fondateur",
       "pc": "Coordinateur de Projet",
+      "ps": "Spécialiste de projet",
       "gd": "Graphiste",
       "dev": "Développeur Full-Stack | Spécialiste Web2 & Web3",
       "smm": "Spécialiste SMM",
@@ -481,7 +482,7 @@
         "image": "/images/portfolio/lana.png",
         "url": "https://lana.clinic/en",
         "name": "Clinique de Beauté Lana",
-        "description": "Clinique esthétique moderne offrant des soins de la peau avancés, des solutions de beauté personnalisées et une boutique en ligne de produits de beauté",
+        "description": "Site web d'une clinique de beauté, présentant une gamme de services esthétiques avancés, des témoignages de clients et une boutique en ligne de produits de beauté",
         "category": "Industrie de la beauté"
       },
       {
@@ -523,7 +524,7 @@
         "image": "/images/portfolio/dressmaking.png",
         "url": "https://dressmakingamore.com/",
         "name": "DRESSMAKING AMÓRE",
-        "description": "Service de confection sur mesure offrant des créations personnalisées, des cours de couture et une boutique en ligne de tissus et d'accessoires",
+        "description": "Site officiel de Dressmaking Amóre, proposant des patrons de couture PDF faciles à suivre avec des tutoriels photo et vidéo, des cours de couture et une boutique en ligne pour acheter des patrons",
         "category": "Boutique"
       },
       {

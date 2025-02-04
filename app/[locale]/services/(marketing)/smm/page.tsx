@@ -102,10 +102,11 @@ const SMM: FC<{ params: { locale: string } }> = async ({
             <Image
               src="/images/smm.jpg"
               alt="smm explanation"
-              layout="fill"
-              objectFit="cover"
-              className="rounded-2xl"
+              fill
+              sizes="(max-width: 768px) 100vw, 50vw"
+              className="rounded-2xl object-cover"
               priority
+              quality={90}
             />
           </div>
         </div>

@@ -370,6 +370,7 @@
       "ceo": "CEO & Founder",
       "cd": "Creative Director & Co-founder",
       "pc": "Project Coordinator",
+      "ps": "Project Specialist",
       "gd": "Graphic Designer",
       "dev": "Full-Stack Developer | Web2 & Web3 Specialist",
       "smm": "SMM Specialist",
@@ -481,7 +482,7 @@
         "image": "/images/portfolio/lana.png",
         "url": "https://lana.clinic/en",
         "name": "Lana Beauty clinic",
-        "description": "Modern aesthetic clinic offering advanced skincare treatments, personalized beauty solutions, and an online store for beauty products",
+        "description": "Website of a beauty clinic, detailing a range of advanced aesthetic services, client testimonials, and an online store for beauty products",
         "category": "Beauty industry"
       },
       {
@@ -523,7 +524,7 @@
         "image": "/images/portfolio/dressmaking.png",
         "url": "https://dressmakingamore.com/",
         "name": "DRESSMAKING AMÓRE",
-        "description": "Custom dressmaking service offering tailored designs, sewing courses, and an online store for fabrics and accessories",
+        "description": "Official website of Dressmaking Amóre, featuring easy-to-follow PDF sewing patterns with photo and video tutorials, sewing courses, and an online store for purchasing patterns",
         "category": "Shop"
       },
       {

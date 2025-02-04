@@ -75,17 +75,17 @@ const TeamSection = () => {
           </div>
           <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-4">
             <Image
-              src="/images/employees/Artem.png"
+              src="/images/employees/Natalia.png"
               alt="Team Member 5"
               className="rounded-full mb-4 mx-auto w-[200px] h-[200px] object-cover"
               width={200}
               height={200}
             />
             <h3 className="text-lg sm:text-xl font-semibold text-[var(--light-blue)] light:text-[var(--gray-70)]">
-              Artem Martyniuk
+              Nataliia Roman
             </h3>
             <p className="text-[var(--gray-blue)] light:text-[var(--gray-40)] max-w-52 w-full mx-auto text-center">
-              {t("dev")}
+              {t("ps")}
             </p>
           </div>
           <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-4">

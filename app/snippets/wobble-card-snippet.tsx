@@ -26,7 +26,9 @@ export function WobbleCardDemo() {
           src="/images/quality.png"
           width={300}
           height={300}
+          priority
           alt="global marketing expertise"
+          style={{ width: "300px", height: "300px" }}
           className="absolute right-4 md:right-[5%] filter -bottom-20 md:bottom-[10%] object-contain rounded-2xl"
         />
       </WobbleCard>

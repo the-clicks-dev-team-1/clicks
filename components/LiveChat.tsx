@@ -1,6 +1,9 @@
 "use client";
 import { useEffect, useRef } from "react";
 
+// Static flag outside component to track initialization across remounts
+let isInitialized = false;
+
 const LiveChat = () => {
   const chatRef = useRef<HTMLElement | null>(null);
   useEffect(() => {
@@ -39,6 +42,19 @@ const LiveChat = () => {
     // callUsElement.setAttribute("chat-delay", "2000");
     // callUsElement.setAttribute("enable-direct-call", "true");
     // callUsElement.setAttribute("enable-ga", "false");
+
+    if (isInitialized || document.getElementById("tcx-callus-js")) {
+      console.log("Chat already initialized, skipping");
+      return;
+    }
+
+    isInitialized = true;
+
+    // Clear any existing elements
+    const existingElements = document.querySelectorAll(
+      "#live-chat-element, #tcx-callus-js"
+    );
+    existingElements.forEach((el) => el.remove());
 
     const callUsElement = document.createElement("call-us-selector");
     callUsElement.setAttribute("phonesystem-url", "https://1489.3cx.cloud");

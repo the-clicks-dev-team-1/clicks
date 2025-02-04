@@ -31,7 +31,7 @@ const PostList: FC<PostListProps> = ({ locale }) => {
           }),
         });
         setPosts(entries.items);
-        console.log("entries.items", entries.items);
+        // console.log("entries.items", entries.items);
       } catch (error) {
         console.error("Error with fetching data from Contentful:", error);
       }
@@ -96,7 +96,7 @@ const PostList: FC<PostListProps> = ({ locale }) => {
           {filteredPosts.slice(0, postsToShow).map((post) => (
             <div
               key={post.sys.id}
-              className="relative bg-[var(--blue2)] light:bg-[var(--light-blue)] rounded-lg overflow-hidden shadow-lg"
+              className="relative bg-[var(--blue2)] light:bg-[var(--light-blue)] rounded-lg overflow-hidden shadow-lg flex flex-col h-full"
             >
               {post.fields?.cloudinaryMedia[0].url && (
                 <Image
@@ -108,28 +108,30 @@ const PostList: FC<PostListProps> = ({ locale }) => {
                   className="object-cover w-full h-48 md:h-64"
                 />
               )}
-              <div className="p-6">
-                <h3 className="text-2xl font-bold text-[var(--light-blue)] light:text-[var(--gray-70)]">
-                  {post.fields.title}
-                </h3>
-                <p className="mt-2 text-[var(--gray-blue)] light:text-[var(--gray-40)]">
-                  {post.fields.description}
-                </p>
-                {post.fields.category && (
-                  <p className="mt-2 text-[var(--gray-blue)] light:text-[var(--gray-40)] text-sm">
-                    {t("category")}: {post.fields.category.fields.title}
+              <div className="p-6 flex flex-col flex-grow">
+                <div className="flex-grow">
+                  <h3 className="text-2xl font-bold text-[var(--light-blue)] light:text-[var(--gray-70)]">
+                    {post.fields.title}
+                  </h3>
+                  <p className="mt-2 text-[var(--gray-blue)] light:text-[var(--gray-40)]">
+                    {post.fields.description}
                   </p>
-                )}
-                <p className="mt-2 text-[var(--gray-blue)] light:text-[var(--gray-40)] text-sm">
-                  {t("author")}: {post.fields.author.fields.name}
-                </p>
-                <p className="mt-2 text-[var(--gray-blue)] light:text-[var(--gray-40)] text-sm">
-                  {t("date")}:{" "}
-                  {new Date(post.sys.updatedAt).toLocaleDateString()}
-                </p>
+                  {post.fields.category && (
+                    <p className="mt-2 text-[var(--gray-blue)] light:text-[var(--gray-40)] text-sm">
+                      {t("category")}: {post.fields.category.fields.title}
+                    </p>
+                  )}
+                  <p className="mt-2 text-[var(--gray-blue)] light:text-[var(--gray-40)] text-sm">
+                    {t("author")}: {post.fields.author.fields.name}
+                  </p>
+                  <p className="mt-2 text-[var(--gray-blue)] light:text-[var(--gray-40)] text-sm">
+                    {t("date")}:{" "}
+                    {new Date(post.sys.updatedAt).toLocaleDateString()}
+                  </p>
+                </div>
                 <Link
                   href={`/about/blog/${post.fields.slug}`}
-                  className="inline-block mt-4 bg-[var(--ocean-blue)] #bg-gradient-to-r from-sky-400 to-purple-500 text-white py-2 px-4 rounded-lg shadow-lg hover:bg-opacity-75 transition duration-300"
+                  className="w-fit inline-block mt-4 bg-[var(--ocean-blue)] #bg-gradient-to-r from-sky-400 to-purple-500 text-white py-2 px-4 rounded-lg shadow-lg hover:bg-opacity-75 transition duration-300"
                 >
                   {t("readMore")}
                 </Link>

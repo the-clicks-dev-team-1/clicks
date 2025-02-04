@@ -63,7 +63,7 @@ const Portfolio: FC<{ params: { locale: string } }> = async ({
                 <Image
                   src={item.image}
                   alt={item.image}
-                  layout="fill"
+                  fill
                   objectFit="cover"
                   className="rounded-2xl transition duration-500 hover:scale-110"
                 />

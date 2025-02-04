@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback, useEffect, useMemo, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import {
   MdOutlineArrowBackIos,
   MdOutlineArrowForwardIos,
@@ -23,13 +23,6 @@ export const AnimatedTestimonials = ({
 }) => {
   const [active, setActive] = useState(0);
 
-  const rotationValues = useMemo(() => {
-    return testimonials.map((_, index) => {
-      // Use the index to generate a deterministic value between -10 and 10
-      return ((index * 7) % 21) - 10;
-    });
-  }, [testimonials.length]);
-
   const handleNext = useCallback(() => {
     setActive((prev) => (prev + 1) % testimonials.length);
   }, [testimonials.length]);
@@ -49,6 +42,9 @@ export const AnimatedTestimonials = ({
     }
   }, [autoplay, handleNext]);
 
+  const randomRotateY = () => {
+    return Math.floor(Math.random() * 21) - 10;
+  };
   return (
     <div className="max-w-sm md:max-w-7xl mx-auto antialiased font-sans px-4 md:px-8 lg:px-12 py-20">
       <div className="relative grid grid-cols-1 md:grid-cols-2 gap-20">
@@ -62,13 +58,13 @@ export const AnimatedTestimonials = ({
                     opacity: 0,
                     scale: 0.9,
                     z: -100,
-                    rotate: rotationValues[index],
+                    rotate: randomRotateY(),
                   }}
                   animate={{
                     opacity: isActive(index) ? 1 : 0.7,
                     scale: isActive(index) ? 1 : 0.95,
                     z: isActive(index) ? 0 : -100,
-                    rotate: isActive(index) ? 0 : rotationValues[index],
+                    rotate: isActive(index) ? 0 : randomRotateY(),
                     zIndex: isActive(index)
                       ? 49
                       : testimonials.length + 2 - index,
@@ -78,7 +74,7 @@ export const AnimatedTestimonials = ({
                     opacity: 0,
                     scale: 0.9,
                     z: 100,
-                    rotate: rotationValues[index],
+                    rotate: randomRotateY(),
                   }}
                   transition={{
                     duration: 0.4,
