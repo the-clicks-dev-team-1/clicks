@@ -40,7 +40,7 @@ const LogoSlide = ({
       testImage.onerror = () => setHasPngVariants(false);
       setMounted(true);
     }
-  }, [logoName, theme]);
+  }, [logoName, svgContent, theme]);
 
   const handleClick = () => {
     router.push("/portfolio");
