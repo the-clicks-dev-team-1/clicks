@@ -14,7 +14,7 @@ export const projects = Object.entries(en.portfolio.items).map(
     name: `${key}.name`,
     description: `${key}.description`,
     category: `${key}.category`,
-    link: `${key}.link`,
+    link: `${key}.url`,
   })
 );
 
