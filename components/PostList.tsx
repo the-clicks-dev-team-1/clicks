@@ -116,19 +116,19 @@ const PostList: FC<PostListProps> = ({ locale }) => {
                   <p className="mt-2 text-[var(--gray-blue)] light:text-[var(--gray-40)]">
                     {post.fields.description}
                   </p>
-                  {post.fields.category && (
-                    <p className="mt-2 text-[var(--gray-blue)] light:text-[var(--gray-40)] text-sm">
-                      {t("category")}: {post.fields.category.fields.title}
-                    </p>
-                  )}
-                  <p className="mt-2 text-[var(--gray-blue)] light:text-[var(--gray-40)] text-sm">
-                    {t("author")}: {post.fields.author.fields.name}
-                  </p>
-                  <p className="mt-2 text-[var(--gray-blue)] light:text-[var(--gray-40)] text-sm">
-                    {t("date")}:{" "}
-                    {new Date(post.sys.updatedAt).toLocaleDateString()}
-                  </p>
                 </div>
+                {post.fields.category && (
+                  <p className="mt-2 text-[var(--gray-blue)] light:text-[var(--gray-40)] text-sm">
+                    {t("category")}: {post.fields.category.fields.title}
+                  </p>
+                )}
+                <p className="mt-2 text-[var(--gray-blue)] light:text-[var(--gray-40)] text-sm">
+                  {t("author")}: {post.fields.author.fields.name}
+                </p>
+                <p className="mt-2 text-[var(--gray-blue)] light:text-[var(--gray-40)] text-sm">
+                  {t("date")}:{" "}
+                  {new Date(post.sys.updatedAt).toLocaleDateString()}
+                </p>
                 <Link
                   href={`/about/blog/${post.fields.slug}`}
                   className="w-fit inline-block mt-4 bg-[var(--ocean-blue)] #bg-gradient-to-r from-sky-400 to-purple-500 text-white py-2 px-4 rounded-lg shadow-lg hover:bg-opacity-75 transition duration-300"
