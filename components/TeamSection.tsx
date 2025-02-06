@@ -17,7 +17,7 @@ const TeamSection = () => {
             <Image
               src="/images/employees/val.png"
               alt="Team Member 1"
-              className="rounded-full mb-4 mx-auto"
+              className="rounded-full mb-4 mx-auto w-[200px] h-[200px] object-cover"
               width={200}
               height={200}
             />
@@ -32,7 +32,7 @@ const TeamSection = () => {
             <Image
               src="/images/employees/kate.png"
               alt="Team Member 2"
-              className="rounded-full mb-4 mx-auto"
+              className="rounded-full mb-4 mx-auto w-[200px] h-[200px] object-cover"
               width={200}
               height={200}
             />
