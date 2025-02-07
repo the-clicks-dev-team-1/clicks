@@ -1,7 +1,7 @@
 "use client";
 
 import { cn } from "@/lib/utils";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { useState } from "react";
 
 interface NewsletterFormProps {
@@ -11,6 +11,7 @@ interface NewsletterFormProps {
 
 const NewsletterForm = ({ onSuccess, className }: NewsletterFormProps) => {
   const t = useTranslations("footer.newsletterFormProps");
+  const locale = useLocale();
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [isLoading, setIsLoading] = useState(false);
@@ -26,7 +27,7 @@ const NewsletterForm = ({ onSuccess, className }: NewsletterFormProps) => {
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({ email }),
+        body: JSON.stringify({ email, locale }),
       });
 
       const data = await res.json();

@@ -315,6 +315,24 @@
       "error": "Une erreur s'est produite"
     }
   },
+  "subscribe": {
+    "welcomeSubject": "Bienvenue dans notre newsletter 🎉",
+    "thankYou": "Merci de vous être inscrit!",
+    "welcomeText": "Nous sommes ravis de vous avoir parmi nous. Restez à l'écoute pour des mises à jour, du contenu exclusif et plus encore.",
+    "unsubscribeText": "Si vous souhaitez vous désabonner,",
+    "unsubscribeLink": "cliquez ici",
+    "bestRegards": "Cordialement"
+  },
+  "unsubscribePage": {
+    "processing": "Traitement...",
+    "invalidRequest": "Demande invalide.",
+    "failedUnsubscribe": "Échec de la désinscription. Essayez à nouveau plus tard.",
+    "unsubscribed": "Vous avez été désinscrit avec succès.",
+    "somethingWentWrong": "Une erreur est survenue. Veuillez réessayer.",
+    "reSubscribing": "Réinscription...",
+    "resubscriptionFailed": "Échec de la réinscription. Veuillez réessayer.",
+    "reSubscribeButton": "Se réinscrire"
+  },
   "fields": {
     "firstName": "Prénom",
     "lastName": "Nom de famille",
