@@ -1,7 +1,7 @@
 "use client";
 
 import { cn } from "@/lib/utils";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { useState } from "react";
 
 interface NewsletterFormProps {
@@ -11,6 +11,7 @@ interface NewsletterFormProps {
 
 const NewsletterForm = ({ onSuccess, className }: NewsletterFormProps) => {
   const t = useTranslations("footer.newsletterFormProps");
+  const locale = useLocale();
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [isLoading, setIsLoading] = useState(false);
@@ -26,7 +27,7 @@ const NewsletterForm = ({ onSuccess, className }: NewsletterFormProps) => {
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({ email }),
+        body: JSON.stringify({ email, locale }),
       });
 
       const data = await res.json();
@@ -58,7 +59,7 @@ const NewsletterForm = ({ onSuccess, className }: NewsletterFormProps) => {
           onChange={(e) => setEmail(e.target.value)}
           placeholder={t("email")}
           className={cn(
-            "w-full md:w-auto p-3 rounded-lg text-white light:text-[var(--gray-100)] focus:outline-none focus:ring-2 focus:ring-sky-400 sm:flex-1",
+            "w-full md:w-auto p-3 rounded-lg text-white light:text-[var(--gray-100)] focus:outline-none focus:ring-2 focus:ring-[var(--ocean-blue)] sm:flex-1",
             className
           )}
           required
@@ -67,7 +68,7 @@ const NewsletterForm = ({ onSuccess, className }: NewsletterFormProps) => {
         <button
           type="submit"
           disabled={isLoading}
-          className="w-full md:w-auto bg-[var(--ocean-blue)] #bg-gradient-to-r from-sky-400 to-purple-500 text-white font-bold py-3 px-6 rounded-lg shadow-lg hover:bg-opacity-75 transition duration-300 disabled:opacity-50"
+          className="w-full md:w-auto bg-[var(--ocean-blue)] hover:bg-gradient-to-r from-sky-400 to-purple-500 hover:text-[var(--blue1)] text-white py-3 px-6 rounded-lg shadow-lg hover:bg-opacity-75 transition duration-300 disabled:opacity-50"
         >
           {isLoading ? t("subscribing") : t("subscribe")}
         </button>

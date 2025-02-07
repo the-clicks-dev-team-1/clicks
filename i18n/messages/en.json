@@ -269,7 +269,7 @@
     }
   },
   "contactForm": {
-    "questions": "Have a questions?",
+    "questions": "Have a question?",
     "getInTouch": "Get in Touch",
     "description": "We value your feedback, questions, and inquiries. Whether you have a suggestion, require assistance, or just want to reach out to us, we are always here to provide support and assistance.",
     "contact": {
@@ -314,6 +314,24 @@
       "success": "We've received your inquiry and will be contacting you via email shortly.",
       "error": "Something went wrong"
     }
+  },
+  "subscribe": {
+    "welcomeSubject": "Welcome to Our Newsletter 🎉",
+    "thankYou": "Thank you for subscribing!",
+    "welcomeText": "We're excited to have you on board. Stay tuned for updates, exclusive content, and more.",
+    "unsubscribeText": "If you wish to unsubscribe,",
+    "unsubscribeLink": "click here",
+    "bestRegards": "Best regards"
+  },
+  "unsubscribePage": {
+    "processing": "Processing...",
+    "invalidRequest": "Invalid request.",
+    "failedUnsubscribe": "Failed to unsubscribe. Try again later.",
+    "unsubscribed": "You have been successfully unsubscribed.",
+    "somethingWentWrong": "Something went wrong. Please try again.",
+    "reSubscribing": "Re-subscribing...",
+    "resubscriptionFailed": "Failed to re-subscribe. Please try again.",
+    "reSubscribeButton": "Re-subscribe"
   },
   "fields": {
     "firstName": "First name",
@@ -2001,7 +2019,7 @@
           }
         ],
         "mainSection": {
-          "title": "Natural Language Processing (NLP)",
+          "title": "Natural Language Processing",
           "description": "Leverage NLP for better communication, customer insights, and content analysis.\nTurn unstructured data into actionable insights for better customer experiences."
         },
         "what": {
