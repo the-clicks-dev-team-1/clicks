@@ -3,6 +3,8 @@
 import { useState, useEffect } from "react";
 import { useSearchParams } from "next/navigation";
 import { useTranslations } from "next-intl";
+import Navbar from "@/components/navbar";
+import Footer from "@/components/footer";
 
 export default function UnsubscribePage() {
   const t = useTranslations("unsubscribePage");
@@ -51,16 +53,20 @@ export default function UnsubscribePage() {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen">
-      <h2 className="text-xl font-bold">{message}</h2>
-      {showResubscribe && (
-        <button
-          onClick={handleResubscribe}
-          className="mt-4 px-4 py-2 bg-blue-600 text-white rounded-lg"
-        >
-          {t("reSubscribeButton")}
-        </button>
-      )}
+    <div className="min-h-screen flex flex-col bg-[var(--bgnew)] light:bg-white text-[var(--light-blue)] light:text-[var(--gray-70)]">
+      <Navbar />
+      <div className="flex flex-col items-center justify-center flex-grow">
+        <h2 className="text-xl font-bold">{message}</h2>
+        {showResubscribe && (
+          <button
+            onClick={handleResubscribe}
+            className="mt-4 px-4 py-2 bg-blue-600 text-white rounded-lg"
+          >
+            {t("reSubscribeButton")}
+          </button>
+        )}
+      </div>
+      <Footer />
     </div>
   );
 }
