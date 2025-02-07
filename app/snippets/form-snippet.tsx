@@ -307,7 +307,7 @@ export default function ContactForm({ consultation }: ContactFormProps) {
                         <FormControl>
                           <Input
                             {...field}
-                            className="light:text-black text-[var(--gray-0)] border border-[var(--ocean-blue)] dark:bg-[var(--blue2)]"
+                            className="light:text-black text-[var(--gray-0)] border border-[var(--ocean-blue)] dark:bg-[var(--blue2)] focus:outline-none focus:ring-2 focus:ring-[var(--ocean-blue)]"
                           />
                         </FormControl>
                         {form.formState.errors.email && (

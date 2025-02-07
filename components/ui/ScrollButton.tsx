@@ -8,13 +8,15 @@ type ScrollButtonProps = {
   targetSection?: string;
   targetPage?: string;
   className?: string;
-  variant?: "primary" | "secondary" | "outline";
+  variant?: "primary" | "secondary" | "outline" | "default";
   offset?: number;
   onClick?: () => void;
 };
 
 const variantStyles = {
-  primary: "bg-[var(--ocean-blue)] text-white hover:bg-opacity-90",
+  primary:
+    "bg-[var(--ocean-blue)] text-white hover:bg-gradient-to-r from-sky-400 to-purple-500 hover:text-[var(--blue1)]",
+  default: "text-white hover:text-white hover:font-bold",
   secondary: "bg-gray-200 text-gray-800 hover:bg-gray-300",
   outline:
     "border border-[var(--ocean-blue)] text-[var(--ocean-blue)] hover:bg-[var(--ocean-blue)] hover:text-white",

@@ -5,7 +5,7 @@ import ActiveLink from "./activelink";
 
 const Logo = () => {
   return (
-    <div>
+    <div className="w-24 h-24">
       {/* Light mode logo */}
       <ActiveLink href="/">
         <Image
