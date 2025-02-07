@@ -10,7 +10,7 @@ mailchimp.setConfig({
   server: process.env.MAILCHIMP_SERVER_PREFIX,
 });
 
-const test = true;
+const test = false;
 const host = test ? "http://localhost:3000" : "https://theclicks.ca";
 
 export async function POST(req: Request) {
