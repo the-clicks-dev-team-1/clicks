@@ -75,6 +75,15 @@ export async function POST(req: Request) {
               `,
         });
 
+        await transporter.sendMail({
+          from: `"The Clicks" <info@theclicks.ca>`,
+          to: process.env.ADMIN_EMAIL,
+          subject: "New Newsletter Subscription",
+          text: `A user has re-subscribed to your newsletter.  
+          
+        📧 Email: ${email}`,
+        });
+
         return NextResponse.json({ message: "Re-subscribed successfully!" });
       }
 
