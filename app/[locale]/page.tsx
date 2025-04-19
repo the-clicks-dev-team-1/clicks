@@ -46,7 +46,7 @@ export default async function Home({
         <h1 className="mb-4 text-4xl md:text-7xl pb-6 text-center bg-clip-text text-transparent bg-gradient-to-b from-sky-400 to bg-purple-500 bg-opacity-50">
           {t("title")}
         </h1>
-        <p className="mb-10 text-lg font-normal text-[var(--gray-blue)] light:text-[var(--gray-70)] max-w-lg text-center mx-auto">
+        <p className="md:whitespace-pre-wrap mb-10 text-lg font-normal text-[var(--gray-blue)] light:text-[var(--gray-70)] max-w-[586px] text-center mx-auto">
           {t("description")}
         </p>
         <div className="flex justify-center">

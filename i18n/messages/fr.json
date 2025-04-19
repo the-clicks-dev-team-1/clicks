@@ -91,9 +91,12 @@
     }
   },
   "home": {
-    "title": "Transformez votre entreprise avec l'intelligence artificielle",
-    "description": "Révolutionnez vos opérations, optimisez les processus et stimulez une croissance durable grâce à des décisions confiantes et des solutions innovantes, adaptées aux entreprises canadiennes.",
-    "cta": "Commencer",
+    "title": "Vous n'êtes pas sûr que votre site web fait son travail?",
+    "title2": "Transformez votre entreprise avec l'intelligence artificielle",
+    "description": "La plupart des sites web perdent de l'argent — silencieusement. Nous auditerons le vôtre gratuitement. Découvrez ce qui fonctionne et ce qui vous freine.\nObtenez un plan d'action clair, soutenu par des experts, pour augmenter vos conversions.\nNous vous aiderons à le réparer — ou à construire un site à fort taux de conversion à partir de zéro",
+    "description2": "Révolutionnez vos opérations, optimisez les processus et stimulez une croissance durable grâce à des décisions confiantes et des solutions innovantes, adaptées aux entreprises canadiennes.",
+    "cta": "Demandez votre consultation gratuite",
+    "cta2": "Commencer",
     "ourPartners": "Nos partenaires :",
     "block": {
       "whileYouSpentTime": "Pendant que vous vous concentrez sur votre famille, nous nous concentrons sur votre succès. Nos solutions travaillent sans relâche pour aider votre entreprise à se développer.",

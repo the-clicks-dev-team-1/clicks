@@ -91,9 +91,12 @@
     }
   },
   "home": {
-    "title": "Transform your business with artificial intelligence",
-    "description": "Revolutionise your operations, optimise processes, and drive sustainable growth with Confident decisions and innovative solutions, tailored for Canadian businesses.",
-    "cta": "Get Started",
+    "title": "Not sure if your website is doing its job?",
+    "title2": "Transform your business with artificial intelligence",
+    "description": "Most websites leak money — silently. We’ll audit yours for free. Find out what’s working and what’s holding you back.\nGet a clear, expert-backed action plan to boost conversions.\nWe’ll help you fix it — or build a high-converting site from scratch",
+    "description2": "Revolutionise your operations, optimise processes, and drive sustainable growth with Confident decisions and innovative solutions, tailored for Canadian businesses.",
+    "cta": " Request Your Free Consultation",
+    "cta2": "Get Started",
     "ourPartners": "Our partners:",
     "block": {
       "whileYouSpentTime": "While you focus on your family, we focus on your success. Our solutions work tirelessly to help your business grow.",
