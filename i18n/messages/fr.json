@@ -549,10 +549,10 @@
         "category": "Boutique"
       },
       {
-        "image": "/images/portfolio/osvita.png",
-        "url": "https://it-osvita.diia.gov.ua/",
-        "name": "DIIA",
-        "description": "Plateforme éducative offrant des cours en informatique, des certifications et des ressources pour développer des compétences numériques à tous les niveaux d'expérience",
+        "image": "/images/portfolio/learnon.png",
+        "url": "https://learnon.ai/",
+        "name": "Learnon",
+        "description": "Système de gestion de l’apprentissage propulsé par l’IA, offrant un apprentissage personnalisé, une correction automatisée et des outils de cours interactifs",
         "category": "Éducation"
       }
     ]

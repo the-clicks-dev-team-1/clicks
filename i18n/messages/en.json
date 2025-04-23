@@ -549,10 +549,10 @@
         "category": "Shop"
       },
       {
-        "image": "/images/portfolio/osvita.png",
-        "url": "https://it-osvita.diia.gov.ua/",
-        "name": "DIIA",
-        "description": "Educational platform offering IT courses, certifications, and resources to develop digital skills for all experience levels",
+        "image": "/images/portfolio/learnon.png",
+        "url": "https://learnon.ai/",
+        "name": "Learnon",
+        "description": "AI-powered Learning Management System offering personalized learning, automated grading, and interactive course tools",
         "category": "Education"
       }
     ]
