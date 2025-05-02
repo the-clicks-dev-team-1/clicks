@@ -3,7 +3,7 @@ import { Resend } from 'resend';
 
 import nodemailer from "nodemailer";
 
-// const resend = new Resend(process.env.RESEND_API_KEY);
+const resend = new Resend(process.env.RESEND_API_KEY);
 
 export async function POST(req: Request) {
   if (req.method === "POST") {
@@ -21,11 +21,14 @@ export async function POST(req: Request) {
 
       const transporter = nodemailer.createTransport({
         host: "smtp.gmail.com",
-        port: 465,
-        secure: true,
+        port: 587,
+        secure: false,
         auth: {
           user: 'b.zahorodnii@theclicks.ca',
           pass: 'nzaw ekqj dofk vire',
+        },
+        tls: {
+          rejectUnauthorized: false, // optional, but helps with self-signed certs
         },
         connectionTimeout: 20000, // 10 seconds
         greetingTimeout: 5000,    // 5 seconds
@@ -36,12 +39,12 @@ export async function POST(req: Request) {
 
       const mailOptions = {
         from: email,
-        to: "info@theclicks.ca",
+        // to: "info@theclicks.ca",
+        to: "b.zahorodnii@theclicks.ca",
         // to: "v.lytvynenko@theclicks.ca",
-        // to: "viktorlyt@gmail.com",
-        cc: "sales@theclicks.ca",
+        // cc: "sales@theclicks.ca",
         // bcc: "v.lytvynenko@theclicks.ca",
-        bcc: "b.zahorodnii@theclicks.ca",
+        // bcc: "b.zahorodnii@theclicks.ca",
         subject: "Contact Form Submission",
         html: `
                     <h1>Contact Form</h1>
@@ -81,9 +84,11 @@ export async function POST(req: Request) {
     //     info,
     //   } = await req.json();
     //   const data = await resend.emails.send({
-    //     from: 'onboarding@resend.dev', // Set this in DNS
-    //     to: ['info@theclicks.ca'],
-    //     cc: ['sales@theclicks.ca'],
+    //     // from: 'onboarding@resend.dev', // Set this in DNS
+    //     from: 'b.zahorodnii@theclicks.ca',
+    //     // to: ['info@theclicks.ca'],
+    //     // cc: ['sales@theclicks.ca'],
+    //     to: ['b.zahorodnii@theclicks.ca'],
     //     bcc: ['b.zahorodnii@theclicks.ca'],
     //     subject: 'Contact Form Submission',
     //     html: `
