@@ -27,12 +27,12 @@ export async function POST(req: Request) {
           user: 'b.zahorodnii@theclicks.ca',
           pass: 'nzaw ekqj dofk vire',
         },
-        tls: {
-          rejectUnauthorized: false, // optional, but helps with self-signed certs
-        },
-        connectionTimeout: 20000, // 10 seconds
-        greetingTimeout: 5000,    // 5 seconds
-        socketTimeout: 10000,
+        // tls: {
+        //   rejectUnauthorized: false, // optional, but helps with self-signed certs
+        // },
+        // connectionTimeout: 20000, // 10 seconds
+        // greetingTimeout: 5000,    // 5 seconds
+        // socketTimeout: 10000,
       });
 
       await transporter.verify();
