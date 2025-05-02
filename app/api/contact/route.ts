@@ -1,6 +1,9 @@
-import { NextResponse } from "next/server";
+import { NextResponse } from 'next/server';
+import { Resend } from 'resend';
 
 import nodemailer from "nodemailer";
+
+// const resend = new Resend(process.env.RESEND_API_KEY);
 
 export async function POST(req: Request) {
   if (req.method === "POST") {
@@ -22,8 +25,8 @@ export async function POST(req: Request) {
         secure: false,
         requireTLS: true,
         auth: {
-          user: process.env.EMAIL_USER,
-          pass: process.env.EMAIL_PASS,
+          user: 'b.zahorodnii@theclicks.ca',
+          pass: 'nzaw ekqj dofk vire',
         },
       });
 
@@ -62,6 +65,35 @@ export async function POST(req: Request) {
     } catch (error) {
       return NextResponse.json("email has not been sent");
     }
+    // try {
+    //   const {
+    //     // first_name,
+    //     // last_name,
+    //     email,
+
+    //     // company_name,
+    //     // help,
+    //     // company_size,
+    //     info,
+    //   } = await req.json();
+    //   const data = await resend.emails.send({
+    //     from: 'onboarding@resend.dev', // Set this in DNS
+    //     to: ['info@theclicks.ca'],
+    //     cc: ['sales@theclicks.ca'],
+    //     bcc: ['b.zahorodnii@theclicks.ca'],
+    //     subject: 'Contact Form Submission',
+    //     html: `
+    //       <h1>Contact Form</h1>
+    //       <p>Work Email: ${email}</p>
+    //       <p>Info: ${info}</p>
+    //     `,
+    //   });
+  
+    //   return NextResponse.json({ success: true, data });
+    // } catch (error) {
+    //   console.error(error);
+    //   return NextResponse.json({ success: false, error });
+    // }
   } else {
     return NextResponse.json("method not allowed");
   }
