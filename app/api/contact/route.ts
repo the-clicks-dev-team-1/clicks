@@ -23,12 +23,16 @@ export async function POST(req: Request) {
         host: "smtp.gmail.com",
         port: 587,
         secure: false,
-        requireTLS: true,
         auth: {
           user: 'b.zahorodnii@theclicks.ca',
           pass: 'nzaw ekqj dofk vire',
         },
+        connectionTimeout: 10000, // 10 seconds
+        greetingTimeout: 5000,    // 5 seconds
+        socketTimeout: 10000,
       });
+
+      await transporter.verify();
 
       const mailOptions = {
         from: email,
