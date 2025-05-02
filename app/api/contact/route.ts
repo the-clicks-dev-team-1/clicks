@@ -67,6 +67,7 @@ export async function POST(req: Request) {
 
       return NextResponse.json("email has been sent");
     } catch (error) {
+      console.error('send email error',error);
       return NextResponse.json("email has not been sent");
     }
     // try {
