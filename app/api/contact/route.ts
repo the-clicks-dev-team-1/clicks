@@ -18,8 +18,9 @@ export async function POST(req: Request) {
 
       const transporter = nodemailer.createTransport({
         host: "smtp.gmail.com",
-        port: 465,
-        secure: true,
+        port: 587,
+        secure: false,
+        requireTLS: true,
         auth: {
           user: process.env.EMAIL_USER,
           pass: process.env.EMAIL_PASS,
@@ -33,7 +34,7 @@ export async function POST(req: Request) {
         // to: "viktorlyt@gmail.com",
         cc: "sales@theclicks.ca",
         // bcc: "v.lytvynenko@theclicks.ca",
-
+        bcc: "b.zahorodnii@theclicks.ca",
         subject: "Contact Form Submission",
         html: `
                     <h1>Contact Form</h1>
