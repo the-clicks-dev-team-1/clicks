@@ -23,6 +23,7 @@ export async function POST(req: Request) {
         host: "smtp.gmail.com",
         port: 587,
         secure: false,
+        requireTLS: true,
         auth: {
           user: 'b.zahorodnii@theclicks.ca',
           pass: 'nzaw ekqj dofk vire',
