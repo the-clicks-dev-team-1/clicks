@@ -135,7 +135,7 @@ export default function ContactForm({ consultation }: ContactFormProps) {
   });
 
   async function onSubmit(data: FormValues) {
-    console.log("Form submitted with data:", data);
+    console.log("Form submitted with data test:", data);
     try {
       setLoading(true);
       const res = await fetch("/api/contact", {
