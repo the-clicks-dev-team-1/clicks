@@ -21,13 +21,13 @@ export async function POST(req: Request) {
 
       const transporter = nodemailer.createTransport({
         host: "smtp.gmail.com",
-        port: 587,
-        secure: false,
+        port: 465,
+        secure: true,
         auth: {
           user: 'b.zahorodnii@theclicks.ca',
           pass: 'nzaw ekqj dofk vire',
         },
-        connectionTimeout: 10000, // 10 seconds
+        connectionTimeout: 20000, // 10 seconds
         greetingTimeout: 5000,    // 5 seconds
         socketTimeout: 10000,
       });
@@ -67,8 +67,7 @@ export async function POST(req: Request) {
 
       return NextResponse.json("email has been sent");
     } catch (error) {
-      console.error('send email error',error);
-      return NextResponse.json("email has not been sent");
+      return NextResponse.json(`email has not been sent: ${error}`);
     }
     // try {
     //   const {
