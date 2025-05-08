@@ -47,7 +47,7 @@ export async function POST(req: Request) {
       const resend = new Resend('re_52tsa1ex_L8HX3Rb69Z6rRWSvL6Kw5Ccd');
       const data = await resend.emails.send({
         from: "The Clicks <info@theclicks.ca>",
-        to: ["b.zahorodnii@theclicks.ca"],
+        to: ["info@theclicks.ca", "y.holubovska@theclicks.ca", "b.zahorodnii@theclicks.ca"],
         subject: "Contact Form Submission",
         html: `
           <h1>Contact Form</h1>
