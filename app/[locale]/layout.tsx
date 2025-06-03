@@ -75,7 +75,7 @@ export default async function RootLayout({
         <FacebookPixel />
         <ThemeProvider
           attribute="class"
-          defaultTheme="system"
+          defaultTheme="light"
           enableSystem
           disableTransitionOnChange
           storageKey="theme-preference"

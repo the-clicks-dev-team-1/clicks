@@ -6,7 +6,6 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { getTranslations } from "next-intl/server";
 import Image from "next/image";
-import { usePathname } from 'next/navigation';
 
 interface ReviewI {
   text: string;
@@ -20,12 +19,6 @@ interface ReviewsSliderProps {
 const ReviewsSlider: FC<ReviewsSliderProps> = ({ reviews }) => {
   const sliderRef = useRef<Slider>(null);
   const [currentSlide, setCurrentSlide] = useState(0);
-  const [mounted, setMounted] = useState(false);
-  const pathname = usePathname();
-
-  useEffect(() => {
-    setMounted(true);
-  }, []);
 
   const settings = {
     dots: false,
