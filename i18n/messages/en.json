@@ -2509,5 +2509,140 @@
         }
       }
     ]
+  },
+  "landings": {
+    "websites": {
+      "from": "From",
+      "whatsIncluded": "What's included",
+      "popular": "Popular",
+      "getStarted": "Get Started",
+      "startYourProject": "Start Your Project",
+      "hero": {
+        "title": "Launch a Stunning Website That Ranks & Converts",
+        "description": "We create beautiful, responsive websites that are easy to use and designed to convert visitors into customers. Our websites are built on the latest technology and are optimized for search engines.",
+        "cta": "Start Your Project"
+      },
+      "why": {
+        "title": "Why our websites work smarter",
+        "text": "Every website we build is packed with powerful features that ensure performance, visibility, and results — right out of the box.",
+        "items": [
+          {
+            "title": "SEO-Optimized",
+            "description": "Show up where it matters. Your site is structured and written to perform well on search engines from day one."
+          },
+          {
+            "title": "Custom Design",
+            "description": "Stand out with a unique, responsive design tailored to your brand, audience, and goals."
+          },
+          {
+            "title": "Built for Conversions",
+            "description": "From layout to copy, every element is crafted to guide users toward action — turning clicks into customers."
+          },
+          {
+            "title": "Fast & Secure",
+            "description": "Enjoy lightning-fast load times, rock-solid hosting, and built-in security for peace of mind."
+          }
+        ]
+      },
+      "work": {
+        "title": "See Our Work in Action",
+        "text": "Explore recent projects that blend strategy, design, and performance — crafted to stand out and deliver results.",
+        "cta": "Link to site",
+        "items": [
+          {
+            "title": "Modern Real Estate Platform",
+            "subtitle": "Custom Design · SEO-Ready · Conversion Focused",
+            "text1": "We developed a sleek and intuitive website for a real estate firm aiming to modernize their online presence. The platform features a fully custom property search tool, interactive maps, and tailored listing pages optimized for SEO.",
+            "text2": "Clear call-to-actions and strategically placed contact forms help convert visitors into inquiries with ease. The responsive design ensures flawless performance across all devices, while fast load speeds keep bounce rates low. ",
+            "text3": "Since launch, the client has seen a 45% increase in qualified leads."
+          }
+        ]
+      },
+      "reviews": {
+        "title": "What Our Clients Say",
+        "subtitle": "Real feedback from teams and founders who trusted us to bring their vision to life.",
+        "items": [
+          {
+            "text": "Smooth process, clear communication, and a final product that performs beautifully on all devices. Highly recommended.",
+            "position": "Product Manager at FlowSuite"
+          },
+          {
+            "text": "The results were beyond what we expected. The site looks incredible, ranks on Google, and actually brings in leads.",
+            "position": "Marketing Director at UrbanNest Realty"
+          },
+          {
+            "text": "From design to performance, everything was top-notch. They really understood our brand and nailed the execution.",
+            "position": "Founder of Verde Skincare"
+          }
+        ]
+      },
+      "steps": {
+        "title": "Our Process, Your Success",
+        "subtitle": "From idea to impact — here's how we build websites that deliver lasting results.",
+        "items": [
+          {
+            "title": "Step 1: Discovery",
+            "description": "We get to know your business.",
+            "text": "Through strategy calls and research, we identify your goals, audience, and what sets you apart."
+          },
+          {
+            "title": "Step 2: Design",
+            "description": "Bringing ideas to life.",
+            "text": "We create custom layouts and visuals tailored to your brand, focusing on usability and visual impact."
+          },
+          {
+            "title": "Step 3: Launch",
+            "description": "Go live with confidence.",
+            "text": "After testing, we launch your fully responsive, SEO-friendly site — fast, secure, and built to scale."
+          },
+          {
+            "title": "Step 4: Promote",
+            "description": "Drive traffic and conversions.",
+            "text": "We equip you with tools and marketing-ready features to help you grow online — from day one."
+          }
+        ]
+      },
+      "pricing": {
+        "title": "Choose a Plan That Fits Your Goals",
+        "subtitle": "Flexible packages for businesses at every stage — whether you're just starting out or scaling fast.",
+        "items": [
+          {
+            "title": "Starter",
+            "hint": "Perfect for individuals or small projects",
+            "included": [
+              "1-page custom website",
+              "Mobile-responsive design",
+              "Basic SEO setup",
+              "Launch support"
+            ]
+          }, {
+            "title": "Business",
+            "hint": "Great for growing brands and service providers",
+            "included": [
+              "Up to 5 custom pages",
+              "SEO-friendly structure",
+              "Conversion-focused layout",
+              "Contact form integration"
+            ]
+          }, {
+            "title": "Premium",
+            "hint": "Full-featured solution for serious growth",
+            "included": [
+              "10+ pages & advanced design",
+              "Blog, e-commerce or booking system",
+              "Full SEO optimization",
+              "Marketing-ready integrations (email, analytics, etc.)"
+            ]
+          }
+        ]
+      },
+      "ready": {
+        "title": "Ready to Launch Your High-Impact Website?",
+        "text": "Spots for May are now open — secure your place before the calendar fills up."
+      }
+    },
+    "marketing": {
+      
+    }
   }
 }

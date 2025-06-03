@@ -269,6 +269,7 @@ export default function Navbar() {
   const navRef = useRef<HTMLDivElement>();
   const pathname = usePathname();
   const [hoveredItem, setHoveredItem] = useState<string | null>(null);
+  const isLandingPage = pathname.includes("services/websites");
 
   useEffect(() => {
     setMounted(true);
@@ -430,7 +431,7 @@ export default function Navbar() {
           <div className="">
             <LocaleSwitcher />
           </div>
-          {mounted && (
+          {mounted && !isLandingPage && (
             <button
               onClick={handleToggleTheme}
               aria-label="Toggle Dark Mode"
@@ -444,13 +445,15 @@ export default function Navbar() {
             </button>
           )}
 
-          <ScrollButton
-            targetSection="#contact"
-            className="hidden duration-2000 md:block px-4 py-2 animate-shimmer items-center justify-center rounded-lg border hover:border-2 border-[var(--border-color)] light:border-[var(--ocean-blue)] light:bg-[var(--light-blue)] dark:bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] light:bg-[linear-gradient(110deg,#f8fbff,45%,#edf8fe,55%,#f8fbff)] bg-[length:200%_100%] transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 light:bg-white light:text-black"
-            variant="default"
-          >
-            {t("book")}
-          </ScrollButton>
+          {!isLandingPage && (
+            <ScrollButton
+              targetSection="#contact"
+              className="hidden duration-2000 md:block px-4 py-2 animate-shimmer items-center justify-center rounded-lg border hover:border-2 border-[var(--border-color)] light:border-[var(--ocean-blue)] light:bg-[var(--light-blue)] dark:bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] light:bg-[linear-gradient(110deg,#f8fbff,45%,#edf8fe,55%,#f8fbff)] bg-[length:200%_100%] transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 light:bg-white light:text-black"
+              variant="default"
+            >
+              {t("book")}
+            </ScrollButton>
+          )}
 
           <div className="flex items-center md:hidden">
             <FiMenu
