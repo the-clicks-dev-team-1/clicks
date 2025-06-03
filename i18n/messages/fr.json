@@ -2540,5 +2540,139 @@
         }
       }
     ]
+  },
+  "landings": {
+    "websites": {
+      "from": "À partir de",
+      "whatsIncluded": "Ce qui est inclus",
+      "popular": "Populaire",
+      "getStarted": "Commencer",
+      "startYourProject": "Lancer votre projet",
+      "hero": {
+        "title": "Lancez un site web remarquable qui performe et convertit",
+        "description": "Nous créons des sites web beaux, responsives et faciles à utiliser, conçus pour transformer les visiteurs en clients. Nos sites sont développés avec les dernières technologies et optimisés pour les moteurs de recherche.",
+        "cta": "Lancer votre projet"
+      },
+      "why": {
+        "title": "Pourquoi nos sites web sont plus intelligents",
+        "text": "Chaque site que nous créons est rempli de fonctionnalités puissantes garantissant performance, visibilité et résultats — dès le départ.",
+        "items": [
+          {
+            "title": "Optimisé SEO",
+            "description": "Soyez visible là où ça compte. Votre site est structuré et rédigé pour bien performer sur les moteurs de recherche dès le premier jour."
+          },
+          {
+            "title": "Design personnalisé",
+            "description": "Démarquez-vous avec un design unique, responsive, adapté à votre marque, votre audience et vos objectifs."
+          },
+          {
+            "title": "Conçu pour convertir",
+            "description": "De la mise en page au texte, chaque élément est pensé pour inciter à l'action — transformant les clics en clients."
+          },
+          {
+            "title": "Rapide et sécurisé",
+            "description": "Profitez d'un temps de chargement ultra-rapide, d’un hébergement fiable et d’une sécurité intégrée pour une tranquillité d’esprit."
+          }
+        ]
+      },
+      "work": {
+        "title": "Découvrez notre travail",
+        "text": "Explorez des projets récents alliant stratégie, design et performance — conçus pour se démarquer et obtenir des résultats.",
+        "cta": "Voir le site",
+        "items": [
+          {
+            "title": "Plateforme immobilière moderne",
+            "subtitle": "Design sur mesure · Optimisé SEO · Axé sur la conversion",
+            "text1": "Nous avons développé un site web élégant et intuitif pour une agence immobilière souhaitant moderniser sa présence en ligne. La plateforme propose un outil de recherche de propriétés personnalisé, des cartes interactives et des pages d’annonces optimisées pour le SEO.",
+            "text2": "Des appels à l’action clairs et des formulaires de contact stratégiquement placés facilitent la conversion des visiteurs en prospects. Le design responsive assure une performance parfaite sur tous les appareils, tandis que la vitesse de chargement rapide réduit les taux de rebond.",
+            "text3": "Depuis son lancement, le client a constaté une augmentation de 45 % des prospects qualifiés."
+          }
+        ]
+      },
+      "reviews": {
+        "title": "Ce que disent nos clients",
+        "subtitle": "Des retours authentiques de fondateurs et d’équipes qui nous ont fait confiance pour concrétiser leur vision.",
+        "items": [
+          {
+            "text": "Processus fluide, communication claire et un produit final qui fonctionne à merveille sur tous les appareils. Fortement recommandé.",
+            "position": "Chef de produit chez FlowSuite"
+          },
+          {
+            "text": "Les résultats ont dépassé nos attentes. Le site est magnifique, bien référencé sur Google et génère vraiment des leads.",
+            "position": "Directrice marketing chez UrbanNest Realty"
+          },
+          {
+            "text": "Du design à la performance, tout était impeccable. Ils ont vraiment compris notre marque et ont parfaitement exécuté le projet.",
+            "position": "Fondatrice de Verde Skincare"
+          }
+        ]
+      },
+      "steps": {
+        "title": "Notre processus, votre réussite",
+        "subtitle": "De l’idée à l’impact — voici comment nous construisons des sites qui donnent des résultats durables.",
+        "items": [
+          {
+            "title": "Étape 1 : Découverte",
+            "description": "Nous apprenons à connaître votre entreprise.",
+            "text": "Grâce à des appels stratégiques et à des recherches, nous identifions vos objectifs, votre audience et ce qui vous distingue."
+          },
+          {
+            "title": "Étape 2 : Design",
+            "description": "Donner vie à vos idées.",
+            "text": "Nous créons des maquettes et visuels sur mesure adaptés à votre marque, en mettant l’accent sur l’utilisabilité et l’impact visuel."
+          },
+          {
+            "title": "Étape 3 : Lancement",
+            "description": "Mise en ligne en toute confiance.",
+            "text": "Après les tests, nous lançons votre site responsive et optimisé SEO — rapide, sécurisé et évolutif."
+          },
+          {
+            "title": "Étape 4 : Promotion",
+            "description": "Générez du trafic et des conversions.",
+            "text": "Nous vous fournissons les outils et fonctionnalités marketing nécessaires pour développer votre présence en ligne — dès le premier jour."
+          }
+        ]
+      },
+      "pricing": {
+        "title": "Choisissez un forfait adapté à vos objectifs",
+        "subtitle": "Des formules flexibles pour les entreprises à chaque étape — que vous débutiez ou que vous croissiez rapidement.",
+        "items": [
+          {
+            "title": "Starter",
+            "hint": "Parfait pour les particuliers ou petits projets",
+            "included": [
+              "Site personnalisé d'une page",
+              "Design responsive mobile",
+              "Configuration SEO de base",
+              "Assistance au lancement"
+            ]
+          },
+          {
+            "title": "Business",
+            "hint": "Idéal pour les marques en croissance et les prestataires de services",
+            "included": [
+              "Jusqu’à 5 pages personnalisées",
+              "Structure compatible SEO",
+              "Mise en page axée sur la conversion",
+              "Intégration de formulaire de contact"
+            ]
+          },
+          {
+            "title": "Premium",
+            "hint": "Solution complète pour une croissance ambitieuse",
+            "included": [
+              "10+ pages et design avancé",
+              "Blog, e-commerce ou système de réservation",
+              "Optimisation SEO complète",
+              "Intégrations prêtes pour le marketing (email, analytics, etc.)"
+            ]
+          }
+        ]
+      },
+      "ready": {
+        "title": "Prêt à lancer votre site web à fort impact ?",
+        "text": "Les créneaux pour mai sont maintenant ouverts — réservez votre place avant que le calendrier ne soit complet."
+      }
+    }
   }
 }
