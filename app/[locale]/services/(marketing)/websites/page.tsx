@@ -107,19 +107,24 @@ const WebDevelopment: FC<{ params: { locale: string } }> = async ({
       <div className="container md:px-10 mb-[64px] md:mb-[80px] lg:mb-[100px]">
         <div className="pb-[5px] bg-clip-text text-black text-[36px] md:text-[48px] leading-[40px] md:leading-[52px] font-[600] text-center">{t("work.title")}</div>
         <div className="mt-4 max-w-2xl text-[#666368] light:text-[#666368] text-center mx-auto text-[16px] md:text-[24px] leading-[20px] md:leading-[28px] font-[400] mb-12">{t("why.text")}</div>
-        <div className="flex flex-col lg:flex-row gap-8 bg-white rounded-2xl p-6 shadow-[0px_0px_6px_rgba(0,0,0,0.15)]">
-          <div className="w-full lg:w-1/2">
-            <div className="text-[32px] font-[600] mb-4 text-black">{t("work.items.0.title")}</div>
-            <div className="text-[20px] md:text-[24px] font-[400] mb-4 text-[#666368]">{t("work.items.0.subtitle")}</div>
-            <div className="text-[#666368] text-[16px] font-[400] mb-2">{t("work.items.0.text1")}</div>
-            <div className="text-[#666368] text-[16px] font-[400] mb-2">{t("work.items.0.text2")}</div>
-            <div className="text-[#666368] text-[16px] font-[400] mb-4">{t("work.items.0.text3")}</div>
-            {/* <button className="underline text-[##241E2A] text-[16px] font-[400]">
-              {t("work.cta")}
-            </button> */}
-          </div>
-          <div className="w-full lg:w-1/2">
-            <Image src="/images/landings/work-image.png" alt="Work Logo" width={576} height={592} />
+        <div className="relative pt-[60px] lg:pt-[120px]">
+          <div className="absolute top-[0px] left-[20%] right-[20%] w-[60%] h-[200px] z-0 bg-white rounded-2xl shadow-[0px_0px_6px_rgba(0,0,0,0.15)]" />
+          <div className="absolute top-[20px] lg:top-[40px] left-[10%] w-[80%] right-[10%]  h-[200px] z-0 bg-white rounded-2xl shadow-[0px_0px_6px_rgba(0,0,0,0.15)]" />
+          <div className="absolute top-[40px] lg:top-[80px] left-[5%] right-[5%] w-[90%] h-[200px] z-0 bg-white rounded-2xl shadow-[0px_0px_6px_rgba(0,0,0,0.15)]" />
+          <div className="relative flex flex-col lg:flex-row gap-8 bg-white rounded-2xl p-6 shadow-[0px_0px_6px_rgba(0,0,0,0.15)]">
+            <div className="w-full lg:w-1/2">
+              <div className="text-[32px] font-[600] mb-4 text-black">{t("work.items.0.title")}</div>
+              <div className="text-[20px] md:text-[24px] font-[400] mb-4 text-[#666368]">{t("work.items.0.subtitle")}</div>
+              <div className="text-[#666368] text-[16px] font-[400] mb-2">{t("work.items.0.text1")}</div>
+              <div className="text-[#666368] text-[16px] font-[400] mb-2">{t("work.items.0.text2")}</div>
+              <div className="text-[#666368] text-[16px] font-[400] mb-4">{t("work.items.0.text3")}</div>
+              {/* <button className="underline text-[##241E2A] text-[16px] font-[400]">
+                {t("work.cta")}
+              </button> */}
+            </div>
+            <div className="w-full lg:w-1/2">
+              <Image src="/images/landings/work-image.png" alt="Work Logo" width={576} height={592} />
+            </div>
           </div>
         </div>
       </div>
